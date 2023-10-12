@@ -59,7 +59,7 @@ class ThrottleSpecialInfo:
         :type object_id: str
         :param object_type: 特殊对象类型：APP、USER
         :type object_type: str
-        :param object_name: [作用的APP或租户的名称](tag:hws;hws_hk;hcs;fcs;g42;)[作用的APP或租户ID](tag:Site)
+        :param object_name: [作用的APP或租户的名称](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[作用的APP或租户ID](tag:Site)
         :type object_name: str
         :param throttle_id: 流控策略编号
         :type throttle_id: str
@@ -255,7 +255,7 @@ class ThrottleSpecialInfo:
     def object_name(self):
         """Gets the object_name of this ThrottleSpecialInfo.
 
-        [作用的APP或租户的名称](tag:hws;hws_hk;hcs;fcs;g42;)[作用的APP或租户ID](tag:Site)
+        [作用的APP或租户的名称](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[作用的APP或租户ID](tag:Site)
 
         :return: The object_name of this ThrottleSpecialInfo.
         :rtype: str
@@ -266,7 +266,7 @@ class ThrottleSpecialInfo:
     def object_name(self, object_name):
         """Sets the object_name of this ThrottleSpecialInfo.
 
-        [作用的APP或租户的名称](tag:hws;hws_hk;hcs;fcs;g42;)[作用的APP或租户ID](tag:Site)
+        [作用的APP或租户的名称](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[作用的APP或租户ID](tag:Site)
 
         :param object_name: The object_name of this ThrottleSpecialInfo.
         :type object_name: str

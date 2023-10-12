@@ -21,7 +21,9 @@ class ListAllAppRequestBody:
         'page': 'int',
         'size': 'int',
         'sort_name': 'str',
-        'sort_by': 'str'
+        'sort_by': 'str',
+        'states': 'list[str]',
+        'group_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class ListAllAppRequestBody:
         'page': 'page',
         'size': 'size',
         'sort_name': 'sort_name',
-        'sort_by': 'sort_by'
+        'sort_by': 'sort_by',
+        'states': 'states',
+        'group_id': 'group_id'
     }
 
-    def __init__(self, project_id=None, page=None, size=None, sort_name=None, sort_by=None):
+    def __init__(self, project_id=None, page=None, size=None, sort_name=None, sort_by=None, states=None, group_id=None):
         """ListAllAppRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class ListAllAppRequestBody:
         :type sort_name: str
         :param sort_by: 排序顺序，正序（ASC）或者逆序（DESC)
         :type sort_by: str
+        :param states: 应用状态列表，支持查询以下状态： abort: 部署中止 failed: 部署失败 not_started: 取消执行 pending: 排队中 running: 正在部署 succeeded: 部署成功 timeout: 部署超时 not_executed: 未执行 
+        :type states: list[str]
+        :param group_id: 应用的分组id，传入no_grouped为查询未分组的应用
+        :type group_id: str
         """
         
         
@@ -56,17 +64,21 @@ class ListAllAppRequestBody:
         self._size = None
         self._sort_name = None
         self._sort_by = None
+        self._states = None
+        self._group_id = None
         self.discriminator = None
 
         self.project_id = project_id
-        if page is not None:
-            self.page = page
-        if size is not None:
-            self.size = size
+        self.page = page
+        self.size = size
         if sort_name is not None:
             self.sort_name = sort_name
         if sort_by is not None:
             self.sort_by = sort_by
+        if states is not None:
+            self.states = states
+        if group_id is not None:
+            self.group_id = group_id
 
     @property
     def project_id(self):
@@ -177,6 +189,50 @@ class ListAllAppRequestBody:
         :type sort_by: str
         """
         self._sort_by = sort_by
+
+    @property
+    def states(self):
+        """Gets the states of this ListAllAppRequestBody.
+
+        应用状态列表，支持查询以下状态： abort: 部署中止 failed: 部署失败 not_started: 取消执行 pending: 排队中 running: 正在部署 succeeded: 部署成功 timeout: 部署超时 not_executed: 未执行 
+
+        :return: The states of this ListAllAppRequestBody.
+        :rtype: list[str]
+        """
+        return self._states
+
+    @states.setter
+    def states(self, states):
+        """Sets the states of this ListAllAppRequestBody.
+
+        应用状态列表，支持查询以下状态： abort: 部署中止 failed: 部署失败 not_started: 取消执行 pending: 排队中 running: 正在部署 succeeded: 部署成功 timeout: 部署超时 not_executed: 未执行 
+
+        :param states: The states of this ListAllAppRequestBody.
+        :type states: list[str]
+        """
+        self._states = states
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this ListAllAppRequestBody.
+
+        应用的分组id，传入no_grouped为查询未分组的应用
+
+        :return: The group_id of this ListAllAppRequestBody.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this ListAllAppRequestBody.
+
+        应用的分组id，传入no_grouped为查询未分组的应用
+
+        :param group_id: The group_id of this ListAllAppRequestBody.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

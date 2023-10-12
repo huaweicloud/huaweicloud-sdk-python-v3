@@ -31,9 +31,9 @@ class HumanSize2D:
 
         The model defined in huaweicloud sdk
 
-        :param width: 分身数字人宽度像素值。 &gt; 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        :param width: 分身数字人宽度像素值。 &gt; 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
         :type width: int
-        :param height: 分身数字人高度像素值。 &gt; 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        :param height: 分身数字人高度像素值。 &gt; 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
         :type height: int
         """
         
@@ -52,7 +52,7 @@ class HumanSize2D:
     def width(self):
         """Gets the width of this HumanSize2D.
 
-        分身数字人宽度像素值。 > 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        分身数字人宽度像素值。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
 
         :return: The width of this HumanSize2D.
         :rtype: int
@@ -63,7 +63,7 @@ class HumanSize2D:
     def width(self, width):
         """Sets the width of this HumanSize2D.
 
-        分身数字人宽度像素值。 > 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        分身数字人宽度像素值。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
 
         :param width: The width of this HumanSize2D.
         :type width: int
@@ -74,7 +74,7 @@ class HumanSize2D:
     def height(self):
         """Gets the height of this HumanSize2D.
 
-        分身数字人高度像素值。 > 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        分身数字人高度像素值。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
 
         :return: The height of this HumanSize2D.
         :rtype: int
@@ -85,7 +85,7 @@ class HumanSize2D:
     def height(self, height):
         """Sets the height of this HumanSize2D.
 
-        分身数字人高度像素值。 > 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        分身数字人高度像素值。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
 
         :param height: The height of this HumanSize2D.
         :type height: int

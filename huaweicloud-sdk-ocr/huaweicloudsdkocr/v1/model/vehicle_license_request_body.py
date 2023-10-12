@@ -39,9 +39,9 @@ class VehicleLicenseRequestBody:
 
         :param image: 与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于100px，最长边不超过8000px。支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
         :type image: str
-        :param url: 与image二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 &gt; 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
+        :param url: 与image二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 &gt; 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
         :type url: str
-        :param side:  - front：行驶证主页  - back：行驶证副页  &gt; 说明： 如果参数值为空或无该参数，系统默认识别主页，建议填写，准确率更高。 
+        :param side:  - front：行驶证主页  - back：行驶证副页  - double_side：行驶证双页信息  &gt; 说明： 如果参数值为空或无该参数，系统默认识别主页，建议填写，准确率更高。 
         :type side: str
         :param return_issuing_authority: 是否返回发证机关的开关，可选值包括： - true：返回发证机关 - false：不返回发证机关  &gt; 说明： - 如果无该参数，系统默认不返回发证机关。如果输入参数不是Boolean类型，则会报非法参数错误。 
         :type return_issuing_authority: bool
@@ -95,7 +95,7 @@ class VehicleLicenseRequestBody:
     def url(self):
         """Gets the url of this VehicleLicenseRequestBody.
 
-        与image二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
+        与image二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
         :return: The url of this VehicleLicenseRequestBody.
         :rtype: str
@@ -106,7 +106,7 @@ class VehicleLicenseRequestBody:
     def url(self, url):
         """Sets the url of this VehicleLicenseRequestBody.
 
-        与image二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
+        与image二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
         :param url: The url of this VehicleLicenseRequestBody.
         :type url: str
@@ -117,7 +117,7 @@ class VehicleLicenseRequestBody:
     def side(self):
         """Gets the side of this VehicleLicenseRequestBody.
 
-         - front：行驶证主页  - back：行驶证副页  > 说明： 如果参数值为空或无该参数，系统默认识别主页，建议填写，准确率更高。 
+         - front：行驶证主页  - back：行驶证副页  - double_side：行驶证双页信息  > 说明： 如果参数值为空或无该参数，系统默认识别主页，建议填写，准确率更高。 
 
         :return: The side of this VehicleLicenseRequestBody.
         :rtype: str
@@ -128,7 +128,7 @@ class VehicleLicenseRequestBody:
     def side(self, side):
         """Sets the side of this VehicleLicenseRequestBody.
 
-         - front：行驶证主页  - back：行驶证副页  > 说明： 如果参数值为空或无该参数，系统默认识别主页，建议填写，准确率更高。 
+         - front：行驶证主页  - back：行驶证副页  - double_side：行驶证双页信息  > 说明： 如果参数值为空或无该参数，系统默认识别主页，建议填写，准确率更高。 
 
         :param side: The side of this VehicleLicenseRequestBody.
         :type side: str

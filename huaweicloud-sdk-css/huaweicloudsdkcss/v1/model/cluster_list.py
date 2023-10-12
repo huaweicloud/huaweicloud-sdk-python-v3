@@ -41,7 +41,8 @@ class ClusterList:
         'enterprise_project_id': 'str',
         'tags': 'list[ClusterListTags]',
         'failed_reason': 'ClusterListFailedReasons',
-        'period': 'bool'
+        'period': 'bool',
+        'bandwidth_resource_id': 'str'
     }
 
     attribute_map = {
@@ -69,10 +70,11 @@ class ClusterList:
         'enterprise_project_id': 'enterpriseProjectId',
         'tags': 'tags',
         'failed_reason': 'failedReason',
-        'period': 'period'
+        'period': 'period',
+        'bandwidth_resource_id': 'bandwidthResourceId'
     }
 
-    def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, bandwidth_size=None, https_enable=None, authority_enable=None, disk_encrypted=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None):
+    def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, bandwidth_size=None, https_enable=None, authority_enable=None, disk_encrypted=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None, bandwidth_resource_id=None):
         """ClusterList
 
         The model defined in huaweicloud sdk
@@ -127,6 +129,8 @@ class ClusterList:
         :type failed_reason: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
         :param period: 是否为包周期集群。 - \&quot;true\&quot; 表示是包周期计费的集群。 - \&quot;false\&quot; 表示是按需计费的集群。
         :type period: bool
+        :param bandwidth_resource_id: es公网访问的资源id。
+        :type bandwidth_resource_id: str
         """
         
         
@@ -156,6 +160,7 @@ class ClusterList:
         self._tags = None
         self._failed_reason = None
         self._period = None
+        self._bandwidth_resource_id = None
         self.discriminator = None
 
         if datastore is not None:
@@ -208,6 +213,8 @@ class ClusterList:
             self.failed_reason = failed_reason
         if period is not None:
             self.period = period
+        if bandwidth_resource_id is not None:
+            self.bandwidth_resource_id = bandwidth_resource_id
 
     @property
     def datastore(self):
@@ -742,6 +749,28 @@ class ClusterList:
         :type period: bool
         """
         self._period = period
+
+    @property
+    def bandwidth_resource_id(self):
+        """Gets the bandwidth_resource_id of this ClusterList.
+
+        es公网访问的资源id。
+
+        :return: The bandwidth_resource_id of this ClusterList.
+        :rtype: str
+        """
+        return self._bandwidth_resource_id
+
+    @bandwidth_resource_id.setter
+    def bandwidth_resource_id(self, bandwidth_resource_id):
+        """Sets the bandwidth_resource_id of this ClusterList.
+
+        es公网访问的资源id。
+
+        :param bandwidth_resource_id: The bandwidth_resource_id of this ClusterList.
+        :type bandwidth_resource_id: str
+        """
+        self._bandwidth_resource_id = bandwidth_resource_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

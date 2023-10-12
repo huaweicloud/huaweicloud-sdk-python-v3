@@ -20,6 +20,11 @@ class JobEntities:
         'image_id': 'str',
         'current_task': 'str',
         'image_name': 'str',
+        'addition_error_code': 'str',
+        'addition_error_msg': 'str',
+        'error_code': 'str',
+        'error': 'str',
+        'alarm_code': 'str',
         'process_percent': 'float',
         'results': 'list[JobEntitiesResult]',
         'sub_jobs_result': 'list[SubJobResult]',
@@ -30,13 +35,18 @@ class JobEntities:
         'image_id': 'image_id',
         'current_task': 'current_task',
         'image_name': 'image_name',
+        'addition_error_code': 'addition_error_code',
+        'addition_error_msg': 'addition_error_msg',
+        'error_code': 'error_code',
+        'error': 'error',
+        'alarm_code': 'alarm_code',
         'process_percent': 'process_percent',
         'results': 'results',
         'sub_jobs_result': 'sub_jobs_result',
         'sub_jobs_list': 'sub_jobs_list'
     }
 
-    def __init__(self, image_id=None, current_task=None, image_name=None, process_percent=None, results=None, sub_jobs_result=None, sub_jobs_list=None):
+    def __init__(self, image_id=None, current_task=None, image_name=None, addition_error_code=None, addition_error_msg=None, error_code=None, error=None, alarm_code=None, process_percent=None, results=None, sub_jobs_result=None, sub_jobs_list=None):
         """JobEntities
 
         The model defined in huaweicloud sdk
@@ -47,6 +57,16 @@ class JobEntities:
         :type current_task: str
         :param image_name: 镜像名称
         :type image_name: str
+        :param addition_error_code: 添加错误码
+        :type addition_error_code: str
+        :param addition_error_msg: 添加错误消息
+        :type addition_error_msg: str
+        :param error_code: 错误码
+        :type error_code: str
+        :param error: 错误消息
+        :type error: str
+        :param alarm_code: 告警代码
+        :type alarm_code: str
         :param process_percent: 任务执行进度
         :type process_percent: float
         :param results: 批量任务执行结果
@@ -62,6 +82,11 @@ class JobEntities:
         self._image_id = None
         self._current_task = None
         self._image_name = None
+        self._addition_error_code = None
+        self._addition_error_msg = None
+        self._error_code = None
+        self._error = None
+        self._alarm_code = None
         self._process_percent = None
         self._results = None
         self._sub_jobs_result = None
@@ -74,6 +99,16 @@ class JobEntities:
             self.current_task = current_task
         if image_name is not None:
             self.image_name = image_name
+        if addition_error_code is not None:
+            self.addition_error_code = addition_error_code
+        if addition_error_msg is not None:
+            self.addition_error_msg = addition_error_msg
+        if error_code is not None:
+            self.error_code = error_code
+        if error is not None:
+            self.error = error
+        if alarm_code is not None:
+            self.alarm_code = alarm_code
         if process_percent is not None:
             self.process_percent = process_percent
         if results is not None:
@@ -148,6 +183,116 @@ class JobEntities:
         :type image_name: str
         """
         self._image_name = image_name
+
+    @property
+    def addition_error_code(self):
+        """Gets the addition_error_code of this JobEntities.
+
+        添加错误码
+
+        :return: The addition_error_code of this JobEntities.
+        :rtype: str
+        """
+        return self._addition_error_code
+
+    @addition_error_code.setter
+    def addition_error_code(self, addition_error_code):
+        """Sets the addition_error_code of this JobEntities.
+
+        添加错误码
+
+        :param addition_error_code: The addition_error_code of this JobEntities.
+        :type addition_error_code: str
+        """
+        self._addition_error_code = addition_error_code
+
+    @property
+    def addition_error_msg(self):
+        """Gets the addition_error_msg of this JobEntities.
+
+        添加错误消息
+
+        :return: The addition_error_msg of this JobEntities.
+        :rtype: str
+        """
+        return self._addition_error_msg
+
+    @addition_error_msg.setter
+    def addition_error_msg(self, addition_error_msg):
+        """Sets the addition_error_msg of this JobEntities.
+
+        添加错误消息
+
+        :param addition_error_msg: The addition_error_msg of this JobEntities.
+        :type addition_error_msg: str
+        """
+        self._addition_error_msg = addition_error_msg
+
+    @property
+    def error_code(self):
+        """Gets the error_code of this JobEntities.
+
+        错误码
+
+        :return: The error_code of this JobEntities.
+        :rtype: str
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        """Sets the error_code of this JobEntities.
+
+        错误码
+
+        :param error_code: The error_code of this JobEntities.
+        :type error_code: str
+        """
+        self._error_code = error_code
+
+    @property
+    def error(self):
+        """Gets the error of this JobEntities.
+
+        错误消息
+
+        :return: The error of this JobEntities.
+        :rtype: str
+        """
+        return self._error
+
+    @error.setter
+    def error(self, error):
+        """Sets the error of this JobEntities.
+
+        错误消息
+
+        :param error: The error of this JobEntities.
+        :type error: str
+        """
+        self._error = error
+
+    @property
+    def alarm_code(self):
+        """Gets the alarm_code of this JobEntities.
+
+        告警代码
+
+        :return: The alarm_code of this JobEntities.
+        :rtype: str
+        """
+        return self._alarm_code
+
+    @alarm_code.setter
+    def alarm_code(self, alarm_code):
+        """Sets the alarm_code of this JobEntities.
+
+        告警代码
+
+        :param alarm_code: The alarm_code of this JobEntities.
+        :type alarm_code: str
+        """
+        self._alarm_code = alarm_code
 
     @property
     def process_percent(self):

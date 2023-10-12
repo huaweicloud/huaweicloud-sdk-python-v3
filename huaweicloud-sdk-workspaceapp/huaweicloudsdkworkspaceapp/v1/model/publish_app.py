@@ -59,7 +59,7 @@ class PublishApp:
         :type version: str
         :param command_param: 启动命令行参数
         :type command_param: str
-        :param icon_uri: 图片的默认大小当前限制为20KB,即&lt;code&gt;1024 * 8&lt;/code&gt;字节 如果数据格式为data;image/png;base64,iVBORw0KGgoAAAANS时实际大小约为 字段约为&lt;code&gt;size * 4/3 + 4bytes&lt;/code&gt;,因此设置字段上限为 &lt;code&gt;1024 * 8 * 1.34&lt;/code&gt;
+        :param icon_uri: &gt; - 图片的默认大小当前限制为8KB，即1024 * 8字节。 &gt; - 如果数据格式为data;image/png;base64,iVBORw0KGgoAAAANS时实际大小约为字段约为：size * 4/3 + 4bytes。
         :type icon_uri: str
         :param execute_path: 执行路径
         :type execute_path: str
@@ -192,7 +192,7 @@ class PublishApp:
     def icon_uri(self):
         """Gets the icon_uri of this PublishApp.
 
-        图片的默认大小当前限制为20KB,即<code>1024 * 8</code>字节 如果数据格式为data;image/png;base64,iVBORw0KGgoAAAANS时实际大小约为 字段约为<code>size * 4/3 + 4bytes</code>,因此设置字段上限为 <code>1024 * 8 * 1.34</code>
+        > - 图片的默认大小当前限制为8KB，即1024 * 8字节。 > - 如果数据格式为data;image/png;base64,iVBORw0KGgoAAAANS时实际大小约为字段约为：size * 4/3 + 4bytes。
 
         :return: The icon_uri of this PublishApp.
         :rtype: str
@@ -203,7 +203,7 @@ class PublishApp:
     def icon_uri(self, icon_uri):
         """Sets the icon_uri of this PublishApp.
 
-        图片的默认大小当前限制为20KB,即<code>1024 * 8</code>字节 如果数据格式为data;image/png;base64,iVBORw0KGgoAAAANS时实际大小约为 字段约为<code>size * 4/3 + 4bytes</code>,因此设置字段上限为 <code>1024 * 8 * 1.34</code>
+        > - 图片的默认大小当前限制为8KB，即1024 * 8字节。 > - 如果数据格式为data;image/png;base64,iVBORw0KGgoAAAANS时实际大小约为字段约为：size * 4/3 + 4bytes。
 
         :param icon_uri: The icon_uri of this PublishApp.
         :type icon_uri: str

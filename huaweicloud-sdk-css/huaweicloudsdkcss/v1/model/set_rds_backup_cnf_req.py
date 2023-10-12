@@ -41,15 +41,15 @@ class SetRDSBackupCnfReq:
 
         :param indices: 需要备份的索引名。*代表所有索引。
         :type indices: str
-        :param prefix: 自动创建快照的名称前缀，需要用户自己手动输入。只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。
+        :param prefix: 自动创建快照的名称前缀，需要用户自己手动输入。 只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。  &gt; 当enable为true时该字段为必选字段
         :type prefix: str
-        :param period: 每天创建快照的时刻，只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。
+        :param period: 每天创建快照的时刻，只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。 比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。  &gt; 当enable为true时该字段为必选字段
         :type period: str
-        :param keepday: 自定义设置快照保留的天数，范围是1～90。系统在半点时刻会自动删除超过保留天数的快照。
+        :param keepday: 自定义设置快照保留的天数，范围是1～90。系统在半点时刻会自动删除超过保留天数的快照。  &gt; 当enable为true时该字段为必选字段
         :type keepday: int
-        :param enable: 是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略，且无需下发其余参数。
+        :param enable: 是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略。
         :type enable: str
-        :param delete_auto: 表示关闭自动创建快照策略时，是否需要清除所有自动创建的快照。默认为“false”，表示不会删除之前已自动创建的快照。设置为true，表示在关闭自动创建快照策略的同时，删除所有已创建的快照。
+        :param delete_auto: 表示关闭自动创建快照策略时，是否需要清除所有自动创建的快照。 默认为“false”，表示不会删除之前已自动创建的快照。 设置为true，表示在关闭自动创建快照策略的同时，删除所有已创建的快照。
         :type delete_auto: str
         """
         
@@ -101,7 +101,7 @@ class SetRDSBackupCnfReq:
     def prefix(self):
         """Gets the prefix of this SetRDSBackupCnfReq.
 
-        自动创建快照的名称前缀，需要用户自己手动输入。只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。
+        自动创建快照的名称前缀，需要用户自己手动输入。 只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。  > 当enable为true时该字段为必选字段
 
         :return: The prefix of this SetRDSBackupCnfReq.
         :rtype: str
@@ -112,7 +112,7 @@ class SetRDSBackupCnfReq:
     def prefix(self, prefix):
         """Sets the prefix of this SetRDSBackupCnfReq.
 
-        自动创建快照的名称前缀，需要用户自己手动输入。只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。
+        自动创建快照的名称前缀，需要用户自己手动输入。 只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。  > 当enable为true时该字段为必选字段
 
         :param prefix: The prefix of this SetRDSBackupCnfReq.
         :type prefix: str
@@ -123,7 +123,7 @@ class SetRDSBackupCnfReq:
     def period(self):
         """Gets the period of this SetRDSBackupCnfReq.
 
-        每天创建快照的时刻，只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。
+        每天创建快照的时刻，只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。 比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。  > 当enable为true时该字段为必选字段
 
         :return: The period of this SetRDSBackupCnfReq.
         :rtype: str
@@ -134,7 +134,7 @@ class SetRDSBackupCnfReq:
     def period(self, period):
         """Sets the period of this SetRDSBackupCnfReq.
 
-        每天创建快照的时刻，只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。
+        每天创建快照的时刻，只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。 比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。  > 当enable为true时该字段为必选字段
 
         :param period: The period of this SetRDSBackupCnfReq.
         :type period: str
@@ -145,7 +145,7 @@ class SetRDSBackupCnfReq:
     def keepday(self):
         """Gets the keepday of this SetRDSBackupCnfReq.
 
-        自定义设置快照保留的天数，范围是1～90。系统在半点时刻会自动删除超过保留天数的快照。
+        自定义设置快照保留的天数，范围是1～90。系统在半点时刻会自动删除超过保留天数的快照。  > 当enable为true时该字段为必选字段
 
         :return: The keepday of this SetRDSBackupCnfReq.
         :rtype: int
@@ -156,7 +156,7 @@ class SetRDSBackupCnfReq:
     def keepday(self, keepday):
         """Sets the keepday of this SetRDSBackupCnfReq.
 
-        自定义设置快照保留的天数，范围是1～90。系统在半点时刻会自动删除超过保留天数的快照。
+        自定义设置快照保留的天数，范围是1～90。系统在半点时刻会自动删除超过保留天数的快照。  > 当enable为true时该字段为必选字段
 
         :param keepday: The keepday of this SetRDSBackupCnfReq.
         :type keepday: int
@@ -167,7 +167,7 @@ class SetRDSBackupCnfReq:
     def enable(self):
         """Gets the enable of this SetRDSBackupCnfReq.
 
-        是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略，且无需下发其余参数。
+        是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略。
 
         :return: The enable of this SetRDSBackupCnfReq.
         :rtype: str
@@ -178,7 +178,7 @@ class SetRDSBackupCnfReq:
     def enable(self, enable):
         """Sets the enable of this SetRDSBackupCnfReq.
 
-        是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略，且无需下发其余参数。
+        是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略。
 
         :param enable: The enable of this SetRDSBackupCnfReq.
         :type enable: str
@@ -189,7 +189,7 @@ class SetRDSBackupCnfReq:
     def delete_auto(self):
         """Gets the delete_auto of this SetRDSBackupCnfReq.
 
-        表示关闭自动创建快照策略时，是否需要清除所有自动创建的快照。默认为“false”，表示不会删除之前已自动创建的快照。设置为true，表示在关闭自动创建快照策略的同时，删除所有已创建的快照。
+        表示关闭自动创建快照策略时，是否需要清除所有自动创建的快照。 默认为“false”，表示不会删除之前已自动创建的快照。 设置为true，表示在关闭自动创建快照策略的同时，删除所有已创建的快照。
 
         :return: The delete_auto of this SetRDSBackupCnfReq.
         :rtype: str
@@ -200,7 +200,7 @@ class SetRDSBackupCnfReq:
     def delete_auto(self, delete_auto):
         """Sets the delete_auto of this SetRDSBackupCnfReq.
 
-        表示关闭自动创建快照策略时，是否需要清除所有自动创建的快照。默认为“false”，表示不会删除之前已自动创建的快照。设置为true，表示在关闭自动创建快照策略的同时，删除所有已创建的快照。
+        表示关闭自动创建快照策略时，是否需要清除所有自动创建的快照。 默认为“false”，表示不会删除之前已自动创建的快照。 设置为true，表示在关闭自动创建快照策略的同时，删除所有已创建的快照。
 
         :param delete_auto: The delete_auto of this SetRDSBackupCnfReq.
         :type delete_auto: str

@@ -19,16 +19,18 @@ class CreateCnfReq:
     openapi_types = {
         'name': 'str',
         'conf_content': 'str',
-        'setting': 'Setting'
+        'setting': 'Setting',
+        'sensitive_words': 'list[str]'
     }
 
     attribute_map = {
         'name': 'name',
         'conf_content': 'confContent',
-        'setting': 'setting'
+        'setting': 'setting',
+        'sensitive_words': 'sensitive_words'
     }
 
-    def __init__(self, name=None, conf_content=None, setting=None):
+    def __init__(self, name=None, conf_content=None, setting=None, sensitive_words=None):
         """CreateCnfReq
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class CreateCnfReq:
         :type conf_content: str
         :param setting: 
         :type setting: :class:`huaweicloudsdkcss.v1.Setting`
+        :param sensitive_words: 敏感字符替换 输入需要隐藏的敏感字串列表。配置隐藏字符串列表后，在返回的配置内容中，会将所有在列表中的字串隐藏为***（列表最大支持20条，单个字串最大长度512字节）
+        :type sensitive_words: list[str]
         """
         
         
@@ -46,11 +50,14 @@ class CreateCnfReq:
         self._name = None
         self._conf_content = None
         self._setting = None
+        self._sensitive_words = None
         self.discriminator = None
 
         self.name = name
         self.conf_content = conf_content
         self.setting = setting
+        if sensitive_words is not None:
+            self.sensitive_words = sensitive_words
 
     @property
     def name(self):
@@ -113,6 +120,28 @@ class CreateCnfReq:
         :type setting: :class:`huaweicloudsdkcss.v1.Setting`
         """
         self._setting = setting
+
+    @property
+    def sensitive_words(self):
+        """Gets the sensitive_words of this CreateCnfReq.
+
+        敏感字符替换 输入需要隐藏的敏感字串列表。配置隐藏字符串列表后，在返回的配置内容中，会将所有在列表中的字串隐藏为***（列表最大支持20条，单个字串最大长度512字节）
+
+        :return: The sensitive_words of this CreateCnfReq.
+        :rtype: list[str]
+        """
+        return self._sensitive_words
+
+    @sensitive_words.setter
+    def sensitive_words(self, sensitive_words):
+        """Sets the sensitive_words of this CreateCnfReq.
+
+        敏感字符替换 输入需要隐藏的敏感字串列表。配置隐藏字符串列表后，在返回的配置内容中，会将所有在列表中的字串隐藏为***（列表最大支持20条，单个字串最大长度512字节）
+
+        :param sensitive_words: The sensitive_words of this CreateCnfReq.
+        :type sensitive_words: list[str]
+        """
+        self._sensitive_words = sensitive_words
 
     def to_dict(self):
         """Returns the model properties as a dict"""

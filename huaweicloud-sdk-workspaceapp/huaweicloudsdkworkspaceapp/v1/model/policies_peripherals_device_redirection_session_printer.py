@@ -18,7 +18,7 @@ class PoliciesPeripheralsDeviceRedirectionSessionPrinter:
 
     openapi_types = {
         'session_printer_enable': 'bool',
-        'options': 'PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions'
+        'options': 'SessionPrinterOptions'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class PoliciesPeripheralsDeviceRedirectionSessionPrinter:
         :param session_printer_enable: 是否开启会话打印机。取值为： false：表示关闭。 true：表示开启。
         :type session_printer_enable: bool
         :param options: 
-        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions`
+        :type options: :class:`huaweicloudsdkworkspaceapp.v1.SessionPrinterOptions`
         """
         
         
@@ -75,7 +75,7 @@ class PoliciesPeripheralsDeviceRedirectionSessionPrinter:
         """Gets the options of this PoliciesPeripheralsDeviceRedirectionSessionPrinter.
 
         :return: The options of this PoliciesPeripheralsDeviceRedirectionSessionPrinter.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.SessionPrinterOptions`
         """
         return self._options
 
@@ -84,7 +84,7 @@ class PoliciesPeripheralsDeviceRedirectionSessionPrinter:
         """Sets the options of this PoliciesPeripheralsDeviceRedirectionSessionPrinter.
 
         :param options: The options of this PoliciesPeripheralsDeviceRedirectionSessionPrinter.
-        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions`
+        :type options: :class:`huaweicloudsdkworkspaceapp.v1.SessionPrinterOptions`
         """
         self._options = options
 

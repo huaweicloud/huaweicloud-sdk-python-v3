@@ -22,6 +22,7 @@ class AggregatedSourceStatus:
         'last_update_status': 'str',
         'last_update_time': 'str',
         'source_id': 'str',
+        'source_name': 'str',
         'source_type': 'str'
     }
 
@@ -31,10 +32,11 @@ class AggregatedSourceStatus:
         'last_update_status': 'last_update_status',
         'last_update_time': 'last_update_time',
         'source_id': 'source_id',
+        'source_name': 'source_name',
         'source_type': 'source_type'
     }
 
-    def __init__(self, last_error_code=None, last_error_message=None, last_update_status=None, last_update_time=None, source_id=None, source_type=None):
+    def __init__(self, last_error_code=None, last_error_message=None, last_update_status=None, last_update_time=None, source_id=None, source_name=None, source_type=None):
         """AggregatedSourceStatus
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class AggregatedSourceStatus:
         :type last_update_time: str
         :param source_id: 源帐号ID或组织。
         :type source_id: str
+        :param source_name: 账号名。
+        :type source_name: str
         :param source_type: 源帐号类型（ACCOUNT | ORGANIZATION）。
         :type source_type: str
         """
@@ -60,6 +64,7 @@ class AggregatedSourceStatus:
         self._last_update_status = None
         self._last_update_time = None
         self._source_id = None
+        self._source_name = None
         self._source_type = None
         self.discriminator = None
 
@@ -73,6 +78,8 @@ class AggregatedSourceStatus:
             self.last_update_time = last_update_time
         if source_id is not None:
             self.source_id = source_id
+        if source_name is not None:
+            self.source_name = source_name
         if source_type is not None:
             self.source_type = source_type
 
@@ -185,6 +192,28 @@ class AggregatedSourceStatus:
         :type source_id: str
         """
         self._source_id = source_id
+
+    @property
+    def source_name(self):
+        """Gets the source_name of this AggregatedSourceStatus.
+
+        账号名。
+
+        :return: The source_name of this AggregatedSourceStatus.
+        :rtype: str
+        """
+        return self._source_name
+
+    @source_name.setter
+    def source_name(self, source_name):
+        """Sets the source_name of this AggregatedSourceStatus.
+
+        账号名。
+
+        :param source_name: The source_name of this AggregatedSourceStatus.
+        :type source_name: str
+        """
+        self._source_name = source_name
 
     @property
     def source_type(self):

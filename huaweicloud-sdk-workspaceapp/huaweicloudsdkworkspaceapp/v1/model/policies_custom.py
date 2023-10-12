@@ -18,7 +18,7 @@ class PoliciesCustom:
 
     openapi_types = {
         'custom_configuration1_enable': 'bool',
-        'options': 'PoliciesCustomOptions'
+        'options': 'CustomOptions'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class PoliciesCustom:
         :param custom_configuration1_enable: 自定义策略配置项1： false: 表示关闭 true: 表示开启
         :type custom_configuration1_enable: bool
         :param options: 
-        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesCustomOptions`
+        :type options: :class:`huaweicloudsdkworkspaceapp.v1.CustomOptions`
         """
         
         
@@ -75,7 +75,7 @@ class PoliciesCustom:
         """Gets the options of this PoliciesCustom.
 
         :return: The options of this PoliciesCustom.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesCustomOptions`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CustomOptions`
         """
         return self._options
 
@@ -84,7 +84,7 @@ class PoliciesCustom:
         """Sets the options of this PoliciesCustom.
 
         :param options: The options of this PoliciesCustom.
-        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesCustomOptions`
+        :type options: :class:`huaweicloudsdkworkspaceapp.v1.CustomOptions`
         """
         self._options = options
 

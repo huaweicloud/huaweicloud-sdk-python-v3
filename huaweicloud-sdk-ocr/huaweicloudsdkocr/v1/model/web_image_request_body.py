@@ -21,7 +21,8 @@ class WebImageRequestBody:
         'url': 'str',
         'detect_direction': 'bool',
         'extract_type': 'list[str]',
-        'detect_font': 'bool'
+        'detect_font': 'bool',
+        'detect_text_direction': 'bool'
     }
 
     attribute_map = {
@@ -29,17 +30,18 @@ class WebImageRequestBody:
         'url': 'url',
         'detect_direction': 'detect_direction',
         'extract_type': 'extract_type',
-        'detect_font': 'detect_font'
+        'detect_font': 'detect_font',
+        'detect_text_direction': 'detect_text_direction'
     }
 
-    def __init__(self, image=None, url=None, detect_direction=None, extract_type=None, detect_font=None):
+    def __init__(self, image=None, url=None, detect_direction=None, extract_type=None, detect_font=None, detect_text_direction=None):
         """WebImageRequestBody
 
         The model defined in huaweicloud sdk
 
         :param image: 与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过30000px，支持JPEG、JPG、PNG、BMP、TIFF、GIF、WEBP格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
         :type image: str
-        :param url: 与image二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 &gt; 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
+        :param url: 与image二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 &gt; 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
         :type url: str
         :param detect_direction: 图片朝向检测开关，可选值包括： - true：检测图片朝向; - false：不检测图片朝向。  &gt; 说明： - 支持任意角度的图片朝向检测。未传入该参数时默认为false，即不检测图片朝向。 
         :type detect_direction: bool
@@ -47,6 +49,8 @@ class WebImageRequestBody:
         :type extract_type: list[str]
         :param detect_font: 为Boolean类型，若不传该字段，默认不检测切片字体，为True时，将检测切片的字体类型，并返回最相似的5种字体名称。 
         :type detect_font: bool
+        :param detect_text_direction: 为Boolean类型，若不传该字段，默认为True，即检测每个字段的文字方向。为False时，则不检测文字方向。若图片中所有文字方向均是水平朝上时，建议将该值设为False，即不检测文字方向。 
+        :type detect_text_direction: bool
         """
         
         
@@ -56,6 +60,7 @@ class WebImageRequestBody:
         self._detect_direction = None
         self._extract_type = None
         self._detect_font = None
+        self._detect_text_direction = None
         self.discriminator = None
 
         if image is not None:
@@ -68,6 +73,8 @@ class WebImageRequestBody:
             self.extract_type = extract_type
         if detect_font is not None:
             self.detect_font = detect_font
+        if detect_text_direction is not None:
+            self.detect_text_direction = detect_text_direction
 
     @property
     def image(self):
@@ -95,7 +102,7 @@ class WebImageRequestBody:
     def url(self):
         """Gets the url of this WebImageRequestBody.
 
-        与image二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
+        与image二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
         :return: The url of this WebImageRequestBody.
         :rtype: str
@@ -106,7 +113,7 @@ class WebImageRequestBody:
     def url(self, url):
         """Sets the url of this WebImageRequestBody.
 
-        与image二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 
+        与image二选一 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
         :param url: The url of this WebImageRequestBody.
         :type url: str
@@ -178,6 +185,28 @@ class WebImageRequestBody:
         :type detect_font: bool
         """
         self._detect_font = detect_font
+
+    @property
+    def detect_text_direction(self):
+        """Gets the detect_text_direction of this WebImageRequestBody.
+
+        为Boolean类型，若不传该字段，默认为True，即检测每个字段的文字方向。为False时，则不检测文字方向。若图片中所有文字方向均是水平朝上时，建议将该值设为False，即不检测文字方向。 
+
+        :return: The detect_text_direction of this WebImageRequestBody.
+        :rtype: bool
+        """
+        return self._detect_text_direction
+
+    @detect_text_direction.setter
+    def detect_text_direction(self, detect_text_direction):
+        """Sets the detect_text_direction of this WebImageRequestBody.
+
+        为Boolean类型，若不传该字段，默认为True，即检测每个字段的文字方向。为False时，则不检测文字方向。若图片中所有文字方向均是水平朝上时，建议将该值设为False，即不检测文字方向。 
+
+        :param detect_text_direction: The detect_text_direction of this WebImageRequestBody.
+        :type detect_text_direction: bool
+        """
+        self._detect_text_direction = detect_text_direction
 
     def to_dict(self):
         """Returns the model properties as a dict"""

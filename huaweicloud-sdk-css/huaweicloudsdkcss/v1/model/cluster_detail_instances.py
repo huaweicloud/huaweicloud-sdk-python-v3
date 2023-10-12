@@ -18,6 +18,7 @@ class ClusterDetailInstances:
 
     openapi_types = {
         'status': 'str',
+        'resource_id': 'str',
         'type': 'str',
         'id': 'str',
         'name': 'str',
@@ -29,6 +30,7 @@ class ClusterDetailInstances:
 
     attribute_map = {
         'status': 'status',
+        'resource_id': 'resourceId',
         'type': 'type',
         'id': 'id',
         'name': 'name',
@@ -38,13 +40,15 @@ class ClusterDetailInstances:
         'volume': 'volume'
     }
 
-    def __init__(self, status=None, type=None, id=None, name=None, spec_code=None, az_code=None, ip=None, volume=None):
+    def __init__(self, status=None, resource_id=None, type=None, id=None, name=None, spec_code=None, az_code=None, ip=None, volume=None):
         """ClusterDetailInstances
 
         The model defined in huaweicloud sdk
 
         :param status: 节点状态值。  - 100：操作进行中，如创建中。 - 200：可用。 - 303：不可用，如创建失败。
         :type status: str
+        :param resource_id: 该实例对应的资源Id。
+        :type resource_id: str
         :param type: 当前节点的类型。
         :type type: str
         :param id: 实例ID。
@@ -64,6 +68,7 @@ class ClusterDetailInstances:
         
 
         self._status = None
+        self._resource_id = None
         self._type = None
         self._id = None
         self._name = None
@@ -75,6 +80,8 @@ class ClusterDetailInstances:
 
         if status is not None:
             self.status = status
+        if resource_id is not None:
+            self.resource_id = resource_id
         if type is not None:
             self.type = type
         if id is not None:
@@ -111,6 +118,28 @@ class ClusterDetailInstances:
         :type status: str
         """
         self._status = status
+
+    @property
+    def resource_id(self):
+        """Gets the resource_id of this ClusterDetailInstances.
+
+        该实例对应的资源Id。
+
+        :return: The resource_id of this ClusterDetailInstances.
+        :rtype: str
+        """
+        return self._resource_id
+
+    @resource_id.setter
+    def resource_id(self, resource_id):
+        """Sets the resource_id of this ClusterDetailInstances.
+
+        该实例对应的资源Id。
+
+        :param resource_id: The resource_id of this ClusterDetailInstances.
+        :type resource_id: str
+        """
+        self._resource_id = resource_id
 
     @property
     def type(self):

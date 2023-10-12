@@ -2903,6 +2903,61 @@ class LakeFormationAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_quotas_async(self, request):
+        """查询配额
+
+        查询用户的配额信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListQuotas
+        :type request: :class:`huaweicloudsdklakeformation.v1.ListQuotasRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ListQuotasResponse`
+        """
+        return self._list_quotas_with_http_info(request)
+
+    def _list_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/quotas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListQuotasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_role_async(self, request):
         """创建role
 
@@ -3378,6 +3433,63 @@ class LakeFormationAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='BatchUpdateLakeFormationInstanceTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_lake_formation_instance_tags_async(self, request):
+        """查询资源标签集合
+
+        查询租户在指定Project中实例类型的所有资源标签集合
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListLakeFormationInstanceTags
+        :type request: :class:`huaweicloudsdklakeformation.v1.ListLakeFormationInstanceTagsRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ListLakeFormationInstanceTagsResponse`
+        """
+        return self._list_lake_formation_instance_tags_with_http_info(request)
+
+    def _list_lake_formation_instance_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'use_predefine_tags' in local_var_params:
+            query_params.append(('use_predefine_tags', local_var_params['use_predefine_tags']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/lakeformation-instance/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListLakeFormationInstanceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

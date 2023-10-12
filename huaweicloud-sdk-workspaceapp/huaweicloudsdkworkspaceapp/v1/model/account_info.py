@@ -20,22 +20,24 @@ class AccountInfo:
         'account': 'str',
         'account_type': 'AccountTypeEnum',
         'domain': 'str',
-        'email': 'str'
+        'email': 'str',
+        'telephone_number': 'str'
     }
 
     attribute_map = {
         'account': 'account',
         'account_type': 'account_type',
         'domain': 'domain',
-        'email': 'email'
+        'email': 'email',
+        'telephone_number': 'telephone_number'
     }
 
-    def __init__(self, account=None, account_type=None, domain=None, email=None):
+    def __init__(self, account=None, account_type=None, domain=None, email=None, telephone_number=None):
         """AccountInfo
 
         The model defined in huaweicloud sdk
 
-        :param account: 账户，账户的格式必须为:&lt;i&gt;账户(组)&lt;/i&gt;的形式
+        :param account: 用户(组)
         :type account: str
         :param account_type: 
         :type account_type: :class:`huaweicloudsdkworkspaceapp.v1.AccountTypeEnum`
@@ -43,6 +45,8 @@ class AccountInfo:
         :type domain: str
         :param email: 邮箱
         :type email: str
+        :param telephone_number: 手机
+        :type telephone_number: str
         """
         
         
@@ -51,6 +55,7 @@ class AccountInfo:
         self._account_type = None
         self._domain = None
         self._email = None
+        self._telephone_number = None
         self.discriminator = None
 
         self.account = account
@@ -59,12 +64,14 @@ class AccountInfo:
             self.domain = domain
         if email is not None:
             self.email = email
+        if telephone_number is not None:
+            self.telephone_number = telephone_number
 
     @property
     def account(self):
         """Gets the account of this AccountInfo.
 
-        账户，账户的格式必须为:<i>账户(组)</i>的形式
+        用户(组)
 
         :return: The account of this AccountInfo.
         :rtype: str
@@ -75,7 +82,7 @@ class AccountInfo:
     def account(self, account):
         """Sets the account of this AccountInfo.
 
-        账户，账户的格式必须为:<i>账户(组)</i>的形式
+        用户(组)
 
         :param account: The account of this AccountInfo.
         :type account: str
@@ -143,6 +150,28 @@ class AccountInfo:
         :type email: str
         """
         self._email = email
+
+    @property
+    def telephone_number(self):
+        """Gets the telephone_number of this AccountInfo.
+
+        手机
+
+        :return: The telephone_number of this AccountInfo.
+        :rtype: str
+        """
+        return self._telephone_number
+
+    @telephone_number.setter
+    def telephone_number(self, telephone_number):
+        """Sets the telephone_number of this AccountInfo.
+
+        手机
+
+        :param telephone_number: The telephone_number of this AccountInfo.
+        :type telephone_number: str
+        """
+        self._telephone_number = telephone_number
 
     def to_dict(self):
         """Returns the model properties as a dict"""

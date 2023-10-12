@@ -49,7 +49,7 @@ class AlarmTemplatePolicies:
 
         The model defined in huaweicloud sdk
 
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
         :type namespace: str
         :param dimension_name: 资源维度，必须以字母开头，多维度用\&quot;,\&quot;分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
         :type dimension_name: str
@@ -104,7 +104,7 @@ class AlarmTemplatePolicies:
     def namespace(self):
         """Gets the namespace of this AlarmTemplatePolicies.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
         :return: The namespace of this AlarmTemplatePolicies.
         :rtype: str
@@ -115,7 +115,7 @@ class AlarmTemplatePolicies:
     def namespace(self, namespace):
         """Sets the namespace of this AlarmTemplatePolicies.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
         :param namespace: The namespace of this AlarmTemplatePolicies.
         :type namespace: str

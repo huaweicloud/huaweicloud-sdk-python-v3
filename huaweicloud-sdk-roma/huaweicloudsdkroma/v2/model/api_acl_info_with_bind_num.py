@@ -49,7 +49,7 @@ class ApiAclInfoWithBindNum:
         :type acl_value: str
         :param bind_num: 绑定的API数量
         :type bind_num: int
-        :param entity_type: 对象类型 - IP - DOMAIN
+        :param entity_type: 对象类型 - IP - DOMAIN [Site自治版不支持DOMAIN类型。](tag:Site)
         :type entity_type: str
         :param id: ACL策略编号
         :type id: str
@@ -175,7 +175,7 @@ class ApiAclInfoWithBindNum:
     def entity_type(self):
         """Gets the entity_type of this ApiAclInfoWithBindNum.
 
-        对象类型 - IP - DOMAIN
+        对象类型 - IP - DOMAIN [Site自治版不支持DOMAIN类型。](tag:Site)
 
         :return: The entity_type of this ApiAclInfoWithBindNum.
         :rtype: str
@@ -186,7 +186,7 @@ class ApiAclInfoWithBindNum:
     def entity_type(self, entity_type):
         """Sets the entity_type of this ApiAclInfoWithBindNum.
 
-        对象类型 - IP - DOMAIN
+        对象类型 - IP - DOMAIN [Site自治版不支持DOMAIN类型。](tag:Site)
 
         :param entity_type: The entity_type of this ApiAclInfoWithBindNum.
         :type entity_type: str

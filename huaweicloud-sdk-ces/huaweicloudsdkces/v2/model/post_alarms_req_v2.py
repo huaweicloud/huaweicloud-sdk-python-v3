@@ -22,6 +22,7 @@ class PostAlarmsReqV2:
         'namespace': 'str',
         'resource_group_id': 'str',
         'resources': 'list[list[Dimension]]',
+        'alarm_template_id': 'str',
         'policies': 'list[Policy]',
         'type': 'AlarmType',
         'alarm_notifications': 'list[Notification]',
@@ -30,8 +31,7 @@ class PostAlarmsReqV2:
         'notification_end_time': 'str',
         'enterprise_project_id': 'str',
         'enabled': 'bool',
-        'notification_enabled': 'bool',
-        'alarm_template_id': 'str'
+        'notification_enabled': 'bool'
     }
 
     attribute_map = {
@@ -40,6 +40,7 @@ class PostAlarmsReqV2:
         'namespace': 'namespace',
         'resource_group_id': 'resource_group_id',
         'resources': 'resources',
+        'alarm_template_id': 'alarm_template_id',
         'policies': 'policies',
         'type': 'type',
         'alarm_notifications': 'alarm_notifications',
@@ -48,11 +49,10 @@ class PostAlarmsReqV2:
         'notification_end_time': 'notification_end_time',
         'enterprise_project_id': 'enterprise_project_id',
         'enabled': 'enabled',
-        'notification_enabled': 'notification_enabled',
-        'alarm_template_id': 'alarm_template_id'
+        'notification_enabled': 'notification_enabled'
     }
 
-    def __init__(self, name=None, description=None, namespace=None, resource_group_id=None, resources=None, policies=None, type=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, enterprise_project_id=None, enabled=None, notification_enabled=None, alarm_template_id=None):
+    def __init__(self, name=None, description=None, namespace=None, resource_group_id=None, resources=None, alarm_template_id=None, policies=None, type=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, enterprise_project_id=None, enabled=None, notification_enabled=None):
         """PostAlarmsReqV2
 
         The model defined in huaweicloud sdk
@@ -67,7 +67,9 @@ class PostAlarmsReqV2:
         :type resource_group_id: str
         :param resources: 资源列表，监控范围为指定资源时必传
         :type resources: list[list[Dimension]]
-        :param policies: 告警策略
+        :param alarm_template_id: 告警规则关联告警模板ID
+        :type alarm_template_id: str
+        :param policies: 告警策略，当alarm_template_id字段为空时必填，不为空时不填
         :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
         :param type: 
         :type type: :class:`huaweicloudsdkces.v2.AlarmType`
@@ -85,8 +87,6 @@ class PostAlarmsReqV2:
         :type enabled: bool
         :param notification_enabled: 是否开启告警通知
         :type notification_enabled: bool
-        :param alarm_template_id: 告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化
-        :type alarm_template_id: str
         """
         
         
@@ -96,6 +96,7 @@ class PostAlarmsReqV2:
         self._namespace = None
         self._resource_group_id = None
         self._resources = None
+        self._alarm_template_id = None
         self._policies = None
         self._type = None
         self._alarm_notifications = None
@@ -105,7 +106,6 @@ class PostAlarmsReqV2:
         self._enterprise_project_id = None
         self._enabled = None
         self._notification_enabled = None
-        self._alarm_template_id = None
         self.discriminator = None
 
         self.name = name
@@ -115,6 +115,8 @@ class PostAlarmsReqV2:
         if resource_group_id is not None:
             self.resource_group_id = resource_group_id
         self.resources = resources
+        if alarm_template_id is not None:
+            self.alarm_template_id = alarm_template_id
         if policies is not None:
             self.policies = policies
         self.type = type
@@ -130,8 +132,6 @@ class PostAlarmsReqV2:
             self.enterprise_project_id = enterprise_project_id
         self.enabled = enabled
         self.notification_enabled = notification_enabled
-        if alarm_template_id is not None:
-            self.alarm_template_id = alarm_template_id
 
     @property
     def name(self):
@@ -244,10 +244,32 @@ class PostAlarmsReqV2:
         self._resources = resources
 
     @property
+    def alarm_template_id(self):
+        """Gets the alarm_template_id of this PostAlarmsReqV2.
+
+        告警规则关联告警模板ID
+
+        :return: The alarm_template_id of this PostAlarmsReqV2.
+        :rtype: str
+        """
+        return self._alarm_template_id
+
+    @alarm_template_id.setter
+    def alarm_template_id(self, alarm_template_id):
+        """Sets the alarm_template_id of this PostAlarmsReqV2.
+
+        告警规则关联告警模板ID
+
+        :param alarm_template_id: The alarm_template_id of this PostAlarmsReqV2.
+        :type alarm_template_id: str
+        """
+        self._alarm_template_id = alarm_template_id
+
+    @property
     def policies(self):
         """Gets the policies of this PostAlarmsReqV2.
 
-        告警策略
+        告警策略，当alarm_template_id字段为空时必填，不为空时不填
 
         :return: The policies of this PostAlarmsReqV2.
         :rtype: list[:class:`huaweicloudsdkces.v2.Policy`]
@@ -258,7 +280,7 @@ class PostAlarmsReqV2:
     def policies(self, policies):
         """Sets the policies of this PostAlarmsReqV2.
 
-        告警策略
+        告警策略，当alarm_template_id字段为空时必填，不为空时不填
 
         :param policies: The policies of this PostAlarmsReqV2.
         :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
@@ -436,28 +458,6 @@ class PostAlarmsReqV2:
         :type notification_enabled: bool
         """
         self._notification_enabled = notification_enabled
-
-    @property
-    def alarm_template_id(self):
-        """Gets the alarm_template_id of this PostAlarmsReqV2.
-
-        告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化
-
-        :return: The alarm_template_id of this PostAlarmsReqV2.
-        :rtype: str
-        """
-        return self._alarm_template_id
-
-    @alarm_template_id.setter
-    def alarm_template_id(self, alarm_template_id):
-        """Sets the alarm_template_id of this PostAlarmsReqV2.
-
-        告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化
-
-        :param alarm_template_id: The alarm_template_id of this PostAlarmsReqV2.
-        :type alarm_template_id: str
-        """
-        self._alarm_template_id = alarm_template_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

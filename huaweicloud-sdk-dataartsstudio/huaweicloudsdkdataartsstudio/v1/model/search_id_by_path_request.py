@@ -18,6 +18,7 @@ class SearchIdByPathRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'dlm_type': 'str',
         'path': 'str',
         'limit': 'int',
         'offset': 'int'
@@ -25,18 +26,21 @@ class SearchIdByPathRequest:
 
     attribute_map = {
         'workspace': 'workspace',
+        'dlm_type': 'Dlm-Type',
         'path': 'path',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, workspace=None, path=None, limit=None, offset=None):
+    def __init__(self, workspace=None, dlm_type=None, path=None, limit=None, offset=None):
         """SearchIdByPathRequest
 
         The model defined in huaweicloud sdk
 
         :param workspace: 工作空间id
         :type workspace: str
+        :param dlm_type: dlm版本类型
+        :type dlm_type: str
         :param path: 路径
         :type path: str
         :param limit: limit
@@ -48,13 +52,14 @@ class SearchIdByPathRequest:
         
 
         self._workspace = None
+        self._dlm_type = None
         self._path = None
         self._limit = None
         self._offset = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
+        self.dlm_type = dlm_type
         self.path = path
         if limit is not None:
             self.limit = limit
@@ -82,6 +87,28 @@ class SearchIdByPathRequest:
         :type workspace: str
         """
         self._workspace = workspace
+
+    @property
+    def dlm_type(self):
+        """Gets the dlm_type of this SearchIdByPathRequest.
+
+        dlm版本类型
+
+        :return: The dlm_type of this SearchIdByPathRequest.
+        :rtype: str
+        """
+        return self._dlm_type
+
+    @dlm_type.setter
+    def dlm_type(self, dlm_type):
+        """Sets the dlm_type of this SearchIdByPathRequest.
+
+        dlm版本类型
+
+        :param dlm_type: The dlm_type of this SearchIdByPathRequest.
+        :type dlm_type: str
+        """
+        self._dlm_type = dlm_type
 
     @property
     def path(self):

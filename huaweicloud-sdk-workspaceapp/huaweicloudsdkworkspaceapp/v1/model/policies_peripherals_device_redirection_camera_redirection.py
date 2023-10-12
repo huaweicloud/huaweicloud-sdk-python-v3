@@ -18,7 +18,7 @@ class PoliciesPeripheralsDeviceRedirectionCameraRedirection:
 
     openapi_types = {
         'video_compress_enable': 'bool',
-        'options': 'PoliciesPeripheralsDeviceRedirectionCameraRedirectionOptions'
+        'options': 'CameraRedirectionOptions'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class PoliciesPeripheralsDeviceRedirectionCameraRedirection:
         :param video_compress_enable: 是否开启摄像头设备重定向。取值为： false：表示关闭。 true：表示开启。
         :type video_compress_enable: bool
         :param options: 
-        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsDeviceRedirectionCameraRedirectionOptions`
+        :type options: :class:`huaweicloudsdkworkspaceapp.v1.CameraRedirectionOptions`
         """
         
         
@@ -75,7 +75,7 @@ class PoliciesPeripheralsDeviceRedirectionCameraRedirection:
         """Gets the options of this PoliciesPeripheralsDeviceRedirectionCameraRedirection.
 
         :return: The options of this PoliciesPeripheralsDeviceRedirectionCameraRedirection.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsDeviceRedirectionCameraRedirectionOptions`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CameraRedirectionOptions`
         """
         return self._options
 
@@ -84,7 +84,7 @@ class PoliciesPeripheralsDeviceRedirectionCameraRedirection:
         """Sets the options of this PoliciesPeripheralsDeviceRedirectionCameraRedirection.
 
         :param options: The options of this PoliciesPeripheralsDeviceRedirectionCameraRedirection.
-        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsDeviceRedirectionCameraRedirectionOptions`
+        :type options: :class:`huaweicloudsdkworkspaceapp.v1.CameraRedirectionOptions`
         """
         self._options = options
 

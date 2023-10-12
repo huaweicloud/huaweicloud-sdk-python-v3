@@ -66,9 +66,9 @@ class UpdateLiveDataApiV2Response(SdkResponse):
 
         :param name: 后端API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头。
         :type name: str
-        :param path: 后端API请求路径。  支持英文、数字、中划线、下划线、点等，且以斜杠（/）开头。
+        :param path: 后端API请求路径。  支持英文、数字、中划线、下划线、点等，且以斜杠（/）开头。  更新后端API时，status&#x3D;4为后端API的已部署状态，该状态下后端API请求路径不能修改。
         :type path: str
-        :param method: 后端API请求方法。  支持GET、PUT、POST、DELETE
+        :param method: 后端API请求方法。  支持GET、PUT、POST、DELETE  更新后端API时，status&#x3D;4为后端API的已部署状态，该状态下后端API请求方法不能修改。
         :type method: str
         :param description: 后端API描述。  不支持&lt;，&gt;字符
         :type description: str
@@ -78,7 +78,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
         :type content_type: str
         :param api_signature_id: 后端API为签名认证时绑定的签名密钥编号
         :type api_signature_id: str
-        :param roma_app_id: 后端API归属的集成应用编号
+        :param roma_app_id: 后端API归属的集成应用编号  更新后端API时，status&#x3D;4为后端API的已部署状态，该状态下后端API归属的集成应用编号不能修改。
         :type roma_app_id: str
         :param return_format: API响应信息是否格式化  true： 对响应信息进行格式化  false：对响应信息格式化不进行格式化 
         :type return_format: bool
@@ -181,7 +181,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
     def path(self):
         """Gets the path of this UpdateLiveDataApiV2Response.
 
-        后端API请求路径。  支持英文、数字、中划线、下划线、点等，且以斜杠（/）开头。
+        后端API请求路径。  支持英文、数字、中划线、下划线、点等，且以斜杠（/）开头。  更新后端API时，status=4为后端API的已部署状态，该状态下后端API请求路径不能修改。
 
         :return: The path of this UpdateLiveDataApiV2Response.
         :rtype: str
@@ -192,7 +192,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
     def path(self, path):
         """Sets the path of this UpdateLiveDataApiV2Response.
 
-        后端API请求路径。  支持英文、数字、中划线、下划线、点等，且以斜杠（/）开头。
+        后端API请求路径。  支持英文、数字、中划线、下划线、点等，且以斜杠（/）开头。  更新后端API时，status=4为后端API的已部署状态，该状态下后端API请求路径不能修改。
 
         :param path: The path of this UpdateLiveDataApiV2Response.
         :type path: str
@@ -203,7 +203,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
     def method(self):
         """Gets the method of this UpdateLiveDataApiV2Response.
 
-        后端API请求方法。  支持GET、PUT、POST、DELETE
+        后端API请求方法。  支持GET、PUT、POST、DELETE  更新后端API时，status=4为后端API的已部署状态，该状态下后端API请求方法不能修改。
 
         :return: The method of this UpdateLiveDataApiV2Response.
         :rtype: str
@@ -214,7 +214,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
     def method(self, method):
         """Sets the method of this UpdateLiveDataApiV2Response.
 
-        后端API请求方法。  支持GET、PUT、POST、DELETE
+        后端API请求方法。  支持GET、PUT、POST、DELETE  更新后端API时，status=4为后端API的已部署状态，该状态下后端API请求方法不能修改。
 
         :param method: The method of this UpdateLiveDataApiV2Response.
         :type method: str
@@ -313,7 +313,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
     def roma_app_id(self):
         """Gets the roma_app_id of this UpdateLiveDataApiV2Response.
 
-        后端API归属的集成应用编号
+        后端API归属的集成应用编号  更新后端API时，status=4为后端API的已部署状态，该状态下后端API归属的集成应用编号不能修改。
 
         :return: The roma_app_id of this UpdateLiveDataApiV2Response.
         :rtype: str
@@ -324,7 +324,7 @@ class UpdateLiveDataApiV2Response(SdkResponse):
     def roma_app_id(self, roma_app_id):
         """Sets the roma_app_id of this UpdateLiveDataApiV2Response.
 
-        后端API归属的集成应用编号
+        后端API归属的集成应用编号  更新后端API时，status=4为后端API的已部署状态，该状态下后端API归属的集成应用编号不能修改。
 
         :param roma_app_id: The roma_app_id of this UpdateLiveDataApiV2Response.
         :type roma_app_id: str

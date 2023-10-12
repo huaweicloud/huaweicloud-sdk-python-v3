@@ -63,8 +63,7 @@ class ShowAppsDetailRequest:
         self._time_unit = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
         self.dlm_type = dlm_type
         self.app_id = app_id
         self.start_time = start_time

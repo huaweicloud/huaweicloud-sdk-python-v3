@@ -18,7 +18,7 @@ class PoliciesDisplay:
 
     openapi_types = {
         'display_level': 'str',
-        'options': 'PoliciesDisplayOptions',
+        'options': 'DisplayOptions',
         'rendering_acceleration_enable': 'bool',
         'rendering_acceleration_options': 'PoliciesDisplayRenderingAccelerationOptions',
         'video_card_memory_size': 'int',
@@ -48,7 +48,7 @@ class PoliciesDisplay:
         :param display_level: 显示级别。取值为： LEVEL1：表示等级1。 LEVEL2：表示等级2。 LEVEL3：表示等级3。 LEVEL4：表示等级4（默认/推荐）。 LEVEL5：表示等级5。
         :type display_level: str
         :param options: 
-        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesDisplayOptions`
+        :type options: :class:`huaweicloudsdkworkspaceapp.v1.DisplayOptions`
         :param rendering_acceleration_enable: 是否开启渲染加速。取值为： false：表示关闭。 true：表示开启。
         :type rendering_acceleration_enable: bool
         :param rendering_acceleration_options: 
@@ -124,7 +124,7 @@ class PoliciesDisplay:
         """Gets the options of this PoliciesDisplay.
 
         :return: The options of this PoliciesDisplay.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesDisplayOptions`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.DisplayOptions`
         """
         return self._options
 
@@ -133,7 +133,7 @@ class PoliciesDisplay:
         """Sets the options of this PoliciesDisplay.
 
         :param options: The options of this PoliciesDisplay.
-        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesDisplayOptions`
+        :type options: :class:`huaweicloudsdkworkspaceapp.v1.DisplayOptions`
         """
         self._options = options
 

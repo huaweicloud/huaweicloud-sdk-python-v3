@@ -19,16 +19,18 @@ class AggregatePolicyComplianceSummaryResult:
     openapi_types = {
         'resource_details': 'PolicyComplianceSummaryUnit',
         'assignment_details': 'PolicyComplianceSummaryUnit',
-        'group_name': 'str'
+        'group_name': 'str',
+        'group_account_name': 'str'
     }
 
     attribute_map = {
         'resource_details': 'resource_details',
         'assignment_details': 'assignment_details',
-        'group_name': 'group_name'
+        'group_name': 'group_name',
+        'group_account_name': 'group_account_name'
     }
 
-    def __init__(self, resource_details=None, assignment_details=None, group_name=None):
+    def __init__(self, resource_details=None, assignment_details=None, group_name=None, group_account_name=None):
         """AggregatePolicyComplianceSummaryResult
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class AggregatePolicyComplianceSummaryResult:
         :type assignment_details: :class:`huaweicloudsdkconfig.v1.PolicyComplianceSummaryUnit`
         :param group_name: 分组名称
         :type group_name: str
+        :param group_account_name: 账号名称
+        :type group_account_name: str
         """
         
         
@@ -46,6 +50,7 @@ class AggregatePolicyComplianceSummaryResult:
         self._resource_details = None
         self._assignment_details = None
         self._group_name = None
+        self._group_account_name = None
         self.discriminator = None
 
         if resource_details is not None:
@@ -54,6 +59,8 @@ class AggregatePolicyComplianceSummaryResult:
             self.assignment_details = assignment_details
         if group_name is not None:
             self.group_name = group_name
+        if group_account_name is not None:
+            self.group_account_name = group_account_name
 
     @property
     def resource_details(self):
@@ -112,6 +119,28 @@ class AggregatePolicyComplianceSummaryResult:
         :type group_name: str
         """
         self._group_name = group_name
+
+    @property
+    def group_account_name(self):
+        """Gets the group_account_name of this AggregatePolicyComplianceSummaryResult.
+
+        账号名称
+
+        :return: The group_account_name of this AggregatePolicyComplianceSummaryResult.
+        :rtype: str
+        """
+        return self._group_account_name
+
+    @group_account_name.setter
+    def group_account_name(self, group_account_name):
+        """Sets the group_account_name of this AggregatePolicyComplianceSummaryResult.
+
+        账号名称
+
+        :param group_account_name: The group_account_name of this AggregatePolicyComplianceSummaryResult.
+        :type group_account_name: str
+        """
+        self._group_account_name = group_account_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

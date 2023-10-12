@@ -20,17 +20,23 @@ class MemberGroupCreate:
         'member_group_name': 'str',
         'member_group_remark': 'str',
         'member_group_weight': 'int',
-        'dict_code': 'str'
+        'dict_code': 'str',
+        'microservice_version': 'str',
+        'microservice_port': 'int',
+        'microservice_labels': 'list[MicroserviceLabel]'
     }
 
     attribute_map = {
         'member_group_name': 'member_group_name',
         'member_group_remark': 'member_group_remark',
         'member_group_weight': 'member_group_weight',
-        'dict_code': 'dict_code'
+        'dict_code': 'dict_code',
+        'microservice_version': 'microservice_version',
+        'microservice_port': 'microservice_port',
+        'microservice_labels': 'microservice_labels'
     }
 
-    def __init__(self, member_group_name=None, member_group_remark=None, member_group_weight=None, dict_code=None):
+    def __init__(self, member_group_name=None, member_group_remark=None, member_group_weight=None, dict_code=None, microservice_version=None, microservice_port=None, microservice_labels=None):
         """MemberGroupCreate
 
         The model defined in huaweicloud sdk
@@ -43,6 +49,12 @@ class MemberGroupCreate:
         :type member_group_weight: int
         :param dict_code: VPC通道后端服务器组的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
         :type dict_code: str
+        :param microservice_version: VPC通道后端服务器组的版本，仅VPC通道类型为微服务时支持。
+        :type microservice_version: str
+        :param microservice_port: VPC通道后端服务器组的端口号，仅VPC通道类型为微服务时支持。端口号为0时后端服务器组下的所有地址沿用原来负载端口继承逻辑。
+        :type microservice_port: int
+        :param microservice_labels: VPC通道后端服务器组的标签，仅VPC通道类型为微服务时支持。
+        :type microservice_labels: list[:class:`huaweicloudsdkroma.v2.MicroserviceLabel`]
         """
         
         
@@ -51,6 +63,9 @@ class MemberGroupCreate:
         self._member_group_remark = None
         self._member_group_weight = None
         self._dict_code = None
+        self._microservice_version = None
+        self._microservice_port = None
+        self._microservice_labels = None
         self.discriminator = None
 
         self.member_group_name = member_group_name
@@ -60,6 +75,12 @@ class MemberGroupCreate:
             self.member_group_weight = member_group_weight
         if dict_code is not None:
             self.dict_code = dict_code
+        if microservice_version is not None:
+            self.microservice_version = microservice_version
+        if microservice_port is not None:
+            self.microservice_port = microservice_port
+        if microservice_labels is not None:
+            self.microservice_labels = microservice_labels
 
     @property
     def member_group_name(self):
@@ -148,6 +169,72 @@ class MemberGroupCreate:
         :type dict_code: str
         """
         self._dict_code = dict_code
+
+    @property
+    def microservice_version(self):
+        """Gets the microservice_version of this MemberGroupCreate.
+
+        VPC通道后端服务器组的版本，仅VPC通道类型为微服务时支持。
+
+        :return: The microservice_version of this MemberGroupCreate.
+        :rtype: str
+        """
+        return self._microservice_version
+
+    @microservice_version.setter
+    def microservice_version(self, microservice_version):
+        """Sets the microservice_version of this MemberGroupCreate.
+
+        VPC通道后端服务器组的版本，仅VPC通道类型为微服务时支持。
+
+        :param microservice_version: The microservice_version of this MemberGroupCreate.
+        :type microservice_version: str
+        """
+        self._microservice_version = microservice_version
+
+    @property
+    def microservice_port(self):
+        """Gets the microservice_port of this MemberGroupCreate.
+
+        VPC通道后端服务器组的端口号，仅VPC通道类型为微服务时支持。端口号为0时后端服务器组下的所有地址沿用原来负载端口继承逻辑。
+
+        :return: The microservice_port of this MemberGroupCreate.
+        :rtype: int
+        """
+        return self._microservice_port
+
+    @microservice_port.setter
+    def microservice_port(self, microservice_port):
+        """Sets the microservice_port of this MemberGroupCreate.
+
+        VPC通道后端服务器组的端口号，仅VPC通道类型为微服务时支持。端口号为0时后端服务器组下的所有地址沿用原来负载端口继承逻辑。
+
+        :param microservice_port: The microservice_port of this MemberGroupCreate.
+        :type microservice_port: int
+        """
+        self._microservice_port = microservice_port
+
+    @property
+    def microservice_labels(self):
+        """Gets the microservice_labels of this MemberGroupCreate.
+
+        VPC通道后端服务器组的标签，仅VPC通道类型为微服务时支持。
+
+        :return: The microservice_labels of this MemberGroupCreate.
+        :rtype: list[:class:`huaweicloudsdkroma.v2.MicroserviceLabel`]
+        """
+        return self._microservice_labels
+
+    @microservice_labels.setter
+    def microservice_labels(self, microservice_labels):
+        """Sets the microservice_labels of this MemberGroupCreate.
+
+        VPC通道后端服务器组的标签，仅VPC通道类型为微服务时支持。
+
+        :param microservice_labels: The microservice_labels of this MemberGroupCreate.
+        :type microservice_labels: list[:class:`huaweicloudsdkroma.v2.MicroserviceLabel`]
+        """
+        self._microservice_labels = microservice_labels
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -55,7 +55,7 @@ class ListAclStrategiesV2Request:
         :type name: str
         :param acl_type: 类型 - PERMIT (白名单类型) - DENY (黑名单类型)
         :type acl_type: str
-        :param entity_type: 作用的对象类型： - IP - DOMAIN
+        :param entity_type: 作用的对象类型： - IP - DOMAIN [Site不支持DOMAIN类型。](tag:Site)
         :type entity_type: str
         :param precise_search: 指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  目前仅支持name。
         :type precise_search: str
@@ -225,7 +225,7 @@ class ListAclStrategiesV2Request:
     def entity_type(self):
         """Gets the entity_type of this ListAclStrategiesV2Request.
 
-        作用的对象类型： - IP - DOMAIN
+        作用的对象类型： - IP - DOMAIN [Site不支持DOMAIN类型。](tag:Site)
 
         :return: The entity_type of this ListAclStrategiesV2Request.
         :rtype: str
@@ -236,7 +236,7 @@ class ListAclStrategiesV2Request:
     def entity_type(self, entity_type):
         """Sets the entity_type of this ListAclStrategiesV2Request.
 
-        作用的对象类型： - IP - DOMAIN
+        作用的对象类型： - IP - DOMAIN [Site不支持DOMAIN类型。](tag:Site)
 
         :param entity_type: The entity_type of this ListAclStrategiesV2Request.
         :type entity_type: str

@@ -58,8 +58,7 @@ class SearchDebugInfoRequest:
         self._offset = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
         self.dlm_type = dlm_type
         self.api_id = api_id
         if limit is not None:

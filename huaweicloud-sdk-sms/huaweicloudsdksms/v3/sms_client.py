@@ -1165,6 +1165,8 @@ class SmsClient(Client):
             path_params['task_id'] = local_var_params['task_id']
 
         query_params = []
+        if 'enable_ca_cert' in local_var_params:
+            query_params.append(('enable_ca_cert', local_var_params['enable_ca_cert']))
 
         header_params = {}
 

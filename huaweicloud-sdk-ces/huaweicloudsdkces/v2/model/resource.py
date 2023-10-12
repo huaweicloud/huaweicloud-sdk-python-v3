@@ -31,7 +31,7 @@ class Resource:
 
         The model defined in huaweicloud sdk
 
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
         :type namespace: str
         :param dimensions: 资源的维度信息
         :type dimensions: list[:class:`huaweicloudsdkces.v2.Dimension2`]
@@ -50,7 +50,7 @@ class Resource:
     def namespace(self):
         """Gets the namespace of this Resource.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
         :return: The namespace of this Resource.
         :rtype: str
@@ -61,7 +61,7 @@ class Resource:
     def namespace(self, namespace):
         """Sets the namespace of this Resource.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
         :param namespace: The namespace of this Resource.
         :type namespace: str

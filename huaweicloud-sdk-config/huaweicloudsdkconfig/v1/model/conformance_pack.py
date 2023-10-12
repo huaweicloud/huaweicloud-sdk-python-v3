@@ -26,7 +26,8 @@ class ConformancePack:
         'updated_at': 'str',
         'status': 'str',
         'error_message': 'str',
-        'vars_structure': 'list[VarsStructure]'
+        'vars_structure': 'list[VarsStructure]',
+        'created_by': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ConformancePack:
         'updated_at': 'updated_at',
         'status': 'status',
         'error_message': 'error_message',
-        'vars_structure': 'vars_structure'
+        'vars_structure': 'vars_structure',
+        'created_by': 'created_by'
     }
 
-    def __init__(self, id=None, name=None, stack_id=None, stack_name=None, deployment_id=None, created_at=None, updated_at=None, status=None, error_message=None, vars_structure=None):
+    def __init__(self, id=None, name=None, stack_id=None, stack_name=None, deployment_id=None, created_at=None, updated_at=None, status=None, error_message=None, vars_structure=None, created_by=None):
         """ConformancePack
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class ConformancePack:
         :type error_message: str
         :param vars_structure: 合规规则包参数。
         :type vars_structure: list[:class:`huaweicloudsdkconfig.v1.VarsStructure`]
+        :param created_by: 创建者
+        :type created_by: str
         """
         
         
@@ -81,6 +85,7 @@ class ConformancePack:
         self._status = None
         self._error_message = None
         self._vars_structure = None
+        self._created_by = None
         self.discriminator = None
 
         if id is not None:
@@ -103,6 +108,8 @@ class ConformancePack:
             self.error_message = error_message
         if vars_structure is not None:
             self.vars_structure = vars_structure
+        if created_by is not None:
+            self.created_by = created_by
 
     @property
     def id(self):
@@ -323,6 +330,28 @@ class ConformancePack:
         :type vars_structure: list[:class:`huaweicloudsdkconfig.v1.VarsStructure`]
         """
         self._vars_structure = vars_structure
+
+    @property
+    def created_by(self):
+        """Gets the created_by of this ConformancePack.
+
+        创建者
+
+        :return: The created_by of this ConformancePack.
+        :rtype: str
+        """
+        return self._created_by
+
+    @created_by.setter
+    def created_by(self, created_by):
+        """Sets the created_by of this ConformancePack.
+
+        创建者
+
+        :param created_by: The created_by of this ConformancePack.
+        :type created_by: str
+        """
+        self._created_by = created_by
 
     def to_dict(self):
         """Returns the model properties as a dict"""

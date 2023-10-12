@@ -27,7 +27,7 @@ class CodeArtsDeployClient(Client):
     def list_task_success_rate(self, request):
         """获取指定应用的应用部署成功率
 
-        获取指定应用的应用部署成功率
+        获取指定应用的应用部署成功率。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -85,7 +85,7 @@ class CodeArtsDeployClient(Client):
     def show_project_success_rate(self, request):
         """获取指定项目的应用部署成功率
 
-        获取指定项目的应用部署成功率
+        获取指定项目的应用部署成功率。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -369,7 +369,7 @@ class CodeArtsDeployClient(Client):
     def list_all_app(self, request):
         """获取应用列表
 
-        查询项目下应用列表
+        查询项目下应用列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -425,7 +425,7 @@ class CodeArtsDeployClient(Client):
     def list_deploy_task_history_by_date(self, request):
         """根据开始时间和结束时间查询项目下指定应用的历史部署记录列表
 
-        根据开始时间和结束时间查询项目下指定应用的历史部署记录列表
+        根据开始时间和结束时间查询项目下指定应用的历史部署记录列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -660,6 +660,64 @@ class CodeArtsDeployClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_execution_params(self, request):
+        """查询部署记录的执行参数
+
+        查询部署记录的执行参数
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowExecutionParams
+        :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowExecutionParamsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowExecutionParamsResponse`
+        """
+        return self._show_execution_params_with_http_info(request)
+
+    def _show_execution_params_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'record_id' in local_var_params:
+            query_params.append(('record_id', local_var_params['record_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/history/tasks/{task_id}/params',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowExecutionParamsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def start_deploy_task(self, request):
         """部署应用
 
@@ -721,7 +779,7 @@ class CodeArtsDeployClient(Client):
     def create_environment(self, request):
         """应用下创建环境
 
-        应用下创建环境
+        应用下创建环境。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -779,7 +837,7 @@ class CodeArtsDeployClient(Client):
     def delete_environment(self, request):
         """删除应用下的环境
 
-        删除应用下的环境
+        删除应用下的环境。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -837,7 +895,7 @@ class CodeArtsDeployClient(Client):
     def delete_host_from_environment(self, request):
         """环境下删除主机
 
-        环境下删除主机
+        环境下删除主机。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -897,7 +955,7 @@ class CodeArtsDeployClient(Client):
     def import_host_to_environment(self, request):
         """环境下导入主机
 
-        环境下导入主机
+        环境下导入主机。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -957,7 +1015,7 @@ class CodeArtsDeployClient(Client):
     def list_environments(self, request):
         """查询应用下环境列表
 
-        查询应用下环境列表
+        查询应用下环境列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1025,7 +1083,7 @@ class CodeArtsDeployClient(Client):
     def show_environment_detail(self, request):
         """查询环境详情
 
-        查询环境详情
+        查询环境详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1881,7 +1939,7 @@ class CodeArtsDeployClient(Client):
             request_type=request.__class__.__name__)
 
     def show_deployment_group_detail(self, request):
-        """查询主机集群
+        """查询主机集群详情
 
         根据主机集群id查询主机集群详情。该接口于2024年09月30日后不再维护，推荐使用新版ShowHostClusterDetail接口。
         
@@ -1937,7 +1995,7 @@ class CodeArtsDeployClient(Client):
             request_type=request.__class__.__name__)
 
     def show_host_cluster_detail(self, request):
-        """查询主机集群
+        """查询主机集群详情
 
         根据主机集群id查询主机集群详情。
         

@@ -49,6 +49,8 @@ class FlavorExtraSpec:
         'infogpuname': 'str',
         'infocpuname': 'str',
         'quotagpu': 'str',
+        'quotavif_max_num': 'str',
+        'quotasub_network_interface_max_num': 'str',
         'ecsinstance_architecture': 'str'
     }
 
@@ -85,10 +87,12 @@ class FlavorExtraSpec:
         'infogpuname': 'info:gpu:name',
         'infocpuname': 'info:cpu:name',
         'quotagpu': 'quota:gpu',
+        'quotavif_max_num': 'quota:vif_max_num',
+        'quotasub_network_interface_max_num': 'quota:sub_network_interface_max_num',
         'ecsinstance_architecture': 'ecs:instance_architecture'
     }
 
-    def __init__(self, ecsperformancetype=None, hwnuma_nodes=None, resource_type=None, hpet_support=None, instance_vnictype=None, instance_vnicinstance_bandwidth=None, instance_vnicmax_count=None, quotalocal_disk=None, quotanvme_ssd=None, extra_speciopersistent_grant=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None, condoperationchargestop=None, condspotoperationaz=None, condoperationroles=None, condspotoperationstatus=None, condnetwork=None, condstorage=None, condcomputelive_resizable=None, condcompute=None, infogpuname=None, infocpuname=None, quotagpu=None, ecsinstance_architecture=None):
+    def __init__(self, ecsperformancetype=None, hwnuma_nodes=None, resource_type=None, hpet_support=None, instance_vnictype=None, instance_vnicinstance_bandwidth=None, instance_vnicmax_count=None, quotalocal_disk=None, quotanvme_ssd=None, extra_speciopersistent_grant=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None, condoperationchargestop=None, condspotoperationaz=None, condoperationroles=None, condspotoperationstatus=None, condnetwork=None, condstorage=None, condcomputelive_resizable=None, condcompute=None, infogpuname=None, infocpuname=None, quotagpu=None, quotavif_max_num=None, quotasub_network_interface_max_num=None, ecsinstance_architecture=None):
         """FlavorExtraSpec
 
         The model defined in huaweicloud sdk
@@ -157,6 +161,10 @@ class FlavorExtraSpec:
         :type infocpuname: str
         :param quotagpu: 
         :type quotagpu: str
+        :param quotavif_max_num: 最多支持的弹性网卡个数
+        :type quotavif_max_num: str
+        :param quotasub_network_interface_max_num: 最多支持的辅助弹性网卡个数
+        :type quotasub_network_interface_max_num: str
         :param ecsinstance_architecture: 该规格对应的CPU架构，且仅鲲鹏实例架构规格返回该字段  - 取值为arm64表示CPU架构为鲲鹏计算。
         :type ecsinstance_architecture: str
         """
@@ -195,6 +203,8 @@ class FlavorExtraSpec:
         self._infogpuname = None
         self._infocpuname = None
         self._quotagpu = None
+        self._quotavif_max_num = None
+        self._quotasub_network_interface_max_num = None
         self._ecsinstance_architecture = None
         self.discriminator = None
 
@@ -262,6 +272,10 @@ class FlavorExtraSpec:
             self.infocpuname = infocpuname
         if quotagpu is not None:
             self.quotagpu = quotagpu
+        if quotavif_max_num is not None:
+            self.quotavif_max_num = quotavif_max_num
+        if quotasub_network_interface_max_num is not None:
+            self.quotasub_network_interface_max_num = quotasub_network_interface_max_num
         if ecsinstance_architecture is not None:
             self.ecsinstance_architecture = ecsinstance_architecture
 
@@ -968,6 +982,50 @@ class FlavorExtraSpec:
         :type quotagpu: str
         """
         self._quotagpu = quotagpu
+
+    @property
+    def quotavif_max_num(self):
+        """Gets the quotavif_max_num of this FlavorExtraSpec.
+
+        最多支持的弹性网卡个数
+
+        :return: The quotavif_max_num of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._quotavif_max_num
+
+    @quotavif_max_num.setter
+    def quotavif_max_num(self, quotavif_max_num):
+        """Sets the quotavif_max_num of this FlavorExtraSpec.
+
+        最多支持的弹性网卡个数
+
+        :param quotavif_max_num: The quotavif_max_num of this FlavorExtraSpec.
+        :type quotavif_max_num: str
+        """
+        self._quotavif_max_num = quotavif_max_num
+
+    @property
+    def quotasub_network_interface_max_num(self):
+        """Gets the quotasub_network_interface_max_num of this FlavorExtraSpec.
+
+        最多支持的辅助弹性网卡个数
+
+        :return: The quotasub_network_interface_max_num of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._quotasub_network_interface_max_num
+
+    @quotasub_network_interface_max_num.setter
+    def quotasub_network_interface_max_num(self, quotasub_network_interface_max_num):
+        """Sets the quotasub_network_interface_max_num of this FlavorExtraSpec.
+
+        最多支持的辅助弹性网卡个数
+
+        :param quotasub_network_interface_max_num: The quotasub_network_interface_max_num of this FlavorExtraSpec.
+        :type quotasub_network_interface_max_num: str
+        """
+        self._quotasub_network_interface_max_num = quotasub_network_interface_max_num
 
     @property
     def ecsinstance_architecture(self):

@@ -18,7 +18,7 @@ class AccessConfigWindowsLogInfoCreate:
 
     openapi_types = {
         'categorys': 'list[str]',
-        'time_offset': 'AccessConfigTimeOffsetCreate',
+        'time_offset': 'AccessConfigTimeOffset',
         'event_level': 'list[str]'
     }
 
@@ -36,7 +36,7 @@ class AccessConfigWindowsLogInfoCreate:
         :param categorys: 采集Windows事件日志类型。Application：应用系统，System：系统，Security：安全，Setup：启动
         :type categorys: list[str]
         :param time_offset: 
-        :type time_offset: :class:`huaweicloudsdklts.v2.AccessConfigTimeOffsetCreate`
+        :type time_offset: :class:`huaweicloudsdklts.v2.AccessConfigTimeOffset`
         :param event_level: 事件等级。information：info，warning：告警，error：错误，critical：关键，verbose：冗长
         :type event_level: list[str]
         """
@@ -48,12 +48,9 @@ class AccessConfigWindowsLogInfoCreate:
         self._event_level = None
         self.discriminator = None
 
-        if categorys is not None:
-            self.categorys = categorys
-        if time_offset is not None:
-            self.time_offset = time_offset
-        if event_level is not None:
-            self.event_level = event_level
+        self.categorys = categorys
+        self.time_offset = time_offset
+        self.event_level = event_level
 
     @property
     def categorys(self):
@@ -82,7 +79,7 @@ class AccessConfigWindowsLogInfoCreate:
         """Gets the time_offset of this AccessConfigWindowsLogInfoCreate.
 
         :return: The time_offset of this AccessConfigWindowsLogInfoCreate.
-        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigTimeOffsetCreate`
+        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigTimeOffset`
         """
         return self._time_offset
 
@@ -91,7 +88,7 @@ class AccessConfigWindowsLogInfoCreate:
         """Sets the time_offset of this AccessConfigWindowsLogInfoCreate.
 
         :param time_offset: The time_offset of this AccessConfigWindowsLogInfoCreate.
-        :type time_offset: :class:`huaweicloudsdklts.v2.AccessConfigTimeOffsetCreate`
+        :type time_offset: :class:`huaweicloudsdklts.v2.AccessConfigTimeOffset`
         """
         self._time_offset = time_offset
 

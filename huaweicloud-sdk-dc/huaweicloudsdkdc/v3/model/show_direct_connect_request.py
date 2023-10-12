@@ -18,29 +18,21 @@ class ShowDirectConnectRequest:
 
     openapi_types = {
         'direct_connect_id': 'str',
-        'limit': 'int',
-        'marker': 'str',
         'fields': 'list[str]'
     }
 
     attribute_map = {
         'direct_connect_id': 'direct_connect_id',
-        'limit': 'limit',
-        'marker': 'marker',
         'fields': 'fields'
     }
 
-    def __init__(self, direct_connect_id=None, limit=None, marker=None, fields=None):
+    def __init__(self, direct_connect_id=None, fields=None):
         """ShowDirectConnectRequest
 
         The model defined in huaweicloud sdk
 
         :param direct_connect_id: 物理专线连接ID。
         :type direct_connect_id: str
-        :param limit: 每页返回的个数。 取值范围：1~2000。
-        :type limit: int
-        :param marker: 上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
-        :type marker: str
         :param fields: 显示字段列表
         :type fields: list[str]
         """
@@ -48,16 +40,10 @@ class ShowDirectConnectRequest:
         
 
         self._direct_connect_id = None
-        self._limit = None
-        self._marker = None
         self._fields = None
         self.discriminator = None
 
         self.direct_connect_id = direct_connect_id
-        if limit is not None:
-            self.limit = limit
-        if marker is not None:
-            self.marker = marker
         if fields is not None:
             self.fields = fields
 
@@ -82,50 +68,6 @@ class ShowDirectConnectRequest:
         :type direct_connect_id: str
         """
         self._direct_connect_id = direct_connect_id
-
-    @property
-    def limit(self):
-        """Gets the limit of this ShowDirectConnectRequest.
-
-        每页返回的个数。 取值范围：1~2000。
-
-        :return: The limit of this ShowDirectConnectRequest.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ShowDirectConnectRequest.
-
-        每页返回的个数。 取值范围：1~2000。
-
-        :param limit: The limit of this ShowDirectConnectRequest.
-        :type limit: int
-        """
-        self._limit = limit
-
-    @property
-    def marker(self):
-        """Gets the marker of this ShowDirectConnectRequest.
-
-        上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
-
-        :return: The marker of this ShowDirectConnectRequest.
-        :rtype: str
-        """
-        return self._marker
-
-    @marker.setter
-    def marker(self, marker):
-        """Sets the marker of this ShowDirectConnectRequest.
-
-        上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
-
-        :param marker: The marker of this ShowDirectConnectRequest.
-        :type marker: str
-        """
-        self._marker = marker
 
     @property
     def fields(self):

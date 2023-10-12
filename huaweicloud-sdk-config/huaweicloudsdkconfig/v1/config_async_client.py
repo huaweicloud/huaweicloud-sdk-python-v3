@@ -1259,6 +1259,65 @@ class ConfigAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_organization_conformance_pack_async(self, request):
+        """创建组织合规规则包
+
+        创建新的组织合规规则包。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateOrganizationConformancePack
+        :type request: :class:`huaweicloudsdkconfig.v1.CreateOrganizationConformancePackRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.CreateOrganizationConformancePackResponse`
+        """
+        return self._create_organization_conformance_pack_with_http_info(request)
+
+    def _create_organization_conformance_pack_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_id' in local_var_params:
+            path_params['organization_id'] = local_var_params['organization_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/organizations/{organization_id}/conformance-packs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateOrganizationConformancePackResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_conformance_pack_async(self, request):
         """删除合规规则包
 
@@ -1311,6 +1370,65 @@ class ConfigAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteConformancePackResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_organization_conformance_pack_async(self, request):
+        """删除组织合规规则包
+
+        删除用户的组织合规规则包。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteOrganizationConformancePack
+        :type request: :class:`huaweicloudsdkconfig.v1.DeleteOrganizationConformancePackRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.DeleteOrganizationConformancePackResponse`
+        """
+        return self._delete_organization_conformance_pack_with_http_info(request)
+
+    def _delete_organization_conformance_pack_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_id' in local_var_params:
+            path_params['organization_id'] = local_var_params['organization_id']
+        if 'conformance_pack_id' in local_var_params:
+            path_params['conformance_pack_id'] = local_var_params['conformance_pack_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/organizations/{organization_id}/conformance-packs/{conformance_pack_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteOrganizationConformancePackResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1627,6 +1745,132 @@ class ConfigAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_organization_conformance_pack_statuses_async(self, request):
+        """查看组织合规规则包部署状态
+
+        列举用户的组织合规规则包部署状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOrganizationConformancePackStatuses
+        :type request: :class:`huaweicloudsdkconfig.v1.ListOrganizationConformancePackStatusesRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ListOrganizationConformancePackStatusesResponse`
+        """
+        return self._list_organization_conformance_pack_statuses_with_http_info(request)
+
+    def _list_organization_conformance_pack_statuses_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_id' in local_var_params:
+            path_params['organization_id'] = local_var_params['organization_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'conformance_pack_name' in local_var_params:
+            query_params.append(('conformance_pack_name', local_var_params['conformance_pack_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/organizations/{organization_id}/conformance-packs/statuses',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListOrganizationConformancePackStatusesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_organization_conformance_packs_async(self, request):
+        """列举组织合规规则包
+
+        列举用户的组织合规规则包。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOrganizationConformancePacks
+        :type request: :class:`huaweicloudsdkconfig.v1.ListOrganizationConformancePacksRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ListOrganizationConformancePacksResponse`
+        """
+        return self._list_organization_conformance_packs_with_http_info(request)
+
+    def _list_organization_conformance_packs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_id' in local_var_params:
+            path_params['organization_id'] = local_var_params['organization_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'conformance_pack_name' in local_var_params:
+            query_params.append(('conformance_pack_name', local_var_params['conformance_pack_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/organizations/{organization_id}/conformance-packs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListOrganizationConformancePacksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_built_in_conformance_pack_template_async(self, request):
         """查看预定义合规规则包模板
 
@@ -1738,6 +1982,130 @@ class ConfigAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowConformancePackResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_organization_conformance_pack_async(self, request):
+        """查看组织合规规则包
+
+        根据ID获取单个组织合规规则包详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOrganizationConformancePack
+        :type request: :class:`huaweicloudsdkconfig.v1.ShowOrganizationConformancePackRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ShowOrganizationConformancePackResponse`
+        """
+        return self._show_organization_conformance_pack_with_http_info(request)
+
+    def _show_organization_conformance_pack_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_id' in local_var_params:
+            path_params['organization_id'] = local_var_params['organization_id']
+        if 'conformance_pack_id' in local_var_params:
+            path_params['conformance_pack_id'] = local_var_params['conformance_pack_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/organizations/{organization_id}/conformance-packs/{conformance_pack_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowOrganizationConformancePackResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_organization_conformance_pack_detailed_statuses_async(self, request):
+        """查看组织合规规则包部署详细状态
+
+        查看指定组织合规规则包在成员账户中的部署状态详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOrganizationConformancePackDetailedStatuses
+        :type request: :class:`huaweicloudsdkconfig.v1.ShowOrganizationConformancePackDetailedStatusesRequest`
+        :rtype: :class:`huaweicloudsdkconfig.v1.ShowOrganizationConformancePackDetailedStatusesResponse`
+        """
+        return self._show_organization_conformance_pack_detailed_statuses_with_http_info(request)
+
+    def _show_organization_conformance_pack_detailed_statuses_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'organization_id' in local_var_params:
+            path_params['organization_id'] = local_var_params['organization_id']
+
+        query_params = []
+        if 'conformance_pack_name' in local_var_params:
+            query_params.append(('conformance_pack_name', local_var_params['conformance_pack_name']))
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/organizations/{organization_id}/conformance-packs/detailed-statuses',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowOrganizationConformancePackDetailedStatusesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

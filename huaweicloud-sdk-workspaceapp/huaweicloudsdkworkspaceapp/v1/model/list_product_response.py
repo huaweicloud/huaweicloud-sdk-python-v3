@@ -36,7 +36,7 @@ class ListProductResponse(SdkResponse):
 
         :param availability_zone: 可用分区。将服务创建到指定的可用分区。如果不指定则使用系统随机的可用分区。
         :type availability_zone: str
-        :param os_type: 系统类型，当前仅支持Windows。 * &#x60;Linux&#x60; - * &#x60;Windows&#x60; - * &#x60;Other&#x60; - minLength: 0 maxLength: 32 example: Windows
+        :param os_type: 系统类型，当前仅支持Windows。 * &#x60;Linux&#x60; - * &#x60;Windows&#x60; - * &#x60;Other&#x60; -
         :type os_type: str
         :param products: 产品列表
         :type products: list[:class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`]
@@ -82,7 +82,7 @@ class ListProductResponse(SdkResponse):
     def os_type(self):
         """Gets the os_type of this ListProductResponse.
 
-        系统类型，当前仅支持Windows。 * `Linux` - * `Windows` - * `Other` - minLength: 0 maxLength: 32 example: Windows
+        系统类型，当前仅支持Windows。 * `Linux` - * `Windows` - * `Other` -
 
         :return: The os_type of this ListProductResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ListProductResponse(SdkResponse):
     def os_type(self, os_type):
         """Sets the os_type of this ListProductResponse.
 
-        系统类型，当前仅支持Windows。 * `Linux` - * `Windows` - * `Other` - minLength: 0 maxLength: 32 example: Windows
+        系统类型，当前仅支持Windows。 * `Linux` - * `Windows` - * `Other` -
 
         :param os_type: The os_type of this ListProductResponse.
         :type os_type: str

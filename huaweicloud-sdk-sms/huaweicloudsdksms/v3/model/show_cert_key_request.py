@@ -17,28 +17,35 @@ class ShowCertKeyRequest:
     sensitive_list = []
 
     openapi_types = {
-        'task_id': 'str'
+        'task_id': 'str',
+        'enable_ca_cert': 'bool'
     }
 
     attribute_map = {
-        'task_id': 'task_id'
+        'task_id': 'task_id',
+        'enable_ca_cert': 'enable_ca_cert'
     }
 
-    def __init__(self, task_id=None):
+    def __init__(self, task_id=None, enable_ca_cert=None):
         """ShowCertKeyRequest
 
         The model defined in huaweicloud sdk
 
         :param task_id: 迁移任务ID
         :type task_id: str
+        :param enable_ca_cert: 是否生成ca证书
+        :type enable_ca_cert: bool
         """
         
         
 
         self._task_id = None
+        self._enable_ca_cert = None
         self.discriminator = None
 
         self.task_id = task_id
+        if enable_ca_cert is not None:
+            self.enable_ca_cert = enable_ca_cert
 
     @property
     def task_id(self):
@@ -61,6 +68,28 @@ class ShowCertKeyRequest:
         :type task_id: str
         """
         self._task_id = task_id
+
+    @property
+    def enable_ca_cert(self):
+        """Gets the enable_ca_cert of this ShowCertKeyRequest.
+
+        是否生成ca证书
+
+        :return: The enable_ca_cert of this ShowCertKeyRequest.
+        :rtype: bool
+        """
+        return self._enable_ca_cert
+
+    @enable_ca_cert.setter
+    def enable_ca_cert(self, enable_ca_cert):
+        """Sets the enable_ca_cert of this ShowCertKeyRequest.
+
+        是否生成ca证书
+
+        :param enable_ca_cert: The enable_ca_cert of this ShowCertKeyRequest.
+        :type enable_ca_cert: bool
+        """
+        self._enable_ca_cert = enable_ca_cert
 
     def to_dict(self):
         """Returns the model properties as a dict"""

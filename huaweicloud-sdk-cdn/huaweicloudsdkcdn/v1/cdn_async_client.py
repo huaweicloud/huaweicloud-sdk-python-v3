@@ -1305,6 +1305,8 @@ class CdnAsyncClient(Client):
             query_params.append(('order_type', local_var_params['order_type']))
         if 'file_type' in local_var_params:
             query_params.append(('file_type', local_var_params['file_type']))
+        if 'task_type' in local_var_params:
+            query_params.append(('task_type', local_var_params['task_type']))
 
         header_params = {}
 

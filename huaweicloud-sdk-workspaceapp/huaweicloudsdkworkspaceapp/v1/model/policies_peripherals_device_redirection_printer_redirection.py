@@ -18,7 +18,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirection:
 
     openapi_types = {
         'printer_enable': 'bool',
-        'options': 'PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions'
+        'options': 'PrinterRedirectionOptions'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirection:
         :param printer_enable: 是否开启打印机设备重定向。取值为： - false：表示关闭。 - true：表示开启。
         :type printer_enable: bool
         :param options: 
-        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions`
+        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PrinterRedirectionOptions`
         """
         
         
@@ -75,7 +75,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirection:
         """Gets the options of this PoliciesPeripheralsDeviceRedirectionPrinterRedirection.
 
         :return: The options of this PoliciesPeripheralsDeviceRedirectionPrinterRedirection.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PrinterRedirectionOptions`
         """
         return self._options
 
@@ -84,7 +84,7 @@ class PoliciesPeripheralsDeviceRedirectionPrinterRedirection:
         """Sets the options of this PoliciesPeripheralsDeviceRedirectionPrinterRedirection.
 
         :param options: The options of this PoliciesPeripheralsDeviceRedirectionPrinterRedirection.
-        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsDeviceRedirectionPrinterRedirectionOptions`
+        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PrinterRedirectionOptions`
         """
         self._options = options
 

@@ -17,9 +17,9 @@ class SearchInfo:
     sensitive_list = []
 
     openapi_types = {
-        'total_num': 'float',
-        'return_num': 'float',
-        'search_time': 'float',
+        'total_num': 'int',
+        'return_num': 'int',
+        'search_time': 'int',
         'last_item': 'SearchAfterParam'
     }
 
@@ -36,11 +36,11 @@ class SearchInfo:
         The model defined in huaweicloud sdk
 
         :param total_num: 搜索结果总数。
-        :type total_num: float
+        :type total_num: int
         :param return_num: 返回结果总数。
-        :type return_num: float
+        :type return_num: int
         :param search_time: 搜索过程耗时，单位为毫秒。
-        :type search_time: float
+        :type search_time: int
         :param last_item: 
         :type last_item: :class:`huaweicloudsdkimagesearch.v2.SearchAfterParam`
         """
@@ -69,7 +69,7 @@ class SearchInfo:
         搜索结果总数。
 
         :return: The total_num of this SearchInfo.
-        :rtype: float
+        :rtype: int
         """
         return self._total_num
 
@@ -80,7 +80,7 @@ class SearchInfo:
         搜索结果总数。
 
         :param total_num: The total_num of this SearchInfo.
-        :type total_num: float
+        :type total_num: int
         """
         self._total_num = total_num
 
@@ -91,7 +91,7 @@ class SearchInfo:
         返回结果总数。
 
         :return: The return_num of this SearchInfo.
-        :rtype: float
+        :rtype: int
         """
         return self._return_num
 
@@ -102,7 +102,7 @@ class SearchInfo:
         返回结果总数。
 
         :param return_num: The return_num of this SearchInfo.
-        :type return_num: float
+        :type return_num: int
         """
         self._return_num = return_num
 
@@ -113,7 +113,7 @@ class SearchInfo:
         搜索过程耗时，单位为毫秒。
 
         :return: The search_time of this SearchInfo.
-        :rtype: float
+        :rtype: int
         """
         return self._search_time
 
@@ -124,7 +124,7 @@ class SearchInfo:
         搜索过程耗时，单位为毫秒。
 
         :param search_time: The search_time of this SearchInfo.
-        :type search_time: float
+        :type search_time: int
         """
         self._search_time = search_time
 

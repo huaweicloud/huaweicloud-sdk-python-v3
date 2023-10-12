@@ -38,7 +38,10 @@ class VehicleLicenseResult:
         'remarks': 'str',
         'inspection_record': 'str',
         'code_number': 'str',
-        'text_location': 'object'
+        'text_location': 'object',
+        'energy_type': 'str',
+        'front': 'VehicleLicenseFront',
+        'back': 'VehicleLicenseback'
     }
 
     attribute_map = {
@@ -63,10 +66,13 @@ class VehicleLicenseResult:
         'remarks': 'remarks',
         'inspection_record': 'inspection_record',
         'code_number': 'code_number',
-        'text_location': 'text_location'
+        'text_location': 'text_location',
+        'energy_type': 'energy_type',
+        'front': 'front',
+        'back': 'back'
     }
 
-    def __init__(self, number=None, vehicle_type=None, name=None, address=None, use_character=None, model=None, engine_no=None, vin=None, register_date=None, issue_date=None, issuing_authority=None, file_no=None, approved_passengers=None, gross_mass=None, unladen_mass=None, approved_load=None, dimension=None, traction_mass=None, remarks=None, inspection_record=None, code_number=None, text_location=None):
+    def __init__(self, number=None, vehicle_type=None, name=None, address=None, use_character=None, model=None, engine_no=None, vin=None, register_date=None, issue_date=None, issuing_authority=None, file_no=None, approved_passengers=None, gross_mass=None, unladen_mass=None, approved_load=None, dimension=None, traction_mass=None, remarks=None, inspection_record=None, code_number=None, text_location=None, energy_type=None, front=None, back=None):
         """VehicleLicenseResult
 
         The model defined in huaweicloud sdk
@@ -115,6 +121,12 @@ class VehicleLicenseResult:
         :type code_number: str
         :param text_location: 文本框在原图位置。输出左上、右上、右下、左下四个点坐标。  当“return_text_location”设置为“true”时才返回。 
         :type text_location: object
+        :param energy_type: 能源类型。 
+        :type energy_type: str
+        :param front: 
+        :type front: :class:`huaweicloudsdkocr.v1.VehicleLicenseFront`
+        :param back: 
+        :type back: :class:`huaweicloudsdkocr.v1.VehicleLicenseback`
         """
         
         
@@ -141,6 +153,9 @@ class VehicleLicenseResult:
         self._inspection_record = None
         self._code_number = None
         self._text_location = None
+        self._energy_type = None
+        self._front = None
+        self._back = None
         self.discriminator = None
 
         if number is not None:
@@ -187,6 +202,12 @@ class VehicleLicenseResult:
             self.code_number = code_number
         if text_location is not None:
             self.text_location = text_location
+        if energy_type is not None:
+            self.energy_type = energy_type
+        if front is not None:
+            self.front = front
+        if back is not None:
+            self.back = back
 
     @property
     def number(self):
@@ -671,6 +692,64 @@ class VehicleLicenseResult:
         :type text_location: object
         """
         self._text_location = text_location
+
+    @property
+    def energy_type(self):
+        """Gets the energy_type of this VehicleLicenseResult.
+
+        能源类型。 
+
+        :return: The energy_type of this VehicleLicenseResult.
+        :rtype: str
+        """
+        return self._energy_type
+
+    @energy_type.setter
+    def energy_type(self, energy_type):
+        """Sets the energy_type of this VehicleLicenseResult.
+
+        能源类型。 
+
+        :param energy_type: The energy_type of this VehicleLicenseResult.
+        :type energy_type: str
+        """
+        self._energy_type = energy_type
+
+    @property
+    def front(self):
+        """Gets the front of this VehicleLicenseResult.
+
+        :return: The front of this VehicleLicenseResult.
+        :rtype: :class:`huaweicloudsdkocr.v1.VehicleLicenseFront`
+        """
+        return self._front
+
+    @front.setter
+    def front(self, front):
+        """Sets the front of this VehicleLicenseResult.
+
+        :param front: The front of this VehicleLicenseResult.
+        :type front: :class:`huaweicloudsdkocr.v1.VehicleLicenseFront`
+        """
+        self._front = front
+
+    @property
+    def back(self):
+        """Gets the back of this VehicleLicenseResult.
+
+        :return: The back of this VehicleLicenseResult.
+        :rtype: :class:`huaweicloudsdkocr.v1.VehicleLicenseback`
+        """
+        return self._back
+
+    @back.setter
+    def back(self, back):
+        """Sets the back of this VehicleLicenseResult.
+
+        :param back: The back of this VehicleLicenseResult.
+        :type back: :class:`huaweicloudsdkocr.v1.VehicleLicenseback`
+        """
+        self._back = back
 
     def to_dict(self):
         """Returns the model properties as a dict"""

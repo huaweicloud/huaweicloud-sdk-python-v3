@@ -24,6 +24,64 @@ class RdsClient(Client):
 
         return ClientBuilder(clazz)
 
+    def add_postgresql_hba_conf(self, request):
+        """在pg_hba.conf文件最后新增单个或多个配置
+
+        以传入配置全量覆盖当前pg_hba.conf文件内容，入参为空时用默认配置覆盖当前文件内容
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddPostgresqlHbaConf
+        :type request: :class:`huaweicloudsdkrds.v3.AddPostgresqlHbaConfRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.AddPostgresqlHbaConfResponse`
+        """
+        return self._add_postgresql_hba_conf_with_http_info(request)
+
+    def _add_postgresql_hba_conf_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/hba-info',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddPostgresqlHbaConfResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def apply_configuration_async(self, request):
         """应用参数模板
 
@@ -1138,6 +1196,64 @@ class RdsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteManualBackupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_postgresql_hba_conf(self, request):
+        """删除pg_hba.conf文件的单个或多个配置
+
+        删除pg_hba.conf文件的单个或多个配置，以priority做唯一标识
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeletePostgresqlHbaConf
+        :type request: :class:`huaweicloudsdkrds.v3.DeletePostgresqlHbaConfRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeletePostgresqlHbaConfResponse`
+        """
+        return self._delete_postgresql_hba_conf_with_http_info(request)
+
+    def _delete_postgresql_hba_conf_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/hba-info',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeletePostgresqlHbaConfResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2644,6 +2760,122 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_postgresql_hba_info(self, request):
+        """查询实例的pg_hba.conf文件配置
+
+        查询实例的pg_hba.conf文件配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPostgresqlHbaInfo
+        :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlHbaInfoRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListPostgresqlHbaInfoResponse`
+        """
+        return self._list_postgresql_hba_info_with_http_info(request)
+
+    def _list_postgresql_hba_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/hba-info',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPostgresqlHbaInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_postgresql_hba_info_history(self, request):
+        """查询实例的pg_hba.conf文件修改历史
+
+        查询实例的pg_hba.conf文件修改历史
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPostgresqlHbaInfoHistory
+        :type request: :class:`huaweicloudsdkrds.v3.ListPostgresqlHbaInfoHistoryRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListPostgresqlHbaInfoHistoryResponse`
+        """
+        return self._list_postgresql_hba_info_history_with_http_info(request)
+
+    def _list_postgresql_hba_info_history_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/hba-info/history',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPostgresqlHbaInfoHistoryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_predefined_tag(self, request):
         """list_predefined_tag
 
@@ -3562,6 +3794,64 @@ class RdsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='MigrateFollowerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def modify_postgresql_hba_conf(self, request):
+        """修改pg_hba.conf文件的单个或多个配置
+
+        修改/新增pg_hba.conf文件的单个或多个配置，以priority做唯一标识，priority不存在的新增，存在的修改
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyPostgresqlHbaConf
+        :type request: :class:`huaweicloudsdkrds.v3.ModifyPostgresqlHbaConfRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ModifyPostgresqlHbaConfResponse`
+        """
+        return self._modify_postgresql_hba_conf_with_http_info(request)
+
+    def _modify_postgresql_hba_conf_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/hba-info',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ModifyPostgresqlHbaConfResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -31,7 +31,7 @@ class CreateClusterInstanceVolumeBody:
 
         The model defined in huaweicloud sdk
 
-        :param volume_type: 卷类型。  - COMMON：普通I/O。 - HIGH：高I/O。 - ULTRAHIGH：超高I/O。
+        :param volume_type: 卷类型。  - COMMON：普通I/O。 - HIGH：高I/O。 - ULTRAHIGH：超高I/O。 - ESSD：极速SSD。
         :type volume_type: str
         :param size: 卷大小，必须大于0且为4和10的公倍数，磁盘规格大小可以通过[获取实例规格列表](ListFlavors.xml)中diskrange属性获得。 单位：GB。
         :type size: int
@@ -50,7 +50,7 @@ class CreateClusterInstanceVolumeBody:
     def volume_type(self):
         """Gets the volume_type of this CreateClusterInstanceVolumeBody.
 
-        卷类型。  - COMMON：普通I/O。 - HIGH：高I/O。 - ULTRAHIGH：超高I/O。
+        卷类型。  - COMMON：普通I/O。 - HIGH：高I/O。 - ULTRAHIGH：超高I/O。 - ESSD：极速SSD。
 
         :return: The volume_type of this CreateClusterInstanceVolumeBody.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateClusterInstanceVolumeBody:
     def volume_type(self, volume_type):
         """Sets the volume_type of this CreateClusterInstanceVolumeBody.
 
-        卷类型。  - COMMON：普通I/O。 - HIGH：高I/O。 - ULTRAHIGH：超高I/O。
+        卷类型。  - COMMON：普通I/O。 - HIGH：高I/O。 - ULTRAHIGH：超高I/O。 - ESSD：极速SSD。
 
         :param volume_type: The volume_type of this CreateClusterInstanceVolumeBody.
         :type volume_type: str

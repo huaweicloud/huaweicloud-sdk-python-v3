@@ -41,15 +41,15 @@ class ApiConditionBase:
 
         :param req_param_name: 关联的请求参数对象名称。策略类型为param时必选
         :type req_param_name: str
-        :param sys_param_name: 系统参数名称。策略类型为system时必选。支持以下系统参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET 
+        :param sys_param_name: 系统参数名称。策略类型为system时必选。支持以下系统参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET - reqPath：请求路径，废弃。如 /a/b - reqMethod：请求方法，废弃。如 GET 
         :type sys_param_name: str
         :param cookie_param_name: COOKIE参数名称;策略类型为cookie时必选
         :type cookie_param_name: str
-        :param condition_type: 策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param时必选 
+        :param condition_type: 策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param或cookie时必选 
         :type condition_type: str
-        :param condition_origin: 策略类型 - param：参数 - source：源IP - system：系统参数
+        :param condition_origin: 策略类型 - param：参数 - source：源IP - system：系统参数 - cookie: COOKIE参数
         :type condition_origin: str
-        :param condition_value: 策略值
+        :param condition_value: 策略值;策略类型为param，source,cookie时必填
         :type condition_value: str
         """
         
@@ -100,7 +100,7 @@ class ApiConditionBase:
     def sys_param_name(self):
         """Gets the sys_param_name of this ApiConditionBase.
 
-        系统参数名称。策略类型为system时必选。支持以下系统参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET 
+        系统参数名称。策略类型为system时必选。支持以下系统参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET - reqPath：请求路径，废弃。如 /a/b - reqMethod：请求方法，废弃。如 GET 
 
         :return: The sys_param_name of this ApiConditionBase.
         :rtype: str
@@ -111,7 +111,7 @@ class ApiConditionBase:
     def sys_param_name(self, sys_param_name):
         """Sets the sys_param_name of this ApiConditionBase.
 
-        系统参数名称。策略类型为system时必选。支持以下系统参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET 
+        系统参数名称。策略类型为system时必选。支持以下系统参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET - reqPath：请求路径，废弃。如 /a/b - reqMethod：请求方法，废弃。如 GET 
 
         :param sys_param_name: The sys_param_name of this ApiConditionBase.
         :type sys_param_name: str
@@ -144,7 +144,7 @@ class ApiConditionBase:
     def condition_type(self):
         """Gets the condition_type of this ApiConditionBase.
 
-        策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param时必选 
+        策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param或cookie时必选 
 
         :return: The condition_type of this ApiConditionBase.
         :rtype: str
@@ -155,7 +155,7 @@ class ApiConditionBase:
     def condition_type(self, condition_type):
         """Sets the condition_type of this ApiConditionBase.
 
-        策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param时必选 
+        策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param或cookie时必选 
 
         :param condition_type: The condition_type of this ApiConditionBase.
         :type condition_type: str
@@ -166,7 +166,7 @@ class ApiConditionBase:
     def condition_origin(self):
         """Gets the condition_origin of this ApiConditionBase.
 
-        策略类型 - param：参数 - source：源IP - system：系统参数
+        策略类型 - param：参数 - source：源IP - system：系统参数 - cookie: COOKIE参数
 
         :return: The condition_origin of this ApiConditionBase.
         :rtype: str
@@ -177,7 +177,7 @@ class ApiConditionBase:
     def condition_origin(self, condition_origin):
         """Sets the condition_origin of this ApiConditionBase.
 
-        策略类型 - param：参数 - source：源IP - system：系统参数
+        策略类型 - param：参数 - source：源IP - system：系统参数 - cookie: COOKIE参数
 
         :param condition_origin: The condition_origin of this ApiConditionBase.
         :type condition_origin: str
@@ -188,7 +188,7 @@ class ApiConditionBase:
     def condition_value(self):
         """Gets the condition_value of this ApiConditionBase.
 
-        策略值
+        策略值;策略类型为param，source,cookie时必填
 
         :return: The condition_value of this ApiConditionBase.
         :rtype: str
@@ -199,7 +199,7 @@ class ApiConditionBase:
     def condition_value(self, condition_value):
         """Sets the condition_value of this ApiConditionBase.
 
-        策略值
+        策略值;策略类型为param，source,cookie时必填
 
         :param condition_value: The condition_value of this ApiConditionBase.
         :type condition_value: str

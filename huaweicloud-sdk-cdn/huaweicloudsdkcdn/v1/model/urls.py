@@ -24,7 +24,8 @@ class Urls:
         'task_id': 'int',
         'modify_time': 'int',
         'create_time': 'int',
-        'file_type': 'str'
+        'file_type': 'str',
+        'mode': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class Urls:
         'task_id': 'task_id',
         'modify_time': 'modify_time',
         'create_time': 'create_time',
-        'file_type': 'file_type'
+        'file_type': 'file_type',
+        'mode': 'mode'
     }
 
-    def __init__(self, id=None, url=None, status=None, type=None, task_id=None, modify_time=None, create_time=None, file_type=None):
+    def __init__(self, id=None, url=None, status=None, type=None, task_id=None, modify_time=None, create_time=None, file_type=None, mode=None):
         """Urls
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class Urls:
         :type create_time: int
         :param file_type: 文件类型，目录还是文件。
         :type file_type: str
+        :param mode: 目录刷新方式，all：刷新目录下全部资源；detect_modify_refresh：刷新目录下已变更的资源，默认值为all。
+        :type mode: str
         """
         
         
@@ -71,6 +75,7 @@ class Urls:
         self._modify_time = None
         self._create_time = None
         self._file_type = None
+        self._mode = None
         self.discriminator = None
 
         if id is not None:
@@ -89,6 +94,8 @@ class Urls:
             self.create_time = create_time
         if file_type is not None:
             self.file_type = file_type
+        if mode is not None:
+            self.mode = mode
 
     @property
     def id(self):
@@ -265,6 +272,28 @@ class Urls:
         :type file_type: str
         """
         self._file_type = file_type
+
+    @property
+    def mode(self):
+        """Gets the mode of this Urls.
+
+        目录刷新方式，all：刷新目录下全部资源；detect_modify_refresh：刷新目录下已变更的资源，默认值为all。
+
+        :return: The mode of this Urls.
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        """Sets the mode of this Urls.
+
+        目录刷新方式，all：刷新目录下全部资源；detect_modify_refresh：刷新目录下已变更的资源，默认值为all。
+
+        :param mode: The mode of this Urls.
+        :type mode: str
+        """
+        self._mode = mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

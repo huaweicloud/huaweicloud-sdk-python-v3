@@ -17,28 +17,57 @@ class ShrinkNodesReq:
     sensitive_list = []
 
     openapi_types = {
+        'migrate_data': 'str',
         'shrink_nodes': 'list[str]'
     }
 
     attribute_map = {
+        'migrate_data': 'migrate_data',
         'shrink_nodes': 'shrinkNodes'
     }
 
-    def __init__(self, shrink_nodes=None):
+    def __init__(self, migrate_data=None, shrink_nodes=None):
         """ShrinkNodesReq
 
         The model defined in huaweicloud sdk
 
+        :param migrate_data: 是否迁移数据。 - \&quot;true\&quot;：迁移数据。 - \&quot;false\&quot;：不迁移数据。
+        :type migrate_data: str
         :param shrink_nodes: 需要缩容的节点ID。  通过[查询集群详情](ShowClusterDetail.xml)获取instances中的id属性。
         :type shrink_nodes: list[str]
         """
         
         
 
+        self._migrate_data = None
         self._shrink_nodes = None
         self.discriminator = None
 
+        if migrate_data is not None:
+            self.migrate_data = migrate_data
         self.shrink_nodes = shrink_nodes
+
+    @property
+    def migrate_data(self):
+        """Gets the migrate_data of this ShrinkNodesReq.
+
+        是否迁移数据。 - \"true\"：迁移数据。 - \"false\"：不迁移数据。
+
+        :return: The migrate_data of this ShrinkNodesReq.
+        :rtype: str
+        """
+        return self._migrate_data
+
+    @migrate_data.setter
+    def migrate_data(self, migrate_data):
+        """Sets the migrate_data of this ShrinkNodesReq.
+
+        是否迁移数据。 - \"true\"：迁移数据。 - \"false\"：不迁移数据。
+
+        :param migrate_data: The migrate_data of this ShrinkNodesReq.
+        :type migrate_data: str
+        """
+        self._migrate_data = migrate_data
 
     @property
     def shrink_nodes(self):

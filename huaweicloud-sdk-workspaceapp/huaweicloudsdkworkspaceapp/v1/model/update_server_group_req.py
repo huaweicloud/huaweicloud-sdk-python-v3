@@ -20,27 +20,31 @@ class UpdateServerGroupReq:
         'name': 'str',
         'description': 'str',
         'route_policy': 'RoutePolicy',
+        'storage_mount_policy': 'StorageFolderMountType',
         'image_id': 'str',
         'image_product_id': 'str',
         'image_type': 'ImageTypeEnum',
         'system_disk_type': 'VolumeType',
         'system_disk_size': 'int',
-        'ou_name': 'str'
+        'ou_name': 'str',
+        'app_type': 'AppTypeEnum'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
         'route_policy': 'route_policy',
+        'storage_mount_policy': 'storage_mount_policy',
         'image_id': 'image_id',
         'image_product_id': 'image_product_id',
         'image_type': 'image_type',
         'system_disk_type': 'system_disk_type',
         'system_disk_size': 'system_disk_size',
-        'ou_name': 'ou_name'
+        'ou_name': 'ou_name',
+        'app_type': 'app_type'
     }
 
-    def __init__(self, name=None, description=None, route_policy=None, image_id=None, image_product_id=None, image_type=None, system_disk_type=None, system_disk_size=None, ou_name=None):
+    def __init__(self, name=None, description=None, route_policy=None, storage_mount_policy=None, image_id=None, image_product_id=None, image_type=None, system_disk_type=None, system_disk_size=None, ou_name=None, app_type=None):
         """UpdateServerGroupReq
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,8 @@ class UpdateServerGroupReq:
         :type description: str
         :param route_policy: 
         :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
+        :param storage_mount_policy: 
+        :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
         :param image_id: 服务器组关联的镜像ID，更新镜像ID只对组下新创建的云服务器生效
         :type image_id: str
         :param image_product_id: 服务器组的镜像的productId
@@ -63,6 +69,8 @@ class UpdateServerGroupReq:
         :type system_disk_size: int
         :param ou_name: 默认组织名称
         :type ou_name: str
+        :param app_type: 
+        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
         """
         
         
@@ -70,12 +78,14 @@ class UpdateServerGroupReq:
         self._name = None
         self._description = None
         self._route_policy = None
+        self._storage_mount_policy = None
         self._image_id = None
         self._image_product_id = None
         self._image_type = None
         self._system_disk_type = None
         self._system_disk_size = None
         self._ou_name = None
+        self._app_type = None
         self.discriminator = None
 
         if name is not None:
@@ -84,6 +94,8 @@ class UpdateServerGroupReq:
             self.description = description
         if route_policy is not None:
             self.route_policy = route_policy
+        if storage_mount_policy is not None:
+            self.storage_mount_policy = storage_mount_policy
         if image_id is not None:
             self.image_id = image_id
         if image_product_id is not None:
@@ -96,6 +108,8 @@ class UpdateServerGroupReq:
             self.system_disk_size = system_disk_size
         if ou_name is not None:
             self.ou_name = ou_name
+        if app_type is not None:
+            self.app_type = app_type
 
     @property
     def name(self):
@@ -158,6 +172,24 @@ class UpdateServerGroupReq:
         :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
         """
         self._route_policy = route_policy
+
+    @property
+    def storage_mount_policy(self):
+        """Gets the storage_mount_policy of this UpdateServerGroupReq.
+
+        :return: The storage_mount_policy of this UpdateServerGroupReq.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
+        """
+        return self._storage_mount_policy
+
+    @storage_mount_policy.setter
+    def storage_mount_policy(self, storage_mount_policy):
+        """Sets the storage_mount_policy of this UpdateServerGroupReq.
+
+        :param storage_mount_policy: The storage_mount_policy of this UpdateServerGroupReq.
+        :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
+        """
+        self._storage_mount_policy = storage_mount_policy
 
     @property
     def image_id(self):
@@ -282,6 +314,24 @@ class UpdateServerGroupReq:
         :type ou_name: str
         """
         self._ou_name = ou_name
+
+    @property
+    def app_type(self):
+        """Gets the app_type of this UpdateServerGroupReq.
+
+        :return: The app_type of this UpdateServerGroupReq.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        """
+        return self._app_type
+
+    @app_type.setter
+    def app_type(self, app_type):
+        """Sets the app_type of this UpdateServerGroupReq.
+
+        :param app_type: The app_type of this UpdateServerGroupReq.
+        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        """
+        self._app_type = app_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

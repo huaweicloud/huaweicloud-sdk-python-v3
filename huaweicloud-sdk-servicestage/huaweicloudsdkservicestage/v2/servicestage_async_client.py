@@ -28,6 +28,8 @@ class ServiceStageAsyncClient(Client):
         """修改应用信息
 
         此API通过应用ID修改应用信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeApplication
@@ -85,6 +87,8 @@ class ServiceStageAsyncClient(Client):
         """修改应用配置信息
 
         通过此API修改应用配置信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeApplicationConfiguration
@@ -142,6 +146,8 @@ class ServiceStageAsyncClient(Client):
         """根据组件ID修改组件信息
 
         此API通过组件ID修改组件信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeComponent
@@ -201,6 +207,8 @@ class ServiceStageAsyncClient(Client):
         """修改环境信息
 
         此API通过环境ID修改环境信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeEnvironment
@@ -258,6 +266,8 @@ class ServiceStageAsyncClient(Client):
         """修改应用组件实例
 
         通过此API修改应用组件实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeInstance
@@ -319,6 +329,8 @@ class ServiceStageAsyncClient(Client):
         """修改环境资源
 
         此API用来修改环境资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ChangeResourceInEnvironment
@@ -378,6 +390,8 @@ class ServiceStageAsyncClient(Client):
         应用是一个功能相对完备的业务系统，由一个或多个特性相关的组件组成。
         
         此API用来创建应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateApplication
@@ -490,6 +504,8 @@ class ServiceStageAsyncClient(Client):
         应用组件是组成应用的某个业务特性实现，以代码或者软件包为载体，可独立部署运行。
         
         此API用来在应用中创建组件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateComponent
@@ -549,6 +565,8 @@ class ServiceStageAsyncClient(Client):
         环境是用于应用部署和运行的计算、存储、网络等基础设施的集合。Servicestage把相同VPC下的CCE集群加上多个ELB、RDS、DCS实例组合为一个环境，如：开发环境，测试环境，预生产环境，生产环境。环境内网络互通，可以按环境维度来管理资源、部署服务，减少具体基础设施运维管理的复杂性。
         
         此API用来创建环境。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateEnvironment
@@ -604,6 +622,8 @@ class ServiceStageAsyncClient(Client):
         """创建组件实例
 
         此API用来创建应用组件实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateInstance
@@ -718,6 +738,8 @@ class ServiceStageAsyncClient(Client):
         """根据应用ID删除应用
 
         此API通过应用ID删除应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteApplication
@@ -773,6 +795,8 @@ class ServiceStageAsyncClient(Client):
         """删除应用配置
 
         通过此API删除应用配置信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteApplicationConfiguration
@@ -830,6 +854,8 @@ class ServiceStageAsyncClient(Client):
         """根据应用组件ID删除应用组件
 
         此API通过应用组件ID删除应用组件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteComponent
@@ -889,6 +915,8 @@ class ServiceStageAsyncClient(Client):
         """根据环境ID删除环境
 
         此API通过环境ID删除环境。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteEnvironment
@@ -944,6 +972,8 @@ class ServiceStageAsyncClient(Client):
         """删除应用组件实例
 
         通过此API删除应用组件实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteInstance
@@ -1170,6 +1200,8 @@ class ServiceStageAsyncClient(Client):
         """获取所有应用
 
         通过此API可以获取所有已经创建的应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListApplications
@@ -1231,6 +1263,8 @@ class ServiceStageAsyncClient(Client):
         """获取应用所有组件
 
         通过此API获取应用下所有应用组件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListComponents
@@ -1294,6 +1328,8 @@ class ServiceStageAsyncClient(Client):
         """获取所有环境
 
         此API用来获取所有已经创建环境。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListEnvironments
@@ -1355,6 +1391,8 @@ class ServiceStageAsyncClient(Client):
         """获取组件实例快照
 
         通过此API获取应用组件实例快照信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListInstanceSnapshots
@@ -1422,6 +1460,8 @@ class ServiceStageAsyncClient(Client):
         """获取应用组件实例
 
         通过此API获取组件下的所有组件实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListInstances
@@ -1487,6 +1527,8 @@ class ServiceStageAsyncClient(Client):
         """获取应用配置
 
         通过此API获取应用配置信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowApplicationConfiguration
@@ -1544,6 +1586,8 @@ class ServiceStageAsyncClient(Client):
         """根据应用ID获取应用详细信息
 
         此API通过应用ID获取应用详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowApplicationDetail
@@ -1599,6 +1643,8 @@ class ServiceStageAsyncClient(Client):
         """根据组件ID获取应用组件信息
 
         通过组件ID获取应用组件信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowComponentDetail
@@ -1656,6 +1702,8 @@ class ServiceStageAsyncClient(Client):
         """根据环境ID获取环境详细信息
 
         此API通过环境ID获取环境详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowEnvironmentDetail
@@ -1711,6 +1759,8 @@ class ServiceStageAsyncClient(Client):
         """根据实例ID获取实例详细信息
 
         此API通过实例ID获取实例详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowInstanceDetail
@@ -1770,6 +1820,8 @@ class ServiceStageAsyncClient(Client):
         """获取部署任务详细信息
 
         通过此API获取部署任务详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowJobDetail
@@ -1833,6 +1885,8 @@ class ServiceStageAsyncClient(Client):
         """对组件实例的操作
 
         通过此API获取对组件实例的操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateInstanceAction
@@ -1951,6 +2005,8 @@ class ServiceStageAsyncClient(Client):
         """创建仓库文件
 
         在指定仓库项目下创建文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateFile
@@ -2016,6 +2072,8 @@ class ServiceStageAsyncClient(Client):
         """创建项目hook
 
         创建指定项目的hook。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateHook
@@ -2077,6 +2135,8 @@ class ServiceStageAsyncClient(Client):
         """创建OAuth授权
 
         创建指定Git仓库类型的OAuth授权。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateOAuth
@@ -2136,6 +2196,8 @@ class ServiceStageAsyncClient(Client):
         """创建口令授权
 
         创建指定Git仓库类型的口令授权。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePasswordAuth
@@ -2193,6 +2255,8 @@ class ServiceStageAsyncClient(Client):
         """创建私人令牌授权
 
         创建指定Git仓库类型的私人令牌授权。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreatePersonalAuth
@@ -2250,6 +2314,8 @@ class ServiceStageAsyncClient(Client):
         """创建软件仓库项目
 
         创建指定组织下的软件仓库项目。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateProject
@@ -2309,6 +2375,8 @@ class ServiceStageAsyncClient(Client):
         """创建项目tag标签
 
         创建指定项目的tag标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for CreateTag
@@ -2372,6 +2440,8 @@ class ServiceStageAsyncClient(Client):
         """删除仓库授权
 
         通过名称删除仓库授权。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteAuthorize
@@ -2427,6 +2497,8 @@ class ServiceStageAsyncClient(Client):
         """删除仓库文件
 
         删除指定项目仓库下的文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteFile
@@ -2494,6 +2566,8 @@ class ServiceStageAsyncClient(Client):
         """删除项目hook
 
         删除指定项目的hook。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteHook
@@ -2555,6 +2629,8 @@ class ServiceStageAsyncClient(Client):
         """删除项目tag标签
 
         删除指定项目的tag标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for DeleteTag
@@ -2616,6 +2692,8 @@ class ServiceStageAsyncClient(Client):
         """获取仓库授权列表
 
         获取所有Git仓库授权信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListAuthorizations
@@ -2669,6 +2747,8 @@ class ServiceStageAsyncClient(Client):
         """获取项目分支
 
         获取指定项目的所有分支列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListBranches
@@ -2728,6 +2808,8 @@ class ServiceStageAsyncClient(Client):
         """获取项目commit提交记录
 
         获取指定项目的最近10次commit提交记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListCommits
@@ -2789,6 +2871,8 @@ class ServiceStageAsyncClient(Client):
         """获取项目hooks
 
         获取指定项目的所有hooks
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListHooks
@@ -2848,6 +2932,8 @@ class ServiceStageAsyncClient(Client):
         """获取仓库的namespaces
 
         获取仓库的namespaces。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListNamespaces
@@ -2903,6 +2989,8 @@ class ServiceStageAsyncClient(Client):
         """获取组织下所有项目
 
         获取指定组织下的所有项目。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListProjects
@@ -2960,6 +3048,8 @@ class ServiceStageAsyncClient(Client):
         """获取项目的所有tag标签
 
         获取指定项目的所有tag标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTags
@@ -3019,6 +3109,8 @@ class ServiceStageAsyncClient(Client):
         """获取仓库文件列表
 
         获取指定项目仓库的文件列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTrees
@@ -3080,6 +3172,8 @@ class ServiceStageAsyncClient(Client):
         """获取仓库文件内容
 
         获取指定项目仓库下文件的内容。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowContent
@@ -3143,6 +3237,8 @@ class ServiceStageAsyncClient(Client):
         """通过clone url 获取仓库信息
 
         通过指定的clone url 获取仓库信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowProjectDetail
@@ -3200,6 +3296,8 @@ class ServiceStageAsyncClient(Client):
         """获取授权重定向URL
 
         获取指定Git仓库类型的授权重定向URL。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ShowRedirectUrl
@@ -3257,6 +3355,8 @@ class ServiceStageAsyncClient(Client):
         """更新仓库文件内容
 
         更新指定项目仓库下的文件内容。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for UpdateFile
@@ -3322,6 +3422,8 @@ class ServiceStageAsyncClient(Client):
         """获取所有支持的应用资源规格
 
         通过此API获取所用支持的应用资源规格。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListFlavors
@@ -3375,6 +3477,8 @@ class ServiceStageAsyncClient(Client):
         """获取所有支持的应用组件运行时类型
 
         此API用来获取所有支持应用组件运行时类型。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListRuntimes
@@ -3428,6 +3532,8 @@ class ServiceStageAsyncClient(Client):
         """获取所有支持的应用组件模板
 
         此API用来获取所有内置应用组件模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
 
 
         :param request: Request instance for ListTemplates

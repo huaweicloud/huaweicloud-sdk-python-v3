@@ -24,7 +24,8 @@ class ClusterListInstances:
         'spec_code': 'str',
         'az_code': 'str',
         'ip': 'str',
-        'volume': 'ClusterVolumeRsp'
+        'volume': 'ClusterVolumeRsp',
+        'resource_id': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ClusterListInstances:
         'spec_code': 'specCode',
         'az_code': 'azCode',
         'ip': 'ip',
-        'volume': 'volume'
+        'volume': 'volume',
+        'resource_id': 'resourceId'
     }
 
-    def __init__(self, status=None, type=None, id=None, name=None, spec_code=None, az_code=None, ip=None, volume=None):
+    def __init__(self, status=None, type=None, id=None, name=None, spec_code=None, az_code=None, ip=None, volume=None, resource_id=None):
         """ClusterListInstances
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ClusterListInstances:
         :type ip: str
         :param volume: 
         :type volume: :class:`huaweicloudsdkcss.v1.ClusterVolumeRsp`
+        :param resource_id: 该实例对应的资源Id。
+        :type resource_id: str
         """
         
         
@@ -71,6 +75,7 @@ class ClusterListInstances:
         self._az_code = None
         self._ip = None
         self._volume = None
+        self._resource_id = None
         self.discriminator = None
 
         if status is not None:
@@ -89,6 +94,8 @@ class ClusterListInstances:
             self.ip = ip
         if volume is not None:
             self.volume = volume
+        if resource_id is not None:
+            self.resource_id = resource_id
 
     @property
     def status(self):
@@ -261,6 +268,28 @@ class ClusterListInstances:
         :type volume: :class:`huaweicloudsdkcss.v1.ClusterVolumeRsp`
         """
         self._volume = volume
+
+    @property
+    def resource_id(self):
+        """Gets the resource_id of this ClusterListInstances.
+
+        该实例对应的资源Id。
+
+        :return: The resource_id of this ClusterListInstances.
+        :rtype: str
+        """
+        return self._resource_id
+
+    @resource_id.setter
+    def resource_id(self, resource_id):
+        """Sets the resource_id of this ClusterListInstances.
+
+        该实例对应的资源Id。
+
+        :param resource_id: The resource_id of this ClusterListInstances.
+        :type resource_id: str
+        """
+        self._resource_id = resource_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

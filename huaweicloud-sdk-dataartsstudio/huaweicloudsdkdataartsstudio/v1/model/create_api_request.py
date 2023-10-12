@@ -48,8 +48,7 @@ class CreateApiRequest:
         self._body = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
         self.dlm_type = dlm_type
         if body is not None:
             self.body = body

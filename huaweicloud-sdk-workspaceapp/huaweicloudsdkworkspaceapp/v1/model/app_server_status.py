@@ -24,6 +24,7 @@ class AppServerStatus:
     ERROR = "ERROR"
     DELETING = "DELETING"
     FREEZE = "FREEZE"
+    BUILD_IMAGE = "BUILD_IMAGE"
     NULL = "null"
     """
     Attributes:

@@ -85,7 +85,7 @@ class ListAlarmResponseAlarms:
         :type notification_end_time: str
         :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
-        :param alarm_template_id: 告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化
+        :param alarm_template_id: 告警规则关联告警模板ID
         :type alarm_template_id: str
         """
         
@@ -447,7 +447,7 @@ class ListAlarmResponseAlarms:
     def alarm_template_id(self):
         """Gets the alarm_template_id of this ListAlarmResponseAlarms.
 
-        告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化
+        告警规则关联告警模板ID
 
         :return: The alarm_template_id of this ListAlarmResponseAlarms.
         :rtype: str
@@ -458,7 +458,7 @@ class ListAlarmResponseAlarms:
     def alarm_template_id(self, alarm_template_id):
         """Sets the alarm_template_id of this ListAlarmResponseAlarms.
 
-        告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化
+        告警规则关联告警模板ID
 
         :param alarm_template_id: The alarm_template_id of this ListAlarmResponseAlarms.
         :type alarm_template_id: str

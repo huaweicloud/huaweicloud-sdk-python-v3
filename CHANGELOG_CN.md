@@ -1,3 +1,980 @@
+# 3.1.61 2023-10-12
+
+### HuaweiCloud SDK AOS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListStackSets`
+    - `CreateStackSet`
+    - `ShowStackSetTemplate`
+    - `ListStackSetOperations`
+    - `ShowStackSetMetadata`
+    - `ListStackInstances`
+    - `CreateStackInstance`
+    - `DeleteStackInstance`
+    - `DeployStackSet`
+    - `DeleteStackSet`
+    - `UpdateStackSet`
+    - `ShowStackSetOperationMetadata`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK AS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateScalingConfig**
+    - 请求参数变更
+      - `+ source_scaling_configuration_id`
+
+### HuaweiCloud SDK BMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateBareMetalServers**
+    - 请求参数变更
+      - `* server.server_tags: map<string, list<SystemTags>> -> list<SystemTags>`
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 支持接口`ListSubCustomerNewTag`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CAE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListApplications**
+    - 响应参数变更
+      - `- items.annotations`
+  - **CreateApplication**
+    - 请求参数变更
+      - `- metadata.annotations`
+    - 响应参数变更
+      - `- metadata.annotations`
+  - **ShowApplication**
+    - 响应参数变更
+      - `- metadata.annotations`
+  - **ListComponentConfigurations**
+    - 响应参数变更
+      - `+ items.data.spec`
+      - `+ items.data.metadata`
+      - `* items.data: object -> object<ListComponentConfigurationsResponseData>`
+  - **CreateComponentConfiguration**
+    - 请求参数变更
+      - `+ items.data.spec`
+      - `+ items.data.metadata`
+      - `* items.data: object -> object<ConfigurationData>`
+  - **ListComponentSnapshots**
+    - 响应参数变更
+      - `- items.description`
+      - `+ items.context.runtime: enum value [Java17,Nodejs14,Nodejs16]`
+  - **ShowComponent**
+    - 响应参数变更
+      - `+ spec.runtime: enum value [Java17,Nodejs14,Nodejs16]`
+  - **UpdateComponent**
+    - 请求参数变更
+      - `+ spec.runtime: enum value [Java17,Nodejs14,Nodejs16]`
+  - **CreateComponent**
+    - 响应参数变更
+      - `+ spec.runtime: enum value [Java17,Nodejs14,Nodejs16]`
+  - **ListComponents**
+    - 响应参数变更
+      - `+ items.spec.runtime: enum value [Java17,Nodejs14,Nodejs16]`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowHistoryTasks**
+    - 请求参数变更
+      - `+ task_type`
+  - **ShowUrlTaskInfo**
+    - 响应参数变更
+      - `+ result.mode`
+
+### HuaweiCloud SDK CES
+
+- _新增特性_
+  - 支持以下接口：
+    - `BatchUpdateNotificationMasks`
+    - `BatchUpdateNotificationMaskTime`
+    - `UpdateNotificationMasks`
+    - `BatchDeleteNotificationMasks`
+    - `ListNotificationMasks`
+    - `ListNotificationMaskResources`
+    - `ListOneClickAlarms`
+    - `CreateOneClickAlarm`
+    - `ListOneClickAlarmRules`
+    - `BatchUpdateOneClickAlarmsEnabledState`
+    - `BatchDeleteOneClickAlarms`
+    - `UpdateOneClickAlarmNotifications`
+    - `BatchUpdateOneClickAlarmPoliciesEnabledState`
+    - `UpdateAlarmNotifications`
+    - `ListCesTargetProjectTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAlarmHistories**
+    - 响应参数变更
+      - `+ alarm_histories.condition.suppress_duration: enum value [86400]`
+  - **ListAgentInvocations**
+    - 请求参数变更
+      - `- instance_name`
+      - `+ invocation_type: enum value [RETRY]`
+    - 响应参数变更
+      - `+ invocations.invocation_type: enum value [RETRY]`
+  - **ListAgentStatus**
+    - 响应参数变更
+      - `+ agent_status.extensions.version`
+
+### HuaweiCloud SDK CodeArtsDeploy
+
+- _新增特性_
+  - 支持接口`ShowExecutionParams`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAllApp**
+    - 请求参数变更
+      - `+ states`
+      - `+ group_id`
+
+### HuaweiCloud SDK Config
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListOrganizationConformancePacks`
+    - `CreateOrganizationConformancePack`
+    - `ShowOrganizationConformancePack`
+    - `DeleteOrganizationConformancePack`
+    - `ListOrganizationConformancePackStatuses`
+    - `ShowOrganizationConformancePackDetailedStatuses`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowConfigurationAggregatorSourcesStatus**
+    - 响应参数变更
+      - `+ aggregated_source_statuses.source_name`
+  - **ShowConformancePack**
+    - 响应参数变更
+      - `+ created_by`
+  - **CreateConformancePack**
+    - 响应参数变更
+      - `+ created_by`
+  - **ListConformancePacks**
+    - 响应参数变更
+      - `+ created_by`
+      - `+ value.created_by`
+  - **ShowAggregatePolicyStateComplianceSummary**
+    - 响应参数变更
+      - `+ results.group_account_name`
+  - **ListAggregateComplianceByPolicyAssignment**
+    - 响应参数变更
+      - `+ aggregate_policy_assignments.account_name`
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 支持以下接口：
+    - `DeleteConfig`
+    - `StopHotPipeline`
+    - `ListCerts`
+    - `ListElbs`
+    - `EnableOrDisableElb`
+    - `ShowElbDetail`
+    - `CreateElbListener`
+    - `UpdateEsListener`
+    - `ListElbCerts`
+    - `ListAiOps`
+    - `CreateAiOps`
+    - `DeleteAiOps`
+    - `ListSmnTopics`
+    - `UpgradeCore`
+    - `ListImages`
+    - `UpgradeDetail`
+    - `RetryUpgradeTask`
+    - `UpdateAzByInstanceType`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateShrinkNodes**
+    - 请求参数变更
+      - `+ migrate_data`
+  - **CreateCnf**
+    - 请求参数变更
+      - `+ sensitive_words`
+  - **UpdateCnf**
+    - 请求参数变更
+      - `+ sensitive_words`
+  - **ShowClusterDetail**
+    - 响应参数变更
+      - `+ bandwidthResourceId`
+      - `+ instances.resourceId`
+      - `+ instances.volume.resourceIds`
+      - `+ publicKibanaResp.bandwidthResourceId`
+  - **ListClustersDetails**
+    - 响应参数变更
+      - `+ clusters.bandwidthResourceId`
+      - `+ clusters.instances.resourceId`
+      - `+ clusters.instances.volume.resourceIds`
+      - `+ clusters.publicKibanaResp.bandwidthResourceId`
+
+### HuaweiCloud SDK CTS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListOperations`
+    - `BatchCreateResourceTags`
+    - `BatchDeleteResourceTags`
+    - `ListUserResources`
+    - `CheckObsBuckets`
+    - `ListTraceResources`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 支持以下接口：
+    - `StopFactorySupplementDataInstance`
+    - `ShowFactorySupplementData`
+    - `CreateFactorySupplementDataInstance`
+    - `ShowFactoryEnv`
+    - `CreateFactoryEnv`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **PublishApi**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **ShowApplyDetail**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **ShowMessageDetail**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **ShowCatalogDetail**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **UpdateCatalog**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **CreateServiceCatalog**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **DeleteServiceCatalog**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **MigrateCatalog**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **MigrateApi**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **SearchIdByPath**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **ShowPathById**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **PublishApiToInstance**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ExecuteApiToInstance**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **AuthorizeApiToInstance**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **AuthorizeActionApiToInstance**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **DeleteApp**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ShowAppInfo**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **UpdateApp**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ShowApisOverview**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ShowAppsOverview**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ShowApisDetail**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ShowAppsDetail**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **BatchApproveApply**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **ListApply**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **ConfirmMessage**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **ListMessage**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **ListAllCatalogList**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **ListApiCatalogList**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **ListCatalogList**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **ShowPathObjectById**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+    - 响应参数变更
+      - `+ paths.name`
+  - **DebugApi**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **SearchPublishInfo**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ListInstanceList**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **SearchDebugInfo**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ListApicInstances**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ListApicGroups**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **CreateApp**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ListApps**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ListApisTop**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ListAppsTop**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ShowApisDashboard**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ShowApiDashboard**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ShowAppsDashboard**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ListApiTopN**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ListApis**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **CreateApi**
+    - 请求参数变更
+      - `* workspace: optional -> required`
+  - **ShowApi**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **UpdateApi**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **SearchAuthorizeApp**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+  - **SearchBindApi**
+    - 请求参数变更
+      - `+ Dlm-Type`
+      - `* workspace: optional -> required`
+
+### HuaweiCloud SDK DC
+
+- _新增特性_
+  - 支持以下接口：
+    - `UpdateVifPeer`
+    - `DeleteVifPeer`
+    - `CreateVifPeer`
+    - `ShowQuotas`
+    - `ListSwitchoverTestRecords`
+    - `SwitchoverTest`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteResourceTag**
+    - 请求参数变更
+      - `+ resource_type: enum value [dc-lag]`
+  - **ListProjectTags**
+    - 请求参数变更
+      - `+ resource_type: enum value [dc-lag]`
+  - **ShowResourceTag**
+    - 请求参数变更
+      - `+ resource_type: enum value [dc-lag]`
+  - **CreateResourceTag**
+    - 请求参数变更
+      - `+ resource_type: enum value [dc-lag]`
+  - **BatchCreateResourceTags**
+    - 请求参数变更
+      - `+ resource_type: enum value [dc-lag]`
+  - **ShowDirectConnect**
+    - 请求参数变更
+      - `- limit`
+      - `- marker`
+    - 响应参数变更
+      - `- direct_connect.type: enum value [onestop_standard,onestop_hosted]`
+      - `- direct_connect.charge_mode: enum value [port]`
+  - **UpdateDirectConnect**
+    - 响应参数变更
+      - `- direct_connect.type: enum value [onestop_standard,onestop_hosted]`
+      - `- direct_connect.charge_mode: enum value [port]`
+  - **ListDirectConnects**
+    - 响应参数变更
+      - `- direct_connects.type: enum value [onestop_standard,onestop_hosted]`
+      - `- direct_connects.charge_mode: enum value [port]`
+  - **ShowVirtualGateway**
+    - 响应参数变更
+      - `- virtual_gateway.type: enum value [default]`
+  - **UpdateVirtualGateway**
+    - 响应参数变更
+      - `- virtual_gateway.type: enum value [default]`
+  - **ListVirtualGateways**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+    - 响应参数变更
+      - `- virtual_gateways.type: enum value [default]`
+  - **CreateVirtualGateway**
+    - 响应参数变更
+      - `- virtual_gateway.type: enum value [default]`
+  - **ShowVirtualInterface**
+    - 响应参数变更
+      - `+ virtual_interface.service_type: enum value [GDGW]`
+      - `- virtual_interface.service_type: enum value [vpc,GDWW]`
+  - **UpdateVirtualInterface**
+    - 响应参数变更
+      - `+ virtual_interface.service_type: enum value [GDGW]`
+      - `- virtual_interface.service_type: enum value [vpc,GDWW]`
+  - **ListVirtualInterfaces**
+    - 响应参数变更
+      - `+ virtual_interfaces.service_type: enum value [GDGW]`
+      - `- virtual_interfaces.service_type: enum value [vpc,GDWW]`
+  - **CreateVirtualInterface**
+    - 请求参数变更
+      - `+ virtual_interface.service_type: enum value [GDGW]`
+      - `- virtual_interface.service_type: enum value [GDWW]`
+    - 响应参数变更
+      - `+ virtual_interface.service_type: enum value [GDGW]`
+      - `- virtual_interface.service_type: enum value [vpc,GDWW]`
+  - **ListTagResourceInstances**
+    - 请求参数变更
+      - `+ resource_type: enum value [dc-lag]`
+
+### HuaweiCloud SDK DGC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RunOnce**
+    - 响应参数变更
+      - `* instanceId: string -> int64`
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 支持以下接口：
+    - `SaveClusterDescriptionInfo`
+    - `ExecuteDatabaseOmUserAction`
+    - `ShowInstance`
+    - `ShowDatabaseOmUserStatus`
+    - `ListConfigurationsAuditRecords`
+    - `ShowClusterRedistribution`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ReinstallServerWithoutCloudInit**
+    - 请求参数变更
+      - `+ os-reinstall.metadata.BYOL`
+  - **ListFlavors**
+    - 响应参数变更
+      - `+ flavors.os_extra_specs.quota:vif_max_num`
+      - `+ flavors.os_extra_specs.quota:sub_network_interface_max_num`
+  - **ListResizeFlavors**
+    - 响应参数变更
+      - `+ flavors.extra_specs.quota:vif_max_num`
+      - `+ flavors.extra_specs.quota:sub_network_interface_max_num`
+
+### HuaweiCloud SDK EG
+
+- _新增特性_
+  - 支持接口`PutOfficialEvents`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ShowFunctionUrl`、`UpdateFunctionUrl`、`CreateFunctionUrl`、`DeleteFunctionUrl`
+  - **ListAsyncInvocations**
+    - 响应参数变更
+      - `+ next_marker`
+      - `+ count`
+  - **ListActiveAsyncInvocations**
+    - 响应参数变更
+      - `+ next_marker`
+      - `+ count`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstances**
+    - 响应参数变更
+      - `+ instances.datastore.complete_version`
+      - `+ instances.datastore.hotfix_versions`
+  - **ListInstancesDetails**
+    - 响应参数变更
+      - `+ instances.datastore.complete_version`
+      - `+ instances.datastore.hotfix_versions`
+
+### HuaweiCloud SDK ImageSearch
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RunAddData**
+    - 请求参数变更
+      - `* optional_params.category: int -> int32`
+    - 响应参数变更
+      - `* data.image_info.objects.category: number -> integer`
+  - **RunDeleteData**
+    - 响应参数变更
+      - `* data.delete_info.total_num: int -> int32`
+      - `* data.delete_info.delete_num: int -> int32`
+  - **RunSearch**
+    - 请求参数变更
+      - `* optional_params.category: int -> int32`
+    - 响应参数变更
+      - `* data.image_info.category: number -> integer`
+      - `* data.image_info.objects.category: number -> integer`
+      - `* data.search_info.total_num: int -> int32`
+      - `* data.search_info.return_num: int -> int32`
+      - `* data.search_info.search_time: long -> int32`
+  - **RunCheckData**
+    - 响应参数变更
+      - `* data.check_info.total_num: int -> int32`
+      - `* data.check_info.return_num: int -> int32`
+
+### HuaweiCloud SDK IMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowJob**
+    - 响应参数变更
+      - `+ entities.addition_error_code`
+      - `+ entities.addition_error_msg`
+      - `+ entities.error_code`
+      - `+ entities.error`
+      - `+ entities.alarm_code`
+
+### HuaweiCloud SDK LakeFormation
+
+- _新增特性_
+  - 支持接口`ListLakeFormationInstanceTags`、`ListQuotas`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK MetaStudio
+
+- _新增特性_
+  - 支持接口`CreatePhotoDetection`、`ShowPhotoDetection`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateSmartLiveRoom**
+    - 请求参数变更
+      - `- video_config.codec: enum value [VP9]`
+  - **ShowSmartLiveRoom**
+    - 响应参数变更
+      - `- video_config.codec: enum value [VP9]`
+  - **UpdateSmartLiveRoom**
+    - 请求参数变更
+      - `- video_config.codec: enum value [VP9]`
+    - 响应参数变更
+      - `- video_config.codec: enum value [VP9]`
+  - **StartSmartLive**
+    - 请求参数变更
+      - `- video_config.codec: enum value [VP9]`
+  - **Create2DDigitalHumanVideo**
+    - 请求参数变更
+      - `- video_config.codec: enum value [VP9]`
+  - **Show2DDigitalHumanVideo**
+    - 响应参数变更
+      - `- video_config.codec: enum value [VP9]`
+  - **CreateVideoScripts**
+    - 请求参数变更
+      - `- video_config.codec: enum value [VP9]`
+  - **ShowVideoScript**
+    - 响应参数变更
+      - `- video_config.codec: enum value [VP9]`
+  - **UpdateVideoScript**
+    - 请求参数变更
+      - `- video_config.codec: enum value [VP9]`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 支持接口`RecognizeColombiaIdCard`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeVehicleLicense**
+    - 响应参数变更
+      - `+ result.energy_type`
+      - `+ result.front`
+      - `+ result.back`
+  - **RecognizeWebImage**
+    - 请求参数变更
+      - `+ detect_text_direction`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListPostgresqlHbaInfo`
+    - `ModifyPostgresqlHbaConf`
+    - `AddPostgresqlHbaConf`
+    - `DeletePostgresqlHbaConf`
+    - `ListPostgresqlHbaInfoHistory`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpgradeDbVersionNew**
+    - 请求参数变更
+      - `+ is_delayed`
+      - `- delay`
+
+### HuaweiCloud SDK ServiceStage
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListAuthorizations`
+    - `ShowRedirectUrl`
+    - `CreateOAuth`
+    - `CreatePersonalAuth`
+    - `CreatePasswordAuth`
+    - `DeleteAuthorize`
+    - `ListNamespaces`
+    - `ShowProjectDetail`
+    - `ListProjects`
+    - `CreateProject`
+    - `ListBranches`
+    - `ListTags`
+    - `CreateTag`
+    - `DeleteTag`
+    - `ListCommits`
+    - `ListHooks`
+    - `CreateHook`
+    - `DeleteHook`
+    - `ListTrees`
+    - `ShowContent`
+    - `UpdateFile`
+    - `CreateFile`
+    - `DeleteFile`
+    - `ListTemplates`
+    - `ListRuntimes`
+    - `ListFlavors`
+    - `ListEnvironments`
+    - `CreateEnvironment`
+    - `ShowEnvironmentDetail`
+    - `ChangeEnvironment`
+    - `DeleteEnvironment`
+    - `ListApplications`
+    - `CreateApplication`
+    - `ShowApplicationDetail`
+    - `ChangeApplication`
+    - `DeleteApplication`
+    - `ShowApplicationConfiguration`
+    - `ChangeApplicationConfiguration`
+    - `DeleteApplicationConfiguration`
+    - `ListComponents`
+    - `CreateComponent`
+    - `ShowComponentDetail`
+    - `ChangeComponent`
+    - `DeleteComponent`
+    - `ListInstances`
+    - `CreateInstance`
+    - `ShowInstanceDetail`
+    - `ChangeInstance`
+    - `DeleteInstance`
+    - `UpdateInstanceAction`
+    - `ListInstanceSnapshots`
+    - `ShowJobDetail`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ModifyComponent**
+    - 请求参数变更
+      - `+ external_accesses.protocol`
+      - `- external_accesses.prorocol`
+  - **CreateComponent**
+    - 请求参数变更
+      - `+ external_accesses`
+  - **ShowComponentsInApplication**
+    - 响应参数变更
+      - `+ components.external_accesses.protocol`
+      - `- components.external_accesses.prorocol`
+  - **ShowComponents**
+    - 响应参数变更
+      - `+ components.external_accesses.protocol`
+      - `- components.external_accesses.prorocol`
+
+### HuaweiCloud SDK SMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowCertKey**
+    - 请求参数变更
+      - `+ enable_ca_cert`
+    - 响应参数变更
+      - `+ target_mgmt_private_key`
+      - `+ target_data_cert`
+      - `+ target_data_private_key`
+      - `+ target_mgmt_cert`
+      - `+ ca`
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListTrafficMirrorSessions`
+    - `CreateTrafficMirrorSession`
+    - `ShowTrafficMirrorSession`
+    - `UpdateTrafficMirrorSession`
+    - `DeleteTrafficMirrorSession`
+    - `RemoveSourcesFromTrafficMirrorSession`
+    - `AddSourcesToTrafficMirrorSession`
+    - `ListTrafficMirrorFilters`
+    - `CreateTrafficMirrorFilter`
+    - `ShowTrafficMirrorFilter`
+    - `UpdateTrafficMirrorFilter`
+    - `DeleteTrafficMirrorFilter`
+    - `ListTrafficMirrorFilterRules`
+    - `CreateTrafficMirrorFilterRule`
+    - `ShowTrafficMirrorFilterRule`
+    - `UpdateTrafficMirrorFilterRule`
+    - `DeleteTrafficMirrorFilterRule`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK WorkspaceApp
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreateOrUpdateStoragePolicyStatement`
+    - `ShowPublishableApp`
+    - `UploadAppIcon`
+    - `ListSessionByUserName`
+    - `LogoffUserSession`
+    - `ListSessionType`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListStoragePolicyStatement**
+    - 响应参数变更
+      - `+ roam_actions`
+      - `+ actions`
+      - `+ policy_statement_id`
+      - `+ items.roam_actions`
+  - **UpdateAppGroup**
+    - 响应参数变更
+      - `+ app_type`
+  - **ListAppConnection**
+    - 请求参数变更
+      - `* limit: required -> optional`
+      - `* offset: required -> optional`
+  - **ListUserConnection**
+    - 请求参数变更
+      - `* limit: required -> optional`
+      - `* offset: required -> optional`
+  - **UpdateServerGroup**
+    - 请求参数变更
+      - `+ storage_mount_policy`
+      - `+ app_type`
+      - `+ route_policy.cpu_threshold`
+      - `+ route_policy.mem_threshold`
+  - **ListProduct**
+    - 响应参数变更
+      - `+ products.expire_time`
+      - `+ products.support_gpu_type`
+  - **CreateAppGroup**
+    - 请求参数变更
+      - `+ app_type`
+    - 响应参数变更
+      - `+ app_type`
+  - **ListAppGroup**
+    - 请求参数变更
+      - `+ app_type`
+      - `* limit: required -> optional`
+      - `* offset: required -> optional`
+    - 响应参数变更
+      - `+ app_type`
+      - `+ items.app_type`
+  - **ListPublishedApp**
+    - 请求参数变更
+      - `* limit: required -> optional`
+      - `* offset: required -> optional`
+  - **PublishApp**
+    - 请求参数变更
+      - `+ accounts.telephone_number`
+  - **AddAppGroupAuthorization**
+    - 请求参数变更
+      - `+ accounts.telephone_number`
+  - **ListAppGroupAuthorization**
+    - 请求参数变更
+      - `* limit: required -> optional`
+      - `* offset: required -> optional`
+  - **BatchDeleteAppGroupAuthorization**
+    - 请求参数变更
+      - `+ accounts.telephone_number`
+  - **ListStorageAssignment**
+    - 响应参数变更
+      - `+ roam_actions`
+      - `+ actions`
+      - `+ policy_statement_id`
+      - `+ items.policy_statement.roam_actions`
+  - **ListServers**
+    - 请求参数变更
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+    - 响应参数变更
+      - `+ items.product_info.expire_time`
+      - `+ items.product_info.support_gpu_type`
+      - `+ items.vm_status: enum value [BUILD_IMAGE]`
+      - `+ items.task_status: enum value [build_image]`
+  - **CreateServerGroup**
+    - 请求参数变更
+      - `+ app_type`
+      - `+ extra_session_type`
+      - `+ extra_session_size`
+      - `+ route_policy.cpu_threshold`
+      - `+ route_policy.mem_threshold`
+    - 响应参数变更
+      - `+ app_type`
+      - `+ extra_session_size`
+      - `+ extra_session_type`
+      - `+ storage_mount_policy`
+      - `+ product_info.expire_time`
+      - `+ product_info.support_gpu_type`
+  - **ListServerGroups**
+    - 请求参数变更
+      - `+ app_type`
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+    - 响应参数变更
+      - `+ app_type`
+      - `+ extra_session_size`
+      - `+ extra_session_type`
+      - `+ storage_mount_policy`
+      - `+ items.extra_session_type`
+      - `+ items.extra_session_size`
+      - `+ items.app_type`
+      - `+ items.storage_mount_policy`
+      - `+ items.product_info.expire_time`
+      - `+ items.product_info.support_gpu_type`
+  - **ListPolicyGroup**
+    - 请求参数变更
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+  - **ListPolicyTemplate**
+    - 请求参数变更
+      - `* offset: required -> optional`
+      - `* limit: required -> optional`
+
 # 3.1.60 2023-09-19
 
 ### HuaweiCloud SDK IdentityCenterStore

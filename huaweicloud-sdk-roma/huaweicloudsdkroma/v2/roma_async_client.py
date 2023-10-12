@@ -213,7 +213,8 @@ class RomaAsyncClient(Client):
     def associate_domain_v2_async(self, request):
         """绑定域名
 
-        用户自定义的域名，需要CNAME到API分组的子域名上才能生效。 每个API分组下最多可绑定5个域名。绑定域名后，用户可通过自定义域名调用API。
+        用户自定义的域名，需要CNAME到API分组的子域名上才能生效。
+        每个API分组下最多可绑定5个域名。绑定域名后，用户可通过自定义域名调用API。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -276,7 +277,9 @@ class RomaAsyncClient(Client):
 
         签名密钥创建后，需要绑定到API才能生效。
         
-        将签名密钥绑定到API后，则ROMA Connect APIC请求后端服务时就会使用这个签名密钥进行加密签名，后端服务可以校验这个签名来验证请求来源。
+        
+        将签名密钥绑定到API后，则服务集成请求后端服务时就会使用这个签名密钥进行加密签名，后端服务可以校验这个签名来验证请求来源。
+        
         
         将指定的签名密钥绑定到一个或多个已发布的API上。同一个API发布到不同的环境可以绑定不同的签名密钥；一个API在发布到特定环境后只能绑定一个签名密钥。
         
@@ -329,6 +332,136 @@ class RomaAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='AssociateSignatureKeyV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def attach_api_to_plugin_async(self, request):
+        """插件绑定API
+
+        绑定插件到API上。
+        - 只能选择发布状态的API
+        - 绑定以后及时生效
+        - 修改插件后及时生效
+        - 相同类型的插件只能绑定一个，原来已经绑定的同类型插件，会直接覆盖。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AttachApiToPlugin
+        :type request: :class:`huaweicloudsdkroma.v2.AttachApiToPluginRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.AttachApiToPluginResponse`
+        """
+        return self._attach_api_to_plugin_with_http_info(request)
+
+    def _attach_api_to_plugin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}/attach',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AttachApiToPluginResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def attach_plugin_to_api_async(self, request):
+        """API绑定插件
+
+        绑定插件到API上。
+        - 只能选择发布状态的API
+        - 绑定以后及时生效
+        - 修改插件后及时生效
+        - 相同类型的插件只能绑定一个，原来已经绑定的同类型插件，会直接覆盖。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AttachPluginToApi
+        :type request: :class:`huaweicloudsdkroma.v2.AttachPluginToApiRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.AttachPluginToApiResponse`
+        """
+        return self._attach_plugin_to_api_with_http_info(request)
+
+    def _attach_plugin_to_api_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'api_id' in local_var_params:
+            path_params['api_id'] = local_var_params['api_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}/plugins/attach',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AttachPluginToApiResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1586,9 +1719,11 @@ class RomaAsyncClient(Client):
 
         在实际的生产中，API提供者可能有多个环境，如开发环境、测试环境、生产环境等，用户可以自由将API发布到某个环境，供调用者调用。
         
+        
         对于不同的环境，API的版本、请求地址甚至于包括请求消息等均有可能不同。如：某个API，v1.0的版本为稳定版本，发布到了生产环境供生产使用，同时，该API正处于迭代中，v1.1的版本是开发人员交付测试人员进行测试的版本，发布在测试环境上，而v1.2的版本目前开发团队正处于开发过程中，可以发布到开发环境进行自测等。
         
-        为此，ROMA Connect APIC提供多环境管理功能，使租户能够最大化的模拟实际场景，低成本的接入ROMA Connect APIC。
+        
+        为此，服务集成提供多环境管理功能，使租户能够最大化的模拟实际场景，低成本的接服务集成。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1649,9 +1784,12 @@ class RomaAsyncClient(Client):
 
         将API发布到不同的环境后，对于不同的环境，可能会有不同的环境变量，比如，API的服务部署地址，请求的版本号等。
         
-        用户可以定义不同的环境变量，用户在定义API时，在API的定义中使用这些变量，当调用API时，ROMA Connect APIC会将这些变量替换成真实的变量值，以达到不同环境的区分效果。
+        
+        用户可以定义不同的环境变量，用户在定义API时，在API的定义中使用这些变量，当调用API时，服务集成会将这些变量替换成真实的变量值，以达到不同环境的区分效果。
+        
         
         环境变量定义在API分组上，该分组下的所有API都可以使用这些变量。
+        
         &gt; 1.环境变量的变量名称必须保持唯一，即一个分组在同一个环境上不能有两个同名的变量
           2.环境变量区分大小写，即变量ABC与变量abc是两个不同的变量
           3.设置了环境变量后，使用到该变量的API的调试功能将不可使用。
@@ -2130,6 +2268,67 @@ class RomaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_plugin_async(self, request):
+        """创建插件
+
+        创建插件信息。
+        - 插件不允许重名
+        - 插件创建后未绑定API前是无意义的，绑定API后，对绑定的API即时生效
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePlugin
+        :type request: :class:`huaweicloudsdkroma.v2.CreatePluginRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreatePluginResponse`
+        """
+        return self._create_plugin_with_http_info(request)
+
+    def _create_plugin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreatePluginResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_product_async(self, request):
         """创建产品
 
@@ -2436,7 +2635,8 @@ class RomaAsyncClient(Client):
     def create_request_throttling_policy_v2_async(self, request):
         """创建流控策略
 
-        当API上线后，系统会默认给每个API提供一个流控策略，API提供者可以根据自身API的服务能力及负载情况变更这个流控策略。 流控策略即限制API在一定长度的时间内，能够允许被访问的最大次数。
+        当API上线后，系统会默认给每个API提供一个流控策略，API提供者可以根据自身API的服务能力及负载情况变更这个流控策略。
+        流控策略即限制API在一定长度的时间内，能够允许被访问的最大次数。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2680,7 +2880,7 @@ class RomaAsyncClient(Client):
         
         其中，签名密钥就是API安全保护机制的一种。
         
-        租户创建一个签名密钥，并将签名密钥与API进行绑定，则ROMA Connect APIC在请求这个API时，就会使用绑定的签名密钥对请求参数进行数据加密，生成签名。当租户的后端服务收到请求时，可以校验这个签名，如果签名校验不通过，则该请求不是ROMA Connect APIC发出的请求，租户可以拒绝这个请求，从而保证API的安全性，避免API被未知来源的请求攻击。
+        租户创建一个签名密钥，并将签名密钥与API进行绑定，则服务集成在请求这个API时，就会使用绑定的签名密钥对请求参数进行数据加密，生成签名。当租户的后端服务收到请求时，可以校验这个签名，如果签名校验不通过，则该请求不是服务集成发出的请求，租户可以拒绝这个请求，从而保证API的安全性，避免API被未知来源的请求攻击。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2804,7 +3004,7 @@ class RomaAsyncClient(Client):
         
         如果想要对某个特定的APP进行特殊设置，例如设置所有APP每分钟的访问次数为500次，但想设置APP1每分钟的访问次数为800次，可以通过在流控策略中设置特殊APP来实现该功能。
         
-        为流控策略添加一个特殊设置的对象，可以是APP，也可以是租户。
+        为流控策略添加一个特殊设置的对象，[可以是APP，也可以是租户。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[对象为APP。](tag:Site)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3998,6 +4198,66 @@ class RomaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_plugin_async(self, request):
+        """删除插件
+
+        删除插件。
+        - 必须先解除API和插件的绑定关系，否则删除报错
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeletePlugin
+        :type request: :class:`huaweicloudsdkroma.v2.DeletePluginRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeletePluginResponse`
+        """
+        return self._delete_plugin_with_http_info(request)
+
+    def _delete_plugin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeletePluginResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_product_async(self, request):
         """删除产品
 
@@ -4781,6 +5041,130 @@ class RomaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def detach_api_from_plugin_async(self, request):
+        """解除绑定插件的API
+
+        解除绑定在插件上的API
+        - 解绑及时生效
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DetachApiFromPlugin
+        :type request: :class:`huaweicloudsdkroma.v2.DetachApiFromPluginRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DetachApiFromPluginResponse`
+        """
+        return self._detach_api_from_plugin_with_http_info(request)
+
+    def _detach_api_from_plugin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}/detach',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DetachApiFromPluginResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def detach_plugin_from_api_async(self, request):
+        """解除绑定API的插件
+
+        解除绑定在API上的插件
+        - 解绑及时生效
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DetachPluginFromApi
+        :type request: :class:`huaweicloudsdkroma.v2.DetachPluginFromApiRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.DetachPluginFromApiResponse`
+        """
+        return self._detach_plugin_from_api_with_http_info(request)
+
+    def _detach_plugin_from_api_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'api_id' in local_var_params:
+            path_params['api_id'] = local_var_params['api_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}/plugins/detach',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DetachPluginFromApiResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def disassociate_app_quota_with_app_async(self, request):
         """解除客户端配额和客户端应用的绑定
 
@@ -5263,6 +5647,163 @@ class RomaAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='InstallMultiTasksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_api_attachable_plugins_async(self, request):
+        """查询可绑定当前API的插件
+
+        查询可绑定当前API的插件信息。
+        - 支持分页返回
+        - 支持插件名称模糊查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListApiAttachablePlugins
+        :type request: :class:`huaweicloudsdkroma.v2.ListApiAttachablePluginsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListApiAttachablePluginsResponse`
+        """
+        return self._list_api_attachable_plugins_with_http_info(request)
+
+    def _list_api_attachable_plugins_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'api_id' in local_var_params:
+            path_params['api_id'] = local_var_params['api_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'env_id' in local_var_params:
+            query_params.append(('env_id', local_var_params['env_id']))
+        if 'plugin_name' in local_var_params:
+            query_params.append(('plugin_name', local_var_params['plugin_name']))
+        if 'plugin_type' in local_var_params:
+            query_params.append(('plugin_type', local_var_params['plugin_type']))
+        if 'plugin_id' in local_var_params:
+            query_params.append(('plugin_id', local_var_params['plugin_id']))
+        if 'roma_app_id' in local_var_params:
+            query_params.append(('roma_app_id', local_var_params['roma_app_id']))
+        if 'roma_app_name' in local_var_params:
+            query_params.append(('roma_app_name', local_var_params['roma_app_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}/attachable-plugins',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListApiAttachablePluginsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_api_attached_plugins_async(self, request):
+        """查询API下绑定的插件
+
+        查询指定API下绑定的插件信息
+        - 用于查询指定API下已经绑定的插件列表信息
+        - 支持分页返回
+        - 支持插件名称模糊查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListApiAttachedPlugins
+        :type request: :class:`huaweicloudsdkroma.v2.ListApiAttachedPluginsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListApiAttachedPluginsResponse`
+        """
+        return self._list_api_attached_plugins_with_http_info(request)
+
+    def _list_api_attached_plugins_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'api_id' in local_var_params:
+            path_params['api_id'] = local_var_params['api_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'env_id' in local_var_params:
+            query_params.append(('env_id', local_var_params['env_id']))
+        if 'plugin_name' in local_var_params:
+            query_params.append(('plugin_name', local_var_params['plugin_name']))
+        if 'plugin_id' in local_var_params:
+            query_params.append(('plugin_id', local_var_params['plugin_id']))
+        if 'env_name' in local_var_params:
+            query_params.append(('env_name', local_var_params['env_name']))
+        if 'plugin_type' in local_var_params:
+            query_params.append(('plugin_type', local_var_params['plugin_type']))
+        if 'roma_app_id' in local_var_params:
+            query_params.append(('roma_app_id', local_var_params['roma_app_id']))
+        if 'roma_app_name' in local_var_params:
+            query_params.append(('roma_app_name', local_var_params['roma_app_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}/attached-plugins',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListApiAttachedPluginsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -7179,6 +7720,245 @@ class RomaAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListNotificationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_plugin_attachable_apis_async(self, request):
+        """查询可绑定当前插件的API
+
+        查询可绑定当前插件的API信息。
+        - 支持分页返回
+        - 支持API名称模糊查询
+        - 支持已绑定其他插件的API查询返回
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPluginAttachableApis
+        :type request: :class:`huaweicloudsdkroma.v2.ListPluginAttachableApisRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListPluginAttachableApisResponse`
+        """
+        return self._list_plugin_attachable_apis_with_http_info(request)
+
+    def _list_plugin_attachable_apis_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'env_id' in local_var_params:
+            query_params.append(('env_id', local_var_params['env_id']))
+        if 'api_name' in local_var_params:
+            query_params.append(('api_name', local_var_params['api_name']))
+        if 'api_id' in local_var_params:
+            query_params.append(('api_id', local_var_params['api_id']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'req_method' in local_var_params:
+            query_params.append(('req_method', local_var_params['req_method']))
+        if 'req_uri' in local_var_params:
+            query_params.append(('req_uri', local_var_params['req_uri']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}/attachable-apis',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPluginAttachableApisResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_plugin_attached_apis_async(self, request):
+        """查询插件下绑定的API
+
+        查询指定插件下绑定的API信息
+        - 用于查询指定插件下已经绑定的API列表信息
+        - 支持分页返回
+        - 支持API名称模糊查询
+        - 绑定关系列表中返回的API在对应的环境中可能已经下线
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPluginAttachedApis
+        :type request: :class:`huaweicloudsdkroma.v2.ListPluginAttachedApisRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListPluginAttachedApisResponse`
+        """
+        return self._list_plugin_attached_apis_with_http_info(request)
+
+    def _list_plugin_attached_apis_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'env_id' in local_var_params:
+            query_params.append(('env_id', local_var_params['env_id']))
+        if 'api_name' in local_var_params:
+            query_params.append(('api_name', local_var_params['api_name']))
+        if 'api_id' in local_var_params:
+            query_params.append(('api_id', local_var_params['api_id']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'req_method' in local_var_params:
+            query_params.append(('req_method', local_var_params['req_method']))
+        if 'req_uri' in local_var_params:
+            query_params.append(('req_uri', local_var_params['req_uri']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}/attached-apis',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPluginAttachedApisResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_plugins_async(self, request):
+        """查询插件列表
+
+        查询一组符合条件的API网关插件详情。
+        - 支持分页
+        - 支持根据插件类型查询
+        - 支持根据插件可见范围查询
+        - 支持根据插件编码查询
+        - 支持根据名称模糊查询
+        - 支持根据集成应用编号查询
+        - 支持根据集成应用名称查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPlugins
+        :type request: :class:`huaweicloudsdkroma.v2.ListPluginsRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListPluginsResponse`
+        """
+        return self._list_plugins_with_http_info(request)
+
+    def _list_plugins_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'plugin_type' in local_var_params:
+            query_params.append(('plugin_type', local_var_params['plugin_type']))
+        if 'plugin_scope' in local_var_params:
+            query_params.append(('plugin_scope', local_var_params['plugin_scope']))
+        if 'plugin_id' in local_var_params:
+            query_params.append(('plugin_id', local_var_params['plugin_id']))
+        if 'plugin_name' in local_var_params:
+            query_params.append(('plugin_name', local_var_params['plugin_name']))
+        if 'precise_search' in local_var_params:
+            query_params.append(('precise_search', local_var_params['precise_search']))
+        if 'roma_app_id' in local_var_params:
+            query_params.append(('roma_app_id', local_var_params['roma_app_id']))
+        if 'roma_app_name' in local_var_params:
+            query_params.append(('roma_app_name', local_var_params['roma_app_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPluginsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -9708,9 +10488,9 @@ class RomaAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_details_of_instance_v2_async(self, request):
-        """查看ROMA Connect实例详情
+        """查看实例详情
 
-        查看ROMA Connect实例详情
+        查看实例详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10330,6 +11110,65 @@ class RomaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_plugin_async(self, request):
+        """查询插件详情
+
+        查询插件详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPlugin
+        :type request: :class:`huaweicloudsdkroma.v2.ShowPluginRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowPluginResponse`
+        """
+        return self._show_plugin_with_http_info(request)
+
+    def _show_plugin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowPluginResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_product_async(self, request):
         """查询产品详情
 
@@ -10695,9 +11534,9 @@ class RomaAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_restriction_of_instance_v2_async(self, request):
-        """查看ROMA Connect实例约束信息
+        """查看实例约束信息
 
-        查看ROMA Connect实例约束信息
+        查看实例约束信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12089,6 +12928,69 @@ class RomaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_plugin_async(self, request):
+        """修改插件
+
+        修改插件信息。
+        - 插件不允许重名
+        - 插件不支持修改类型和可见范围
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdatePlugin
+        :type request: :class:`huaweicloudsdkroma.v2.UpdatePluginRequest`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdatePluginResponse`
+        """
+        return self._update_plugin_with_http_info(request)
+
+    def _update_plugin_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'plugin_id' in local_var_params:
+            path_params['plugin_id'] = local_var_params['plugin_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdatePluginResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_product_async(self, request):
         """修改产品信息
 
@@ -13021,7 +13923,7 @@ class RomaAsyncClient(Client):
     def create_acl_strategy_v2_async(self, request):
         """创建ACL策略
 
-        增加一个ACL策略，策略类型通过字段acl_type来确定（permit或者deny），限制的对象的类型可以为IP[或者DOMAIN，这里的DOMAIN对应的acl_value的值为租户名称，而非“www.exampleDomain.com\&quot;之类的网络域名。](tag:hws;hws_hk;hcs;fcs;g42;)
+        增加一个ACL策略，策略类型通过字段acl_type来确定（permit或者deny），限制的对象的类型可以为IP[或者DOMAIN，这里的DOMAIN对应的acl_value的值为租户名称，而非“www.exampleDomain.com\&quot;之类的网络域名。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -13332,7 +14234,9 @@ class RomaAsyncClient(Client):
 
         将流控策略应用于API，则所有对该API的访问将会受到该流控策略的限制。
         
+        
         当一定时间内的访问次数超过流控策略设置的API最大访问次数限制后，后续的访问将会被拒绝，从而能够较好的保护后端API免受异常流量的冲击，保障服务的稳定运行。
+        
         
         为指定的API绑定流控策略，绑定时，需要指定在哪个环境上生效。同一个API发布到不同的环境可以绑定不同的流控策略；一个API在发布到特定环境后只能绑定一个默认的流控策略。
         
@@ -13758,8 +14662,7 @@ class RomaAsyncClient(Client):
         """创建API
 
         添加一个API，API即一个服务接口，具体的服务能力。
-        
-        API分为两部分，第一部分为面向API使用者的API接口，定义了使用者如何调用这个API。第二部分面向API提供者，由API提供者定义这个API的真实的后端情况，定义了ROMA Connect如何去访问真实的后端服务。API的真实后端服务目前支持三种类型：传统的HTTP/HTTPS形式的web后端、[函数工作流、](tag:hws;hws_hk;hcs;fcs;g42;)MOCK。
+        API分为两部分，第一部分为面向API使用者的API接口，定义了使用者如何调用这个API。第二部分面向API提供者，由API提供者定义这个API的真实的后端情况，定义了[ROMA Connect](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[ROMA Site](tag:Site)如何去访问真实的后端服务。API的真实后端服务目前支持的类型：传统的HTTP/HTTPS形式的web后端、[函数工作流、](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)MOCK。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14002,7 +14905,9 @@ class RomaAsyncClient(Client):
         """删除API分组
 
         删除指定的API分组。
+        
         分组下存在API时分组无法删除，需要删除所有分组下的API后，再删除分组。
+        
         删除分组时，会一并删除直接或间接关联到该分组下的所有资源，包括独立域名、SSL证书等等。并会将外部域名与子域名的绑定关系进行解除（取决于域名cname方式）。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -14641,6 +15546,10 @@ class RomaAsyncClient(Client):
             query_params.append(('vpc_channel_id', local_var_params['vpc_channel_id']))
         if 'vpc_channel_name' in local_var_params:
             query_params.append(('vpc_channel_name', local_var_params['vpc_channel_name']))
+        if 'roma_app_name' in local_var_params:
+            query_params.append(('roma_app_name', local_var_params['roma_app_name']))
+        if 'roma_app_id' in local_var_params:
+            query_params.append(('roma_app_id', local_var_params['roma_app_id']))
 
         header_params = {}
 
@@ -17544,8 +18453,616 @@ class RomaAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_associate_certs_v2_async(self, request):
+        """域名绑定SSL证书
+
+        域名绑定SSL证书。[目前暂时仅支持单个绑定,请求体当中的certificate_ids里面有且只能有一个证书ID](tag:hws,hws_hk,fcs,g42,Site)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchAssociateCertsV2
+        :type request: :class:`huaweicloudsdkroma.v2.BatchAssociateCertsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchAssociateCertsV2Response`
+        """
+        return self._batch_associate_certs_v2_with_http_info(request)
+
+    def _batch_associate_certs_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificates/attach',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchAssociateCertsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_associate_domains_v2_async(self, request):
+        """SSL证书绑定域名
+
+        SSL证书绑定域名
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchAssociateDomainsV2
+        :type request: :class:`huaweicloudsdkroma.v2.BatchAssociateDomainsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchAssociateDomainsV2Response`
+        """
+        return self._batch_associate_domains_v2_with_http_info(request)
+
+    def _batch_associate_domains_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/certificates/{certificate_id}/domains/attach',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchAssociateDomainsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_disassociate_certs_v2_async(self, request):
+        """域名解绑SSL证书
+
+        域名解绑SSL证书。目前暂时仅支持单个解绑,请求体当中的certificate_ids里面有且只能有一个证书ID
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDisassociateCertsV2
+        :type request: :class:`huaweicloudsdkroma.v2.BatchDisassociateCertsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchDisassociateCertsV2Response`
+        """
+        return self._batch_disassociate_certs_v2_with_http_info(request)
+
+    def _batch_disassociate_certs_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificates/detach',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDisassociateCertsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_disassociate_domains_v2_async(self, request):
+        """SSL证书解绑域名
+
+        SSL证书解绑域名
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDisassociateDomainsV2
+        :type request: :class:`huaweicloudsdkroma.v2.BatchDisassociateDomainsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.BatchDisassociateDomainsV2Response`
+        """
+        return self._batch_disassociate_domains_v2_with_http_info(request)
+
+    def _batch_disassociate_domains_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/certificates/{certificate_id}/domains/detach',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDisassociateDomainsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_certificate_v2_async(self, request):
+        """创建SSL证书
+
+        创建SSL证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateCertificateV2
+        :type request: :class:`huaweicloudsdkroma.v2.CreateCertificateV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateCertificateV2Response`
+        """
+        return self._create_certificate_v2_with_http_info(request)
+
+    def _create_certificate_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/certificates',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateCertificateV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_certificate_v2_async(self, request):
+        """删除SSL证书
+
+        删除ssl证书接口,删除时只有没有关联域名的证书才能被删除
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteCertificateV2
+        :type request: :class:`huaweicloudsdkroma.v2.DeleteCertificateV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.DeleteCertificateV2Response`
+        """
+        return self._delete_certificate_v2_with_http_info(request)
+
+    def _delete_certificate_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/certificates/{certificate_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteCertificateV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_attached_domains_v2_async(self, request):
+        """获取SSL证书已绑定域名列表
+
+        获取SSL证书已绑定域名列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAttachedDomainsV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListAttachedDomainsV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListAttachedDomainsV2Response`
+        """
+        return self._list_attached_domains_v2_with_http_info(request)
+
+    def _list_attached_domains_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'url_domain' in local_var_params:
+            query_params.append(('url_domain', local_var_params['url_domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/certificates/{certificate_id}/attached-domains',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAttachedDomainsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_certificates_v2_async(self, request):
+        """获取SSL证书列表
+
+        获取SSL证书列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCertificatesV2
+        :type request: :class:`huaweicloudsdkroma.v2.ListCertificatesV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ListCertificatesV2Response`
+        """
+        return self._list_certificates_v2_with_http_info(request)
+
+    def _list_certificates_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'common_name' in local_var_params:
+            query_params.append(('common_name', local_var_params['common_name']))
+        if 'signature_algorithm' in local_var_params:
+            query_params.append(('signature_algorithm', local_var_params['signature_algorithm']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'algorithm_type' in local_var_params:
+            query_params.append(('algorithm_type', local_var_params['algorithm_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/certificates',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListCertificatesV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_details_of_certificate_v2_async(self, request):
+        """查看证书详情
+
+        查看证书详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDetailsOfCertificateV2
+        :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfCertificateV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfCertificateV2Response`
+        """
+        return self._show_details_of_certificate_v2_with_http_info(request)
+
+    def _show_details_of_certificate_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/certificates/{certificate_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDetailsOfCertificateV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_certificate_v2_async(self, request):
+        """修改SSL证书
+
+        修改SSL证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateCertificateV2
+        :type request: :class:`huaweicloudsdkroma.v2.UpdateCertificateV2Request`
+        :rtype: :class:`huaweicloudsdkroma.v2.UpdateCertificateV2Response`
+        """
+        return self._update_certificate_v2_with_http_info(request)
+
+    def _update_certificate_v2_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apic/certificates/{certificate_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateCertificateV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def adding_backend_instances_v2_async(self, request):
-        """添加或更新后端实例
+        """添加后端实例
 
         为指定的VPC通道添加后端实例
         
@@ -17730,9 +19247,9 @@ class RomaAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_member_group_async(self, request):
-        """添加或更新VPC通道后端服务器组
+        """添加VPC通道后端服务器组
 
-        在ROMA Connect APIC中创建VPC通道后端服务器组，VPC通道后端实例可以选择是否关联后端实例服务器组，以便管理后端服务器节点。
+        在服务集成中创建VPC通道后端服务器组，VPC通道后端实例可以选择是否关联后端实例服务器组，以便管理后端服务器节点。
         
         若指定名称的后端服务器组已存在，则更新对应后端服务器组信息。若请求体中包含多个重复名称的后端服务器定义，则使用第一个定义。
         
@@ -17795,7 +19312,7 @@ class RomaAsyncClient(Client):
     def create_vpc_channel_v2_async(self, request):
         """创建VPC通道
 
-        在ROMA Connect APIC中创建连接私有VPC资源的通道，并在创建API时将后端节点配置为使用这些VPC通道，以便ROMA Connect APIC直接访问私有VPC资源。
+        在服务集成中创建连接私有VPC资源的通道，并在创建API时将后端节点配置为使用这些VPC通道，以便服务集成直接访问私有VPC资源。
         &gt; 每个用户默认最多创建200个VPC通道，如需支持更多请联系技术支持调整配额。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -18371,7 +19888,7 @@ class RomaAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def update_backend_instances_v2_async(self, request):
-        """更新后端实例
+        """修改后端实例
 
         更新指定的VPC通道的后端实例。更新时，使用传入的请求参数对对应云服务组的后端实例进行全量覆盖修改。若未指定修改的云服务器组，则进行全量覆盖。
         
@@ -18493,7 +20010,7 @@ class RomaAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def update_member_group_async(self, request):
-        """更新VPC通道后端服务器组
+        """修改VPC通道后端服务器组
 
         更新指定VPC通道后端服务器组
         
@@ -18556,13 +20073,13 @@ class RomaAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def update_vpc_channel_v2_async(self, request):
-        """更新VPC通道
+        """修改VPC通道
 
         更新指定VPC通道的参数
         
-        使用传入的后端实例列表对VPC通道进行全量覆盖，若后端实例列表为空，则会全量删除已有的后端实例；
-        
         使用传入的后端服务器组列表对VPC通道进行全量覆盖，若后端服务器组列表为空，则会全量删除已有的服务器组；
+        
+        为保持兼容，传入的后端服务器列表为空时，不会删除已有的后端服务器，需要使用删除后端服务器接口进行删除；
         
         Please refer to HUAWEI cloud API Explorer for details.
 

@@ -23,9 +23,9 @@ class ChartConfig:
     }
 
     attribute_map = {
-        'can_sort': 'can_sort',
-        'can_search': 'can_search',
-        'page_size': 'page_size'
+        'can_sort': 'canSort',
+        'can_search': 'canSearch',
+        'page_size': 'pageSize'
     }
 
     def __init__(self, can_sort=None, can_search=None, page_size=None):

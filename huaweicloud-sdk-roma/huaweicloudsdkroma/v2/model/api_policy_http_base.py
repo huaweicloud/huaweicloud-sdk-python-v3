@@ -47,13 +47,13 @@ class ApiPolicyHttpBase:
         :type req_protocol: str
         :param req_method: 请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY
         :type req_method: str
-        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。 &gt; 需要服从URI规范。
+        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ .等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  &gt; 需要服从URI规范。
         :type req_uri: str
-        :param timeout: ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
+        :param timeout: 服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
         :type timeout: int
         :param enable_client_ssl: 是否开启双向认证
         :type enable_client_ssl: bool
-        :param retry_count: ROMA Connect APIC请求后端服务的重试次数，默认为-1，范围[-1,10]
+        :param retry_count: 服务集成请求后端服务的重试次数，默认为-1，范围[-1,10]
         :type retry_count: str
         """
         
@@ -150,7 +150,7 @@ class ApiPolicyHttpBase:
     def req_uri(self):
         """Gets the req_uri of this ApiPolicyHttpBase.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。 > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ .等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。
 
         :return: The req_uri of this ApiPolicyHttpBase.
         :rtype: str
@@ -161,7 +161,7 @@ class ApiPolicyHttpBase:
     def req_uri(self, req_uri):
         """Sets the req_uri of this ApiPolicyHttpBase.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。 > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ .等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。
 
         :param req_uri: The req_uri of this ApiPolicyHttpBase.
         :type req_uri: str
@@ -172,7 +172,7 @@ class ApiPolicyHttpBase:
     def timeout(self):
         """Gets the timeout of this ApiPolicyHttpBase.
 
-        ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
+        服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
         :return: The timeout of this ApiPolicyHttpBase.
         :rtype: int
@@ -183,7 +183,7 @@ class ApiPolicyHttpBase:
     def timeout(self, timeout):
         """Sets the timeout of this ApiPolicyHttpBase.
 
-        ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
+        服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
         :param timeout: The timeout of this ApiPolicyHttpBase.
         :type timeout: int
@@ -216,7 +216,7 @@ class ApiPolicyHttpBase:
     def retry_count(self):
         """Gets the retry_count of this ApiPolicyHttpBase.
 
-        ROMA Connect APIC请求后端服务的重试次数，默认为-1，范围[-1,10]
+        服务集成请求后端服务的重试次数，默认为-1，范围[-1,10]
 
         :return: The retry_count of this ApiPolicyHttpBase.
         :rtype: str
@@ -227,7 +227,7 @@ class ApiPolicyHttpBase:
     def retry_count(self, retry_count):
         """Sets the retry_count of this ApiPolicyHttpBase.
 
-        ROMA Connect APIC请求后端服务的重试次数，默认为-1，范围[-1,10]
+        服务集成请求后端服务的重试次数，默认为-1，范围[-1,10]
 
         :param retry_count: The retry_count of this ApiPolicyHttpBase.
         :type retry_count: str

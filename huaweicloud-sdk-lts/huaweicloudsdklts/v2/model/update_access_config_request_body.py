@@ -18,7 +18,7 @@ class UpdateAccessConfigRequestBody:
 
     openapi_types = {
         'access_config_id': 'str',
-        'access_config_detail': 'AccessConfigDeatilCreate',
+        'access_config_detail': 'AccessConfigDeatilUpdate',
         'host_group_info': 'AccessConfigHostGroupIdList',
         'access_config_tag': 'list[AccessConfigTag]',
         'log_split': 'bool',
@@ -44,7 +44,7 @@ class UpdateAccessConfigRequestBody:
         :param access_config_id: 日志接入ID
         :type access_config_id: str
         :param access_config_detail: 
-        :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
+        :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatilUpdate`
         :param host_group_info: 
         :type host_group_info: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
         :param access_config_tag: 标签信息。KEY不能重复,最多20个标签
@@ -109,7 +109,7 @@ class UpdateAccessConfigRequestBody:
         """Gets the access_config_detail of this UpdateAccessConfigRequestBody.
 
         :return: The access_config_detail of this UpdateAccessConfigRequestBody.
-        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
+        :rtype: :class:`huaweicloudsdklts.v2.AccessConfigDeatilUpdate`
         """
         return self._access_config_detail
 
@@ -118,7 +118,7 @@ class UpdateAccessConfigRequestBody:
         """Sets the access_config_detail of this UpdateAccessConfigRequestBody.
 
         :param access_config_detail: The access_config_detail of this UpdateAccessConfigRequestBody.
-        :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
+        :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatilUpdate`
         """
         self._access_config_detail = access_config_detail
 

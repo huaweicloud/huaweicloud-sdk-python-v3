@@ -6,6 +6,18 @@ from huaweicloudsdkcts.v3.cts_client import CtsClient
 from huaweicloudsdkcts.v3.cts_async_client import CtsAsyncClient
 
 from huaweicloudsdkcts.v3.model.base_user import BaseUser
+from huaweicloudsdkcts.v3.model.batch_create_resource_tags_request import BatchCreateResourceTagsRequest
+from huaweicloudsdkcts.v3.model.batch_create_resource_tags_request_body import BatchCreateResourceTagsRequestBody
+from huaweicloudsdkcts.v3.model.batch_create_resource_tags_response import BatchCreateResourceTagsResponse
+from huaweicloudsdkcts.v3.model.batch_delete_resource_tags_request import BatchDeleteResourceTagsRequest
+from huaweicloudsdkcts.v3.model.batch_delete_resource_tags_request_body import BatchDeleteResourceTagsRequestBody
+from huaweicloudsdkcts.v3.model.batch_delete_resource_tags_response import BatchDeleteResourceTagsResponse
+from huaweicloudsdkcts.v3.model.bucket import Bucket
+from huaweicloudsdkcts.v3.model.check_bucket_request import CheckBucketRequest
+from huaweicloudsdkcts.v3.model.check_bucket_response import CheckBucketResponse
+from huaweicloudsdkcts.v3.model.check_obs_buckets_request import CheckObsBucketsRequest
+from huaweicloudsdkcts.v3.model.check_obs_buckets_request_body import CheckObsBucketsRequestBody
+from huaweicloudsdkcts.v3.model.check_obs_buckets_response import CheckObsBucketsResponse
 from huaweicloudsdkcts.v3.model.create_notification_request import CreateNotificationRequest
 from huaweicloudsdkcts.v3.model.create_notification_request_body import CreateNotificationRequestBody
 from huaweicloudsdkcts.v3.model.create_notification_response import CreateNotificationResponse
@@ -22,12 +34,19 @@ from huaweicloudsdkcts.v3.model.delete_tracker_response import DeleteTrackerResp
 from huaweicloudsdkcts.v3.model.filter import Filter
 from huaweicloudsdkcts.v3.model.list_notifications_request import ListNotificationsRequest
 from huaweicloudsdkcts.v3.model.list_notifications_response import ListNotificationsResponse
+from huaweicloudsdkcts.v3.model.list_operation import ListOperation
+from huaweicloudsdkcts.v3.model.list_operations_request import ListOperationsRequest
+from huaweicloudsdkcts.v3.model.list_operations_response import ListOperationsResponse
 from huaweicloudsdkcts.v3.model.list_quotas_request import ListQuotasRequest
 from huaweicloudsdkcts.v3.model.list_quotas_response import ListQuotasResponse
+from huaweicloudsdkcts.v3.model.list_trace_resources_request import ListTraceResourcesRequest
+from huaweicloudsdkcts.v3.model.list_trace_resources_response import ListTraceResourcesResponse
 from huaweicloudsdkcts.v3.model.list_traces_request import ListTracesRequest
 from huaweicloudsdkcts.v3.model.list_traces_response import ListTracesResponse
 from huaweicloudsdkcts.v3.model.list_trackers_request import ListTrackersRequest
 from huaweicloudsdkcts.v3.model.list_trackers_response import ListTrackersResponse
+from huaweicloudsdkcts.v3.model.list_user_resources_request import ListUserResourcesRequest
+from huaweicloudsdkcts.v3.model.list_user_resources_response import ListUserResourcesResponse
 from huaweicloudsdkcts.v3.model.lts import Lts
 from huaweicloudsdkcts.v3.model.management_event_selector import ManagementEventSelector
 from huaweicloudsdkcts.v3.model.meta_data import MetaData
@@ -35,6 +54,8 @@ from huaweicloudsdkcts.v3.model.notification_users import NotificationUsers
 from huaweicloudsdkcts.v3.model.notifications_response_body import NotificationsResponseBody
 from huaweicloudsdkcts.v3.model.obs_info import ObsInfo
 from huaweicloudsdkcts.v3.model.operations import Operations
+from huaweicloudsdkcts.v3.model.tags import Tags
+from huaweicloudsdkcts.v3.model.trace_resource import TraceResource
 from huaweicloudsdkcts.v3.model.traces import Traces
 from huaweicloudsdkcts.v3.model.tracker_obs_info import TrackerObsInfo
 from huaweicloudsdkcts.v3.model.tracker_response_body import TrackerResponseBody
@@ -45,4 +66,5 @@ from huaweicloudsdkcts.v3.model.update_tracker_request import UpdateTrackerReque
 from huaweicloudsdkcts.v3.model.update_tracker_request_body import UpdateTrackerRequestBody
 from huaweicloudsdkcts.v3.model.update_tracker_response import UpdateTrackerResponse
 from huaweicloudsdkcts.v3.model.user_info import UserInfo
+from huaweicloudsdkcts.v3.model.user_resource import UserResource
 

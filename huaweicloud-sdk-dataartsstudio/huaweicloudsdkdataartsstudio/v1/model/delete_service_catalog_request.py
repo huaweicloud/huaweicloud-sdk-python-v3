@@ -18,21 +18,25 @@ class DeleteServiceCatalogRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'dlm_type': 'str',
         'body': 'ApiCatalogDeleteParaDTO'
     }
 
     attribute_map = {
         'workspace': 'workspace',
+        'dlm_type': 'Dlm-Type',
         'body': 'body'
     }
 
-    def __init__(self, workspace=None, body=None):
+    def __init__(self, workspace=None, dlm_type=None, body=None):
         """DeleteServiceCatalogRequest
 
         The model defined in huaweicloud sdk
 
         :param workspace: 工作空间id
         :type workspace: str
+        :param dlm_type: dlm版本类型
+        :type dlm_type: str
         :param body: Body of the DeleteServiceCatalogRequest
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApiCatalogDeleteParaDTO`
         """
@@ -40,11 +44,12 @@ class DeleteServiceCatalogRequest:
         
 
         self._workspace = None
+        self._dlm_type = None
         self._body = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
+        self.dlm_type = dlm_type
         if body is not None:
             self.body = body
 
@@ -69,6 +74,28 @@ class DeleteServiceCatalogRequest:
         :type workspace: str
         """
         self._workspace = workspace
+
+    @property
+    def dlm_type(self):
+        """Gets the dlm_type of this DeleteServiceCatalogRequest.
+
+        dlm版本类型
+
+        :return: The dlm_type of this DeleteServiceCatalogRequest.
+        :rtype: str
+        """
+        return self._dlm_type
+
+    @dlm_type.setter
+    def dlm_type(self, dlm_type):
+        """Sets the dlm_type of this DeleteServiceCatalogRequest.
+
+        dlm版本类型
+
+        :param dlm_type: The dlm_type of this DeleteServiceCatalogRequest.
+        :type dlm_type: str
+        """
+        self._dlm_type = dlm_type
 
     @property
     def body(self):

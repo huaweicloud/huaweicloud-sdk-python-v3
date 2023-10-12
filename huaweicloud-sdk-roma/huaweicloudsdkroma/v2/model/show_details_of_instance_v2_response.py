@@ -50,7 +50,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'supported_features': 'list[str]',
         'ingress_ip_v6': 'str',
         'node_ips': 'NodeIps',
-        'ingress_ips': 'str'
+        'ingress_ips': 'str',
+        'cipher_type': 'str'
     }
 
     attribute_map = {
@@ -86,10 +87,11 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'supported_features': 'supported_features',
         'ingress_ip_v6': 'ingress_ip_v6',
         'node_ips': 'node_ips',
-        'ingress_ips': 'ingress_ips'
+        'ingress_ips': 'ingress_ips',
+        'cipher_type': 'cipher_type'
     }
 
-    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None, ingress_ip_v6=None, node_ips=None, ingress_ips=None):
+    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None, ingress_ip_v6=None, node_ips=None, ingress_ips=None, cipher_type=None):
         """ShowDetailsOfInstanceV2Response
 
         The model defined in huaweicloud sdk
@@ -106,7 +108,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type instance_status: int
         :param type: 实例类型  暂不支持
         :type type: str
-        :param spec: 实例规格： - ROMA_BASIC：基础版实例 - ROMA_PROFESSIONAL：专业版实例 - ROMA_ENTERPRISE：企业版实例 - ROMA_PLATINUM：铂金版实例 [- ROMA_BASIC_IPV6：基础版IPV6实例](tag:hcs) [- ROMA_PROFESSIONAL_IPV6：专业版IPV6实例](tag:hcs) [- ROMA_ENTERPRISE_IPV6：企业版IPV6实例](tag:hcs) [- ROMA_PLATINUM_IPV6：铂金版IPV6实例](tag:hcs)
+        :param spec: 实例规格：  [- ROMA_BASIC：基础版实例](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [- ROMA_PROFESSIONAL：专业版实例](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [- ROMA_ENTERPRISE：企业版实例](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [- ROMA_PLATINUM：铂金版实例](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [- ROMA_BASIC_IPV6：基础版IPv6实例](tag:hcs,hcs_sm)  [- ROMA_PROFESSIONAL_IPV6：专业版IPv6实例](tag:hcs,hcs_sm)  [- ROMA_ENTERPRISE_IPV6：企业版IPv6实例](tag:hcs,hcs_sm)  [- ROMA_PLATINUM_IPV6：铂金版IPv6实例](tag:hcs,hcs_sm)  [ROMASITE_BASIC：Site版实例](tag:Site)
         :type spec: str
         :param create_time: 实例创建时间。unix时间戳格式。
         :type create_time: int
@@ -114,9 +116,9 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type enterprise_project_id: str
         :param eip_address: 实例绑定的弹性IP地址
         :type eip_address: str
-        :param charging_mode: 实例计费方式： - 0：按需计费 - 1：包周期计费
+        :param charging_mode: 实例计费方式[，暂未使用](tag:fcs,hcs,hcs_sm,Site) [0：按需计费](tag:hws,hws_hk,g42) [1：包周期计费](tag:hws,hws_hk)
         :type charging_mode: int
-        :param cbc_metadata: 包周期计费订单编号
+        :param cbc_metadata: 计费订单编号，[包周期计费时使用。](tag:hws,hws_hk)[暂未使用。](tag:fcs,hcs,hcs_sm,g42,Site)
         :type cbc_metadata: str
         :param description: 实例描述
         :type description: str
@@ -150,16 +152,18 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type virsubnet_id: str
         :param roma_eip_address: roma弹性公网IP。  暂不支持
         :type roma_eip_address: str
-        :param listeners: 监听信息  [暂不支持](tag:public)
+        :param listeners: 监听信息，暂不支持
         :type listeners: list[:class:`huaweicloudsdkroma.v2.Listener`]
         :param supported_features: 实例支持的特性列表
         :type supported_features: list[str]
-        :param ingress_ip_v6: 实例入口（IPV6）  当前仅部分region部分可用区支持IPv6
+        :param ingress_ip_v6: 实例入口（IPv6）  当前仅部分region部分可用区支持IPv6
         :type ingress_ip_v6: str
         :param node_ips: 
         :type node_ips: :class:`huaweicloudsdkroma.v2.NodeIps`
         :param ingress_ips: 实例集群全量入口（多入口实例）
         :type ingress_ips: str
+        :param cipher_type: 实例算法类型： - generalCipher：通用加密算法 - SMCompatible：SM系列商密算法兼容 - SMOnly：SM系列商密算法  [暂不支持](tag:hws,hws_hk,g42,Site)
+        :type cipher_type: str
         """
         
         super(ShowDetailsOfInstanceV2Response, self).__init__()
@@ -197,6 +201,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         self._ingress_ip_v6 = None
         self._node_ips = None
         self._ingress_ips = None
+        self._cipher_type = None
         self.discriminator = None
 
         if id is not None:
@@ -265,6 +270,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
             self.node_ips = node_ips
         if ingress_ips is not None:
             self.ingress_ips = ingress_ips
+        if cipher_type is not None:
+            self.cipher_type = cipher_type
 
     @property
     def id(self):
@@ -402,7 +409,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def spec(self):
         """Gets the spec of this ShowDetailsOfInstanceV2Response.
 
-        实例规格： - ROMA_BASIC：基础版实例 - ROMA_PROFESSIONAL：专业版实例 - ROMA_ENTERPRISE：企业版实例 - ROMA_PLATINUM：铂金版实例 [- ROMA_BASIC_IPV6：基础版IPV6实例](tag:hcs) [- ROMA_PROFESSIONAL_IPV6：专业版IPV6实例](tag:hcs) [- ROMA_ENTERPRISE_IPV6：企业版IPV6实例](tag:hcs) [- ROMA_PLATINUM_IPV6：铂金版IPV6实例](tag:hcs)
+        实例规格：  [- ROMA_BASIC：基础版实例](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [- ROMA_PROFESSIONAL：专业版实例](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [- ROMA_ENTERPRISE：企业版实例](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [- ROMA_PLATINUM：铂金版实例](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [- ROMA_BASIC_IPV6：基础版IPv6实例](tag:hcs,hcs_sm)  [- ROMA_PROFESSIONAL_IPV6：专业版IPv6实例](tag:hcs,hcs_sm)  [- ROMA_ENTERPRISE_IPV6：企业版IPv6实例](tag:hcs,hcs_sm)  [- ROMA_PLATINUM_IPV6：铂金版IPv6实例](tag:hcs,hcs_sm)  [ROMASITE_BASIC：Site版实例](tag:Site)
 
         :return: The spec of this ShowDetailsOfInstanceV2Response.
         :rtype: str
@@ -413,7 +420,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def spec(self, spec):
         """Sets the spec of this ShowDetailsOfInstanceV2Response.
 
-        实例规格： - ROMA_BASIC：基础版实例 - ROMA_PROFESSIONAL：专业版实例 - ROMA_ENTERPRISE：企业版实例 - ROMA_PLATINUM：铂金版实例 [- ROMA_BASIC_IPV6：基础版IPV6实例](tag:hcs) [- ROMA_PROFESSIONAL_IPV6：专业版IPV6实例](tag:hcs) [- ROMA_ENTERPRISE_IPV6：企业版IPV6实例](tag:hcs) [- ROMA_PLATINUM_IPV6：铂金版IPV6实例](tag:hcs)
+        实例规格：  [- ROMA_BASIC：基础版实例](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [- ROMA_PROFESSIONAL：专业版实例](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [- ROMA_ENTERPRISE：企业版实例](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [- ROMA_PLATINUM：铂金版实例](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [- ROMA_BASIC_IPV6：基础版IPv6实例](tag:hcs,hcs_sm)  [- ROMA_PROFESSIONAL_IPV6：专业版IPv6实例](tag:hcs,hcs_sm)  [- ROMA_ENTERPRISE_IPV6：企业版IPv6实例](tag:hcs,hcs_sm)  [- ROMA_PLATINUM_IPV6：铂金版IPv6实例](tag:hcs,hcs_sm)  [ROMASITE_BASIC：Site版实例](tag:Site)
 
         :param spec: The spec of this ShowDetailsOfInstanceV2Response.
         :type spec: str
@@ -490,7 +497,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def charging_mode(self):
         """Gets the charging_mode of this ShowDetailsOfInstanceV2Response.
 
-        实例计费方式： - 0：按需计费 - 1：包周期计费
+        实例计费方式[，暂未使用](tag:fcs,hcs,hcs_sm,Site) [0：按需计费](tag:hws,hws_hk,g42) [1：包周期计费](tag:hws,hws_hk)
 
         :return: The charging_mode of this ShowDetailsOfInstanceV2Response.
         :rtype: int
@@ -501,7 +508,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ShowDetailsOfInstanceV2Response.
 
-        实例计费方式： - 0：按需计费 - 1：包周期计费
+        实例计费方式[，暂未使用](tag:fcs,hcs,hcs_sm,Site) [0：按需计费](tag:hws,hws_hk,g42) [1：包周期计费](tag:hws,hws_hk)
 
         :param charging_mode: The charging_mode of this ShowDetailsOfInstanceV2Response.
         :type charging_mode: int
@@ -512,7 +519,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def cbc_metadata(self):
         """Gets the cbc_metadata of this ShowDetailsOfInstanceV2Response.
 
-        包周期计费订单编号
+        计费订单编号，[包周期计费时使用。](tag:hws,hws_hk)[暂未使用。](tag:fcs,hcs,hcs_sm,g42,Site)
 
         :return: The cbc_metadata of this ShowDetailsOfInstanceV2Response.
         :rtype: str
@@ -523,7 +530,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def cbc_metadata(self, cbc_metadata):
         """Sets the cbc_metadata of this ShowDetailsOfInstanceV2Response.
 
-        包周期计费订单编号
+        计费订单编号，[包周期计费时使用。](tag:hws,hws_hk)[暂未使用。](tag:fcs,hcs,hcs_sm,g42,Site)
 
         :param cbc_metadata: The cbc_metadata of this ShowDetailsOfInstanceV2Response.
         :type cbc_metadata: str
@@ -886,7 +893,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def listeners(self):
         """Gets the listeners of this ShowDetailsOfInstanceV2Response.
 
-        监听信息  [暂不支持](tag:public)
+        监听信息，暂不支持
 
         :return: The listeners of this ShowDetailsOfInstanceV2Response.
         :rtype: list[:class:`huaweicloudsdkroma.v2.Listener`]
@@ -897,7 +904,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def listeners(self, listeners):
         """Sets the listeners of this ShowDetailsOfInstanceV2Response.
 
-        监听信息  [暂不支持](tag:public)
+        监听信息，暂不支持
 
         :param listeners: The listeners of this ShowDetailsOfInstanceV2Response.
         :type listeners: list[:class:`huaweicloudsdkroma.v2.Listener`]
@@ -930,7 +937,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def ingress_ip_v6(self):
         """Gets the ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
 
-        实例入口（IPV6）  当前仅部分region部分可用区支持IPv6
+        实例入口（IPv6）  当前仅部分region部分可用区支持IPv6
 
         :return: The ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
         :rtype: str
@@ -941,7 +948,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def ingress_ip_v6(self, ingress_ip_v6):
         """Sets the ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
 
-        实例入口（IPV6）  当前仅部分region部分可用区支持IPv6
+        实例入口（IPv6）  当前仅部分region部分可用区支持IPv6
 
         :param ingress_ip_v6: The ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
         :type ingress_ip_v6: str
@@ -987,6 +994,28 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type ingress_ips: str
         """
         self._ingress_ips = ingress_ips
+
+    @property
+    def cipher_type(self):
+        """Gets the cipher_type of this ShowDetailsOfInstanceV2Response.
+
+        实例算法类型： - generalCipher：通用加密算法 - SMCompatible：SM系列商密算法兼容 - SMOnly：SM系列商密算法  [暂不支持](tag:hws,hws_hk,g42,Site)
+
+        :return: The cipher_type of this ShowDetailsOfInstanceV2Response.
+        :rtype: str
+        """
+        return self._cipher_type
+
+    @cipher_type.setter
+    def cipher_type(self, cipher_type):
+        """Sets the cipher_type of this ShowDetailsOfInstanceV2Response.
+
+        实例算法类型： - generalCipher：通用加密算法 - SMCompatible：SM系列商密算法兼容 - SMOnly：SM系列商密算法  [暂不支持](tag:hws,hws_hk,g42,Site)
+
+        :param cipher_type: The cipher_type of this ShowDetailsOfInstanceV2Response.
+        :type cipher_type: str
+        """
+        self._cipher_type = cipher_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

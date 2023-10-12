@@ -289,6 +289,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -981,6 +983,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -1650,6 +1654,122 @@ class DataArtsStudioClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_factory_env(self, request):
+        """创建环境变量
+
+        创建环境变量
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateFactoryEnv
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateFactoryEnvRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateFactoryEnvResponse`
+        """
+        return self._create_factory_env_with_http_info(request)
+
+    def _create_factory_env_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["status_code", "is_success", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/factory/env',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateFactoryEnvResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_factory_supplement_data_instance(self, request):
+        """创建补数据实例的接口
+
+        创建一个补数据实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateFactorySupplementDataInstance
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateFactorySupplementDataInstanceRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateFactorySupplementDataInstanceResponse`
+        """
+        return self._create_factory_supplement_data_instance_with_http_info(request)
+
+    def _create_factory_supplement_data_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/factory/supplement-data',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateFactorySupplementDataInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_manager_work_space(self, request):
         """创建工作空间
 
@@ -1793,6 +1913,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -2958,6 +3080,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -3750,6 +3874,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -3878,6 +4004,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -4214,6 +4342,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -4731,6 +4861,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -6042,6 +6174,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -6898,6 +7032,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -6958,6 +7094,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -7408,6 +7546,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -7470,6 +7610,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -7864,6 +8006,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -8532,6 +8676,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -9084,6 +9230,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -9827,6 +9975,134 @@ class DataArtsStudioClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_factory_env(self, request):
+        """查询环境变量信息
+
+        查询环境变量信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowFactoryEnv
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactoryEnvRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactoryEnvResponse`
+        """
+        return self._show_factory_env_with_http_info(request)
+
+    def _show_factory_env_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/factory/env',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowFactoryEnvResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_factory_supplement_data(self, request):
+        """查询所有的补数据实例
+
+        查询所有的补数据实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowFactorySupplementData
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactorySupplementDataRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactorySupplementDataResponse`
+        """
+        return self._show_factory_supplement_data_with_http_info(request)
+
+    def _show_factory_supplement_data_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'start_date' in local_var_params:
+            query_params.append(('start_date', local_var_params['start_date']))
+        if 'end_date' in local_var_params:
+            query_params.append(('end_date', local_var_params['end_date']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/factory/supplement-data',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowFactorySupplementDataResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_glossary_list(self, request):
         """查询标签列表
 
@@ -10050,6 +10326,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -10226,6 +10504,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -10288,6 +10568,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -11023,6 +11305,64 @@ class DataArtsStudioClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def stop_factory_supplement_data_instance(self, request):
+        """停止一个补数据实例
+
+        停止一个补数据实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StopFactorySupplementDataInstance
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.StopFactorySupplementDataInstanceRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StopFactorySupplementDataInstanceResponse`
+        """
+        return self._stop_factory_supplement_data_instance_with_http_info(request)
+
+    def _stop_factory_supplement_data_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_name' in local_var_params:
+            path_params['instance_name'] = local_var_params['instance_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/factory/supplement-data/{instance_name}/stop',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='StopFactorySupplementDataInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_app(self, request):
         """更新应用
 
@@ -11172,6 +11512,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -12374,6 +12716,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -12504,6 +12848,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -12756,6 +13102,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 
@@ -12814,6 +13162,8 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+        if 'dlm_type' in local_var_params:
+            header_params['Dlm-Type'] = local_var_params['dlm_type']
 
         form_params = {}
 

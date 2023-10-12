@@ -47,11 +47,11 @@ class LdApiScriptBase:
         :type ds_id: str
         :param ds_name: 数据源名称
         :type ds_name: str
-        :param ds_type: 数据源类型： - oracle：oracle数据源类型 - mysql：mysql数据源类型 - mongodb：mongodb数据源类型 - redis：redis数据源类型 - postgresql：postgresql数据源类型 - hive：hive数据源类型 - mssql：sqlserver数据源类型 - sqlserver：sqlserver数据源类型 - gauss200：gauss200数据源类型 - dws：dws数据源类型 - gauss100：gauss100数据源类型 - zenith：zenith数据源类型
+        :param ds_type: 数据源类型：  - oracle：oracle数据源类型  - mysql：mysql数据源类型  - mongodb：mongodb数据源类型  - redis：redis数据源类型  - postgresql：postgresql/opengauss数据源类型  - hive：hive数据源类型  - mssql：sqlserver数据源类型  - sqlserver：sqlserver数据源类型  - dws：dws数据源类型  - gauss100：gauss100数据源类型  - zenith：zenith数据源类型
         :type ds_type: str
         :param type: 脚本类型 - SQL：sql语句 - SP：存储过程 
         :type type: str
-        :param object_name: 返回对象。  当api_type &#x3D; data时，必选
+        :param object_name: 返回对象。
         :type object_name: str
         :param content: API脚本内容  请对脚本进行base64编码
         :type content: str
@@ -81,8 +81,7 @@ class LdApiScriptBase:
             self.ds_type = ds_type
         if type is not None:
             self.type = type
-        if object_name is not None:
-            self.object_name = object_name
+        self.object_name = object_name
         self.content = content
         if enable_result_paging is not None:
             self.enable_result_paging = enable_result_paging
@@ -137,7 +136,7 @@ class LdApiScriptBase:
     def ds_type(self):
         """Gets the ds_type of this LdApiScriptBase.
 
-        数据源类型： - oracle：oracle数据源类型 - mysql：mysql数据源类型 - mongodb：mongodb数据源类型 - redis：redis数据源类型 - postgresql：postgresql数据源类型 - hive：hive数据源类型 - mssql：sqlserver数据源类型 - sqlserver：sqlserver数据源类型 - gauss200：gauss200数据源类型 - dws：dws数据源类型 - gauss100：gauss100数据源类型 - zenith：zenith数据源类型
+        数据源类型：  - oracle：oracle数据源类型  - mysql：mysql数据源类型  - mongodb：mongodb数据源类型  - redis：redis数据源类型  - postgresql：postgresql/opengauss数据源类型  - hive：hive数据源类型  - mssql：sqlserver数据源类型  - sqlserver：sqlserver数据源类型  - dws：dws数据源类型  - gauss100：gauss100数据源类型  - zenith：zenith数据源类型
 
         :return: The ds_type of this LdApiScriptBase.
         :rtype: str
@@ -148,7 +147,7 @@ class LdApiScriptBase:
     def ds_type(self, ds_type):
         """Sets the ds_type of this LdApiScriptBase.
 
-        数据源类型： - oracle：oracle数据源类型 - mysql：mysql数据源类型 - mongodb：mongodb数据源类型 - redis：redis数据源类型 - postgresql：postgresql数据源类型 - hive：hive数据源类型 - mssql：sqlserver数据源类型 - sqlserver：sqlserver数据源类型 - gauss200：gauss200数据源类型 - dws：dws数据源类型 - gauss100：gauss100数据源类型 - zenith：zenith数据源类型
+        数据源类型：  - oracle：oracle数据源类型  - mysql：mysql数据源类型  - mongodb：mongodb数据源类型  - redis：redis数据源类型  - postgresql：postgresql/opengauss数据源类型  - hive：hive数据源类型  - mssql：sqlserver数据源类型  - sqlserver：sqlserver数据源类型  - dws：dws数据源类型  - gauss100：gauss100数据源类型  - zenith：zenith数据源类型
 
         :param ds_type: The ds_type of this LdApiScriptBase.
         :type ds_type: str
@@ -181,7 +180,7 @@ class LdApiScriptBase:
     def object_name(self):
         """Gets the object_name of this LdApiScriptBase.
 
-        返回对象。  当api_type = data时，必选
+        返回对象。
 
         :return: The object_name of this LdApiScriptBase.
         :rtype: str
@@ -192,7 +191,7 @@ class LdApiScriptBase:
     def object_name(self, object_name):
         """Sets the object_name of this LdApiScriptBase.
 
-        返回对象。  当api_type = data时，必选
+        返回对象。
 
         :param object_name: The object_name of this LdApiScriptBase.
         :type object_name: str

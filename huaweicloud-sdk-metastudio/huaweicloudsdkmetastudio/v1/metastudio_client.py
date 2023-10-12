@@ -1004,6 +1004,64 @@ class MetaStudioClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_photo_detection(self, request):
+        """创建照片检测任务
+
+        该接口用于创建照片检测任务，检测照片是否满足制作照片数字人的要求。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePhotoDetection
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreatePhotoDetectionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreatePhotoDetectionResponse`
+        """
+        return self._create_photo_detection_with_http_info(request)
+
+    def _create_photo_detection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/photo-detection',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreatePhotoDetectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_photo_digital_human_video(self, request):
         """创建照片分身数字人视频制作任务
 
@@ -1057,6 +1115,64 @@ class MetaStudioClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreatePhotoDigitalHumanVideoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_photo_detection(self, request):
+        """查询照片检测任务详情
+
+        该接口用于查询照片检测任务详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPhotoDetection
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowPhotoDetectionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowPhotoDetectionResponse`
+        """
+        return self._show_photo_detection_with_http_info(request)
+
+    def _show_photo_detection_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/photo-detection/{job_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowPhotoDetectionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

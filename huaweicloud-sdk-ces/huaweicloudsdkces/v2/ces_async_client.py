@@ -256,6 +256,120 @@ class CesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_delete_notification_masks_async(self, request):
+        """批量删除告警通知屏蔽规则
+
+        批量删除告警通知屏蔽规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteNotificationMasks
+        :type request: :class:`huaweicloudsdkces.v2.BatchDeleteNotificationMasksRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.BatchDeleteNotificationMasksResponse`
+        """
+        return self._batch_delete_notification_masks_with_http_info(request)
+
+    def _batch_delete_notification_masks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/notification-masks/batch-delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDeleteNotificationMasksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_delete_one_click_alarms_async(self, request):
+        """批量删除一键告警
+
+        批量删除一键告警
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteOneClickAlarms
+        :type request: :class:`huaweicloudsdkces.v2.BatchDeleteOneClickAlarmsRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.BatchDeleteOneClickAlarmsResponse`
+        """
+        return self._batch_delete_one_click_alarms_with_http_info(request)
+
+    def _batch_delete_one_click_alarms_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/one-click-alarms/batch-delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchDeleteOneClickAlarmsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def batch_delete_resource_groups_async(self, request):
         """批量删除资源分组
 
@@ -424,6 +538,240 @@ class CesAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='BatchEnableAlarmRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_update_notification_mask_time_async(self, request):
+        """批量修改告警通知屏蔽规则的屏蔽时间
+
+        批量修改告警通知屏蔽规则的屏蔽时间
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchUpdateNotificationMaskTime
+        :type request: :class:`huaweicloudsdkces.v2.BatchUpdateNotificationMaskTimeRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.BatchUpdateNotificationMaskTimeResponse`
+        """
+        return self._batch_update_notification_mask_time_with_http_info(request)
+
+    def _batch_update_notification_mask_time_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/notification-masks/batch-update',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchUpdateNotificationMaskTimeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_update_notification_masks_async(self, request):
+        """批量设置告警通知屏蔽规则
+
+        批量设置告警通知屏蔽规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchUpdateNotificationMasks
+        :type request: :class:`huaweicloudsdkces.v2.BatchUpdateNotificationMasksRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.BatchUpdateNotificationMasksResponse`
+        """
+        return self._batch_update_notification_masks_with_http_info(request)
+
+    def _batch_update_notification_masks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/notification-masks',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchUpdateNotificationMasksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_update_one_click_alarm_policies_enabled_state_async(self, request):
+        """批量修改一键告警关联告警规则策略的启用状态
+
+        批量修改一键告警关联告警规则策略的启用状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchUpdateOneClickAlarmPoliciesEnabledState
+        :type request: :class:`huaweicloudsdkces.v2.BatchUpdateOneClickAlarmPoliciesEnabledStateRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.BatchUpdateOneClickAlarmPoliciesEnabledStateResponse`
+        """
+        return self._batch_update_one_click_alarm_policies_enabled_state_with_http_info(request)
+
+    def _batch_update_one_click_alarm_policies_enabled_state_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'one_click_alarm_id' in local_var_params:
+            path_params['one_click_alarm_id'] = local_var_params['one_click_alarm_id']
+        if 'alarm_id' in local_var_params:
+            path_params['alarm_id'] = local_var_params['alarm_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/one-click-alarms/{one_click_alarm_id}/alarms/{alarm_id}/policies/action',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchUpdateOneClickAlarmPoliciesEnabledStateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_update_one_click_alarms_enabled_state_async(self, request):
+        """批量修改一键告警关联告警规则的启用状态
+
+        批量修改一键告警关联告警规则的启用状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchUpdateOneClickAlarmsEnabledState
+        :type request: :class:`huaweicloudsdkces.v2.BatchUpdateOneClickAlarmsEnabledStateRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.BatchUpdateOneClickAlarmsEnabledStateResponse`
+        """
+        return self._batch_update_one_click_alarms_enabled_state_with_http_info(request)
+
+    def _batch_update_one_click_alarms_enabled_state_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'one_click_alarm_id' in local_var_params:
+            path_params['one_click_alarm_id'] = local_var_params['one_click_alarm_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/one-click-alarms/{one_click_alarm_id}/alarm-rules/action',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchUpdateOneClickAlarmsEnabledStateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -654,6 +1002,63 @@ class CesAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateDashboardWidgetsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_one_click_alarm_async(self, request):
+        """创建一键告警
+
+        创建一键告警
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateOneClickAlarm
+        :type request: :class:`huaweicloudsdkces.v2.CreateOneClickAlarmRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.CreateOneClickAlarmResponse`
+        """
+        return self._create_one_click_alarm_with_http_info(request)
+
+    def _create_one_click_alarm_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/one-click-alarms',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateOneClickAlarmResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1405,6 +1810,63 @@ class CesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_ces_target_project_tags_async(self, request):
+        """查询CES指定项目指定资源类型标签列表
+
+        查询CES指定项目指定资源类型标签列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCesTargetProjectTags
+        :type request: :class:`huaweicloudsdkces.v2.ListCesTargetProjectTagsRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.ListCesTargetProjectTagsResponse`
+        """
+        return self._list_ces_target_project_tags_with_http_info(request)
+
+    def _list_ces_target_project_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/{resource_type}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListCesTargetProjectTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_dashboard_infos_async(self, request):
         """查询监控看板列表
 
@@ -1520,6 +1982,240 @@ class CesAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListDashboardWidgetsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_notification_mask_resources_async(self, request):
+        """查询告警通知屏蔽资源列表
+
+        查询告警通知屏蔽资源列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListNotificationMaskResources
+        :type request: :class:`huaweicloudsdkces.v2.ListNotificationMaskResourcesRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.ListNotificationMaskResourcesResponse`
+        """
+        return self._list_notification_mask_resources_with_http_info(request)
+
+    def _list_notification_mask_resources_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'notification_mask_id' in local_var_params:
+            path_params['notification_mask_id'] = local_var_params['notification_mask_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/notification-masks/{notification_mask_id}/resources',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListNotificationMaskResourcesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_notification_masks_async(self, request):
+        """查询告警通知屏蔽列表
+
+        批量查询指定类型的通知屏蔽规则，目前最多支持100个通知屏蔽规则的批量查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListNotificationMasks
+        :type request: :class:`huaweicloudsdkces.v2.ListNotificationMasksRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.ListNotificationMasksResponse`
+        """
+        return self._list_notification_masks_with_http_info(request)
+
+    def _list_notification_masks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/notification-masks/batch-query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListNotificationMasksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_one_click_alarm_rules_async(self, request):
+        """查询一键告警关联告警规则列表
+
+        查询一键告警关联告警规则列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOneClickAlarmRules
+        :type request: :class:`huaweicloudsdkces.v2.ListOneClickAlarmRulesRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.ListOneClickAlarmRulesResponse`
+        """
+        return self._list_one_click_alarm_rules_with_http_info(request)
+
+    def _list_one_click_alarm_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'one_click_alarm_id' in local_var_params:
+            path_params['one_click_alarm_id'] = local_var_params['one_click_alarm_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/one-click-alarms/{one_click_alarm_id}/alarms',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListOneClickAlarmRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_one_click_alarms_async(self, request):
+        """查询一键告警列表
+
+        查询一键告警列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOneClickAlarms
+        :type request: :class:`huaweicloudsdkces.v2.ListOneClickAlarmsRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.ListOneClickAlarmsResponse`
+        """
+        return self._list_one_click_alarms_with_http_info(request)
+
+    def _list_one_click_alarms_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/one-click-alarms',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListOneClickAlarmsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1832,6 +2528,65 @@ class CesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_alarm_notifications_async(self, request):
+        """修改告警规则告警通知信息
+
+        修改告警规则告警通知信息，告警策略&amp;资源请使用对应接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAlarmNotifications
+        :type request: :class:`huaweicloudsdkces.v2.UpdateAlarmNotificationsRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.UpdateAlarmNotificationsResponse`
+        """
+        return self._update_alarm_notifications_with_http_info(request)
+
+    def _update_alarm_notifications_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'alarm_id' in local_var_params:
+            path_params['alarm_id'] = local_var_params['alarm_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/alarms/{alarm_id}/notifications',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateAlarmNotificationsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_alarm_rule_policies_async(self, request):
         """修改告警规则策略(全量修改)
 
@@ -2004,6 +2759,124 @@ class CesAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateDashboardResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_notification_masks_async(self, request):
+        """修改告警通知屏蔽规则
+
+        修改告警通知屏蔽规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateNotificationMasks
+        :type request: :class:`huaweicloudsdkces.v2.UpdateNotificationMasksRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.UpdateNotificationMasksResponse`
+        """
+        return self._update_notification_masks_with_http_info(request)
+
+    def _update_notification_masks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'notification_mask_id' in local_var_params:
+            path_params['notification_mask_id'] = local_var_params['notification_mask_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/notification-masks/{notification_mask_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateNotificationMasksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_one_click_alarm_notifications_async(self, request):
+        """批量修改开启状态的一键告警关联告警规则的告警通知
+
+        批量修改开启状态的一键告警关联告警规则的告警通知
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateOneClickAlarmNotifications
+        :type request: :class:`huaweicloudsdkces.v2.UpdateOneClickAlarmNotificationsRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.UpdateOneClickAlarmNotificationsResponse`
+        """
+        return self._update_one_click_alarm_notifications_with_http_info(request)
+
+    def _update_one_click_alarm_notifications_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'one_click_alarm_id' in local_var_params:
+            path_params['one_click_alarm_id'] = local_var_params['one_click_alarm_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/one-click-alarms/{one_click_alarm_id}/notifications',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateOneClickAlarmNotificationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

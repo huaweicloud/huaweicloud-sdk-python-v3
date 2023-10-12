@@ -24,6 +24,7 @@ class AppGroup:
         'description': 'str',
         'authorization_type': 'AuthorizationTypeEnum',
         'tenant_id': 'str',
+        'app_type': 'AppTypeEnum',
         'create_at': 'datetime',
         'app_count': 'int'
     }
@@ -36,11 +37,12 @@ class AppGroup:
         'description': 'description',
         'authorization_type': 'authorization_type',
         'tenant_id': 'tenant_id',
+        'app_type': 'app_type',
         'create_at': 'create_at',
         'app_count': 'app_count'
     }
 
-    def __init__(self, id=None, name=None, app_server_group_id=None, app_server_group_name=None, description=None, authorization_type=None, tenant_id=None, create_at=None, app_count=None):
+    def __init__(self, id=None, name=None, app_server_group_id=None, app_server_group_name=None, description=None, authorization_type=None, tenant_id=None, app_type=None, create_at=None, app_count=None):
         """AppGroup
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class AppGroup:
         :type authorization_type: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
         :param tenant_id: 租户ID
         :type tenant_id: str
+        :param app_type: 
+        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
         :param create_at: 发布时间
         :type create_at: datetime
         :param app_count: 应用数量
@@ -74,6 +78,7 @@ class AppGroup:
         self._description = None
         self._authorization_type = None
         self._tenant_id = None
+        self._app_type = None
         self._create_at = None
         self._app_count = None
         self.discriminator = None
@@ -92,6 +97,8 @@ class AppGroup:
             self.authorization_type = authorization_type
         if tenant_id is not None:
             self.tenant_id = tenant_id
+        if app_type is not None:
+            self.app_type = app_type
         if create_at is not None:
             self.create_at = create_at
         if app_count is not None:
@@ -246,6 +253,24 @@ class AppGroup:
         :type tenant_id: str
         """
         self._tenant_id = tenant_id
+
+    @property
+    def app_type(self):
+        """Gets the app_type of this AppGroup.
+
+        :return: The app_type of this AppGroup.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        """
+        return self._app_type
+
+    @app_type.setter
+    def app_type(self, app_type):
+        """Sets the app_type of this AppGroup.
+
+        :param app_type: The app_type of this AppGroup.
+        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        """
+        self._app_type = app_type
 
     @property
     def create_at(self):

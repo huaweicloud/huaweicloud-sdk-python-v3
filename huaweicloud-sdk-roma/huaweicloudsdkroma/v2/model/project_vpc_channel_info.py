@@ -21,6 +21,7 @@ class ProjectVpcChannelInfo:
         'port': 'int',
         'balance_strategy': 'int',
         'member_type': 'str',
+        'type': 'str',
         'dict_code': 'str',
         'create_time': 'datetime',
         'id': 'str',
@@ -30,8 +31,7 @@ class ProjectVpcChannelInfo:
         'instance_name': 'str',
         'members': 'list[VpcMemberInfo]',
         'vpc_health_config': 'VpcHealthConfigInfo',
-        'microservice_info': 'MicroServiceInfo',
-        'type': 'str'
+        'microservice_info': 'MicroServiceInfo'
     }
 
     attribute_map = {
@@ -39,6 +39,7 @@ class ProjectVpcChannelInfo:
         'port': 'port',
         'balance_strategy': 'balance_strategy',
         'member_type': 'member_type',
+        'type': 'type',
         'dict_code': 'dict_code',
         'create_time': 'create_time',
         'id': 'id',
@@ -48,11 +49,10 @@ class ProjectVpcChannelInfo:
         'instance_name': 'instance_name',
         'members': 'members',
         'vpc_health_config': 'vpc_health_config',
-        'microservice_info': 'microservice_info',
-        'type': 'type'
+        'microservice_info': 'microservice_info'
     }
 
-    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, dict_code=None, create_time=None, id=None, status=None, member_groups=None, instance_id=None, instance_name=None, members=None, vpc_health_config=None, microservice_info=None, type=None):
+    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, type=None, dict_code=None, create_time=None, id=None, status=None, member_groups=None, instance_id=None, instance_name=None, members=None, vpc_health_config=None, microservice_info=None):
         """ProjectVpcChannelInfo
 
         The model defined in huaweicloud sdk
@@ -65,6 +65,8 @@ class ProjectVpcChannelInfo:
         :type balance_strategy: int
         :param member_type: VPC通道的成员类型。[site场景必须修改成IP类型](tag:Site) - ip - ecs
         :type member_type: str
+        :param type: vpc通道类型。 - BUILTIN：BUILTIN通道类型 - MICROSERVICE：微服务类型
+        :type type: str
         :param dict_code: VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
         :type dict_code: str
         :param create_time: VPC通道的创建时间
@@ -85,8 +87,6 @@ class ProjectVpcChannelInfo:
         :type vpc_health_config: :class:`huaweicloudsdkroma.v2.VpcHealthConfigInfo`
         :param microservice_info: 
         :type microservice_info: :class:`huaweicloudsdkroma.v2.MicroServiceInfo`
-        :param type: vpc通道类型。 - BUILTIN：BUILTIN通道类型 - MICROSERVICE：微服务类型
-        :type type: str
         """
         
         
@@ -95,6 +95,7 @@ class ProjectVpcChannelInfo:
         self._port = None
         self._balance_strategy = None
         self._member_type = None
+        self._type = None
         self._dict_code = None
         self._create_time = None
         self._id = None
@@ -105,13 +106,14 @@ class ProjectVpcChannelInfo:
         self._members = None
         self._vpc_health_config = None
         self._microservice_info = None
-        self._type = None
         self.discriminator = None
 
         self.name = name
         self.port = port
         self.balance_strategy = balance_strategy
         self.member_type = member_type
+        if type is not None:
+            self.type = type
         if dict_code is not None:
             self.dict_code = dict_code
         if create_time is not None:
@@ -132,8 +134,6 @@ class ProjectVpcChannelInfo:
             self.vpc_health_config = vpc_health_config
         if microservice_info is not None:
             self.microservice_info = microservice_info
-        if type is not None:
-            self.type = type
 
     @property
     def name(self):
@@ -222,6 +222,28 @@ class ProjectVpcChannelInfo:
         :type member_type: str
         """
         self._member_type = member_type
+
+    @property
+    def type(self):
+        """Gets the type of this ProjectVpcChannelInfo.
+
+        vpc通道类型。 - BUILTIN：BUILTIN通道类型 - MICROSERVICE：微服务类型
+
+        :return: The type of this ProjectVpcChannelInfo.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ProjectVpcChannelInfo.
+
+        vpc通道类型。 - BUILTIN：BUILTIN通道类型 - MICROSERVICE：微服务类型
+
+        :param type: The type of this ProjectVpcChannelInfo.
+        :type type: str
+        """
+        self._type = type
 
     @property
     def dict_code(self):
@@ -434,28 +456,6 @@ class ProjectVpcChannelInfo:
         :type microservice_info: :class:`huaweicloudsdkroma.v2.MicroServiceInfo`
         """
         self._microservice_info = microservice_info
-
-    @property
-    def type(self):
-        """Gets the type of this ProjectVpcChannelInfo.
-
-        vpc通道类型。 - BUILTIN：BUILTIN通道类型 - MICROSERVICE：微服务类型
-
-        :return: The type of this ProjectVpcChannelInfo.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this ProjectVpcChannelInfo.
-
-        vpc通道类型。 - BUILTIN：BUILTIN通道类型 - MICROSERVICE：微服务类型
-
-        :param type: The type of this ProjectVpcChannelInfo.
-        :type type: str
-        """
-        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

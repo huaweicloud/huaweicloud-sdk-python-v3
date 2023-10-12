@@ -150,6 +150,63 @@ class WorkspaceAppAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_publishable_app_async(self, request):
+        """可发布应用列表
+
+        查询应用组下可发布的应用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPublishableApp
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.ShowPublishableAppRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ShowPublishableAppResponse`
+        """
+        return self._show_publishable_app_with_http_info(request)
+
+    def _show_publishable_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_group_id' in local_var_params:
+            path_params['app_group_id'] = local_var_params['app_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/app-groups/{app_group_id}/publishable-app',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowPublishableAppResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def unpublish_app_async(self, request):
         """批量取消应用发布
 
@@ -266,6 +323,69 @@ class WorkspaceAppAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateAppResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def upload_app_icon_async(self, request):
+        """修改自定义应用图标
+
+        修改自定义应用图标
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UploadAppIcon
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.UploadAppIconRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UploadAppIconResponse`
+        """
+        return self._upload_app_icon_with_http_info(request)
+
+    def _upload_app_icon_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_group_id' in local_var_params:
+            path_params['app_group_id'] = local_var_params['app_group_id']
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'data' in local_var_params:
+            form_params['data'] = local_var_params['data']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/app-groups/{app_group_id}/apps/{app_id}/icon',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UploadAppIconResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -422,6 +542,8 @@ class WorkspaceAppAsyncClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'authorization_type' in local_var_params:
             query_params.append(('authorization_type', local_var_params['authorization_type']))
+        if 'app_type' in local_var_params:
+            query_params.append(('app_type', local_var_params['app_type']))
 
         header_params = {}
 
@@ -574,6 +696,61 @@ class WorkspaceAppAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListProductResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_session_type_async(self, request):
+        """查询会话套餐列表
+
+        该接口用于查询会话套餐列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSessionType
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListSessionTypeRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListSessionTypeResponse`
+        """
+        return self._list_session_type_with_http_info(request)
+
+    def _list_session_type_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/session-type',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListSessionTypeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -869,6 +1046,63 @@ class WorkspaceAppAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_or_update_storage_policy_statement_async(self, request):
+        """新增或更新存储目录访问权限自定义策略
+
+        新增或更新存储目录访问权限自定义策略(已存在自定义策略时会对已有策略更新)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateOrUpdateStoragePolicyStatement
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.CreateOrUpdateStoragePolicyStatementRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateOrUpdateStoragePolicyStatementResponse`
+        """
+        return self._create_or_update_storage_policy_statement_with_http_info(request)
+
+    def _create_or_update_storage_policy_statement_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/storages-policy/actions/create-statements',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateOrUpdateStoragePolicyStatementResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3047,6 +3281,8 @@ class WorkspaceAppAsyncClient(Client):
             query_params.append(('server_group_name', local_var_params['server_group_name']))
         if 'server_group_id' in local_var_params:
             query_params.append(('server_group_id', local_var_params['server_group_id']))
+        if 'app_type' in local_var_params:
+            query_params.append(('app_type', local_var_params['app_type']))
 
         header_params = {}
 
@@ -3199,6 +3435,63 @@ class WorkspaceAppAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_session_by_user_name_async(self, request):
+        """根据用户名查询当前会话
+
+        根据用户名查询当前会话
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSessionByUserName
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListSessionByUserNameRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListSessionByUserNameResponse`
+        """
+        return self._list_session_by_user_name_with_http_info(request)
+
+    def _list_session_by_user_name_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/session/user-session-info',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListSessionByUserNameResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_user_connection_async(self, request):
         """查询用户登录记录
 
@@ -3255,6 +3548,63 @@ class WorkspaceAppAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListUserConnectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def logoff_user_session_async(self, request):
+        """用户会话注销
+
+        用户会话注销
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for LogoffUserSession
+        :type request: :class:`huaweicloudsdkworkspaceapp.v1.LogoffUserSessionRequest`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.LogoffUserSessionResponse`
+        """
+        return self._logoff_user_session_with_http_info(request)
+
+    def _logoff_user_session_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/session/logoff',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='LogoffUserSessionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

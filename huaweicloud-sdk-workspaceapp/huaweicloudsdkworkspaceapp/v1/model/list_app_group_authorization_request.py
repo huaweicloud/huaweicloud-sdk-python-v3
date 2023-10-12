@@ -41,7 +41,7 @@ class ListAppGroupAuthorizationRequest:
         :type offset: int
         :param app_group_id: 应用组ID
         :type app_group_id: str
-        :param account: 应用授权用户(组),精确查询. 账户的格式必须为:&lt;i&gt;账户(组)&lt;/i&gt;的形式
+        :param account: 应用授权的用户(组)，精确查询。
         :type account: str
         """
         
@@ -53,8 +53,10 @@ class ListAppGroupAuthorizationRequest:
         self._account = None
         self.discriminator = None
 
-        self.limit = limit
-        self.offset = offset
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
         if app_group_id is not None:
             self.app_group_id = app_group_id
         if account is not None:
@@ -130,7 +132,7 @@ class ListAppGroupAuthorizationRequest:
     def account(self):
         """Gets the account of this ListAppGroupAuthorizationRequest.
 
-        应用授权用户(组),精确查询. 账户的格式必须为:<i>账户(组)</i>的形式
+        应用授权的用户(组)，精确查询。
 
         :return: The account of this ListAppGroupAuthorizationRequest.
         :rtype: str
@@ -141,7 +143,7 @@ class ListAppGroupAuthorizationRequest:
     def account(self, account):
         """Sets the account of this ListAppGroupAuthorizationRequest.
 
-        应用授权用户(组),精确查询. 账户的格式必须为:<i>账户(组)</i>的形式
+        应用授权的用户(组)，精确查询。
 
         :param account: The account of this ListAppGroupAuthorizationRequest.
         :type account: str

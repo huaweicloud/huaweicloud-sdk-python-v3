@@ -58,16 +58,13 @@ class LogMappingStreamInfo:
         self._target_log_stream_ttl = None
         self.discriminator = None
 
-        if source_log_stream_id is not None:
-            self.source_log_stream_id = source_log_stream_id
+        self.source_log_stream_id = source_log_stream_id
         if target_log_stream_id is not None:
             self.target_log_stream_id = target_log_stream_id
-        if target_log_stream_name is not None:
-            self.target_log_stream_name = target_log_stream_name
+        self.target_log_stream_name = target_log_stream_name
         if target_log_stream_eps_id is not None:
             self.target_log_stream_eps_id = target_log_stream_eps_id
-        if target_log_stream_ttl is not None:
-            self.target_log_stream_ttl = target_log_stream_ttl
+        self.target_log_stream_ttl = target_log_stream_ttl
 
     @property
     def source_log_stream_id(self):

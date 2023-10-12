@@ -21,6 +21,8 @@ class AuthorizerResp:
         'type': 'str',
         'authorizer_type': 'str',
         'authorizer_uri': 'str',
+        'authorizer_version': 'str',
+        'authorizer_alias_uri': 'str',
         'identities': 'list[Identity]',
         'ttl': 'int',
         'user_data': 'str',
@@ -37,6 +39,8 @@ class AuthorizerResp:
         'type': 'type',
         'authorizer_type': 'authorizer_type',
         'authorizer_uri': 'authorizer_uri',
+        'authorizer_version': 'authorizer_version',
+        'authorizer_alias_uri': 'authorizer_alias_uri',
         'identities': 'identities',
         'ttl': 'ttl',
         'user_data': 'user_data',
@@ -48,7 +52,7 @@ class AuthorizerResp:
         'roma_app_name': 'roma_app_name'
     }
 
-    def __init__(self, name=None, type=None, authorizer_type=None, authorizer_uri=None, identities=None, ttl=None, user_data=None, ld_api_id=None, need_body=None, id=None, create_time=None, roma_app_id=None, roma_app_name=None):
+    def __init__(self, name=None, type=None, authorizer_type=None, authorizer_uri=None, authorizer_version=None, authorizer_alias_uri=None, identities=None, ttl=None, user_data=None, ld_api_id=None, need_body=None, id=None, create_time=None, roma_app_id=None, roma_app_name=None):
         """AuthorizerResp
 
         The model defined in huaweicloud sdk
@@ -57,10 +61,14 @@ class AuthorizerResp:
         :type name: str
         :param type: 自定义认证类型  - FRONTEND：前端 - BACKEND：后端
         :type type: str
-        :param authorizer_type: 自定义认证函数类型： - LD：自定义后端函数 - FUNC：函数服务函数
+        :param authorizer_type: 自定义认证函数类型： - LD：自定义后端函数 - FUNC：[函数服务函数](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[暂不支持](tag:Site)
         :type authorizer_type: str
         :param authorizer_uri: 函数地址。  注意：使用自定义后端的函数API，API请求方法必须为POST，且API状态必须为已部署。
         :type authorizer_uri: str
+        :param authorizer_version: 函数版本。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        :type authorizer_version: str
+        :param authorizer_alias_uri: 函数别名地址。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        :type authorizer_alias_uri: str
         :param identities: 认证来源
         :type identities: list[:class:`huaweicloudsdkroma.v2.Identity`]
         :param ttl: 缓存时间
@@ -87,6 +95,8 @@ class AuthorizerResp:
         self._type = None
         self._authorizer_type = None
         self._authorizer_uri = None
+        self._authorizer_version = None
+        self._authorizer_alias_uri = None
         self._identities = None
         self._ttl = None
         self._user_data = None
@@ -102,6 +112,10 @@ class AuthorizerResp:
         self.type = type
         self.authorizer_type = authorizer_type
         self.authorizer_uri = authorizer_uri
+        if authorizer_version is not None:
+            self.authorizer_version = authorizer_version
+        if authorizer_alias_uri is not None:
+            self.authorizer_alias_uri = authorizer_alias_uri
         if identities is not None:
             self.identities = identities
         if ttl is not None:
@@ -169,7 +183,7 @@ class AuthorizerResp:
     def authorizer_type(self):
         """Gets the authorizer_type of this AuthorizerResp.
 
-        自定义认证函数类型： - LD：自定义后端函数 - FUNC：函数服务函数
+        自定义认证函数类型： - LD：自定义后端函数 - FUNC：[函数服务函数](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[暂不支持](tag:Site)
 
         :return: The authorizer_type of this AuthorizerResp.
         :rtype: str
@@ -180,7 +194,7 @@ class AuthorizerResp:
     def authorizer_type(self, authorizer_type):
         """Sets the authorizer_type of this AuthorizerResp.
 
-        自定义认证函数类型： - LD：自定义后端函数 - FUNC：函数服务函数
+        自定义认证函数类型： - LD：自定义后端函数 - FUNC：[函数服务函数](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[暂不支持](tag:Site)
 
         :param authorizer_type: The authorizer_type of this AuthorizerResp.
         :type authorizer_type: str
@@ -208,6 +222,50 @@ class AuthorizerResp:
         :type authorizer_uri: str
         """
         self._authorizer_uri = authorizer_uri
+
+    @property
+    def authorizer_version(self):
+        """Gets the authorizer_version of this AuthorizerResp.
+
+        函数版本。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+
+        :return: The authorizer_version of this AuthorizerResp.
+        :rtype: str
+        """
+        return self._authorizer_version
+
+    @authorizer_version.setter
+    def authorizer_version(self, authorizer_version):
+        """Sets the authorizer_version of this AuthorizerResp.
+
+        函数版本。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+
+        :param authorizer_version: The authorizer_version of this AuthorizerResp.
+        :type authorizer_version: str
+        """
+        self._authorizer_version = authorizer_version
+
+    @property
+    def authorizer_alias_uri(self):
+        """Gets the authorizer_alias_uri of this AuthorizerResp.
+
+        函数别名地址。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+
+        :return: The authorizer_alias_uri of this AuthorizerResp.
+        :rtype: str
+        """
+        return self._authorizer_alias_uri
+
+    @authorizer_alias_uri.setter
+    def authorizer_alias_uri(self, authorizer_alias_uri):
+        """Sets the authorizer_alias_uri of this AuthorizerResp.
+
+        函数别名地址。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+
+        :param authorizer_alias_uri: The authorizer_alias_uri of this AuthorizerResp.
+        :type authorizer_alias_uri: str
+        """
+        self._authorizer_alias_uri = authorizer_alias_uri
 
     @property
     def identities(self):

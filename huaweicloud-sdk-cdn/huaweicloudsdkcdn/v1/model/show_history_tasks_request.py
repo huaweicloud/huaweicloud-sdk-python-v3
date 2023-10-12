@@ -25,7 +25,8 @@ class ShowHistoryTasksRequest:
         'end_date': 'int',
         'order_field': 'str',
         'order_type': 'str',
-        'file_type': 'str'
+        'file_type': 'str',
+        'task_type': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ShowHistoryTasksRequest:
         'end_date': 'end_date',
         'order_field': 'order_field',
         'order_type': 'order_type',
-        'file_type': 'file_type'
+        'file_type': 'file_type',
+        'task_type': 'task_type'
     }
 
-    def __init__(self, enterprise_project_id=None, page_size=None, page_number=None, status=None, start_date=None, end_date=None, order_field=None, order_type=None, file_type=None):
+    def __init__(self, enterprise_project_id=None, page_size=None, page_number=None, status=None, start_date=None, end_date=None, order_field=None, order_type=None, file_type=None, task_type=None):
         """ShowHistoryTasksRequest
 
         The model defined in huaweicloud sdk
@@ -61,8 +63,10 @@ class ShowHistoryTasksRequest:
         :type order_field: str
         :param order_type: desc 或者asc。默认值desc。
         :type order_type: str
-        :param file_type: 默认是文件file。file：文件,directory：目录。
+        :param file_type: file：文件,directory：目录。
         :type file_type: str
+        :param task_type: 任务类型，refresh：刷新任务；preheating：预热任务
+        :type task_type: str
         """
         
         
@@ -76,6 +80,7 @@ class ShowHistoryTasksRequest:
         self._order_field = None
         self._order_type = None
         self._file_type = None
+        self._task_type = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -96,6 +101,8 @@ class ShowHistoryTasksRequest:
             self.order_type = order_type
         if file_type is not None:
             self.file_type = file_type
+        if task_type is not None:
+            self.task_type = task_type
 
     @property
     def enterprise_project_id(self):
@@ -277,7 +284,7 @@ class ShowHistoryTasksRequest:
     def file_type(self):
         """Gets the file_type of this ShowHistoryTasksRequest.
 
-        默认是文件file。file：文件,directory：目录。
+        file：文件,directory：目录。
 
         :return: The file_type of this ShowHistoryTasksRequest.
         :rtype: str
@@ -288,12 +295,34 @@ class ShowHistoryTasksRequest:
     def file_type(self, file_type):
         """Sets the file_type of this ShowHistoryTasksRequest.
 
-        默认是文件file。file：文件,directory：目录。
+        file：文件,directory：目录。
 
         :param file_type: The file_type of this ShowHistoryTasksRequest.
         :type file_type: str
         """
         self._file_type = file_type
+
+    @property
+    def task_type(self):
+        """Gets the task_type of this ShowHistoryTasksRequest.
+
+        任务类型，refresh：刷新任务；preheating：预热任务
+
+        :return: The task_type of this ShowHistoryTasksRequest.
+        :rtype: str
+        """
+        return self._task_type
+
+    @task_type.setter
+    def task_type(self, task_type):
+        """Sets the task_type of this ShowHistoryTasksRequest.
+
+        任务类型，refresh：刷新任务；preheating：预热任务
+
+        :param task_type: The task_type of this ShowHistoryTasksRequest.
+        :type task_type: str
+        """
+        self._task_type = task_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

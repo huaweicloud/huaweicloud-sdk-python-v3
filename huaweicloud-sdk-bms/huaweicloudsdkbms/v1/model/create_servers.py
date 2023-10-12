@@ -34,7 +34,7 @@ class CreateServers:
         'data_volumes': 'list[DataVolumes]',
         'extendparam': 'ExtendParam',
         'scheduler_hints': 'CreateSchedulerHints',
-        'server_tags': 'dict(str, list[SystemTags])'
+        'server_tags': 'list[SystemTags]'
     }
 
     attribute_map = {
@@ -98,7 +98,7 @@ class CreateServers:
         :param scheduler_hints: 
         :type scheduler_hints: :class:`huaweicloudsdkbms.v1.CreateSchedulerHints`
         :param server_tags: 裸金属服务器的标签。详情请参见表 server_tags字段数据结构说明。 说明：创建裸金属服务器时，一台裸金属服务器最多可以添加10个标签。其中，__type_baremetal为系统内部标签，因此实际能添加的标签为9个。
-        :type server_tags: dict(str, list[SystemTags])
+        :type server_tags: list[:class:`huaweicloudsdkbms.v1.SystemTags`]
         """
         
         
@@ -513,7 +513,7 @@ class CreateServers:
         裸金属服务器的标签。详情请参见表 server_tags字段数据结构说明。 说明：创建裸金属服务器时，一台裸金属服务器最多可以添加10个标签。其中，__type_baremetal为系统内部标签，因此实际能添加的标签为9个。
 
         :return: The server_tags of this CreateServers.
-        :rtype: dict(str, list[SystemTags])
+        :rtype: list[:class:`huaweicloudsdkbms.v1.SystemTags`]
         """
         return self._server_tags
 
@@ -524,7 +524,7 @@ class CreateServers:
         裸金属服务器的标签。详情请参见表 server_tags字段数据结构说明。 说明：创建裸金属服务器时，一台裸金属服务器最多可以添加10个标签。其中，__type_baremetal为系统内部标签，因此实际能添加的标签为9个。
 
         :param server_tags: The server_tags of this CreateServers.
-        :type server_tags: dict(str, list[SystemTags])
+        :type server_tags: list[:class:`huaweicloudsdkbms.v1.SystemTags`]
         """
         self._server_tags = server_tags
 

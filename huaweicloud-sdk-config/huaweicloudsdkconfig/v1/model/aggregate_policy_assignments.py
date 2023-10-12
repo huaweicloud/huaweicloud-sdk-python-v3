@@ -20,17 +20,19 @@ class AggregatePolicyAssignments:
         'policy_assignment_id': 'str',
         'policy_assignment_name': 'str',
         'compliance': 'Compliance',
-        'account_id': 'str'
+        'account_id': 'str',
+        'account_name': 'str'
     }
 
     attribute_map = {
         'policy_assignment_id': 'policy_assignment_id',
         'policy_assignment_name': 'policy_assignment_name',
         'compliance': 'compliance',
-        'account_id': 'account_id'
+        'account_id': 'account_id',
+        'account_name': 'account_name'
     }
 
-    def __init__(self, policy_assignment_id=None, policy_assignment_name=None, compliance=None, account_id=None):
+    def __init__(self, policy_assignment_id=None, policy_assignment_name=None, compliance=None, account_id=None, account_name=None):
         """AggregatePolicyAssignments
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class AggregatePolicyAssignments:
         :type compliance: :class:`huaweicloudsdkconfig.v1.Compliance`
         :param account_id: 源帐号ID。
         :type account_id: str
+        :param account_name: 帐户名称
+        :type account_name: str
         """
         
         
@@ -51,6 +55,7 @@ class AggregatePolicyAssignments:
         self._policy_assignment_name = None
         self._compliance = None
         self._account_id = None
+        self._account_name = None
         self.discriminator = None
 
         if policy_assignment_id is not None:
@@ -61,6 +66,8 @@ class AggregatePolicyAssignments:
             self.compliance = compliance
         if account_id is not None:
             self.account_id = account_id
+        if account_name is not None:
+            self.account_name = account_name
 
     @property
     def policy_assignment_id(self):
@@ -145,6 +152,28 @@ class AggregatePolicyAssignments:
         :type account_id: str
         """
         self._account_id = account_id
+
+    @property
+    def account_name(self):
+        """Gets the account_name of this AggregatePolicyAssignments.
+
+        帐户名称
+
+        :return: The account_name of this AggregatePolicyAssignments.
+        :rtype: str
+        """
+        return self._account_name
+
+    @account_name.setter
+    def account_name(self, account_name):
+        """Sets the account_name of this AggregatePolicyAssignments.
+
+        帐户名称
+
+        :param account_name: The account_name of this AggregatePolicyAssignments.
+        :type account_name: str
+        """
+        self._account_name = account_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

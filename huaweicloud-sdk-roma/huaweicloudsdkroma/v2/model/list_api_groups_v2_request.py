@@ -55,7 +55,7 @@ class ListApiGroupsV2Request:
         :type name: str
         :param roma_app_id: 集成应用编号
         :type roma_app_id: str
-        :param precise_search: 指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  [当前支持name，domain_name。](tag:hws;hws_hk;hcs;fcs;g42;)[目前仅支持API分组名称](tag:Site)
+        :param precise_search: 指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  [当前支持name，domain_name。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[目前仅支持API分组名称](tag:Site)
         :type precise_search: str
         :param domain_name: 域名
         :type domain_name: str
@@ -225,7 +225,7 @@ class ListApiGroupsV2Request:
     def precise_search(self):
         """Gets the precise_search of this ListApiGroupsV2Request.
 
-        指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  [当前支持name，domain_name。](tag:hws;hws_hk;hcs;fcs;g42;)[目前仅支持API分组名称](tag:Site)
+        指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  [当前支持name，domain_name。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[目前仅支持API分组名称](tag:Site)
 
         :return: The precise_search of this ListApiGroupsV2Request.
         :rtype: str
@@ -236,7 +236,7 @@ class ListApiGroupsV2Request:
     def precise_search(self, precise_search):
         """Sets the precise_search of this ListApiGroupsV2Request.
 
-        指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  [当前支持name，domain_name。](tag:hws;hws_hk;hcs;fcs;g42;)[目前仅支持API分组名称](tag:Site)
+        指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  [当前支持name，domain_name。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[目前仅支持API分组名称](tag:Site)
 
         :param precise_search: The precise_search of this ListApiGroupsV2Request.
         :type precise_search: str

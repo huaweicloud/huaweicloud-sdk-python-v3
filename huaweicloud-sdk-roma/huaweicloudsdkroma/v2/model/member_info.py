@@ -55,9 +55,9 @@ class MemberInfo:
         :type status: int
         :param port: 后端服务器端口
         :type port: int
-        :param ecs_id: [后端云服务器的编号。](tag:hws;hws_hk;hcs;fcs;g42;)  [后端实例类型为ecs时必填，支持英文，数字，“-”,“_”，1 ~ 64字符。](tag:hws;hws_hk;hcs;fcs;g42;) [不支持后端云服务器类型](tag:Site)
+        :param ecs_id: [后端云服务器的编号。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [后端实例类型为ecs时必填，支持英文，数字，“-”,“_”，1 ~ 64字符。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [不支持后端云服务器类型](tag:Site)
         :type ecs_id: str
-        :param ecs_name: [后端云服务器的名称。]  [后端实例类型为ecs时必填，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。](tag:hws;hws_hk;hcs;fcs;g42;) [不支持后端云服务器类型](tag:Site)
+        :param ecs_name: [后端云服务器的名称。]  [后端实例类型为ecs时必填，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [不支持后端云服务器类型](tag:Site)
         :type ecs_name: str
         """
         
@@ -226,7 +226,7 @@ class MemberInfo:
     def ecs_id(self):
         """Gets the ecs_id of this MemberInfo.
 
-        [后端云服务器的编号。](tag:hws;hws_hk;hcs;fcs;g42;)  [后端实例类型为ecs时必填，支持英文，数字，“-”,“_”，1 ~ 64字符。](tag:hws;hws_hk;hcs;fcs;g42;) [不支持后端云服务器类型](tag:Site)
+        [后端云服务器的编号。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [后端实例类型为ecs时必填，支持英文，数字，“-”,“_”，1 ~ 64字符。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [不支持后端云服务器类型](tag:Site)
 
         :return: The ecs_id of this MemberInfo.
         :rtype: str
@@ -237,7 +237,7 @@ class MemberInfo:
     def ecs_id(self, ecs_id):
         """Sets the ecs_id of this MemberInfo.
 
-        [后端云服务器的编号。](tag:hws;hws_hk;hcs;fcs;g42;)  [后端实例类型为ecs时必填，支持英文，数字，“-”,“_”，1 ~ 64字符。](tag:hws;hws_hk;hcs;fcs;g42;) [不支持后端云服务器类型](tag:Site)
+        [后端云服务器的编号。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [后端实例类型为ecs时必填，支持英文，数字，“-”,“_”，1 ~ 64字符。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [不支持后端云服务器类型](tag:Site)
 
         :param ecs_id: The ecs_id of this MemberInfo.
         :type ecs_id: str
@@ -248,7 +248,7 @@ class MemberInfo:
     def ecs_name(self):
         """Gets the ecs_name of this MemberInfo.
 
-        [后端云服务器的名称。]  [后端实例类型为ecs时必填，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。](tag:hws;hws_hk;hcs;fcs;g42;) [不支持后端云服务器类型](tag:Site)
+        [后端云服务器的名称。]  [后端实例类型为ecs时必填，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [不支持后端云服务器类型](tag:Site)
 
         :return: The ecs_name of this MemberInfo.
         :rtype: str
@@ -259,7 +259,7 @@ class MemberInfo:
     def ecs_name(self, ecs_name):
         """Sets the ecs_name of this MemberInfo.
 
-        [后端云服务器的名称。]  [后端实例类型为ecs时必填，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。](tag:hws;hws_hk;hcs;fcs;g42;) [不支持后端云服务器类型](tag:Site)
+        [后端云服务器的名称。]  [后端实例类型为ecs时必填，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [不支持后端云服务器类型](tag:Site)
 
         :param ecs_name: The ecs_name of this MemberInfo.
         :type ecs_name: str

@@ -125,7 +125,7 @@ class ServerDetail:
         :type status: str
         :param updated: 弹性云服务器更新时间。  时间格式例如：2019-05-22T03:30:52Z
         :type updated: str
-        :param auto_terminate_time: 弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+        :param auto_terminate_time: 弹性云服务器定时删除时间。  时间格式例如：2020-01-19T03:30:52Z
         :type auto_terminate_time: str
         :param host_id: 弹性云服务器所在主机的主机ID。
         :type host_id: str
@@ -376,7 +376,7 @@ class ServerDetail:
     def auto_terminate_time(self):
         """Gets the auto_terminate_time of this ServerDetail.
 
-        弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+        弹性云服务器定时删除时间。  时间格式例如：2020-01-19T03:30:52Z
 
         :return: The auto_terminate_time of this ServerDetail.
         :rtype: str
@@ -387,7 +387,7 @@ class ServerDetail:
     def auto_terminate_time(self, auto_terminate_time):
         """Sets the auto_terminate_time of this ServerDetail.
 
-        弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+        弹性云服务器定时删除时间。  时间格式例如：2020-01-19T03:30:52Z
 
         :param auto_terminate_time: The auto_terminate_time of this ServerDetail.
         :type auto_terminate_time: str

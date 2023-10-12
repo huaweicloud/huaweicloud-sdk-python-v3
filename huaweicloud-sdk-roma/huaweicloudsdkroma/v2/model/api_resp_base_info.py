@@ -105,7 +105,7 @@ class ApiRespBaseInfo:
 
         :param name: API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头。 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type name: str
-        :param type: API类型[，该参数暂未使用](tag:hcs;fcs;) - 1：公有API - 2：私有API
+        :param type: API类型[，该参数暂未使用](tag:hcs,hcs_sm,fcs) - 1：公有API - 2：私有API
         :type type: int
         :param version: API的版本
         :type version: str
@@ -113,7 +113,7 @@ class ApiRespBaseInfo:
         :type req_protocol: str
         :param req_method: API的请求方式
         :type req_method: str
-        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 &gt; 需要服从URI规范。
+        :param req_uri: 请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ .等特殊字符，总长度不超过512，且满足URI规范。  /apic/health_check为服务集成预置的健康检查路径，当req_method&#x3D;GET时不支持req_uri&#x3D;/apic/health_check。  &gt; 需要服从URI规范。
         :type req_uri: str
         :param auth_type: API的认证方式[，site暂不支持IAM认证。](tag:Site) - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
         :type auth_type: str
@@ -123,7 +123,7 @@ class ApiRespBaseInfo:
         :type cors: bool
         :param match_mode: API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
         :type match_mode: str
-        :param backend_type: 后端类型[，site暂不支持函数工作流。](tag:Site) - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端
+        :param backend_type: 后端类型[，site暂不支持函数工作流。](tag:Site) - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端  仅控制默认后端类型，策略后端不受此字段控制
         :type backend_type: str
         :param remark: API描述。  不允许带有&lt;、&gt;字符 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type remark: str
@@ -137,7 +137,7 @@ class ApiRespBaseInfo:
         :type result_failure_sample: str
         :param authorizer_id: 前端自定义认证对象的ID
         :type authorizer_id: str
-        :param tags: 标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。支持输入多个标签，不同标签以英文逗号分割。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
+        :param tags: 标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
         :type tags: list[str]
         :param response_id: 分组自定义响应ID  暂不支持
         :type response_id: str
@@ -147,13 +147,13 @@ class ApiRespBaseInfo:
         :type domain_name: str
         :param tag: 标签  待废弃，优先使用tags字段
         :type tag: str
-        :param content_type: 请求内容格式类型：  application/json application/xml multipart/form-date text/plain
+        :param content_type: 请求内容格式类型：  application/json application/xml multipart/form-data text/plain
         :type content_type: str
         :param id: API编号
         :type id: str
-        :param status: API状态   - 1： 有效
+        :param status: API状态   - 1： 有效   - 2:  锁定
         :type status: int
-        :param arrange_necessary: 是否需要编排
+        :param arrange_necessary: 是否需要编排：1,是;2,否
         :type arrange_necessary: int
         :param register_time: API注册时间
         :type register_time: datetime
@@ -318,7 +318,7 @@ class ApiRespBaseInfo:
     def type(self):
         """Gets the type of this ApiRespBaseInfo.
 
-        API类型[，该参数暂未使用](tag:hcs;fcs;) - 1：公有API - 2：私有API
+        API类型[，该参数暂未使用](tag:hcs,hcs_sm,fcs) - 1：公有API - 2：私有API
 
         :return: The type of this ApiRespBaseInfo.
         :rtype: int
@@ -329,7 +329,7 @@ class ApiRespBaseInfo:
     def type(self, type):
         """Sets the type of this ApiRespBaseInfo.
 
-        API类型[，该参数暂未使用](tag:hcs;fcs;) - 1：公有API - 2：私有API
+        API类型[，该参数暂未使用](tag:hcs,hcs_sm,fcs) - 1：公有API - 2：私有API
 
         :param type: The type of this ApiRespBaseInfo.
         :type type: int
@@ -406,7 +406,7 @@ class ApiRespBaseInfo:
     def req_uri(self):
         """Gets the req_uri of this ApiRespBaseInfo.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ .等特殊字符，总长度不超过512，且满足URI规范。  /apic/health_check为服务集成预置的健康检查路径，当req_method=GET时不支持req_uri=/apic/health_check。  > 需要服从URI规范。
 
         :return: The req_uri of this ApiRespBaseInfo.
         :rtype: str
@@ -417,7 +417,7 @@ class ApiRespBaseInfo:
     def req_uri(self, req_uri):
         """Sets the req_uri of this ApiRespBaseInfo.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ .等特殊字符，总长度不超过512，且满足URI规范。  /apic/health_check为服务集成预置的健康检查路径，当req_method=GET时不支持req_uri=/apic/health_check。  > 需要服从URI规范。
 
         :param req_uri: The req_uri of this ApiRespBaseInfo.
         :type req_uri: str
@@ -512,7 +512,7 @@ class ApiRespBaseInfo:
     def backend_type(self):
         """Gets the backend_type of this ApiRespBaseInfo.
 
-        后端类型[，site暂不支持函数工作流。](tag:Site) - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端
+        后端类型[，site暂不支持函数工作流。](tag:Site) - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端  仅控制默认后端类型，策略后端不受此字段控制
 
         :return: The backend_type of this ApiRespBaseInfo.
         :rtype: str
@@ -523,7 +523,7 @@ class ApiRespBaseInfo:
     def backend_type(self, backend_type):
         """Sets the backend_type of this ApiRespBaseInfo.
 
-        后端类型[，site暂不支持函数工作流。](tag:Site) - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端
+        后端类型[，site暂不支持函数工作流。](tag:Site) - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端  仅控制默认后端类型，策略后端不受此字段控制
 
         :param backend_type: The backend_type of this ApiRespBaseInfo.
         :type backend_type: str
@@ -666,7 +666,7 @@ class ApiRespBaseInfo:
     def tags(self):
         """Gets the tags of this ApiRespBaseInfo.
 
-        标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。支持输入多个标签，不同标签以英文逗号分割。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
+        标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
 
         :return: The tags of this ApiRespBaseInfo.
         :rtype: list[str]
@@ -677,7 +677,7 @@ class ApiRespBaseInfo:
     def tags(self, tags):
         """Sets the tags of this ApiRespBaseInfo.
 
-        标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。支持输入多个标签，不同标签以英文逗号分割。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
+        标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
 
         :param tags: The tags of this ApiRespBaseInfo.
         :type tags: list[str]
@@ -776,7 +776,7 @@ class ApiRespBaseInfo:
     def content_type(self):
         """Gets the content_type of this ApiRespBaseInfo.
 
-        请求内容格式类型：  application/json application/xml multipart/form-date text/plain
+        请求内容格式类型：  application/json application/xml multipart/form-data text/plain
 
         :return: The content_type of this ApiRespBaseInfo.
         :rtype: str
@@ -787,7 +787,7 @@ class ApiRespBaseInfo:
     def content_type(self, content_type):
         """Sets the content_type of this ApiRespBaseInfo.
 
-        请求内容格式类型：  application/json application/xml multipart/form-date text/plain
+        请求内容格式类型：  application/json application/xml multipart/form-data text/plain
 
         :param content_type: The content_type of this ApiRespBaseInfo.
         :type content_type: str
@@ -820,7 +820,7 @@ class ApiRespBaseInfo:
     def status(self):
         """Gets the status of this ApiRespBaseInfo.
 
-        API状态   - 1： 有效
+        API状态   - 1： 有效   - 2:  锁定
 
         :return: The status of this ApiRespBaseInfo.
         :rtype: int
@@ -831,7 +831,7 @@ class ApiRespBaseInfo:
     def status(self, status):
         """Sets the status of this ApiRespBaseInfo.
 
-        API状态   - 1： 有效
+        API状态   - 1： 有效   - 2:  锁定
 
         :param status: The status of this ApiRespBaseInfo.
         :type status: int
@@ -842,7 +842,7 @@ class ApiRespBaseInfo:
     def arrange_necessary(self):
         """Gets the arrange_necessary of this ApiRespBaseInfo.
 
-        是否需要编排
+        是否需要编排：1,是;2,否
 
         :return: The arrange_necessary of this ApiRespBaseInfo.
         :rtype: int
@@ -853,7 +853,7 @@ class ApiRespBaseInfo:
     def arrange_necessary(self, arrange_necessary):
         """Sets the arrange_necessary of this ApiRespBaseInfo.
 
-        是否需要编排
+        是否需要编排：1,是;2,否
 
         :param arrange_necessary: The arrange_necessary of this ApiRespBaseInfo.
         :type arrange_necessary: int

@@ -57,7 +57,7 @@ class VpcHealthConfigBase:
         :type port: int
         :param threshold_normal: 正常阈值。判定VPC通道中主机正常的依据为：连续检查x成功，x为您设置的正常阈值。
         :type threshold_normal: int
-        :param threshold_abnormal: 异常阙值。判定VPC通道中主机异常的依据为：连续检查x失败，x为您设置的异常阈值。
+        :param threshold_abnormal: 异常阈值。判定VPC通道中主机异常的依据为：连续检查x失败，x为您设置的异常阈值。
         :type threshold_abnormal: int
         :param time_interval: 间隔时间：连续两次检查的间隔时间，单位为秒。必须大于timeout字段取值。
         :type time_interval: int
@@ -214,7 +214,7 @@ class VpcHealthConfigBase:
     def threshold_abnormal(self):
         """Gets the threshold_abnormal of this VpcHealthConfigBase.
 
-        异常阙值。判定VPC通道中主机异常的依据为：连续检查x失败，x为您设置的异常阈值。
+        异常阈值。判定VPC通道中主机异常的依据为：连续检查x失败，x为您设置的异常阈值。
 
         :return: The threshold_abnormal of this VpcHealthConfigBase.
         :rtype: int
@@ -225,7 +225,7 @@ class VpcHealthConfigBase:
     def threshold_abnormal(self, threshold_abnormal):
         """Sets the threshold_abnormal of this VpcHealthConfigBase.
 
-        异常阙值。判定VPC通道中主机异常的依据为：连续检查x失败，x为您设置的异常阈值。
+        异常阈值。判定VPC通道中主机异常的依据为：连续检查x失败，x为您设置的异常阈值。
 
         :param threshold_abnormal: The threshold_abnormal of this VpcHealthConfigBase.
         :type threshold_abnormal: int

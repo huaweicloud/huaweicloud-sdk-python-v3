@@ -20,7 +20,7 @@ class SearchOptionalParam:
         'do_det': 'bool',
         'box': 'str',
         'do_cls': 'bool',
-        'category': 'float',
+        'category': 'int',
         'collapse_key': 'str',
         'max_scan_num': 'int',
         'nprobe': 'int'
@@ -48,7 +48,7 @@ class SearchOptionalParam:
         :param do_cls: 是否进行对象分类，默认为true。
         :type do_cls: bool
         :param category: 对象类目，如给定则不进行对象分类，直接使用该category作为类目。具体类目信息可参见对应的服务类型说明。
-        :type category: float
+        :type category: int
         :param collapse_key: 去重标签名，必须为服务实例custom_tags中已存在的key。 - 如给定则会对该key下相同value的数据进行去重，仅保留得分最高的数据。 - 针对没有设置该标签的数据，会直接过滤。
         :type collapse_key: str
         :param max_scan_num: 扫描节点上限。值越大精度越高，查询速度变慢。默认值为10000。
@@ -156,7 +156,7 @@ class SearchOptionalParam:
         对象类目，如给定则不进行对象分类，直接使用该category作为类目。具体类目信息可参见对应的服务类型说明。
 
         :return: The category of this SearchOptionalParam.
-        :rtype: float
+        :rtype: int
         """
         return self._category
 
@@ -167,7 +167,7 @@ class SearchOptionalParam:
         对象类目，如给定则不进行对象分类，直接使用该category作为类目。具体类目信息可参见对应的服务类型说明。
 
         :param category: The category of this SearchOptionalParam.
-        :type category: float
+        :type category: int
         """
         self._category = category
 

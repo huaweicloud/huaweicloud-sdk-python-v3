@@ -33,7 +33,10 @@ class CreateServerGroupReq:
         'cluster_id': 'str',
         'availability_zone': 'str',
         'ip_virtual': 'IpVirtual',
-        'is_vdi': 'bool'
+        'is_vdi': 'bool',
+        'app_type': 'AppTypeEnum',
+        'extra_session_type': 'ExtraSessionTypeEnum',
+        'extra_session_size': 'int'
     }
 
     attribute_map = {
@@ -53,10 +56,13 @@ class CreateServerGroupReq:
         'cluster_id': 'cluster_id',
         'availability_zone': 'availability_zone',
         'ip_virtual': 'ip_virtual',
-        'is_vdi': 'is_vdi'
+        'is_vdi': 'is_vdi',
+        'app_type': 'app_type',
+        'extra_session_type': 'extra_session_type',
+        'extra_session_size': 'extra_session_size'
     }
 
-    def __init__(self, name=None, image_id=None, image_product_id=None, image_type=None, os_type=None, description=None, route_policy=None, product_id=None, vpc_id=None, subnet_id=None, system_disk_type=None, system_disk_size=None, ou_name=None, cluster_id=None, availability_zone=None, ip_virtual=None, is_vdi=None):
+    def __init__(self, name=None, image_id=None, image_product_id=None, image_type=None, os_type=None, description=None, route_policy=None, product_id=None, vpc_id=None, subnet_id=None, system_disk_type=None, system_disk_size=None, ou_name=None, cluster_id=None, availability_zone=None, ip_virtual=None, is_vdi=None, app_type=None, extra_session_type=None, extra_session_size=None):
         """CreateServerGroupReq
 
         The model defined in huaweicloud sdk
@@ -95,6 +101,12 @@ class CreateServerGroupReq:
         :type ip_virtual: :class:`huaweicloudsdkworkspaceapp.v1.IpVirtual`
         :param is_vdi: 是否为vdi单会话模式
         :type is_vdi: bool
+        :param app_type: 
+        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        :param extra_session_type: 
+        :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
+        :param extra_session_size: 付费会话数，单位/个
+        :type extra_session_size: int
         """
         
         
@@ -116,6 +128,9 @@ class CreateServerGroupReq:
         self._availability_zone = None
         self._ip_virtual = None
         self._is_vdi = None
+        self._app_type = None
+        self._extra_session_type = None
+        self._extra_session_size = None
         self.discriminator = None
 
         self.name = name
@@ -126,7 +141,8 @@ class CreateServerGroupReq:
         self.os_type = os_type
         if description is not None:
             self.description = description
-        self.route_policy = route_policy
+        if route_policy is not None:
+            self.route_policy = route_policy
         self.product_id = product_id
         self.vpc_id = vpc_id
         self.subnet_id = subnet_id
@@ -142,6 +158,12 @@ class CreateServerGroupReq:
             self.ip_virtual = ip_virtual
         if is_vdi is not None:
             self.is_vdi = is_vdi
+        if app_type is not None:
+            self.app_type = app_type
+        if extra_session_type is not None:
+            self.extra_session_type = extra_session_type
+        if extra_session_size is not None:
+            self.extra_session_size = extra_session_size
 
     @property
     def name(self):
@@ -496,6 +518,64 @@ class CreateServerGroupReq:
         :type is_vdi: bool
         """
         self._is_vdi = is_vdi
+
+    @property
+    def app_type(self):
+        """Gets the app_type of this CreateServerGroupReq.
+
+        :return: The app_type of this CreateServerGroupReq.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        """
+        return self._app_type
+
+    @app_type.setter
+    def app_type(self, app_type):
+        """Sets the app_type of this CreateServerGroupReq.
+
+        :param app_type: The app_type of this CreateServerGroupReq.
+        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        """
+        self._app_type = app_type
+
+    @property
+    def extra_session_type(self):
+        """Gets the extra_session_type of this CreateServerGroupReq.
+
+        :return: The extra_session_type of this CreateServerGroupReq.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
+        """
+        return self._extra_session_type
+
+    @extra_session_type.setter
+    def extra_session_type(self, extra_session_type):
+        """Sets the extra_session_type of this CreateServerGroupReq.
+
+        :param extra_session_type: The extra_session_type of this CreateServerGroupReq.
+        :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
+        """
+        self._extra_session_type = extra_session_type
+
+    @property
+    def extra_session_size(self):
+        """Gets the extra_session_size of this CreateServerGroupReq.
+
+        付费会话数，单位/个
+
+        :return: The extra_session_size of this CreateServerGroupReq.
+        :rtype: int
+        """
+        return self._extra_session_size
+
+    @extra_session_size.setter
+    def extra_session_size(self, extra_session_size):
+        """Sets the extra_session_size of this CreateServerGroupReq.
+
+        付费会话数，单位/个
+
+        :param extra_session_size: The extra_session_size of this CreateServerGroupReq.
+        :type extra_session_size: int
+        """
+        self._extra_session_size = extra_session_size
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,15 +18,17 @@ class ClusterVolumeRsp:
 
     openapi_types = {
         'type': 'str',
-        'size': 'int'
+        'size': 'int',
+        'resource_ids': 'list[str]'
     }
 
     attribute_map = {
         'type': 'type',
-        'size': 'size'
+        'size': 'size',
+        'resource_ids': 'resourceIds'
     }
 
-    def __init__(self, type=None, size=None):
+    def __init__(self, type=None, size=None, resource_ids=None):
         """ClusterVolumeRsp
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class ClusterVolumeRsp:
         :type type: str
         :param size: 实例磁盘大小。
         :type size: int
+        :param resource_ids: 该实例拥有的磁盘对应的资源Id。
+        :type resource_ids: list[str]
         """
         
         
 
         self._type = None
         self._size = None
+        self._resource_ids = None
         self.discriminator = None
 
         if type is not None:
             self.type = type
         if size is not None:
             self.size = size
+        if resource_ids is not None:
+            self.resource_ids = resource_ids
 
     @property
     def type(self):
@@ -91,6 +98,28 @@ class ClusterVolumeRsp:
         :type size: int
         """
         self._size = size
+
+    @property
+    def resource_ids(self):
+        """Gets the resource_ids of this ClusterVolumeRsp.
+
+        该实例拥有的磁盘对应的资源Id。
+
+        :return: The resource_ids of this ClusterVolumeRsp.
+        :rtype: list[str]
+        """
+        return self._resource_ids
+
+    @resource_ids.setter
+    def resource_ids(self, resource_ids):
+        """Sets the resource_ids of this ClusterVolumeRsp.
+
+        该实例拥有的磁盘对应的资源Id。
+
+        :param resource_ids: The resource_ids of this ClusterVolumeRsp.
+        :type resource_ids: list[str]
+        """
+        self._resource_ids = resource_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -48,8 +48,10 @@ class ListPolicyTemplateRequest:
         self._policy_group_name = None
         self.discriminator = None
 
-        self.offset = offset
-        self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
         if policy_group_name is not None:
             self.policy_group_name = policy_group_name
 

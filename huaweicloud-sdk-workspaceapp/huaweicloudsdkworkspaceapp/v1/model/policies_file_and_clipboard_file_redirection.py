@@ -18,7 +18,7 @@ class PoliciesFileAndClipboardFileRedirection:
 
     openapi_types = {
         'redirection_mode': 'str',
-        'options': 'PoliciesFileAndClipboardFileRedirectionOptions',
+        'options': 'FileRedirectionOptions',
         'vm_send_file_client': 'bool',
         'redirection_send_file_options': 'PoliciesFileAndClipboardFileRedirectionRedirectionSendFileOptions'
     }
@@ -38,7 +38,7 @@ class PoliciesFileAndClipboardFileRedirection:
         :param redirection_mode: 文件重定向。取值为： DISABLED：表示禁用。（默认） READ_ONLY：表示只读。 READ_AND_WRITE：表示读写。
         :type redirection_mode: str
         :param options: 
-        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFileAndClipboardFileRedirectionOptions`
+        :type options: :class:`huaweicloudsdkworkspaceapp.v1.FileRedirectionOptions`
         :param vm_send_file_client: 是否开启发送文件（虚机到客户端）。取值为： false：表示关闭。 true：表示开启。
         :type vm_send_file_client: bool
         :param redirection_send_file_options: 
@@ -89,7 +89,7 @@ class PoliciesFileAndClipboardFileRedirection:
         """Gets the options of this PoliciesFileAndClipboardFileRedirection.
 
         :return: The options of this PoliciesFileAndClipboardFileRedirection.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFileAndClipboardFileRedirectionOptions`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.FileRedirectionOptions`
         """
         return self._options
 
@@ -98,7 +98,7 @@ class PoliciesFileAndClipboardFileRedirection:
         """Sets the options of this PoliciesFileAndClipboardFileRedirection.
 
         :param options: The options of this PoliciesFileAndClipboardFileRedirection.
-        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFileAndClipboardFileRedirectionOptions`
+        :type options: :class:`huaweicloudsdkworkspaceapp.v1.FileRedirectionOptions`
         """
         self._options = options
 

@@ -63,7 +63,7 @@ class NovaCreateServersOption:
 
         The model defined in huaweicloud sdk
 
-        :param auto_terminate_time: 弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+        :param auto_terminate_time: 弹性云服务器自动删除时间。  时间格式例如：2020-01-19T03:30:52Z
         :type auto_terminate_time: str
         :param image_ref: 镜像ID或者镜像资源的URL。  - 镜像ID示例：3b8d6fef-af77-42ab-b8b7-5a7f0f0af8f2 - 镜像URL示例：http://glance.openstack.example.com/images/3b8d6fef-af77-42ab-b8b7-5a7f0f0af8f2 - 指定卷作为系统卷创弹性云服务器时，不需填写该参数；非卷创建弹性云服务器时需填写有效的UUID参数，否则API将返回400错误。  &gt; 说明： &gt; - 对于部分规格的弹性云服务器，不能支持公有云平台提供的所有公共镜像。具体规格的镜像支持列表，请登录管理控制台，以“创建弹性云服务器”页面系统自动过滤的镜像信息为准，并在镜像服务页面查询镜像ID。 &gt; - 如果创建失败，请尝试修改参数配置。
         :type image_ref: str
@@ -161,7 +161,7 @@ class NovaCreateServersOption:
     def auto_terminate_time(self):
         """Gets the auto_terminate_time of this NovaCreateServersOption.
 
-        弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+        弹性云服务器自动删除时间。  时间格式例如：2020-01-19T03:30:52Z
 
         :return: The auto_terminate_time of this NovaCreateServersOption.
         :rtype: str
@@ -172,7 +172,7 @@ class NovaCreateServersOption:
     def auto_terminate_time(self, auto_terminate_time):
         """Sets the auto_terminate_time of this NovaCreateServersOption.
 
-        弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+        弹性云服务器自动删除时间。  时间格式例如：2020-01-19T03:30:52Z
 
         :param auto_terminate_time: The auto_terminate_time of this NovaCreateServersOption.
         :type auto_terminate_time: str

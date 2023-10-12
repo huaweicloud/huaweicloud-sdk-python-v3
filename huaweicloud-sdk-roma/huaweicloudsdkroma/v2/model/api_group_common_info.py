@@ -47,7 +47,7 @@ class ApiGroupCommonInfo:
         :type id: str
         :param name: API分组名称
         :type name: str
-        :param status: 状态   - 1： 有效
+        :param status: 状态   - 1： 有效   - 2:  锁定
         :type status: int
         :param sl_domain: 系统默认分配的子域名
         :type sl_domain: str
@@ -55,7 +55,7 @@ class ApiGroupCommonInfo:
         :type register_time: datetime
         :param update_time: 最近修改时间
         :type update_time: datetime
-        :param on_sell_status: 是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中  ROMAConnect暂未对接云市场，此字段默认返回2
+        :param on_sell_status: 是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中  [ROMA Connect](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[ROMA Site](tag:Site)暂未对接云市场，此字段默认返回2
         :type on_sell_status: int
         :param url_domains: 分组上绑定的独立域名列表
         :type url_domains: list[:class:`huaweicloudsdkroma.v2.UrlDomain`]
@@ -131,7 +131,7 @@ class ApiGroupCommonInfo:
     def status(self):
         """Gets the status of this ApiGroupCommonInfo.
 
-        状态   - 1： 有效
+        状态   - 1： 有效   - 2:  锁定
 
         :return: The status of this ApiGroupCommonInfo.
         :rtype: int
@@ -142,7 +142,7 @@ class ApiGroupCommonInfo:
     def status(self, status):
         """Sets the status of this ApiGroupCommonInfo.
 
-        状态   - 1： 有效
+        状态   - 1： 有效   - 2:  锁定
 
         :param status: The status of this ApiGroupCommonInfo.
         :type status: int
@@ -219,7 +219,7 @@ class ApiGroupCommonInfo:
     def on_sell_status(self):
         """Gets the on_sell_status of this ApiGroupCommonInfo.
 
-        是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中  ROMAConnect暂未对接云市场，此字段默认返回2
+        是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中  [ROMA Connect](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[ROMA Site](tag:Site)暂未对接云市场，此字段默认返回2
 
         :return: The on_sell_status of this ApiGroupCommonInfo.
         :rtype: int
@@ -230,7 +230,7 @@ class ApiGroupCommonInfo:
     def on_sell_status(self, on_sell_status):
         """Sets the on_sell_status of this ApiGroupCommonInfo.
 
-        是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中  ROMAConnect暂未对接云市场，此字段默认返回2
+        是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中  [ROMA Connect](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[ROMA Site](tag:Site)暂未对接云市场，此字段默认返回2
 
         :param on_sell_status: The on_sell_status of this ApiGroupCommonInfo.
         :type on_sell_status: int

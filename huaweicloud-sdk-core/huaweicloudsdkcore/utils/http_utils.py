@@ -110,9 +110,9 @@ def parameters_to_tuples(params, collection_formats):
                     (k, ','.join(str(value) for value in v)))
         else:
             if isinstance(v, dict):
-                dict_params = get_dict_params(k, v)
-                for dict_param in dict_params:
-                    new_params.append(dict_param)
+                value_tuples = parameters_to_tuples(v, collection_formats)
+                for value_tuple in value_tuples:
+                    new_params.append((k, "%s=%s" % (value_tuple[0], value_tuple[1])))
             else:
                 new_params.append((k, v))
     return new_params

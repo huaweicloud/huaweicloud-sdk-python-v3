@@ -21,10 +21,12 @@ class VpcCreate:
         'port': 'int',
         'balance_strategy': 'int',
         'member_type': 'str',
+        'type': 'int',
         'dict_code': 'str',
         'member_groups': 'list[MemberGroupCreate]',
         'members': 'list[MemberInfo]',
-        'vpc_health_config': 'VpcHealthConfig'
+        'vpc_health_config': 'VpcHealthConfig',
+        'microservice_info': 'MicroServiceCreate'
     }
 
     attribute_map = {
@@ -32,13 +34,15 @@ class VpcCreate:
         'port': 'port',
         'balance_strategy': 'balance_strategy',
         'member_type': 'member_type',
+        'type': 'type',
         'dict_code': 'dict_code',
         'member_groups': 'member_groups',
         'members': 'members',
-        'vpc_health_config': 'vpc_health_config'
+        'vpc_health_config': 'vpc_health_config',
+        'microservice_info': 'microservice_info'
     }
 
-    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, dict_code=None, member_groups=None, members=None, vpc_health_config=None):
+    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, type=None, dict_code=None, member_groups=None, members=None, vpc_health_config=None, microservice_info=None):
         """VpcCreate
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,8 @@ class VpcCreate:
         :type balance_strategy: int
         :param member_type: VPC通道的成员类型。[site场景必须修改成IP类型](tag:Site) - ip - ecs
         :type member_type: str
+        :param type: vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型
+        :type type: int
         :param dict_code: VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
         :type dict_code: str
         :param member_groups: VPC通道后端服务器组列表
@@ -59,6 +65,8 @@ class VpcCreate:
         :type members: list[:class:`huaweicloudsdkroma.v2.MemberInfo`]
         :param vpc_health_config: 
         :type vpc_health_config: :class:`huaweicloudsdkroma.v2.VpcHealthConfig`
+        :param microservice_info: 
+        :type microservice_info: :class:`huaweicloudsdkroma.v2.MicroServiceCreate`
         """
         
         
@@ -67,16 +75,20 @@ class VpcCreate:
         self._port = None
         self._balance_strategy = None
         self._member_type = None
+        self._type = None
         self._dict_code = None
         self._member_groups = None
         self._members = None
         self._vpc_health_config = None
+        self._microservice_info = None
         self.discriminator = None
 
         self.name = name
         self.port = port
         self.balance_strategy = balance_strategy
         self.member_type = member_type
+        if type is not None:
+            self.type = type
         if dict_code is not None:
             self.dict_code = dict_code
         if member_groups is not None:
@@ -85,6 +97,8 @@ class VpcCreate:
             self.members = members
         if vpc_health_config is not None:
             self.vpc_health_config = vpc_health_config
+        if microservice_info is not None:
+            self.microservice_info = microservice_info
 
     @property
     def name(self):
@@ -175,6 +189,28 @@ class VpcCreate:
         self._member_type = member_type
 
     @property
+    def type(self):
+        """Gets the type of this VpcCreate.
+
+        vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型
+
+        :return: The type of this VpcCreate.
+        :rtype: int
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this VpcCreate.
+
+        vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型
+
+        :param type: The type of this VpcCreate.
+        :type type: int
+        """
+        self._type = type
+
+    @property
     def dict_code(self):
         """Gets the dict_code of this VpcCreate.
 
@@ -257,6 +293,24 @@ class VpcCreate:
         :type vpc_health_config: :class:`huaweicloudsdkroma.v2.VpcHealthConfig`
         """
         self._vpc_health_config = vpc_health_config
+
+    @property
+    def microservice_info(self):
+        """Gets the microservice_info of this VpcCreate.
+
+        :return: The microservice_info of this VpcCreate.
+        :rtype: :class:`huaweicloudsdkroma.v2.MicroServiceCreate`
+        """
+        return self._microservice_info
+
+    @microservice_info.setter
+    def microservice_info(self, microservice_info):
+        """Sets the microservice_info of this VpcCreate.
+
+        :param microservice_info: The microservice_info of this VpcCreate.
+        :type microservice_info: :class:`huaweicloudsdkroma.v2.MicroServiceCreate`
+        """
+        self._microservice_info = microservice_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

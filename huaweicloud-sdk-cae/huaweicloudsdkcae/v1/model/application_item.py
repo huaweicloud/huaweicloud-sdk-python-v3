@@ -19,7 +19,6 @@ class ApplicationItem:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'annotations': 'dict(str, str)',
         'created_at': 'datetime',
         'updated_at': 'datetime'
     }
@@ -27,12 +26,11 @@ class ApplicationItem:
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'annotations': 'annotations',
         'created_at': 'created_at',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, name=None, annotations=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, created_at=None, updated_at=None):
         """ApplicationItem
 
         The model defined in huaweicloud sdk
@@ -41,8 +39,6 @@ class ApplicationItem:
         :type id: str
         :param name: 应用名称。
         :type name: str
-        :param annotations: 应用附加属性，当前只支持description参数。
-        :type annotations: dict(str, str)
         :param created_at: 创建时间。
         :type created_at: datetime
         :param updated_at: 更新时间。
@@ -53,7 +49,6 @@ class ApplicationItem:
 
         self._id = None
         self._name = None
-        self._annotations = None
         self._created_at = None
         self._updated_at = None
         self.discriminator = None
@@ -62,8 +57,6 @@ class ApplicationItem:
             self.id = id
         if name is not None:
             self.name = name
-        if annotations is not None:
-            self.annotations = annotations
         if created_at is not None:
             self.created_at = created_at
         if updated_at is not None:
@@ -112,28 +105,6 @@ class ApplicationItem:
         :type name: str
         """
         self._name = name
-
-    @property
-    def annotations(self):
-        """Gets the annotations of this ApplicationItem.
-
-        应用附加属性，当前只支持description参数。
-
-        :return: The annotations of this ApplicationItem.
-        :rtype: dict(str, str)
-        """
-        return self._annotations
-
-    @annotations.setter
-    def annotations(self, annotations):
-        """Sets the annotations of this ApplicationItem.
-
-        应用附加属性，当前只支持description参数。
-
-        :param annotations: The annotations of this ApplicationItem.
-        :type annotations: dict(str, str)
-        """
-        self._annotations = annotations
 
     @property
     def created_at(self):

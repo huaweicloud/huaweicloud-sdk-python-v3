@@ -72,8 +72,7 @@ class CreateHostedDirectConnect:
             self.name = name
         if description is not None:
             self.description = description
-        if bandwidth is not None:
-            self.bandwidth = bandwidth
+        self.bandwidth = bandwidth
         self.hosting_id = hosting_id
         self.vlan = vlan
         self.resource_tenant_id = resource_tenant_id

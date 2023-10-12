@@ -21,6 +21,7 @@ class VpcBase:
         'port': 'int',
         'balance_strategy': 'int',
         'member_type': 'str',
+        'type': 'int',
         'dict_code': 'str'
     }
 
@@ -29,10 +30,11 @@ class VpcBase:
         'port': 'port',
         'balance_strategy': 'balance_strategy',
         'member_type': 'member_type',
+        'type': 'type',
         'dict_code': 'dict_code'
     }
 
-    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, dict_code=None):
+    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, type=None, dict_code=None):
         """VpcBase
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class VpcBase:
         :type balance_strategy: int
         :param member_type: VPC通道的成员类型。[site场景必须修改成IP类型](tag:Site) - ip - ecs
         :type member_type: str
+        :param type: vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型
+        :type type: int
         :param dict_code: VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
         :type dict_code: str
         """
@@ -55,6 +59,7 @@ class VpcBase:
         self._port = None
         self._balance_strategy = None
         self._member_type = None
+        self._type = None
         self._dict_code = None
         self.discriminator = None
 
@@ -62,6 +67,8 @@ class VpcBase:
         self.port = port
         self.balance_strategy = balance_strategy
         self.member_type = member_type
+        if type is not None:
+            self.type = type
         if dict_code is not None:
             self.dict_code = dict_code
 
@@ -152,6 +159,28 @@ class VpcBase:
         :type member_type: str
         """
         self._member_type = member_type
+
+    @property
+    def type(self):
+        """Gets the type of this VpcBase.
+
+        vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型
+
+        :return: The type of this VpcBase.
+        :rtype: int
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this VpcBase.
+
+        vpc通道类型，默认为服务器类型。 - 2：服务器类型 - 3：微服务类型
+
+        :param type: The type of this VpcBase.
+        :type type: int
+        """
+        self._type = type
 
     @property
     def dict_code(self):

@@ -18,7 +18,7 @@ class AddDataRestInfoImageInfoObjects:
 
     openapi_types = {
         'box': 'str',
-        'category': 'float',
+        'category': 'int',
         'category_name': 'str'
     }
 
@@ -36,7 +36,7 @@ class AddDataRestInfoImageInfoObjects:
         :param box: 主体目标框。
         :type box: str
         :param category: 主体类目序号。
-        :type category: float
+        :type category: int
         :param category_name: 主体类目名称。
         :type category_name: str
         """
@@ -84,7 +84,7 @@ class AddDataRestInfoImageInfoObjects:
         主体类目序号。
 
         :return: The category of this AddDataRestInfoImageInfoObjects.
-        :rtype: float
+        :rtype: int
         """
         return self._category
 
@@ -95,7 +95,7 @@ class AddDataRestInfoImageInfoObjects:
         主体类目序号。
 
         :param category: The category of this AddDataRestInfoImageInfoObjects.
-        :type category: float
+        :type category: int
         """
         self._category = category
 

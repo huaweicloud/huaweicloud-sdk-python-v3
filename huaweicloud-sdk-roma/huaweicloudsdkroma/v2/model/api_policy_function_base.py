@@ -18,6 +18,7 @@ class ApiPolicyFunctionBase:
 
     openapi_types = {
         'function_urn': 'str',
+        'network_type': 'str',
         'invocation_type': 'str',
         'timeout': 'int',
         'version': 'str',
@@ -26,32 +27,36 @@ class ApiPolicyFunctionBase:
 
     attribute_map = {
         'function_urn': 'function_urn',
+        'network_type': 'network_type',
         'invocation_type': 'invocation_type',
         'timeout': 'timeout',
         'version': 'version',
         'alias_urn': 'alias_urn'
     }
 
-    def __init__(self, function_urn=None, invocation_type=None, timeout=None, version=None, alias_urn=None):
+    def __init__(self, function_urn=None, network_type=None, invocation_type=None, timeout=None, version=None, alias_urn=None):
         """ApiPolicyFunctionBase
 
         The model defined in huaweicloud sdk
 
         :param function_urn: 函数URN
         :type function_urn: str
+        :param network_type: 对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
+        :type network_type: str
         :param invocation_type: 调用类型 - async： 异步 - sync：同步
         :type invocation_type: str
-        :param timeout: ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
+        :param timeout: 服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
         :type timeout: int
-        :param version: 版本。字符长度不超过64
+        :param version: 函数版本   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
         :type version: str
-        :param alias_urn: 函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        :param alias_urn: 函数别名URN   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
         :type alias_urn: str
         """
         
         
 
         self._function_urn = None
+        self._network_type = None
         self._invocation_type = None
         self._timeout = None
         self._version = None
@@ -59,6 +64,8 @@ class ApiPolicyFunctionBase:
         self.discriminator = None
 
         self.function_urn = function_urn
+        if network_type is not None:
+            self.network_type = network_type
         self.invocation_type = invocation_type
         self.timeout = timeout
         if version is not None:
@@ -89,6 +96,28 @@ class ApiPolicyFunctionBase:
         self._function_urn = function_urn
 
     @property
+    def network_type(self):
+        """Gets the network_type of this ApiPolicyFunctionBase.
+
+        对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
+
+        :return: The network_type of this ApiPolicyFunctionBase.
+        :rtype: str
+        """
+        return self._network_type
+
+    @network_type.setter
+    def network_type(self, network_type):
+        """Sets the network_type of this ApiPolicyFunctionBase.
+
+        对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
+
+        :param network_type: The network_type of this ApiPolicyFunctionBase.
+        :type network_type: str
+        """
+        self._network_type = network_type
+
+    @property
     def invocation_type(self):
         """Gets the invocation_type of this ApiPolicyFunctionBase.
 
@@ -114,7 +143,7 @@ class ApiPolicyFunctionBase:
     def timeout(self):
         """Gets the timeout of this ApiPolicyFunctionBase.
 
-        ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
+        服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
         :return: The timeout of this ApiPolicyFunctionBase.
         :rtype: int
@@ -125,7 +154,7 @@ class ApiPolicyFunctionBase:
     def timeout(self, timeout):
         """Sets the timeout of this ApiPolicyFunctionBase.
 
-        ROMA Connect APIC请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
+        服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
         :param timeout: The timeout of this ApiPolicyFunctionBase.
         :type timeout: int
@@ -136,7 +165,7 @@ class ApiPolicyFunctionBase:
     def version(self):
         """Gets the version of this ApiPolicyFunctionBase.
 
-        版本。字符长度不超过64
+        函数版本   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
         :return: The version of this ApiPolicyFunctionBase.
         :rtype: str
@@ -147,7 +176,7 @@ class ApiPolicyFunctionBase:
     def version(self, version):
         """Sets the version of this ApiPolicyFunctionBase.
 
-        版本。字符长度不超过64
+        函数版本   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
         :param version: The version of this ApiPolicyFunctionBase.
         :type version: str
@@ -158,7 +187,7 @@ class ApiPolicyFunctionBase:
     def alias_urn(self):
         """Gets the alias_urn of this ApiPolicyFunctionBase.
 
-        函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        函数别名URN   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
         :return: The alias_urn of this ApiPolicyFunctionBase.
         :rtype: str
@@ -169,7 +198,7 @@ class ApiPolicyFunctionBase:
     def alias_urn(self, alias_urn):
         """Sets the alias_urn of this ApiPolicyFunctionBase.
 
-        函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        函数别名URN   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
         :param alias_urn: The alias_urn of this ApiPolicyFunctionBase.
         :type alias_urn: str

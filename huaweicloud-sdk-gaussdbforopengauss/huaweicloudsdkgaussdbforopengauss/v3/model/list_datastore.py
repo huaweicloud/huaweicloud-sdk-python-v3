@@ -18,33 +18,47 @@ class ListDatastore:
 
     openapi_types = {
         'type': 'str',
-        'version': 'str'
+        'version': 'str',
+        'complete_version': 'str',
+        'hotfix_versions': 'str'
     }
 
     attribute_map = {
         'type': 'type',
-        'version': 'version'
+        'version': 'version',
+        'complete_version': 'complete_version',
+        'hotfix_versions': 'hotfix_versions'
     }
 
-    def __init__(self, type=None, version=None):
+    def __init__(self, type=None, version=None, complete_version=None, hotfix_versions=None):
         """ListDatastore
 
         The model defined in huaweicloud sdk
 
         :param type: 数据库引擎。
         :type type: str
-        :param version: 数据库版本。
+        :param version: 数据库大版本。
         :type version: str
+        :param complete_version: 数据库小版本。
+        :type complete_version: str
+        :param hotfix_versions: 数据库已升级的热补丁版本，当数据库热补丁升级成功后，该值不为空。
+        :type hotfix_versions: str
         """
         
         
 
         self._type = None
         self._version = None
+        self._complete_version = None
+        self._hotfix_versions = None
         self.discriminator = None
 
         self.type = type
         self.version = version
+        if complete_version is not None:
+            self.complete_version = complete_version
+        if hotfix_versions is not None:
+            self.hotfix_versions = hotfix_versions
 
     @property
     def type(self):
@@ -72,7 +86,7 @@ class ListDatastore:
     def version(self):
         """Gets the version of this ListDatastore.
 
-        数据库版本。
+        数据库大版本。
 
         :return: The version of this ListDatastore.
         :rtype: str
@@ -83,12 +97,56 @@ class ListDatastore:
     def version(self, version):
         """Sets the version of this ListDatastore.
 
-        数据库版本。
+        数据库大版本。
 
         :param version: The version of this ListDatastore.
         :type version: str
         """
         self._version = version
+
+    @property
+    def complete_version(self):
+        """Gets the complete_version of this ListDatastore.
+
+        数据库小版本。
+
+        :return: The complete_version of this ListDatastore.
+        :rtype: str
+        """
+        return self._complete_version
+
+    @complete_version.setter
+    def complete_version(self, complete_version):
+        """Sets the complete_version of this ListDatastore.
+
+        数据库小版本。
+
+        :param complete_version: The complete_version of this ListDatastore.
+        :type complete_version: str
+        """
+        self._complete_version = complete_version
+
+    @property
+    def hotfix_versions(self):
+        """Gets the hotfix_versions of this ListDatastore.
+
+        数据库已升级的热补丁版本，当数据库热补丁升级成功后，该值不为空。
+
+        :return: The hotfix_versions of this ListDatastore.
+        :rtype: str
+        """
+        return self._hotfix_versions
+
+    @hotfix_versions.setter
+    def hotfix_versions(self, hotfix_versions):
+        """Sets the hotfix_versions of this ListDatastore.
+
+        数据库已升级的热补丁版本，当数据库热补丁升级成功后，该值不为空。
+
+        :param hotfix_versions: The hotfix_versions of this ListDatastore.
+        :type hotfix_versions: str
+        """
+        self._hotfix_versions = hotfix_versions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

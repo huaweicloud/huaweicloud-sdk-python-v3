@@ -23,7 +23,10 @@ class ResultsTopnBody:
         'log_group_id': 'str',
         'log_group_name': 'str',
         'log_stream_id': 'str',
-        'log_stream_name': 'str'
+        'log_stream_name': 'str',
+        'basic_transfer': 'float',
+        'senior_transfer': 'float',
+        'is_agency_transfer': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +36,13 @@ class ResultsTopnBody:
         'log_group_id': 'log_group_id',
         'log_group_name': 'log_group_name',
         'log_stream_id': 'log_stream_id',
-        'log_stream_name': 'log_stream_name'
+        'log_stream_name': 'log_stream_name',
+        'basic_transfer': 'basic_transfer',
+        'senior_transfer': 'senior_transfer',
+        'is_agency_transfer': 'is_agency_transfer'
     }
 
-    def __init__(self, index_traffic=None, storage=None, write_traffic=None, log_group_id=None, log_group_name=None, log_stream_id=None, log_stream_name=None):
+    def __init__(self, index_traffic=None, storage=None, write_traffic=None, log_group_id=None, log_group_name=None, log_stream_id=None, log_stream_name=None, basic_transfer=None, senior_transfer=None, is_agency_transfer=None):
         """ResultsTopnBody
 
         The model defined in huaweicloud sdk
@@ -55,6 +61,12 @@ class ResultsTopnBody:
         :type log_stream_id: str
         :param log_stream_name: 日志流名称，资源类型为日志流时返回
         :type log_stream_name: str
+        :param basic_transfer: 基础转储流量，byte, 查询数据类型中包含basicTransfer时返回
+        :type basic_transfer: float
+        :param senior_transfer: 基础转储流量，byte, 查询数据类型中包含seniorTransfer时返回
+        :type senior_transfer: float
+        :param is_agency_transfer: 不是委托转储，true，是委托转储，则前端资源统计展示的流不能跳
+        :type is_agency_transfer: bool
         """
         
         
@@ -66,6 +78,9 @@ class ResultsTopnBody:
         self._log_group_name = None
         self._log_stream_id = None
         self._log_stream_name = None
+        self._basic_transfer = None
+        self._senior_transfer = None
+        self._is_agency_transfer = None
         self.discriminator = None
 
         self.index_traffic = index_traffic
@@ -77,6 +92,12 @@ class ResultsTopnBody:
             self.log_stream_id = log_stream_id
         if log_stream_name is not None:
             self.log_stream_name = log_stream_name
+        if basic_transfer is not None:
+            self.basic_transfer = basic_transfer
+        if senior_transfer is not None:
+            self.senior_transfer = senior_transfer
+        if is_agency_transfer is not None:
+            self.is_agency_transfer = is_agency_transfer
 
     @property
     def index_traffic(self):
@@ -231,6 +252,72 @@ class ResultsTopnBody:
         :type log_stream_name: str
         """
         self._log_stream_name = log_stream_name
+
+    @property
+    def basic_transfer(self):
+        """Gets the basic_transfer of this ResultsTopnBody.
+
+        基础转储流量，byte, 查询数据类型中包含basicTransfer时返回
+
+        :return: The basic_transfer of this ResultsTopnBody.
+        :rtype: float
+        """
+        return self._basic_transfer
+
+    @basic_transfer.setter
+    def basic_transfer(self, basic_transfer):
+        """Sets the basic_transfer of this ResultsTopnBody.
+
+        基础转储流量，byte, 查询数据类型中包含basicTransfer时返回
+
+        :param basic_transfer: The basic_transfer of this ResultsTopnBody.
+        :type basic_transfer: float
+        """
+        self._basic_transfer = basic_transfer
+
+    @property
+    def senior_transfer(self):
+        """Gets the senior_transfer of this ResultsTopnBody.
+
+        基础转储流量，byte, 查询数据类型中包含seniorTransfer时返回
+
+        :return: The senior_transfer of this ResultsTopnBody.
+        :rtype: float
+        """
+        return self._senior_transfer
+
+    @senior_transfer.setter
+    def senior_transfer(self, senior_transfer):
+        """Sets the senior_transfer of this ResultsTopnBody.
+
+        基础转储流量，byte, 查询数据类型中包含seniorTransfer时返回
+
+        :param senior_transfer: The senior_transfer of this ResultsTopnBody.
+        :type senior_transfer: float
+        """
+        self._senior_transfer = senior_transfer
+
+    @property
+    def is_agency_transfer(self):
+        """Gets the is_agency_transfer of this ResultsTopnBody.
+
+        不是委托转储，true，是委托转储，则前端资源统计展示的流不能跳
+
+        :return: The is_agency_transfer of this ResultsTopnBody.
+        :rtype: bool
+        """
+        return self._is_agency_transfer
+
+    @is_agency_transfer.setter
+    def is_agency_transfer(self, is_agency_transfer):
+        """Sets the is_agency_transfer of this ResultsTopnBody.
+
+        不是委托转储，true，是委托转储，则前端资源统计展示的流不能跳
+
+        :param is_agency_transfer: The is_agency_transfer of this ResultsTopnBody.
+        :type is_agency_transfer: bool
+        """
+        self._is_agency_transfer = is_agency_transfer
 
     def to_dict(self):
         """Returns the model properties as a dict"""

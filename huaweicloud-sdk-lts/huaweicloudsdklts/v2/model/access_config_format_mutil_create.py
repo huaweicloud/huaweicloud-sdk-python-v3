@@ -43,8 +43,10 @@ class AccessConfigFormatMutilCreate:
         self._value = None
         self.discriminator = None
 
-        self.mode = mode
-        self.value = value
+        if mode is not None:
+            self.mode = mode
+        if value is not None:
+            self.value = value
 
     @property
     def mode(self):

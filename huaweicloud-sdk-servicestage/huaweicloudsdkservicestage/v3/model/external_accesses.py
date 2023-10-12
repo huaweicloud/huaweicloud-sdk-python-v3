@@ -17,24 +17,24 @@ class ExternalAccesses:
     sensitive_list = []
 
     openapi_types = {
-        'prorocol': 'str',
+        'protocol': 'str',
         'address': 'str',
         'forward_port': 'int'
     }
 
     attribute_map = {
-        'prorocol': 'prorocol',
+        'protocol': 'protocol',
         'address': 'address',
         'forward_port': 'forward_port'
     }
 
-    def __init__(self, prorocol=None, address=None, forward_port=None):
+    def __init__(self, protocol=None, address=None, forward_port=None):
         """ExternalAccesses
 
         The model defined in huaweicloud sdk
 
-        :param prorocol: 
-        :type prorocol: str
+        :param protocol: 
+        :type protocol: str
         :param address: 
         :type address: str
         :param forward_port: 
@@ -43,35 +43,35 @@ class ExternalAccesses:
         
         
 
-        self._prorocol = None
+        self._protocol = None
         self._address = None
         self._forward_port = None
         self.discriminator = None
 
-        if prorocol is not None:
-            self.prorocol = prorocol
+        if protocol is not None:
+            self.protocol = protocol
         if address is not None:
             self.address = address
         if forward_port is not None:
             self.forward_port = forward_port
 
     @property
-    def prorocol(self):
-        """Gets the prorocol of this ExternalAccesses.
+    def protocol(self):
+        """Gets the protocol of this ExternalAccesses.
 
-        :return: The prorocol of this ExternalAccesses.
+        :return: The protocol of this ExternalAccesses.
         :rtype: str
         """
-        return self._prorocol
+        return self._protocol
 
-    @prorocol.setter
-    def prorocol(self, prorocol):
-        """Sets the prorocol of this ExternalAccesses.
+    @protocol.setter
+    def protocol(self, protocol):
+        """Sets the protocol of this ExternalAccesses.
 
-        :param prorocol: The prorocol of this ExternalAccesses.
-        :type prorocol: str
+        :param protocol: The protocol of this ExternalAccesses.
+        :type protocol: str
         """
-        self._prorocol = prorocol
+        self._protocol = protocol
 
     @property
     def address(self):

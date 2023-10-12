@@ -78,8 +78,7 @@ class ListApiTopNRequest:
         self._order_by = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
         self.dlm_type = dlm_type
         self.api_id = api_id
         if instance_id is not None:

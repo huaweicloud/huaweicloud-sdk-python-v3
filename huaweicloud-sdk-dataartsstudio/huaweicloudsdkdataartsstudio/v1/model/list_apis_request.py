@@ -18,23 +18,27 @@ class ListApisRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'dlm_type': 'str',
         'offset': 'int',
         'limit': 'int'
     }
 
     attribute_map = {
         'workspace': 'workspace',
+        'dlm_type': 'Dlm-Type',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, workspace=None, offset=None, limit=None):
+    def __init__(self, workspace=None, dlm_type=None, offset=None, limit=None):
         """ListApisRequest
 
         The model defined in huaweicloud sdk
 
         :param workspace: 工作空间id
         :type workspace: str
+        :param dlm_type: dlm版本类型
+        :type dlm_type: str
         :param offset: 查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整
         :type offset: int
         :param limit: 查询条数, 即查询Y条数据
@@ -44,12 +48,13 @@ class ListApisRequest:
         
 
         self._workspace = None
+        self._dlm_type = None
         self._offset = None
         self._limit = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
+        self.dlm_type = dlm_type
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -76,6 +81,28 @@ class ListApisRequest:
         :type workspace: str
         """
         self._workspace = workspace
+
+    @property
+    def dlm_type(self):
+        """Gets the dlm_type of this ListApisRequest.
+
+        dlm版本类型
+
+        :return: The dlm_type of this ListApisRequest.
+        :rtype: str
+        """
+        return self._dlm_type
+
+    @dlm_type.setter
+    def dlm_type(self, dlm_type):
+        """Sets the dlm_type of this ListApisRequest.
+
+        dlm版本类型
+
+        :param dlm_type: The dlm_type of this ListApisRequest.
+        :type dlm_type: str
+        """
+        self._dlm_type = dlm_type
 
     @property
     def offset(self):

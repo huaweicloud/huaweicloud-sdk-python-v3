@@ -18,29 +18,43 @@ class ListAsyncInvocationsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'invocations': 'list[ListFunctionAsyncInvocationsResult]'
+        'invocations': 'list[ListFunctionAsyncInvocationsResult]',
+        'count': 'int',
+        'next_marker': 'int'
     }
 
     attribute_map = {
-        'invocations': 'invocations'
+        'invocations': 'invocations',
+        'count': 'count',
+        'next_marker': 'next_marker'
     }
 
-    def __init__(self, invocations=None):
+    def __init__(self, invocations=None, count=None, next_marker=None):
         """ListAsyncInvocationsResponse
 
         The model defined in huaweicloud sdk
 
         :param invocations: 异步调用记录列表。
         :type invocations: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsyncInvocationsResult`]
+        :param count: 查询数据总条数
+        :type count: int
+        :param next_marker: 查询下一页的起始位置
+        :type next_marker: int
         """
         
         super(ListAsyncInvocationsResponse, self).__init__()
 
         self._invocations = None
+        self._count = None
+        self._next_marker = None
         self.discriminator = None
 
         if invocations is not None:
             self.invocations = invocations
+        if count is not None:
+            self.count = count
+        if next_marker is not None:
+            self.next_marker = next_marker
 
     @property
     def invocations(self):
@@ -63,6 +77,50 @@ class ListAsyncInvocationsResponse(SdkResponse):
         :type invocations: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsyncInvocationsResult`]
         """
         self._invocations = invocations
+
+    @property
+    def count(self):
+        """Gets the count of this ListAsyncInvocationsResponse.
+
+        查询数据总条数
+
+        :return: The count of this ListAsyncInvocationsResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListAsyncInvocationsResponse.
+
+        查询数据总条数
+
+        :param count: The count of this ListAsyncInvocationsResponse.
+        :type count: int
+        """
+        self._count = count
+
+    @property
+    def next_marker(self):
+        """Gets the next_marker of this ListAsyncInvocationsResponse.
+
+        查询下一页的起始位置
+
+        :return: The next_marker of this ListAsyncInvocationsResponse.
+        :rtype: int
+        """
+        return self._next_marker
+
+    @next_marker.setter
+    def next_marker(self, next_marker):
+        """Sets the next_marker of this ListAsyncInvocationsResponse.
+
+        查询下一页的起始位置
+
+        :param next_marker: The next_marker of this ListAsyncInvocationsResponse.
+        :type next_marker: int
+        """
+        self._next_marker = next_marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""

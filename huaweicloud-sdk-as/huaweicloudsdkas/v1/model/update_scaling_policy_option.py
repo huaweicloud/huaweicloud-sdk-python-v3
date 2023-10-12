@@ -49,7 +49,7 @@ class UpdateScalingPolicyOption:
         :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
         :param scaling_policy_action: 
         :type scaling_policy_action: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV1`
-        :param cool_down_time: 冷却时间，取值范围0-86400，默认为900，单位是秒。
+        :param cool_down_time: 冷却时间，取值范围0-86400，默认为300，单位是秒。
         :type cool_down_time: int
         """
         
@@ -182,7 +182,7 @@ class UpdateScalingPolicyOption:
     def cool_down_time(self):
         """Gets the cool_down_time of this UpdateScalingPolicyOption.
 
-        冷却时间，取值范围0-86400，默认为900，单位是秒。
+        冷却时间，取值范围0-86400，默认为300，单位是秒。
 
         :return: The cool_down_time of this UpdateScalingPolicyOption.
         :rtype: int
@@ -193,7 +193,7 @@ class UpdateScalingPolicyOption:
     def cool_down_time(self, cool_down_time):
         """Sets the cool_down_time of this UpdateScalingPolicyOption.
 
-        冷却时间，取值范围0-86400，默认为900，单位是秒。
+        冷却时间，取值范围0-86400，默认为300，单位是秒。
 
         :param cool_down_time: The cool_down_time of this UpdateScalingPolicyOption.
         :type cool_down_time: int

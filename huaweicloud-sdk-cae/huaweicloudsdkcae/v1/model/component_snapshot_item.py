@@ -19,7 +19,6 @@ class ComponentSnapshotItem:
     openapi_types = {
         'component_id': 'str',
         'index': 'int',
-        'description': 'str',
         'context': 'ComponentSnapshotContext',
         'created_at': 'datetime',
         'updated_at': 'datetime'
@@ -28,13 +27,12 @@ class ComponentSnapshotItem:
     attribute_map = {
         'component_id': 'component_id',
         'index': 'index',
-        'description': 'description',
         'context': 'context',
         'created_at': 'created_at',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, component_id=None, index=None, description=None, context=None, created_at=None, updated_at=None):
+    def __init__(self, component_id=None, index=None, context=None, created_at=None, updated_at=None):
         """ComponentSnapshotItem
 
         The model defined in huaweicloud sdk
@@ -43,8 +41,6 @@ class ComponentSnapshotItem:
         :type component_id: str
         :param index: 快照索引。
         :type index: int
-        :param description: 描述信息。
-        :type description: str
         :param context: 
         :type context: :class:`huaweicloudsdkcae.v1.ComponentSnapshotContext`
         :param created_at: 创建时间。
@@ -57,7 +53,6 @@ class ComponentSnapshotItem:
 
         self._component_id = None
         self._index = None
-        self._description = None
         self._context = None
         self._created_at = None
         self._updated_at = None
@@ -67,8 +62,6 @@ class ComponentSnapshotItem:
             self.component_id = component_id
         if index is not None:
             self.index = index
-        if description is not None:
-            self.description = description
         if context is not None:
             self.context = context
         if created_at is not None:
@@ -119,28 +112,6 @@ class ComponentSnapshotItem:
         :type index: int
         """
         self._index = index
-
-    @property
-    def description(self):
-        """Gets the description of this ComponentSnapshotItem.
-
-        描述信息。
-
-        :return: The description of this ComponentSnapshotItem.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this ComponentSnapshotItem.
-
-        描述信息。
-
-        :param description: The description of this ComponentSnapshotItem.
-        :type description: str
-        """
-        self._description = description
 
     @property
     def context(self):

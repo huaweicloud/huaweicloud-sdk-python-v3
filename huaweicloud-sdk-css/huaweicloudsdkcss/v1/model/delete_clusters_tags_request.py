@@ -37,7 +37,7 @@ class DeleteClustersTagsRequest:
         :type cluster_id: str
         :param resource_type: 资源类型，当前固定值为“css-cluster”，表示是集群类型。
         :type resource_type: str
-        :param key: 需要删除的标签名。
+        :param key: 需要删除的标签名。如果标签名为中文需要经过url编码再调用该接口。
         :type key: str
         """
         
@@ -100,7 +100,7 @@ class DeleteClustersTagsRequest:
     def key(self):
         """Gets the key of this DeleteClustersTagsRequest.
 
-        需要删除的标签名。
+        需要删除的标签名。如果标签名为中文需要经过url编码再调用该接口。
 
         :return: The key of this DeleteClustersTagsRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class DeleteClustersTagsRequest:
     def key(self, key):
         """Sets the key of this DeleteClustersTagsRequest.
 
-        需要删除的标签名。
+        需要删除的标签名。如果标签名为中文需要经过url编码再调用该接口。
 
         :param key: The key of this DeleteClustersTagsRequest.
         :type key: str

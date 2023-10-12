@@ -41,7 +41,7 @@ class DeploymentGroupUpdateRequest:
         :type description: str
         :param slave_cluster_id: 自定义slave资源池id
         :type slave_cluster_id: str
-        :param auto_connection_test_switch: 自动连通性验证 0不执行 1每日 2每周
+        :param auto_connection_test_switch: 自动测试功能已下架，该字段已失效
         :type auto_connection_test_switch: int
         """
         
@@ -131,7 +131,7 @@ class DeploymentGroupUpdateRequest:
     def auto_connection_test_switch(self):
         """Gets the auto_connection_test_switch of this DeploymentGroupUpdateRequest.
 
-        自动连通性验证 0不执行 1每日 2每周
+        自动测试功能已下架，该字段已失效
 
         :return: The auto_connection_test_switch of this DeploymentGroupUpdateRequest.
         :rtype: int
@@ -142,7 +142,7 @@ class DeploymentGroupUpdateRequest:
     def auto_connection_test_switch(self, auto_connection_test_switch):
         """Sets the auto_connection_test_switch of this DeploymentGroupUpdateRequest.
 
-        自动连通性验证 0不执行 1每日 2每周
+        自动测试功能已下架，该字段已失效
 
         :param auto_connection_test_switch: The auto_connection_test_switch of this DeploymentGroupUpdateRequest.
         :type auto_connection_test_switch: int

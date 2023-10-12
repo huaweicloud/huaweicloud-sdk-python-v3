@@ -18,6 +18,7 @@ class ListApplyRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'dlm_type': 'str',
         'offset': 'int',
         'limit': 'int',
         'api_name': 'str',
@@ -26,19 +27,22 @@ class ListApplyRequest:
 
     attribute_map = {
         'workspace': 'workspace',
+        'dlm_type': 'Dlm-Type',
         'offset': 'offset',
         'limit': 'limit',
         'api_name': 'api_name',
         'query_type': 'query_type'
     }
 
-    def __init__(self, workspace=None, offset=None, limit=None, api_name=None, query_type=None):
+    def __init__(self, workspace=None, dlm_type=None, offset=None, limit=None, api_name=None, query_type=None):
         """ListApplyRequest
 
         The model defined in huaweicloud sdk
 
         :param workspace: 工作空间id
         :type workspace: str
+        :param dlm_type: dlm版本类型
+        :type dlm_type: str
         :param offset: 查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
         :type offset: int
         :param limit: 查询条数, 即查询Y条数据
@@ -52,14 +56,15 @@ class ListApplyRequest:
         
 
         self._workspace = None
+        self._dlm_type = None
         self._offset = None
         self._limit = None
         self._api_name = None
         self._query_type = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
+        self.dlm_type = dlm_type
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -90,6 +95,28 @@ class ListApplyRequest:
         :type workspace: str
         """
         self._workspace = workspace
+
+    @property
+    def dlm_type(self):
+        """Gets the dlm_type of this ListApplyRequest.
+
+        dlm版本类型
+
+        :return: The dlm_type of this ListApplyRequest.
+        :rtype: str
+        """
+        return self._dlm_type
+
+    @dlm_type.setter
+    def dlm_type(self, dlm_type):
+        """Sets the dlm_type of this ListApplyRequest.
+
+        dlm版本类型
+
+        :param dlm_type: The dlm_type of this ListApplyRequest.
+        :type dlm_type: str
+        """
+        self._dlm_type = dlm_type
 
     @property
     def offset(self):

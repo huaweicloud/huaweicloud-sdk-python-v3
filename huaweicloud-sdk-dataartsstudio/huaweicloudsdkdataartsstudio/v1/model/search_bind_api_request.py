@@ -18,6 +18,7 @@ class SearchBindApiRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'dlm_type': 'str',
         'app_id': 'str',
         'offset': 'int',
         'limit': 'int'
@@ -25,18 +26,21 @@ class SearchBindApiRequest:
 
     attribute_map = {
         'workspace': 'workspace',
+        'dlm_type': 'Dlm-Type',
         'app_id': 'app_id',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, workspace=None, app_id=None, offset=None, limit=None):
+    def __init__(self, workspace=None, dlm_type=None, app_id=None, offset=None, limit=None):
         """SearchBindApiRequest
 
         The model defined in huaweicloud sdk
 
         :param workspace: 工作空间id
         :type workspace: str
+        :param dlm_type: dlm版本类型
+        :type dlm_type: str
         :param app_id: app编号
         :type app_id: str
         :param offset: 查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整
@@ -48,13 +52,14 @@ class SearchBindApiRequest:
         
 
         self._workspace = None
+        self._dlm_type = None
         self._app_id = None
         self._offset = None
         self._limit = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
+        self.dlm_type = dlm_type
         self.app_id = app_id
         if offset is not None:
             self.offset = offset
@@ -82,6 +87,28 @@ class SearchBindApiRequest:
         :type workspace: str
         """
         self._workspace = workspace
+
+    @property
+    def dlm_type(self):
+        """Gets the dlm_type of this SearchBindApiRequest.
+
+        dlm版本类型
+
+        :return: The dlm_type of this SearchBindApiRequest.
+        :rtype: str
+        """
+        return self._dlm_type
+
+    @dlm_type.setter
+    def dlm_type(self, dlm_type):
+        """Sets the dlm_type of this SearchBindApiRequest.
+
+        dlm版本类型
+
+        :param dlm_type: The dlm_type of this SearchBindApiRequest.
+        :type dlm_type: str
+        """
+        self._dlm_type = dlm_type
 
     @property
     def app_id(self):

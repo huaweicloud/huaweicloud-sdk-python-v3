@@ -22,7 +22,8 @@ class ListAppGroupRequest:
         'app_server_group_id': 'str',
         'app_group_id': 'str',
         'name': 'str',
-        'authorization_type': 'str'
+        'authorization_type': 'str',
+        'app_type': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ListAppGroupRequest:
         'app_server_group_id': 'app_server_group_id',
         'app_group_id': 'app_group_id',
         'name': 'name',
-        'authorization_type': 'authorization_type'
+        'authorization_type': 'authorization_type',
+        'app_type': 'app_type'
     }
 
-    def __init__(self, limit=None, offset=None, app_server_group_id=None, app_group_id=None, name=None, authorization_type=None):
+    def __init__(self, limit=None, offset=None, app_server_group_id=None, app_group_id=None, name=None, authorization_type=None, app_type=None):
         """ListAppGroupRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ListAppGroupRequest:
         :type name: str
         :param authorization_type: 授权类型(APP、APP_GROUP)
         :type authorization_type: str
+        :param app_type: 应用组类型(SESSION_DESKTOP_APP、COMMON_APP)
+        :type app_type: str
         """
         
         
@@ -61,10 +65,13 @@ class ListAppGroupRequest:
         self._app_group_id = None
         self._name = None
         self._authorization_type = None
+        self._app_type = None
         self.discriminator = None
 
-        self.limit = limit
-        self.offset = offset
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
         if app_server_group_id is not None:
             self.app_server_group_id = app_server_group_id
         if app_group_id is not None:
@@ -73,6 +80,8 @@ class ListAppGroupRequest:
             self.name = name
         if authorization_type is not None:
             self.authorization_type = authorization_type
+        if app_type is not None:
+            self.app_type = app_type
 
     @property
     def limit(self):
@@ -205,6 +214,28 @@ class ListAppGroupRequest:
         :type authorization_type: str
         """
         self._authorization_type = authorization_type
+
+    @property
+    def app_type(self):
+        """Gets the app_type of this ListAppGroupRequest.
+
+        应用组类型(SESSION_DESKTOP_APP、COMMON_APP)
+
+        :return: The app_type of this ListAppGroupRequest.
+        :rtype: str
+        """
+        return self._app_type
+
+    @app_type.setter
+    def app_type(self, app_type):
+        """Sets the app_type of this ListAppGroupRequest.
+
+        应用组类型(SESSION_DESKTOP_APP、COMMON_APP)
+
+        :param app_type: The app_type of this ListAppGroupRequest.
+        :type app_type: str
+        """
+        self._app_type = app_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

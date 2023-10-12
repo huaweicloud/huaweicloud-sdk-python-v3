@@ -18,7 +18,7 @@ class PoliciesPeripheralsUsbPortRedirection:
 
     openapi_types = {
         'usb_enable': 'bool',
-        'options': 'PoliciesPeripheralsUsbPortRedirectionOptions'
+        'options': 'UsbPortRedirectionOptions'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class PoliciesPeripheralsUsbPortRedirection:
         :param usb_enable: 是否开启USB端口重定向。 - false：表示关闭。 - true：表示开启。
         :type usb_enable: bool
         :param options: 
-        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsUsbPortRedirectionOptions`
+        :type options: :class:`huaweicloudsdkworkspaceapp.v1.UsbPortRedirectionOptions`
         """
         
         
@@ -75,7 +75,7 @@ class PoliciesPeripheralsUsbPortRedirection:
         """Gets the options of this PoliciesPeripheralsUsbPortRedirection.
 
         :return: The options of this PoliciesPeripheralsUsbPortRedirection.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsUsbPortRedirectionOptions`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UsbPortRedirectionOptions`
         """
         return self._options
 
@@ -84,7 +84,7 @@ class PoliciesPeripheralsUsbPortRedirection:
         """Sets the options of this PoliciesPeripheralsUsbPortRedirection.
 
         :param options: The options of this PoliciesPeripheralsUsbPortRedirection.
-        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsUsbPortRedirectionOptions`
+        :type options: :class:`huaweicloudsdkworkspaceapp.v1.UsbPortRedirectionOptions`
         """
         self._options = options
 

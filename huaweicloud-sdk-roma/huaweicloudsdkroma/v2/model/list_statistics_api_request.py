@@ -45,13 +45,13 @@ class ListStatisticsApiRequest:
 
         :param instance_id: 实例ID
         :type instance_id: str
-        :param mode: 查询模式，默认为INSTANCE * ALL：实例下所有调用应用，要求主帐号权限 * APP：指定集成应用 * API：指定API * INSTANCE：实例，默认值  注意：mode &#x3D; APP或ALL时，接口响应中不返回cycle，api_id，group_id，provider，register_time，status字段
+        :param mode: 查询模式，默认为INSTANCE * ALL：实例下所有调用应用，要求主帐号权限 * APP：指定集成应用 * API：指定API * INSTANCE：实例，默认值  注意：mode &#x3D; APP或ALL时，接口响应中不返回cycle，api_id，group_id，provider，register_time，status字段  mode &#x3D; INSTANCE时，若不填写api_id或roma_app_id，则要求主帐号权限才能调用成功
         :type mode: str
         :param roma_app_id: 集成应用编号，查询模式为APP时必填
         :type roma_app_id: str
         :param api_id: API编号，查询模式为API时必填
         :type api_id: str
-        :param cycle: 查询统计周期 * minute：分钟 * hour：小时 * day：天
+        :param cycle: 查询统计周期 * minute：分钟 * hour：小时 * day：天  例如，cycle&#x3D;hour，duration&#x3D;2h是指查询范围两小时以内，一小时一次数据采样，采样到的数据值为一小时内的累计值。
         :type cycle: str
         :param start_time: 开始时间，格式：2020-06-18 10:00:01
         :type start_time: str
@@ -115,7 +115,7 @@ class ListStatisticsApiRequest:
     def mode(self):
         """Gets the mode of this ListStatisticsApiRequest.
 
-        查询模式，默认为INSTANCE * ALL：实例下所有调用应用，要求主帐号权限 * APP：指定集成应用 * API：指定API * INSTANCE：实例，默认值  注意：mode = APP或ALL时，接口响应中不返回cycle，api_id，group_id，provider，register_time，status字段
+        查询模式，默认为INSTANCE * ALL：实例下所有调用应用，要求主帐号权限 * APP：指定集成应用 * API：指定API * INSTANCE：实例，默认值  注意：mode = APP或ALL时，接口响应中不返回cycle，api_id，group_id，provider，register_time，status字段  mode = INSTANCE时，若不填写api_id或roma_app_id，则要求主帐号权限才能调用成功
 
         :return: The mode of this ListStatisticsApiRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class ListStatisticsApiRequest:
     def mode(self, mode):
         """Sets the mode of this ListStatisticsApiRequest.
 
-        查询模式，默认为INSTANCE * ALL：实例下所有调用应用，要求主帐号权限 * APP：指定集成应用 * API：指定API * INSTANCE：实例，默认值  注意：mode = APP或ALL时，接口响应中不返回cycle，api_id，group_id，provider，register_time，status字段
+        查询模式，默认为INSTANCE * ALL：实例下所有调用应用，要求主帐号权限 * APP：指定集成应用 * API：指定API * INSTANCE：实例，默认值  注意：mode = APP或ALL时，接口响应中不返回cycle，api_id，group_id，provider，register_time，status字段  mode = INSTANCE时，若不填写api_id或roma_app_id，则要求主帐号权限才能调用成功
 
         :param mode: The mode of this ListStatisticsApiRequest.
         :type mode: str
@@ -181,7 +181,7 @@ class ListStatisticsApiRequest:
     def cycle(self):
         """Gets the cycle of this ListStatisticsApiRequest.
 
-        查询统计周期 * minute：分钟 * hour：小时 * day：天
+        查询统计周期 * minute：分钟 * hour：小时 * day：天  例如，cycle=hour，duration=2h是指查询范围两小时以内，一小时一次数据采样，采样到的数据值为一小时内的累计值。
 
         :return: The cycle of this ListStatisticsApiRequest.
         :rtype: str
@@ -192,7 +192,7 @@ class ListStatisticsApiRequest:
     def cycle(self, cycle):
         """Sets the cycle of this ListStatisticsApiRequest.
 
-        查询统计周期 * minute：分钟 * hour：小时 * day：天
+        查询统计周期 * minute：分钟 * hour：小时 * day：天  例如，cycle=hour，duration=2h是指查询范围两小时以内，一小时一次数据采样，采样到的数据值为一小时内的累计值。
 
         :param cycle: The cycle of this ListStatisticsApiRequest.
         :type cycle: str

@@ -46,7 +46,8 @@ class ComponentCreate:
         'anti_affinity': 'ComponentAffinity',
         'liveness_probe': 'ComponentProbe',
         'readiness_probe': 'ComponentProbe',
-        'refer_resources': 'list[ReferResourceCreate]'
+        'refer_resources': 'list[ReferResourceCreate]',
+        'external_accesses': 'list[ExternalAccesses]'
     }
 
     attribute_map = {
@@ -79,10 +80,11 @@ class ComponentCreate:
         'anti_affinity': 'anti_affinity',
         'liveness_probe': 'liveness_probe',
         'readiness_probe': 'readiness_probe',
-        'refer_resources': 'refer_resources'
+        'refer_resources': 'refer_resources',
+        'external_accesses': 'external_accesses'
     }
 
-    def __init__(self, name=None, description=None, labels=None, runtime_stack=None, source=None, build=None, environment_id=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, envs=None, storages=None, deploy_strategy=None, command=None, post_start=None, pre_stop=None, mesher=None, timezone=None, jvm_opts=None, tomcat_opts=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, refer_resources=None):
+    def __init__(self, name=None, description=None, labels=None, runtime_stack=None, source=None, build=None, environment_id=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, envs=None, storages=None, deploy_strategy=None, command=None, post_start=None, pre_stop=None, mesher=None, timezone=None, jvm_opts=None, tomcat_opts=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, refer_resources=None, external_accesses=None):
         """ComponentCreate
 
         The model defined in huaweicloud sdk
@@ -147,6 +149,8 @@ class ComponentCreate:
         :type readiness_probe: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
         :param refer_resources: 
         :type refer_resources: list[:class:`huaweicloudsdkservicestage.v3.ReferResourceCreate`]
+        :param external_accesses: 
+        :type external_accesses: list[:class:`huaweicloudsdkservicestage.v3.ExternalAccesses`]
         """
         
         
@@ -181,6 +185,7 @@ class ComponentCreate:
         self._liveness_probe = None
         self._readiness_probe = None
         self._refer_resources = None
+        self._external_accesses = None
         self.discriminator = None
 
         self.name = name
@@ -237,6 +242,8 @@ class ComponentCreate:
         if readiness_probe is not None:
             self.readiness_probe = readiness_probe
         self.refer_resources = refer_resources
+        if external_accesses is not None:
+            self.external_accesses = external_accesses
 
     @property
     def name(self):
@@ -801,6 +808,24 @@ class ComponentCreate:
         :type refer_resources: list[:class:`huaweicloudsdkservicestage.v3.ReferResourceCreate`]
         """
         self._refer_resources = refer_resources
+
+    @property
+    def external_accesses(self):
+        """Gets the external_accesses of this ComponentCreate.
+
+        :return: The external_accesses of this ComponentCreate.
+        :rtype: list[:class:`huaweicloudsdkservicestage.v3.ExternalAccesses`]
+        """
+        return self._external_accesses
+
+    @external_accesses.setter
+    def external_accesses(self, external_accesses):
+        """Sets the external_accesses of this ComponentCreate.
+
+        :param external_accesses: The external_accesses of this ComponentCreate.
+        :type external_accesses: list[:class:`huaweicloudsdkservicestage.v3.ExternalAccesses`]
+        """
+        self._external_accesses = external_accesses
 
     def to_dict(self):
         """Returns the model properties as a dict"""

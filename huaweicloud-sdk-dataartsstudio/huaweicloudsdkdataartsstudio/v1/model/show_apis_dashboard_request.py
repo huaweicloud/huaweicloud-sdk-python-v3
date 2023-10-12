@@ -73,8 +73,7 @@ class ShowApisDashboardRequest:
         self._offset = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
         self.dlm_type = dlm_type
         if instance_id is not None:
             self.instance_id = instance_id

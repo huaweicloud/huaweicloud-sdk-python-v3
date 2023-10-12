@@ -73,7 +73,7 @@ class PrePaidServer:
 
         The model defined in huaweicloud sdk
 
-        :param auto_terminate_time: 弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+        :param auto_terminate_time: 弹性云服务器定时删除时间。  时间格式例如：2020-01-19T03:30:52Z
         :type auto_terminate_time: str
         :param image_ref: 待创建云服务器的系统镜像，需要指定已创建镜像的ID，ID格式为通用唯一识别码（Universally Unique Identifier，简称UUID）。  镜像的ID可以从镜像服务的 [查询镜像列表](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;IMS&amp;api&#x3D;ListImages) 接口获取，该接口可根据 __imagetype、__os_type 等参数过滤选择合适镜像。
         :type image_ref: str
@@ -193,7 +193,7 @@ class PrePaidServer:
     def auto_terminate_time(self):
         """Gets the auto_terminate_time of this PrePaidServer.
 
-        弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+        弹性云服务器定时删除时间。  时间格式例如：2020-01-19T03:30:52Z
 
         :return: The auto_terminate_time of this PrePaidServer.
         :rtype: str
@@ -204,7 +204,7 @@ class PrePaidServer:
     def auto_terminate_time(self, auto_terminate_time):
         """Sets the auto_terminate_time of this PrePaidServer.
 
-        弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+        弹性云服务器定时删除时间。  时间格式例如：2020-01-19T03:30:52Z
 
         :param auto_terminate_time: The auto_terminate_time of this PrePaidServer.
         :type auto_terminate_time: str

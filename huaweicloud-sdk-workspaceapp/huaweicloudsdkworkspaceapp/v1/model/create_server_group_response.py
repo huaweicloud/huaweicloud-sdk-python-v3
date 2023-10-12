@@ -28,8 +28,12 @@ class CreateServerGroupResponse(SdkResponse):
         'system_disk_type': 'VolumeType',
         'system_disk_size': 'int',
         'is_vdi': 'bool',
+        'extra_session_type': 'ExtraSessionTypeEnum',
+        'extra_session_size': 'int',
+        'app_type': 'AppTypeEnum',
         'create_time': 'datetime',
         'update_time': 'datetime',
+        'storage_mount_policy': 'StorageFolderMountType',
         'app_server_flavor_count': 'int',
         'app_server_count': 'int',
         'app_group_count': 'int',
@@ -51,8 +55,12 @@ class CreateServerGroupResponse(SdkResponse):
         'system_disk_type': 'system_disk_type',
         'system_disk_size': 'system_disk_size',
         'is_vdi': 'is_vdi',
+        'extra_session_type': 'extra_session_type',
+        'extra_session_size': 'extra_session_size',
+        'app_type': 'app_type',
         'create_time': 'create_time',
         'update_time': 'update_time',
+        'storage_mount_policy': 'storage_mount_policy',
         'app_server_flavor_count': 'app_server_flavor_count',
         'app_server_count': 'app_server_count',
         'app_group_count': 'app_group_count',
@@ -63,7 +71,7 @@ class CreateServerGroupResponse(SdkResponse):
         'ou_name': 'ou_name'
     }
 
-    def __init__(self, id=None, name=None, description=None, image_id=None, os_type=None, product_id=None, subnet_id=None, system_disk_type=None, system_disk_size=None, is_vdi=None, create_time=None, update_time=None, app_server_flavor_count=None, app_server_count=None, app_group_count=None, image_name=None, product_info=None, subnet_name=None, scaling_policy=None, ou_name=None):
+    def __init__(self, id=None, name=None, description=None, image_id=None, os_type=None, product_id=None, subnet_id=None, system_disk_type=None, system_disk_size=None, is_vdi=None, extra_session_type=None, extra_session_size=None, app_type=None, create_time=None, update_time=None, storage_mount_policy=None, app_server_flavor_count=None, app_server_count=None, app_group_count=None, image_name=None, product_info=None, subnet_name=None, scaling_policy=None, ou_name=None):
         """CreateServerGroupResponse
 
         The model defined in huaweicloud sdk
@@ -88,10 +96,18 @@ class CreateServerGroupResponse(SdkResponse):
         :type system_disk_size: int
         :param is_vdi: 是否为vdi单会话模式
         :type is_vdi: bool
+        :param extra_session_type: 
+        :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
+        :param extra_session_size: 付费会话个数
+        :type extra_session_size: int
+        :param app_type: 
+        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
         :param create_time: 服务器组创建时间
         :type create_time: datetime
         :param update_time: 服务器组更新时间
         :type update_time: datetime
+        :param storage_mount_policy: 
+        :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
         :param app_server_flavor_count: 服务器配置总数量
         :type app_server_flavor_count: int
         :param app_server_count: 服务器总数量
@@ -122,8 +138,12 @@ class CreateServerGroupResponse(SdkResponse):
         self._system_disk_type = None
         self._system_disk_size = None
         self._is_vdi = None
+        self._extra_session_type = None
+        self._extra_session_size = None
+        self._app_type = None
         self._create_time = None
         self._update_time = None
+        self._storage_mount_policy = None
         self._app_server_flavor_count = None
         self._app_server_count = None
         self._app_group_count = None
@@ -154,10 +174,18 @@ class CreateServerGroupResponse(SdkResponse):
             self.system_disk_size = system_disk_size
         if is_vdi is not None:
             self.is_vdi = is_vdi
+        if extra_session_type is not None:
+            self.extra_session_type = extra_session_type
+        if extra_session_size is not None:
+            self.extra_session_size = extra_session_size
+        if app_type is not None:
+            self.app_type = app_type
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
+        if storage_mount_policy is not None:
+            self.storage_mount_policy = storage_mount_policy
         if app_server_flavor_count is not None:
             self.app_server_flavor_count = app_server_flavor_count
         if app_server_count is not None:
@@ -388,6 +416,64 @@ class CreateServerGroupResponse(SdkResponse):
         self._is_vdi = is_vdi
 
     @property
+    def extra_session_type(self):
+        """Gets the extra_session_type of this CreateServerGroupResponse.
+
+        :return: The extra_session_type of this CreateServerGroupResponse.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
+        """
+        return self._extra_session_type
+
+    @extra_session_type.setter
+    def extra_session_type(self, extra_session_type):
+        """Sets the extra_session_type of this CreateServerGroupResponse.
+
+        :param extra_session_type: The extra_session_type of this CreateServerGroupResponse.
+        :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
+        """
+        self._extra_session_type = extra_session_type
+
+    @property
+    def extra_session_size(self):
+        """Gets the extra_session_size of this CreateServerGroupResponse.
+
+        付费会话个数
+
+        :return: The extra_session_size of this CreateServerGroupResponse.
+        :rtype: int
+        """
+        return self._extra_session_size
+
+    @extra_session_size.setter
+    def extra_session_size(self, extra_session_size):
+        """Sets the extra_session_size of this CreateServerGroupResponse.
+
+        付费会话个数
+
+        :param extra_session_size: The extra_session_size of this CreateServerGroupResponse.
+        :type extra_session_size: int
+        """
+        self._extra_session_size = extra_session_size
+
+    @property
+    def app_type(self):
+        """Gets the app_type of this CreateServerGroupResponse.
+
+        :return: The app_type of this CreateServerGroupResponse.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        """
+        return self._app_type
+
+    @app_type.setter
+    def app_type(self, app_type):
+        """Sets the app_type of this CreateServerGroupResponse.
+
+        :param app_type: The app_type of this CreateServerGroupResponse.
+        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        """
+        self._app_type = app_type
+
+    @property
     def create_time(self):
         """Gets the create_time of this CreateServerGroupResponse.
 
@@ -430,6 +516,24 @@ class CreateServerGroupResponse(SdkResponse):
         :type update_time: datetime
         """
         self._update_time = update_time
+
+    @property
+    def storage_mount_policy(self):
+        """Gets the storage_mount_policy of this CreateServerGroupResponse.
+
+        :return: The storage_mount_policy of this CreateServerGroupResponse.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
+        """
+        return self._storage_mount_policy
+
+    @storage_mount_policy.setter
+    def storage_mount_policy(self, storage_mount_policy):
+        """Sets the storage_mount_policy of this CreateServerGroupResponse.
+
+        :param storage_mount_policy: The storage_mount_policy of this CreateServerGroupResponse.
+        :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
+        """
+        self._storage_mount_policy = storage_mount_policy
 
     @property
     def app_server_flavor_count(self):

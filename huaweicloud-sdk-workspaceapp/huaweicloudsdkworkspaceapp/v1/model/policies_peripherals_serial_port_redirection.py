@@ -18,7 +18,7 @@ class PoliciesPeripheralsSerialPortRedirection:
 
     openapi_types = {
         'serial_port_enable': 'bool',
-        'options': 'PoliciesPeripheralsSerialPortRedirectionOptions'
+        'options': 'SerialPortRedirectionOptions'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class PoliciesPeripheralsSerialPortRedirection:
         :param serial_port_enable: 是否开启串口重定向。取值为： false：表示关闭。 true：表示开启。
         :type serial_port_enable: bool
         :param options: 
-        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsSerialPortRedirectionOptions`
+        :type options: :class:`huaweicloudsdkworkspaceapp.v1.SerialPortRedirectionOptions`
         """
         
         
@@ -75,7 +75,7 @@ class PoliciesPeripheralsSerialPortRedirection:
         """Gets the options of this PoliciesPeripheralsSerialPortRedirection.
 
         :return: The options of this PoliciesPeripheralsSerialPortRedirection.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsSerialPortRedirectionOptions`
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.SerialPortRedirectionOptions`
         """
         return self._options
 
@@ -84,7 +84,7 @@ class PoliciesPeripheralsSerialPortRedirection:
         """Sets the options of this PoliciesPeripheralsSerialPortRedirection.
 
         :param options: The options of this PoliciesPeripheralsSerialPortRedirection.
-        :type options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripheralsSerialPortRedirectionOptions`
+        :type options: :class:`huaweicloudsdkworkspaceapp.v1.SerialPortRedirectionOptions`
         """
         self._options = options
 

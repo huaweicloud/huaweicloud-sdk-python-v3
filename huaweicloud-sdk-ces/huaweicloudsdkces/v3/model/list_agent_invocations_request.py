@@ -18,7 +18,6 @@ class ListAgentInvocationsRequest:
 
     openapi_types = {
         'instance_id': 'str',
-        'instance_name': 'str',
         'instance_type': 'str',
         'invocation_id': 'str',
         'invocation_type': 'str',
@@ -29,7 +28,6 @@ class ListAgentInvocationsRequest:
 
     attribute_map = {
         'instance_id': 'instance_id',
-        'instance_name': 'instance_name',
         'instance_type': 'instance_type',
         'invocation_id': 'invocation_id',
         'invocation_type': 'invocation_type',
@@ -38,20 +36,18 @@ class ListAgentInvocationsRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, instance_id=None, instance_name=None, instance_type=None, invocation_id=None, invocation_type=None, invocation_target=None, offset=None, limit=None):
+    def __init__(self, instance_id=None, instance_type=None, invocation_id=None, invocation_type=None, invocation_target=None, offset=None, limit=None):
         """ListAgentInvocationsRequest
 
         The model defined in huaweicloud sdk
 
         :param instance_id: 主机id
         :type instance_id: str
-        :param instance_name: 主机名称
-        :type instance_name: str
         :param instance_type: 主机类型，ECS弹性云服务器，BMS裸金属服务器
         :type instance_type: str
         :param invocation_id: 任务id
         :type invocation_id: str
-        :param invocation_type: 任务类型，INSTALL 安装，UPDATE 升级，ROLLBACK 回退
+        :param invocation_type: 任务类型，INSTALL 安装，UPDATE 升级，ROLLBACK 回退，RETRY 重试
         :type invocation_type: str
         :param invocation_target: 任务对象，目前仅支持telescope
         :type invocation_target: str
@@ -64,7 +60,6 @@ class ListAgentInvocationsRequest:
         
 
         self._instance_id = None
-        self._instance_name = None
         self._instance_type = None
         self._invocation_id = None
         self._invocation_type = None
@@ -75,8 +70,6 @@ class ListAgentInvocationsRequest:
 
         if instance_id is not None:
             self.instance_id = instance_id
-        if instance_name is not None:
-            self.instance_name = instance_name
         if instance_type is not None:
             self.instance_type = instance_type
         if invocation_id is not None:
@@ -111,28 +104,6 @@ class ListAgentInvocationsRequest:
         :type instance_id: str
         """
         self._instance_id = instance_id
-
-    @property
-    def instance_name(self):
-        """Gets the instance_name of this ListAgentInvocationsRequest.
-
-        主机名称
-
-        :return: The instance_name of this ListAgentInvocationsRequest.
-        :rtype: str
-        """
-        return self._instance_name
-
-    @instance_name.setter
-    def instance_name(self, instance_name):
-        """Sets the instance_name of this ListAgentInvocationsRequest.
-
-        主机名称
-
-        :param instance_name: The instance_name of this ListAgentInvocationsRequest.
-        :type instance_name: str
-        """
-        self._instance_name = instance_name
 
     @property
     def instance_type(self):
@@ -182,7 +153,7 @@ class ListAgentInvocationsRequest:
     def invocation_type(self):
         """Gets the invocation_type of this ListAgentInvocationsRequest.
 
-        任务类型，INSTALL 安装，UPDATE 升级，ROLLBACK 回退
+        任务类型，INSTALL 安装，UPDATE 升级，ROLLBACK 回退，RETRY 重试
 
         :return: The invocation_type of this ListAgentInvocationsRequest.
         :rtype: str
@@ -193,7 +164,7 @@ class ListAgentInvocationsRequest:
     def invocation_type(self, invocation_type):
         """Sets the invocation_type of this ListAgentInvocationsRequest.
 
-        任务类型，INSTALL 安装，UPDATE 升级，ROLLBACK 回退
+        任务类型，INSTALL 安装，UPDATE 升级，ROLLBACK 回退，RETRY 重试
 
         :param invocation_type: The invocation_type of this ListAgentInvocationsRequest.
         :type invocation_type: str

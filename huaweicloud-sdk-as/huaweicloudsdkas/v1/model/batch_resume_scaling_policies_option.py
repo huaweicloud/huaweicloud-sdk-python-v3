@@ -41,7 +41,7 @@ class BatchResumeScalingPoliciesOption:
         :type force_delete: str
         :param action: 批量操作伸缩策略action标识：删除：delete。启用：resume。停止：pause。
         :type action: str
-        :param delete_alarm: 是否删除告警策略使用的告警规则。可选值为yes或no，默认为no。 只有action为delete时，该字段才生效。
+        :param delete_alarm: 是否删除告警策略使用的告警规则。可选值为yes或no，默认为no。  只有action为delete时，该字段才生效。
         :type delete_alarm: str
         """
         
@@ -130,7 +130,7 @@ class BatchResumeScalingPoliciesOption:
     def delete_alarm(self):
         """Gets the delete_alarm of this BatchResumeScalingPoliciesOption.
 
-        是否删除告警策略使用的告警规则。可选值为yes或no，默认为no。 只有action为delete时，该字段才生效。
+        是否删除告警策略使用的告警规则。可选值为yes或no，默认为no。  只有action为delete时，该字段才生效。
 
         :return: The delete_alarm of this BatchResumeScalingPoliciesOption.
         :rtype: str
@@ -141,7 +141,7 @@ class BatchResumeScalingPoliciesOption:
     def delete_alarm(self, delete_alarm):
         """Sets the delete_alarm of this BatchResumeScalingPoliciesOption.
 
-        是否删除告警策略使用的告警规则。可选值为yes或no，默认为no。 只有action为delete时，该字段才生效。
+        是否删除告警策略使用的告警规则。可选值为yes或no，默认为no。  只有action为delete时，该字段才生效。
 
         :param delete_alarm: The delete_alarm of this BatchResumeScalingPoliciesOption.
         :type delete_alarm: str

@@ -17,8 +17,8 @@ class CheckInfo:
     sensitive_list = []
 
     openapi_types = {
-        'total_num': 'float',
-        'return_num': 'float',
+        'total_num': 'int',
+        'return_num': 'int',
         'last_item': 'SearchAfterParam'
     }
 
@@ -34,9 +34,9 @@ class CheckInfo:
         The model defined in huaweicloud sdk
 
         :param total_num: 符合条件的结果总数。
-        :type total_num: float
+        :type total_num: int
         :param return_num: 返回的结果总数。
-        :type return_num: float
+        :type return_num: int
         :param last_item: 
         :type last_item: :class:`huaweicloudsdkimagesearch.v2.SearchAfterParam`
         """
@@ -62,7 +62,7 @@ class CheckInfo:
         符合条件的结果总数。
 
         :return: The total_num of this CheckInfo.
-        :rtype: float
+        :rtype: int
         """
         return self._total_num
 
@@ -73,7 +73,7 @@ class CheckInfo:
         符合条件的结果总数。
 
         :param total_num: The total_num of this CheckInfo.
-        :type total_num: float
+        :type total_num: int
         """
         self._total_num = total_num
 
@@ -84,7 +84,7 @@ class CheckInfo:
         返回的结果总数。
 
         :return: The return_num of this CheckInfo.
-        :rtype: float
+        :rtype: int
         """
         return self._return_num
 
@@ -95,7 +95,7 @@ class CheckInfo:
         返回的结果总数。
 
         :param return_num: The return_num of this CheckInfo.
-        :type return_num: float
+        :type return_num: int
         """
         self._return_num = return_num
 

@@ -23,6 +23,7 @@ class ListVirtualGatewaysRequest:
         'sort_dir': 'list[str]',
         'sort_key': 'str',
         'id': 'list[str]',
+        'enterprise_project_id': 'list[str]',
         'vpc_id': 'list[str]'
     }
 
@@ -33,10 +34,11 @@ class ListVirtualGatewaysRequest:
         'sort_dir': 'sort_dir',
         'sort_key': 'sort_key',
         'id': 'id',
+        'enterprise_project_id': 'enterprise_project_id',
         'vpc_id': 'vpc_id'
     }
 
-    def __init__(self, limit=None, marker=None, fields=None, sort_dir=None, sort_key=None, id=None, vpc_id=None):
+    def __init__(self, limit=None, marker=None, fields=None, sort_dir=None, sort_key=None, id=None, enterprise_project_id=None, vpc_id=None):
         """ListVirtualGatewaysRequest
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class ListVirtualGatewaysRequest:
         :type sort_key: str
         :param id: 根据资源ID过滤实例
         :type id: list[str]
+        :param enterprise_project_id: 根据企业项目ID过滤资源实例
+        :type enterprise_project_id: list[str]
         :param vpc_id: 通过VPC-ID过虑虚拟网关实例
         :type vpc_id: list[str]
         """
@@ -65,6 +69,7 @@ class ListVirtualGatewaysRequest:
         self._sort_dir = None
         self._sort_key = None
         self._id = None
+        self._enterprise_project_id = None
         self._vpc_id = None
         self.discriminator = None
 
@@ -80,6 +85,8 @@ class ListVirtualGatewaysRequest:
             self.sort_key = sort_key
         if id is not None:
             self.id = id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if vpc_id is not None:
             self.vpc_id = vpc_id
 
@@ -214,6 +221,28 @@ class ListVirtualGatewaysRequest:
         :type id: list[str]
         """
         self._id = id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListVirtualGatewaysRequest.
+
+        根据企业项目ID过滤资源实例
+
+        :return: The enterprise_project_id of this ListVirtualGatewaysRequest.
+        :rtype: list[str]
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListVirtualGatewaysRequest.
+
+        根据企业项目ID过滤资源实例
+
+        :param enterprise_project_id: The enterprise_project_id of this ListVirtualGatewaysRequest.
+        :type enterprise_project_id: list[str]
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def vpc_id(self):

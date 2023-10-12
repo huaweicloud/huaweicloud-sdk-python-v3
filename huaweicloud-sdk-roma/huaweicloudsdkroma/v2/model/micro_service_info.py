@@ -18,31 +18,39 @@ class MicroServiceInfo:
 
     openapi_types = {
         'id': 'str',
+        'instance_id': 'str',
         'service_type': 'str',
         'cse_info': 'MicroServiceInfoCSE',
+        'cce_info': 'MicroServiceInfoCCE',
         'update_time': 'datetime',
         'create_time': 'datetime'
     }
 
     attribute_map = {
         'id': 'id',
+        'instance_id': 'instance_id',
         'service_type': 'service_type',
         'cse_info': 'cse_info',
+        'cce_info': 'cce_info',
         'update_time': 'update_time',
         'create_time': 'create_time'
     }
 
-    def __init__(self, id=None, service_type=None, cse_info=None, update_time=None, create_time=None):
+    def __init__(self, id=None, instance_id=None, service_type=None, cse_info=None, cce_info=None, update_time=None, create_time=None):
         """MicroServiceInfo
 
         The model defined in huaweicloud sdk
 
         :param id: 微服务编号
         :type id: str
-        :param service_type: 微服务类型： - CSE：CSE微服务注册中心
+        :param instance_id: 实例编号
+        :type instance_id: str
+        :param service_type: 微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（暂不支持）
         :type service_type: str
         :param cse_info: 
         :type cse_info: :class:`huaweicloudsdkroma.v2.MicroServiceInfoCSE`
+        :param cce_info: 
+        :type cce_info: :class:`huaweicloudsdkroma.v2.MicroServiceInfoCCE`
         :param update_time: 微服务更新时间
         :type update_time: datetime
         :param create_time: 微服务创建时间
@@ -52,18 +60,24 @@ class MicroServiceInfo:
         
 
         self._id = None
+        self._instance_id = None
         self._service_type = None
         self._cse_info = None
+        self._cce_info = None
         self._update_time = None
         self._create_time = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
+        if instance_id is not None:
+            self.instance_id = instance_id
         if service_type is not None:
             self.service_type = service_type
         if cse_info is not None:
             self.cse_info = cse_info
+        if cce_info is not None:
+            self.cce_info = cce_info
         if update_time is not None:
             self.update_time = update_time
         if create_time is not None:
@@ -92,10 +106,32 @@ class MicroServiceInfo:
         self._id = id
 
     @property
+    def instance_id(self):
+        """Gets the instance_id of this MicroServiceInfo.
+
+        实例编号
+
+        :return: The instance_id of this MicroServiceInfo.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this MicroServiceInfo.
+
+        实例编号
+
+        :param instance_id: The instance_id of this MicroServiceInfo.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
+
+    @property
     def service_type(self):
         """Gets the service_type of this MicroServiceInfo.
 
-        微服务类型： - CSE：CSE微服务注册中心
+        微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（暂不支持）
 
         :return: The service_type of this MicroServiceInfo.
         :rtype: str
@@ -106,7 +142,7 @@ class MicroServiceInfo:
     def service_type(self, service_type):
         """Sets the service_type of this MicroServiceInfo.
 
-        微服务类型： - CSE：CSE微服务注册中心
+        微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（暂不支持）
 
         :param service_type: The service_type of this MicroServiceInfo.
         :type service_type: str
@@ -130,6 +166,24 @@ class MicroServiceInfo:
         :type cse_info: :class:`huaweicloudsdkroma.v2.MicroServiceInfoCSE`
         """
         self._cse_info = cse_info
+
+    @property
+    def cce_info(self):
+        """Gets the cce_info of this MicroServiceInfo.
+
+        :return: The cce_info of this MicroServiceInfo.
+        :rtype: :class:`huaweicloudsdkroma.v2.MicroServiceInfoCCE`
+        """
+        return self._cce_info
+
+    @cce_info.setter
+    def cce_info(self, cce_info):
+        """Sets the cce_info of this MicroServiceInfo.
+
+        :param cce_info: The cce_info of this MicroServiceInfo.
+        :type cce_info: :class:`huaweicloudsdkroma.v2.MicroServiceInfoCCE`
+        """
+        self._cce_info = cce_info
 
     @property
     def update_time(self):

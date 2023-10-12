@@ -49,7 +49,7 @@ class TopnRequstBody:
         :type is_desc: bool
         :param resource_type: 资源类型，log_group / log_stream / tenant
         :type resource_type: str
-        :param sort_by: 排序依据，index/write/storage，必须是search_list中存在的数据
+        :param sort_by: 排序依据，index/write/storage/basicTransfer/seniorTransfer，必须是search_list中存在的数据
         :type sort_by: str
         :param start_time: 开始时间时间戳，毫秒时间，最多支持30天范围内的查询
         :type start_time: int
@@ -57,7 +57,7 @@ class TopnRequstBody:
         :type topn: int
         :param filter: 过滤条件 {     \&quot;log_group_id\&quot;: \&quot;xxxxxx\&quot; }过滤器，为一个map结构，键为过滤属性，值为属性值，不支持模糊匹配
         :type filter: dict(str, str)
-        :param search_list: 查询数据类型，字符串数组可多种搭配，只能在index/write/storage中选填
+        :param search_list: 查询数据类型，字符串数组可多种搭配，只能在index/write/storage/basicTransfer/seniorTransfer中选填
         :type search_list: list[str]
         """
         
@@ -152,7 +152,7 @@ class TopnRequstBody:
     def sort_by(self):
         """Gets the sort_by of this TopnRequstBody.
 
-        排序依据，index/write/storage，必须是search_list中存在的数据
+        排序依据，index/write/storage/basicTransfer/seniorTransfer，必须是search_list中存在的数据
 
         :return: The sort_by of this TopnRequstBody.
         :rtype: str
@@ -163,7 +163,7 @@ class TopnRequstBody:
     def sort_by(self, sort_by):
         """Sets the sort_by of this TopnRequstBody.
 
-        排序依据，index/write/storage，必须是search_list中存在的数据
+        排序依据，index/write/storage/basicTransfer/seniorTransfer，必须是search_list中存在的数据
 
         :param sort_by: The sort_by of this TopnRequstBody.
         :type sort_by: str
@@ -240,7 +240,7 @@ class TopnRequstBody:
     def search_list(self):
         """Gets the search_list of this TopnRequstBody.
 
-        查询数据类型，字符串数组可多种搭配，只能在index/write/storage中选填
+        查询数据类型，字符串数组可多种搭配，只能在index/write/storage/basicTransfer/seniorTransfer中选填
 
         :return: The search_list of this TopnRequstBody.
         :rtype: list[str]
@@ -251,7 +251,7 @@ class TopnRequstBody:
     def search_list(self, search_list):
         """Sets the search_list of this TopnRequstBody.
 
-        查询数据类型，字符串数组可多种搭配，只能在index/write/storage中选填
+        查询数据类型，字符串数组可多种搭配，只能在index/write/storage/basicTransfer/seniorTransfer中选填
 
         :param search_list: The search_list of this TopnRequstBody.
         :type search_list: list[str]

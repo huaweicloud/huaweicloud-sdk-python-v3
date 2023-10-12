@@ -33,7 +33,7 @@ class AppGroupAuthorizeReq:
 
         :param app_group_ids: 应用组ID,最多同时操作10个
         :type app_group_ids: list[str]
-        :param accounts: 账户(组),单次最多允许操作50个账户(组)
+        :param accounts: 用户(组),单次最多允许操作50个用户(组)
         :type accounts: list[:class:`huaweicloudsdkworkspaceapp.v1.AccountInfo`]
         """
         
@@ -72,7 +72,7 @@ class AppGroupAuthorizeReq:
     def accounts(self):
         """Gets the accounts of this AppGroupAuthorizeReq.
 
-        账户(组),单次最多允许操作50个账户(组)
+        用户(组),单次最多允许操作50个用户(组)
 
         :return: The accounts of this AppGroupAuthorizeReq.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.AccountInfo`]
@@ -83,7 +83,7 @@ class AppGroupAuthorizeReq:
     def accounts(self, accounts):
         """Sets the accounts of this AppGroupAuthorizeReq.
 
-        账户(组),单次最多允许操作50个账户(组)
+        用户(组),单次最多允许操作50个用户(组)
 
         :param accounts: The accounts of this AppGroupAuthorizeReq.
         :type accounts: list[:class:`huaweicloudsdkworkspaceapp.v1.AccountInfo`]

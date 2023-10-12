@@ -31,9 +31,9 @@ class LayerSizeConfig:
 
         The model defined in huaweicloud sdk
 
-        :param width: 图层图片宽度像素值（相对背景图片）。 &gt; 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        :param width: 图层图片宽度像素值（相对背景图片）。 &gt; 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
         :type width: int
-        :param height: 图层图片高度像素值（相对背景图片）。 &gt; 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        :param height: 图层图片高度像素值（相对背景图片）。 &gt; 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
         :type height: int
         """
         
@@ -52,7 +52,7 @@ class LayerSizeConfig:
     def width(self):
         """Gets the width of this LayerSizeConfig.
 
-        图层图片宽度像素值（相对背景图片）。 > 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        图层图片宽度像素值（相对背景图片）。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
 
         :return: The width of this LayerSizeConfig.
         :rtype: int
@@ -63,7 +63,7 @@ class LayerSizeConfig:
     def width(self, width):
         """Sets the width of this LayerSizeConfig.
 
-        图层图片宽度像素值（相对背景图片）。 > 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        图层图片宽度像素值（相对背景图片）。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
 
         :param width: The width of this LayerSizeConfig.
         :type width: int
@@ -74,7 +74,7 @@ class LayerSizeConfig:
     def height(self):
         """Gets the height of this LayerSizeConfig.
 
-        图层图片高度像素值（相对背景图片）。 > 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        图层图片高度像素值（相对背景图片）。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
 
         :return: The height of this LayerSizeConfig.
         :rtype: int
@@ -85,7 +85,7 @@ class LayerSizeConfig:
     def height(self, height):
         """Sets the height of this LayerSizeConfig.
 
-        图层图片高度像素值（相对背景图片）。 > 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        图层图片高度像素值（相对背景图片）。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
 
         :param height: The height of this LayerSizeConfig.
         :type height: int

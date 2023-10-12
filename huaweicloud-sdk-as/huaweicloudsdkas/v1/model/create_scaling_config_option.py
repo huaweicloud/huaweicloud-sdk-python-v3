@@ -18,15 +18,17 @@ class CreateScalingConfigOption:
 
     openapi_types = {
         'scaling_configuration_name': 'str',
-        'instance_config': 'InstanceConfig'
+        'instance_config': 'InstanceConfig',
+        'source_scaling_configuration_id': 'str'
     }
 
     attribute_map = {
         'scaling_configuration_name': 'scaling_configuration_name',
-        'instance_config': 'instance_config'
+        'instance_config': 'instance_config',
+        'source_scaling_configuration_id': 'source_scaling_configuration_id'
     }
 
-    def __init__(self, scaling_configuration_name=None, instance_config=None):
+    def __init__(self, scaling_configuration_name=None, instance_config=None, source_scaling_configuration_id=None):
         """CreateScalingConfigOption
 
         The model defined in huaweicloud sdk
@@ -35,16 +37,21 @@ class CreateScalingConfigOption:
         :type scaling_configuration_name: str
         :param instance_config: 
         :type instance_config: :class:`huaweicloudsdkas.v1.InstanceConfig`
+        :param source_scaling_configuration_id: 源伸缩配置ID，通过ID获取原有伸缩配置信息进行修改，传入需修改的配置字段若为null值不产生修改，其他任何值（包括空值）均覆盖原有值。注意：若传入instance_id则优先使用instance_id获取到的值进行修改。
+        :type source_scaling_configuration_id: str
         """
         
         
 
         self._scaling_configuration_name = None
         self._instance_config = None
+        self._source_scaling_configuration_id = None
         self.discriminator = None
 
         self.scaling_configuration_name = scaling_configuration_name
         self.instance_config = instance_config
+        if source_scaling_configuration_id is not None:
+            self.source_scaling_configuration_id = source_scaling_configuration_id
 
     @property
     def scaling_configuration_name(self):
@@ -85,6 +92,28 @@ class CreateScalingConfigOption:
         :type instance_config: :class:`huaweicloudsdkas.v1.InstanceConfig`
         """
         self._instance_config = instance_config
+
+    @property
+    def source_scaling_configuration_id(self):
+        """Gets the source_scaling_configuration_id of this CreateScalingConfigOption.
+
+        源伸缩配置ID，通过ID获取原有伸缩配置信息进行修改，传入需修改的配置字段若为null值不产生修改，其他任何值（包括空值）均覆盖原有值。注意：若传入instance_id则优先使用instance_id获取到的值进行修改。
+
+        :return: The source_scaling_configuration_id of this CreateScalingConfigOption.
+        :rtype: str
+        """
+        return self._source_scaling_configuration_id
+
+    @source_scaling_configuration_id.setter
+    def source_scaling_configuration_id(self, source_scaling_configuration_id):
+        """Sets the source_scaling_configuration_id of this CreateScalingConfigOption.
+
+        源伸缩配置ID，通过ID获取原有伸缩配置信息进行修改，传入需修改的配置字段若为null值不产生修改，其他任何值（包括空值）均覆盖原有值。注意：若传入instance_id则优先使用instance_id获取到的值进行修改。
+
+        :param source_scaling_configuration_id: The source_scaling_configuration_id of this CreateScalingConfigOption.
+        :type source_scaling_configuration_id: str
+        """
+        self._source_scaling_configuration_id = source_scaling_configuration_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

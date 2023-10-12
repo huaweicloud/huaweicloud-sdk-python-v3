@@ -17,51 +17,51 @@ class CustomerUpgradeDatabaseVersionReqNew:
     sensitive_list = []
 
     openapi_types = {
-        'delay': 'bool'
+        'is_delayed': 'bool'
     }
 
     attribute_map = {
-        'delay': 'delay'
+        'is_delayed': 'is_delayed'
     }
 
-    def __init__(self, delay=None):
+    def __init__(self, is_delayed=None):
         """CustomerUpgradeDatabaseVersionReqNew
 
         The model defined in huaweicloud sdk
 
-        :param delay: 是否延迟至可维护时间段内升级。 取值范围： - true：延迟升级。表示实例将在设置的可维护时间段内升级。 - false：立即升级，默认该方式。
-        :type delay: bool
+        :param is_delayed: 是否延迟至可维护时间段内升级。 取值范围： - true：延迟升级。表示实例将在设置的可维护时间段内升级。 - false：立即升级，默认该方式。
+        :type is_delayed: bool
         """
         
         
 
-        self._delay = None
+        self._is_delayed = None
         self.discriminator = None
 
-        if delay is not None:
-            self.delay = delay
+        if is_delayed is not None:
+            self.is_delayed = is_delayed
 
     @property
-    def delay(self):
-        """Gets the delay of this CustomerUpgradeDatabaseVersionReqNew.
+    def is_delayed(self):
+        """Gets the is_delayed of this CustomerUpgradeDatabaseVersionReqNew.
 
         是否延迟至可维护时间段内升级。 取值范围： - true：延迟升级。表示实例将在设置的可维护时间段内升级。 - false：立即升级，默认该方式。
 
-        :return: The delay of this CustomerUpgradeDatabaseVersionReqNew.
+        :return: The is_delayed of this CustomerUpgradeDatabaseVersionReqNew.
         :rtype: bool
         """
-        return self._delay
+        return self._is_delayed
 
-    @delay.setter
-    def delay(self, delay):
-        """Sets the delay of this CustomerUpgradeDatabaseVersionReqNew.
+    @is_delayed.setter
+    def is_delayed(self, is_delayed):
+        """Sets the is_delayed of this CustomerUpgradeDatabaseVersionReqNew.
 
         是否延迟至可维护时间段内升级。 取值范围： - true：延迟升级。表示实例将在设置的可维护时间段内升级。 - false：立即升级，默认该方式。
 
-        :param delay: The delay of this CustomerUpgradeDatabaseVersionReqNew.
-        :type delay: bool
+        :param is_delayed: The is_delayed of this CustomerUpgradeDatabaseVersionReqNew.
+        :type is_delayed: bool
         """
-        self._delay = delay
+        self._is_delayed = is_delayed
 
     def to_dict(self):
         """Returns the model properties as a dict"""

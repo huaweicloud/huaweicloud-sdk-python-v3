@@ -17,8 +17,8 @@ class DeleteInfo:
     sensitive_list = []
 
     openapi_types = {
-        'total_num': 'float',
-        'delete_num': 'float'
+        'total_num': 'int',
+        'delete_num': 'int'
     }
 
     attribute_map = {
@@ -32,9 +32,9 @@ class DeleteInfo:
         The model defined in huaweicloud sdk
 
         :param total_num: 符合条件的结果总数。
-        :type total_num: float
+        :type total_num: int
         :param delete_num: 本次删除的结果总数，目前一次请求最多删除100条结果。
-        :type delete_num: float
+        :type delete_num: int
         """
         
         
@@ -55,7 +55,7 @@ class DeleteInfo:
         符合条件的结果总数。
 
         :return: The total_num of this DeleteInfo.
-        :rtype: float
+        :rtype: int
         """
         return self._total_num
 
@@ -66,7 +66,7 @@ class DeleteInfo:
         符合条件的结果总数。
 
         :param total_num: The total_num of this DeleteInfo.
-        :type total_num: float
+        :type total_num: int
         """
         self._total_num = total_num
 
@@ -77,7 +77,7 @@ class DeleteInfo:
         本次删除的结果总数，目前一次请求最多删除100条结果。
 
         :return: The delete_num of this DeleteInfo.
-        :rtype: float
+        :rtype: int
         """
         return self._delete_num
 
@@ -88,7 +88,7 @@ class DeleteInfo:
         本次删除的结果总数，目前一次请求最多删除100条结果。
 
         :param delete_num: The delete_num of this DeleteInfo.
-        :type delete_num: float
+        :type delete_num: int
         """
         self._delete_num = delete_num
 

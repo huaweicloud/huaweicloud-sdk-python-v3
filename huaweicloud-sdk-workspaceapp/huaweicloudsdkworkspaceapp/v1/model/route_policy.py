@@ -17,29 +17,43 @@ class RoutePolicy:
     sensitive_list = []
 
     openapi_types = {
-        'max_session': 'int'
+        'max_session': 'int',
+        'cpu_threshold': 'int',
+        'mem_threshold': 'int'
     }
 
     attribute_map = {
-        'max_session': 'max_session'
+        'max_session': 'max_session',
+        'cpu_threshold': 'cpu_threshold',
+        'mem_threshold': 'mem_threshold'
     }
 
-    def __init__(self, max_session=None):
+    def __init__(self, max_session=None, cpu_threshold=None, mem_threshold=None):
         """RoutePolicy
 
         The model defined in huaweicloud sdk
 
         :param max_session: 单台服务器最大的链接会话数
         :type max_session: int
+        :param cpu_threshold: cpu使用率阈值，单位为%
+        :type cpu_threshold: int
+        :param mem_threshold: 内存使用率阈值，单位为%
+        :type mem_threshold: int
         """
         
         
 
         self._max_session = None
+        self._cpu_threshold = None
+        self._mem_threshold = None
         self.discriminator = None
 
         if max_session is not None:
             self.max_session = max_session
+        if cpu_threshold is not None:
+            self.cpu_threshold = cpu_threshold
+        if mem_threshold is not None:
+            self.mem_threshold = mem_threshold
 
     @property
     def max_session(self):
@@ -62,6 +76,50 @@ class RoutePolicy:
         :type max_session: int
         """
         self._max_session = max_session
+
+    @property
+    def cpu_threshold(self):
+        """Gets the cpu_threshold of this RoutePolicy.
+
+        cpu使用率阈值，单位为%
+
+        :return: The cpu_threshold of this RoutePolicy.
+        :rtype: int
+        """
+        return self._cpu_threshold
+
+    @cpu_threshold.setter
+    def cpu_threshold(self, cpu_threshold):
+        """Sets the cpu_threshold of this RoutePolicy.
+
+        cpu使用率阈值，单位为%
+
+        :param cpu_threshold: The cpu_threshold of this RoutePolicy.
+        :type cpu_threshold: int
+        """
+        self._cpu_threshold = cpu_threshold
+
+    @property
+    def mem_threshold(self):
+        """Gets the mem_threshold of this RoutePolicy.
+
+        内存使用率阈值，单位为%
+
+        :return: The mem_threshold of this RoutePolicy.
+        :rtype: int
+        """
+        return self._mem_threshold
+
+    @mem_threshold.setter
+    def mem_threshold(self, mem_threshold):
+        """Sets the mem_threshold of this RoutePolicy.
+
+        内存使用率阈值，单位为%
+
+        :param mem_threshold: The mem_threshold of this RoutePolicy.
+        :type mem_threshold: int
+        """
+        self._mem_threshold = mem_threshold
 
     def to_dict(self):
         """Returns the model properties as a dict"""

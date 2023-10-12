@@ -20,17 +20,19 @@ class ListServerGroupsRequest:
         'offset': 'int',
         'limit': 'int',
         'server_group_name': 'str',
-        'server_group_id': 'str'
+        'server_group_id': 'str',
+        'app_type': 'str'
     }
 
     attribute_map = {
         'offset': 'offset',
         'limit': 'limit',
         'server_group_name': 'server_group_name',
-        'server_group_id': 'server_group_id'
+        'server_group_id': 'server_group_id',
+        'app_type': 'app_type'
     }
 
-    def __init__(self, offset=None, limit=None, server_group_name=None, server_group_id=None):
+    def __init__(self, offset=None, limit=None, server_group_name=None, server_group_id=None, app_type=None):
         """ListServerGroupsRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ListServerGroupsRequest:
         :type server_group_name: str
         :param server_group_id: 服务器组唯一标识
         :type server_group_id: str
+        :param app_type: 应用组类型(SESSION_DESKTOP_APP、COMMON_APP)
+        :type app_type: str
         """
         
         
@@ -51,14 +55,19 @@ class ListServerGroupsRequest:
         self._limit = None
         self._server_group_name = None
         self._server_group_id = None
+        self._app_type = None
         self.discriminator = None
 
-        self.offset = offset
-        self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
         if server_group_name is not None:
             self.server_group_name = server_group_name
         if server_group_id is not None:
             self.server_group_id = server_group_id
+        if app_type is not None:
+            self.app_type = app_type
 
     @property
     def offset(self):
@@ -147,6 +156,28 @@ class ListServerGroupsRequest:
         :type server_group_id: str
         """
         self._server_group_id = server_group_id
+
+    @property
+    def app_type(self):
+        """Gets the app_type of this ListServerGroupsRequest.
+
+        应用组类型(SESSION_DESKTOP_APP、COMMON_APP)
+
+        :return: The app_type of this ListServerGroupsRequest.
+        :rtype: str
+        """
+        return self._app_type
+
+    @app_type.setter
+    def app_type(self, app_type):
+        """Sets the app_type of this ListServerGroupsRequest.
+
+        应用组类型(SESSION_DESKTOP_APP、COMMON_APP)
+
+        :param app_type: The app_type of this ListServerGroupsRequest.
+        :type app_type: str
+        """
+        self._app_type = app_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

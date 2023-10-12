@@ -25,9 +25,9 @@ class OcrClient(Client):
         return ClientBuilder(clazz)
 
     def recognize_acceptance_bill(self, request):
-        """电子承兑汇票识别
+        """承兑汇票识别
 
-        识别电子承兑汇票识别中的关键字段, 并以json格式返回结构化结果
+        识别承兑汇票中的关键信息, 并以json格式返回结构化结果。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -433,6 +433,64 @@ class OcrClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='RecognizeChileIdCardResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def recognize_colombia_id_card(self, request):
+        """哥伦比亚身份证识别
+
+        识别哥伦比亚身份证中的文字信息，并将识别的结构化结果返回给用户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RecognizeColombiaIdCard
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizeColombiaIdCardRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizeColombiaIdCardResponse`
+        """
+        return self._recognize_colombia_id_card_with_http_info(request)
+
+    def _recognize_colombia_id_card_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/colombia-id-card',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RecognizeColombiaIdCardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2531,7 +2589,7 @@ class OcrClient(Client):
     def recognize_waybill_electronic(self, request):
         """电子面单识别
 
-        识别用户上传的韵达电子面单图片中的文字内容，并将识别的结果以json格式返回给用户。
+        识别用户上传的电子面单图片中的文字内容，并将识别的结果以json格式返回给用户。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

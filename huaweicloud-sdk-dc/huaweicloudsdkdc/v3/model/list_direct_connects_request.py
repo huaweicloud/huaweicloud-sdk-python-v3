@@ -57,7 +57,7 @@ class ListDirectConnectsRequest:
         :type sort_dir: list[str]
         :param hosting_id: 根椐运营专线ID过滤托管专线列表
         :type hosting_id: list[str]
-        :param enterprise_project_id: 根据企业项目ID过滤中心网络列表。
+        :param enterprise_project_id: 根据企业项目ID过滤资源实例
         :type enterprise_project_id: list[str]
         :param id: 根据资源ID过滤实例
         :type id: list[str]
@@ -233,7 +233,7 @@ class ListDirectConnectsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListDirectConnectsRequest.
 
-        根据企业项目ID过滤中心网络列表。
+        根据企业项目ID过滤资源实例
 
         :return: The enterprise_project_id of this ListDirectConnectsRequest.
         :rtype: list[str]
@@ -244,7 +244,7 @@ class ListDirectConnectsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListDirectConnectsRequest.
 
-        根据企业项目ID过滤中心网络列表。
+        根据企业项目ID过滤资源实例
 
         :param enterprise_project_id: The enterprise_project_id of this ListDirectConnectsRequest.
         :type enterprise_project_id: list[str]

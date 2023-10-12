@@ -31,7 +31,9 @@ class ListApisV2Request:
         'type': 'int',
         'precise_search': 'str',
         'vpc_channel_id': 'str',
-        'vpc_channel_name': 'str'
+        'vpc_channel_name': 'str',
+        'roma_app_name': 'str',
+        'roma_app_id': 'str'
     }
 
     attribute_map = {
@@ -49,10 +51,12 @@ class ListApisV2Request:
         'type': 'type',
         'precise_search': 'precise_search',
         'vpc_channel_id': 'vpc_channel_id',
-        'vpc_channel_name': 'vpc_channel_name'
+        'vpc_channel_name': 'vpc_channel_name',
+        'roma_app_name': 'roma_app_name',
+        'roma_app_id': 'roma_app_id'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, group_id=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, env_id=None, type=None, precise_search=None, vpc_channel_id=None, vpc_channel_name=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, group_id=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, env_id=None, type=None, precise_search=None, vpc_channel_id=None, vpc_channel_name=None, roma_app_name=None, roma_app_id=None):
         """ListApisV2Request
 
         The model defined in huaweicloud sdk
@@ -87,6 +91,10 @@ class ListApisV2Request:
         :type vpc_channel_id: str
         :param vpc_channel_name: 负载通道名称。
         :type vpc_channel_name: str
+        :param roma_app_name: 集成应用名称
+        :type roma_app_name: str
+        :param roma_app_id: 集成应用编号
+        :type roma_app_id: str
         """
         
         
@@ -106,6 +114,8 @@ class ListApisV2Request:
         self._precise_search = None
         self._vpc_channel_id = None
         self._vpc_channel_name = None
+        self._roma_app_name = None
+        self._roma_app_id = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -137,6 +147,10 @@ class ListApisV2Request:
             self.vpc_channel_id = vpc_channel_id
         if vpc_channel_name is not None:
             self.vpc_channel_name = vpc_channel_name
+        if roma_app_name is not None:
+            self.roma_app_name = roma_app_name
+        if roma_app_id is not None:
+            self.roma_app_id = roma_app_id
 
     @property
     def instance_id(self):
@@ -467,6 +481,50 @@ class ListApisV2Request:
         :type vpc_channel_name: str
         """
         self._vpc_channel_name = vpc_channel_name
+
+    @property
+    def roma_app_name(self):
+        """Gets the roma_app_name of this ListApisV2Request.
+
+        集成应用名称
+
+        :return: The roma_app_name of this ListApisV2Request.
+        :rtype: str
+        """
+        return self._roma_app_name
+
+    @roma_app_name.setter
+    def roma_app_name(self, roma_app_name):
+        """Sets the roma_app_name of this ListApisV2Request.
+
+        集成应用名称
+
+        :param roma_app_name: The roma_app_name of this ListApisV2Request.
+        :type roma_app_name: str
+        """
+        self._roma_app_name = roma_app_name
+
+    @property
+    def roma_app_id(self):
+        """Gets the roma_app_id of this ListApisV2Request.
+
+        集成应用编号
+
+        :return: The roma_app_id of this ListApisV2Request.
+        :rtype: str
+        """
+        return self._roma_app_id
+
+    @roma_app_id.setter
+    def roma_app_id(self, roma_app_id):
+        """Sets the roma_app_id of this ListApisV2Request.
+
+        集成应用编号
+
+        :param roma_app_id: The roma_app_id of this ListApisV2Request.
+        :type roma_app_id: str
+        """
+        self._roma_app_id = roma_app_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

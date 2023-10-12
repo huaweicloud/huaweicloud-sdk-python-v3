@@ -371,10 +371,6 @@ class DcClient(Client):
             path_params['direct_connect_id'] = local_var_params['direct_connect_id']
 
         query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
         if 'fields' in local_var_params:
             query_params.append(('fields', local_var_params['fields']))
             collection_formats['fields'] = 'multi'
@@ -541,7 +537,7 @@ class DcClient(Client):
     def update_hosted_direct_connect(self, request):
         """更新托管专线连接
 
-        合作伙伴创建托管专线.
+        合作伙伴更新托管专线.
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -591,6 +587,63 @@ class DcClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateHostedDirectConnectResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_quotas(self, request):
+        """查询配额
+
+        查询租户各类资源的使用情况，如Directconnect的使用量，虚拟接口的使用量等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowQuotas
+        :type request: :class:`huaweicloudsdkdc.v3.ShowQuotasRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.ShowQuotasResponse`
+        """
+        return self._show_quotas_with_http_info(request)
+
+    def _show_quotas_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+            collection_formats['type'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/dcaas/quotas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1103,6 +1156,9 @@ class DcClient(Client):
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
             collection_formats['id'] = 'multi'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'csv'
         if 'vpc_id' in local_var_params:
             query_params.append(('vpc_id', local_var_params['vpc_id']))
             collection_formats['vpc_id'] = 'multi'
@@ -1254,6 +1310,62 @@ class DcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_vif_peer(self, request):
+        """创建虚拟接口对等体
+
+        每个虚拟接口可支持两个对等体，IPv4和IPv6对等体，在创建虚拟接口时默认创建IPv4对等体， 本接口一般用于增加ipv6对等体。创建虚拟接口对接体之后，可以通过虚拟接口查询配置结果 本接口只在支持Ipv6的区域开放，如需要使用请联系客服
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateVifPeer
+        :type request: :class:`huaweicloudsdkdc.v3.CreateVifPeerRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.CreateVifPeerResponse`
+        """
+        return self._create_vif_peer_with_http_info(request)
+
+    def _create_vif_peer_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/dcaas/vif-peers',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateVifPeerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_virtual_interface(self, request):
         """创建虚拟接口
 
@@ -1310,6 +1422,62 @@ class DcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_vif_peer(self, request):
+        """删除虚拟接口对应的对等体
+
+        删除虚拟接口对等体信息,虚拟接口到少要含一个对等体,最后一个对等体不能删除 本接口只在支持Ipv6的区域开放，如需要使用请联系客服
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteVifPeer
+        :type request: :class:`huaweicloudsdkdc.v3.DeleteVifPeerRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.DeleteVifPeerResponse`
+        """
+        return self._delete_vif_peer_with_http_info(request)
+
+    def _delete_vif_peer_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vif_peer_id' in local_var_params:
+            path_params['vif_peer_id'] = local_var_params['vif_peer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/dcaas/vif-peers/{vif_peer_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteVifPeerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_virtual_interface(self, request):
         """删除虚拟接口
 
@@ -1361,6 +1529,75 @@ class DcClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteVirtualInterfaceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_switchover_test_records(self, request):
+        """查询虚拟接口倒换测试记录列表
+
+        查询倒换测试记录列表，只展示operate_status为COMPELTE的记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSwitchoverTestRecords
+        :type request: :class:`huaweicloudsdkdc.v3.ListSwitchoverTestRecordsRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.ListSwitchoverTestRecordsResponse`
+        """
+        return self._list_switchover_test_records_with_http_info(request)
+
+    def _list_switchover_test_records_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+            collection_formats['fields'] = 'multi'
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+            collection_formats['sort_dir'] = 'multi'
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+            collection_formats['resource_id'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/dcaas/switchover-test',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListSwitchoverTestRecordsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1501,6 +1738,120 @@ class DcClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowVirtualInterfaceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def switchover_test(self, request):
+        """执行虚拟接口倒换测试
+
+        客户双专线接入，需要支持双线自动倒换，方便进行功能测试。 虚拟接口进行倒换测试会导致接口关闭，业务流量中断。 对于虚拟接口，支持“关闭接口”和“开放接口”两种操作。 1、关闭接口：下发shutdown命令，关闭接口； 2、开放接口：下发undo_shutdown命令，使能接口。 倒换测试选择shutdown时，虚拟接口的状态为ADMIN_SHUTDOWN，此状态不允许虚拟接口的其他操作。 倒换测试选择undo_shutdown时，虚拟接口的状态为ACTIVE。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SwitchoverTest
+        :type request: :class:`huaweicloudsdkdc.v3.SwitchoverTestRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.SwitchoverTestResponse`
+        """
+        return self._switchover_test_with_http_info(request)
+
+    def _switchover_test_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/dcaas/switchover-test',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SwitchoverTestResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_vif_peer(self, request):
+        """更新虚拟接口对等体
+
+        更新虚拟接口对等体信息,包括远端子网，名字和描述等。 本接口只在支持Ipv6的区域开放，如需要使用请联系客服
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateVifPeer
+        :type request: :class:`huaweicloudsdkdc.v3.UpdateVifPeerRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.UpdateVifPeerResponse`
+        """
+        return self._update_vif_peer_with_http_info(request)
+
+    def _update_vif_peer_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vif_peer_id' in local_var_params:
+            path_params['vif_peer_id'] = local_var_params['vif_peer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/dcaas/vif-peers/{vif_peer_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateVifPeerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

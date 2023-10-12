@@ -18,7 +18,7 @@ class SearchRestInfoImageInfo:
 
     openapi_types = {
         'box': 'str',
-        'category': 'float',
+        'category': 'int',
         'category_name': 'str',
         'objects': 'list[AddDataRestInfoImageInfoObjects]'
     }
@@ -38,7 +38,7 @@ class SearchRestInfoImageInfo:
         :param box: 用于搜索的主体目标框。
         :type box: str
         :param category: 用于搜索的主体类目序号。
-        :type category: float
+        :type category: int
         :param category_name: 用于搜索的主体类目名称。
         :type category_name: str
         :param objects: 搜索图像中的所有主体列表。
@@ -91,7 +91,7 @@ class SearchRestInfoImageInfo:
         用于搜索的主体类目序号。
 
         :return: The category of this SearchRestInfoImageInfo.
-        :rtype: float
+        :rtype: int
         """
         return self._category
 
@@ -102,7 +102,7 @@ class SearchRestInfoImageInfo:
         用于搜索的主体类目序号。
 
         :param category: The category of this SearchRestInfoImageInfo.
-        :type category: float
+        :type category: int
         """
         self._category = category
 

@@ -65,9 +65,9 @@ class AccessConfigDeatilCreate:
 
         The model defined in huaweicloud sdk
 
-        :param paths: 采集路径。 1. 路径必须以/或者字母:\\\\开头 2. 不能包含特殊字符&lt;&gt; &#39; | \&quot; 且不能只输入/ 3. 第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次&#x60;&#x60; CCE类型中 容器路径和主机路径必填，标准输出不用
+        :param paths: 采集路径。 1. 路径必须以/或者字母:\\\\开头 2. 不能包含特殊字符&lt;&gt; &#39; | \&quot; 且不能只输入/ 3. 第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次&#x60;&#x60; CCE类型中 容器路径和主机路径必填，标准输出不用 最小长度：1 最大长度：128
         :type paths: list[str]
-        :param black_paths: 采集路径黑名单。 1. 路径必须以/或者字母:\\\\开头 2. 不能包含特殊字符&lt;&gt; &#39; | \&quot; 且不能只输入/ 3. 第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次
+        :param black_paths: 采集路径黑名单。 1. 路径必须以/或者字母:\\\\开头 2. 不能包含特殊字符&lt;&gt; &#39; | \&quot; 且不能只输入/ 3. 第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次 最小长度：1 最大长度：128
         :type black_paths: list[str]
         :param format: 
         :type format: :class:`huaweicloudsdklts.v2.AccessConfigFormatCreate`
@@ -132,8 +132,7 @@ class AccessConfigDeatilCreate:
             self.paths = paths
         if black_paths is not None:
             self.black_paths = black_paths
-        if format is not None:
-            self.format = format
+        self.format = format
         if windows_log_info is not None:
             self.windows_log_info = windows_log_info
         if stdout is not None:
@@ -171,7 +170,7 @@ class AccessConfigDeatilCreate:
     def paths(self):
         """Gets the paths of this AccessConfigDeatilCreate.
 
-        采集路径。 1. 路径必须以/或者字母:\\\\开头 2. 不能包含特殊字符<> ' | \" 且不能只输入/ 3. 第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次`` CCE类型中 容器路径和主机路径必填，标准输出不用
+        采集路径。 1. 路径必须以/或者字母:\\\\开头 2. 不能包含特殊字符<> ' | \" 且不能只输入/ 3. 第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次`` CCE类型中 容器路径和主机路径必填，标准输出不用 最小长度：1 最大长度：128
 
         :return: The paths of this AccessConfigDeatilCreate.
         :rtype: list[str]
@@ -182,7 +181,7 @@ class AccessConfigDeatilCreate:
     def paths(self, paths):
         """Sets the paths of this AccessConfigDeatilCreate.
 
-        采集路径。 1. 路径必须以/或者字母:\\\\开头 2. 不能包含特殊字符<> ' | \" 且不能只输入/ 3. 第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次`` CCE类型中 容器路径和主机路径必填，标准输出不用
+        采集路径。 1. 路径必须以/或者字母:\\\\开头 2. 不能包含特殊字符<> ' | \" 且不能只输入/ 3. 第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次`` CCE类型中 容器路径和主机路径必填，标准输出不用 最小长度：1 最大长度：128
 
         :param paths: The paths of this AccessConfigDeatilCreate.
         :type paths: list[str]
@@ -193,7 +192,7 @@ class AccessConfigDeatilCreate:
     def black_paths(self):
         """Gets the black_paths of this AccessConfigDeatilCreate.
 
-        采集路径黑名单。 1. 路径必须以/或者字母:\\\\开头 2. 不能包含特殊字符<> ' | \" 且不能只输入/ 3. 第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次
+        采集路径黑名单。 1. 路径必须以/或者字母:\\\\开头 2. 不能包含特殊字符<> ' | \" 且不能只输入/ 3. 第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次 最小长度：1 最大长度：128
 
         :return: The black_paths of this AccessConfigDeatilCreate.
         :rtype: list[str]
@@ -204,7 +203,7 @@ class AccessConfigDeatilCreate:
     def black_paths(self, black_paths):
         """Sets the black_paths of this AccessConfigDeatilCreate.
 
-        采集路径黑名单。 1. 路径必须以/或者字母:\\\\开头 2. 不能包含特殊字符<> ' | \" 且不能只输入/ 3. 第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次
+        采集路径黑名单。 1. 路径必须以/或者字母:\\\\开头 2. 不能包含特殊字符<> ' | \" 且不能只输入/ 3. 第一级目录不支持通配符*：不能以/**   /*开头 4.**只能出现一次 最小长度：1 最大长度：128
 
         :param black_paths: The black_paths of this AccessConfigDeatilCreate.
         :type black_paths: list[str]

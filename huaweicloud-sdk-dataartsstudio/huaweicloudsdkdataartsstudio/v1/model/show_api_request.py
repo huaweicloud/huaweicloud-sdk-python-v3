@@ -18,21 +18,25 @@ class ShowApiRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'dlm_type': 'str',
         'api_id': 'str'
     }
 
     attribute_map = {
         'workspace': 'workspace',
+        'dlm_type': 'Dlm-Type',
         'api_id': 'api_id'
     }
 
-    def __init__(self, workspace=None, api_id=None):
+    def __init__(self, workspace=None, dlm_type=None, api_id=None):
         """ShowApiRequest
 
         The model defined in huaweicloud sdk
 
         :param workspace: 工作空间id
         :type workspace: str
+        :param dlm_type: dlm版本类型
+        :type dlm_type: str
         :param api_id: API ID
         :type api_id: str
         """
@@ -40,11 +44,12 @@ class ShowApiRequest:
         
 
         self._workspace = None
+        self._dlm_type = None
         self._api_id = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
+        self.dlm_type = dlm_type
         self.api_id = api_id
 
     @property
@@ -68,6 +73,28 @@ class ShowApiRequest:
         :type workspace: str
         """
         self._workspace = workspace
+
+    @property
+    def dlm_type(self):
+        """Gets the dlm_type of this ShowApiRequest.
+
+        dlm版本类型
+
+        :return: The dlm_type of this ShowApiRequest.
+        :rtype: str
+        """
+        return self._dlm_type
+
+    @dlm_type.setter
+    def dlm_type(self, dlm_type):
+        """Sets the dlm_type of this ShowApiRequest.
+
+        dlm版本类型
+
+        :param dlm_type: The dlm_type of this ShowApiRequest.
+        :type dlm_type: str
+        """
+        self._dlm_type = dlm_type
 
     @property
     def api_id(self):

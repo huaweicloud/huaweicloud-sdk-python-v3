@@ -24,6 +24,64 @@ class VpcClient(Client):
 
         return ClientBuilder(clazz)
 
+    def add_sources_to_traffic_mirror_session(self, request):
+        """流量镜像会话添加镜像源
+
+        流量镜像会话添加镜像源
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddSourcesToTrafficMirrorSession
+        :type request: :class:`huaweicloudsdkvpc.v3.AddSourcesToTrafficMirrorSessionRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.AddSourcesToTrafficMirrorSessionResponse`
+        """
+        return self._add_sources_to_traffic_mirror_session_with_http_info(request)
+
+    def _add_sources_to_traffic_mirror_session_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'traffic_mirror_session_id' in local_var_params:
+            path_params['traffic_mirror_session_id'] = local_var_params['traffic_mirror_session_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-sessions/{traffic_mirror_session_id}/add-sources',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AddSourcesToTrafficMirrorSessionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def batch_create_sub_network_interface(self, request):
         """批量创建辅助弹性网卡
 
@@ -248,6 +306,174 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_traffic_mirror_filter(self, request):
+        """创建流量镜像筛选条件
+
+        创建流量镜像筛选条件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateTrafficMirrorFilter
+        :type request: :class:`huaweicloudsdkvpc.v3.CreateTrafficMirrorFilterRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CreateTrafficMirrorFilterResponse`
+        """
+        return self._create_traffic_mirror_filter_with_http_info(request)
+
+    def _create_traffic_mirror_filter_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-filters',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateTrafficMirrorFilterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_traffic_mirror_filter_rule(self, request):
+        """创建流量镜像筛选规则
+
+        创建流量镜像筛选规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateTrafficMirrorFilterRule
+        :type request: :class:`huaweicloudsdkvpc.v3.CreateTrafficMirrorFilterRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CreateTrafficMirrorFilterRuleResponse`
+        """
+        return self._create_traffic_mirror_filter_rule_with_http_info(request)
+
+    def _create_traffic_mirror_filter_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-filter-rules',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateTrafficMirrorFilterRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_traffic_mirror_session(self, request):
+        """创建流量镜像会话
+
+        创建流量镜像会话
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateTrafficMirrorSession
+        :type request: :class:`huaweicloudsdkvpc.v3.CreateTrafficMirrorSessionRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CreateTrafficMirrorSessionResponse`
+        """
+        return self._create_traffic_mirror_session_with_http_info(request)
+
+    def _create_traffic_mirror_session_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-sessions',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateTrafficMirrorSessionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_security_group(self, request):
         """删除安全组
 
@@ -411,6 +637,174 @@ class VpcClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteSubNetworkInterfaceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_traffic_mirror_filter(self, request):
+        """删除流量镜像筛选条件
+
+        删除流量镜像筛选条件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteTrafficMirrorFilter
+        :type request: :class:`huaweicloudsdkvpc.v3.DeleteTrafficMirrorFilterRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DeleteTrafficMirrorFilterResponse`
+        """
+        return self._delete_traffic_mirror_filter_with_http_info(request)
+
+    def _delete_traffic_mirror_filter_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'traffic_mirror_filter_id' in local_var_params:
+            path_params['traffic_mirror_filter_id'] = local_var_params['traffic_mirror_filter_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-filters/{traffic_mirror_filter_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteTrafficMirrorFilterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_traffic_mirror_filter_rule(self, request):
+        """删除流量镜像筛选规则
+
+        删除流量镜像筛选规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteTrafficMirrorFilterRule
+        :type request: :class:`huaweicloudsdkvpc.v3.DeleteTrafficMirrorFilterRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DeleteTrafficMirrorFilterRuleResponse`
+        """
+        return self._delete_traffic_mirror_filter_rule_with_http_info(request)
+
+    def _delete_traffic_mirror_filter_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'traffic_mirror_filter_rule_id' in local_var_params:
+            path_params['traffic_mirror_filter_rule_id'] = local_var_params['traffic_mirror_filter_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-filter-rules/{traffic_mirror_filter_rule_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteTrafficMirrorFilterRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_traffic_mirror_session(self, request):
+        """删除流量镜像会话
+
+        删除流量镜像会话
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteTrafficMirrorSession
+        :type request: :class:`huaweicloudsdkvpc.v3.DeleteTrafficMirrorSessionRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DeleteTrafficMirrorSessionResponse`
+        """
+        return self._delete_traffic_mirror_session_with_http_info(request)
+
+    def _delete_traffic_mirror_session_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'traffic_mirror_session_id' in local_var_params:
+            path_params['traffic_mirror_session_id'] = local_var_params['traffic_mirror_session_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-sessions/{traffic_mirror_session_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteTrafficMirrorSessionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -643,6 +1037,226 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_traffic_mirror_filter_rules(self, request):
+        """查询流量镜像筛选规则列表
+
+        查询流量镜像筛选规则列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTrafficMirrorFilterRules
+        :type request: :class:`huaweicloudsdkvpc.v3.ListTrafficMirrorFilterRulesRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListTrafficMirrorFilterRulesResponse`
+        """
+        return self._list_traffic_mirror_filter_rules_with_http_info(request)
+
+    def _list_traffic_mirror_filter_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'traffic_mirror_filter_id' in local_var_params:
+            query_params.append(('traffic_mirror_filter_id', local_var_params['traffic_mirror_filter_id']))
+        if 'direction' in local_var_params:
+            query_params.append(('direction', local_var_params['direction']))
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
+        if 'source_cidr_block' in local_var_params:
+            query_params.append(('source_cidr_block', local_var_params['source_cidr_block']))
+        if 'destination_cidr_block' in local_var_params:
+            query_params.append(('destination_cidr_block', local_var_params['destination_cidr_block']))
+        if 'source_port_range' in local_var_params:
+            query_params.append(('source_port_range', local_var_params['source_port_range']))
+        if 'destination_port_range' in local_var_params:
+            query_params.append(('destination_port_range', local_var_params['destination_port_range']))
+        if 'action' in local_var_params:
+            query_params.append(('action', local_var_params['action']))
+        if 'priority' in local_var_params:
+            query_params.append(('priority', local_var_params['priority']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-filter-rules',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListTrafficMirrorFilterRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_traffic_mirror_filters(self, request):
+        """查询流量镜像筛选条件列表
+
+        查询流量镜像筛选条件列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTrafficMirrorFilters
+        :type request: :class:`huaweicloudsdkvpc.v3.ListTrafficMirrorFiltersRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListTrafficMirrorFiltersResponse`
+        """
+        return self._list_traffic_mirror_filters_with_http_info(request)
+
+    def _list_traffic_mirror_filters_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'created_at' in local_var_params:
+            query_params.append(('created_at', local_var_params['created_at']))
+        if 'updated_at' in local_var_params:
+            query_params.append(('updated_at', local_var_params['updated_at']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-filters',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListTrafficMirrorFiltersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_traffic_mirror_sessions(self, request):
+        """查询流量镜像会话列表
+
+        查询流量镜像会话列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTrafficMirrorSessions
+        :type request: :class:`huaweicloudsdkvpc.v3.ListTrafficMirrorSessionsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListTrafficMirrorSessionsResponse`
+        """
+        return self._list_traffic_mirror_sessions_with_http_info(request)
+
+    def _list_traffic_mirror_sessions_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'traffic_mirror_filter_id' in local_var_params:
+            query_params.append(('traffic_mirror_filter_id', local_var_params['traffic_mirror_filter_id']))
+        if 'traffic_mirror_target_id' in local_var_params:
+            query_params.append(('traffic_mirror_target_id', local_var_params['traffic_mirror_target_id']))
+        if 'traffic_mirror_target_type' in local_var_params:
+            query_params.append(('traffic_mirror_target_type', local_var_params['traffic_mirror_target_type']))
+        if 'virtual_network_id' in local_var_params:
+            query_params.append(('virtual_network_id', local_var_params['virtual_network_id']))
+        if 'packet_length' in local_var_params:
+            query_params.append(('packet_length', local_var_params['packet_length']))
+        if 'priority' in local_var_params:
+            query_params.append(('priority', local_var_params['priority']))
+        if 'enabled' in local_var_params:
+            query_params.append(('enabled', local_var_params['enabled']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'created_at' in local_var_params:
+            query_params.append(('created_at', local_var_params['created_at']))
+        if 'updated_at' in local_var_params:
+            query_params.append(('updated_at', local_var_params['updated_at']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-sessions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListTrafficMirrorSessionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def migrate_sub_network_interface(self, request):
         """迁移辅助弹性网卡
 
@@ -694,6 +1308,64 @@ class VpcClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='MigrateSubNetworkInterfaceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def remove_sources_from_traffic_mirror_session(self, request):
+        """流量镜像会话移除镜像源
+
+        流量镜像会话移除镜像源
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RemoveSourcesFromTrafficMirrorSession
+        :type request: :class:`huaweicloudsdkvpc.v3.RemoveSourcesFromTrafficMirrorSessionRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.RemoveSourcesFromTrafficMirrorSessionResponse`
+        """
+        return self._remove_sources_from_traffic_mirror_session_with_http_info(request)
+
+    def _remove_sources_from_traffic_mirror_session_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'traffic_mirror_session_id' in local_var_params:
+            path_params['traffic_mirror_session_id'] = local_var_params['traffic_mirror_session_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-sessions/{traffic_mirror_session_id}/remove-sources',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RemoveSourcesFromTrafficMirrorSessionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -921,6 +1593,174 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_traffic_mirror_filter(self, request):
+        """查询流量镜像筛选条件详情
+
+        查询流量镜像筛选条件详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTrafficMirrorFilter
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowTrafficMirrorFilterRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowTrafficMirrorFilterResponse`
+        """
+        return self._show_traffic_mirror_filter_with_http_info(request)
+
+    def _show_traffic_mirror_filter_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'traffic_mirror_filter_id' in local_var_params:
+            path_params['traffic_mirror_filter_id'] = local_var_params['traffic_mirror_filter_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-filters/{traffic_mirror_filter_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowTrafficMirrorFilterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_traffic_mirror_filter_rule(self, request):
+        """查询流量镜像筛选规则详情
+
+        查询流量镜像筛选规则详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTrafficMirrorFilterRule
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowTrafficMirrorFilterRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowTrafficMirrorFilterRuleResponse`
+        """
+        return self._show_traffic_mirror_filter_rule_with_http_info(request)
+
+    def _show_traffic_mirror_filter_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'traffic_mirror_filter_rule_id' in local_var_params:
+            path_params['traffic_mirror_filter_rule_id'] = local_var_params['traffic_mirror_filter_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-filter-rules/{traffic_mirror_filter_rule_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowTrafficMirrorFilterRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_traffic_mirror_session(self, request):
+        """查询流量镜像会话详情
+
+        查询流量镜像会话详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTrafficMirrorSession
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowTrafficMirrorSessionRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowTrafficMirrorSessionResponse`
+        """
+        return self._show_traffic_mirror_session_with_http_info(request)
+
+    def _show_traffic_mirror_session_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'traffic_mirror_session_id' in local_var_params:
+            path_params['traffic_mirror_session_id'] = local_var_params['traffic_mirror_session_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-sessions/{traffic_mirror_session_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowTrafficMirrorSessionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_security_group(self, request):
         """更新安全组
 
@@ -1032,6 +1872,180 @@ class VpcClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateSubNetworkInterfaceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_traffic_mirror_filter(self, request):
+        """更新流量镜像筛选条件
+
+        更新流量镜像筛选条件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateTrafficMirrorFilter
+        :type request: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorFilterRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorFilterResponse`
+        """
+        return self._update_traffic_mirror_filter_with_http_info(request)
+
+    def _update_traffic_mirror_filter_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'traffic_mirror_filter_id' in local_var_params:
+            path_params['traffic_mirror_filter_id'] = local_var_params['traffic_mirror_filter_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-filters/{traffic_mirror_filter_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateTrafficMirrorFilterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_traffic_mirror_filter_rule(self, request):
+        """更新流量镜像筛选规则
+
+        更新流量镜像筛选规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateTrafficMirrorFilterRule
+        :type request: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorFilterRuleRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorFilterRuleResponse`
+        """
+        return self._update_traffic_mirror_filter_rule_with_http_info(request)
+
+    def _update_traffic_mirror_filter_rule_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'traffic_mirror_filter_rule_id' in local_var_params:
+            path_params['traffic_mirror_filter_rule_id'] = local_var_params['traffic_mirror_filter_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-filter-rules/{traffic_mirror_filter_rule_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateTrafficMirrorFilterRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_traffic_mirror_session(self, request):
+        """更新流量镜像会话
+
+        更新流量镜像会话
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateTrafficMirrorSession
+        :type request: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorSessionRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorSessionResponse`
+        """
+        return self._update_traffic_mirror_session_with_http_info(request)
+
+    def _update_traffic_mirror_session_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'traffic_mirror_session_id' in local_var_params:
+            path_params['traffic_mirror_session_id'] = local_var_params['traffic_mirror_session_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/traffic-mirror-sessions/{traffic_mirror_session_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateTrafficMirrorSessionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

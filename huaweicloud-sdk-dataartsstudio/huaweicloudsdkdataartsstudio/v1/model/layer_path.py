@@ -18,21 +18,25 @@ class LayerPath:
 
     openapi_types = {
         'catalog_id': 'str',
+        'name': 'str',
         'order': 'int'
     }
 
     attribute_map = {
         'catalog_id': 'catalog_id',
+        'name': 'name',
         'order': 'order'
     }
 
-    def __init__(self, catalog_id=None, order=None):
+    def __init__(self, catalog_id=None, name=None, order=None):
         """LayerPath
 
         The model defined in huaweicloud sdk
 
         :param catalog_id: 目录编号
         :type catalog_id: str
+        :param name: 路径名
+        :type name: str
         :param order: 路径层级
         :type order: int
         """
@@ -40,11 +44,14 @@ class LayerPath:
         
 
         self._catalog_id = None
+        self._name = None
         self._order = None
         self.discriminator = None
 
         if catalog_id is not None:
             self.catalog_id = catalog_id
+        if name is not None:
+            self.name = name
         if order is not None:
             self.order = order
 
@@ -69,6 +76,28 @@ class LayerPath:
         :type catalog_id: str
         """
         self._catalog_id = catalog_id
+
+    @property
+    def name(self):
+        """Gets the name of this LayerPath.
+
+        路径名
+
+        :return: The name of this LayerPath.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this LayerPath.
+
+        路径名
+
+        :param name: The name of this LayerPath.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def order(self):

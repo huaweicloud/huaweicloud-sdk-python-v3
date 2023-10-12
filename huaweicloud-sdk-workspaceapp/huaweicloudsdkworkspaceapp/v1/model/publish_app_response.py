@@ -34,7 +34,7 @@ class PublishAppResponse(SdkResponse):
 
         :param count: 总数
         :type count: int
-        :param items: 发布的应用列表。
+        :param items: 查发布的应用列表。
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.App`]
         """
         
@@ -75,7 +75,7 @@ class PublishAppResponse(SdkResponse):
     def items(self):
         """Gets the items of this PublishAppResponse.
 
-        发布的应用列表。
+        查发布的应用列表。
 
         :return: The items of this PublishAppResponse.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.App`]
@@ -86,7 +86,7 @@ class PublishAppResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this PublishAppResponse.
 
-        发布的应用列表。
+        查发布的应用列表。
 
         :param items: The items of this PublishAppResponse.
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.App`]

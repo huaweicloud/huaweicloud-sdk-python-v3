@@ -4,6 +4,10 @@ from __future__ import absolute_import
 
 # import models into model package
 from huaweicloudsdkcae.v1.model.access import Access
+from huaweicloudsdkcae.v1.model.access_configuration_data_items import AccessConfigurationDataItems
+from huaweicloudsdkcae.v1.model.access_configuration_http_path import AccessConfigurationHttpPath
+from huaweicloudsdkcae.v1.model.access_configuration_port import AccessConfigurationPort
+from huaweicloudsdkcae.v1.model.access_control import AccessControl
 from huaweicloudsdkcae.v1.model.action_kind_obj import ActionKindObj
 from huaweicloudsdkcae.v1.model.action_on_component_build import ActionOnComponentBuild
 from huaweicloudsdkcae.v1.model.action_on_component_source import ActionOnComponentSource
@@ -33,6 +37,11 @@ from huaweicloudsdkcae.v1.model.component_snapshot_item import ComponentSnapshot
 from huaweicloudsdkcae.v1.model.component_snapshot_kind_obj import ComponentSnapshotKindObj
 from huaweicloudsdkcae.v1.model.component_spec import ComponentSpec
 from huaweicloudsdkcae.v1.model.configuration import Configuration
+from huaweicloudsdkcae.v1.model.configuration_data import ConfigurationData
+from huaweicloudsdkcae.v1.model.configuration_data_metadata import ConfigurationDataMetadata
+from huaweicloudsdkcae.v1.model.configuration_data_spec import ConfigurationDataSpec
+from huaweicloudsdkcae.v1.model.configuration_data_spec_post_start import ConfigurationDataSpecPostStart
+from huaweicloudsdkcae.v1.model.configuration_data_spec_pre_stop import ConfigurationDataSpecPreStop
 from huaweicloudsdkcae.v1.model.configuration_item import ConfigurationItem
 from huaweicloudsdkcae.v1.model.create_agency_request import CreateAgencyRequest
 from huaweicloudsdkcae.v1.model.create_agency_response import CreateAgencyResponse
@@ -94,9 +103,16 @@ from huaweicloudsdkcae.v1.model.execute_action_request_body import ExecuteAction
 from huaweicloudsdkcae.v1.model.execute_action_request_body_metadata import ExecuteActionRequestBodyMetadata
 from huaweicloudsdkcae.v1.model.execute_action_response import ExecuteActionResponse
 from huaweicloudsdkcae.v1.model.execution_details import ExecutionDetails
+from huaweicloudsdkcae.v1.model.health_check_configuration_exec import HealthCheckConfigurationExec
+from huaweicloudsdkcae.v1.model.health_check_configuration_http_get import HealthCheckConfigurationHttpGet
+from huaweicloudsdkcae.v1.model.health_check_configuration_liveness_probe import HealthCheckConfigurationLivenessProbe
+from huaweicloudsdkcae.v1.model.health_check_configuration_readiness_probe import HealthCheckConfigurationReadinessProbe
+from huaweicloudsdkcae.v1.model.health_check_configuration_startup_probe import HealthCheckConfigurationStartupProbe
+from huaweicloudsdkcae.v1.model.health_check_configuration_tcp_socket import HealthCheckConfigurationTcpSocket
 from huaweicloudsdkcae.v1.model.instance import Instance
 from huaweicloudsdkcae.v1.model.job_kind_obj import JobKindObj
 from huaweicloudsdkcae.v1.model.job_spec import JobSpec
+from huaweicloudsdkcae.v1.model.life_cycle_configuration_exec import LifeCycleConfigurationExec
 from huaweicloudsdkcae.v1.model.list_agencies_request import ListAgenciesRequest
 from huaweicloudsdkcae.v1.model.list_agencies_response import ListAgenciesResponse
 from huaweicloudsdkcae.v1.model.list_applications_request import ListApplicationsRequest
@@ -105,6 +121,7 @@ from huaweicloudsdkcae.v1.model.list_certificates_request import ListCertificate
 from huaweicloudsdkcae.v1.model.list_certificates_response import ListCertificatesResponse
 from huaweicloudsdkcae.v1.model.list_component_configurations_request import ListComponentConfigurationsRequest
 from huaweicloudsdkcae.v1.model.list_component_configurations_response import ListComponentConfigurationsResponse
+from huaweicloudsdkcae.v1.model.list_component_configurations_response_data import ListComponentConfigurationsResponseData
 from huaweicloudsdkcae.v1.model.list_component_events_request import ListComponentEventsRequest
 from huaweicloudsdkcae.v1.model.list_component_events_response import ListComponentEventsResponse
 from huaweicloudsdkcae.v1.model.list_component_instances_request import ListComponentInstancesRequest
@@ -135,6 +152,8 @@ from huaweicloudsdkcae.v1.model.resource_limit import ResourceLimit
 from huaweicloudsdkcae.v1.model.resource_limit_for_upgrade import ResourceLimitForUpgrade
 from huaweicloudsdkcae.v1.model.retry_job_request import RetryJobRequest
 from huaweicloudsdkcae.v1.model.retry_job_response import RetryJobResponse
+from huaweicloudsdkcae.v1.model.scale_configuration_data_trigger import ScaleConfigurationDataTrigger
+from huaweicloudsdkcae.v1.model.scale_configuration_data_trigger_metadata import ScaleConfigurationDataTriggerMetadata
 from huaweicloudsdkcae.v1.model.show_application_request import ShowApplicationRequest
 from huaweicloudsdkcae.v1.model.show_application_response import ShowApplicationResponse
 from huaweicloudsdkcae.v1.model.show_component_request import ShowComponentRequest
@@ -168,5 +187,7 @@ from huaweicloudsdkcae.v1.model.update_timer_rule_req import UpdateTimerRuleReq
 from huaweicloudsdkcae.v1.model.update_timer_rule_request import UpdateTimerRuleRequest
 from huaweicloudsdkcae.v1.model.update_timer_rule_response import UpdateTimerRuleResponse
 from huaweicloudsdkcae.v1.model.volume import Volume
+from huaweicloudsdkcae.v1.model.volume_configuration_data_volume import VolumeConfigurationDataVolume
+from huaweicloudsdkcae.v1.model.volume_configuration_mount_info import VolumeConfigurationMountInfo
 from huaweicloudsdkcae.v1.model.volume_kind_obj import VolumeKindObj
 from huaweicloudsdkcae.v1.model.volume_spec import VolumeSpec

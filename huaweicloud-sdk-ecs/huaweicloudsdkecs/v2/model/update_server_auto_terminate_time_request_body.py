@@ -29,7 +29,7 @@ class UpdateServerAutoTerminateTimeRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param auto_terminate_time: 销毁时间
+        :param auto_terminate_time: 定时删除时间
         :type auto_terminate_time: str
         """
         
@@ -44,7 +44,7 @@ class UpdateServerAutoTerminateTimeRequestBody:
     def auto_terminate_time(self):
         """Gets the auto_terminate_time of this UpdateServerAutoTerminateTimeRequestBody.
 
-        销毁时间
+        定时删除时间
 
         :return: The auto_terminate_time of this UpdateServerAutoTerminateTimeRequestBody.
         :rtype: str
@@ -55,7 +55,7 @@ class UpdateServerAutoTerminateTimeRequestBody:
     def auto_terminate_time(self, auto_terminate_time):
         """Sets the auto_terminate_time of this UpdateServerAutoTerminateTimeRequestBody.
 
-        销毁时间
+        定时删除时间
 
         :param auto_terminate_time: The auto_terminate_time of this UpdateServerAutoTerminateTimeRequestBody.
         :type auto_terminate_time: str

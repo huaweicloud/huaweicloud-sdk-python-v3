@@ -47,21 +47,21 @@ class VideoConfig:
 
         :param clip_mode: 输出视频的剪辑方式。 * RESIZE：视频缩放。 * CROP：视频裁剪。
         :type clip_mode: str
-        :param codec: 视频编码格式及视频文件格式。 * H264: h264编码，输出mp4文件 * VP8：vp8编码，输出webm文件 * VP9：vp9编码，输出webm文件
+        :param codec: 视频编码格式及视频文件格式。 * H264: h264编码，输出mp4文件 * VP8：vp8编码，输出webm文件
         :type codec: str
-        :param bitrate: 输出平均码率。  单位：kbps。  最小值40，最大值30000。
+        :param bitrate: 输出平均码率。  单位：kbps。  最小值40，最大值30000。 &gt; * 分身数字人视频制作采用质量优先，可能会超过设置的码率。 &gt; * 分身数字人直播码率范围[1000, 8000]。
         :type bitrate: int
-        :param width: 视频宽度。  单位：像素。  最小值320，最大值2560。 &gt; * clip_mode&#x3D;RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280四种分辨率。 &gt; * clip_mode&#x3D;CROP，视频保留中间width宽度，裁掉左右两边。
+        :param width: 视频宽度。  单位：像素。  最小值320，最大值2560。 &gt; * clip_mode&#x3D;RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280四种分辨率。 &gt; * clip_mode&#x3D;CROP，视频保留中间width宽度，裁掉左右两边。 &gt; * 分身数字人直播目前只支持1080x1920。
         :type width: int
-        :param height: 视频高度。  单位：像素。  最小值320，最大值2560。 &gt; * clip_mode&#x3D;RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280四种分辨率。 &gt; * clip_mode&#x3D;CROP，视频保留底部height高度，裁掉顶部。
+        :param height: 视频高度。  单位：像素。  最小值320，最大值2560。 &gt; * clip_mode&#x3D;RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280四种分辨率。 &gt; * clip_mode&#x3D;CROP，视频保留底部height高度，裁掉顶部。 &gt; * 分身数字人直播目前只支持1080x1920。
         :type height: int
-        :param frame_rate: 帧率。  单位：FPS。
+        :param frame_rate: 帧率。  单位：FPS。 &gt; * 分身数字人帧率目前只支持25。
         :type frame_rate: str
         :param is_subtitle_enable: 输出的视频是否带字幕。 &gt; true: 打开字幕 &gt; false: 关闭字幕
         :type is_subtitle_enable: bool
-        :param dx: 裁剪视频左上角像素点坐标。  clip_mode&#x3D; CROP时生效。 &gt; *横屏（16:9）视频像素为1920*1080；竖屏（9:16）视频像素为1080*1920。
+        :param dx: 裁剪视频左上角像素点坐标。  clip_mode&#x3D; CROP时生效。 &gt; *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
         :type dx: int
-        :param dy: 裁剪视频左上角像素点坐标。  clip_mode&#x3D; CROP时生效。 &gt; *横屏（16:9）视频像素为1920*1080；竖屏（9:16）视频像素为1080*1920。
+        :param dy: 裁剪视频左上角像素点坐标。  clip_mode&#x3D; CROP时生效。 &gt; *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
         :type dy: int
         """
         
@@ -119,7 +119,7 @@ class VideoConfig:
     def codec(self):
         """Gets the codec of this VideoConfig.
 
-        视频编码格式及视频文件格式。 * H264: h264编码，输出mp4文件 * VP8：vp8编码，输出webm文件 * VP9：vp9编码，输出webm文件
+        视频编码格式及视频文件格式。 * H264: h264编码，输出mp4文件 * VP8：vp8编码，输出webm文件
 
         :return: The codec of this VideoConfig.
         :rtype: str
@@ -130,7 +130,7 @@ class VideoConfig:
     def codec(self, codec):
         """Sets the codec of this VideoConfig.
 
-        视频编码格式及视频文件格式。 * H264: h264编码，输出mp4文件 * VP8：vp8编码，输出webm文件 * VP9：vp9编码，输出webm文件
+        视频编码格式及视频文件格式。 * H264: h264编码，输出mp4文件 * VP8：vp8编码，输出webm文件
 
         :param codec: The codec of this VideoConfig.
         :type codec: str
@@ -141,7 +141,7 @@ class VideoConfig:
     def bitrate(self):
         """Gets the bitrate of this VideoConfig.
 
-        输出平均码率。  单位：kbps。  最小值40，最大值30000。
+        输出平均码率。  单位：kbps。  最小值40，最大值30000。 > * 分身数字人视频制作采用质量优先，可能会超过设置的码率。 > * 分身数字人直播码率范围[1000, 8000]。
 
         :return: The bitrate of this VideoConfig.
         :rtype: int
@@ -152,7 +152,7 @@ class VideoConfig:
     def bitrate(self, bitrate):
         """Sets the bitrate of this VideoConfig.
 
-        输出平均码率。  单位：kbps。  最小值40，最大值30000。
+        输出平均码率。  单位：kbps。  最小值40，最大值30000。 > * 分身数字人视频制作采用质量优先，可能会超过设置的码率。 > * 分身数字人直播码率范围[1000, 8000]。
 
         :param bitrate: The bitrate of this VideoConfig.
         :type bitrate: int
@@ -163,7 +163,7 @@ class VideoConfig:
     def width(self):
         """Gets the width of this VideoConfig.
 
-        视频宽度。  单位：像素。  最小值320，最大值2560。 > * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280四种分辨率。 > * clip_mode=CROP，视频保留中间width宽度，裁掉左右两边。
+        视频宽度。  单位：像素。  最小值320，最大值2560。 > * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280四种分辨率。 > * clip_mode=CROP，视频保留中间width宽度，裁掉左右两边。 > * 分身数字人直播目前只支持1080x1920。
 
         :return: The width of this VideoConfig.
         :rtype: int
@@ -174,7 +174,7 @@ class VideoConfig:
     def width(self, width):
         """Sets the width of this VideoConfig.
 
-        视频宽度。  单位：像素。  最小值320，最大值2560。 > * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280四种分辨率。 > * clip_mode=CROP，视频保留中间width宽度，裁掉左右两边。
+        视频宽度。  单位：像素。  最小值320，最大值2560。 > * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280四种分辨率。 > * clip_mode=CROP，视频保留中间width宽度，裁掉左右两边。 > * 分身数字人直播目前只支持1080x1920。
 
         :param width: The width of this VideoConfig.
         :type width: int
@@ -185,7 +185,7 @@ class VideoConfig:
     def height(self):
         """Gets the height of this VideoConfig.
 
-        视频高度。  单位：像素。  最小值320，最大值2560。 > * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280四种分辨率。 > * clip_mode=CROP，视频保留底部height高度，裁掉顶部。
+        视频高度。  单位：像素。  最小值320，最大值2560。 > * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280四种分辨率。 > * clip_mode=CROP，视频保留底部height高度，裁掉顶部。 > * 分身数字人直播目前只支持1080x1920。
 
         :return: The height of this VideoConfig.
         :rtype: int
@@ -196,7 +196,7 @@ class VideoConfig:
     def height(self, height):
         """Sets the height of this VideoConfig.
 
-        视频高度。  单位：像素。  最小值320，最大值2560。 > * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280四种分辨率。 > * clip_mode=CROP，视频保留底部height高度，裁掉顶部。
+        视频高度。  单位：像素。  最小值320，最大值2560。 > * clip_mode=RESIZE时，当前支持1920x1080、1080x1920、1280x720、720x1280四种分辨率。 > * clip_mode=CROP，视频保留底部height高度，裁掉顶部。 > * 分身数字人直播目前只支持1080x1920。
 
         :param height: The height of this VideoConfig.
         :type height: int
@@ -207,7 +207,7 @@ class VideoConfig:
     def frame_rate(self):
         """Gets the frame_rate of this VideoConfig.
 
-        帧率。  单位：FPS。
+        帧率。  单位：FPS。 > * 分身数字人帧率目前只支持25。
 
         :return: The frame_rate of this VideoConfig.
         :rtype: str
@@ -218,7 +218,7 @@ class VideoConfig:
     def frame_rate(self, frame_rate):
         """Sets the frame_rate of this VideoConfig.
 
-        帧率。  单位：FPS。
+        帧率。  单位：FPS。 > * 分身数字人帧率目前只支持25。
 
         :param frame_rate: The frame_rate of this VideoConfig.
         :type frame_rate: str
@@ -251,7 +251,7 @@ class VideoConfig:
     def dx(self):
         """Gets the dx of this VideoConfig.
 
-        裁剪视频左上角像素点坐标。  clip_mode= CROP时生效。 > *横屏（16:9）视频像素为1920*1080；竖屏（9:16）视频像素为1080*1920。
+        裁剪视频左上角像素点坐标。  clip_mode= CROP时生效。 > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
         :return: The dx of this VideoConfig.
         :rtype: int
@@ -262,7 +262,7 @@ class VideoConfig:
     def dx(self, dx):
         """Sets the dx of this VideoConfig.
 
-        裁剪视频左上角像素点坐标。  clip_mode= CROP时生效。 > *横屏（16:9）视频像素为1920*1080；竖屏（9:16）视频像素为1080*1920。
+        裁剪视频左上角像素点坐标。  clip_mode= CROP时生效。 > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
         :param dx: The dx of this VideoConfig.
         :type dx: int
@@ -273,7 +273,7 @@ class VideoConfig:
     def dy(self):
         """Gets the dy of this VideoConfig.
 
-        裁剪视频左上角像素点坐标。  clip_mode= CROP时生效。 > *横屏（16:9）视频像素为1920*1080；竖屏（9:16）视频像素为1080*1920。
+        裁剪视频左上角像素点坐标。  clip_mode= CROP时生效。 > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
         :return: The dy of this VideoConfig.
         :rtype: int
@@ -284,7 +284,7 @@ class VideoConfig:
     def dy(self, dy):
         """Sets the dy of this VideoConfig.
 
-        裁剪视频左上角像素点坐标。  clip_mode= CROP时生效。 > *横屏（16:9）视频像素为1920*1080；竖屏（9:16）视频像素为1080*1920。
+        裁剪视频左上角像素点坐标。  clip_mode= CROP时生效。 > *横屏（16:9）视频像素为1920x1080；竖屏（9:16）视频像素为1080x1920。
 
         :param dy: The dy of this VideoConfig.
         :type dy: int

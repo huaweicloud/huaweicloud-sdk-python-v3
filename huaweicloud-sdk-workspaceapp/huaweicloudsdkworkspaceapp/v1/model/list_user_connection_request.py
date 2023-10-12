@@ -48,8 +48,10 @@ class ListUserConnectionRequest:
         self._body = None
         self.discriminator = None
 
-        self.limit = limit
-        self.offset = offset
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
         if body is not None:
             self.body = body
 

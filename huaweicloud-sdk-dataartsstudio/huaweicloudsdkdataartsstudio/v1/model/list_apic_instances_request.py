@@ -58,8 +58,7 @@ class ListApicInstancesRequest:
         self._offset = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
         self.dlm_type = dlm_type
         self.apig_type = apig_type
         if limit is not None:

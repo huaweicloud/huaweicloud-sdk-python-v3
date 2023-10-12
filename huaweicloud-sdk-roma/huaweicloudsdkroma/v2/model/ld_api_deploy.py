@@ -17,6 +17,7 @@ class LdApiDeploy:
     sensitive_list = []
 
     openapi_types = {
+        'ld_api_id': 'str',
         'deploy_front_api': 'bool',
         'auth_type': 'str',
         'authorizer_id': 'str',
@@ -32,6 +33,7 @@ class LdApiDeploy:
     }
 
     attribute_map = {
+        'ld_api_id': 'ld_api_id',
         'deploy_front_api': 'deploy_front_api',
         'auth_type': 'auth_type',
         'authorizer_id': 'authorizer_id',
@@ -46,11 +48,13 @@ class LdApiDeploy:
         'retry_count': 'retry_count'
     }
 
-    def __init__(self, deploy_front_api=None, auth_type=None, authorizer_id=None, group_id=None, env_id=None, protocol=None, backend_timeout=None, path=None, method=None, cors=None, roma_app_id=None, retry_count=None):
+    def __init__(self, ld_api_id=None, deploy_front_api=None, auth_type=None, authorizer_id=None, group_id=None, env_id=None, protocol=None, backend_timeout=None, path=None, method=None, cors=None, roma_app_id=None, retry_count=None):
         """LdApiDeploy
 
         The model defined in huaweicloud sdk
 
+        :param ld_api_id: 后端API的编号
+        :type ld_api_id: str
         :param deploy_front_api: 是否自动发布API - true：部署完成后自动创建并发布前端API。此时auth_type，group_id，env_id，protocol必填。 - false：部署完成后不创建前端API 
         :type deploy_front_api: bool
         :param auth_type: 认证方式[，site暂不支持IAM认证。](tag:Site) - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证 
@@ -73,12 +77,13 @@ class LdApiDeploy:
         :type cors: bool
         :param roma_app_id: 部署到前端的api归属的应用编号，与后端归属的应用编号保持一致
         :type roma_app_id: str
-        :param retry_count: ROMA Connect APIC请求后端服务的重试次数，默认为-1，范围[-1,10]
+        :param retry_count: 服务集成请求后端服务的重试次数，默认为-1，范围[-1,10]
         :type retry_count: str
         """
         
         
 
+        self._ld_api_id = None
         self._deploy_front_api = None
         self._auth_type = None
         self._authorizer_id = None
@@ -93,6 +98,8 @@ class LdApiDeploy:
         self._retry_count = None
         self.discriminator = None
 
+        if ld_api_id is not None:
+            self.ld_api_id = ld_api_id
         if deploy_front_api is not None:
             self.deploy_front_api = deploy_front_api
         if auth_type is not None:
@@ -117,6 +124,28 @@ class LdApiDeploy:
             self.roma_app_id = roma_app_id
         if retry_count is not None:
             self.retry_count = retry_count
+
+    @property
+    def ld_api_id(self):
+        """Gets the ld_api_id of this LdApiDeploy.
+
+        后端API的编号
+
+        :return: The ld_api_id of this LdApiDeploy.
+        :rtype: str
+        """
+        return self._ld_api_id
+
+    @ld_api_id.setter
+    def ld_api_id(self, ld_api_id):
+        """Sets the ld_api_id of this LdApiDeploy.
+
+        后端API的编号
+
+        :param ld_api_id: The ld_api_id of this LdApiDeploy.
+        :type ld_api_id: str
+        """
+        self._ld_api_id = ld_api_id
 
     @property
     def deploy_front_api(self):
@@ -364,7 +393,7 @@ class LdApiDeploy:
     def retry_count(self):
         """Gets the retry_count of this LdApiDeploy.
 
-        ROMA Connect APIC请求后端服务的重试次数，默认为-1，范围[-1,10]
+        服务集成请求后端服务的重试次数，默认为-1，范围[-1,10]
 
         :return: The retry_count of this LdApiDeploy.
         :rtype: str
@@ -375,7 +404,7 @@ class LdApiDeploy:
     def retry_count(self, retry_count):
         """Sets the retry_count of this LdApiDeploy.
 
-        ROMA Connect APIC请求后端服务的重试次数，默认为-1，范围[-1,10]
+        服务集成请求后端服务的重试次数，默认为-1，范围[-1,10]
 
         :param retry_count: The retry_count of this LdApiDeploy.
         :type retry_count: str

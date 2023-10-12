@@ -64,8 +64,10 @@ class ListPublishedAppRequest:
         self.discriminator = None
 
         self.app_group_id = app_group_id
-        self.limit = limit
-        self.offset = offset
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
         if name is not None:
             self.name = name
         if state is not None:

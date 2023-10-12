@@ -63,8 +63,7 @@ class ListApicGroupsRequest:
         self._offset = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
         self.dlm_type = dlm_type
         self.apig_instance_id = apig_instance_id
         self.apig_type = apig_type

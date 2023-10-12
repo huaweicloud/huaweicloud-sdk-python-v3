@@ -31,7 +31,7 @@ class PublishAppReq:
 
         The model defined in huaweicloud sdk
 
-        :param accounts: 账户(组),单次最多允许操作100个账户(组)
+        :param accounts: 用户(组),单次最多允许操作100个用户(组)
         :type accounts: list[:class:`huaweicloudsdkworkspaceapp.v1.AccountInfo`]
         :param items: 发布应用列表(单次最多20个应用)
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.PublishApp`]
@@ -51,7 +51,7 @@ class PublishAppReq:
     def accounts(self):
         """Gets the accounts of this PublishAppReq.
 
-        账户(组),单次最多允许操作100个账户(组)
+        用户(组),单次最多允许操作100个用户(组)
 
         :return: The accounts of this PublishAppReq.
         :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.AccountInfo`]
@@ -62,7 +62,7 @@ class PublishAppReq:
     def accounts(self, accounts):
         """Sets the accounts of this PublishAppReq.
 
-        账户(组),单次最多允许操作100个账户(组)
+        用户(组),单次最多允许操作100个用户(组)
 
         :param accounts: The accounts of this PublishAppReq.
         :type accounts: list[:class:`huaweicloudsdkworkspaceapp.v1.AccountInfo`]

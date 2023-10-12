@@ -1644,7 +1644,7 @@ class DgcAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_file_info_async(self, request):
-        """检查导入作业文件中的作业和脚本
+        """查询作业文件
 
         
         Please refer to HUAWEI cloud API Explorer for details.

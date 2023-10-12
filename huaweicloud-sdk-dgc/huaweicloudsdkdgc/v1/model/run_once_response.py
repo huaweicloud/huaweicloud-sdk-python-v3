@@ -18,7 +18,7 @@ class RunOnceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'instance_id': 'str'
+        'instance_id': 'int'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class RunOnceResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param instance_id: 作业实例id
-        :type instance_id: str
+        :type instance_id: int
         """
         
         super(RunOnceResponse, self).__init__()
@@ -49,7 +49,7 @@ class RunOnceResponse(SdkResponse):
         作业实例id
 
         :return: The instance_id of this RunOnceResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._instance_id
 
@@ -60,7 +60,7 @@ class RunOnceResponse(SdkResponse):
         作业实例id
 
         :param instance_id: The instance_id of this RunOnceResponse.
-        :type instance_id: str
+        :type instance_id: int
         """
         self._instance_id = instance_id
 

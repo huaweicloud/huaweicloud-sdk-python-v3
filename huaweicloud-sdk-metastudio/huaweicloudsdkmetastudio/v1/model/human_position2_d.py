@@ -35,9 +35,9 @@ class HumanPosition2D:
 
         :param position: 分身数字人在背景图片中的位置。 * LEFT： 左 * MIDDLE： 中 * RIGHT： 右 &gt; 当position_x和position_y参数值存在时，position不生效
         :type position: str
-        :param position_x: 分身数字人X轴位置，即分身数字图片底边中心点像素的X轴的像素值。 &gt; 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        :param position_x: 分身数字人X轴位置，即分身数字图片底边中心点像素的X轴的像素值。 &gt; 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
         :type position_x: int
-        :param position_y: 分身数字Y轴位置，即分身数字图片底边中心点像素的Y轴的像素值。 &gt; 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        :param position_y: 分身数字Y轴位置，即分身数字图片底边中心点像素的Y轴的像素值。 &gt; 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
         :type position_y: int
         """
         
@@ -81,7 +81,7 @@ class HumanPosition2D:
     def position_x(self):
         """Gets the position_x of this HumanPosition2D.
 
-        分身数字人X轴位置，即分身数字图片底边中心点像素的X轴的像素值。 > 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        分身数字人X轴位置，即分身数字图片底边中心点像素的X轴的像素值。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
 
         :return: The position_x of this HumanPosition2D.
         :rtype: int
@@ -92,7 +92,7 @@ class HumanPosition2D:
     def position_x(self, position_x):
         """Sets the position_x of this HumanPosition2D.
 
-        分身数字人X轴位置，即分身数字图片底边中心点像素的X轴的像素值。 > 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        分身数字人X轴位置，即分身数字图片底边中心点像素的X轴的像素值。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
 
         :param position_x: The position_x of this HumanPosition2D.
         :type position_x: int
@@ -103,7 +103,7 @@ class HumanPosition2D:
     def position_y(self):
         """Gets the position_y of this HumanPosition2D.
 
-        分身数字Y轴位置，即分身数字图片底边中心点像素的Y轴的像素值。 > 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        分身数字Y轴位置，即分身数字图片底边中心点像素的Y轴的像素值。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
 
         :return: The position_y of this HumanPosition2D.
         :rtype: int
@@ -114,7 +114,7 @@ class HumanPosition2D:
     def position_y(self, position_y):
         """Sets the position_y of this HumanPosition2D.
 
-        分身数字Y轴位置，即分身数字图片底边中心点像素的Y轴的像素值。 > 横屏（16:9）背景图片像素为1920*1080；竖屏（9:16）背景图片像素为1080*1920。
+        分身数字Y轴位置，即分身数字图片底边中心点像素的Y轴的像素值。 > 横屏（16:9）背景图片像素为1920x1080；竖屏（9:16）背景图片像素为1080x1920。
 
         :param position_y: The position_y of this HumanPosition2D.
         :type position_y: int

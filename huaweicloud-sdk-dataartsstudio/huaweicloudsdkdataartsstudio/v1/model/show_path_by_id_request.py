@@ -18,6 +18,7 @@ class ShowPathByIdRequest:
 
     openapi_types = {
         'workspace': 'str',
+        'dlm_type': 'str',
         'catalog_id': 'str',
         'limit': 'int',
         'offset': 'int'
@@ -25,18 +26,21 @@ class ShowPathByIdRequest:
 
     attribute_map = {
         'workspace': 'workspace',
+        'dlm_type': 'Dlm-Type',
         'catalog_id': 'catalog_id',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, workspace=None, catalog_id=None, limit=None, offset=None):
+    def __init__(self, workspace=None, dlm_type=None, catalog_id=None, limit=None, offset=None):
         """ShowPathByIdRequest
 
         The model defined in huaweicloud sdk
 
         :param workspace: 工作空间id
         :type workspace: str
+        :param dlm_type: dlm版本类型
+        :type dlm_type: str
         :param catalog_id: 目录编号
         :type catalog_id: str
         :param limit: limit
@@ -48,13 +52,14 @@ class ShowPathByIdRequest:
         
 
         self._workspace = None
+        self._dlm_type = None
         self._catalog_id = None
         self._limit = None
         self._offset = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
+        self.dlm_type = dlm_type
         self.catalog_id = catalog_id
         if limit is not None:
             self.limit = limit
@@ -82,6 +87,28 @@ class ShowPathByIdRequest:
         :type workspace: str
         """
         self._workspace = workspace
+
+    @property
+    def dlm_type(self):
+        """Gets the dlm_type of this ShowPathByIdRequest.
+
+        dlm版本类型
+
+        :return: The dlm_type of this ShowPathByIdRequest.
+        :rtype: str
+        """
+        return self._dlm_type
+
+    @dlm_type.setter
+    def dlm_type(self, dlm_type):
+        """Sets the dlm_type of this ShowPathByIdRequest.
+
+        dlm版本类型
+
+        :param dlm_type: The dlm_type of this ShowPathByIdRequest.
+        :type dlm_type: str
+        """
+        self._dlm_type = dlm_type
 
     @property
     def catalog_id(self):

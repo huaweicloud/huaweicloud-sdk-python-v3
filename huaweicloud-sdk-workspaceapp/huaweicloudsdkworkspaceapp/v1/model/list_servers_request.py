@@ -68,8 +68,10 @@ class ListServersRequest:
         self._scaling_auto_create = None
         self.discriminator = None
 
-        self.offset = offset
-        self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
         if server_group_id is not None:
             self.server_group_id = server_group_id
         if server_name is not None:

@@ -17,7 +17,7 @@ class Configuration:
     sensitive_list = []
 
     openapi_types = {
-        'data': 'object',
+        'data': 'ListComponentConfigurationsResponseData',
         'operated_at': 'datetime',
         'operation_id': 'str',
         'type': 'str',
@@ -37,8 +37,8 @@ class Configuration:
 
         The model defined in huaweicloud sdk
 
-        :param data: 组件配置数据。
-        :type data: object
+        :param data: 
+        :type data: :class:`huaweicloudsdkcae.v1.ListComponentConfigurationsResponseData`
         :param operated_at: 操作时间。
         :type operated_at: datetime
         :param operation_id: 操作ID。
@@ -73,10 +73,8 @@ class Configuration:
     def data(self):
         """Gets the data of this Configuration.
 
-        组件配置数据。
-
         :return: The data of this Configuration.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkcae.v1.ListComponentConfigurationsResponseData`
         """
         return self._data
 
@@ -84,10 +82,8 @@ class Configuration:
     def data(self, data):
         """Sets the data of this Configuration.
 
-        组件配置数据。
-
         :param data: The data of this Configuration.
-        :type data: object
+        :type data: :class:`huaweicloudsdkcae.v1.ListComponentConfigurationsResponseData`
         """
         self._data = data
 

@@ -58,8 +58,7 @@ class ShowAppsOverviewRequest:
         self._time_unit = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
         self.dlm_type = dlm_type
         self.start_time = start_time
         self.end_time = end_time

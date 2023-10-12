@@ -65,7 +65,7 @@ class InvocationInfo:
         :type intranet_ips: list[str]
         :param elastic_ips: 弹性公网ip列表
         :type elastic_ips: list[str]
-        :param invocation_type: 任务类型(INSTALL 安装，UPDATE升级，ROLLBACK回滚)
+        :param invocation_type: 任务类型(INSTALL 安装，UPDATE 升级，ROLLBACK 回滚，RETRY 重试)
         :type invocation_type: str
         :param invocation_status: 任务状态，PENDING 待执行，RUNNING 运行中，TIMEOUT 超时，FAILED 失败，SUCCEEDED 成功，CANCELED 取消，ROLLBACKED已回退
         :type invocation_status: str
@@ -261,7 +261,7 @@ class InvocationInfo:
     def invocation_type(self):
         """Gets the invocation_type of this InvocationInfo.
 
-        任务类型(INSTALL 安装，UPDATE升级，ROLLBACK回滚)
+        任务类型(INSTALL 安装，UPDATE 升级，ROLLBACK 回滚，RETRY 重试)
 
         :return: The invocation_type of this InvocationInfo.
         :rtype: str
@@ -272,7 +272,7 @@ class InvocationInfo:
     def invocation_type(self, invocation_type):
         """Sets the invocation_type of this InvocationInfo.
 
-        任务类型(INSTALL 安装，UPDATE升级，ROLLBACK回滚)
+        任务类型(INSTALL 安装，UPDATE 升级，ROLLBACK 回滚，RETRY 重试)
 
         :param invocation_type: The invocation_type of this InvocationInfo.
         :type invocation_type: str

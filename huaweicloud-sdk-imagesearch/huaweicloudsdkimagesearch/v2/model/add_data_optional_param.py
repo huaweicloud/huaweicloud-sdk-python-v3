@@ -20,7 +20,7 @@ class AddDataOptionalParam:
         'do_det': 'bool',
         'box': 'str',
         'do_cls': 'bool',
-        'category': 'float'
+        'category': 'int'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class AddDataOptionalParam:
         :param do_cls: 是否进行对象分类，默认为true。
         :type do_cls: bool
         :param category: 对象类目，如给定则不进行对象分类，直接使用该category作为类目。具体类目信息可参见对应的服务类型说明。
-        :type category: float
+        :type category: int
         """
         
         
@@ -135,7 +135,7 @@ class AddDataOptionalParam:
         对象类目，如给定则不进行对象分类，直接使用该category作为类目。具体类目信息可参见对应的服务类型说明。
 
         :return: The category of this AddDataOptionalParam.
-        :rtype: float
+        :rtype: int
         """
         return self._category
 
@@ -146,7 +146,7 @@ class AddDataOptionalParam:
         对象类目，如给定则不进行对象分类，直接使用该category作为类目。具体类目信息可参见对应的服务类型说明。
 
         :param category: The category of this AddDataOptionalParam.
-        :type category: float
+        :type category: int
         """
         self._category = category
 

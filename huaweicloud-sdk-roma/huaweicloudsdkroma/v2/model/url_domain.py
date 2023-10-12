@@ -22,7 +22,10 @@ class UrlDomain:
         'cname_status': 'int',
         'ssl_id': 'str',
         'ssl_name': 'str',
-        'min_ssl_version': 'str'
+        'min_ssl_version': 'str',
+        'verified_client_certificate_enabled': 'bool',
+        'is_has_trusted_root_ca': 'bool',
+        'ssl_infos': 'list[SslInfo]'
     }
 
     attribute_map = {
@@ -31,10 +34,13 @@ class UrlDomain:
         'cname_status': 'cname_status',
         'ssl_id': 'ssl_id',
         'ssl_name': 'ssl_name',
-        'min_ssl_version': 'min_ssl_version'
+        'min_ssl_version': 'min_ssl_version',
+        'verified_client_certificate_enabled': 'verified_client_certificate_enabled',
+        'is_has_trusted_root_ca': 'is_has_trusted_root_ca',
+        'ssl_infos': 'ssl_infos'
     }
 
-    def __init__(self, id=None, domain=None, cname_status=None, ssl_id=None, ssl_name=None, min_ssl_version=None):
+    def __init__(self, id=None, domain=None, cname_status=None, ssl_id=None, ssl_name=None, min_ssl_version=None, verified_client_certificate_enabled=None, is_has_trusted_root_ca=None, ssl_infos=None):
         """UrlDomain
 
         The model defined in huaweicloud sdk
@@ -51,6 +57,12 @@ class UrlDomain:
         :type ssl_name: str
         :param min_ssl_version: 最小ssl协议版本号。支持TLSv1.1或TLSv1.2
         :type min_ssl_version: str
+        :param verified_client_certificate_enabled: 是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
+        :type verified_client_certificate_enabled: bool
+        :param is_has_trusted_root_ca: 是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。  [暂不支持](tag:hcs;fcs;g42;Site)
+        :type is_has_trusted_root_ca: bool
+        :param ssl_infos: SSL证书列表  [暂不支持](tag:hws;hws_hk;fcs;g42;Site)
+        :type ssl_infos: list[:class:`huaweicloudsdkroma.v2.SslInfo`]
         """
         
         
@@ -61,6 +73,9 @@ class UrlDomain:
         self._ssl_id = None
         self._ssl_name = None
         self._min_ssl_version = None
+        self._verified_client_certificate_enabled = None
+        self._is_has_trusted_root_ca = None
+        self._ssl_infos = None
         self.discriminator = None
 
         if id is not None:
@@ -75,6 +90,12 @@ class UrlDomain:
             self.ssl_name = ssl_name
         if min_ssl_version is not None:
             self.min_ssl_version = min_ssl_version
+        if verified_client_certificate_enabled is not None:
+            self.verified_client_certificate_enabled = verified_client_certificate_enabled
+        if is_has_trusted_root_ca is not None:
+            self.is_has_trusted_root_ca = is_has_trusted_root_ca
+        if ssl_infos is not None:
+            self.ssl_infos = ssl_infos
 
     @property
     def id(self):
@@ -207,6 +228,72 @@ class UrlDomain:
         :type min_ssl_version: str
         """
         self._min_ssl_version = min_ssl_version
+
+    @property
+    def verified_client_certificate_enabled(self):
+        """Gets the verified_client_certificate_enabled of this UrlDomain.
+
+        是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
+
+        :return: The verified_client_certificate_enabled of this UrlDomain.
+        :rtype: bool
+        """
+        return self._verified_client_certificate_enabled
+
+    @verified_client_certificate_enabled.setter
+    def verified_client_certificate_enabled(self, verified_client_certificate_enabled):
+        """Sets the verified_client_certificate_enabled of this UrlDomain.
+
+        是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
+
+        :param verified_client_certificate_enabled: The verified_client_certificate_enabled of this UrlDomain.
+        :type verified_client_certificate_enabled: bool
+        """
+        self._verified_client_certificate_enabled = verified_client_certificate_enabled
+
+    @property
+    def is_has_trusted_root_ca(self):
+        """Gets the is_has_trusted_root_ca of this UrlDomain.
+
+        是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。  [暂不支持](tag:hcs;fcs;g42;Site)
+
+        :return: The is_has_trusted_root_ca of this UrlDomain.
+        :rtype: bool
+        """
+        return self._is_has_trusted_root_ca
+
+    @is_has_trusted_root_ca.setter
+    def is_has_trusted_root_ca(self, is_has_trusted_root_ca):
+        """Sets the is_has_trusted_root_ca of this UrlDomain.
+
+        是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。  [暂不支持](tag:hcs;fcs;g42;Site)
+
+        :param is_has_trusted_root_ca: The is_has_trusted_root_ca of this UrlDomain.
+        :type is_has_trusted_root_ca: bool
+        """
+        self._is_has_trusted_root_ca = is_has_trusted_root_ca
+
+    @property
+    def ssl_infos(self):
+        """Gets the ssl_infos of this UrlDomain.
+
+        SSL证书列表  [暂不支持](tag:hws;hws_hk;fcs;g42;Site)
+
+        :return: The ssl_infos of this UrlDomain.
+        :rtype: list[:class:`huaweicloudsdkroma.v2.SslInfo`]
+        """
+        return self._ssl_infos
+
+    @ssl_infos.setter
+    def ssl_infos(self, ssl_infos):
+        """Sets the ssl_infos of this UrlDomain.
+
+        SSL证书列表  [暂不支持](tag:hws;hws_hk;fcs;g42;Site)
+
+        :param ssl_infos: The ssl_infos of this UrlDomain.
+        :type ssl_infos: list[:class:`huaweicloudsdkroma.v2.SslInfo`]
+        """
+        self._ssl_infos = ssl_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

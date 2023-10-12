@@ -48,8 +48,7 @@ class DeleteAppRequest:
         self._app_id = None
         self.discriminator = None
 
-        if workspace is not None:
-            self.workspace = workspace
+        self.workspace = workspace
         self.dlm_type = dlm_type
         self.app_id = app_id
 

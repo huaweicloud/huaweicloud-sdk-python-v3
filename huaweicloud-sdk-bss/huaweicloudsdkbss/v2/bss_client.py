@@ -928,6 +928,66 @@ class BssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_sub_customer_new_tag(self, request):
+        """查询客户新客标签
+
+        伙伴通过该接口可以查询客户的新客标签。
+        
+        &gt;![](public_sys-resources/icon-caution.gif) **注意：** 
+        &gt;-   新客标签失效后，new\\_customer\\_tag会变成N，且有效期过期。
+        &gt;-   客户如果没有实名认证，则新客标签为空。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSubCustomerNewTag
+        :type request: :class:`huaweicloudsdkbss.v2.ListSubCustomerNewTagRequest`
+        :rtype: :class:`huaweicloudsdkbss.v2.ListSubCustomerNewTagResponse`
+        """
+        return self._list_sub_customer_new_tag_with_http_info(request)
+
+    def _list_sub_customer_new_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/sub-customers/new-customers-tags/batch-query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListSubCustomerNewTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def change_enterprise_realname_authentication(self, request):
         """申请实名认证变更
 

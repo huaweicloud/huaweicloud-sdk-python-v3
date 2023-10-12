@@ -78,7 +78,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         :type project_id: str
         :param os: 操作系统：windows|linux
         :type os: str
-        :param auto_connection_test_switch: 自动连通性验证 0不执行 1每日 2每周
+        :param auto_connection_test_switch: 自动测试功能已下架，该字段已失效
         :type auto_connection_test_switch: int
         :param slave_cluster_id: slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
         :type slave_cluster_id: str
@@ -349,7 +349,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
     def auto_connection_test_switch(self):
         """Gets the auto_connection_test_switch of this ShowDeploymentGroupDetailResponse.
 
-        自动连通性验证 0不执行 1每日 2每周
+        自动测试功能已下架，该字段已失效
 
         :return: The auto_connection_test_switch of this ShowDeploymentGroupDetailResponse.
         :rtype: int
@@ -360,7 +360,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
     def auto_connection_test_switch(self, auto_connection_test_switch):
         """Sets the auto_connection_test_switch of this ShowDeploymentGroupDetailResponse.
 
-        自动连通性验证 0不执行 1每日 2每周
+        自动测试功能已下架，该字段已失效
 
         :param auto_connection_test_switch: The auto_connection_test_switch of this ShowDeploymentGroupDetailResponse.
         :type auto_connection_test_switch: int

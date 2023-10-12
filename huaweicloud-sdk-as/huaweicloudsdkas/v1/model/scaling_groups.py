@@ -137,7 +137,7 @@ class ScalingGroups:
         :type health_periodic_audit_grace_period: int
         :param instance_terminate_policy: 移除策略。
         :type instance_terminate_policy: str
-        :param notifications: 通知方式：EMAIL为发送邮件通知。该通知方式已经被废除，建议给弹性伸缩组配置通知功能。请参考[通知](https://support.huaweicloud.com/api-as/as_06_0800.html)。
+        :param notifications: 通知方式：  EMAIL为发送邮件通知。  该通知方式已经被废除，建议给弹性伸缩组配置通知功能。请参考[通知](https://support.huaweicloud.com/api-as/as_06_0800.html)。
         :type notifications: list[str]
         :param delete_publicip: 删除云服务器是否删除云服务器绑定的弹性IP。
         :type delete_publicip: bool
@@ -768,7 +768,7 @@ class ScalingGroups:
     def notifications(self):
         """Gets the notifications of this ScalingGroups.
 
-        通知方式：EMAIL为发送邮件通知。该通知方式已经被废除，建议给弹性伸缩组配置通知功能。请参考[通知](https://support.huaweicloud.com/api-as/as_06_0800.html)。
+        通知方式：  EMAIL为发送邮件通知。  该通知方式已经被废除，建议给弹性伸缩组配置通知功能。请参考[通知](https://support.huaweicloud.com/api-as/as_06_0800.html)。
 
         :return: The notifications of this ScalingGroups.
         :rtype: list[str]
@@ -779,7 +779,7 @@ class ScalingGroups:
     def notifications(self, notifications):
         """Sets the notifications of this ScalingGroups.
 
-        通知方式：EMAIL为发送邮件通知。该通知方式已经被废除，建议给弹性伸缩组配置通知功能。请参考[通知](https://support.huaweicloud.com/api-as/as_06_0800.html)。
+        通知方式：  EMAIL为发送邮件通知。  该通知方式已经被废除，建议给弹性伸缩组配置通知功能。请参考[通知](https://support.huaweicloud.com/api-as/as_06_0800.html)。
 
         :param notifications: The notifications of this ScalingGroups.
         :type notifications: list[str]

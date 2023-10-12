@@ -47,7 +47,7 @@ class TimelineTrafficStatisticsRequestBody:
         :type period: int
         :param resource_type: 资源类型，log_group / log_stream / tenant
         :type resource_type: str
-        :param search_type: 查询流量类型值为：write，index，storage
+        :param search_type: 查询流量类型值为：write，index，storage,basicTransfer，seniorTransfer
         :type search_type: str
         :param resource_id: 资源ID
         :type resource_id: str
@@ -163,7 +163,7 @@ class TimelineTrafficStatisticsRequestBody:
     def search_type(self):
         """Gets the search_type of this TimelineTrafficStatisticsRequestBody.
 
-        查询流量类型值为：write，index，storage
+        查询流量类型值为：write，index，storage,basicTransfer，seniorTransfer
 
         :return: The search_type of this TimelineTrafficStatisticsRequestBody.
         :rtype: str
@@ -174,7 +174,7 @@ class TimelineTrafficStatisticsRequestBody:
     def search_type(self, search_type):
         """Sets the search_type of this TimelineTrafficStatisticsRequestBody.
 
-        查询流量类型值为：write，index，storage
+        查询流量类型值为：write，index，storage,basicTransfer，seniorTransfer
 
         :param search_type: The search_type of this TimelineTrafficStatisticsRequestBody.
         :type search_type: str

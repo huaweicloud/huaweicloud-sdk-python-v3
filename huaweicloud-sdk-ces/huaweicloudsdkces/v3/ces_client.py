@@ -161,8 +161,6 @@ class CesClient(Client):
         query_params = []
         if 'instance_id' in local_var_params:
             query_params.append(('instance_id', local_var_params['instance_id']))
-        if 'instance_name' in local_var_params:
-            query_params.append(('instance_name', local_var_params['instance_name']))
         if 'instance_type' in local_var_params:
             query_params.append(('instance_type', local_var_params['instance_type']))
         if 'invocation_id' in local_var_params:

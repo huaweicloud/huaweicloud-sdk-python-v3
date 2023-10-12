@@ -17,35 +17,28 @@ class CreateApplicationRequestBodyMetadata:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
-        'annotations': 'dict(str, str)'
+        'name': 'str'
     }
 
     attribute_map = {
-        'name': 'name',
-        'annotations': 'annotations'
+        'name': 'name'
     }
 
-    def __init__(self, name=None, annotations=None):
+    def __init__(self, name=None):
         """CreateApplicationRequestBodyMetadata
 
         The model defined in huaweicloud sdk
 
         :param name: 应用名称。
         :type name: str
-        :param annotations: 创建应用附加参数，当前只支持description参数。
-        :type annotations: dict(str, str)
         """
         
         
 
         self._name = None
-        self._annotations = None
         self.discriminator = None
 
         self.name = name
-        if annotations is not None:
-            self.annotations = annotations
 
     @property
     def name(self):
@@ -68,28 +61,6 @@ class CreateApplicationRequestBodyMetadata:
         :type name: str
         """
         self._name = name
-
-    @property
-    def annotations(self):
-        """Gets the annotations of this CreateApplicationRequestBodyMetadata.
-
-        创建应用附加参数，当前只支持description参数。
-
-        :return: The annotations of this CreateApplicationRequestBodyMetadata.
-        :rtype: dict(str, str)
-        """
-        return self._annotations
-
-    @annotations.setter
-    def annotations(self, annotations):
-        """Sets the annotations of this CreateApplicationRequestBodyMetadata.
-
-        创建应用附加参数，当前只支持description参数。
-
-        :param annotations: The annotations of this CreateApplicationRequestBodyMetadata.
-        :type annotations: dict(str, str)
-        """
-        self._annotations = annotations
 
     def to_dict(self):
         """Returns the model properties as a dict"""

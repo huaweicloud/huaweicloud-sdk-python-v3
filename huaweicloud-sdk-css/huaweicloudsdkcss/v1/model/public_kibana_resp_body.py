@@ -19,16 +19,18 @@ class PublicKibanaRespBody:
     openapi_types = {
         'eip_size': 'int',
         'elb_white_list_resp': 'KibanaElbWhiteListResp',
-        'public_kibana_ip': 'str'
+        'public_kibana_ip': 'str',
+        'bandwidth_resource_id': 'str'
     }
 
     attribute_map = {
         'eip_size': 'eipSize',
         'elb_white_list_resp': 'elbWhiteListResp',
-        'public_kibana_ip': 'publicKibanaIp'
+        'public_kibana_ip': 'publicKibanaIp',
+        'bandwidth_resource_id': 'bandwidthResourceId'
     }
 
-    def __init__(self, eip_size=None, elb_white_list_resp=None, public_kibana_ip=None):
+    def __init__(self, eip_size=None, elb_white_list_resp=None, public_kibana_ip=None, bandwidth_resource_id=None):
         """PublicKibanaRespBody
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class PublicKibanaRespBody:
         :type elb_white_list_resp: :class:`huaweicloudsdkcss.v1.KibanaElbWhiteListResp`
         :param public_kibana_ip: kibana访问IP。
         :type public_kibana_ip: str
+        :param bandwidth_resource_id: 当前kibana公网对应的资源Id。
+        :type bandwidth_resource_id: str
         """
         
         
@@ -46,6 +50,7 @@ class PublicKibanaRespBody:
         self._eip_size = None
         self._elb_white_list_resp = None
         self._public_kibana_ip = None
+        self._bandwidth_resource_id = None
         self.discriminator = None
 
         if eip_size is not None:
@@ -54,6 +59,8 @@ class PublicKibanaRespBody:
             self.elb_white_list_resp = elb_white_list_resp
         if public_kibana_ip is not None:
             self.public_kibana_ip = public_kibana_ip
+        if bandwidth_resource_id is not None:
+            self.bandwidth_resource_id = bandwidth_resource_id
 
     @property
     def eip_size(self):
@@ -116,6 +123,28 @@ class PublicKibanaRespBody:
         :type public_kibana_ip: str
         """
         self._public_kibana_ip = public_kibana_ip
+
+    @property
+    def bandwidth_resource_id(self):
+        """Gets the bandwidth_resource_id of this PublicKibanaRespBody.
+
+        当前kibana公网对应的资源Id。
+
+        :return: The bandwidth_resource_id of this PublicKibanaRespBody.
+        :rtype: str
+        """
+        return self._bandwidth_resource_id
+
+    @bandwidth_resource_id.setter
+    def bandwidth_resource_id(self, bandwidth_resource_id):
+        """Sets the bandwidth_resource_id of this PublicKibanaRespBody.
+
+        当前kibana公网对应的资源Id。
+
+        :param bandwidth_resource_id: The bandwidth_resource_id of this PublicKibanaRespBody.
+        :type bandwidth_resource_id: str
+        """
+        self._bandwidth_resource_id = bandwidth_resource_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -20,17 +20,19 @@ class CreateAppGroupReq:
         'name': 'str',
         'app_server_group_id': 'str',
         'description': 'str',
-        'authorization_type': 'AuthorizationTypeEnum'
+        'authorization_type': 'AuthorizationTypeEnum',
+        'app_type': 'AppTypeEnum'
     }
 
     attribute_map = {
         'name': 'name',
         'app_server_group_id': 'app_server_group_id',
         'description': 'description',
-        'authorization_type': 'authorization_type'
+        'authorization_type': 'authorization_type',
+        'app_type': 'app_type'
     }
 
-    def __init__(self, name=None, app_server_group_id=None, description=None, authorization_type=None):
+    def __init__(self, name=None, app_server_group_id=None, description=None, authorization_type=None, app_type=None):
         """CreateAppGroupReq
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class CreateAppGroupReq:
         :type description: str
         :param authorization_type: 
         :type authorization_type: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
+        :param app_type: 
+        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
         """
         
         
@@ -51,6 +55,7 @@ class CreateAppGroupReq:
         self._app_server_group_id = None
         self._description = None
         self._authorization_type = None
+        self._app_type = None
         self.discriminator = None
 
         self.name = name
@@ -60,6 +65,8 @@ class CreateAppGroupReq:
             self.description = description
         if authorization_type is not None:
             self.authorization_type = authorization_type
+        if app_type is not None:
+            self.app_type = app_type
 
     @property
     def name(self):
@@ -144,6 +151,24 @@ class CreateAppGroupReq:
         :type authorization_type: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
         """
         self._authorization_type = authorization_type
+
+    @property
+    def app_type(self):
+        """Gets the app_type of this CreateAppGroupReq.
+
+        :return: The app_type of this CreateAppGroupReq.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        """
+        return self._app_type
+
+    @app_type.setter
+    def app_type(self, app_type):
+        """Sets the app_type of this CreateAppGroupReq.
+
+        :param app_type: The app_type of this CreateAppGroupReq.
+        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        """
+        self._app_type = app_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""
