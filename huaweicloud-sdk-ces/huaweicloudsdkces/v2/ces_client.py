@@ -16,13 +16,16 @@ class CesClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "CesClient":
+                raise TypeError("client type error, support client type is CesClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "CesClient":
-            raise TypeError("client type error, support client type is CesClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def add_alarm_rule_resources(self, request):
         """批量增加告警规则资源

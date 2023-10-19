@@ -35,7 +35,7 @@ class HttpQueryCfwAttackLogsResponseDTOData:
 
         :param total: 返回数量
         :type total: int
-        :param limit: 每页显示个数
+        :param limit: 每页显示个数，范围为1-1024
         :type limit: int
         :param records: 记录
         :type records: list[:class:`huaweicloudsdkcfw.v1.HttpQueryCfwAttackLogsResponseDTODataRecords`]
@@ -81,7 +81,7 @@ class HttpQueryCfwAttackLogsResponseDTOData:
     def limit(self):
         """Gets the limit of this HttpQueryCfwAttackLogsResponseDTOData.
 
-        每页显示个数
+        每页显示个数，范围为1-1024
 
         :return: The limit of this HttpQueryCfwAttackLogsResponseDTOData.
         :rtype: int
@@ -92,7 +92,7 @@ class HttpQueryCfwAttackLogsResponseDTOData:
     def limit(self, limit):
         """Sets the limit of this HttpQueryCfwAttackLogsResponseDTOData.
 
-        每页显示个数
+        每页显示个数，范围为1-1024
 
         :param limit: The limit of this HttpQueryCfwAttackLogsResponseDTOData.
         :type limit: int

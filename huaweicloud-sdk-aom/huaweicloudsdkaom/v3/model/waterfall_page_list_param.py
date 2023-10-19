@@ -31,9 +31,9 @@ class WaterfallPageListParam:
 
         The model defined in huaweicloud sdk
 
-        :param marker: 页面的分页标志位；为分页的最后一条记录的id
+        :param marker: 页面的分页标志位,为分页的最后一条记录的id
         :type marker: str
-        :param limit: 查询返回记录的数量限制
+        :param limit: 查询返回记录的数量限制。limit可以为空，如果值小于1或者大于100，则会使用默认值100
         :type limit: int
         """
         
@@ -52,7 +52,7 @@ class WaterfallPageListParam:
     def marker(self):
         """Gets the marker of this WaterfallPageListParam.
 
-        页面的分页标志位；为分页的最后一条记录的id
+        页面的分页标志位,为分页的最后一条记录的id
 
         :return: The marker of this WaterfallPageListParam.
         :rtype: str
@@ -63,7 +63,7 @@ class WaterfallPageListParam:
     def marker(self, marker):
         """Sets the marker of this WaterfallPageListParam.
 
-        页面的分页标志位；为分页的最后一条记录的id
+        页面的分页标志位,为分页的最后一条记录的id
 
         :param marker: The marker of this WaterfallPageListParam.
         :type marker: str
@@ -74,7 +74,7 @@ class WaterfallPageListParam:
     def limit(self):
         """Gets the limit of this WaterfallPageListParam.
 
-        查询返回记录的数量限制
+        查询返回记录的数量限制。limit可以为空，如果值小于1或者大于100，则会使用默认值100
 
         :return: The limit of this WaterfallPageListParam.
         :rtype: int
@@ -85,7 +85,7 @@ class WaterfallPageListParam:
     def limit(self, limit):
         """Sets the limit of this WaterfallPageListParam.
 
-        查询返回记录的数量限制
+        查询返回记录的数量限制。limit可以为空，如果值小于1或者大于100，则会使用默认值100
 
         :param limit: The limit of this WaterfallPageListParam.
         :type limit: int

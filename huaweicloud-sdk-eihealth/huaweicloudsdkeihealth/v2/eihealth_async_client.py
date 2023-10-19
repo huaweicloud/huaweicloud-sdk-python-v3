@@ -16,13 +16,16 @@ class EiHealthAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "EiHealthAsyncClient":
+                raise TypeError("client type error, support client type is EiHealthAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "EiHealthClient":
-            raise TypeError("client type error, support client type is EiHealthClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def show_admet_with_custom_props_async(self, request):
         """ADMET属性预测接口(默认+自定义属性)

@@ -16,13 +16,16 @@ class CdnClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls, "GlobalCredentials")
+        if not clazz:
+            client_builder = ClientBuilder(cls, "GlobalCredentials")
+        else:
+            if clazz.__name__ != "CdnClient":
+                raise TypeError("client type error, support client type is CdnClient")
+            client_builder = ClientBuilder(clazz, "GlobalCredentials")
 
-        if clazz.__name__ != "CdnClient":
-            raise TypeError("client type error, support client type is CdnClient")
+        
 
-        return ClientBuilder(clazz, "GlobalCredentials")
+        return client_builder
 
     def batch_copy_domain(self, request):
         """批量域名复制

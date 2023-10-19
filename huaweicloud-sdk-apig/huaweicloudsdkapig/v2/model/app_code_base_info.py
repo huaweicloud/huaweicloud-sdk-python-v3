@@ -35,7 +35,7 @@ class AppCodeBaseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param app_code: App Code值  支持英文，+_!@#$%+/&#x3D;，且只能以英文和+、/开头，64-180个字符。
+        :param app_code: App Code值  支持英文、数字，+_!@#$%-/&#x3D;，且只能以英文、数字和+、/开头，64-180个字符。
         :type app_code: str
         :param id: 编号
         :type id: str
@@ -65,7 +65,7 @@ class AppCodeBaseInfo:
     def app_code(self):
         """Gets the app_code of this AppCodeBaseInfo.
 
-        App Code值  支持英文，+_!@#$%+/=，且只能以英文和+、/开头，64-180个字符。
+        App Code值  支持英文、数字，+_!@#$%-/=，且只能以英文、数字和+、/开头，64-180个字符。
 
         :return: The app_code of this AppCodeBaseInfo.
         :rtype: str
@@ -76,7 +76,7 @@ class AppCodeBaseInfo:
     def app_code(self, app_code):
         """Sets the app_code of this AppCodeBaseInfo.
 
-        App Code值  支持英文，+_!@#$%+/=，且只能以英文和+、/开头，64-180个字符。
+        App Code值  支持英文、数字，+_!@#$%-/=，且只能以英文、数字和+、/开头，64-180个字符。
 
         :param app_code: The app_code of this AppCodeBaseInfo.
         :type app_code: str

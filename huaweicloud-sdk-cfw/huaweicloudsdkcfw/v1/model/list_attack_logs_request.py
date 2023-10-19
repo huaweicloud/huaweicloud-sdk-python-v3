@@ -36,7 +36,9 @@ class ListAttackLogsRequest:
         'attack_rule': 'str',
         'level': 'str',
         'source': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'dst_host': 'str',
+        'log_type': 'str'
     }
 
     attribute_map = {
@@ -59,10 +61,12 @@ class ListAttackLogsRequest:
         'attack_rule': 'attack_rule',
         'level': 'level',
         'source': 'source',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'dst_host': 'dst_host',
+        'log_type': 'log_type'
     }
 
-    def __init__(self, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, fw_instance_id=None, action=None, direction=None, attack_type=None, attack_rule=None, level=None, source=None, enterprise_project_id=None):
+    def __init__(self, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, fw_instance_id=None, action=None, direction=None, attack_type=None, attack_rule=None, level=None, source=None, enterprise_project_id=None, dst_host=None, log_type=None):
         """ListAttackLogsRequest
 
         The model defined in huaweicloud sdk
@@ -89,7 +93,7 @@ class ListAttackLogsRequest:
         :type next_date: int
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param limit: 每页显示个数
+        :param limit: 每页显示个数，范围为1-1024
         :type limit: int
         :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。
         :type fw_instance_id: str
@@ -107,6 +111,10 @@ class ListAttackLogsRequest:
         :type source: str
         :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
         :type enterprise_project_id: str
+        :param dst_host: 目标主机
+        :type dst_host: str
+        :param log_type: log_type
+        :type log_type: str
         """
         
         
@@ -131,6 +139,8 @@ class ListAttackLogsRequest:
         self._level = None
         self._source = None
         self._enterprise_project_id = None
+        self._dst_host = None
+        self._log_type = None
         self.discriminator = None
 
         self.start_time = start_time
@@ -169,6 +179,10 @@ class ListAttackLogsRequest:
             self.source = source
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if dst_host is not None:
+            self.dst_host = dst_host
+        if log_type is not None:
+            self.log_type = log_type
 
     @property
     def start_time(self):
@@ -416,7 +430,7 @@ class ListAttackLogsRequest:
     def limit(self):
         """Gets the limit of this ListAttackLogsRequest.
 
-        每页显示个数
+        每页显示个数，范围为1-1024
 
         :return: The limit of this ListAttackLogsRequest.
         :rtype: int
@@ -427,7 +441,7 @@ class ListAttackLogsRequest:
     def limit(self, limit):
         """Sets the limit of this ListAttackLogsRequest.
 
-        每页显示个数
+        每页显示个数，范围为1-1024
 
         :param limit: The limit of this ListAttackLogsRequest.
         :type limit: int
@@ -609,6 +623,50 @@ class ListAttackLogsRequest:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def dst_host(self):
+        """Gets the dst_host of this ListAttackLogsRequest.
+
+        目标主机
+
+        :return: The dst_host of this ListAttackLogsRequest.
+        :rtype: str
+        """
+        return self._dst_host
+
+    @dst_host.setter
+    def dst_host(self, dst_host):
+        """Sets the dst_host of this ListAttackLogsRequest.
+
+        目标主机
+
+        :param dst_host: The dst_host of this ListAttackLogsRequest.
+        :type dst_host: str
+        """
+        self._dst_host = dst_host
+
+    @property
+    def log_type(self):
+        """Gets the log_type of this ListAttackLogsRequest.
+
+        log_type
+
+        :return: The log_type of this ListAttackLogsRequest.
+        :rtype: str
+        """
+        return self._log_type
+
+    @log_type.setter
+    def log_type(self, log_type):
+        """Sets the log_type of this ListAttackLogsRequest.
+
+        log_type
+
+        :param log_type: The log_type of this ListAttackLogsRequest.
+        :type log_type: str
+        """
+        self._log_type = log_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

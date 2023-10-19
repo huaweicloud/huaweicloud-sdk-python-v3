@@ -22,9 +22,9 @@ class ListNetworkInstancesRequest:
         'id': 'list[str]',
         'name': 'list[str]',
         'description': 'list[str]',
+        'cloud_connection_id': 'list[str]',
         'status': 'list[str]',
         'type': 'list[str]',
-        'cloud_connection_id': 'list[str]',
         'instance_id': 'list[str]',
         'region_id': 'list[str]'
     }
@@ -35,34 +35,34 @@ class ListNetworkInstancesRequest:
         'id': 'id',
         'name': 'name',
         'description': 'description',
+        'cloud_connection_id': 'cloud_connection_id',
         'status': 'status',
         'type': 'type',
-        'cloud_connection_id': 'cloud_connection_id',
         'instance_id': 'instance_id',
         'region_id': 'region_id'
     }
 
-    def __init__(self, limit=None, marker=None, id=None, name=None, description=None, status=None, type=None, cloud_connection_id=None, instance_id=None, region_id=None):
+    def __init__(self, limit=None, marker=None, id=None, name=None, description=None, cloud_connection_id=None, status=None, type=None, instance_id=None, region_id=None):
         """ListNetworkInstancesRequest
 
         The model defined in huaweicloud sdk
 
-        :param limit: 分页查询时，每页返回的个数。
+        :param limit: 每页返回的个数。 取值范围：1~1000。
         :type limit: int
-        :param marker: 分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+        :param marker: 翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
         :type marker: str
-        :param id: 根据ID过滤网络实例列表。
+        :param id: 根据id查询，可查询多个id。
         :type id: list[str]
-        :param name: 根据名称过滤网络实例列表。
+        :param name: 根据名字查询，可查询多个名字。
         :type name: list[str]
-        :param description: 根据描述过滤网络实例列表。
+        :param description: 根据描述查询，可查询多个描述。
         :type description: list[str]
+        :param cloud_connection_id: 根据云连接的ID过滤列表。
+        :type cloud_connection_id: list[str]
         :param status: 根据状态过滤网络实例列表。ACTIVE：表示状态可用。
         :type status: list[str]
         :param type: 根据类型过滤网络实例列表。
         :type type: list[str]
-        :param cloud_connection_id: 根据云连接实例ID过滤网络实例列表。
-        :type cloud_connection_id: list[str]
         :param instance_id: 根据网络实例ID过滤网络实例列表。
         :type instance_id: list[str]
         :param region_id: 根据网络实例所在的Region过滤网络实例列表。
@@ -76,9 +76,9 @@ class ListNetworkInstancesRequest:
         self._id = None
         self._name = None
         self._description = None
+        self._cloud_connection_id = None
         self._status = None
         self._type = None
-        self._cloud_connection_id = None
         self._instance_id = None
         self._region_id = None
         self.discriminator = None
@@ -93,12 +93,12 @@ class ListNetworkInstancesRequest:
             self.name = name
         if description is not None:
             self.description = description
+        if cloud_connection_id is not None:
+            self.cloud_connection_id = cloud_connection_id
         if status is not None:
             self.status = status
         if type is not None:
             self.type = type
-        if cloud_connection_id is not None:
-            self.cloud_connection_id = cloud_connection_id
         if instance_id is not None:
             self.instance_id = instance_id
         if region_id is not None:
@@ -108,7 +108,7 @@ class ListNetworkInstancesRequest:
     def limit(self):
         """Gets the limit of this ListNetworkInstancesRequest.
 
-        分页查询时，每页返回的个数。
+        每页返回的个数。 取值范围：1~1000。
 
         :return: The limit of this ListNetworkInstancesRequest.
         :rtype: int
@@ -119,7 +119,7 @@ class ListNetworkInstancesRequest:
     def limit(self, limit):
         """Sets the limit of this ListNetworkInstancesRequest.
 
-        分页查询时，每页返回的个数。
+        每页返回的个数。 取值范围：1~1000。
 
         :param limit: The limit of this ListNetworkInstancesRequest.
         :type limit: int
@@ -130,7 +130,7 @@ class ListNetworkInstancesRequest:
     def marker(self):
         """Gets the marker of this ListNetworkInstancesRequest.
 
-        分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
         :return: The marker of this ListNetworkInstancesRequest.
         :rtype: str
@@ -141,7 +141,7 @@ class ListNetworkInstancesRequest:
     def marker(self, marker):
         """Sets the marker of this ListNetworkInstancesRequest.
 
-        分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
         :param marker: The marker of this ListNetworkInstancesRequest.
         :type marker: str
@@ -152,7 +152,7 @@ class ListNetworkInstancesRequest:
     def id(self):
         """Gets the id of this ListNetworkInstancesRequest.
 
-        根据ID过滤网络实例列表。
+        根据id查询，可查询多个id。
 
         :return: The id of this ListNetworkInstancesRequest.
         :rtype: list[str]
@@ -163,7 +163,7 @@ class ListNetworkInstancesRequest:
     def id(self, id):
         """Sets the id of this ListNetworkInstancesRequest.
 
-        根据ID过滤网络实例列表。
+        根据id查询，可查询多个id。
 
         :param id: The id of this ListNetworkInstancesRequest.
         :type id: list[str]
@@ -174,7 +174,7 @@ class ListNetworkInstancesRequest:
     def name(self):
         """Gets the name of this ListNetworkInstancesRequest.
 
-        根据名称过滤网络实例列表。
+        根据名字查询，可查询多个名字。
 
         :return: The name of this ListNetworkInstancesRequest.
         :rtype: list[str]
@@ -185,7 +185,7 @@ class ListNetworkInstancesRequest:
     def name(self, name):
         """Sets the name of this ListNetworkInstancesRequest.
 
-        根据名称过滤网络实例列表。
+        根据名字查询，可查询多个名字。
 
         :param name: The name of this ListNetworkInstancesRequest.
         :type name: list[str]
@@ -196,7 +196,7 @@ class ListNetworkInstancesRequest:
     def description(self):
         """Gets the description of this ListNetworkInstancesRequest.
 
-        根据描述过滤网络实例列表。
+        根据描述查询，可查询多个描述。
 
         :return: The description of this ListNetworkInstancesRequest.
         :rtype: list[str]
@@ -207,12 +207,34 @@ class ListNetworkInstancesRequest:
     def description(self, description):
         """Sets the description of this ListNetworkInstancesRequest.
 
-        根据描述过滤网络实例列表。
+        根据描述查询，可查询多个描述。
 
         :param description: The description of this ListNetworkInstancesRequest.
         :type description: list[str]
         """
         self._description = description
+
+    @property
+    def cloud_connection_id(self):
+        """Gets the cloud_connection_id of this ListNetworkInstancesRequest.
+
+        根据云连接的ID过滤列表。
+
+        :return: The cloud_connection_id of this ListNetworkInstancesRequest.
+        :rtype: list[str]
+        """
+        return self._cloud_connection_id
+
+    @cloud_connection_id.setter
+    def cloud_connection_id(self, cloud_connection_id):
+        """Sets the cloud_connection_id of this ListNetworkInstancesRequest.
+
+        根据云连接的ID过滤列表。
+
+        :param cloud_connection_id: The cloud_connection_id of this ListNetworkInstancesRequest.
+        :type cloud_connection_id: list[str]
+        """
+        self._cloud_connection_id = cloud_connection_id
 
     @property
     def status(self):
@@ -257,28 +279,6 @@ class ListNetworkInstancesRequest:
         :type type: list[str]
         """
         self._type = type
-
-    @property
-    def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this ListNetworkInstancesRequest.
-
-        根据云连接实例ID过滤网络实例列表。
-
-        :return: The cloud_connection_id of this ListNetworkInstancesRequest.
-        :rtype: list[str]
-        """
-        return self._cloud_connection_id
-
-    @cloud_connection_id.setter
-    def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this ListNetworkInstancesRequest.
-
-        根据云连接实例ID过滤网络实例列表。
-
-        :param cloud_connection_id: The cloud_connection_id of this ListNetworkInstancesRequest.
-        :type cloud_connection_id: list[str]
-        """
-        self._cloud_connection_id = cloud_connection_id
 
     @property
     def instance_id(self):

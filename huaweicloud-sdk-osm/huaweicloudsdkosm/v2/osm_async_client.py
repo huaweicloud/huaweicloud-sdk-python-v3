@@ -16,13 +16,16 @@ class OsmAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls, "GlobalCredentials")
+        if not clazz:
+            client_builder = ClientBuilder(cls, "GlobalCredentials")
+        else:
+            if clazz.__name__ != "OsmAsyncClient":
+                raise TypeError("client type error, support client type is OsmAsyncClient")
+            client_builder = ClientBuilder(clazz, "GlobalCredentials")
 
-        if clazz.__name__ != "OsmClient":
-            raise TypeError("client type error, support client type is OsmClient")
+        
 
-        return ClientBuilder(clazz, "GlobalCredentials")
+        return client_builder
 
     def check_hosts_async(self, request):
         """验证授权主机

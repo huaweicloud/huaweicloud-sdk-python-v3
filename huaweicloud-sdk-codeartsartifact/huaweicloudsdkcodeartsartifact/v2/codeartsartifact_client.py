@@ -16,13 +16,16 @@ class CodeArtsArtifactClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "CodeArtsArtifactClient":
+                raise TypeError("client type error, support client type is CodeArtsArtifactClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "CodeArtsArtifactClient":
-            raise TypeError("client type error, support client type is CodeArtsArtifactClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def show_project_release_files(self, request):
         """获取项目下文件版本信息列表

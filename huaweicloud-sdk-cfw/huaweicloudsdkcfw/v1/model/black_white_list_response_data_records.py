@@ -22,7 +22,8 @@ class BlackWhiteListResponseDataRecords:
         'address_type': 'int',
         'address': 'str',
         'protocol': 'int',
-        'port': 'str'
+        'port': 'str',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class BlackWhiteListResponseDataRecords:
         'address_type': 'address_type',
         'address': 'address',
         'protocol': 'protocol',
-        'port': 'port'
+        'port': 'port',
+        'description': 'description'
     }
 
-    def __init__(self, list_id=None, direction=None, address_type=None, address=None, protocol=None, port=None):
+    def __init__(self, list_id=None, direction=None, address_type=None, address=None, protocol=None, port=None, description=None):
         """BlackWhiteListResponseDataRecords
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class BlackWhiteListResponseDataRecords:
         :type protocol: int
         :param port: 端口
         :type port: str
+        :param description: 描述
+        :type description: str
         """
         
         
@@ -61,6 +65,7 @@ class BlackWhiteListResponseDataRecords:
         self._address = None
         self._protocol = None
         self._port = None
+        self._description = None
         self.discriminator = None
 
         if list_id is not None:
@@ -75,6 +80,8 @@ class BlackWhiteListResponseDataRecords:
             self.protocol = protocol
         if port is not None:
             self.port = port
+        if description is not None:
+            self.description = description
 
     @property
     def list_id(self):
@@ -207,6 +214,28 @@ class BlackWhiteListResponseDataRecords:
         :type port: str
         """
         self._port = port
+
+    @property
+    def description(self):
+        """Gets the description of this BlackWhiteListResponseDataRecords.
+
+        描述
+
+        :return: The description of this BlackWhiteListResponseDataRecords.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this BlackWhiteListResponseDataRecords.
+
+        描述
+
+        :param description: The description of this BlackWhiteListResponseDataRecords.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

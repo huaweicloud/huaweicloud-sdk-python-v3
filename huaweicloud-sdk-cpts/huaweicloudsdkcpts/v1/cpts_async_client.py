@@ -16,13 +16,16 @@ class CptsAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "CptsAsyncClient":
+                raise TypeError("client type error, support client type is CptsAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "CptsClient":
-            raise TypeError("client type error, support client type is CptsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def batch_update_task_status_async(self, request):
         """批量启停任务

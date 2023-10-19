@@ -16,13 +16,16 @@ class WafClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "WafClient":
+                raise TypeError("client type error, support client type is WafClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "WafClient":
-            raise TypeError("client type error, support client type is WafClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def apply_certificate_to_host(self, request):
         """绑定证书到域名

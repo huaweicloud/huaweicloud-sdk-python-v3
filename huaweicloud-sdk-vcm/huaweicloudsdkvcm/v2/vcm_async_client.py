@@ -16,13 +16,16 @@ class VcmAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "VcmAsyncClient":
+                raise TypeError("client type error, support client type is VcmAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "VcmClient":
-            raise TypeError("client type error, support client type is VcmClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def check_audio_job_async(self, request):
         """查询单个作业

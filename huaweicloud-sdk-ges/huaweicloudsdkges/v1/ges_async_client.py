@@ -16,13 +16,16 @@ class GesAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "GesAsyncClient":
+                raise TypeError("client type error, support client type is GesAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "GesClient":
-            raise TypeError("client type error, support client type is GesClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def attach_eip_async(self, request):
         """绑定EIP(1.0.6)

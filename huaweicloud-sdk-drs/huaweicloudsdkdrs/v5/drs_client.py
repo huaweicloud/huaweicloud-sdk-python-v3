@@ -16,13 +16,16 @@ class DrsClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "DrsClient":
+                raise TypeError("client type error, support client type is DrsClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "DrsClient":
-            raise TypeError("client type error, support client type is DrsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def batch_create_jobs_async(self, request):
         """批量异步创建任务

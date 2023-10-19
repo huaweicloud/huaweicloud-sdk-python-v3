@@ -41,7 +41,7 @@ class AggregatePolicyComplianceSummaryResult:
         :type assignment_details: :class:`huaweicloudsdkconfig.v1.PolicyComplianceSummaryUnit`
         :param group_name: 分组名称
         :type group_name: str
-        :param group_account_name: 账号名称
+        :param group_account_name: 帐号名称
         :type group_account_name: str
         """
         
@@ -124,7 +124,7 @@ class AggregatePolicyComplianceSummaryResult:
     def group_account_name(self):
         """Gets the group_account_name of this AggregatePolicyComplianceSummaryResult.
 
-        账号名称
+        帐号名称
 
         :return: The group_account_name of this AggregatePolicyComplianceSummaryResult.
         :rtype: str
@@ -135,7 +135,7 @@ class AggregatePolicyComplianceSummaryResult:
     def group_account_name(self, group_account_name):
         """Sets the group_account_name of this AggregatePolicyComplianceSummaryResult.
 
-        账号名称
+        帐号名称
 
         :param group_account_name: The group_account_name of this AggregatePolicyComplianceSummaryResult.
         :type group_account_name: str

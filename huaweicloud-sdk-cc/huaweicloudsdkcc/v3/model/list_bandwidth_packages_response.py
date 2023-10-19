@@ -18,43 +18,81 @@ class ListBandwidthPackagesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'bandwidth_packages': 'list[BandwidthPackage]',
+        'request_id': 'str',
         'page_info': 'PageInfo',
-        'request_id': 'str'
+        'bandwidth_packages': 'list[BandwidthPackage]'
     }
 
     attribute_map = {
-        'bandwidth_packages': 'bandwidth_packages',
+        'request_id': 'request_id',
         'page_info': 'page_info',
-        'request_id': 'request_id'
+        'bandwidth_packages': 'bandwidth_packages'
     }
 
-    def __init__(self, bandwidth_packages=None, page_info=None, request_id=None):
+    def __init__(self, request_id=None, page_info=None, bandwidth_packages=None):
         """ListBandwidthPackagesResponse
 
         The model defined in huaweicloud sdk
 
-        :param bandwidth_packages: 带宽包实例列表。
-        :type bandwidth_packages: list[:class:`huaweicloudsdkcc.v3.BandwidthPackage`]
+        :param request_id: 资源ID标识符。
+        :type request_id: str
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
-        :param request_id: 请求ID。
-        :type request_id: str
+        :param bandwidth_packages: 带宽包实例列表。
+        :type bandwidth_packages: list[:class:`huaweicloudsdkcc.v3.BandwidthPackage`]
         """
         
         super(ListBandwidthPackagesResponse, self).__init__()
 
-        self._bandwidth_packages = None
-        self._page_info = None
         self._request_id = None
+        self._page_info = None
+        self._bandwidth_packages = None
         self.discriminator = None
 
-        if bandwidth_packages is not None:
-            self.bandwidth_packages = bandwidth_packages
+        self.request_id = request_id
         if page_info is not None:
             self.page_info = page_info
-        if request_id is not None:
-            self.request_id = request_id
+        self.bandwidth_packages = bandwidth_packages
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this ListBandwidthPackagesResponse.
+
+        资源ID标识符。
+
+        :return: The request_id of this ListBandwidthPackagesResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ListBandwidthPackagesResponse.
+
+        资源ID标识符。
+
+        :param request_id: The request_id of this ListBandwidthPackagesResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
+
+    @property
+    def page_info(self):
+        """Gets the page_info of this ListBandwidthPackagesResponse.
+
+        :return: The page_info of this ListBandwidthPackagesResponse.
+        :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        """Sets the page_info of this ListBandwidthPackagesResponse.
+
+        :param page_info: The page_info of this ListBandwidthPackagesResponse.
+        :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
+        """
+        self._page_info = page_info
 
     @property
     def bandwidth_packages(self):
@@ -77,46 +115,6 @@ class ListBandwidthPackagesResponse(SdkResponse):
         :type bandwidth_packages: list[:class:`huaweicloudsdkcc.v3.BandwidthPackage`]
         """
         self._bandwidth_packages = bandwidth_packages
-
-    @property
-    def page_info(self):
-        """Gets the page_info of this ListBandwidthPackagesResponse.
-
-        :return: The page_info of this ListBandwidthPackagesResponse.
-        :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
-        """
-        return self._page_info
-
-    @page_info.setter
-    def page_info(self, page_info):
-        """Sets the page_info of this ListBandwidthPackagesResponse.
-
-        :param page_info: The page_info of this ListBandwidthPackagesResponse.
-        :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
-        """
-        self._page_info = page_info
-
-    @property
-    def request_id(self):
-        """Gets the request_id of this ListBandwidthPackagesResponse.
-
-        请求ID。
-
-        :return: The request_id of this ListBandwidthPackagesResponse.
-        :rtype: str
-        """
-        return self._request_id
-
-    @request_id.setter
-    def request_id(self, request_id):
-        """Sets the request_id of this ListBandwidthPackagesResponse.
-
-        请求ID。
-
-        :param request_id: The request_id of this ListBandwidthPackagesResponse.
-        :type request_id: str
-        """
-        self._request_id = request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

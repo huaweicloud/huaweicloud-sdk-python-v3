@@ -20,17 +20,21 @@ class ListGaussMySqlDatabaseRequest:
         'x_language': 'str',
         'instance_id': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'name': 'str',
+        'charset': 'str'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
         'instance_id': 'instance_id',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'name': 'name',
+        'charset': 'charset'
     }
 
-    def __init__(self, x_language=None, instance_id=None, offset=None, limit=None):
+    def __init__(self, x_language=None, instance_id=None, offset=None, limit=None, name=None, charset=None):
         """ListGaussMySqlDatabaseRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +47,10 @@ class ListGaussMySqlDatabaseRequest:
         :type offset: int
         :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
         :type limit: int
+        :param name: 数据库名称。
+        :type name: str
+        :param charset: 数据库使用的字符集，如utf8mb4、gbk等。
+        :type charset: str
         """
         
         
@@ -51,6 +59,8 @@ class ListGaussMySqlDatabaseRequest:
         self._instance_id = None
         self._offset = None
         self._limit = None
+        self._name = None
+        self._charset = None
         self.discriminator = None
 
         if x_language is not None:
@@ -60,6 +70,10 @@ class ListGaussMySqlDatabaseRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if name is not None:
+            self.name = name
+        if charset is not None:
+            self.charset = charset
 
     @property
     def x_language(self):
@@ -148,6 +162,50 @@ class ListGaussMySqlDatabaseRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def name(self):
+        """Gets the name of this ListGaussMySqlDatabaseRequest.
+
+        数据库名称。
+
+        :return: The name of this ListGaussMySqlDatabaseRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListGaussMySqlDatabaseRequest.
+
+        数据库名称。
+
+        :param name: The name of this ListGaussMySqlDatabaseRequest.
+        :type name: str
+        """
+        self._name = name
+
+    @property
+    def charset(self):
+        """Gets the charset of this ListGaussMySqlDatabaseRequest.
+
+        数据库使用的字符集，如utf8mb4、gbk等。
+
+        :return: The charset of this ListGaussMySqlDatabaseRequest.
+        :rtype: str
+        """
+        return self._charset
+
+    @charset.setter
+    def charset(self, charset):
+        """Sets the charset of this ListGaussMySqlDatabaseRequest.
+
+        数据库使用的字符集，如utf8mb4、gbk等。
+
+        :param charset: The charset of this ListGaussMySqlDatabaseRequest.
+        :type charset: str
+        """
+        self._charset = charset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

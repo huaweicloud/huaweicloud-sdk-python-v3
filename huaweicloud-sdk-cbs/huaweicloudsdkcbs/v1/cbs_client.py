@@ -16,13 +16,16 @@ class CbsClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "CbsClient":
+                raise TypeError("client type error, support client type is CbsClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "CbsClient":
-            raise TypeError("client type error, support client type is CbsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def collect_hot_questions(self, request):
         """热点问题统计

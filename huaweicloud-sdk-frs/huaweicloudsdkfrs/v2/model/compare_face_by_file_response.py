@@ -20,16 +20,18 @@ class CompareFaceByFileResponse(SdkResponse):
     openapi_types = {
         'image1_face': 'CompareFace',
         'image2_face': 'CompareFace',
-        'similarity': 'float'
+        'similarity': 'float',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'image1_face': 'image1_face',
         'image2_face': 'image2_face',
-        'similarity': 'similarity'
+        'similarity': 'similarity',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, image1_face=None, image2_face=None, similarity=None):
+    def __init__(self, image1_face=None, image2_face=None, similarity=None, x_request_id=None):
         """CompareFaceByFileResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +42,8 @@ class CompareFaceByFileResponse(SdkResponse):
         :type image2_face: :class:`huaweicloudsdkfrs.v2.CompareFace`
         :param similarity: 人脸相似度，1表示最大，0表示最小，值越大表示越相似。一般情况下超过0.93即可认为是同一个人。 调用失败时无此字段。
         :type similarity: float
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(CompareFaceByFileResponse, self).__init__()
@@ -47,6 +51,7 @@ class CompareFaceByFileResponse(SdkResponse):
         self._image1_face = None
         self._image2_face = None
         self._similarity = None
+        self._x_request_id = None
         self.discriminator = None
 
         if image1_face is not None:
@@ -55,6 +60,8 @@ class CompareFaceByFileResponse(SdkResponse):
             self.image2_face = image2_face
         if similarity is not None:
             self.similarity = similarity
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def image1_face(self):
@@ -113,6 +120,24 @@ class CompareFaceByFileResponse(SdkResponse):
         :type similarity: float
         """
         self._similarity = similarity
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this CompareFaceByFileResponse.
+
+        :return: The x_request_id of this CompareFaceByFileResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this CompareFaceByFileResponse.
+
+        :param x_request_id: The x_request_id of this CompareFaceByFileResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

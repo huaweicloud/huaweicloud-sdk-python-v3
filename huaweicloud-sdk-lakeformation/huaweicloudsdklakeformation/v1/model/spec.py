@@ -25,6 +25,8 @@ class Spec:
         'max_stride_num': 'int',
         'usage_measure_id': 'int',
         'usage_factor': 'str',
+        'usage_value': 'int',
+        'free_usage_value': 'int',
         'stride_num_whitelist': 'list[int]'
     }
 
@@ -37,15 +39,17 @@ class Spec:
         'max_stride_num': 'max_stride_num',
         'usage_measure_id': 'usage_measure_id',
         'usage_factor': 'usage_factor',
+        'usage_value': 'usage_value',
+        'free_usage_value': 'free_usage_value',
         'stride_num_whitelist': 'stride_num_whitelist'
     }
 
-    def __init__(self, spec_code=None, resource_type=None, stride=None, unit=None, min_stride_num=None, max_stride_num=None, usage_measure_id=None, usage_factor=None, stride_num_whitelist=None):
+    def __init__(self, spec_code=None, resource_type=None, stride=None, unit=None, min_stride_num=None, max_stride_num=None, usage_measure_id=None, usage_factor=None, usage_value=None, free_usage_value=None, stride_num_whitelist=None):
         """Spec
 
         The model defined in huaweicloud sdk
 
-        :param spec_code: 规格编码
+        :param spec_code: 规格编码。lakeformation.unit.basic.qps：每秒查询率（QPS）产品
         :type spec_code: str
         :param resource_type: 资源编码
         :type resource_type: str
@@ -61,6 +65,10 @@ class Spec:
         :type usage_measure_id: int
         :param usage_factor: 使用量因子
         :type usage_factor: str
+        :param usage_value: 使用量，包含免费额度和单位额度，例如api调用次数，单位是次，前100万次调用免费，计费标准是5元每100万次，这里返回200万，元数据个数，单位是万个，前100万个免费，计费标准是5元每10万个，这里返回110
+        :type usage_value: int
+        :param free_usage_value: 免费使用额度，例如api调用次数，单位是次，前100万次调用免费，这里返回100万，元数据个数，单位是万个，前100万个免费，这里返回100
+        :type free_usage_value: int
         :param stride_num_whitelist: 步数白名单，返回时，步数必须是白名单中的值
         :type stride_num_whitelist: list[int]
         """
@@ -75,6 +83,8 @@ class Spec:
         self._max_stride_num = None
         self._usage_measure_id = None
         self._usage_factor = None
+        self._usage_value = None
+        self._free_usage_value = None
         self._stride_num_whitelist = None
         self.discriminator = None
 
@@ -94,6 +104,10 @@ class Spec:
             self.usage_measure_id = usage_measure_id
         if usage_factor is not None:
             self.usage_factor = usage_factor
+        if usage_value is not None:
+            self.usage_value = usage_value
+        if free_usage_value is not None:
+            self.free_usage_value = free_usage_value
         if stride_num_whitelist is not None:
             self.stride_num_whitelist = stride_num_whitelist
 
@@ -101,7 +115,7 @@ class Spec:
     def spec_code(self):
         """Gets the spec_code of this Spec.
 
-        规格编码
+        规格编码。lakeformation.unit.basic.qps：每秒查询率（QPS）产品
 
         :return: The spec_code of this Spec.
         :rtype: str
@@ -112,7 +126,7 @@ class Spec:
     def spec_code(self, spec_code):
         """Sets the spec_code of this Spec.
 
-        规格编码
+        规格编码。lakeformation.unit.basic.qps：每秒查询率（QPS）产品
 
         :param spec_code: The spec_code of this Spec.
         :type spec_code: str
@@ -272,6 +286,50 @@ class Spec:
         :type usage_factor: str
         """
         self._usage_factor = usage_factor
+
+    @property
+    def usage_value(self):
+        """Gets the usage_value of this Spec.
+
+        使用量，包含免费额度和单位额度，例如api调用次数，单位是次，前100万次调用免费，计费标准是5元每100万次，这里返回200万，元数据个数，单位是万个，前100万个免费，计费标准是5元每10万个，这里返回110
+
+        :return: The usage_value of this Spec.
+        :rtype: int
+        """
+        return self._usage_value
+
+    @usage_value.setter
+    def usage_value(self, usage_value):
+        """Sets the usage_value of this Spec.
+
+        使用量，包含免费额度和单位额度，例如api调用次数，单位是次，前100万次调用免费，计费标准是5元每100万次，这里返回200万，元数据个数，单位是万个，前100万个免费，计费标准是5元每10万个，这里返回110
+
+        :param usage_value: The usage_value of this Spec.
+        :type usage_value: int
+        """
+        self._usage_value = usage_value
+
+    @property
+    def free_usage_value(self):
+        """Gets the free_usage_value of this Spec.
+
+        免费使用额度，例如api调用次数，单位是次，前100万次调用免费，这里返回100万，元数据个数，单位是万个，前100万个免费，这里返回100
+
+        :return: The free_usage_value of this Spec.
+        :rtype: int
+        """
+        return self._free_usage_value
+
+    @free_usage_value.setter
+    def free_usage_value(self, free_usage_value):
+        """Sets the free_usage_value of this Spec.
+
+        免费使用额度，例如api调用次数，单位是次，前100万次调用免费，这里返回100万，元数据个数，单位是万个，前100万个免费，这里返回100
+
+        :param free_usage_value: The free_usage_value of this Spec.
+        :type free_usage_value: int
+        """
+        self._free_usage_value = free_usage_value
 
     @property
     def stride_num_whitelist(self):

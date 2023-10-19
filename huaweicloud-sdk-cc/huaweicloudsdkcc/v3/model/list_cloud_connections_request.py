@@ -22,8 +22,8 @@ class ListCloudConnectionsRequest:
         'id': 'list[str]',
         'name': 'list[str]',
         'description': 'list[str]',
-        'status': 'list[str]',
         'enterprise_project_id': 'list[str]',
+        'status': 'list[str]',
         'type': 'list[str]',
         'used_scene': 'list[str]'
     }
@@ -34,31 +34,31 @@ class ListCloudConnectionsRequest:
         'id': 'id',
         'name': 'name',
         'description': 'description',
-        'status': 'status',
         'enterprise_project_id': 'enterprise_project_id',
+        'status': 'status',
         'type': 'type',
         'used_scene': 'used_scene'
     }
 
-    def __init__(self, limit=None, marker=None, id=None, name=None, description=None, status=None, enterprise_project_id=None, type=None, used_scene=None):
+    def __init__(self, limit=None, marker=None, id=None, name=None, description=None, enterprise_project_id=None, status=None, type=None, used_scene=None):
         """ListCloudConnectionsRequest
 
         The model defined in huaweicloud sdk
 
-        :param limit: 分页查询时，每页返回的个数。
+        :param limit: 每页返回的个数。 取值范围：1~1000。
         :type limit: int
-        :param marker: 分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+        :param marker: 翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
         :type marker: str
-        :param id: 根据ID过滤云连接实例列表。
+        :param id: 根据id查询，可查询多个id。
         :type id: list[str]
-        :param name: 根据名称过滤云连接实例列表。
+        :param name: 根据名字查询，可查询多个名字。
         :type name: list[str]
-        :param description: 根据描述过滤云连接实例列表。
+        :param description: 根据描述查询，可查询多个描述。
         :type description: list[str]
+        :param enterprise_project_id: 根据企业项目ID过滤列表。
+        :type enterprise_project_id: list[str]
         :param status: 根据状态过滤云连接实例列表。ACTIVE：表示状态可用。
         :type status: list[str]
-        :param enterprise_project_id: 根据企业项目ID过滤云连接实例列表。
-        :type enterprise_project_id: list[str]
         :param type: 根据类型过滤云连接实例列表。
         :type type: list[str]
         :param used_scene: 根据使用场景过滤云连接实例列表。
@@ -72,8 +72,8 @@ class ListCloudConnectionsRequest:
         self._id = None
         self._name = None
         self._description = None
-        self._status = None
         self._enterprise_project_id = None
+        self._status = None
         self._type = None
         self._used_scene = None
         self.discriminator = None
@@ -88,10 +88,10 @@ class ListCloudConnectionsRequest:
             self.name = name
         if description is not None:
             self.description = description
-        if status is not None:
-            self.status = status
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if status is not None:
+            self.status = status
         if type is not None:
             self.type = type
         if used_scene is not None:
@@ -101,7 +101,7 @@ class ListCloudConnectionsRequest:
     def limit(self):
         """Gets the limit of this ListCloudConnectionsRequest.
 
-        分页查询时，每页返回的个数。
+        每页返回的个数。 取值范围：1~1000。
 
         :return: The limit of this ListCloudConnectionsRequest.
         :rtype: int
@@ -112,7 +112,7 @@ class ListCloudConnectionsRequest:
     def limit(self, limit):
         """Sets the limit of this ListCloudConnectionsRequest.
 
-        分页查询时，每页返回的个数。
+        每页返回的个数。 取值范围：1~1000。
 
         :param limit: The limit of this ListCloudConnectionsRequest.
         :type limit: int
@@ -123,7 +123,7 @@ class ListCloudConnectionsRequest:
     def marker(self):
         """Gets the marker of this ListCloudConnectionsRequest.
 
-        分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
         :return: The marker of this ListCloudConnectionsRequest.
         :rtype: str
@@ -134,7 +134,7 @@ class ListCloudConnectionsRequest:
     def marker(self, marker):
         """Sets the marker of this ListCloudConnectionsRequest.
 
-        分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
         :param marker: The marker of this ListCloudConnectionsRequest.
         :type marker: str
@@ -145,7 +145,7 @@ class ListCloudConnectionsRequest:
     def id(self):
         """Gets the id of this ListCloudConnectionsRequest.
 
-        根据ID过滤云连接实例列表。
+        根据id查询，可查询多个id。
 
         :return: The id of this ListCloudConnectionsRequest.
         :rtype: list[str]
@@ -156,7 +156,7 @@ class ListCloudConnectionsRequest:
     def id(self, id):
         """Sets the id of this ListCloudConnectionsRequest.
 
-        根据ID过滤云连接实例列表。
+        根据id查询，可查询多个id。
 
         :param id: The id of this ListCloudConnectionsRequest.
         :type id: list[str]
@@ -167,7 +167,7 @@ class ListCloudConnectionsRequest:
     def name(self):
         """Gets the name of this ListCloudConnectionsRequest.
 
-        根据名称过滤云连接实例列表。
+        根据名字查询，可查询多个名字。
 
         :return: The name of this ListCloudConnectionsRequest.
         :rtype: list[str]
@@ -178,7 +178,7 @@ class ListCloudConnectionsRequest:
     def name(self, name):
         """Sets the name of this ListCloudConnectionsRequest.
 
-        根据名称过滤云连接实例列表。
+        根据名字查询，可查询多个名字。
 
         :param name: The name of this ListCloudConnectionsRequest.
         :type name: list[str]
@@ -189,7 +189,7 @@ class ListCloudConnectionsRequest:
     def description(self):
         """Gets the description of this ListCloudConnectionsRequest.
 
-        根据描述过滤云连接实例列表。
+        根据描述查询，可查询多个描述。
 
         :return: The description of this ListCloudConnectionsRequest.
         :rtype: list[str]
@@ -200,12 +200,34 @@ class ListCloudConnectionsRequest:
     def description(self, description):
         """Sets the description of this ListCloudConnectionsRequest.
 
-        根据描述过滤云连接实例列表。
+        根据描述查询，可查询多个描述。
 
         :param description: The description of this ListCloudConnectionsRequest.
         :type description: list[str]
         """
         self._description = description
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListCloudConnectionsRequest.
+
+        根据企业项目ID过滤列表。
+
+        :return: The enterprise_project_id of this ListCloudConnectionsRequest.
+        :rtype: list[str]
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListCloudConnectionsRequest.
+
+        根据企业项目ID过滤列表。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListCloudConnectionsRequest.
+        :type enterprise_project_id: list[str]
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def status(self):
@@ -228,28 +250,6 @@ class ListCloudConnectionsRequest:
         :type status: list[str]
         """
         self._status = status
-
-    @property
-    def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListCloudConnectionsRequest.
-
-        根据企业项目ID过滤云连接实例列表。
-
-        :return: The enterprise_project_id of this ListCloudConnectionsRequest.
-        :rtype: list[str]
-        """
-        return self._enterprise_project_id
-
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListCloudConnectionsRequest.
-
-        根据企业项目ID过滤云连接实例列表。
-
-        :param enterprise_project_id: The enterprise_project_id of this ListCloudConnectionsRequest.
-        :type enterprise_project_id: list[str]
-        """
-        self._enterprise_project_id = enterprise_project_id
 
     @property
     def type(self):

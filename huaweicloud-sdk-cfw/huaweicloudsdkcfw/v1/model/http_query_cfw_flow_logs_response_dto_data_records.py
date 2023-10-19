@@ -28,7 +28,8 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         'dst_ip': 'str',
         'app': 'str',
         'dst_port': 'str',
-        'protocol': 'str'
+        'protocol': 'str',
+        'dst_host': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         'dst_ip': 'dst_ip',
         'app': 'app',
         'dst_port': 'dst_port',
-        'protocol': 'protocol'
+        'protocol': 'protocol',
+        'dst_host': 'dst_host'
     }
 
-    def __init__(self, bytes=None, direction=None, packets=None, start_time=None, end_time=None, log_id=None, src_ip=None, src_port=None, dst_ip=None, app=None, dst_port=None, protocol=None):
+    def __init__(self, bytes=None, direction=None, packets=None, start_time=None, end_time=None, log_id=None, src_ip=None, src_port=None, dst_ip=None, app=None, dst_port=None, protocol=None, dst_host=None):
         """HttpQueryCfwFlowLogsResponseDTODataRecords
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         :type dst_port: str
         :param protocol: 协议类型:TCP为6,UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
         :type protocol: str
+        :param dst_host: 目标主机
+        :type dst_host: str
         """
         
         
@@ -91,6 +95,7 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         self._app = None
         self._dst_port = None
         self._protocol = None
+        self._dst_host = None
         self.discriminator = None
 
         if bytes is not None:
@@ -117,6 +122,8 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
             self.dst_port = dst_port
         if protocol is not None:
             self.protocol = protocol
+        if dst_host is not None:
+            self.dst_host = dst_host
 
     @property
     def bytes(self):
@@ -381,6 +388,28 @@ class HttpQueryCfwFlowLogsResponseDTODataRecords:
         :type protocol: str
         """
         self._protocol = protocol
+
+    @property
+    def dst_host(self):
+        """Gets the dst_host of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        目标主机
+
+        :return: The dst_host of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_host
+
+    @dst_host.setter
+    def dst_host(self, dst_host):
+        """Sets the dst_host of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+
+        目标主机
+
+        :param dst_host: The dst_host of this HttpQueryCfwFlowLogsResponseDTODataRecords.
+        :type dst_host: str
+        """
+        self._dst_host = dst_host
 
     def to_dict(self):
         """Returns the model properties as a dict"""

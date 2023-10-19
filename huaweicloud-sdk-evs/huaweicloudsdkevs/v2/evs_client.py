@@ -16,13 +16,16 @@ class EvsClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "EvsClient":
+                raise TypeError("client type error, support client type is EvsClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "EvsClient":
-            raise TypeError("client type error, support client type is EvsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def batch_create_volume_tags(self, request):
         """为指定云硬盘批量添加标签

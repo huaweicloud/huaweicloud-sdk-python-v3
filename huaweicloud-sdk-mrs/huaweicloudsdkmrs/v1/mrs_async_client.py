@@ -16,13 +16,16 @@ class MrsAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "MrsAsyncClient":
+                raise TypeError("client type error, support client type is MrsAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "MrsClient":
-            raise TypeError("client type error, support client type is MrsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def batch_create_cluster_tags_async(self, request):
         """批量添加集群标签

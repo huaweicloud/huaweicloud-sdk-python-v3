@@ -19,16 +19,18 @@ class Features:
     openapi_types = {
         'support_acl': 'bool',
         'support_transparent_client_ip': 'bool',
-        'support_ssl': 'bool'
+        'support_ssl': 'bool',
+        'support_audit_log': 'bool'
     }
 
     attribute_map = {
         'support_acl': 'support_acl',
         'support_transparent_client_ip': 'support_transparent_client_ip',
-        'support_ssl': 'support_ssl'
+        'support_ssl': 'support_ssl',
+        'support_audit_log': 'support_audit_log'
     }
 
-    def __init__(self, support_acl=None, support_transparent_client_ip=None, support_ssl=None):
+    def __init__(self, support_acl=None, support_transparent_client_ip=None, support_ssl=None, support_audit_log=None):
         """Features
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class Features:
         :type support_transparent_client_ip: bool
         :param support_ssl: 是否支持SSL - true：是 - false：否 
         :type support_ssl: bool
+        :param support_audit_log: 是否支持审计日志 - true: 是 - false: 否 
+        :type support_audit_log: bool
         """
         
         
@@ -46,6 +50,7 @@ class Features:
         self._support_acl = None
         self._support_transparent_client_ip = None
         self._support_ssl = None
+        self._support_audit_log = None
         self.discriminator = None
 
         if support_acl is not None:
@@ -54,6 +59,8 @@ class Features:
             self.support_transparent_client_ip = support_transparent_client_ip
         if support_ssl is not None:
             self.support_ssl = support_ssl
+        if support_audit_log is not None:
+            self.support_audit_log = support_audit_log
 
     @property
     def support_acl(self):
@@ -120,6 +127,28 @@ class Features:
         :type support_ssl: bool
         """
         self._support_ssl = support_ssl
+
+    @property
+    def support_audit_log(self):
+        """Gets the support_audit_log of this Features.
+
+        是否支持审计日志 - true: 是 - false: 否 
+
+        :return: The support_audit_log of this Features.
+        :rtype: bool
+        """
+        return self._support_audit_log
+
+    @support_audit_log.setter
+    def support_audit_log(self, support_audit_log):
+        """Sets the support_audit_log of this Features.
+
+        是否支持审计日志 - true: 是 - false: 否 
+
+        :param support_audit_log: The support_audit_log of this Features.
+        :type support_audit_log: bool
+        """
+        self._support_audit_log = support_audit_log
 
     def to_dict(self):
         """Returns the model properties as a dict"""

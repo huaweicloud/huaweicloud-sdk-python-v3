@@ -33,7 +33,7 @@ class ActionOnComponentBuild:
 
         :param archive: 
         :type archive: :class:`huaweicloudsdkcae.v1.Archive`
-        :param parameters: 构建附加参数。 - base_image：基础镜像地址。 - build_cmd：自定义构建命令。 - dockerfile_path：自定义dockerfile文件路径 - dockerfile_content：自定义dockerfile内容
+        :param parameters: 构建附加参数。 - base_image：基础镜像地址。 - build_cmd：自定义构建命令。 - dockerfile_path：自定义dockerfile文件路径 - dockerfile_content：自定义dockerfile内容 - artifact_name: 针对java多模块构建，指定构建后运行的产物，以\&quot;.jar\&quot;结尾。
         :type parameters: dict(str, str)
         """
         
@@ -70,7 +70,7 @@ class ActionOnComponentBuild:
     def parameters(self):
         """Gets the parameters of this ActionOnComponentBuild.
 
-        构建附加参数。 - base_image：基础镜像地址。 - build_cmd：自定义构建命令。 - dockerfile_path：自定义dockerfile文件路径 - dockerfile_content：自定义dockerfile内容
+        构建附加参数。 - base_image：基础镜像地址。 - build_cmd：自定义构建命令。 - dockerfile_path：自定义dockerfile文件路径 - dockerfile_content：自定义dockerfile内容 - artifact_name: 针对java多模块构建，指定构建后运行的产物，以\".jar\"结尾。
 
         :return: The parameters of this ActionOnComponentBuild.
         :rtype: dict(str, str)
@@ -81,7 +81,7 @@ class ActionOnComponentBuild:
     def parameters(self, parameters):
         """Sets the parameters of this ActionOnComponentBuild.
 
-        构建附加参数。 - base_image：基础镜像地址。 - build_cmd：自定义构建命令。 - dockerfile_path：自定义dockerfile文件路径 - dockerfile_content：自定义dockerfile内容
+        构建附加参数。 - base_image：基础镜像地址。 - build_cmd：自定义构建命令。 - dockerfile_path：自定义dockerfile文件路径 - dockerfile_content：自定义dockerfile内容 - artifact_name: 针对java多模块构建，指定构建后运行的产物，以\".jar\"结尾。
 
         :param parameters: The parameters of this ActionOnComponentBuild.
         :type parameters: dict(str, str)

@@ -16,13 +16,16 @@ class IoTEdgeClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "IoTEdgeClient":
+                raise TypeError("client type error, support client type is IoTEdgeClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "IoTEdgeClient":
-            raise TypeError("client type error, support client type is IoTEdgeClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_edge_node(self, request):
         """创建边缘节点

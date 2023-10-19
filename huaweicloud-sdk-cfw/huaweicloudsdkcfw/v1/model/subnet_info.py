@@ -23,7 +23,8 @@ class SubnetInfo:
         'id': 'str',
         'gateway_ip': 'str',
         'vpc_id': 'str',
-        'status': 'str'
+        'status': 'str',
+        'ipv6_enable': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class SubnetInfo:
         'id': 'id',
         'gateway_ip': 'gateway_ip',
         'vpc_id': 'vpc_id',
-        'status': 'status'
+        'status': 'status',
+        'ipv6_enable': 'ipv6_enable'
     }
 
-    def __init__(self, availability_zone=None, cidr=None, name=None, id=None, gateway_ip=None, vpc_id=None, status=None):
+    def __init__(self, availability_zone=None, cidr=None, name=None, id=None, gateway_ip=None, vpc_id=None, status=None, ipv6_enable=None):
         """SubnetInfo
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class SubnetInfo:
         :type vpc_id: str
         :param status: 子网的状态
         :type status: str
+        :param ipv6_enable: 是否支持ipv6，boolean值为true表示是，false表示否
+        :type ipv6_enable: bool
         """
         
         
@@ -66,12 +70,15 @@ class SubnetInfo:
         self._gateway_ip = None
         self._vpc_id = None
         self._status = None
+        self._ipv6_enable = None
         self.discriminator = None
 
         if availability_zone is not None:
             self.availability_zone = availability_zone
-        self.cidr = cidr
-        self.name = name
+        if cidr is not None:
+            self.cidr = cidr
+        if name is not None:
+            self.name = name
         if id is not None:
             self.id = id
         if gateway_ip is not None:
@@ -80,6 +87,8 @@ class SubnetInfo:
             self.vpc_id = vpc_id
         if status is not None:
             self.status = status
+        if ipv6_enable is not None:
+            self.ipv6_enable = ipv6_enable
 
     @property
     def availability_zone(self):
@@ -234,6 +243,28 @@ class SubnetInfo:
         :type status: str
         """
         self._status = status
+
+    @property
+    def ipv6_enable(self):
+        """Gets the ipv6_enable of this SubnetInfo.
+
+        是否支持ipv6，boolean值为true表示是，false表示否
+
+        :return: The ipv6_enable of this SubnetInfo.
+        :rtype: bool
+        """
+        return self._ipv6_enable
+
+    @ipv6_enable.setter
+    def ipv6_enable(self, ipv6_enable):
+        """Sets the ipv6_enable of this SubnetInfo.
+
+        是否支持ipv6，boolean值为true表示是，false表示否
+
+        :param ipv6_enable: The ipv6_enable of this SubnetInfo.
+        :type ipv6_enable: bool
+        """
+        self._ipv6_enable = ipv6_enable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

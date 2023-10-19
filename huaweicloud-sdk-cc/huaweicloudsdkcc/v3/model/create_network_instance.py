@@ -19,48 +19,48 @@ class CreateNetworkInstance:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'type': 'str',
         'instance_id': 'str',
         'instance_domain_id': 'str',
         'project_id': 'str',
         'region_id': 'str',
         'cloud_connection_id': 'str',
+        'type': 'str',
         'cidrs': 'list[str]'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
-        'type': 'type',
         'instance_id': 'instance_id',
         'instance_domain_id': 'instance_domain_id',
         'project_id': 'project_id',
         'region_id': 'region_id',
         'cloud_connection_id': 'cloud_connection_id',
+        'type': 'type',
         'cidrs': 'cidrs'
     }
 
-    def __init__(self, name=None, description=None, type=None, instance_id=None, instance_domain_id=None, project_id=None, region_id=None, cloud_connection_id=None, cidrs=None):
+    def __init__(self, name=None, description=None, instance_id=None, instance_domain_id=None, project_id=None, region_id=None, cloud_connection_id=None, type=None, cidrs=None):
         """CreateNetworkInstance
 
         The model defined in huaweicloud sdk
 
-        :param name: 网络实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
+        :param name: 实例名字。
         :type name: str
-        :param description: 网络实例的描述。不支持 &lt;&gt;。
+        :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
+        :param instance_id: 资源ID标识符。
+        :type instance_id: str
+        :param instance_domain_id: 实例所属帐号ID。
+        :type instance_domain_id: str
+        :param project_id: 实例所属项目ID。
+        :type project_id: str
+        :param region_id: RegionID。
+        :type region_id: str
+        :param cloud_connection_id: 资源ID标识符。
+        :type cloud_connection_id: str
         :param type: 添加到云连接网络实例的类型，有效值： - vpc：虚拟私有云。 - vgw：虚拟网关。
         :type type: str
-        :param instance_id: 添加到云连接网络实例的ID，VPC或者VGW的ID。
-        :type instance_id: str
-        :param instance_domain_id: 网络实例的账户ID。跨账号加载必填；同账号下资源加载不填。
-        :type instance_domain_id: str
-        :param project_id: 网络实例的项目ID。
-        :type project_id: str
-        :param region_id: 网络实例的RegionID。
-        :type region_id: str
-        :param cloud_connection_id: 云连接实例ID。
-        :type cloud_connection_id: str
         :param cidrs: 网络实例发布的网段路由列表。
         :type cidrs: list[str]
         """
@@ -69,12 +69,12 @@ class CreateNetworkInstance:
 
         self._name = None
         self._description = None
-        self._type = None
         self._instance_id = None
         self._instance_domain_id = None
         self._project_id = None
         self._region_id = None
         self._cloud_connection_id = None
+        self._type = None
         self._cidrs = None
         self.discriminator = None
 
@@ -82,20 +82,20 @@ class CreateNetworkInstance:
             self.name = name
         if description is not None:
             self.description = description
-        self.type = type
         self.instance_id = instance_id
         if instance_domain_id is not None:
             self.instance_domain_id = instance_domain_id
         self.project_id = project_id
         self.region_id = region_id
         self.cloud_connection_id = cloud_connection_id
+        self.type = type
         self.cidrs = cidrs
 
     @property
     def name(self):
         """Gets the name of this CreateNetworkInstance.
 
-        网络实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
+        实例名字。
 
         :return: The name of this CreateNetworkInstance.
         :rtype: str
@@ -106,7 +106,7 @@ class CreateNetworkInstance:
     def name(self, name):
         """Sets the name of this CreateNetworkInstance.
 
-        网络实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
+        实例名字。
 
         :param name: The name of this CreateNetworkInstance.
         :type name: str
@@ -117,7 +117,7 @@ class CreateNetworkInstance:
     def description(self):
         """Gets the description of this CreateNetworkInstance.
 
-        网络实例的描述。不支持 <>。
+        实例描述。不支持 <>。
 
         :return: The description of this CreateNetworkInstance.
         :rtype: str
@@ -128,12 +128,122 @@ class CreateNetworkInstance:
     def description(self, description):
         """Sets the description of this CreateNetworkInstance.
 
-        网络实例的描述。不支持 <>。
+        实例描述。不支持 <>。
 
         :param description: The description of this CreateNetworkInstance.
         :type description: str
         """
         self._description = description
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this CreateNetworkInstance.
+
+        资源ID标识符。
+
+        :return: The instance_id of this CreateNetworkInstance.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this CreateNetworkInstance.
+
+        资源ID标识符。
+
+        :param instance_id: The instance_id of this CreateNetworkInstance.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
+
+    @property
+    def instance_domain_id(self):
+        """Gets the instance_domain_id of this CreateNetworkInstance.
+
+        实例所属帐号ID。
+
+        :return: The instance_domain_id of this CreateNetworkInstance.
+        :rtype: str
+        """
+        return self._instance_domain_id
+
+    @instance_domain_id.setter
+    def instance_domain_id(self, instance_domain_id):
+        """Sets the instance_domain_id of this CreateNetworkInstance.
+
+        实例所属帐号ID。
+
+        :param instance_domain_id: The instance_domain_id of this CreateNetworkInstance.
+        :type instance_domain_id: str
+        """
+        self._instance_domain_id = instance_domain_id
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this CreateNetworkInstance.
+
+        实例所属项目ID。
+
+        :return: The project_id of this CreateNetworkInstance.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this CreateNetworkInstance.
+
+        实例所属项目ID。
+
+        :param project_id: The project_id of this CreateNetworkInstance.
+        :type project_id: str
+        """
+        self._project_id = project_id
+
+    @property
+    def region_id(self):
+        """Gets the region_id of this CreateNetworkInstance.
+
+        RegionID。
+
+        :return: The region_id of this CreateNetworkInstance.
+        :rtype: str
+        """
+        return self._region_id
+
+    @region_id.setter
+    def region_id(self, region_id):
+        """Sets the region_id of this CreateNetworkInstance.
+
+        RegionID。
+
+        :param region_id: The region_id of this CreateNetworkInstance.
+        :type region_id: str
+        """
+        self._region_id = region_id
+
+    @property
+    def cloud_connection_id(self):
+        """Gets the cloud_connection_id of this CreateNetworkInstance.
+
+        资源ID标识符。
+
+        :return: The cloud_connection_id of this CreateNetworkInstance.
+        :rtype: str
+        """
+        return self._cloud_connection_id
+
+    @cloud_connection_id.setter
+    def cloud_connection_id(self, cloud_connection_id):
+        """Sets the cloud_connection_id of this CreateNetworkInstance.
+
+        资源ID标识符。
+
+        :param cloud_connection_id: The cloud_connection_id of this CreateNetworkInstance.
+        :type cloud_connection_id: str
+        """
+        self._cloud_connection_id = cloud_connection_id
 
     @property
     def type(self):
@@ -156,116 +266,6 @@ class CreateNetworkInstance:
         :type type: str
         """
         self._type = type
-
-    @property
-    def instance_id(self):
-        """Gets the instance_id of this CreateNetworkInstance.
-
-        添加到云连接网络实例的ID，VPC或者VGW的ID。
-
-        :return: The instance_id of this CreateNetworkInstance.
-        :rtype: str
-        """
-        return self._instance_id
-
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateNetworkInstance.
-
-        添加到云连接网络实例的ID，VPC或者VGW的ID。
-
-        :param instance_id: The instance_id of this CreateNetworkInstance.
-        :type instance_id: str
-        """
-        self._instance_id = instance_id
-
-    @property
-    def instance_domain_id(self):
-        """Gets the instance_domain_id of this CreateNetworkInstance.
-
-        网络实例的账户ID。跨账号加载必填；同账号下资源加载不填。
-
-        :return: The instance_domain_id of this CreateNetworkInstance.
-        :rtype: str
-        """
-        return self._instance_domain_id
-
-    @instance_domain_id.setter
-    def instance_domain_id(self, instance_domain_id):
-        """Sets the instance_domain_id of this CreateNetworkInstance.
-
-        网络实例的账户ID。跨账号加载必填；同账号下资源加载不填。
-
-        :param instance_domain_id: The instance_domain_id of this CreateNetworkInstance.
-        :type instance_domain_id: str
-        """
-        self._instance_domain_id = instance_domain_id
-
-    @property
-    def project_id(self):
-        """Gets the project_id of this CreateNetworkInstance.
-
-        网络实例的项目ID。
-
-        :return: The project_id of this CreateNetworkInstance.
-        :rtype: str
-        """
-        return self._project_id
-
-    @project_id.setter
-    def project_id(self, project_id):
-        """Sets the project_id of this CreateNetworkInstance.
-
-        网络实例的项目ID。
-
-        :param project_id: The project_id of this CreateNetworkInstance.
-        :type project_id: str
-        """
-        self._project_id = project_id
-
-    @property
-    def region_id(self):
-        """Gets the region_id of this CreateNetworkInstance.
-
-        网络实例的RegionID。
-
-        :return: The region_id of this CreateNetworkInstance.
-        :rtype: str
-        """
-        return self._region_id
-
-    @region_id.setter
-    def region_id(self, region_id):
-        """Sets the region_id of this CreateNetworkInstance.
-
-        网络实例的RegionID。
-
-        :param region_id: The region_id of this CreateNetworkInstance.
-        :type region_id: str
-        """
-        self._region_id = region_id
-
-    @property
-    def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this CreateNetworkInstance.
-
-        云连接实例ID。
-
-        :return: The cloud_connection_id of this CreateNetworkInstance.
-        :rtype: str
-        """
-        return self._cloud_connection_id
-
-    @cloud_connection_id.setter
-    def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this CreateNetworkInstance.
-
-        云连接实例ID。
-
-        :param cloud_connection_id: The cloud_connection_id of this CreateNetworkInstance.
-        :type cloud_connection_id: str
-        """
-        self._cloud_connection_id = cloud_connection_id
 
     @property
     def cidrs(self):

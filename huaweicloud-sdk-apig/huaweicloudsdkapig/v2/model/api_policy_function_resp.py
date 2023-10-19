@@ -61,7 +61,7 @@ class ApiPolicyFunctionResp:
         :type version: str
         :param alias_urn: 函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
         :type alias_urn: str
-        :param timeout: API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
+        :param timeout: API网关请求后端服务的超时时间。函数网络架构为V1时最大超时时间为60000，V2最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
         :type timeout: int
         :param id: 编号
         :type id: str
@@ -226,7 +226,7 @@ class ApiPolicyFunctionResp:
     def timeout(self):
         """Gets the timeout of this ApiPolicyFunctionResp.
 
-        API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
+        API网关请求后端服务的超时时间。函数网络架构为V1时最大超时时间为60000，V2最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
         :return: The timeout of this ApiPolicyFunctionResp.
         :rtype: int
@@ -237,7 +237,7 @@ class ApiPolicyFunctionResp:
     def timeout(self, timeout):
         """Sets the timeout of this ApiPolicyFunctionResp.
 
-        API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
+        API网关请求后端服务的超时时间。函数网络架构为V1时最大超时时间为60000，V2最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
         :param timeout: The timeout of this ApiPolicyFunctionResp.
         :type timeout: int

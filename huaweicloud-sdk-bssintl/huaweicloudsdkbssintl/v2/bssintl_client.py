@@ -16,13 +16,16 @@ class BssintlClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls, "GlobalCredentials")
+        if not clazz:
+            client_builder = ClientBuilder(cls, "GlobalCredentials")
+        else:
+            if clazz.__name__ != "BssintlClient":
+                raise TypeError("client type error, support client type is BssintlClient")
+            client_builder = ClientBuilder(clazz, "GlobalCredentials")
 
-        if clazz.__name__ != "BssintlClient":
-            raise TypeError("client type error, support client type is BssintlClient")
+        
 
-        return ClientBuilder(clazz, "GlobalCredentials")
+        return client_builder
 
     def list_conversions(self, request):
         """查询使用量单位进制

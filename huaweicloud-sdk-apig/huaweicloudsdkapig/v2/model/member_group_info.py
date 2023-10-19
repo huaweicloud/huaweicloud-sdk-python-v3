@@ -47,9 +47,9 @@ class MemberGroupInfo:
 
         The model defined in huaweicloud sdk
 
-        :param member_group_name: VPC通道后端服务器组名称
+        :param member_group_name: VPC通道后端服务器组名称。支持汉字、英文、数字、下划线、中划线、点，且只能以英文和汉字开头，3-64字符。 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type member_group_name: str
-        :param member_group_remark: VPC通道后端服务器组描述
+        :param member_group_remark: VPC通道后端服务器组描述。
         :type member_group_remark: str
         :param member_group_weight: VPC通道后端服务器组权重值。  当前服务器组存在服务器且此权重值存在时，自动使用此权重值分配权重。
         :type member_group_weight: int
@@ -107,7 +107,7 @@ class MemberGroupInfo:
     def member_group_name(self):
         """Gets the member_group_name of this MemberGroupInfo.
 
-        VPC通道后端服务器组名称
+        VPC通道后端服务器组名称。支持汉字、英文、数字、下划线、中划线、点，且只能以英文和汉字开头，3-64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
         :return: The member_group_name of this MemberGroupInfo.
         :rtype: str
@@ -118,7 +118,7 @@ class MemberGroupInfo:
     def member_group_name(self, member_group_name):
         """Sets the member_group_name of this MemberGroupInfo.
 
-        VPC通道后端服务器组名称
+        VPC通道后端服务器组名称。支持汉字、英文、数字、下划线、中划线、点，且只能以英文和汉字开头，3-64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param member_group_name: The member_group_name of this MemberGroupInfo.
         :type member_group_name: str
@@ -129,7 +129,7 @@ class MemberGroupInfo:
     def member_group_remark(self):
         """Gets the member_group_remark of this MemberGroupInfo.
 
-        VPC通道后端服务器组描述
+        VPC通道后端服务器组描述。
 
         :return: The member_group_remark of this MemberGroupInfo.
         :rtype: str
@@ -140,7 +140,7 @@ class MemberGroupInfo:
     def member_group_remark(self, member_group_remark):
         """Sets the member_group_remark of this MemberGroupInfo.
 
-        VPC通道后端服务器组描述
+        VPC通道后端服务器组描述。
 
         :param member_group_remark: The member_group_remark of this MemberGroupInfo.
         :type member_group_remark: str

@@ -23,6 +23,7 @@ class Function:
         'function_type': 'str',
         'owner': 'str',
         'owner_type': 'str',
+        'owner_auth_source_type': 'str',
         'class_name': 'str',
         'create_time': 'datetime',
         'resource_uris': 'list[FunctionResourceUri]'
@@ -35,28 +36,31 @@ class Function:
         'function_type': 'function_type',
         'owner': 'owner',
         'owner_type': 'owner_type',
+        'owner_auth_source_type': 'owner_auth_source_type',
         'class_name': 'class_name',
         'create_time': 'create_time',
         'resource_uris': 'resource_uris'
     }
 
-    def __init__(self, catalog_name=None, database_name=None, function_name=None, function_type=None, owner=None, owner_type=None, class_name=None, create_time=None, resource_uris=None):
+    def __init__(self, catalog_name=None, database_name=None, function_name=None, function_type=None, owner=None, owner_type=None, owner_auth_source_type=None, class_name=None, create_time=None, resource_uris=None):
         """Function
 
         The model defined in huaweicloud sdk
 
-        :param catalog_name: catalog名字
+        :param catalog_name: catalog名称
         :type catalog_name: str
-        :param database_name: 数据库名字
+        :param database_name: 数据库名称
         :type database_name: str
-        :param function_name: 函数名
+        :param function_name: 函数名称。只能包含字母、数字和下划线，且长度为1~256个字符。
         :type function_name: str
-        :param function_type: 函数类型
+        :param function_type: 函数类型,JAVA
         :type function_type: str
-        :param owner: 函数所有者
+        :param owner: 函数所有者。只能包含字母、数字和下划线，且长度为1~256个字符。
         :type owner: str
-        :param owner_type: 所有者类型
+        :param owner_type: 所有者类型,USER-用户,GROUP-组,ROLE-角色
         :type owner_type: str
+        :param owner_auth_source_type: 所有者授权来源类型,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+        :type owner_auth_source_type: str
         :param class_name: 函数类名
         :type class_name: str
         :param create_time: 创建时间格式为yyyy-mm-ddThh:mm:sss
@@ -73,6 +77,7 @@ class Function:
         self._function_type = None
         self._owner = None
         self._owner_type = None
+        self._owner_auth_source_type = None
         self._class_name = None
         self._create_time = None
         self._resource_uris = None
@@ -84,6 +89,8 @@ class Function:
         self.function_type = function_type
         self.owner = owner
         self.owner_type = owner_type
+        if owner_auth_source_type is not None:
+            self.owner_auth_source_type = owner_auth_source_type
         self.class_name = class_name
         if create_time is not None:
             self.create_time = create_time
@@ -94,7 +101,7 @@ class Function:
     def catalog_name(self):
         """Gets the catalog_name of this Function.
 
-        catalog名字
+        catalog名称
 
         :return: The catalog_name of this Function.
         :rtype: str
@@ -105,7 +112,7 @@ class Function:
     def catalog_name(self, catalog_name):
         """Sets the catalog_name of this Function.
 
-        catalog名字
+        catalog名称
 
         :param catalog_name: The catalog_name of this Function.
         :type catalog_name: str
@@ -116,7 +123,7 @@ class Function:
     def database_name(self):
         """Gets the database_name of this Function.
 
-        数据库名字
+        数据库名称
 
         :return: The database_name of this Function.
         :rtype: str
@@ -127,7 +134,7 @@ class Function:
     def database_name(self, database_name):
         """Sets the database_name of this Function.
 
-        数据库名字
+        数据库名称
 
         :param database_name: The database_name of this Function.
         :type database_name: str
@@ -138,7 +145,7 @@ class Function:
     def function_name(self):
         """Gets the function_name of this Function.
 
-        函数名
+        函数名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
         :return: The function_name of this Function.
         :rtype: str
@@ -149,7 +156,7 @@ class Function:
     def function_name(self, function_name):
         """Sets the function_name of this Function.
 
-        函数名
+        函数名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
         :param function_name: The function_name of this Function.
         :type function_name: str
@@ -160,7 +167,7 @@ class Function:
     def function_type(self):
         """Gets the function_type of this Function.
 
-        函数类型
+        函数类型,JAVA
 
         :return: The function_type of this Function.
         :rtype: str
@@ -171,7 +178,7 @@ class Function:
     def function_type(self, function_type):
         """Sets the function_type of this Function.
 
-        函数类型
+        函数类型,JAVA
 
         :param function_type: The function_type of this Function.
         :type function_type: str
@@ -182,7 +189,7 @@ class Function:
     def owner(self):
         """Gets the owner of this Function.
 
-        函数所有者
+        函数所有者。只能包含字母、数字和下划线，且长度为1~256个字符。
 
         :return: The owner of this Function.
         :rtype: str
@@ -193,7 +200,7 @@ class Function:
     def owner(self, owner):
         """Sets the owner of this Function.
 
-        函数所有者
+        函数所有者。只能包含字母、数字和下划线，且长度为1~256个字符。
 
         :param owner: The owner of this Function.
         :type owner: str
@@ -204,7 +211,7 @@ class Function:
     def owner_type(self):
         """Gets the owner_type of this Function.
 
-        所有者类型
+        所有者类型,USER-用户,GROUP-组,ROLE-角色
 
         :return: The owner_type of this Function.
         :rtype: str
@@ -215,12 +222,34 @@ class Function:
     def owner_type(self, owner_type):
         """Sets the owner_type of this Function.
 
-        所有者类型
+        所有者类型,USER-用户,GROUP-组,ROLE-角色
 
         :param owner_type: The owner_type of this Function.
         :type owner_type: str
         """
         self._owner_type = owner_type
+
+    @property
+    def owner_auth_source_type(self):
+        """Gets the owner_auth_source_type of this Function.
+
+        所有者授权来源类型,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+
+        :return: The owner_auth_source_type of this Function.
+        :rtype: str
+        """
+        return self._owner_auth_source_type
+
+    @owner_auth_source_type.setter
+    def owner_auth_source_type(self, owner_auth_source_type):
+        """Sets the owner_auth_source_type of this Function.
+
+        所有者授权来源类型,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+
+        :param owner_auth_source_type: The owner_auth_source_type of this Function.
+        :type owner_auth_source_type: str
+        """
+        self._owner_auth_source_type = owner_auth_source_type
 
     @property
     def class_name(self):

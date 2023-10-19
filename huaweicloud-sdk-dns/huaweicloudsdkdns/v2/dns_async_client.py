@@ -16,13 +16,16 @@ class DnsAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "DnsAsyncClient":
+                raise TypeError("client type error, support client type is DnsAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "DnsClient":
-            raise TypeError("client type error, support client type is DnsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_custom_line_async(self, request):
         """创建单个自定义线路

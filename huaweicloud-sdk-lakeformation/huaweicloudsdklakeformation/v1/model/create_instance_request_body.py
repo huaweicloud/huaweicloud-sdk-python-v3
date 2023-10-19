@@ -22,6 +22,7 @@ class CreateInstanceRequestBody:
         'enterprise_project_id': 'str',
         'description': 'str',
         'shared': 'bool',
+        'order_id': 'str',
         'specs': 'list[CreateSpec]',
         'tags': 'list[ResourceTag]'
     }
@@ -32,28 +33,31 @@ class CreateInstanceRequestBody:
         'enterprise_project_id': 'enterprise_project_id',
         'description': 'description',
         'shared': 'shared',
+        'order_id': 'order_id',
         'specs': 'specs',
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, charge_mode=None, enterprise_project_id=None, description=None, shared=None, specs=None, tags=None):
+    def __init__(self, name=None, charge_mode=None, enterprise_project_id=None, description=None, shared=None, order_id=None, specs=None, tags=None):
         """CreateInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param name: 实例名
+        :param name: 实例名称。只能包含字母、数字、下划线和中划线，且长度为4到32个字符。
         :type name: str
-        :param charge_mode: 支付类型，postPaid为按需期
+        :param charge_mode: 支付类型，postPaid为按需期，prePaid为包周期
         :type charge_mode: str
-        :param enterprise_project_id: 企业项目id，只有对接了企业项目才可以填写
+        :param enterprise_project_id: 企业项目ID，只有对接了企业项目才可以填写。只能包含字母、数字和中划线，且长度为1到64个字符。
         :type enterprise_project_id: str
-        :param description: 描述
+        :param description: 实例描述。用户输入的描述，最长为255个字符。
         :type description: str
-        :param shared: false:物理多租 true:逻辑多租
+        :param shared: false为物理多租；true为逻辑多租。默认为true。
         :type shared: bool
+        :param order_id: 包周期订购时的订单ID。
+        :type order_id: str
         :param specs: 规格列表
         :type specs: list[:class:`huaweicloudsdklakeformation.v1.CreateSpec`]
-        :param tags: 标签列表
+        :param tags: 标签列表，最多添加20个标签。
         :type tags: list[:class:`huaweicloudsdklakeformation.v1.ResourceTag`]
         """
         
@@ -64,6 +68,7 @@ class CreateInstanceRequestBody:
         self._enterprise_project_id = None
         self._description = None
         self._shared = None
+        self._order_id = None
         self._specs = None
         self._tags = None
         self.discriminator = None
@@ -75,7 +80,10 @@ class CreateInstanceRequestBody:
         if description is not None:
             self.description = description
         self.shared = shared
-        self.specs = specs
+        if order_id is not None:
+            self.order_id = order_id
+        if specs is not None:
+            self.specs = specs
         if tags is not None:
             self.tags = tags
 
@@ -83,7 +91,7 @@ class CreateInstanceRequestBody:
     def name(self):
         """Gets the name of this CreateInstanceRequestBody.
 
-        实例名
+        实例名称。只能包含字母、数字、下划线和中划线，且长度为4到32个字符。
 
         :return: The name of this CreateInstanceRequestBody.
         :rtype: str
@@ -94,7 +102,7 @@ class CreateInstanceRequestBody:
     def name(self, name):
         """Sets the name of this CreateInstanceRequestBody.
 
-        实例名
+        实例名称。只能包含字母、数字、下划线和中划线，且长度为4到32个字符。
 
         :param name: The name of this CreateInstanceRequestBody.
         :type name: str
@@ -105,7 +113,7 @@ class CreateInstanceRequestBody:
     def charge_mode(self):
         """Gets the charge_mode of this CreateInstanceRequestBody.
 
-        支付类型，postPaid为按需期
+        支付类型，postPaid为按需期，prePaid为包周期
 
         :return: The charge_mode of this CreateInstanceRequestBody.
         :rtype: str
@@ -116,7 +124,7 @@ class CreateInstanceRequestBody:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this CreateInstanceRequestBody.
 
-        支付类型，postPaid为按需期
+        支付类型，postPaid为按需期，prePaid为包周期
 
         :param charge_mode: The charge_mode of this CreateInstanceRequestBody.
         :type charge_mode: str
@@ -127,7 +135,7 @@ class CreateInstanceRequestBody:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateInstanceRequestBody.
 
-        企业项目id，只有对接了企业项目才可以填写
+        企业项目ID，只有对接了企业项目才可以填写。只能包含字母、数字和中划线，且长度为1到64个字符。
 
         :return: The enterprise_project_id of this CreateInstanceRequestBody.
         :rtype: str
@@ -138,7 +146,7 @@ class CreateInstanceRequestBody:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateInstanceRequestBody.
 
-        企业项目id，只有对接了企业项目才可以填写
+        企业项目ID，只有对接了企业项目才可以填写。只能包含字母、数字和中划线，且长度为1到64个字符。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateInstanceRequestBody.
         :type enterprise_project_id: str
@@ -149,7 +157,7 @@ class CreateInstanceRequestBody:
     def description(self):
         """Gets the description of this CreateInstanceRequestBody.
 
-        描述
+        实例描述。用户输入的描述，最长为255个字符。
 
         :return: The description of this CreateInstanceRequestBody.
         :rtype: str
@@ -160,7 +168,7 @@ class CreateInstanceRequestBody:
     def description(self, description):
         """Sets the description of this CreateInstanceRequestBody.
 
-        描述
+        实例描述。用户输入的描述，最长为255个字符。
 
         :param description: The description of this CreateInstanceRequestBody.
         :type description: str
@@ -171,7 +179,7 @@ class CreateInstanceRequestBody:
     def shared(self):
         """Gets the shared of this CreateInstanceRequestBody.
 
-        false:物理多租 true:逻辑多租
+        false为物理多租；true为逻辑多租。默认为true。
 
         :return: The shared of this CreateInstanceRequestBody.
         :rtype: bool
@@ -182,12 +190,34 @@ class CreateInstanceRequestBody:
     def shared(self, shared):
         """Sets the shared of this CreateInstanceRequestBody.
 
-        false:物理多租 true:逻辑多租
+        false为物理多租；true为逻辑多租。默认为true。
 
         :param shared: The shared of this CreateInstanceRequestBody.
         :type shared: bool
         """
         self._shared = shared
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this CreateInstanceRequestBody.
+
+        包周期订购时的订单ID。
+
+        :return: The order_id of this CreateInstanceRequestBody.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this CreateInstanceRequestBody.
+
+        包周期订购时的订单ID。
+
+        :param order_id: The order_id of this CreateInstanceRequestBody.
+        :type order_id: str
+        """
+        self._order_id = order_id
 
     @property
     def specs(self):
@@ -215,7 +245,7 @@ class CreateInstanceRequestBody:
     def tags(self):
         """Gets the tags of this CreateInstanceRequestBody.
 
-        标签列表
+        标签列表，最多添加20个标签。
 
         :return: The tags of this CreateInstanceRequestBody.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.ResourceTag`]
@@ -226,7 +256,7 @@ class CreateInstanceRequestBody:
     def tags(self, tags):
         """Sets the tags of this CreateInstanceRequestBody.
 
-        标签列表
+        标签列表，最多添加20个标签。
 
         :param tags: The tags of this CreateInstanceRequestBody.
         :type tags: list[:class:`huaweicloudsdklakeformation.v1.ResourceTag`]

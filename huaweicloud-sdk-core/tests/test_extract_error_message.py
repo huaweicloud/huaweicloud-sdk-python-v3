@@ -19,6 +19,7 @@
 """
 
 import pytest
+from huaweicloudsdkcore.exceptions.exceptions import ServiceResponseException
 
 from huaweicloudsdkcore.exceptions.exception_handler import DefaultExceptionHandler
 
@@ -37,11 +38,14 @@ def test_extract_error_message1():
                     '"error_msg": "Some errors occurred.", ' \
                     '"encoded_authorization_message": "Egpjbi1ub*****GoxMzgrcA=="}'
     response = MockResponse(error_message)
-    sdk_error = EXCEPTION_HANDLER.handle_exception(None, response)
-    assert "Egpjbi1ub*****GoxMzgrcA==" == sdk_error.encoded_authorization_message
-    assert "XXX.0001" == sdk_error.error_code
-    assert "Some errors occurred." == sdk_error.error_msg
-    assert "97e2***11df" == sdk_error.request_id
+    try:
+        EXCEPTION_HANDLER.handle_exception(None, response)
+        assert False
+    except ServiceResponseException as e:
+        assert "Egpjbi1ub*****GoxMzgrcA==" == e.encoded_auth_msg
+        assert "XXX.0001" == e.error_code
+        assert "Some errors occurred." == e.error_msg
+        assert "97e2***11df" == e.request_id
 
 
 def test_extract_error_message2():
@@ -50,11 +54,14 @@ def test_extract_error_message2():
                     '"message": "Some errors occurred.", ' \
                     '"encoded_authorization_message": "Egpjbi1ub*****GoxMzgrcA=="}}'
     response = MockResponse(error_message)
-    sdk_error = EXCEPTION_HANDLER.handle_exception(None, response)
-    assert "Egpjbi1ub*****GoxMzgrcA==" == sdk_error.encoded_authorization_message
-    assert "XXX.0001" == sdk_error.error_code
-    assert "Some errors occurred." == sdk_error.error_msg
-    assert "97e2***11df" == sdk_error.request_id
+    try:
+        EXCEPTION_HANDLER.handle_exception(None, response)
+        assert False
+    except ServiceResponseException as e:
+        assert "Egpjbi1ub*****GoxMzgrcA==" == e.encoded_auth_msg
+        assert "XXX.0001" == e.error_code
+        assert "Some errors occurred." == e.error_msg
+        assert "97e2***11df" == e.request_id
 
 
 def test_extract_error_message3():
@@ -64,31 +71,40 @@ def test_extract_error_message3():
                     '"error_code": "XXX.0001", "error_msg": "Some errors occurred.", ' \
                     '"encoded_authorization_message": "Egpjbi1ub*****GoxMzgrcA=="}'
     response = MockResponse(error_message)
-    sdk_error = EXCEPTION_HANDLER.handle_exception(None, response)
-    assert "Egpjbi1ub*****GoxMzgrcA==" == sdk_error.encoded_authorization_message
-    assert "XXX.0001" == sdk_error.error_code
-    assert "Some errors occurred." == sdk_error.error_msg
-    assert "97e2***11df" == sdk_error.request_id
+    try:
+        EXCEPTION_HANDLER.handle_exception(None, response)
+        assert False
+    except ServiceResponseException as e:
+        assert "Egpjbi1ub*****GoxMzgrcA==" == e.encoded_auth_msg
+        assert "XXX.0001" == e.error_code
+        assert "Some errors occurred." == e.error_msg
+        assert "97e2***11df" == e.request_id
 
 
 def test_extract_error_message4():
     error_message = '{"invalid_key":"invalid_value"}'
     response = MockResponse(error_message)
-    sdk_error = EXCEPTION_HANDLER.handle_exception(None, response)
-    assert sdk_error.encoded_authorization_message is None
-    assert "400" == sdk_error.error_code
-    assert '{"invalid_key":"invalid_value"}' == sdk_error.error_msg
-    assert "97e2***11df" == sdk_error.request_id
+    try:
+        EXCEPTION_HANDLER.handle_exception(None, response)
+        assert False
+    except ServiceResponseException as e:
+        assert e.encoded_auth_msg is None
+        assert "400" == e.error_code
+        assert '{"invalid_key":"invalid_value"}' == e.error_msg
+        assert "97e2***11df" == e.request_id
 
 
 def test_extract_error_message5():
     error_message = "invalid json data"
     response = MockResponse(error_message)
-    sdk_error = EXCEPTION_HANDLER.handle_exception(None, response)
-    assert sdk_error.encoded_authorization_message is None
-    assert "400" == sdk_error.error_code
-    assert "invalid json data" == sdk_error.error_msg
-    assert "97e2***11df" == sdk_error.request_id
+    try:
+        EXCEPTION_HANDLER.handle_exception(None, response)
+        assert False
+    except ServiceResponseException as e:
+        assert e.encoded_auth_msg is None
+        assert "400" == e.error_code
+        assert "invalid json data" == e.error_msg
+        assert "97e2***11df" == e.request_id
 
 
 if __name__ == '__main__':

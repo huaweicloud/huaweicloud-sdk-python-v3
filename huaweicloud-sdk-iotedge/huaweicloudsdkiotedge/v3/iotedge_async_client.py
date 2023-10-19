@@ -16,13 +16,16 @@ class IoTEdgeAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "IoTEdgeAsyncClient":
+                raise TypeError("client type error, support client type is IoTEdgeAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "IoTEdgeClient":
-            raise TypeError("client type error, support client type is IoTEdgeClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_app_async(self, request):
         """创建应用模板

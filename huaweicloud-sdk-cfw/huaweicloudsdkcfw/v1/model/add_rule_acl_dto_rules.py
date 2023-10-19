@@ -31,7 +31,8 @@ class AddRuleAclDtoRules:
         'direction': 'int',
         'source': 'RuleAddressDto',
         'destination': 'RuleAddressDto',
-        'service': 'RuleServiceDto'
+        'service': 'RuleServiceDto',
+        'tag': 'TagsVO'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class AddRuleAclDtoRules:
         'direction': 'direction',
         'source': 'source',
         'destination': 'destination',
-        'service': 'service'
+        'service': 'service',
+        'tag': 'tag'
     }
 
-    def __init__(self, name=None, sequence=None, address_type=None, action_type=None, status=None, long_connect_time=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_enable=None, description=None, direction=None, source=None, destination=None, service=None):
+    def __init__(self, name=None, sequence=None, address_type=None, action_type=None, status=None, long_connect_time=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_enable=None, description=None, direction=None, source=None, destination=None, service=None, tag=None):
         """AddRuleAclDtoRules
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class AddRuleAclDtoRules:
         :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDto`
         :param service: 
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
+        :param tag: 
+        :type tag: :class:`huaweicloudsdkcfw.v1.TagsVO`
         """
         
         
@@ -106,6 +110,7 @@ class AddRuleAclDtoRules:
         self._source = None
         self._destination = None
         self._service = None
+        self._tag = None
         self.discriminator = None
 
         self.name = name
@@ -129,6 +134,8 @@ class AddRuleAclDtoRules:
         self.source = source
         self.destination = destination
         self.service = service
+        if tag is not None:
+            self.tag = tag
 
     @property
     def name(self):
@@ -443,6 +450,24 @@ class AddRuleAclDtoRules:
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
         """
         self._service = service
+
+    @property
+    def tag(self):
+        """Gets the tag of this AddRuleAclDtoRules.
+
+        :return: The tag of this AddRuleAclDtoRules.
+        :rtype: :class:`huaweicloudsdkcfw.v1.TagsVO`
+        """
+        return self._tag
+
+    @tag.setter
+    def tag(self, tag):
+        """Sets the tag of this AddRuleAclDtoRules.
+
+        :param tag: The tag of this AddRuleAclDtoRules.
+        :type tag: :class:`huaweicloudsdkcfw.v1.TagsVO`
+        """
+        self._tag = tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

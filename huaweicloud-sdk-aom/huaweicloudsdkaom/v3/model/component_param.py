@@ -35,11 +35,11 @@ class ComponentParam:
 
         The model defined in huaweicloud sdk
 
-        :param description: 组件描述
+        :param description: 组件描述：最大255字符
         :type description: str
-        :param model_id: 应用Id、子应用Id；id长度不能超过36位，由大小写字母、数字组成
+        :param model_id: 应用Id、子应用Id,id长度不能超过36位，由大小写字母、数字组成
         :type model_id: str
-        :param model_type: 应用、子应用，取值：APPLICATION、SUB_APPLICATION
+        :param model_type: 应用、子应用，取值：APPLICATION、SUB_APPLICATION ，不区分大小写
         :type model_type: str
         :param name: 组件名称
         :type name: str
@@ -63,7 +63,7 @@ class ComponentParam:
     def description(self):
         """Gets the description of this ComponentParam.
 
-        组件描述
+        组件描述：最大255字符
 
         :return: The description of this ComponentParam.
         :rtype: str
@@ -74,7 +74,7 @@ class ComponentParam:
     def description(self, description):
         """Sets the description of this ComponentParam.
 
-        组件描述
+        组件描述：最大255字符
 
         :param description: The description of this ComponentParam.
         :type description: str
@@ -85,7 +85,7 @@ class ComponentParam:
     def model_id(self):
         """Gets the model_id of this ComponentParam.
 
-        应用Id、子应用Id；id长度不能超过36位，由大小写字母、数字组成
+        应用Id、子应用Id,id长度不能超过36位，由大小写字母、数字组成
 
         :return: The model_id of this ComponentParam.
         :rtype: str
@@ -96,7 +96,7 @@ class ComponentParam:
     def model_id(self, model_id):
         """Sets the model_id of this ComponentParam.
 
-        应用Id、子应用Id；id长度不能超过36位，由大小写字母、数字组成
+        应用Id、子应用Id,id长度不能超过36位，由大小写字母、数字组成
 
         :param model_id: The model_id of this ComponentParam.
         :type model_id: str
@@ -107,7 +107,7 @@ class ComponentParam:
     def model_type(self):
         """Gets the model_type of this ComponentParam.
 
-        应用、子应用，取值：APPLICATION、SUB_APPLICATION
+        应用、子应用，取值：APPLICATION、SUB_APPLICATION ，不区分大小写
 
         :return: The model_type of this ComponentParam.
         :rtype: str
@@ -118,7 +118,7 @@ class ComponentParam:
     def model_type(self, model_type):
         """Sets the model_type of this ComponentParam.
 
-        应用、子应用，取值：APPLICATION、SUB_APPLICATION
+        应用、子应用，取值：APPLICATION、SUB_APPLICATION ，不区分大小写
 
         :param model_type: The model_type of this ComponentParam.
         :type model_type: str

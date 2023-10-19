@@ -34,11 +34,11 @@ class UpdateRoleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param role_name: role名字
+        :param role_name: 角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
         :type role_name: str
-        :param description: 描述信息
+        :param description: 描述信息。最大长度为4000个字符。当无描述信息时，则description值为null，当值为null时，响应Body无该参数。
         :type description: str
-        :param principal_source: 主体来源 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户 OTHER 其它
+        :param principal_source: 主体来源 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户 AGENTTENANT 委托 OTHER 其它
         :type principal_source: str
         """
         
@@ -60,7 +60,7 @@ class UpdateRoleResponse(SdkResponse):
     def role_name(self):
         """Gets the role_name of this UpdateRoleResponse.
 
-        role名字
+        角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 
         :return: The role_name of this UpdateRoleResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class UpdateRoleResponse(SdkResponse):
     def role_name(self, role_name):
         """Sets the role_name of this UpdateRoleResponse.
 
-        role名字
+        角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 
         :param role_name: The role_name of this UpdateRoleResponse.
         :type role_name: str
@@ -82,7 +82,7 @@ class UpdateRoleResponse(SdkResponse):
     def description(self):
         """Gets the description of this UpdateRoleResponse.
 
-        描述信息
+        描述信息。最大长度为4000个字符。当无描述信息时，则description值为null，当值为null时，响应Body无该参数。
 
         :return: The description of this UpdateRoleResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class UpdateRoleResponse(SdkResponse):
     def description(self, description):
         """Sets the description of this UpdateRoleResponse.
 
-        描述信息
+        描述信息。最大长度为4000个字符。当无描述信息时，则description值为null，当值为null时，响应Body无该参数。
 
         :param description: The description of this UpdateRoleResponse.
         :type description: str
@@ -104,7 +104,7 @@ class UpdateRoleResponse(SdkResponse):
     def principal_source(self):
         """Gets the principal_source of this UpdateRoleResponse.
 
-        主体来源 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户 OTHER 其它
+        主体来源 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户 AGENTTENANT 委托 OTHER 其它
 
         :return: The principal_source of this UpdateRoleResponse.
         :rtype: str
@@ -115,7 +115,7 @@ class UpdateRoleResponse(SdkResponse):
     def principal_source(self, principal_source):
         """Sets the principal_source of this UpdateRoleResponse.
 
-        主体来源 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户 OTHER 其它
+        主体来源 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户 AGENTTENANT 委托 OTHER 其它
 
         :param principal_source: The principal_source of this UpdateRoleResponse.
         :type principal_source: str

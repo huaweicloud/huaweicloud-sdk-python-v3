@@ -16,13 +16,16 @@ class LakeFormationAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "LakeFormationAsyncClient":
+                raise TypeError("client type error, support client type is LakeFormationAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "LakeFormationClient":
-            raise TypeError("client type error, support client type is LakeFormationClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def apply_for_access_async(self, request):
         """申请接入服务
@@ -196,6 +199,250 @@ class LakeFormationAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='BatchCancelAuthorizationInterfaceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_check_permission_async(self, request):
+        """批量鉴权
+
+        批量鉴权
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCheckPermission
+        :type request: :class:`huaweicloudsdklakeformation.v1.BatchCheckPermissionRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.BatchCheckPermissionResponse`
+        """
+        return self._batch_check_permission_with_http_info(request)
+
+    def _batch_check_permission_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/policies/check-permission',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchCheckPermissionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_access_client_async(self, request):
+        """创建服务接入客户端
+
+        创建服务接入客户端。
+        其他限制：
+          同一个实例下默认最多创建20个接入客户端。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAccessClient
+        :type request: :class:`huaweicloudsdklakeformation.v1.CreateAccessClientRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.CreateAccessClientResponse`
+        """
+        return self._create_access_client_with_http_info(request)
+
+    def _create_access_client_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/access-clients',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateAccessClientResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_access_client_async(self, request):
+        """删除服务接入客户端
+
+        根据ID删除服务接入客户端
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAccessClient
+        :type request: :class:`huaweicloudsdklakeformation.v1.DeleteAccessClientRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteAccessClientResponse`
+        """
+        return self._delete_access_client_with_http_info(request)
+
+    def _delete_access_client_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'client_id' in local_var_params:
+            path_params['client_id'] = local_var_params['client_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/access-clients/{client_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteAccessClientResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_access_client_infos_async(self, request):
+        """获取服务接入客户端信息列表
+
+        根据LakeFormation实例获取服务实例相关的接入客户端信息列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAccessClientInfos
+        :type request: :class:`huaweicloudsdklakeformation.v1.ListAccessClientInfosRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ListAccessClientInfosResponse`
+        """
+        return self._list_access_client_infos_with_http_info(request)
+
+    def _list_access_client_infos_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/access-clients',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAccessClientInfosResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -398,6 +645,65 @@ class LakeFormationAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_access_client_async(self, request):
+        """获取服务接入客户端详情
+
+        根据ID获取服务接入客户端详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAccessClient
+        :type request: :class:`huaweicloudsdklakeformation.v1.ShowAccessClientRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ShowAccessClientResponse`
+        """
+        return self._show_access_client_with_http_info(request)
+
+    def _show_access_client_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'client_id' in local_var_params:
+            path_params['client_id'] = local_var_params['client_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/access-clients/{client_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAccessClientResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_sync_policy_async(self, request):
         """获取同步权限策略
 
@@ -461,10 +767,242 @@ class LakeFormationAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_access_client_async(self, request):
+        """更新服务接入客户端
+
+        根据ID更新服务接入客户端
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAccessClient
+        :type request: :class:`huaweicloudsdklakeformation.v1.UpdateAccessClientRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateAccessClientResponse`
+        """
+        return self._update_access_client_with_http_info(request)
+
+    def _update_access_client_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'client_id' in local_var_params:
+            path_params['client_id'] = local_var_params['client_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/access-clients/{client_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateAccessClientResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_agency_async(self, request):
+        """创建委托
+
+        创建委托
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAgency
+        :type request: :class:`huaweicloudsdklakeformation.v1.CreateAgencyRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.CreateAgencyResponse`
+        """
+        return self._create_agency_with_http_info(request)
+
+    def _create_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/agency',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateAgencyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_agency_async(self, request):
+        """删除委托
+
+        删除委托
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAgency
+        :type request: :class:`huaweicloudsdklakeformation.v1.DeleteAgencyRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteAgencyResponse`
+        """
+        return self._delete_agency_with_http_info(request)
+
+    def _delete_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/agency',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteAgencyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_agency_async(self, request):
+        """委托查询
+
+        委托查询
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAgency
+        :type request: :class:`huaweicloudsdklakeformation.v1.ShowAgencyRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ShowAgencyResponse`
+        """
+        return self._show_agency_with_http_info(request)
+
+    def _show_agency_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'agency_type' in local_var_params:
+            query_params.append(('agency_type', local_var_params['agency_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/agency',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAgencyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_catalog_async(self, request):
         """创建catalog
 
-        创建catalog，会在catalog下创建默认数据库，默认数据库名字为：default
+        创建catalog，会在catalog下创建默认数据库，默认数据库名称为：default
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -752,6 +1290,126 @@ class LakeFormationAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateCatalogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_configs_async(self, request):
+        """获取所有用户可见的租户面配置
+
+        获取所有用户可见的租户面配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListConfigs
+        :type request: :class:`huaweicloudsdklakeformation.v1.ListConfigsRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ListConfigsResponse`
+        """
+        return self._list_configs_with_http_info(request)
+
+    def _list_configs_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/configurations',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListConfigsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_credential_async(self, request):
+        """获取临时密钥和securityToken
+
+        获取临时密钥和securityToken，失效时间大于等于1小时，请在1小时内更新
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCredential
+        :type request: :class:`huaweicloudsdklakeformation.v1.ShowCredentialRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ShowCredentialResponse`
+        """
+        return self._show_credential_with_http_info(request)
+
+    def _show_credential_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/credential',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowCredentialResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1329,6 +1987,69 @@ class LakeFormationAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_function_names_async(self, request):
+        """列举库下所有函数名称
+
+        查询数据库下的所有函数名称列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListFunctionNames
+        :type request: :class:`huaweicloudsdklakeformation.v1.ListFunctionNamesRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ListFunctionNamesResponse`
+        """
+        return self._list_function_names_with_http_info(request)
+
+    def _list_function_names_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'catalog_name' in local_var_params:
+            path_params['catalog_name'] = local_var_params['catalog_name']
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+
+        query_params = []
+        if 'function_pattern' in local_var_params:
+            query_params.append(('function_pattern', local_var_params['function_pattern']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/functions/names',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListFunctionNamesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_functions_async(self, request):
         """列举函数
 
@@ -1526,6 +2247,63 @@ class LakeFormationAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def authorize_access_service_async(self, request):
+        """接入服务授权
+
+        接入服务授权
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AuthorizeAccessService
+        :type request: :class:`huaweicloudsdklakeformation.v1.AuthorizeAccessServiceRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.AuthorizeAccessServiceResponse`
+        """
+        return self._authorize_access_service_with_http_info(request)
+
+    def _authorize_access_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/access-service',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AuthorizeAccessServiceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_agreement_async(self, request):
         """注册租户协议
 
@@ -1578,6 +2356,116 @@ class LakeFormationAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateAgreementResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_agreement_async(self, request):
+        """删除租户协议
+
+        用户取消授权，同时有权限用户删除委托
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAgreement
+        :type request: :class:`huaweicloudsdklakeformation.v1.DeleteAgreementRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteAgreementResponse`
+        """
+        return self._delete_agreement_with_http_info(request)
+
+    def _delete_agreement_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/agreement',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteAgreementResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_access_service_async(self, request):
+        """查询租户当前的接入服务授权
+
+        查询租户当前的接入服务授权
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAccessService
+        :type request: :class:`huaweicloudsdklakeformation.v1.ShowAccessServiceRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ShowAccessServiceResponse`
+        """
+        return self._show_access_service_with_http_info(request)
+
+    def _show_access_service_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/access-service',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAccessServiceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2106,6 +2994,122 @@ class LakeFormationAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_lake_formation_instance_default_async(self, request):
+        """设为默认实例
+
+        设为默认实例，只有非默认实例可以设置为默认实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateLakeFormationInstanceDefault
+        :type request: :class:`huaweicloudsdklakeformation.v1.UpdateLakeFormationInstanceDefaultRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateLakeFormationInstanceDefaultResponse`
+        """
+        return self._update_lake_formation_instance_default_with_http_info(request)
+
+    def _update_lake_formation_instance_default_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/default',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateLakeFormationInstanceDefaultResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_lake_formation_instance_scale_async(self, request):
+        """变更实例规格
+
+        变更LakeFormation实例规格
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateLakeFormationInstanceScale
+        :type request: :class:`huaweicloudsdklakeformation.v1.UpdateLakeFormationInstanceScaleRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateLakeFormationInstanceScaleResponse`
+        """
+        return self._update_lake_formation_instance_scale_with_http_info(request)
+
+    def _update_lake_formation_instance_scale_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/scale',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateLakeFormationInstanceScaleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_obs_buckets_async(self, request):
         """查询OBS桶列表
 
@@ -2628,6 +3632,72 @@ class LakeFormationAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_partition_names_without_limit_async(self, request):
+        """列举全量分区值列表
+
+        遍历分区名称列表信息,返回全量的数据。
+        对于事务表，支持基于表的特定版本遍历分区名称列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPartitionNamesWithoutLimit
+        :type request: :class:`huaweicloudsdklakeformation.v1.ListPartitionNamesWithoutLimitRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ListPartitionNamesWithoutLimitResponse`
+        """
+        return self._list_partition_names_without_limit_with_http_info(request)
+
+    def _list_partition_names_without_limit_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'catalog_name' in local_var_params:
+            path_params['catalog_name'] = local_var_params['catalog_name']
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+        if 'table_name' in local_var_params:
+            path_params['table_name'] = local_var_params['table_name']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/names',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPartitionNamesWithoutLimitResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_partitions_async(self, request):
         """列举分区信息
 
@@ -2958,6 +4028,67 @@ class LakeFormationAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def associate_principals_async(self, request):
+        """将一个或者多个用户/用户组加入角色
+
+        将一个或者多个用户/用户组加入角色
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AssociatePrincipals
+        :type request: :class:`huaweicloudsdklakeformation.v1.AssociatePrincipalsRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.AssociatePrincipalsResponse`
+        """
+        return self._associate_principals_with_http_info(request)
+
+    def _associate_principals_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'role_name' in local_var_params:
+            path_params['role_name'] = local_var_params['role_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/roles/{role_name}/grant-principals',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AssociatePrincipalsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_role_async(self, request):
         """创建role
 
@@ -3071,6 +4202,73 @@ class LakeFormationAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteRoleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_principals_async(self, request):
+        """查询角色下的用户/用户组
+
+        查询角色下的用户/用户组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPrincipals
+        :type request: :class:`huaweicloudsdklakeformation.v1.ListPrincipalsRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ListPrincipalsResponse`
+        """
+        return self._list_principals_with_http_info(request)
+
+    def _list_principals_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'role_name' in local_var_params:
+            path_params['role_name'] = local_var_params['role_name']
+
+        query_params = []
+        if 'principal_pattern' in local_var_params:
+            query_params.append(('principal_pattern', local_var_params['principal_pattern']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'reverse_page' in local_var_params:
+            query_params.append(('reverse_page', local_var_params['reverse_page']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/roles/{role_name}/principals',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListPrincipalsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3198,6 +4396,67 @@ class LakeFormationAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def revoke_principals_async(self, request):
+        """将一个或者多个用户/用户组从角色移除
+
+        将一个或者多个用户/用户组从角色移除
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RevokePrincipals
+        :type request: :class:`huaweicloudsdklakeformation.v1.RevokePrincipalsRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.RevokePrincipalsResponse`
+        """
+        return self._revoke_principals_with_http_info(request)
+
+    def _revoke_principals_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'role_name' in local_var_params:
+            path_params['role_name'] = local_var_params['role_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/roles/{role_name}/revoke-principals',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RevokePrincipalsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_role_async(self, request):
         """获取角色
 
@@ -3252,6 +4511,67 @@ class LakeFormationAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowRoleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_principals_async(self, request):
+        """更新角色中的principals
+
+        更新角色中的principals
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdatePrincipals
+        :type request: :class:`huaweicloudsdklakeformation.v1.UpdatePrincipalsRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.UpdatePrincipalsResponse`
+        """
+        return self._update_principals_with_http_info(request)
+
+    def _update_principals_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'role_name' in local_var_params:
+            path_params['role_name'] = local_var_params['role_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/roles/{role_name}/update-principals',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdatePrincipalsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4478,6 +5798,323 @@ class LakeFormationAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListConstraintsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def associate_roles_async(self, request):
+        """将多个角色授予User
+
+        将多个角色授予User
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AssociateRoles
+        :type request: :class:`huaweicloudsdklakeformation.v1.AssociateRolesRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.AssociateRolesResponse`
+        """
+        return self._associate_roles_with_http_info(request)
+
+    def _associate_roles_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/users/{user_name}/grant-roles',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AssociateRolesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_user_roles_async(self, request):
+        """查询用户的角色列表
+
+        查询用户的角色列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUserRoles
+        :type request: :class:`huaweicloudsdklakeformation.v1.ListUserRolesRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ListUserRolesResponse`
+        """
+        return self._list_user_roles_with_http_info(request)
+
+    def _list_user_roles_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+        if 'role_pattern' in local_var_params:
+            query_params.append(('role_pattern', local_var_params['role_pattern']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'reverse_page' in local_var_params:
+            query_params.append(('reverse_page', local_var_params['reverse_page']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/users/{user_name}/roles',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListUserRolesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_users_async(self, request):
+        """获取用户列表
+
+        获取用户列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUsers
+        :type request: :class:`huaweicloudsdklakeformation.v1.ListUsersRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.ListUsersResponse`
+        """
+        return self._list_users_with_http_info(request)
+
+    def _list_users_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'user_source' in local_var_params:
+            query_params.append(('user_source', local_var_params['user_source']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'reverse_page' in local_var_params:
+            query_params.append(('reverse_page', local_var_params['reverse_page']))
+        if 'user_name_pattern' in local_var_params:
+            query_params.append(('user_name_pattern', local_var_params['user_name_pattern']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/users',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListUsersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def revoke_roles_async(self, request):
+        """将一个或者多个角色从用户移除
+
+        将一个或者多个角色从用户移除
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RevokeRoles
+        :type request: :class:`huaweicloudsdklakeformation.v1.RevokeRolesRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.RevokeRolesResponse`
+        """
+        return self._revoke_roles_with_http_info(request)
+
+    def _revoke_roles_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/users/{user_name}/revoke-roles',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RevokeRolesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_roles_async(self, request):
+        """更新用户中的角色
+
+        更新用户中的角色
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRoles
+        :type request: :class:`huaweicloudsdklakeformation.v1.UpdateRolesRequest`
+        :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateRolesResponse`
+        """
+        return self._update_roles_with_http_info(request)
+
+    def _update_roles_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/users/{user_name}/update-roles',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateRolesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

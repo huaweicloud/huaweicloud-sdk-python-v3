@@ -50,7 +50,7 @@ class ShowAppResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param aom_id: aomId
+        :param aom_id: aomId，如果为空则不显示
         :type aom_id: str
         :param app_id: 应用ID
         :type app_id: str
@@ -116,7 +116,7 @@ class ShowAppResponse(SdkResponse):
     def aom_id(self):
         """Gets the aom_id of this ShowAppResponse.
 
-        aomId
+        aomId，如果为空则不显示
 
         :return: The aom_id of this ShowAppResponse.
         :rtype: str
@@ -127,7 +127,7 @@ class ShowAppResponse(SdkResponse):
     def aom_id(self, aom_id):
         """Sets the aom_id of this ShowAppResponse.
 
-        aomId
+        aomId，如果为空则不显示
 
         :param aom_id: The aom_id of this ShowAppResponse.
         :type aom_id: str

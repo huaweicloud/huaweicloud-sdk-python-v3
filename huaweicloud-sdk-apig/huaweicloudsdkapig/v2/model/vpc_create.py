@@ -47,7 +47,7 @@ class VpcCreate:
 
         The model defined in huaweicloud sdk
 
-        :param name: VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :param name: VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线、点组成，且只能以英文或中文开头。 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type name: str
         :param port: VPC通道中主机的端口号。  取值范围1 ~ 65535。
         :type port: int
@@ -104,7 +104,7 @@ class VpcCreate:
     def name(self):
         """Gets the name of this VpcCreate.
 
-        VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
+        VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线、点组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
         :return: The name of this VpcCreate.
         :rtype: str
@@ -115,7 +115,7 @@ class VpcCreate:
     def name(self, name):
         """Sets the name of this VpcCreate.
 
-        VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
+        VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线、点组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param name: The name of this VpcCreate.
         :type name: str

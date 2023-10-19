@@ -51,7 +51,7 @@ class AggregatedSourceStatus:
         :type last_update_time: str
         :param source_id: 源帐号ID或组织。
         :type source_id: str
-        :param source_name: 账号名。
+        :param source_name: 帐号名。
         :type source_name: str
         :param source_type: 源帐号类型（ACCOUNT | ORGANIZATION）。
         :type source_type: str
@@ -197,7 +197,7 @@ class AggregatedSourceStatus:
     def source_name(self):
         """Gets the source_name of this AggregatedSourceStatus.
 
-        账号名。
+        帐号名。
 
         :return: The source_name of this AggregatedSourceStatus.
         :rtype: str
@@ -208,7 +208,7 @@ class AggregatedSourceStatus:
     def source_name(self, source_name):
         """Sets the source_name of this AggregatedSourceStatus.
 
-        账号名。
+        帐号名。
 
         :param source_name: The source_name of this AggregatedSourceStatus.
         :type source_name: str

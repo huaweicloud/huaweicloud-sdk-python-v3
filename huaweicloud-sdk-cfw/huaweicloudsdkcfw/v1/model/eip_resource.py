@@ -28,7 +28,12 @@ class EipResource:
         'associate_instance_type': 'str',
         'fw_instance_name': 'str',
         'fw_instance_id': 'str',
-        'fw_enterprise_project_id': 'str'
+        'fw_enterprise_project_id': 'str',
+        'object_id': 'str',
+        'tags': 'str',
+        'domain_id': 'str',
+        'owner': 'str',
+        'fw_domain_id': 'str'
     }
 
     attribute_map = {
@@ -43,10 +48,15 @@ class EipResource:
         'associate_instance_type': 'associate_instance_type',
         'fw_instance_name': 'fw_instance_name',
         'fw_instance_id': 'fw_instance_id',
-        'fw_enterprise_project_id': 'fw_enterprise_project_id'
+        'fw_enterprise_project_id': 'fw_enterprise_project_id',
+        'object_id': 'object_id',
+        'tags': 'tags',
+        'domain_id': 'domain_id',
+        'owner': 'owner',
+        'fw_domain_id': 'fw_domain_id'
     }
 
-    def __init__(self, id=None, public_ip=None, status=None, public_ipv6=None, enterprise_project_id=None, device_id=None, device_name=None, device_owner=None, associate_instance_type=None, fw_instance_name=None, fw_instance_id=None, fw_enterprise_project_id=None):
+    def __init__(self, id=None, public_ip=None, status=None, public_ipv6=None, enterprise_project_id=None, device_id=None, device_name=None, device_owner=None, associate_instance_type=None, fw_instance_name=None, fw_instance_id=None, fw_enterprise_project_id=None, object_id=None, tags=None, domain_id=None, owner=None, fw_domain_id=None):
         """EipResource
 
         The model defined in huaweicloud sdk
@@ -75,6 +85,16 @@ class EipResource:
         :type fw_instance_id: str
         :param fw_enterprise_project_id: Eip绑定的防火墙企业项目id
         :type fw_enterprise_project_id: str
+        :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+        :type object_id: str
+        :param tags: 标签列表
+        :type tags: str
+        :param domain_id: EIP所属用户
+        :type domain_id: str
+        :param owner: 所属用户的名称
+        :type owner: str
+        :param fw_domain_id: 防火墙所属用户
+        :type fw_domain_id: str
         """
         
         
@@ -91,6 +111,11 @@ class EipResource:
         self._fw_instance_name = None
         self._fw_instance_id = None
         self._fw_enterprise_project_id = None
+        self._object_id = None
+        self._tags = None
+        self._domain_id = None
+        self._owner = None
+        self._fw_domain_id = None
         self.discriminator = None
 
         if id is not None:
@@ -117,6 +142,16 @@ class EipResource:
             self.fw_instance_id = fw_instance_id
         if fw_enterprise_project_id is not None:
             self.fw_enterprise_project_id = fw_enterprise_project_id
+        if object_id is not None:
+            self.object_id = object_id
+        if tags is not None:
+            self.tags = tags
+        if domain_id is not None:
+            self.domain_id = domain_id
+        if owner is not None:
+            self.owner = owner
+        if fw_domain_id is not None:
+            self.fw_domain_id = fw_domain_id
 
     @property
     def id(self):
@@ -381,6 +416,116 @@ class EipResource:
         :type fw_enterprise_project_id: str
         """
         self._fw_enterprise_project_id = fw_enterprise_project_id
+
+    @property
+    def object_id(self):
+        """Gets the object_id of this EipResource.
+
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+
+        :return: The object_id of this EipResource.
+        :rtype: str
+        """
+        return self._object_id
+
+    @object_id.setter
+    def object_id(self, object_id):
+        """Sets the object_id of this EipResource.
+
+        防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
+
+        :param object_id: The object_id of this EipResource.
+        :type object_id: str
+        """
+        self._object_id = object_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this EipResource.
+
+        标签列表
+
+        :return: The tags of this EipResource.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this EipResource.
+
+        标签列表
+
+        :param tags: The tags of this EipResource.
+        :type tags: str
+        """
+        self._tags = tags
+
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this EipResource.
+
+        EIP所属用户
+
+        :return: The domain_id of this EipResource.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this EipResource.
+
+        EIP所属用户
+
+        :param domain_id: The domain_id of this EipResource.
+        :type domain_id: str
+        """
+        self._domain_id = domain_id
+
+    @property
+    def owner(self):
+        """Gets the owner of this EipResource.
+
+        所属用户的名称
+
+        :return: The owner of this EipResource.
+        :rtype: str
+        """
+        return self._owner
+
+    @owner.setter
+    def owner(self, owner):
+        """Sets the owner of this EipResource.
+
+        所属用户的名称
+
+        :param owner: The owner of this EipResource.
+        :type owner: str
+        """
+        self._owner = owner
+
+    @property
+    def fw_domain_id(self):
+        """Gets the fw_domain_id of this EipResource.
+
+        防火墙所属用户
+
+        :return: The fw_domain_id of this EipResource.
+        :rtype: str
+        """
+        return self._fw_domain_id
+
+    @fw_domain_id.setter
+    def fw_domain_id(self, fw_domain_id):
+        """Sets the fw_domain_id of this EipResource.
+
+        防火墙所属用户
+
+        :param fw_domain_id: The fw_domain_id of this EipResource.
+        :type fw_domain_id: str
+        """
+        self._fw_domain_id = fw_domain_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

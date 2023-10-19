@@ -16,13 +16,16 @@ class GaussDBforopenGaussAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "GaussDBforopenGaussAsyncClient":
+                raise TypeError("client type error, support client type is GaussDBforopenGaussAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "GaussDBforopenGaussClient":
-            raise TypeError("client type error, support client type is GaussDBforopenGaussClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def add_instance_tags_async(self, request):
         """添加实例标签。

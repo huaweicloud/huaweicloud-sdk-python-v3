@@ -32,7 +32,10 @@ class ListAccessControlLogsRequest:
         'offset': 'int',
         'limit': 'int',
         'log_type': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'dst_host': 'str',
+        'rule_name': 'str',
+        'action': 'str'
     }
 
     attribute_map = {
@@ -51,10 +54,13 @@ class ListAccessControlLogsRequest:
         'offset': 'offset',
         'limit': 'limit',
         'log_type': 'log_type',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'dst_host': 'dst_host',
+        'rule_name': 'rule_name',
+        'action': 'action'
     }
 
-    def __init__(self, fw_instance_id=None, rule_id=None, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, log_type=None, enterprise_project_id=None):
+    def __init__(self, fw_instance_id=None, rule_id=None, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, log_type=None, enterprise_project_id=None, dst_host=None, rule_name=None, action=None):
         """ListAccessControlLogsRequest
 
         The model defined in huaweicloud sdk
@@ -85,12 +91,18 @@ class ListAccessControlLogsRequest:
         :type next_date: int
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param limit: 每页显示个数
+        :param limit: 每页显示个数，范围为1-1024
         :type limit: int
         :param log_type: 日志类型
         :type log_type: str
         :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
         :type enterprise_project_id: str
+        :param dst_host: 目标主机
+        :type dst_host: str
+        :param rule_name: 规则名称
+        :type rule_name: str
+        :param action: 动作0：permit,1：deny
+        :type action: str
         """
         
         
@@ -111,6 +123,9 @@ class ListAccessControlLogsRequest:
         self._limit = None
         self._log_type = None
         self._enterprise_project_id = None
+        self._dst_host = None
+        self._rule_name = None
+        self._action = None
         self.discriminator = None
 
         self.fw_instance_id = fw_instance_id
@@ -141,6 +156,12 @@ class ListAccessControlLogsRequest:
             self.log_type = log_type
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if dst_host is not None:
+            self.dst_host = dst_host
+        if rule_name is not None:
+            self.rule_name = rule_name
+        if action is not None:
+            self.action = action
 
     @property
     def fw_instance_id(self):
@@ -432,7 +453,7 @@ class ListAccessControlLogsRequest:
     def limit(self):
         """Gets the limit of this ListAccessControlLogsRequest.
 
-        每页显示个数
+        每页显示个数，范围为1-1024
 
         :return: The limit of this ListAccessControlLogsRequest.
         :rtype: int
@@ -443,7 +464,7 @@ class ListAccessControlLogsRequest:
     def limit(self, limit):
         """Sets the limit of this ListAccessControlLogsRequest.
 
-        每页显示个数
+        每页显示个数，范围为1-1024
 
         :param limit: The limit of this ListAccessControlLogsRequest.
         :type limit: int
@@ -493,6 +514,72 @@ class ListAccessControlLogsRequest:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def dst_host(self):
+        """Gets the dst_host of this ListAccessControlLogsRequest.
+
+        目标主机
+
+        :return: The dst_host of this ListAccessControlLogsRequest.
+        :rtype: str
+        """
+        return self._dst_host
+
+    @dst_host.setter
+    def dst_host(self, dst_host):
+        """Sets the dst_host of this ListAccessControlLogsRequest.
+
+        目标主机
+
+        :param dst_host: The dst_host of this ListAccessControlLogsRequest.
+        :type dst_host: str
+        """
+        self._dst_host = dst_host
+
+    @property
+    def rule_name(self):
+        """Gets the rule_name of this ListAccessControlLogsRequest.
+
+        规则名称
+
+        :return: The rule_name of this ListAccessControlLogsRequest.
+        :rtype: str
+        """
+        return self._rule_name
+
+    @rule_name.setter
+    def rule_name(self, rule_name):
+        """Sets the rule_name of this ListAccessControlLogsRequest.
+
+        规则名称
+
+        :param rule_name: The rule_name of this ListAccessControlLogsRequest.
+        :type rule_name: str
+        """
+        self._rule_name = rule_name
+
+    @property
+    def action(self):
+        """Gets the action of this ListAccessControlLogsRequest.
+
+        动作0：permit,1：deny
+
+        :return: The action of this ListAccessControlLogsRequest.
+        :rtype: str
+        """
+        return self._action
+
+    @action.setter
+    def action(self, action):
+        """Sets the action of this ListAccessControlLogsRequest.
+
+        动作0：permit,1：deny
+
+        :param action: The action of this ListAccessControlLogsRequest.
+        :type action: str
+        """
+        self._action = action
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,29 +18,36 @@ class ShowAllFaceSetsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'face_sets_info': 'list[FaceSetInfo]'
+        'face_sets_info': 'list[FaceSetInfo]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'face_sets_info': 'face_sets_info'
+        'face_sets_info': 'face_sets_info',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, face_sets_info=None):
+    def __init__(self, face_sets_info=None, x_request_id=None):
         """ShowAllFaceSetsResponse
 
         The model defined in huaweicloud sdk
 
         :param face_sets_info: [人脸库信息，详见[FaceSetInfo](https://support.huaweicloud.com/api-face/face_02_0020.html)。调用失败时无此字段。](tag:hc) [人脸库信息，详见[FaceSetInfo](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0020.html)。调用失败时无此字段。](tag:hk)
         :type face_sets_info: list[:class:`huaweicloudsdkfrs.v2.FaceSetInfo`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ShowAllFaceSetsResponse, self).__init__()
 
         self._face_sets_info = None
+        self._x_request_id = None
         self.discriminator = None
 
         if face_sets_info is not None:
             self.face_sets_info = face_sets_info
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def face_sets_info(self):
@@ -63,6 +70,24 @@ class ShowAllFaceSetsResponse(SdkResponse):
         :type face_sets_info: list[:class:`huaweicloudsdkfrs.v2.FaceSetInfo`]
         """
         self._face_sets_info = face_sets_info
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ShowAllFaceSetsResponse.
+
+        :return: The x_request_id of this ShowAllFaceSetsResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ShowAllFaceSetsResponse.
+
+        :param x_request_id: The x_request_id of this ShowAllFaceSetsResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

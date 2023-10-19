@@ -17,29 +17,36 @@ class PolicyDelta:
     sensitive_list = []
 
     openapi_types = {
-        'policy': 'Policy'
+        'policy': 'Policy',
+        'change_type': 'int'
     }
 
     attribute_map = {
-        'policy': 'policy'
+        'policy': 'policy',
+        'change_type': 'change_type'
     }
 
-    def __init__(self, policy=None):
+    def __init__(self, policy=None, change_type=None):
         """PolicyDelta
 
         The model defined in huaweicloud sdk
 
         :param policy: 
         :type policy: :class:`huaweicloudsdklakeformation.v1.Policy`
+        :param change_type: 变更类型
+        :type change_type: int
         """
         
         
 
         self._policy = None
+        self._change_type = None
         self.discriminator = None
 
         if policy is not None:
             self.policy = policy
+        if change_type is not None:
+            self.change_type = change_type
 
     @property
     def policy(self):
@@ -58,6 +65,28 @@ class PolicyDelta:
         :type policy: :class:`huaweicloudsdklakeformation.v1.Policy`
         """
         self._policy = policy
+
+    @property
+    def change_type(self):
+        """Gets the change_type of this PolicyDelta.
+
+        变更类型
+
+        :return: The change_type of this PolicyDelta.
+        :rtype: int
+        """
+        return self._change_type
+
+    @change_type.setter
+    def change_type(self, change_type):
+        """Sets the change_type of this PolicyDelta.
+
+        变更类型
+
+        :param change_type: The change_type of this PolicyDelta.
+        :type change_type: int
+        """
+        self._change_type = change_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

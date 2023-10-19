@@ -16,13 +16,16 @@ class CodeHubClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "CodeHubClient":
+                raise TypeError("client type error, support client type is CodeHubClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "CodeHubClient":
-            raise TypeError("client type error, support client type is CodeHubClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_commit(self, request):
         """创建提交

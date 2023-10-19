@@ -61,10 +61,18 @@ class ProfileRegionCache(six_utils.get_singleton_meta_class()):
         for service, regions in _dict.items():
             for region in regions:
                 _id = region.get("id")
-                endpoint = region.get("endpoint")
-                if not _id or not endpoint:
+                if not _id:
                     continue
-                result[service.upper() + _id] = Region(_id, endpoint)
+
+                endpoints = region.get("endpoints")
+                if not endpoints:
+                    endpoints = []
+                endpoint = region.get("endpoint")
+                if endpoint:
+                    endpoints.append(endpoint)
+
+                if endpoints:
+                    result[service.upper() + _id] = Region(_id, *endpoints)
 
         return result
 

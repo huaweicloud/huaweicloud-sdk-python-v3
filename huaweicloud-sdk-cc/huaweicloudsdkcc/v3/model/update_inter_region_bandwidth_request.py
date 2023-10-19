@@ -31,7 +31,7 @@ class UpdateInterRegionBandwidthRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 域间带宽实例ID。
+        :param id: 资源的Id。
         :type id: str
         :param body: Body of the UpdateInterRegionBandwidthRequest
         :type body: :class:`huaweicloudsdkcc.v3.UpdateInterRegionBandwidthRequestBody`
@@ -51,7 +51,7 @@ class UpdateInterRegionBandwidthRequest:
     def id(self):
         """Gets the id of this UpdateInterRegionBandwidthRequest.
 
-        域间带宽实例ID。
+        资源的Id。
 
         :return: The id of this UpdateInterRegionBandwidthRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateInterRegionBandwidthRequest:
     def id(self, id):
         """Sets the id of this UpdateInterRegionBandwidthRequest.
 
-        域间带宽实例ID。
+        资源的Id。
 
         :param id: The id of this UpdateInterRegionBandwidthRequest.
         :type id: str

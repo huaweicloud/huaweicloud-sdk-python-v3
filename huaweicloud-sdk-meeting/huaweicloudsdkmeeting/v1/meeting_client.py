@@ -16,13 +16,16 @@ class MeetingClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls, "MeetingCredentials")
+        if not clazz:
+            client_builder = ClientBuilder(cls, "MeetingCredentials")
+        else:
+            if clazz.__name__ != "MeetingClient":
+                raise TypeError("client type error, support client type is MeetingClient")
+            client_builder = ClientBuilder(clazz, "MeetingCredentials")
 
-        if clazz.__name__ != "MeetingClient":
-            raise TypeError("client type error, support client type is MeetingClient")
+        
 
-        return ClientBuilder(clazz, "MeetingCredentials")
+        return client_builder
 
     def add_corp(self, request):
         """SP管理员创建企业

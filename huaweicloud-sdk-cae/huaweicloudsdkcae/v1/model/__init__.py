@@ -76,6 +76,7 @@ from huaweicloudsdkcae.v1.model.create_timer_rule_response import CreateTimerRul
 from huaweicloudsdkcae.v1.model.create_volume_req import CreateVolumeReq
 from huaweicloudsdkcae.v1.model.create_volume_request import CreateVolumeRequest
 from huaweicloudsdkcae.v1.model.create_volume_response import CreateVolumeResponse
+from huaweicloudsdkcae.v1.model.cron_trigger_scheduler import CronTriggerScheduler
 from huaweicloudsdkcae.v1.model.delete_application_request import DeleteApplicationRequest
 from huaweicloudsdkcae.v1.model.delete_application_response import DeleteApplicationResponse
 from huaweicloudsdkcae.v1.model.delete_certificate_request import DeleteCertificateRequest
@@ -153,7 +154,7 @@ from huaweicloudsdkcae.v1.model.resource_limit_for_upgrade import ResourceLimitF
 from huaweicloudsdkcae.v1.model.retry_job_request import RetryJobRequest
 from huaweicloudsdkcae.v1.model.retry_job_response import RetryJobResponse
 from huaweicloudsdkcae.v1.model.scale_configuration_data_trigger import ScaleConfigurationDataTrigger
-from huaweicloudsdkcae.v1.model.scale_configuration_data_trigger_metadata import ScaleConfigurationDataTriggerMetadata
+from huaweicloudsdkcae.v1.model.scaling_trigger_meta import ScalingTriggerMeta
 from huaweicloudsdkcae.v1.model.show_application_request import ShowApplicationRequest
 from huaweicloudsdkcae.v1.model.show_application_response import ShowApplicationResponse
 from huaweicloudsdkcae.v1.model.show_component_request import ShowComponentRequest

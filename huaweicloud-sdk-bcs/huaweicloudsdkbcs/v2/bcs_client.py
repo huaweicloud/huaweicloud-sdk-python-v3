@@ -16,13 +16,16 @@ class BcsClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "BcsClient":
+                raise TypeError("client type error, support client type is BcsClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "BcsClient":
-            raise TypeError("client type error, support client type is BcsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def batch_add_peers_to_channel(self, request):
         """peer节点加入通道

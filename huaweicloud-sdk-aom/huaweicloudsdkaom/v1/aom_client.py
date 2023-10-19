@@ -16,13 +16,16 @@ class AomClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "AomClient":
+                raise TypeError("client type error, support client type is AomClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "AomClient":
-            raise TypeError("client type error, support client type is AomClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_fast_execute_script(self, request):
         """快速创建并执行脚本

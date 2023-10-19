@@ -22,14 +22,16 @@ import json
 from abc import abstractmethod
 
 import six
+from requests import Request, Response
 
-from huaweicloudsdkcore.exceptions import exceptions
+from huaweicloudsdkcore.exceptions.exceptions import SdkError, ServerResponseException, ClientRequestException
 from huaweicloudsdkcore.utils import six_utils
 
 
 class ExceptionHandler(six_utils.get_abstract_meta_class()):
     @abstractmethod
     def handle_exception(self, request, response):
+        # type: (Request|object, Response|object) -> None
         pass
 
 
@@ -42,8 +44,11 @@ class DefaultExceptionHandler(ExceptionHandler):
     _ENCODED_AUTHORIZATION_MESSAGE = "encoded_authorization_message"
 
     def handle_exception(self, request, response):
+        if response.status_code < 400:
+            return
+
         request_id = response.headers.get(self._X_REQUEST_ID)
-        sdk_error = exceptions.SdkError(request_id=request_id)
+        sdk_error = SdkError(request_id=request_id)
         try:
             sdk_error_dict = json.loads(response.text)
             if isinstance(sdk_error_dict, dict):
@@ -54,19 +59,20 @@ class DefaultExceptionHandler(ExceptionHandler):
             sdk_error.error_msg = response.text
         except Exception:
             sdk_error.error_msg = six.ensure_str(response.text)
-            raise exceptions.ServerResponseException(response.status_code, sdk_error)
+            raise ServerResponseException(response.status_code, sdk_error)
         finally:
             if not sdk_error.error_code:
                 sdk_error.error_code = str(response.status_code)
             if not sdk_error.error_msg:
                 sdk_error.error_msg = response.text
 
-        return sdk_error
+        raise ClientRequestException(response.status_code, sdk_error) if response.status_code < 500 \
+            else ServerResponseException(response.status_code, sdk_error)
 
     @classmethod
     def _process_sdk_error(cls, sdk_error, sdk_error_dict):
         if cls._ENCODED_AUTHORIZATION_MESSAGE in sdk_error_dict:
-            sdk_error.encoded_authorization_message = sdk_error_dict.get(cls._ENCODED_AUTHORIZATION_MESSAGE)
+            sdk_error.encoded_auth_msg = sdk_error_dict.get(cls._ENCODED_AUTHORIZATION_MESSAGE)
 
         if cls._ERROR_CODE in sdk_error_dict and cls._ERROR_MSG in sdk_error_dict:
             sdk_error.error_code = sdk_error_dict.get(cls._ERROR_CODE)

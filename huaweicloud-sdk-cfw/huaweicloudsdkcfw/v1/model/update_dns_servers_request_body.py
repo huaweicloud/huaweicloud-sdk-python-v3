@@ -17,29 +17,36 @@ class UpdateDnsServersRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'dns_server': 'list[UpdateDnsServersRequestBodyDnsServer]'
+        'dns_server': 'list[UpdateDnsServersRequestBodyDnsServer]',
+        'health_check_domain_name': 'str'
     }
 
     attribute_map = {
-        'dns_server': 'dns_server'
+        'dns_server': 'dns_server',
+        'health_check_domain_name': 'health_check_domain_name'
     }
 
-    def __init__(self, dns_server=None):
+    def __init__(self, dns_server=None, health_check_domain_name=None):
         """UpdateDnsServersRequestBody
 
         The model defined in huaweicloud sdk
 
         :param dns_server: DNS服务器
         :type dns_server: list[:class:`huaweicloudsdkcfw.v1.UpdateDnsServersRequestBodyDnsServer`]
+        :param health_check_domain_name: 健康检查域名
+        :type health_check_domain_name: str
         """
         
         
 
         self._dns_server = None
+        self._health_check_domain_name = None
         self.discriminator = None
 
         if dns_server is not None:
             self.dns_server = dns_server
+        if health_check_domain_name is not None:
+            self.health_check_domain_name = health_check_domain_name
 
     @property
     def dns_server(self):
@@ -62,6 +69,28 @@ class UpdateDnsServersRequestBody:
         :type dns_server: list[:class:`huaweicloudsdkcfw.v1.UpdateDnsServersRequestBodyDnsServer`]
         """
         self._dns_server = dns_server
+
+    @property
+    def health_check_domain_name(self):
+        """Gets the health_check_domain_name of this UpdateDnsServersRequestBody.
+
+        健康检查域名
+
+        :return: The health_check_domain_name of this UpdateDnsServersRequestBody.
+        :rtype: str
+        """
+        return self._health_check_domain_name
+
+    @health_check_domain_name.setter
+    def health_check_domain_name(self, health_check_domain_name):
+        """Sets the health_check_domain_name of this UpdateDnsServersRequestBody.
+
+        健康检查域名
+
+        :param health_check_domain_name: The health_check_domain_name of this UpdateDnsServersRequestBody.
+        :type health_check_domain_name: str
+        """
+        self._health_check_domain_name = health_check_domain_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

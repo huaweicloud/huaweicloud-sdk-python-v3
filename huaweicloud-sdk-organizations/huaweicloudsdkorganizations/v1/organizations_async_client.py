@@ -16,13 +16,16 @@ class OrganizationsAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls, "GlobalCredentials")
+        if not clazz:
+            client_builder = ClientBuilder(cls, "GlobalCredentials")
+        else:
+            if clazz.__name__ != "OrganizationsAsyncClient":
+                raise TypeError("client type error, support client type is OrganizationsAsyncClient")
+            client_builder = ClientBuilder(clazz, "GlobalCredentials")
 
-        if clazz.__name__ != "OrganizationsClient":
-            raise TypeError("client type error, support client type is OrganizationsClient")
+        
 
-        return ClientBuilder(clazz, "GlobalCredentials")
+        return client_builder
 
     def invite_account_async(self, request):
         """邀请帐号加入组织

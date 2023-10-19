@@ -16,13 +16,16 @@ class SwrAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "SwrAsyncClient":
+                raise TypeError("client type error, support client type is SwrAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "SwrClient":
-            raise TypeError("client type error, support client type is SwrClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_image_sync_repo_async(self, request):
         """创建镜像自动同步任务

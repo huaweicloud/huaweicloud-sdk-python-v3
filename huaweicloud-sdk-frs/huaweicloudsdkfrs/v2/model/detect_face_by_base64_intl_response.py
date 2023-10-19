@@ -18,29 +18,36 @@ class DetectFaceByBase64IntlResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'faces': 'list[DetectFace]'
+        'faces': 'list[DetectFace]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'faces': 'faces'
+        'faces': 'faces',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, faces=None):
+    def __init__(self, faces=None, x_request_id=None):
         """DetectFaceByBase64IntlResponse
 
         The model defined in huaweicloud sdk
 
         :param faces: 检测到的人脸。 调用失败时无此字段。
         :type faces: list[:class:`huaweicloudsdkfrs.v2.DetectFace`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(DetectFaceByBase64IntlResponse, self).__init__()
 
         self._faces = None
+        self._x_request_id = None
         self.discriminator = None
 
         if faces is not None:
             self.faces = faces
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def faces(self):
@@ -63,6 +70,24 @@ class DetectFaceByBase64IntlResponse(SdkResponse):
         :type faces: list[:class:`huaweicloudsdkfrs.v2.DetectFace`]
         """
         self._faces = faces
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this DetectFaceByBase64IntlResponse.
+
+        :return: The x_request_id of this DetectFaceByBase64IntlResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this DetectFaceByBase64IntlResponse.
+
+        :param x_request_id: The x_request_id of this DetectFaceByBase64IntlResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

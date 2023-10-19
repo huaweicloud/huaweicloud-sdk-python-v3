@@ -73,7 +73,7 @@ class ApiBaseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: API名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :param name: API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type name: str
         :param type: API类型 - 1：公有API - 2：私有API
         :type type: int
@@ -191,7 +191,7 @@ class ApiBaseInfo:
     def name(self):
         """Gets the name of this ApiBaseInfo.
 
-        API名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
+        API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
         :return: The name of this ApiBaseInfo.
         :rtype: str
@@ -202,7 +202,7 @@ class ApiBaseInfo:
     def name(self, name):
         """Sets the name of this ApiBaseInfo.
 
-        API名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
+        API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param name: The name of this ApiBaseInfo.
         :type name: str

@@ -33,9 +33,9 @@ class PageInfo:
 
         The model defined in huaweicloud sdk
 
-        :param next_marker: 下一页的marker，值为资源的uuid，为空时表示最后一页。
+        :param next_marker: 向后分页标识符。
         :type next_marker: str
-        :param previous_marker: 上一页的marker，值为资源的uuid，为空时表示第一页。
+        :param previous_marker: 向前分页标识符。
         :type previous_marker: str
         :param current_count: 当前列表中资源数量。
         :type current_count: int
@@ -52,14 +52,13 @@ class PageInfo:
             self.next_marker = next_marker
         if previous_marker is not None:
             self.previous_marker = previous_marker
-        if current_count is not None:
-            self.current_count = current_count
+        self.current_count = current_count
 
     @property
     def next_marker(self):
         """Gets the next_marker of this PageInfo.
 
-        下一页的marker，值为资源的uuid，为空时表示最后一页。
+        向后分页标识符。
 
         :return: The next_marker of this PageInfo.
         :rtype: str
@@ -70,7 +69,7 @@ class PageInfo:
     def next_marker(self, next_marker):
         """Sets the next_marker of this PageInfo.
 
-        下一页的marker，值为资源的uuid，为空时表示最后一页。
+        向后分页标识符。
 
         :param next_marker: The next_marker of this PageInfo.
         :type next_marker: str
@@ -81,7 +80,7 @@ class PageInfo:
     def previous_marker(self):
         """Gets the previous_marker of this PageInfo.
 
-        上一页的marker，值为资源的uuid，为空时表示第一页。
+        向前分页标识符。
 
         :return: The previous_marker of this PageInfo.
         :rtype: str
@@ -92,7 +91,7 @@ class PageInfo:
     def previous_marker(self, previous_marker):
         """Sets the previous_marker of this PageInfo.
 
-        上一页的marker，值为资源的uuid，为空时表示第一页。
+        向前分页标识符。
 
         :param previous_marker: The previous_marker of this PageInfo.
         :type previous_marker: str

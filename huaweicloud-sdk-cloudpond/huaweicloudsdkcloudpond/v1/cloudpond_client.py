@@ -16,13 +16,16 @@ class CloudPondClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls, "GlobalCredentials")
+        if not clazz:
+            client_builder = ClientBuilder(cls, "GlobalCredentials")
+        else:
+            if clazz.__name__ != "CloudPondClient":
+                raise TypeError("client type error, support client type is CloudPondClient")
+            client_builder = ClientBuilder(clazz, "GlobalCredentials")
 
-        if clazz.__name__ != "CloudPondClient":
-            raise TypeError("client type error, support client type is CloudPondClient")
+        
 
-        return ClientBuilder(clazz, "GlobalCredentials")
+        return client_builder
 
     def create_edge_site(self, request):
         """创建边缘小站

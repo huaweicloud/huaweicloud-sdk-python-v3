@@ -35,7 +35,7 @@ class IpsSwitchDTO:
 
         :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
         :type object_id: str
-        :param ips_type: 补丁类型，1-基础补丁 2&#x3D;虚拟补丁
+        :param ips_type: 补丁类型，仅支持虚拟补丁，值为2。
         :type ips_type: int
         :param status: ips特性开关状态
         :type status: int
@@ -78,7 +78,7 @@ class IpsSwitchDTO:
     def ips_type(self):
         """Gets the ips_type of this IpsSwitchDTO.
 
-        补丁类型，1-基础补丁 2=虚拟补丁
+        补丁类型，仅支持虚拟补丁，值为2。
 
         :return: The ips_type of this IpsSwitchDTO.
         :rtype: int
@@ -89,7 +89,7 @@ class IpsSwitchDTO:
     def ips_type(self, ips_type):
         """Sets the ips_type of this IpsSwitchDTO.
 
-        补丁类型，1-基础补丁 2=虚拟补丁
+        补丁类型，仅支持虚拟补丁，值为2。
 
         :param ips_type: The ips_type of this IpsSwitchDTO.
         :type ips_type: int

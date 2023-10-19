@@ -35,7 +35,9 @@ class ShowCertificateAuthorityResponse(SdkResponse):
         'not_after': 'int',
         'distinguished_name': 'DistinguishedName',
         'crl_configuration': 'ListCrlConfiguration',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'free_quota': 'int',
+        'charging_mode': 'int'
     }
 
     attribute_map = {
@@ -56,10 +58,12 @@ class ShowCertificateAuthorityResponse(SdkResponse):
         'not_after': 'not_after',
         'distinguished_name': 'distinguished_name',
         'crl_configuration': 'crl_configuration',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'free_quota': 'free_quota',
+        'charging_mode': 'charging_mode'
     }
 
-    def __init__(self, ca_id=None, type=None, status=None, path_length=None, issuer_id=None, issuer_name=None, key_algorithm=None, signature_algorithm=None, freeze_flag=None, gen_mode=None, serial_number=None, create_time=None, delete_time=None, not_before=None, not_after=None, distinguished_name=None, crl_configuration=None, enterprise_project_id=None):
+    def __init__(self, ca_id=None, type=None, status=None, path_length=None, issuer_id=None, issuer_name=None, key_algorithm=None, signature_algorithm=None, freeze_flag=None, gen_mode=None, serial_number=None, create_time=None, delete_time=None, not_before=None, not_after=None, distinguished_name=None, crl_configuration=None, enterprise_project_id=None, free_quota=None, charging_mode=None):
         """ShowCertificateAuthorityResponse
 
         The model defined in huaweicloud sdk
@@ -100,6 +104,10 @@ class ShowCertificateAuthorityResponse(SdkResponse):
         :type crl_configuration: :class:`huaweicloudsdkccm.v1.ListCrlConfiguration`
         :param enterprise_project_id: 企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
         :type enterprise_project_id: str
+        :param free_quota: 免费证书配额。
+        :type free_quota: int
+        :param charging_mode: 计费模式:   - **0** : 包周期；   - **1** : 按需。
+        :type charging_mode: int
         """
         
         super(ShowCertificateAuthorityResponse, self).__init__()
@@ -122,6 +130,8 @@ class ShowCertificateAuthorityResponse(SdkResponse):
         self._distinguished_name = None
         self._crl_configuration = None
         self._enterprise_project_id = None
+        self._free_quota = None
+        self._charging_mode = None
         self.discriminator = None
 
         if ca_id is not None:
@@ -160,6 +170,10 @@ class ShowCertificateAuthorityResponse(SdkResponse):
             self.crl_configuration = crl_configuration
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if free_quota is not None:
+            self.free_quota = free_quota
+        if charging_mode is not None:
+            self.charging_mode = charging_mode
 
     @property
     def ca_id(self):
@@ -548,6 +562,50 @@ class ShowCertificateAuthorityResponse(SdkResponse):
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def free_quota(self):
+        """Gets the free_quota of this ShowCertificateAuthorityResponse.
+
+        免费证书配额。
+
+        :return: The free_quota of this ShowCertificateAuthorityResponse.
+        :rtype: int
+        """
+        return self._free_quota
+
+    @free_quota.setter
+    def free_quota(self, free_quota):
+        """Sets the free_quota of this ShowCertificateAuthorityResponse.
+
+        免费证书配额。
+
+        :param free_quota: The free_quota of this ShowCertificateAuthorityResponse.
+        :type free_quota: int
+        """
+        self._free_quota = free_quota
+
+    @property
+    def charging_mode(self):
+        """Gets the charging_mode of this ShowCertificateAuthorityResponse.
+
+        计费模式:   - **0** : 包周期；   - **1** : 按需。
+
+        :return: The charging_mode of this ShowCertificateAuthorityResponse.
+        :rtype: int
+        """
+        return self._charging_mode
+
+    @charging_mode.setter
+    def charging_mode(self, charging_mode):
+        """Sets the charging_mode of this ShowCertificateAuthorityResponse.
+
+        计费模式:   - **0** : 包周期；   - **1** : 按需。
+
+        :param charging_mode: The charging_mode of this ShowCertificateAuthorityResponse.
+        :type charging_mode: int
+        """
+        self._charging_mode = charging_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

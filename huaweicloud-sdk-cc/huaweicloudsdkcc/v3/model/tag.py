@@ -31,9 +31,9 @@ class Tag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键
+        :param key: 标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
         :type key: str
-        :param value: 值
+        :param value: 标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
         :type value: str
         """
         
@@ -43,8 +43,7 @@ class Tag:
         self._value = None
         self.discriminator = None
 
-        if key is not None:
-            self.key = key
+        self.key = key
         if value is not None:
             self.value = value
 
@@ -52,7 +51,7 @@ class Tag:
     def key(self):
         """Gets the key of this Tag.
 
-        键
+        标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
 
         :return: The key of this Tag.
         :rtype: str
@@ -63,7 +62,7 @@ class Tag:
     def key(self, key):
         """Sets the key of this Tag.
 
-        键
+        标签键，最大长度128个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
 
         :param key: The key of this Tag.
         :type key: str
@@ -74,7 +73,7 @@ class Tag:
     def value(self):
         """Gets the value of this Tag.
 
-        值
+        标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
 
         :return: The value of this Tag.
         :rtype: str
@@ -85,7 +84,7 @@ class Tag:
     def value(self, value):
         """Sets the value of this Tag.
 
-        值
+        标签值，最大长度255个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
 
         :param value: The value of this Tag.
         :type value: str

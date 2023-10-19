@@ -31,7 +31,7 @@ class UpdateBandwidthPackageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 带宽包实例ID。
+        :param id: 资源的Id。
         :type id: str
         :param body: Body of the UpdateBandwidthPackageRequest
         :type body: :class:`huaweicloudsdkcc.v3.UpdateBandwidthPackageRequestBody`
@@ -51,7 +51,7 @@ class UpdateBandwidthPackageRequest:
     def id(self):
         """Gets the id of this UpdateBandwidthPackageRequest.
 
-        带宽包实例ID。
+        资源的Id。
 
         :return: The id of this UpdateBandwidthPackageRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateBandwidthPackageRequest:
     def id(self, id):
         """Sets the id of this UpdateBandwidthPackageRequest.
 
-        带宽包实例ID。
+        资源的Id。
 
         :param id: The id of this UpdateBandwidthPackageRequest.
         :type id: str

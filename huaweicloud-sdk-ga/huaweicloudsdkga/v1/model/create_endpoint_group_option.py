@@ -45,7 +45,7 @@ class CreateEndpointGroupOption:
         :type traffic_dial_percentage: int
         :param region_id: 终端节点组所属区域ID。
         :type region_id: str
-        :param listeners: 关联监听器列表。
+        :param listeners: 关联监听器列表。一个终端节点组下仅支持关联一个监听器。
         :type listeners: list[:class:`huaweicloudsdkga.v1.Id`]
         """
         
@@ -158,7 +158,7 @@ class CreateEndpointGroupOption:
     def listeners(self):
         """Gets the listeners of this CreateEndpointGroupOption.
 
-        关联监听器列表。
+        关联监听器列表。一个终端节点组下仅支持关联一个监听器。
 
         :return: The listeners of this CreateEndpointGroupOption.
         :rtype: list[:class:`huaweicloudsdkga.v1.Id`]
@@ -169,7 +169,7 @@ class CreateEndpointGroupOption:
     def listeners(self, listeners):
         """Sets the listeners of this CreateEndpointGroupOption.
 
-        关联监听器列表。
+        关联监听器列表。一个终端节点组下仅支持关联一个监听器。
 
         :param listeners: The listeners of this CreateEndpointGroupOption.
         :type listeners: list[:class:`huaweicloudsdkga.v1.Id`]

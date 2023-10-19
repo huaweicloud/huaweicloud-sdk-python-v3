@@ -16,18 +16,21 @@ class AomAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "AomAsyncClient":
+                raise TypeError("client type error, support client type is AomAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "AomClient":
-            raise TypeError("client type error, support client type is AomClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_app_async(self, request):
         """新增应用
 
-        新增应用。（注：接口目前开放的region为：上海一）。
+        新增应用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -84,7 +87,7 @@ class AomAsyncClient(Client):
     def create_component_async(self, request):
         """新增组件
 
-        新增组件。（注：接口目前开放的region为：上海一）。
+        新增组件。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -141,7 +144,7 @@ class AomAsyncClient(Client):
     def create_env_async(self, request):
         """创建环境
 
-        创建环境。（注：接口目前开放的region为：上海一）。
+        创建环境。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -195,10 +198,67 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_sub_app_async(self, request):
+        """新增子应用
+
+        新增子应用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateSubApp
+        :type request: :class:`huaweicloudsdkaom.v3.CreateSubAppRequest`
+        :rtype: :class:`huaweicloudsdkaom.v3.CreateSubAppResponse`
+        """
+        return self._create_sub_app_with_http_info(request)
+
+    def _create_sub_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sub-applications',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateSubAppResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_app_async(self, request):
         """删除应用
 
-        删除应用。（注：接口目前开放的region为：上海一）。
+        删除应用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -255,7 +315,7 @@ class AomAsyncClient(Client):
     def delete_component_async(self, request):
         """删除组件
 
-        删除组件。（注：接口目前开放的region为：上海一）。
+        删除组件。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -312,7 +372,7 @@ class AomAsyncClient(Client):
     def delete_env_async(self, request):
         """删除环境
 
-        删除环境。（注：接口目前开放的region为：上海一）。
+        删除环境。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -366,10 +426,67 @@ class AomAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_sub_app_async(self, request):
+        """删除子应用
+
+        删除子应用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteSubApp
+        :type request: :class:`huaweicloudsdkaom.v3.DeleteSubAppRequest`
+        :rtype: :class:`huaweicloudsdkaom.v3.DeleteSubAppResponse`
+        """
+        return self._delete_sub_app_with_http_info(request)
+
+    def _delete_sub_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'sub_app_id' in local_var_params:
+            path_params['sub_app_id'] = local_var_params['sub_app_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sub-applications/{sub_app_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteSubAppResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_resource_under_node_async(self, request):
         """查询绑定在节点上的资源列表
 
-        查询绑定在节点上的资源列表。（注：接口目前开放的region为：上海一）。
+        查询绑定在节点上的资源列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -430,7 +547,7 @@ class AomAsyncClient(Client):
     def show_app_async(self, request):
         """查询应用详情
 
-        获取应用详情。（注：接口目前开放的region为：上海一）。
+        查询应用详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -487,7 +604,7 @@ class AomAsyncClient(Client):
     def show_app_by_name_async(self, request):
         """根据应用名称查询应用详情
 
-        获取应用详情。（注：接口目前开放的region为：上海一）。
+        查询应用详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -546,7 +663,7 @@ class AomAsyncClient(Client):
     def show_component_async(self, request):
         """查询组件详情
 
-        查询组件详情。（注：接口目前开放的region为：上海一）。
+        查询组件详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -603,7 +720,7 @@ class AomAsyncClient(Client):
     def show_component_by_name_async(self, request):
         """根据组件名称查询组件详情
 
-        查询组件详情。（注：接口目前开放的region为：上海一）。
+        查询组件详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -662,7 +779,7 @@ class AomAsyncClient(Client):
     def show_env_async(self, request):
         """查询环境详情
 
-        查询环境详情。（注：接口目前开放的region为：上海一）。
+        查询环境详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -719,7 +836,7 @@ class AomAsyncClient(Client):
     def show_env_by_name_async(self, request):
         """根据环境名称查询环境详情
 
-        查询环境详情。（注：接口目前开放的region为：上海一）。
+        查询环境详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -780,7 +897,7 @@ class AomAsyncClient(Client):
     def update_app_async(self, request):
         """修改应用
 
-        修改应用。（注：接口目前开放的region为：上海一）。
+        修改应用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -839,7 +956,7 @@ class AomAsyncClient(Client):
     def update_component_async(self, request):
         """修改组件
 
-        修改组件。（注：接口目前开放的region为：上海一）。
+        修改组件。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -898,7 +1015,7 @@ class AomAsyncClient(Client):
     def update_env_async(self, request):
         """修改环境
 
-        修改环境。（注：接口目前开放的region为：上海一）。
+        修改环境。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -949,6 +1066,65 @@ class AomAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateEnvResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_sub_app_async(self, request):
+        """修改子应用
+
+        修改子应用
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSubApp
+        :type request: :class:`huaweicloudsdkaom.v3.UpdateSubAppRequest`
+        :rtype: :class:`huaweicloudsdkaom.v3.UpdateSubAppResponse`
+        """
+        return self._update_sub_app_with_http_info(request)
+
+    def _update_sub_app_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'sub_app_id' in local_var_params:
+            path_params['sub_app_id'] = local_var_params['sub_app_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/sub-applications/{sub_app_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateSubAppResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -22,7 +22,10 @@ class RuleServiceDto:
         'source_port': 'str',
         'dest_port': 'str',
         'service_set_id': 'str',
-        'service_set_name': 'str'
+        'service_set_name': 'str',
+        'custom_service': 'list[ServiceItem]',
+        'service_group': 'list[str]',
+        'service_group_names': 'list[AddressGroupVO]'
     }
 
     attribute_map = {
@@ -31,10 +34,13 @@ class RuleServiceDto:
         'source_port': 'source_port',
         'dest_port': 'dest_port',
         'service_set_id': 'service_set_id',
-        'service_set_name': 'service_set_name'
+        'service_set_name': 'service_set_name',
+        'custom_service': 'custom_service',
+        'service_group': 'service_group',
+        'service_group_names': 'service_group_names'
     }
 
-    def __init__(self, type=None, protocol=None, source_port=None, dest_port=None, service_set_id=None, service_set_name=None):
+    def __init__(self, type=None, protocol=None, source_port=None, dest_port=None, service_set_id=None, service_set_name=None, custom_service=None, service_group=None, service_group_names=None):
         """RuleServiceDto
 
         The model defined in huaweicloud sdk
@@ -51,6 +57,12 @@ class RuleServiceDto:
         :type service_set_id: str
         :param service_set_name: 服务组名称
         :type service_set_name: str
+        :param custom_service: 自定义服务
+        :type custom_service: list[:class:`huaweicloudsdkcfw.v1.ServiceItem`]
+        :param service_group: 服务组列表
+        :type service_group: list[str]
+        :param service_group_names: 服务组名称列表
+        :type service_group_names: list[:class:`huaweicloudsdkcfw.v1.AddressGroupVO`]
         """
         
         
@@ -61,6 +73,9 @@ class RuleServiceDto:
         self._dest_port = None
         self._service_set_id = None
         self._service_set_name = None
+        self._custom_service = None
+        self._service_group = None
+        self._service_group_names = None
         self.discriminator = None
 
         self.type = type
@@ -74,6 +89,12 @@ class RuleServiceDto:
             self.service_set_id = service_set_id
         if service_set_name is not None:
             self.service_set_name = service_set_name
+        if custom_service is not None:
+            self.custom_service = custom_service
+        if service_group is not None:
+            self.service_group = service_group
+        if service_group_names is not None:
+            self.service_group_names = service_group_names
 
     @property
     def type(self):
@@ -206,6 +227,72 @@ class RuleServiceDto:
         :type service_set_name: str
         """
         self._service_set_name = service_set_name
+
+    @property
+    def custom_service(self):
+        """Gets the custom_service of this RuleServiceDto.
+
+        自定义服务
+
+        :return: The custom_service of this RuleServiceDto.
+        :rtype: list[:class:`huaweicloudsdkcfw.v1.ServiceItem`]
+        """
+        return self._custom_service
+
+    @custom_service.setter
+    def custom_service(self, custom_service):
+        """Sets the custom_service of this RuleServiceDto.
+
+        自定义服务
+
+        :param custom_service: The custom_service of this RuleServiceDto.
+        :type custom_service: list[:class:`huaweicloudsdkcfw.v1.ServiceItem`]
+        """
+        self._custom_service = custom_service
+
+    @property
+    def service_group(self):
+        """Gets the service_group of this RuleServiceDto.
+
+        服务组列表
+
+        :return: The service_group of this RuleServiceDto.
+        :rtype: list[str]
+        """
+        return self._service_group
+
+    @service_group.setter
+    def service_group(self, service_group):
+        """Sets the service_group of this RuleServiceDto.
+
+        服务组列表
+
+        :param service_group: The service_group of this RuleServiceDto.
+        :type service_group: list[str]
+        """
+        self._service_group = service_group
+
+    @property
+    def service_group_names(self):
+        """Gets the service_group_names of this RuleServiceDto.
+
+        服务组名称列表
+
+        :return: The service_group_names of this RuleServiceDto.
+        :rtype: list[:class:`huaweicloudsdkcfw.v1.AddressGroupVO`]
+        """
+        return self._service_group_names
+
+    @service_group_names.setter
+    def service_group_names(self, service_group_names):
+        """Sets the service_group_names of this RuleServiceDto.
+
+        服务组名称列表
+
+        :param service_group_names: The service_group_names of this RuleServiceDto.
+        :type service_group_names: list[:class:`huaweicloudsdkcfw.v1.AddressGroupVO`]
+        """
+        self._service_group_names = service_group_names
 
     def to_dict(self):
         """Returns the model properties as a dict"""

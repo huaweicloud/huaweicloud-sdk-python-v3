@@ -16,13 +16,16 @@ class VpcepClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "VpcepClient":
+                raise TypeError("client type error, support client type is VpcepClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "VpcepClient":
-            raise TypeError("client type error, support client type is VpcepClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def accept_or_reject_endpoint(self, request):
         """接受或拒绝终端节点的连接

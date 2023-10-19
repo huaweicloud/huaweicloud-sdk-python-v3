@@ -16,13 +16,16 @@ class CloudtestAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "CloudtestAsyncClient":
+                raise TypeError("client type error, support client type is CloudtestAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "CloudtestClient":
-            raise TypeError("client type error, support client type is CloudtestClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def batch_delete_test_case_async(self, request):
         """批量删除自定义测试服务类型用例

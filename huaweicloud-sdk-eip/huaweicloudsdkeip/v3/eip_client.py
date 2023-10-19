@@ -16,13 +16,16 @@ class EipClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "EipClient":
+                raise TypeError("client type error, support client type is EipClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "EipClient":
-            raise TypeError("client type error, support client type is EipClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def list_bandwidth(self, request):
         """查询带宽列表

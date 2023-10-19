@@ -16,13 +16,16 @@ class RdsClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "RdsClient":
+                raise TypeError("client type error, support client type is RdsClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "RdsClient":
-            raise TypeError("client type error, support client type is RdsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def add_postgresql_hba_conf(self, request):
         """在pg_hba.conf文件最后新增单个或多个配置

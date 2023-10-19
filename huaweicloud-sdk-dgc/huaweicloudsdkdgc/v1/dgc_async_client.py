@@ -16,13 +16,16 @@ class DgcAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "DgcAsyncClient":
+                raise TypeError("client type error, support client type is DgcAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "DgcClient":
-            raise TypeError("client type error, support client type is DgcClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def cancel_script_async(self, request):
         """停止脚本实例的执行
@@ -1526,7 +1529,7 @@ class DgcAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def run_once_async(self, request):
-        """单次执行作业
+        """立即执行作业
 
         
         Please refer to HUAWEI cloud API Explorer for details.

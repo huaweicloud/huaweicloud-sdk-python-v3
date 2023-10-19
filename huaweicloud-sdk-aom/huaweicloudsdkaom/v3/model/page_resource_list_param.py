@@ -43,11 +43,11 @@ class PageResourceListParam:
 
         The model defined in huaweicloud sdk
 
-        :param marker: 页面的分页标志位；为分页的最后一条记录的id
+        :param marker: 页面的分页标志位,为分页的最后一条记录的id
         :type marker: str
-        :param limit: 查询返回记录的数量限制
+        :param limit: 查询返回记录的数量限制。limit可以为空，如果值小于1或者大于100，则会使用默认值100
         :type limit: int
-        :param keywords: 关键字模糊搜索
+        :param keywords: 关键字模糊搜索。Key取值：NAME、RESOURCE_ID
         :type keywords: dict(str, str)
         :param ci_relationships: 是否需要返回拓扑树,默认是false。需要：true---性能差，不需要false--性能好
         :type ci_relationships: bool
@@ -93,7 +93,7 @@ class PageResourceListParam:
     def marker(self):
         """Gets the marker of this PageResourceListParam.
 
-        页面的分页标志位；为分页的最后一条记录的id
+        页面的分页标志位,为分页的最后一条记录的id
 
         :return: The marker of this PageResourceListParam.
         :rtype: str
@@ -104,7 +104,7 @@ class PageResourceListParam:
     def marker(self, marker):
         """Sets the marker of this PageResourceListParam.
 
-        页面的分页标志位；为分页的最后一条记录的id
+        页面的分页标志位,为分页的最后一条记录的id
 
         :param marker: The marker of this PageResourceListParam.
         :type marker: str
@@ -115,7 +115,7 @@ class PageResourceListParam:
     def limit(self):
         """Gets the limit of this PageResourceListParam.
 
-        查询返回记录的数量限制
+        查询返回记录的数量限制。limit可以为空，如果值小于1或者大于100，则会使用默认值100
 
         :return: The limit of this PageResourceListParam.
         :rtype: int
@@ -126,7 +126,7 @@ class PageResourceListParam:
     def limit(self, limit):
         """Sets the limit of this PageResourceListParam.
 
-        查询返回记录的数量限制
+        查询返回记录的数量限制。limit可以为空，如果值小于1或者大于100，则会使用默认值100
 
         :param limit: The limit of this PageResourceListParam.
         :type limit: int
@@ -137,7 +137,7 @@ class PageResourceListParam:
     def keywords(self):
         """Gets the keywords of this PageResourceListParam.
 
-        关键字模糊搜索
+        关键字模糊搜索。Key取值：NAME、RESOURCE_ID
 
         :return: The keywords of this PageResourceListParam.
         :rtype: dict(str, str)
@@ -148,7 +148,7 @@ class PageResourceListParam:
     def keywords(self, keywords):
         """Sets the keywords of this PageResourceListParam.
 
-        关键字模糊搜索
+        关键字模糊搜索。Key取值：NAME、RESOURCE_ID
 
         :param keywords: The keywords of this PageResourceListParam.
         :type keywords: dict(str, str)

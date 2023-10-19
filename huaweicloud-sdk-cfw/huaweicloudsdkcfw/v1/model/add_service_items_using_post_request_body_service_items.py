@@ -41,7 +41,7 @@ class AddServiceItemsUsingPOSTRequestBodyServiceItems:
 
         :param item_id: 服务成员id
         :type item_id: str
-        :param protocol: 协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        :param protocol: 协议类型:TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1，手动类型不为空，自动类型为空
         :type protocol: int
         :param source_port: 源端口
         :type source_port: str
@@ -99,7 +99,7 @@ class AddServiceItemsUsingPOSTRequestBodyServiceItems:
     def protocol(self):
         """Gets the protocol of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
 
-        协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        协议类型:TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1，手动类型不为空，自动类型为空
 
         :return: The protocol of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
         :rtype: int
@@ -110,7 +110,7 @@ class AddServiceItemsUsingPOSTRequestBodyServiceItems:
     def protocol(self, protocol):
         """Sets the protocol of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
 
-        协议类型:TCP为6, UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
+        协议类型:TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1，手动类型不为空，自动类型为空
 
         :param protocol: The protocol of this AddServiceItemsUsingPOSTRequestBodyServiceItems.
         :type protocol: int

@@ -16,13 +16,128 @@ class CodeArtsBuildClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "CodeArtsBuildClient":
+                raise TypeError("client type error, support client type is CodeArtsBuildClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "CodeArtsBuildClient":
-            raise TypeError("client type error, support client type is CodeArtsBuildClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
+
+    def delete_build_job(self, request):
+        """删除构建任务
+
+        删除构建任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteBuildJob
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.DeleteBuildJobRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.DeleteBuildJobResponse`
+        """
+        return self._delete_build_job_with_http_info(request)
+
+    def _delete_build_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v3/jobs/{job_id}/delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteBuildJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def disable_build_job(self, request):
+        """禁用构建任务
+
+        禁用构建任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DisableBuildJob
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.DisableBuildJobRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.DisableBuildJobResponse`
+        """
+        return self._disable_build_job_with_http_info(request)
+
+    def _disable_build_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v3/jobs/{job_id}/disable',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DisableBuildJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def download_keystore(self, request):
         """KeyStore文件下载
@@ -77,6 +192,118 @@ class CodeArtsBuildClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DownloadKeystoreResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def download_log_by_record_id(self, request):
+        """下载构建日志
+
+        下载构建日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DownloadLogByRecordId
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.DownloadLogByRecordIdRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.DownloadLogByRecordIdResponse`
+        """
+        return self._download_log_by_record_id_with_http_info(request)
+
+    def _download_log_by_record_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'record_id' in local_var_params:
+            path_params['record_id'] = local_var_params['record_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v3/{record_id}/download-log',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DownloadLogByRecordIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def resume_build_job(self, request):
+        """恢复构建任务
+
+        恢复构建任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResumeBuildJob
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ResumeBuildJobRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ResumeBuildJobResponse`
+        """
+        return self._resume_build_job_with_http_info(request)
+
+    def _resume_build_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v3/jobs/{job_id}/recover',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ResumeBuildJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -551,6 +778,122 @@ class CodeArtsBuildClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowListPeriodHistoryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_record_info(self, request):
+        """获取构建记录信息
+
+        获取构建记录信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRecordInfo
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowRecordInfoRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowRecordInfoResponse`
+        """
+        return self._show_record_info_with_http_info(request)
+
+    def _show_record_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'build_no' in local_var_params:
+            path_params['build_no'] = local_var_params['build_no']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v3/jobs/{job_id}/{build_no}/record-info',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowRecordInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def stop_build_job(self, request):
+        """停止构建任务
+
+        停止构建任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StopBuildJob
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.StopBuildJobRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.StopBuildJobResponse`
+        """
+        return self._stop_build_job_with_http_info(request)
+
+    def _stop_build_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'build_no' in local_var_params:
+            path_params['build_no'] = local_var_params['build_no']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v3/jobs/{job_id}/{build_no}/stop',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='StopBuildJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

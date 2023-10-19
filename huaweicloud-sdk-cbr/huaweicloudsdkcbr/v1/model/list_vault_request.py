@@ -24,7 +24,7 @@ class ListVaultRequest:
         'protect_type': 'str',
         'object_type': 'str',
         'enterprise_project_id': 'str',
-        'id': 'str',
+        'id': 'list[str]',
         'policy_id': 'str',
         'status': 'str',
         'resource_ids': 'str'
@@ -64,7 +64,7 @@ class ListVaultRequest:
         :param enterprise_project_id: 企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
         :type enterprise_project_id: str
         :param id: 存储库ID
-        :type id: str
+        :type id: list[str]
         :param policy_id: 策略ID
         :type policy_id: str
         :param status: 状态
@@ -272,7 +272,7 @@ class ListVaultRequest:
         存储库ID
 
         :return: The id of this ListVaultRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._id
 
@@ -283,7 +283,7 @@ class ListVaultRequest:
         存储库ID
 
         :param id: The id of this ListVaultRequest.
-        :type id: str
+        :type id: list[str]
         """
         self._id = id
 

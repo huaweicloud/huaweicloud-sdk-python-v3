@@ -16,13 +16,16 @@ class DeHAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "DeHAsyncClient":
+                raise TypeError("client type error, support client type is DeHAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "DeHClient":
-            raise TypeError("client type error, support client type is DeHClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def batch_create_dedicated_host_tags_async(self, request):
         """批量添加专属主机标签

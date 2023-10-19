@@ -16,13 +16,16 @@ class ImageAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "ImageAsyncClient":
+                raise TypeError("client type error, support client type is ImageAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "ImageClient":
-            raise TypeError("client type error, support client type is ImageClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def run_celebrity_recognition_async(self, request):
         """名人识别

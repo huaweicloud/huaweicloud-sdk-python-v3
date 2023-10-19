@@ -16,13 +16,16 @@ class IecAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls, "GlobalCredentials")
+        if not clazz:
+            client_builder = ClientBuilder(cls, "GlobalCredentials")
+        else:
+            if clazz.__name__ != "IecAsyncClient":
+                raise TypeError("client type error, support client type is IecAsyncClient")
+            client_builder = ClientBuilder(clazz, "GlobalCredentials")
 
-        if clazz.__name__ != "IecClient":
-            raise TypeError("client type error, support client type is IecClient")
+        
 
-        return ClientBuilder(clazz, "GlobalCredentials")
+        return client_builder
 
     def add_nics_async(self, request):
         """添加网卡

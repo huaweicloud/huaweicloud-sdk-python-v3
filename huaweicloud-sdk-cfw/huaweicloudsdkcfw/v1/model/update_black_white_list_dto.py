@@ -23,7 +23,8 @@ class UpdateBlackWhiteListDto:
         'protocol': 'int',
         'port': 'str',
         'list_type': 'int',
-        'object_id': 'str'
+        'object_id': 'str',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class UpdateBlackWhiteListDto:
         'protocol': 'protocol',
         'port': 'port',
         'list_type': 'list_type',
-        'object_id': 'object_id'
+        'object_id': 'object_id',
+        'description': 'description'
     }
 
-    def __init__(self, direction=None, address_type=None, address=None, protocol=None, port=None, list_type=None, object_id=None):
+    def __init__(self, direction=None, address_type=None, address=None, protocol=None, port=None, list_type=None, object_id=None, description=None):
         """UpdateBlackWhiteListDto
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class UpdateBlackWhiteListDto:
         :type list_type: int
         :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
         :type object_id: str
+        :param description: 描述
+        :type description: str
         """
         
         
@@ -66,6 +70,7 @@ class UpdateBlackWhiteListDto:
         self._port = None
         self._list_type = None
         self._object_id = None
+        self._description = None
         self.discriminator = None
 
         if direction is not None:
@@ -82,6 +87,8 @@ class UpdateBlackWhiteListDto:
             self.list_type = list_type
         if object_id is not None:
             self.object_id = object_id
+        if description is not None:
+            self.description = description
 
     @property
     def direction(self):
@@ -236,6 +243,28 @@ class UpdateBlackWhiteListDto:
         :type object_id: str
         """
         self._object_id = object_id
+
+    @property
+    def description(self):
+        """Gets the description of this UpdateBlackWhiteListDto.
+
+        描述
+
+        :return: The description of this UpdateBlackWhiteListDto.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this UpdateBlackWhiteListDto.
+
+        描述
+
+        :param description: The description of this UpdateBlackWhiteListDto.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

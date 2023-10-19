@@ -652,7 +652,7 @@ client = IamClient.new_builder() \
 
 ##### 3.3.1 IAM endpoint配置 [:top:](#用户手册-top)
 
-自动获取用户的 projectId 和 domainId 会分别调用统一身份认证服务的 [KeystoneListProjects](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListProjects) 和 [KeystoneListAuthDomains](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListAuthDomains) 接口，默认访问的endpoint为 https://iam.myhuaweicloud.com，**欧洲站用户需要指定 endpoint 为 https://iam.eu-west-101.myhuaweicloud.com**
+自动获取用户的 projectId 和 domainId 会分别调用统一身份认证服务的 [KeystoneListProjects](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListProjects) 和 [KeystoneListAuthDomains](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListAuthDomains) 接口，默认访问的endpoint为 https://iam.myhuaweicloud.com， **欧洲站用户需要指定 endpoint 为 https://iam.eu-west-101.myhuaweicloud.com**
 
 用户可以通过以下两种方式来修改endpoint
 
@@ -691,13 +691,17 @@ credentials = BasicCredentials(ak, sk).with_iam_endpoint(iam_endpoint)
 // 以ECS和IoTDA服务为例
 
 // linux
-export HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_99=https://ecs.cn-north-99.myhuaweicloud.com
-export HUAWEICLOUD_SDK_REGION_IOTDA_AP_SOUTHEAST_10=https://iotda.ap-southwest-10.myhuaweicloud.com
+export HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_9=https://ecs.cn-north-9.myhuaweicloud.com
+export HUAWEICLOUD_SDK_REGION_IOTDA_AP_SOUTHEAST_1=https://iotda.ap-southwest-1.myhuaweicloud.com
 
 // windows
-set HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_99=https://ecs.cn-north-99.myhuaweicloud.com
-set HUAWEICLOUD_SDK_REGION_IOTDA_AP_SOUTHEAST_10=https://iotda.ap-southwest-10.myhuaweicloud.com
+set HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_9=https://ecs.cn-north-9.myhuaweicloud.com
+set HUAWEICLOUD_SDK_REGION_IOTDA_AP_SOUTHEAST_1=https://iotda.ap-southwest-1.myhuaweicloud.com
 ```
+
+从**3.1.62**版本起，支持配置一个region对应多个endpoint，主要endpoint无法连接会自动切换到备用endpoint
+
+格式为`HUAWEICLOUD_SDK_REGION_{SERIVCE_NAME}_{REGION_ID}={endpoint1},{endpoint2}`, 多个endpoint之间用英文逗号隔开, 比如`HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_9=https://ecs.cn-north-9.myhuaweicloud.com,https://ecs.cn-north-9.myhuaweicloud.cn`
 
 ###### 3.3.2.2 文件配置 [:top:](#用户手册-top)
 
@@ -710,13 +714,23 @@ set HUAWEICLOUD_SDK_REGION_IOTDA_AP_SOUTHEAST_10=https://iotda.ap-southwest-10.m
 ```yaml
 # 服务名不区分大小写
 ECS:
-  - id: 'cn-north-10'
-    endpoint: 'https://ecs.cn-north-10.myhuaweicloud.com'
-  - id: 'cn-north-11'
-    endpoint: 'https://ecs.cn-north-11.myhuaweicloud.com'
+  - id: 'cn-north-1'
+    endpoint: 'https://ecs.cn-north-1.myhuaweicloud.com'
+  - id: 'cn-north-9'
+    endpoint: 'https://ecs.cn-north-9.myhuaweicloud.com'
 IoTDA:
-  - id: 'ap-southwest-9'
-    endpoint: 'https://iotda.ap-southwest-9.myhuaweicloud.com'
+  - id: 'ap-southwest-1'
+    endpoint: 'https://iotda.ap-southwest-1.myhuaweicloud.com'
+```
+
+从**3.1.62**版本起，支持配置一个region对应多个endpoint，主要endpoint无法连接会自动切换到备用endpoint，格式如下：
+
+```yaml
+ECS:
+  - id: 'cn-north-1'
+    endpoints:
+      - 'https://ecs.cn-north-1.myhuaweicloud.com'
+      - 'https://ecs.cn-north-1.myhuaweicloud.cn'
 ```
 
 ###### 3.3.2.3 Region提供链 [:top:](#用户手册-top)
@@ -726,8 +740,8 @@ IoTDA:
 ```python
 from huaweicloudsdkecs.v2.region.ecs_region import EcsRegion
 
-region1 = EcsRegion.value_of("cn-north-10")
-region2 = EcsRegion.value_of("cn-north-11")
+region1 = EcsRegion.value_of("cn-north-1")
+region2 = EcsRegion.value_of("cn-north-9")
 ```
 
 ### 4. 发送请求并查看响应 [:top:](#用户手册-top)

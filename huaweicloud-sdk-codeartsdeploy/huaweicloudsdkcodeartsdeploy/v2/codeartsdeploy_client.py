@@ -16,13 +16,16 @@ class CodeArtsDeployClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "CodeArtsDeployClient":
+                raise TypeError("client type error, support client type is CodeArtsDeployClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "CodeArtsDeployClient":
-            raise TypeError("client type error, support client type is CodeArtsDeployClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def list_task_success_rate(self, request):
         """获取指定应用的应用部署成功率

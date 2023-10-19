@@ -17,8 +17,8 @@ class AccessControl:
     sensitive_list = []
 
     openapi_types = {
-        'black': 'list[object]',
-        'white': 'list[object]'
+        'black': 'list[str]',
+        'white': 'list[str]'
     }
 
     attribute_map = {
@@ -32,9 +32,9 @@ class AccessControl:
         The model defined in huaweicloud sdk
 
         :param black: 黑名单数组。 1.每行一个IP地址或网段，以回车结束。 2.每个IP地址组最多可添加300个IP地址或网段。
-        :type black: list[object]
+        :type black: list[str]
         :param white: 白名单数组。 1.每行一个IP地址或网段，以回车结束。 2.每个IP地址组最多可添加300个IP地址或网段。
-        :type white: list[object]
+        :type white: list[str]
         """
         
         
@@ -55,7 +55,7 @@ class AccessControl:
         黑名单数组。 1.每行一个IP地址或网段，以回车结束。 2.每个IP地址组最多可添加300个IP地址或网段。
 
         :return: The black of this AccessControl.
-        :rtype: list[object]
+        :rtype: list[str]
         """
         return self._black
 
@@ -66,7 +66,7 @@ class AccessControl:
         黑名单数组。 1.每行一个IP地址或网段，以回车结束。 2.每个IP地址组最多可添加300个IP地址或网段。
 
         :param black: The black of this AccessControl.
-        :type black: list[object]
+        :type black: list[str]
         """
         self._black = black
 
@@ -77,7 +77,7 @@ class AccessControl:
         白名单数组。 1.每行一个IP地址或网段，以回车结束。 2.每个IP地址组最多可添加300个IP地址或网段。
 
         :return: The white of this AccessControl.
-        :rtype: list[object]
+        :rtype: list[str]
         """
         return self._white
 
@@ -88,7 +88,7 @@ class AccessControl:
         白名单数组。 1.每行一个IP地址或网段，以回车结束。 2.每个IP地址组最多可添加300个IP地址或网段。
 
         :param white: The white of this AccessControl.
-        :type white: list[object]
+        :type white: list[str]
         """
         self._white = white
 

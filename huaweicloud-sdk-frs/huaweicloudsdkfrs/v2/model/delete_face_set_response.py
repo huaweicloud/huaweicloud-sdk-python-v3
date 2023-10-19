@@ -18,29 +18,36 @@ class DeleteFaceSetResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'face_set_name': 'str'
+        'face_set_name': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'face_set_name': 'face_set_name'
+        'face_set_name': 'face_set_name',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, face_set_name=None):
+    def __init__(self, face_set_name=None, x_request_id=None):
         """DeleteFaceSetResponse
 
         The model defined in huaweicloud sdk
 
         :param face_set_name: 人脸库名称。 调用失败时无此字段。
         :type face_set_name: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(DeleteFaceSetResponse, self).__init__()
 
         self._face_set_name = None
+        self._x_request_id = None
         self.discriminator = None
 
         if face_set_name is not None:
             self.face_set_name = face_set_name
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def face_set_name(self):
@@ -63,6 +70,24 @@ class DeleteFaceSetResponse(SdkResponse):
         :type face_set_name: str
         """
         self._face_set_name = face_set_name
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this DeleteFaceSetResponse.
+
+        :return: The x_request_id of this DeleteFaceSetResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this DeleteFaceSetResponse.
+
+        :param x_request_id: The x_request_id of this DeleteFaceSetResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

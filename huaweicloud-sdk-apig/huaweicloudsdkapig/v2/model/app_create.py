@@ -39,9 +39,9 @@ class AppCreate:
         :type name: str
         :param remark: APP描述。字符长度不能大于255。 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type remark: str
-        :param app_key: APP的key。支持英文，数字，“_”,“-”,且只能以英文或数字开头，8 ~ 64个字符。
+        :param app_key: APP的key。支持英文，数字，“_”，“-”，且只能以英文或数字开头，8 ~ 200个字符。
         :type app_key: str
-        :param app_secret: 密钥。支持英文，数字，“_”,“-”,“_”,“!”,“@”,“#”,“$”,“%”且只能以英文或数字开头，8 ~ 64个字符。
+        :param app_secret: 密钥。支持英文，数字，“_”，“-”，“!”，“@”，“#”，“$”，“%”，且只能以英文或数字开头，8 ~ 128个字符。
         :type app_secret: str
         """
         
@@ -109,7 +109,7 @@ class AppCreate:
     def app_key(self):
         """Gets the app_key of this AppCreate.
 
-        APP的key。支持英文，数字，“_”,“-”,且只能以英文或数字开头，8 ~ 64个字符。
+        APP的key。支持英文，数字，“_”，“-”，且只能以英文或数字开头，8 ~ 200个字符。
 
         :return: The app_key of this AppCreate.
         :rtype: str
@@ -120,7 +120,7 @@ class AppCreate:
     def app_key(self, app_key):
         """Sets the app_key of this AppCreate.
 
-        APP的key。支持英文，数字，“_”,“-”,且只能以英文或数字开头，8 ~ 64个字符。
+        APP的key。支持英文，数字，“_”，“-”，且只能以英文或数字开头，8 ~ 200个字符。
 
         :param app_key: The app_key of this AppCreate.
         :type app_key: str
@@ -131,7 +131,7 @@ class AppCreate:
     def app_secret(self):
         """Gets the app_secret of this AppCreate.
 
-        密钥。支持英文，数字，“_”,“-”,“_”,“!”,“@”,“#”,“$”,“%”且只能以英文或数字开头，8 ~ 64个字符。
+        密钥。支持英文，数字，“_”，“-”，“!”，“@”，“#”，“$”，“%”，且只能以英文或数字开头，8 ~ 128个字符。
 
         :return: The app_secret of this AppCreate.
         :rtype: str
@@ -142,7 +142,7 @@ class AppCreate:
     def app_secret(self, app_secret):
         """Sets the app_secret of this AppCreate.
 
-        密钥。支持英文，数字，“_”,“-”,“_”,“!”,“@”,“#”,“$”,“%”且只能以英文或数字开头，8 ~ 64个字符。
+        密钥。支持英文，数字，“_”，“-”，“!”，“@”，“#”，“$”，“%”，且只能以英文或数字开头，8 ~ 128个字符。
 
         :param app_secret: The app_secret of this AppCreate.
         :type app_secret: str

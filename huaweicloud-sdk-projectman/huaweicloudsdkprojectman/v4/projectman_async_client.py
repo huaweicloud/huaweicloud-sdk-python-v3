@@ -16,13 +16,16 @@ class ProjectManAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "ProjectManAsyncClient":
+                raise TypeError("client type error, support client type is ProjectManAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "ProjectManClient":
-            raise TypeError("client type error, support client type is ProjectManClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def add_apply_join_project_for_agc_async(self, request):
         """AGC调用 当前用户申请加入项目

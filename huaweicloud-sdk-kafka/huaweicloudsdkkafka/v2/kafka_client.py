@@ -16,13 +16,16 @@ class KafkaClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "KafkaClient":
+                raise TypeError("client type error, support client type is KafkaClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "KafkaClient":
-            raise TypeError("client type error, support client type is KafkaClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def batch_create_or_delete_kafka_tag(self, request):
         """批量添加或删除实例标签

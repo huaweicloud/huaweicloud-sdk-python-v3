@@ -29,7 +29,7 @@ class ShowCloudConnectionRoutesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 云连接路由实例ID。
+        :param id: 资源的Id。
         :type id: str
         """
         
@@ -44,7 +44,7 @@ class ShowCloudConnectionRoutesRequest:
     def id(self):
         """Gets the id of this ShowCloudConnectionRoutesRequest.
 
-        云连接路由实例ID。
+        资源的Id。
 
         :return: The id of this ShowCloudConnectionRoutesRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowCloudConnectionRoutesRequest:
     def id(self, id):
         """Sets the id of this ShowCloudConnectionRoutesRequest.
 
-        云连接路由实例ID。
+        资源的Id。
 
         :param id: The id of this ShowCloudConnectionRoutesRequest.
         :type id: str

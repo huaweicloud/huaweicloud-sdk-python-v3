@@ -39,15 +39,15 @@ class ListInterRegionBandwidthsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 分页查询时，每页返回的个数。
+        :param limit: 每页返回的个数。 取值范围：1~1000。
         :type limit: int
-        :param marker: 分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+        :param marker: 翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
         :type marker: str
-        :param id: 根据ID过滤域间带宽实例列表。
+        :param id: 根据id查询，可查询多个id。
         :type id: list[str]
-        :param enterprise_project_id: 根据企业项目ID过滤域间带宽实例列表。
+        :param enterprise_project_id: 根据企业项目ID过滤列表。
         :type enterprise_project_id: list[str]
-        :param cloud_connection_id: 根据云连接ID过滤域间带宽实例列表。
+        :param cloud_connection_id: 根据云连接的ID过滤列表。
         :type cloud_connection_id: list[str]
         :param bandwidth_package_id: 根据带宽包列表过滤域间带宽实例列表。
         :type bandwidth_package_id: list[str]
@@ -80,7 +80,7 @@ class ListInterRegionBandwidthsRequest:
     def limit(self):
         """Gets the limit of this ListInterRegionBandwidthsRequest.
 
-        分页查询时，每页返回的个数。
+        每页返回的个数。 取值范围：1~1000。
 
         :return: The limit of this ListInterRegionBandwidthsRequest.
         :rtype: int
@@ -91,7 +91,7 @@ class ListInterRegionBandwidthsRequest:
     def limit(self, limit):
         """Sets the limit of this ListInterRegionBandwidthsRequest.
 
-        分页查询时，每页返回的个数。
+        每页返回的个数。 取值范围：1~1000。
 
         :param limit: The limit of this ListInterRegionBandwidthsRequest.
         :type limit: int
@@ -102,7 +102,7 @@ class ListInterRegionBandwidthsRequest:
     def marker(self):
         """Gets the marker of this ListInterRegionBandwidthsRequest.
 
-        分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
         :return: The marker of this ListInterRegionBandwidthsRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class ListInterRegionBandwidthsRequest:
     def marker(self, marker):
         """Sets the marker of this ListInterRegionBandwidthsRequest.
 
-        分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
         :param marker: The marker of this ListInterRegionBandwidthsRequest.
         :type marker: str
@@ -124,7 +124,7 @@ class ListInterRegionBandwidthsRequest:
     def id(self):
         """Gets the id of this ListInterRegionBandwidthsRequest.
 
-        根据ID过滤域间带宽实例列表。
+        根据id查询，可查询多个id。
 
         :return: The id of this ListInterRegionBandwidthsRequest.
         :rtype: list[str]
@@ -135,7 +135,7 @@ class ListInterRegionBandwidthsRequest:
     def id(self, id):
         """Sets the id of this ListInterRegionBandwidthsRequest.
 
-        根据ID过滤域间带宽实例列表。
+        根据id查询，可查询多个id。
 
         :param id: The id of this ListInterRegionBandwidthsRequest.
         :type id: list[str]
@@ -146,7 +146,7 @@ class ListInterRegionBandwidthsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListInterRegionBandwidthsRequest.
 
-        根据企业项目ID过滤域间带宽实例列表。
+        根据企业项目ID过滤列表。
 
         :return: The enterprise_project_id of this ListInterRegionBandwidthsRequest.
         :rtype: list[str]
@@ -157,7 +157,7 @@ class ListInterRegionBandwidthsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListInterRegionBandwidthsRequest.
 
-        根据企业项目ID过滤域间带宽实例列表。
+        根据企业项目ID过滤列表。
 
         :param enterprise_project_id: The enterprise_project_id of this ListInterRegionBandwidthsRequest.
         :type enterprise_project_id: list[str]
@@ -168,7 +168,7 @@ class ListInterRegionBandwidthsRequest:
     def cloud_connection_id(self):
         """Gets the cloud_connection_id of this ListInterRegionBandwidthsRequest.
 
-        根据云连接ID过滤域间带宽实例列表。
+        根据云连接的ID过滤列表。
 
         :return: The cloud_connection_id of this ListInterRegionBandwidthsRequest.
         :rtype: list[str]
@@ -179,7 +179,7 @@ class ListInterRegionBandwidthsRequest:
     def cloud_connection_id(self, cloud_connection_id):
         """Sets the cloud_connection_id of this ListInterRegionBandwidthsRequest.
 
-        根据云连接ID过滤域间带宽实例列表。
+        根据云连接的ID过滤列表。
 
         :param cloud_connection_id: The cloud_connection_id of this ListInterRegionBandwidthsRequest.
         :type cloud_connection_id: list[str]

@@ -19,35 +19,35 @@ class ListConfigTemplatesResponse(SdkResponse):
 
     openapi_types = {
         'template_num': 'int',
-        'config_templates': 'list[ConfigTemplatesListInfo]'
+        'templates': 'list[ConfigTemplatesListInfo]'
     }
 
     attribute_map = {
         'template_num': 'template_num',
-        'config_templates': 'config_templates'
+        'templates': 'templates'
     }
 
-    def __init__(self, template_num=None, config_templates=None):
+    def __init__(self, template_num=None, templates=None):
         """ListConfigTemplatesResponse
 
         The model defined in huaweicloud sdk
 
         :param template_num: 模板个数。
         :type template_num: int
-        :param config_templates: 模板的详情数组。
-        :type config_templates: list[:class:`huaweicloudsdkdcs.v2.ConfigTemplatesListInfo`]
+        :param templates: 模板的详情数组。
+        :type templates: list[:class:`huaweicloudsdkdcs.v2.ConfigTemplatesListInfo`]
         """
         
         super(ListConfigTemplatesResponse, self).__init__()
 
         self._template_num = None
-        self._config_templates = None
+        self._templates = None
         self.discriminator = None
 
         if template_num is not None:
             self.template_num = template_num
-        if config_templates is not None:
-            self.config_templates = config_templates
+        if templates is not None:
+            self.templates = templates
 
     @property
     def template_num(self):
@@ -72,26 +72,26 @@ class ListConfigTemplatesResponse(SdkResponse):
         self._template_num = template_num
 
     @property
-    def config_templates(self):
-        """Gets the config_templates of this ListConfigTemplatesResponse.
+    def templates(self):
+        """Gets the templates of this ListConfigTemplatesResponse.
 
         模板的详情数组。
 
-        :return: The config_templates of this ListConfigTemplatesResponse.
+        :return: The templates of this ListConfigTemplatesResponse.
         :rtype: list[:class:`huaweicloudsdkdcs.v2.ConfigTemplatesListInfo`]
         """
-        return self._config_templates
+        return self._templates
 
-    @config_templates.setter
-    def config_templates(self, config_templates):
-        """Sets the config_templates of this ListConfigTemplatesResponse.
+    @templates.setter
+    def templates(self, templates):
+        """Sets the templates of this ListConfigTemplatesResponse.
 
         模板的详情数组。
 
-        :param config_templates: The config_templates of this ListConfigTemplatesResponse.
-        :type config_templates: list[:class:`huaweicloudsdkdcs.v2.ConfigTemplatesListInfo`]
+        :param templates: The templates of this ListConfigTemplatesResponse.
+        :type templates: list[:class:`huaweicloudsdkdcs.v2.ConfigTemplatesListInfo`]
         """
-        self._config_templates = config_templates
+        self._templates = templates
 
     def to_dict(self):
         """Returns the model properties as a dict"""

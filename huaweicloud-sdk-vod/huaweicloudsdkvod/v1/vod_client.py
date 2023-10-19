@@ -16,13 +16,16 @@ class VodClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "VodClient":
+                raise TypeError("client type error, support client type is VodClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "VodClient":
-            raise TypeError("client type error, support client type is VodClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def cancel_asset_transcode_task(self, request):
         """取消媒资转码任务

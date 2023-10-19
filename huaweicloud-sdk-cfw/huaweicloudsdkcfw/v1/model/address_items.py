@@ -17,29 +17,36 @@ class AddressItems:
     sensitive_list = []
 
     openapi_types = {
-        'items': 'list[IdObject]'
+        'items': 'list[IdObject]',
+        'covered_ip': 'list[CoveredIPVO]'
     }
 
     attribute_map = {
-        'items': 'items'
+        'items': 'items',
+        'covered_ip': 'covered_ip'
     }
 
-    def __init__(self, items=None):
+    def __init__(self, items=None, covered_ip=None):
         """AddressItems
 
         The model defined in huaweicloud sdk
 
         :param items: 地址组成员id列表
         :type items: list[:class:`huaweicloudsdkcfw.v1.IdObject`]
+        :param covered_ip: 覆盖ip列表
+        :type covered_ip: list[:class:`huaweicloudsdkcfw.v1.CoveredIPVO`]
         """
         
         
 
         self._items = None
+        self._covered_ip = None
         self.discriminator = None
 
         if items is not None:
             self.items = items
+        if covered_ip is not None:
+            self.covered_ip = covered_ip
 
     @property
     def items(self):
@@ -62,6 +69,28 @@ class AddressItems:
         :type items: list[:class:`huaweicloudsdkcfw.v1.IdObject`]
         """
         self._items = items
+
+    @property
+    def covered_ip(self):
+        """Gets the covered_ip of this AddressItems.
+
+        覆盖ip列表
+
+        :return: The covered_ip of this AddressItems.
+        :rtype: list[:class:`huaweicloudsdkcfw.v1.CoveredIPVO`]
+        """
+        return self._covered_ip
+
+    @covered_ip.setter
+    def covered_ip(self, covered_ip):
+        """Sets the covered_ip of this AddressItems.
+
+        覆盖ip列表
+
+        :param covered_ip: The covered_ip of this AddressItems.
+        :type covered_ip: list[:class:`huaweicloudsdkcfw.v1.CoveredIPVO`]
+        """
+        self._covered_ip = covered_ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

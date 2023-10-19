@@ -16,13 +16,16 @@ class RmsAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls, "GlobalCredentials")
+        if not clazz:
+            client_builder = ClientBuilder(cls, "GlobalCredentials")
+        else:
+            if clazz.__name__ != "RmsAsyncClient":
+                raise TypeError("client type error, support client type is RmsAsyncClient")
+            client_builder = ClientBuilder(clazz, "GlobalCredentials")
 
-        if clazz.__name__ != "RmsClient":
-            raise TypeError("client type error, support client type is RmsClient")
+        
 
-        return ClientBuilder(clazz, "GlobalCredentials")
+        return client_builder
 
     def create_aggregation_authorization_async(self, request):
         """创建资源聚合器授权

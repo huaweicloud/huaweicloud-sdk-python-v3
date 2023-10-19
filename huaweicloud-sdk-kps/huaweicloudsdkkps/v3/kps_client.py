@@ -16,13 +16,16 @@ class KpsClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "KpsClient":
+                raise TypeError("client type error, support client type is KpsClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "KpsClient":
-            raise TypeError("client type error, support client type is KpsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def associate_keypair(self, request):
         """绑定SSH密钥对

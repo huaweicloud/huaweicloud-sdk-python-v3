@@ -23,7 +23,8 @@ class ExportCertificateResponse(SdkResponse):
         'certificate_chain': 'str',
         'enc_certificate': 'str',
         'enc_private_key': 'str',
-        'enc_sm2_enveloped_key': 'str'
+        'enc_sm2_enveloped_key': 'str',
+        'signed_and_enveloped_data': 'str'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class ExportCertificateResponse(SdkResponse):
         'certificate_chain': 'certificate_chain',
         'enc_certificate': 'enc_certificate',
         'enc_private_key': 'enc_private_key',
-        'enc_sm2_enveloped_key': 'enc_sm2_enveloped_key'
+        'enc_sm2_enveloped_key': 'enc_sm2_enveloped_key',
+        'signed_and_enveloped_data': 'signed_and_enveloped_data'
     }
 
-    def __init__(self, private_key=None, certificate=None, certificate_chain=None, enc_certificate=None, enc_private_key=None, enc_sm2_enveloped_key=None):
+    def __init__(self, private_key=None, certificate=None, certificate_chain=None, enc_certificate=None, enc_private_key=None, enc_sm2_enveloped_key=None, signed_and_enveloped_data=None):
         """ExportCertificateResponse
 
         The model defined in huaweicloud sdk
@@ -52,6 +54,8 @@ class ExportCertificateResponse(SdkResponse):
         :type enc_private_key: str
         :param enc_sm2_enveloped_key: 加密私钥的国密GMT0009标准规范SM2数字信封。
         :type enc_sm2_enveloped_key: str
+        :param signed_and_enveloped_data: 加密私钥的国密GMT0010标准规范签名数字信封。
+        :type signed_and_enveloped_data: str
         """
         
         super(ExportCertificateResponse, self).__init__()
@@ -62,6 +66,7 @@ class ExportCertificateResponse(SdkResponse):
         self._enc_certificate = None
         self._enc_private_key = None
         self._enc_sm2_enveloped_key = None
+        self._signed_and_enveloped_data = None
         self.discriminator = None
 
         if private_key is not None:
@@ -76,6 +81,8 @@ class ExportCertificateResponse(SdkResponse):
             self.enc_private_key = enc_private_key
         if enc_sm2_enveloped_key is not None:
             self.enc_sm2_enveloped_key = enc_sm2_enveloped_key
+        if signed_and_enveloped_data is not None:
+            self.signed_and_enveloped_data = signed_and_enveloped_data
 
     @property
     def private_key(self):
@@ -208,6 +215,28 @@ class ExportCertificateResponse(SdkResponse):
         :type enc_sm2_enveloped_key: str
         """
         self._enc_sm2_enveloped_key = enc_sm2_enveloped_key
+
+    @property
+    def signed_and_enveloped_data(self):
+        """Gets the signed_and_enveloped_data of this ExportCertificateResponse.
+
+        加密私钥的国密GMT0010标准规范签名数字信封。
+
+        :return: The signed_and_enveloped_data of this ExportCertificateResponse.
+        :rtype: str
+        """
+        return self._signed_and_enveloped_data
+
+    @signed_and_enveloped_data.setter
+    def signed_and_enveloped_data(self, signed_and_enveloped_data):
+        """Sets the signed_and_enveloped_data of this ExportCertificateResponse.
+
+        加密私钥的国密GMT0010标准规范签名数字信封。
+
+        :param signed_and_enveloped_data: The signed_and_enveloped_data of this ExportCertificateResponse.
+        :type signed_and_enveloped_data: str
+        """
+        self._signed_and_enveloped_data = signed_and_enveloped_data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

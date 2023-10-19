@@ -16,13 +16,16 @@ class EgClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "EgClient":
+                raise TypeError("client type error, support client type is EgClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "EgClient":
-            raise TypeError("client type error, support client type is EgClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def check_put_events(self, request):
         """预校验指定事件源发布事件成功

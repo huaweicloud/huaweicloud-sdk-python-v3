@@ -16,13 +16,16 @@ class IdentityCenterStoreClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls, "GlobalCredentials")
+        if not clazz:
+            client_builder = ClientBuilder(cls, "GlobalCredentials")
+        else:
+            if clazz.__name__ != "IdentityCenterStoreClient":
+                raise TypeError("client type error, support client type is IdentityCenterStoreClient")
+            client_builder = ClientBuilder(clazz, "GlobalCredentials")
 
-        if clazz.__name__ != "IdentityCenterStoreClient":
-            raise TypeError("client type error, support client type is IdentityCenterStoreClient")
+        
 
-        return ClientBuilder(clazz, "GlobalCredentials")
+        return client_builder
 
     def list_users(self, request):
         """列出用户

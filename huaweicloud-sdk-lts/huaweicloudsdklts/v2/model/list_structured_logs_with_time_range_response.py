@@ -18,51 +18,51 @@ class ListStructuredLogsWithTimeRangeResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'context': 'list[str]'
+        'result': 'list[object]'
     }
 
     attribute_map = {
-        'context': 'context'
+        'result': 'result'
     }
 
-    def __init__(self, context=None):
+    def __init__(self, result=None):
         """ListStructuredLogsWithTimeRangeResponse
 
         The model defined in huaweicloud sdk
 
-        :param context: 查询结构化日志结果信息。 此处仅为示例，具体参数名称取决于查询的字段。
-        :type context: list[str]
+        :param result: 查询结构化日志结果信息。 此处仅为示例，具体参数名称取决于查询的字段。
+        :type result: list[object]
         """
         
         super(ListStructuredLogsWithTimeRangeResponse, self).__init__()
 
-        self._context = None
+        self._result = None
         self.discriminator = None
 
-        if context is not None:
-            self.context = context
+        if result is not None:
+            self.result = result
 
     @property
-    def context(self):
-        """Gets the context of this ListStructuredLogsWithTimeRangeResponse.
+    def result(self):
+        """Gets the result of this ListStructuredLogsWithTimeRangeResponse.
 
         查询结构化日志结果信息。 此处仅为示例，具体参数名称取决于查询的字段。
 
-        :return: The context of this ListStructuredLogsWithTimeRangeResponse.
-        :rtype: list[str]
+        :return: The result of this ListStructuredLogsWithTimeRangeResponse.
+        :rtype: list[object]
         """
-        return self._context
+        return self._result
 
-    @context.setter
-    def context(self, context):
-        """Sets the context of this ListStructuredLogsWithTimeRangeResponse.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this ListStructuredLogsWithTimeRangeResponse.
 
         查询结构化日志结果信息。 此处仅为示例，具体参数名称取决于查询的字段。
 
-        :param context: The context of this ListStructuredLogsWithTimeRangeResponse.
-        :type context: list[str]
+        :param result: The result of this ListStructuredLogsWithTimeRangeResponse.
+        :type result: list[object]
         """
-        self._context = context
+        self._result = result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

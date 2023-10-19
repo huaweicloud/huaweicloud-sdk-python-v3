@@ -22,12 +22,12 @@ class CloudConnection:
         'description': 'str',
         'domain_id': 'str',
         'enterprise_project_id': 'str',
-        'status': 'str',
-        'admin_state_up': 'bool',
         'created_at': 'datetime',
         'updated_at': 'datetime',
-        'used_scene': 'str',
         'tags': 'list[Tag]',
+        'status': 'str',
+        'admin_state_up': 'bool',
+        'used_scene': 'str',
         'network_instance_number': 'int',
         'bandwidth_package_number': 'int',
         'inter_region_bandwidth_number': 'int'
@@ -39,44 +39,44 @@ class CloudConnection:
         'description': 'description',
         'domain_id': 'domain_id',
         'enterprise_project_id': 'enterprise_project_id',
-        'status': 'status',
-        'admin_state_up': 'admin_state_up',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
-        'used_scene': 'used_scene',
         'tags': 'tags',
+        'status': 'status',
+        'admin_state_up': 'admin_state_up',
+        'used_scene': 'used_scene',
         'network_instance_number': 'network_instance_number',
         'bandwidth_package_number': 'bandwidth_package_number',
         'inter_region_bandwidth_number': 'inter_region_bandwidth_number'
     }
 
-    def __init__(self, id=None, name=None, description=None, domain_id=None, enterprise_project_id=None, status=None, admin_state_up=None, created_at=None, updated_at=None, used_scene=None, tags=None, network_instance_number=None, bandwidth_package_number=None, inter_region_bandwidth_number=None):
+    def __init__(self, id=None, name=None, description=None, domain_id=None, enterprise_project_id=None, created_at=None, updated_at=None, tags=None, status=None, admin_state_up=None, used_scene=None, network_instance_number=None, bandwidth_package_number=None, inter_region_bandwidth_number=None):
         """CloudConnection
 
         The model defined in huaweicloud sdk
 
-        :param id: 云连接实例的ID。
+        :param id: 资源ID标识符。
         :type id: str
-        :param name: 云连接实例的名字。
+        :param name: 实例名字。
         :type name: str
-        :param description: 云连接实例的描述。
+        :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param domain_id: 帐号ID。
+        :param domain_id: 实例所属帐号ID。
         :type domain_id: str
-        :param enterprise_project_id: 云连接实例的企业项目ID。
+        :param enterprise_project_id: 实例所属企业项目ID。
         :type enterprise_project_id: str
+        :param created_at: 实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
+        :type created_at: datetime
+        :param updated_at: 实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
+        :type updated_at: datetime
+        :param tags: 实例标签。
+        :type tags: list[:class:`huaweicloudsdkcc.v3.Tag`]
         :param status: 云连接实例的状态。ACTIVE：表示状态可用。
         :type status: str
         :param admin_state_up: 云连接实例的管理状态。
         :type admin_state_up: bool
-        :param created_at: 云连接实例的创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss
-        :type created_at: datetime
-        :param updated_at: 云连接实例的更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss
-        :type updated_at: datetime
         :param used_scene: 云连接使用场景。 - VPC：虚拟私有云。
         :type used_scene: str
-        :param tags: 标签列表。
-        :type tags: list[:class:`huaweicloudsdkcc.v3.Tag`]
         :param network_instance_number: 云连接实例关联网络实例的个数。
         :type network_instance_number: int
         :param bandwidth_package_number: 云连接实例关联带宽包的个数。
@@ -92,39 +92,34 @@ class CloudConnection:
         self._description = None
         self._domain_id = None
         self._enterprise_project_id = None
-        self._status = None
-        self._admin_state_up = None
         self._created_at = None
         self._updated_at = None
-        self._used_scene = None
         self._tags = None
+        self._status = None
+        self._admin_state_up = None
+        self._used_scene = None
         self._network_instance_number = None
         self._bandwidth_package_number = None
         self._inter_region_bandwidth_number = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if name is not None:
-            self.name = name
+        self.id = id
+        self.name = name
         if description is not None:
             self.description = description
-        if domain_id is not None:
-            self.domain_id = domain_id
+        self.domain_id = domain_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        self.created_at = created_at
+        self.updated_at = updated_at
+        if tags is not None:
+            self.tags = tags
         if status is not None:
             self.status = status
         if admin_state_up is not None:
             self.admin_state_up = admin_state_up
-        if created_at is not None:
-            self.created_at = created_at
-        if updated_at is not None:
-            self.updated_at = updated_at
         if used_scene is not None:
             self.used_scene = used_scene
-        if tags is not None:
-            self.tags = tags
         if network_instance_number is not None:
             self.network_instance_number = network_instance_number
         if bandwidth_package_number is not None:
@@ -136,7 +131,7 @@ class CloudConnection:
     def id(self):
         """Gets the id of this CloudConnection.
 
-        云连接实例的ID。
+        资源ID标识符。
 
         :return: The id of this CloudConnection.
         :rtype: str
@@ -147,7 +142,7 @@ class CloudConnection:
     def id(self, id):
         """Sets the id of this CloudConnection.
 
-        云连接实例的ID。
+        资源ID标识符。
 
         :param id: The id of this CloudConnection.
         :type id: str
@@ -158,7 +153,7 @@ class CloudConnection:
     def name(self):
         """Gets the name of this CloudConnection.
 
-        云连接实例的名字。
+        实例名字。
 
         :return: The name of this CloudConnection.
         :rtype: str
@@ -169,7 +164,7 @@ class CloudConnection:
     def name(self, name):
         """Sets the name of this CloudConnection.
 
-        云连接实例的名字。
+        实例名字。
 
         :param name: The name of this CloudConnection.
         :type name: str
@@ -180,7 +175,7 @@ class CloudConnection:
     def description(self):
         """Gets the description of this CloudConnection.
 
-        云连接实例的描述。
+        实例描述。不支持 <>。
 
         :return: The description of this CloudConnection.
         :rtype: str
@@ -191,7 +186,7 @@ class CloudConnection:
     def description(self, description):
         """Sets the description of this CloudConnection.
 
-        云连接实例的描述。
+        实例描述。不支持 <>。
 
         :param description: The description of this CloudConnection.
         :type description: str
@@ -202,7 +197,7 @@ class CloudConnection:
     def domain_id(self):
         """Gets the domain_id of this CloudConnection.
 
-        帐号ID。
+        实例所属帐号ID。
 
         :return: The domain_id of this CloudConnection.
         :rtype: str
@@ -213,7 +208,7 @@ class CloudConnection:
     def domain_id(self, domain_id):
         """Sets the domain_id of this CloudConnection.
 
-        帐号ID。
+        实例所属帐号ID。
 
         :param domain_id: The domain_id of this CloudConnection.
         :type domain_id: str
@@ -224,7 +219,7 @@ class CloudConnection:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CloudConnection.
 
-        云连接实例的企业项目ID。
+        实例所属企业项目ID。
 
         :return: The enterprise_project_id of this CloudConnection.
         :rtype: str
@@ -235,12 +230,78 @@ class CloudConnection:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CloudConnection.
 
-        云连接实例的企业项目ID。
+        实例所属企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this CloudConnection.
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this CloudConnection.
+
+        实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
+
+        :return: The created_at of this CloudConnection.
+        :rtype: datetime
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this CloudConnection.
+
+        实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
+
+        :param created_at: The created_at of this CloudConnection.
+        :type created_at: datetime
+        """
+        self._created_at = created_at
+
+    @property
+    def updated_at(self):
+        """Gets the updated_at of this CloudConnection.
+
+        实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
+
+        :return: The updated_at of this CloudConnection.
+        :rtype: datetime
+        """
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        """Sets the updated_at of this CloudConnection.
+
+        实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
+
+        :param updated_at: The updated_at of this CloudConnection.
+        :type updated_at: datetime
+        """
+        self._updated_at = updated_at
+
+    @property
+    def tags(self):
+        """Gets the tags of this CloudConnection.
+
+        实例标签。
+
+        :return: The tags of this CloudConnection.
+        :rtype: list[:class:`huaweicloudsdkcc.v3.Tag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CloudConnection.
+
+        实例标签。
+
+        :param tags: The tags of this CloudConnection.
+        :type tags: list[:class:`huaweicloudsdkcc.v3.Tag`]
+        """
+        self._tags = tags
 
     @property
     def status(self):
@@ -287,50 +348,6 @@ class CloudConnection:
         self._admin_state_up = admin_state_up
 
     @property
-    def created_at(self):
-        """Gets the created_at of this CloudConnection.
-
-        云连接实例的创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss
-
-        :return: The created_at of this CloudConnection.
-        :rtype: datetime
-        """
-        return self._created_at
-
-    @created_at.setter
-    def created_at(self, created_at):
-        """Sets the created_at of this CloudConnection.
-
-        云连接实例的创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss
-
-        :param created_at: The created_at of this CloudConnection.
-        :type created_at: datetime
-        """
-        self._created_at = created_at
-
-    @property
-    def updated_at(self):
-        """Gets the updated_at of this CloudConnection.
-
-        云连接实例的更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss
-
-        :return: The updated_at of this CloudConnection.
-        :rtype: datetime
-        """
-        return self._updated_at
-
-    @updated_at.setter
-    def updated_at(self, updated_at):
-        """Sets the updated_at of this CloudConnection.
-
-        云连接实例的更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss
-
-        :param updated_at: The updated_at of this CloudConnection.
-        :type updated_at: datetime
-        """
-        self._updated_at = updated_at
-
-    @property
     def used_scene(self):
         """Gets the used_scene of this CloudConnection.
 
@@ -351,28 +368,6 @@ class CloudConnection:
         :type used_scene: str
         """
         self._used_scene = used_scene
-
-    @property
-    def tags(self):
-        """Gets the tags of this CloudConnection.
-
-        标签列表。
-
-        :return: The tags of this CloudConnection.
-        :rtype: list[:class:`huaweicloudsdkcc.v3.Tag`]
-        """
-        return self._tags
-
-    @tags.setter
-    def tags(self, tags):
-        """Sets the tags of this CloudConnection.
-
-        标签列表。
-
-        :param tags: The tags of this CloudConnection.
-        :type tags: list[:class:`huaweicloudsdkcc.v3.Tag`]
-        """
-        self._tags = tags
 
     @property
     def network_instance_number(self):

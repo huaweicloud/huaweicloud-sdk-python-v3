@@ -17,64 +17,35 @@ class Tags:
     sensitive_list = []
 
     openapi_types = {
-        'action': 'str',
         'tags': 'list[Tag]'
     }
 
     attribute_map = {
-        'action': 'action',
         'tags': 'tags'
     }
 
-    def __init__(self, action=None, tags=None):
+    def __init__(self, tags=None):
         """Tags
 
         The model defined in huaweicloud sdk
 
-        :param action: 动作。|- create：创建。 delete：删除。
-        :type action: str
-        :param tags: 批量添加/删除资源标签
+        :param tags: 实例标签。
         :type tags: list[:class:`huaweicloudsdkcc.v3.Tag`]
         """
         
         
 
-        self._action = None
         self._tags = None
         self.discriminator = None
 
-        if action is not None:
-            self.action = action
         if tags is not None:
             self.tags = tags
-
-    @property
-    def action(self):
-        """Gets the action of this Tags.
-
-        动作。|- create：创建。 delete：删除。
-
-        :return: The action of this Tags.
-        :rtype: str
-        """
-        return self._action
-
-    @action.setter
-    def action(self, action):
-        """Sets the action of this Tags.
-
-        动作。|- create：创建。 delete：删除。
-
-        :param action: The action of this Tags.
-        :type action: str
-        """
-        self._action = action
 
     @property
     def tags(self):
         """Gets the tags of this Tags.
 
-        批量添加/删除资源标签
+        实例标签。
 
         :return: The tags of this Tags.
         :rtype: list[:class:`huaweicloudsdkcc.v3.Tag`]
@@ -85,7 +56,7 @@ class Tags:
     def tags(self, tags):
         """Sets the tags of this Tags.
 
-        批量添加/删除资源标签
+        实例标签。
 
         :param tags: The tags of this Tags.
         :type tags: list[:class:`huaweicloudsdkcc.v3.Tag`]

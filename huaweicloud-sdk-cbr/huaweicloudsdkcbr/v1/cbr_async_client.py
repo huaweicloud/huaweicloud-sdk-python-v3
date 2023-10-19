@@ -16,13 +16,16 @@ class CbrAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "CbrAsyncClient":
+                raise TypeError("client type error, support client type is CbrAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "CbrClient":
-            raise TypeError("client type error, support client type is CbrClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def add_agent_path_async(self, request):
         """新增备份路径
@@ -1338,6 +1341,7 @@ class CbrAsyncClient(Client):
             query_params.append(('status', local_var_params['status']))
         if 'agent_id' in local_var_params:
             query_params.append(('agent_id', local_var_params['agent_id']))
+            collection_formats['agent_id'] = 'csv'
 
         header_params = {}
 
@@ -1902,6 +1906,7 @@ class CbrAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'csv'
         if 'policy_id' in local_var_params:
             query_params.append(('policy_id', local_var_params['policy_id']))
         if 'status' in local_var_params:

@@ -71,7 +71,8 @@ class EnvRegionProvider(RegionProvider):
         if not endpoint:
             return None
 
-        region = Region(region_id, endpoint)
+        endpoints = endpoint.split(',')
+        region = Region(region_id, *endpoints)
         cache.set(self._service_name + region_id, region)
         return region
 

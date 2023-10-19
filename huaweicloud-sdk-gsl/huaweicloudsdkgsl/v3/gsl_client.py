@@ -16,13 +16,16 @@ class GslClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "GslClient":
+                raise TypeError("client type error, support client type is GslClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "GslClient":
-            raise TypeError("client type error, support client type is GslClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def batch_set_attributes(self, request):
         """批量设置自定义属性接口

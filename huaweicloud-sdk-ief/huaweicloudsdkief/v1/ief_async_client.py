@@ -16,13 +16,16 @@ class IefAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "IefAsyncClient":
+                raise TypeError("client type error, support client type is IefAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "IefClient":
-            raise TypeError("client type error, support client type is IefClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def batch_add_delete_tags_async(self, request):
         """批量添加删除资源标签

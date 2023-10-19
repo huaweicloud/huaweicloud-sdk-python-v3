@@ -35,9 +35,9 @@ class UpdateBandwidthPackage:
 
         The model defined in huaweicloud sdk
 
-        :param name: 带宽包实例的名字。
+        :param name: 实例名字。
         :type name: str
-        :param description: 带宽包实例的描述。
+        :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
         :param bandwidth: 带宽包实例中的带宽值。
         :type bandwidth: int
@@ -66,7 +66,7 @@ class UpdateBandwidthPackage:
     def name(self):
         """Gets the name of this UpdateBandwidthPackage.
 
-        带宽包实例的名字。
+        实例名字。
 
         :return: The name of this UpdateBandwidthPackage.
         :rtype: str
@@ -77,7 +77,7 @@ class UpdateBandwidthPackage:
     def name(self, name):
         """Sets the name of this UpdateBandwidthPackage.
 
-        带宽包实例的名字。
+        实例名字。
 
         :param name: The name of this UpdateBandwidthPackage.
         :type name: str
@@ -88,7 +88,7 @@ class UpdateBandwidthPackage:
     def description(self):
         """Gets the description of this UpdateBandwidthPackage.
 
-        带宽包实例的描述。
+        实例描述。不支持 <>。
 
         :return: The description of this UpdateBandwidthPackage.
         :rtype: str
@@ -99,7 +99,7 @@ class UpdateBandwidthPackage:
     def description(self, description):
         """Sets the description of this UpdateBandwidthPackage.
 
-        带宽包实例的描述。
+        实例描述。不支持 <>。
 
         :param description: The description of this UpdateBandwidthPackage.
         :type description: str

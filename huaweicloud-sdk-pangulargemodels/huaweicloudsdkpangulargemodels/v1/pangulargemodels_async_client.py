@@ -16,13 +16,16 @@ class PanguLargeModelsAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "PanguLargeModelsAsyncClient":
+                raise TypeError("client type error, support client type is PanguLargeModelsAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "PanguLargeModelsClient":
-            raise TypeError("client type error, support client type is PanguLargeModelsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def execute_chat_completion_async(self, request):
         """对话问答

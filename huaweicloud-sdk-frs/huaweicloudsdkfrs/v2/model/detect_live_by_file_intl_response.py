@@ -19,15 +19,17 @@ class DetectLiveByFileIntlResponse(SdkResponse):
 
     openapi_types = {
         'video_result': 'LiveDetectRespVideoresult',
-        'warning_list': 'list[WarningList]'
+        'warning_list': 'list[WarningList]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'video_result': 'video-result',
-        'warning_list': 'warning-list'
+        'warning_list': 'warning-list',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, video_result=None, warning_list=None):
+    def __init__(self, video_result=None, warning_list=None, x_request_id=None):
         """DetectLiveByFileIntlResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class DetectLiveByFileIntlResponse(SdkResponse):
         :type video_result: :class:`huaweicloudsdkfrs.v2.LiveDetectRespVideoresult`
         :param warning_list: [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/api-face/face_02_0077.html)。调用失败时无此字段](tag:hc) [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0077.html)。调用失败时无此字段](tag:hk)
         :type warning_list: list[:class:`huaweicloudsdkfrs.v2.WarningList`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(DetectLiveByFileIntlResponse, self).__init__()
 
         self._video_result = None
         self._warning_list = None
+        self._x_request_id = None
         self.discriminator = None
 
         if video_result is not None:
             self.video_result = video_result
         if warning_list is not None:
             self.warning_list = warning_list
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def video_result(self):
@@ -88,6 +95,24 @@ class DetectLiveByFileIntlResponse(SdkResponse):
         :type warning_list: list[:class:`huaweicloudsdkfrs.v2.WarningList`]
         """
         self._warning_list = warning_list
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this DetectLiveByFileIntlResponse.
+
+        :return: The x_request_id of this DetectLiveByFileIntlResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this DetectLiveByFileIntlResponse.
+
+        :param x_request_id: The x_request_id of this DetectLiveByFileIntlResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

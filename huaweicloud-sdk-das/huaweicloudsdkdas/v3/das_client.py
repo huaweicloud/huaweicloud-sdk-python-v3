@@ -16,13 +16,16 @@ class DasClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "DasClient":
+                raise TypeError("client type error, support client type is DasClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "DasClient":
-            raise TypeError("client type error, support client type is DasClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def list_api_versions(self, request):
         """查询API版本列表

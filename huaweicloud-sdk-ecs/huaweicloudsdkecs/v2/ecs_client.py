@@ -16,13 +16,16 @@ class EcsClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "EcsClient":
+                raise TypeError("client type error, support client type is EcsClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "EcsClient":
-            raise TypeError("client type error, support client type is EcsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def add_server_group_member(self, request):
         """添加云服务器组成员

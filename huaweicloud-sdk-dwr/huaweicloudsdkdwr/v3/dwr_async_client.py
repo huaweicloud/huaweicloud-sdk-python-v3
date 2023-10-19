@@ -16,13 +16,16 @@ class DwrAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "DwrAsyncClient":
+                raise TypeError("client type error, support client type is DwrAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "DwrClient":
-            raise TypeError("client type error, support client type is DwrClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def accept_service_contract_async(self, request):
         """同意服务协议

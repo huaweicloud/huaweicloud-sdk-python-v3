@@ -16,13 +16,16 @@ class VpcAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "VpcAsyncClient":
+                raise TypeError("client type error, support client type is VpcAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "VpcClient":
-            raise TypeError("client type error, support client type is VpcClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def add_sources_to_traffic_mirror_session_async(self, request):
         """流量镜像会话添加镜像源
@@ -78,6 +81,65 @@ class VpcAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='AddSourcesToTrafficMirrorSessionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_create_security_group_rules_async(self, request):
+        """批量创建安全组规则
+
+        在特定安全组下批量创建安全组规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateSecurityGroupRules
+        :type request: :class:`huaweicloudsdkvpc.v3.BatchCreateSecurityGroupRulesRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreateSecurityGroupRulesResponse`
+        """
+        return self._batch_create_security_group_rules_with_http_info(request)
+
+    def _batch_create_security_group_rules_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'security_group_id' in local_var_params:
+            path_params['security_group_id'] = local_var_params['security_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/security-groups/{security_group_id}/security-group-rules/batch-create',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchCreateSecurityGroupRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

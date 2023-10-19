@@ -16,13 +16,16 @@ class MetaStudioClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "MetaStudioClient":
+                raise TypeError("client type error, support client type is MetaStudioClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "MetaStudioClient":
-            raise TypeError("client type error, support client type is MetaStudioClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_digital_asset(self, request):
         """创建资产

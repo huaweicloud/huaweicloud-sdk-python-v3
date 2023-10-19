@@ -16,13 +16,16 @@ class AosAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "AosAsyncClient":
+                raise TypeError("client type error, support client type is AosAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "AosClient":
-            raise TypeError("client type error, support client type is AosClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def apply_execution_plan_async(self, request):
         """执行执行计划

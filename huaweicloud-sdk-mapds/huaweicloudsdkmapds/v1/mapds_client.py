@@ -16,13 +16,16 @@ class MapDSClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "MapDSClient":
+                raise TypeError("client type error, support client type is MapDSClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "MapDSClient":
-            raise TypeError("client type error, support client type is MapDSClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_credential(self, request):
         """创建凭证

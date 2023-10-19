@@ -1,0 +1,23 @@
+# coding: utf-8
+
+from __future__ import absolute_import
+
+# import models into model package
+from huaweicloudsdkcc.v2.model.agg_tag import AggTag
+from huaweicloudsdkcc.v2.model.batch_create_delete_tags_request import BatchCreateDeleteTagsRequest
+from huaweicloudsdkcc.v2.model.batch_create_delete_tags_response import BatchCreateDeleteTagsResponse
+from huaweicloudsdkcc.v2.model.create_tag_request import CreateTagRequest
+from huaweicloudsdkcc.v2.model.create_tag_request_body import CreateTagRequestBody
+from huaweicloudsdkcc.v2.model.create_tag_response import CreateTagResponse
+from huaweicloudsdkcc.v2.model.delete_tag_request import DeleteTagRequest
+from huaweicloudsdkcc.v2.model.delete_tag_response import DeleteTagResponse
+from huaweicloudsdkcc.v2.model.filter_tag_resource import FilterTagResource
+from huaweicloudsdkcc.v2.model.list_domain_tags_request import ListDomainTagsRequest
+from huaweicloudsdkcc.v2.model.list_domain_tags_response import ListDomainTagsResponse
+from huaweicloudsdkcc.v2.model.list_resource_by_filter_tag_request import ListResourceByFilterTagRequest
+from huaweicloudsdkcc.v2.model.list_resource_by_filter_tag_request_body import ListResourceByFilterTagRequestBody
+from huaweicloudsdkcc.v2.model.list_resource_by_filter_tag_response import ListResourceByFilterTagResponse
+from huaweicloudsdkcc.v2.model.list_tags_request import ListTagsRequest
+from huaweicloudsdkcc.v2.model.list_tags_response import ListTagsResponse
+from huaweicloudsdkcc.v2.model.resource_tags import ResourceTags
+from huaweicloudsdkcc.v2.model.tag import Tag

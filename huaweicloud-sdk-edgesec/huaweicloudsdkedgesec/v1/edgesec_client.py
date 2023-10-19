@@ -16,13 +16,16 @@ class EdgeSecClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "EdgeSecClient":
+                raise TypeError("client type error, support client type is EdgeSecClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "EdgeSecClient":
-            raise TypeError("client type error, support client type is EdgeSecClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def list_edge_sec_subscription(self, request):
         """查询边缘安全已购产品

@@ -18,43 +18,81 @@ class ListCloudConnectionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'cloud_connections': 'list[CloudConnection]',
+        'request_id': 'str',
         'page_info': 'PageInfo',
-        'request_id': 'str'
+        'cloud_connections': 'list[CloudConnection]'
     }
 
     attribute_map = {
-        'cloud_connections': 'cloud_connections',
+        'request_id': 'request_id',
         'page_info': 'page_info',
-        'request_id': 'request_id'
+        'cloud_connections': 'cloud_connections'
     }
 
-    def __init__(self, cloud_connections=None, page_info=None, request_id=None):
+    def __init__(self, request_id=None, page_info=None, cloud_connections=None):
         """ListCloudConnectionsResponse
 
         The model defined in huaweicloud sdk
 
-        :param cloud_connections: 云连接实例列表。
-        :type cloud_connections: list[:class:`huaweicloudsdkcc.v3.CloudConnection`]
+        :param request_id: 资源ID标识符。
+        :type request_id: str
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
-        :param request_id: 请求ID。
-        :type request_id: str
+        :param cloud_connections: 云连接实例列表。
+        :type cloud_connections: list[:class:`huaweicloudsdkcc.v3.CloudConnection`]
         """
         
         super(ListCloudConnectionsResponse, self).__init__()
 
-        self._cloud_connections = None
-        self._page_info = None
         self._request_id = None
+        self._page_info = None
+        self._cloud_connections = None
         self.discriminator = None
 
-        if cloud_connections is not None:
-            self.cloud_connections = cloud_connections
+        self.request_id = request_id
         if page_info is not None:
             self.page_info = page_info
-        if request_id is not None:
-            self.request_id = request_id
+        self.cloud_connections = cloud_connections
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this ListCloudConnectionsResponse.
+
+        资源ID标识符。
+
+        :return: The request_id of this ListCloudConnectionsResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ListCloudConnectionsResponse.
+
+        资源ID标识符。
+
+        :param request_id: The request_id of this ListCloudConnectionsResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
+
+    @property
+    def page_info(self):
+        """Gets the page_info of this ListCloudConnectionsResponse.
+
+        :return: The page_info of this ListCloudConnectionsResponse.
+        :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        """Sets the page_info of this ListCloudConnectionsResponse.
+
+        :param page_info: The page_info of this ListCloudConnectionsResponse.
+        :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
+        """
+        self._page_info = page_info
 
     @property
     def cloud_connections(self):
@@ -77,46 +115,6 @@ class ListCloudConnectionsResponse(SdkResponse):
         :type cloud_connections: list[:class:`huaweicloudsdkcc.v3.CloudConnection`]
         """
         self._cloud_connections = cloud_connections
-
-    @property
-    def page_info(self):
-        """Gets the page_info of this ListCloudConnectionsResponse.
-
-        :return: The page_info of this ListCloudConnectionsResponse.
-        :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
-        """
-        return self._page_info
-
-    @page_info.setter
-    def page_info(self, page_info):
-        """Sets the page_info of this ListCloudConnectionsResponse.
-
-        :param page_info: The page_info of this ListCloudConnectionsResponse.
-        :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
-        """
-        self._page_info = page_info
-
-    @property
-    def request_id(self):
-        """Gets the request_id of this ListCloudConnectionsResponse.
-
-        请求ID。
-
-        :return: The request_id of this ListCloudConnectionsResponse.
-        :rtype: str
-        """
-        return self._request_id
-
-    @request_id.setter
-    def request_id(self, request_id):
-        """Sets the request_id of this ListCloudConnectionsResponse.
-
-        请求ID。
-
-        :param request_id: The request_id of this ListCloudConnectionsResponse.
-        :type request_id: str
-        """
-        self._request_id = request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -16,13 +16,16 @@ class RomaClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "RomaClient":
+                raise TypeError("client type error, support client type is RomaClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "RomaClient":
-            raise TypeError("client type error, support client type is RomaClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def add_subsets_to_gateway(self, request):
         """添加子设备到网关

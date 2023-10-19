@@ -16,13 +16,16 @@ class DlfClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "DlfClient":
+                raise TypeError("client type error, support client type is DlfClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "DlfClient":
-            raise TypeError("client type error, support client type is DlfClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def cancel_script(self, request):
         """停止脚本实例的执行

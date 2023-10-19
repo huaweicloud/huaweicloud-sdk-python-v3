@@ -16,13 +16,16 @@ class DevStarAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls, "GlobalCredentials")
+        if not clazz:
+            client_builder = ClientBuilder(cls, "GlobalCredentials")
+        else:
+            if clazz.__name__ != "DevStarAsyncClient":
+                raise TypeError("client type error, support client type is DevStarAsyncClient")
+            client_builder = ClientBuilder(clazz, "GlobalCredentials")
 
-        if clazz.__name__ != "DevStarClient":
-            raise TypeError("client type error, support client type is DevStarClient")
+        
 
-        return ClientBuilder(clazz, "GlobalCredentials")
+        return client_builder
 
     def show_application_release_repositories_async(self, request):
         """通过应用Id获取软件发布仓库列表 

@@ -16,13 +16,16 @@ class DataArtsStudioAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "DataArtsStudioAsyncClient":
+                raise TypeError("client type error, support client type is DataArtsStudioAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "DataArtsStudioClient":
-            raise TypeError("client type error, support client type is DataArtsStudioClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def add_tag_to_asset_async(self, request):
         """标签关联到资产
@@ -617,6 +620,63 @@ class DataArtsStudioAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='BatchPublishResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_sync_metadata_async(self, request):
+        """元数据实时同步接口(邀测)
+
+        元数据实时同步接口，支持批量。该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchSyncMetadata
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchSyncMetadataRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchSyncMetadataResponse`
+        """
+        return self._batch_sync_metadata_with_http_info(request)
+
+    def _batch_sync_metadata_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/metadata/async-bulk',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchSyncMetadataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -7300,6 +7360,65 @@ class DataArtsStudioAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def parse_user_behavior_async(self, request):
+        """用户行为分析
+
+        用户行为分析
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ParseUserBehavior
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ParseUserBehaviorRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ParseUserBehaviorResponse`
+        """
+        return self._parse_user_behavior_with_http_info(request)
+
+    def _parse_user_behavior_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance' in local_var_params:
+            header_params['instance'] = local_var_params['instance']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/datamap/uba',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ParseUserBehaviorResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def pay_for_dgc_one_key_async(self, request):
         """DataArtsStudio实例一键购买接口
 
@@ -9713,6 +9832,65 @@ class DataArtsStudioAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_data_sets_async(self, request):
+        """资产搜索
+
+        资产搜索
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDataSets
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowDataSetsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowDataSetsResponse`
+        """
+        return self._show_data_sets_with_http_info(request)
+
+    def _show_data_sets_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance' in local_var_params:
+            header_params['instance'] = local_var_params['instance']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/datamap/entities/search',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDataSetsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_dataconnection_async(self, request):
         """查询单个数据连接信息
 
@@ -11064,6 +11242,65 @@ class DataArtsStudioAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowTableModelByIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_tags_async(self, request):
+        """搜索查询标签分页展示
+
+        搜索查询标签分页展示
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTags
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowTagsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowTagsResponse`
+        """
+        return self._show_tags_with_http_info(request)
+
+    def _show_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance' in local_var_params:
+            header_params['instance'] = local_var_params['instance']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/datamap/tags/search',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

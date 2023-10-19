@@ -21,10 +21,10 @@ class InterRegionBandwidth:
         'name': 'str',
         'description': 'str',
         'domain_id': 'str',
-        'bandwidth_package_id': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'cloud_connection_id': 'str',
+        'bandwidth_package_id': 'str',
         'inter_regions': 'list[InterRegion]',
         'bandwidth': 'int'
     }
@@ -34,35 +34,35 @@ class InterRegionBandwidth:
         'name': 'name',
         'description': 'description',
         'domain_id': 'domain_id',
-        'bandwidth_package_id': 'bandwidth_package_id',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'cloud_connection_id': 'cloud_connection_id',
+        'bandwidth_package_id': 'bandwidth_package_id',
         'inter_regions': 'inter_regions',
         'bandwidth': 'bandwidth'
     }
 
-    def __init__(self, id=None, name=None, description=None, domain_id=None, bandwidth_package_id=None, created_at=None, updated_at=None, cloud_connection_id=None, inter_regions=None, bandwidth=None):
+    def __init__(self, id=None, name=None, description=None, domain_id=None, created_at=None, updated_at=None, cloud_connection_id=None, bandwidth_package_id=None, inter_regions=None, bandwidth=None):
         """InterRegionBandwidth
 
         The model defined in huaweicloud sdk
 
-        :param id: 域间带宽实例的ID。
+        :param id: 资源ID标识符。
         :type id: str
-        :param name: 域间带宽实例的名字。
+        :param name: 实例名字。
         :type name: str
-        :param description: 域间带宽实例的描述。
+        :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param domain_id: 帐号ID。
+        :param domain_id: 实例所属帐号ID。
         :type domain_id: str
-        :param bandwidth_package_id: 带宽包实例的ID。
-        :type bandwidth_package_id: str
-        :param created_at: 域间带宽实例的创建时间。
+        :param created_at: 实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type created_at: datetime
-        :param updated_at: 域间带宽实例的更新时间。
+        :param updated_at: 实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type updated_at: datetime
-        :param cloud_connection_id: 云连接实例的ID。
+        :param cloud_connection_id: 资源ID标识符。
         :type cloud_connection_id: str
+        :param bandwidth_package_id: 资源ID标识符。
+        :type bandwidth_package_id: str
         :param inter_regions: 域间实例信息。
         :type inter_regions: list[:class:`huaweicloudsdkcc.v3.InterRegion`]
         :param bandwidth: 域间带宽的值。
@@ -75,30 +75,23 @@ class InterRegionBandwidth:
         self._name = None
         self._description = None
         self._domain_id = None
-        self._bandwidth_package_id = None
         self._created_at = None
         self._updated_at = None
         self._cloud_connection_id = None
+        self._bandwidth_package_id = None
         self._inter_regions = None
         self._bandwidth = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if name is not None:
-            self.name = name
+        self.id = id
+        self.name = name
         if description is not None:
             self.description = description
-        if domain_id is not None:
-            self.domain_id = domain_id
-        if bandwidth_package_id is not None:
-            self.bandwidth_package_id = bandwidth_package_id
-        if created_at is not None:
-            self.created_at = created_at
-        if updated_at is not None:
-            self.updated_at = updated_at
-        if cloud_connection_id is not None:
-            self.cloud_connection_id = cloud_connection_id
+        self.domain_id = domain_id
+        self.created_at = created_at
+        self.updated_at = updated_at
+        self.cloud_connection_id = cloud_connection_id
+        self.bandwidth_package_id = bandwidth_package_id
         if inter_regions is not None:
             self.inter_regions = inter_regions
         if bandwidth is not None:
@@ -108,7 +101,7 @@ class InterRegionBandwidth:
     def id(self):
         """Gets the id of this InterRegionBandwidth.
 
-        域间带宽实例的ID。
+        资源ID标识符。
 
         :return: The id of this InterRegionBandwidth.
         :rtype: str
@@ -119,7 +112,7 @@ class InterRegionBandwidth:
     def id(self, id):
         """Sets the id of this InterRegionBandwidth.
 
-        域间带宽实例的ID。
+        资源ID标识符。
 
         :param id: The id of this InterRegionBandwidth.
         :type id: str
@@ -130,7 +123,7 @@ class InterRegionBandwidth:
     def name(self):
         """Gets the name of this InterRegionBandwidth.
 
-        域间带宽实例的名字。
+        实例名字。
 
         :return: The name of this InterRegionBandwidth.
         :rtype: str
@@ -141,7 +134,7 @@ class InterRegionBandwidth:
     def name(self, name):
         """Sets the name of this InterRegionBandwidth.
 
-        域间带宽实例的名字。
+        实例名字。
 
         :param name: The name of this InterRegionBandwidth.
         :type name: str
@@ -152,7 +145,7 @@ class InterRegionBandwidth:
     def description(self):
         """Gets the description of this InterRegionBandwidth.
 
-        域间带宽实例的描述。
+        实例描述。不支持 <>。
 
         :return: The description of this InterRegionBandwidth.
         :rtype: str
@@ -163,7 +156,7 @@ class InterRegionBandwidth:
     def description(self, description):
         """Sets the description of this InterRegionBandwidth.
 
-        域间带宽实例的描述。
+        实例描述。不支持 <>。
 
         :param description: The description of this InterRegionBandwidth.
         :type description: str
@@ -174,7 +167,7 @@ class InterRegionBandwidth:
     def domain_id(self):
         """Gets the domain_id of this InterRegionBandwidth.
 
-        帐号ID。
+        实例所属帐号ID。
 
         :return: The domain_id of this InterRegionBandwidth.
         :rtype: str
@@ -185,7 +178,7 @@ class InterRegionBandwidth:
     def domain_id(self, domain_id):
         """Sets the domain_id of this InterRegionBandwidth.
 
-        帐号ID。
+        实例所属帐号ID。
 
         :param domain_id: The domain_id of this InterRegionBandwidth.
         :type domain_id: str
@@ -193,32 +186,10 @@ class InterRegionBandwidth:
         self._domain_id = domain_id
 
     @property
-    def bandwidth_package_id(self):
-        """Gets the bandwidth_package_id of this InterRegionBandwidth.
-
-        带宽包实例的ID。
-
-        :return: The bandwidth_package_id of this InterRegionBandwidth.
-        :rtype: str
-        """
-        return self._bandwidth_package_id
-
-    @bandwidth_package_id.setter
-    def bandwidth_package_id(self, bandwidth_package_id):
-        """Sets the bandwidth_package_id of this InterRegionBandwidth.
-
-        带宽包实例的ID。
-
-        :param bandwidth_package_id: The bandwidth_package_id of this InterRegionBandwidth.
-        :type bandwidth_package_id: str
-        """
-        self._bandwidth_package_id = bandwidth_package_id
-
-    @property
     def created_at(self):
         """Gets the created_at of this InterRegionBandwidth.
 
-        域间带宽实例的创建时间。
+        实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
         :return: The created_at of this InterRegionBandwidth.
         :rtype: datetime
@@ -229,7 +200,7 @@ class InterRegionBandwidth:
     def created_at(self, created_at):
         """Sets the created_at of this InterRegionBandwidth.
 
-        域间带宽实例的创建时间。
+        实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
         :param created_at: The created_at of this InterRegionBandwidth.
         :type created_at: datetime
@@ -240,7 +211,7 @@ class InterRegionBandwidth:
     def updated_at(self):
         """Gets the updated_at of this InterRegionBandwidth.
 
-        域间带宽实例的更新时间。
+        实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
         :return: The updated_at of this InterRegionBandwidth.
         :rtype: datetime
@@ -251,7 +222,7 @@ class InterRegionBandwidth:
     def updated_at(self, updated_at):
         """Sets the updated_at of this InterRegionBandwidth.
 
-        域间带宽实例的更新时间。
+        实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
         :param updated_at: The updated_at of this InterRegionBandwidth.
         :type updated_at: datetime
@@ -262,7 +233,7 @@ class InterRegionBandwidth:
     def cloud_connection_id(self):
         """Gets the cloud_connection_id of this InterRegionBandwidth.
 
-        云连接实例的ID。
+        资源ID标识符。
 
         :return: The cloud_connection_id of this InterRegionBandwidth.
         :rtype: str
@@ -273,12 +244,34 @@ class InterRegionBandwidth:
     def cloud_connection_id(self, cloud_connection_id):
         """Sets the cloud_connection_id of this InterRegionBandwidth.
 
-        云连接实例的ID。
+        资源ID标识符。
 
         :param cloud_connection_id: The cloud_connection_id of this InterRegionBandwidth.
         :type cloud_connection_id: str
         """
         self._cloud_connection_id = cloud_connection_id
+
+    @property
+    def bandwidth_package_id(self):
+        """Gets the bandwidth_package_id of this InterRegionBandwidth.
+
+        资源ID标识符。
+
+        :return: The bandwidth_package_id of this InterRegionBandwidth.
+        :rtype: str
+        """
+        return self._bandwidth_package_id
+
+    @bandwidth_package_id.setter
+    def bandwidth_package_id(self, bandwidth_package_id):
+        """Sets the bandwidth_package_id of this InterRegionBandwidth.
+
+        资源ID标识符。
+
+        :param bandwidth_package_id: The bandwidth_package_id of this InterRegionBandwidth.
+        :type bandwidth_package_id: str
+        """
+        self._bandwidth_package_id = bandwidth_package_id
 
     @property
     def inter_regions(self):

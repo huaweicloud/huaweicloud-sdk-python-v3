@@ -18,88 +18,80 @@
  under the LICENSE.
 """
 
-import stat
-
-from huaweicloudsdkcore.utils import filepath_utils
-from huaweicloudsdkcore.region.cache import EnvRegionCache, ProfileRegionCache
-from huaweicloudsdkcore.region.provider import EnvRegionProvider, ProfileRegionProvider, RegionProviderChain
-from huaweicloudsdkcore.region.region import Region
-
-import pytest
 import os
 
-SERVICE_NAME = "Service"
-REGION_ID = "region-id-1"
-ENDPOINT = "https://{}.{}.myhuaweicloud.com".format(SERVICE_NAME.lower(), REGION_ID)
-REGION_STR = """SERVICE:
-  - id: region-id-1
-    endpoint: 'https://service.region-id-1.myhuaweicloud.com'
-"""
+import pytest
+
+from huaweicloudsdkcore.region.cache import EnvRegionCache, ProfileRegionCache
+from huaweicloudsdkcore.region.provider import EnvRegionProvider, ProfileRegionProvider, RegionProviderChain
+
+
+@pytest.fixture(scope="module")
+def set_region_file_env():
+    path = os.path.abspath("data/regions.yaml")
+    os.environ["HUAWEICLOUD_SDK_REGIONS_FILE"] = path
+
+    yield
+
+    os.unsetenv("HUAWEICLOUD_SDK_REGIONS_FILE")
 
 
 def test_env_region_provider():
     # test singleton
     assert EnvRegionCache() is EnvRegionCache()
     # test not found
-    provider = EnvRegionProvider(SERVICE_NAME)
-    assert provider.get_region(REGION_ID) is None
+    provider = EnvRegionProvider("Service1")
+    assert provider.get_region("not-exist-1") is None
     # test found
-    env_name = "HUAWEICLOUD_SDK_REGION_{}_{}".format(SERVICE_NAME.upper(), REGION_ID.replace("-", "_").upper())
-    os.environ[env_name] = ENDPOINT
-    actual_region = provider.get_region(REGION_ID)
+    env_name = "HUAWEICLOUD_SDK_REGION_SERVICE1_REGION_ID_1"
+    os.environ[env_name] = "https://service1.region-id-1.com"
+    actual_region = provider.get_region("region-id-1")
     assert actual_region
-    expected_region = Region(REGION_ID, ENDPOINT)
-    assert expected_region.id == actual_region.id
-    assert expected_region.endpoint == actual_region.endpoint
+    assert "region-id-1" == actual_region.id
+    assert ["https://service1.region-id-1.com"] == actual_region.endpoints
 
 
-def test_profile_region_provider():
-    home_path = filepath_utils.get_home_path()
-    if not home_path:
-        home_path = os.path.abspath(os.curdir)
-    filename = "test_regions.yaml"
-    path = os.path.join(home_path, filename)
-    os.environ["HUAWEICLOUD_SDK_REGIONS_FILE"] = path
+def test_env_region_provider2():
+    provider = EnvRegionProvider("Service2")
+    env_name = "HUAWEICLOUD_SDK_REGION_SERVICE2_REGION_ID_2"
+    os.environ[env_name] = "https://service2.region-id-2.com,https://service3.region-id-3.com"
+    actual_region = provider.get_region("region-id-2")
+    assert actual_region
+    assert "region-id-2" == actual_region.id
+    assert ["https://service2.region-id-2.com", "https://service3.region-id-3.com"] == actual_region.endpoints
 
-    flags = os.O_WRONLY | os.O_CREAT | os.O_EXCL
-    modes = stat.S_IWUSR | stat.S_IRUSR
-    with os.fdopen(os.open(path, flags, modes), 'w') as f:
-        f.write(REGION_STR)
 
+def test_profile_region_provider(set_region_file_env):
     # test singleton
     assert ProfileRegionCache() is ProfileRegionCache()
-    provider = ProfileRegionProvider(SERVICE_NAME)
-    try:
-        # test found
-        actual_region = provider.get_region(REGION_ID)
-        assert actual_region
-        expected_region = Region(REGION_ID, ENDPOINT)
-        assert expected_region.id == actual_region.id
-        assert expected_region.endpoint == actual_region.endpoint
-    except AssertionError:
-        assert False
-    finally:
-        if os.path.isfile(path):
-            os.remove(path)
+    provider = ProfileRegionProvider("Service1")
+    # test found
+    actual_region = provider.get_region("region-id-1")
+    assert actual_region
+    assert "region-id-1" == actual_region.id
+    assert ["https://service1.region-id-1.com"] == actual_region.endpoints
     # test not found
     region = provider.get_region("not-exist-1")
     assert region is None
 
 
-def test_region_provider_chain():
-    chain = RegionProviderChain.get_default_region_provider_chain(SERVICE_NAME)
-    # test not found
-    assert chain.get_region("not-exist-2") is None
-    # test found
-    region_id = "test-region-2"
-    endpoint = "https://test.service.com"
-    env_name = "HUAWEICLOUD_SDK_REGION_{}_{}".format(SERVICE_NAME.upper(), region_id.replace("-", "_").upper())
-    os.environ[env_name] = endpoint
-    actual_region = chain.get_region(region_id)
+def test_profile_region_provider2(set_region_file_env):
+    provider = ProfileRegionProvider("Service2")
+    actual_region = provider.get_region("region-id-2")
     assert actual_region
-    expected_region = Region(region_id, endpoint)
-    assert expected_region.id == actual_region.id
-    assert expected_region.endpoint == actual_region.endpoint
+    assert "region-id-2" == actual_region.id
+    assert ["https://service2.region-id-2.com", "https://service2.region-id-2.cn"] == actual_region.endpoints
+
+
+def test_region_provider_chain(set_region_file_env):
+    chain = RegionProviderChain.get_default_region_provider_chain("Service1")
+    # test not found
+    assert chain.get_region("not-exist-1") is None
+    # test found
+    actual_region = chain.get_region("region-id-1")
+    assert actual_region
+    assert "region-id-1" == actual_region.id
+    assert ["https://service1.region-id-1.com"] == actual_region.endpoints
 
 
 if __name__ == '__main__':

@@ -16,13 +16,16 @@ class BmsAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "BmsAsyncClient":
+                raise TypeError("client type error, support client type is BmsAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "BmsClient":
-            raise TypeError("client type error, support client type is BmsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def add_server_nics_async(self, request):
         """裸金属服务器绑定弹性网卡

@@ -16,13 +16,16 @@ class DscAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "DscAsyncClient":
+                raise TypeError("client type error, support client type is DscAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "DscClient":
-            raise TypeError("client type error, support client type is DscClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def add_buckets_async(self, request):
         """添加资产授权

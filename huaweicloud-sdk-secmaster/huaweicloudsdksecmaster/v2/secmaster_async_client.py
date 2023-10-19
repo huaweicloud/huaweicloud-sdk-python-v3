@@ -16,13 +16,16 @@ class SecMasterAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "SecMasterAsyncClient":
+                raise TypeError("client type error, support client type is SecMasterAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "SecMasterClient":
-            raise TypeError("client type error, support client type is SecMasterClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def change_alert_async(self, request):
         """更新告警（仅支持华东-上海一使用）

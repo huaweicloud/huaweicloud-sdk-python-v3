@@ -23,7 +23,8 @@ class AddBlackWhiteListDto:
         'address_type': 'int',
         'address': 'str',
         'protocol': 'int',
-        'port': 'str'
+        'port': 'str',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class AddBlackWhiteListDto:
         'address_type': 'address_type',
         'address': 'address',
         'protocol': 'protocol',
-        'port': 'port'
+        'port': 'port',
+        'description': 'description'
     }
 
-    def __init__(self, object_id=None, list_type=None, direction=None, address_type=None, address=None, protocol=None, port=None):
+    def __init__(self, object_id=None, list_type=None, direction=None, address_type=None, address=None, protocol=None, port=None, description=None):
         """AddBlackWhiteListDto
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class AddBlackWhiteListDto:
         :type protocol: int
         :param port: 目的端口
         :type port: str
+        :param description: 描述
+        :type description: str
         """
         
         
@@ -66,6 +70,7 @@ class AddBlackWhiteListDto:
         self._address = None
         self._protocol = None
         self._port = None
+        self._description = None
         self.discriminator = None
 
         self.object_id = object_id
@@ -75,6 +80,8 @@ class AddBlackWhiteListDto:
         self.address = address
         self.protocol = protocol
         self.port = port
+        if description is not None:
+            self.description = description
 
     @property
     def object_id(self):
@@ -229,6 +236,28 @@ class AddBlackWhiteListDto:
         :type port: str
         """
         self._port = port
+
+    @property
+    def description(self):
+        """Gets the description of this AddBlackWhiteListDto.
+
+        描述
+
+        :return: The description of this AddBlackWhiteListDto.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this AddBlackWhiteListDto.
+
+        描述
+
+        :param description: The description of this AddBlackWhiteListDto.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

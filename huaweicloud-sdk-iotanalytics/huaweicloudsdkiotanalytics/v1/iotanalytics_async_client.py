@@ -16,13 +16,16 @@ class IoTAnalyticsAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "IoTAnalyticsAsyncClient":
+                raise TypeError("client type error, support client type is IoTAnalyticsAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "IoTAnalyticsClient":
-            raise TypeError("client type error, support client type is IoTAnalyticsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_asset_model_async(self, request):
         """创建资产模型

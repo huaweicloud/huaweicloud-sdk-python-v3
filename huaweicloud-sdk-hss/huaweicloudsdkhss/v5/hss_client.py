@@ -16,13 +16,16 @@ class HssClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "HssClient":
+                raise TypeError("client type error, support client type is HssClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "HssClient":
-            raise TypeError("client type error, support client type is HssClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def add_hosts_group(self, request):
         """创建服务器组

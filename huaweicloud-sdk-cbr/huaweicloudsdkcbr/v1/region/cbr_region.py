@@ -51,6 +51,10 @@ class CbrRegion:
                         "https://cbr.ap-southeast-4.myhuaweicloud.com")
     TR_WEST_1 = Region("tr-west-1",
                         "https://cbr.tr-west-1.myhuaweicloud.com")
+    ME_EAST_1 = Region("me-east-1",
+                        "https://cbr.me-east-1.myhuaweicloud.com")
+    AE_AD_1 = Region("ae-ad-1",
+                        "https://cbr.ae-ad-1.g42cloud.com")
 
     static_fields = {
         "eu-west-101": EU_WEST_101,
@@ -74,6 +78,8 @@ class CbrRegion:
         "cn-north-2": CN_NORTH_2,
         "ap-southeast-4": AP_SOUTHEAST_4,
         "tr-west-1": TR_WEST_1,
+        "me-east-1": ME_EAST_1,
+        "ae-ad-1": AE_AD_1,
     }
 
     @classmethod

@@ -18,29 +18,36 @@ class SearchFaceByFaceIdResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'faces': 'list[SearchFace]'
+        'faces': 'list[SearchFace]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'faces': 'faces'
+        'faces': 'faces',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, faces=None):
+    def __init__(self, faces=None, x_request_id=None):
         """SearchFaceByFaceIdResponse
 
         The model defined in huaweicloud sdk
 
         :param faces: [查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/api-face/face_02_0019.html)。调用失败时无此字段。](tag:hc) [查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0019.html)。调用失败时无此字段。](tag:hk)
         :type faces: list[:class:`huaweicloudsdkfrs.v2.SearchFace`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(SearchFaceByFaceIdResponse, self).__init__()
 
         self._faces = None
+        self._x_request_id = None
         self.discriminator = None
 
         if faces is not None:
             self.faces = faces
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def faces(self):
@@ -63,6 +70,24 @@ class SearchFaceByFaceIdResponse(SdkResponse):
         :type faces: list[:class:`huaweicloudsdkfrs.v2.SearchFace`]
         """
         self._faces = faces
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this SearchFaceByFaceIdResponse.
+
+        :return: The x_request_id of this SearchFaceByFaceIdResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this SearchFaceByFaceIdResponse.
+
+        :param x_request_id: The x_request_id of this SearchFaceByFaceIdResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -31,9 +31,9 @@ class UpdateAuthorisation:
 
         The model defined in huaweicloud sdk
 
-        :param name: 授权的名称。
+        :param name: 实例名字。
         :type name: str
-        :param description: 授权的描述信息。
+        :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
         """
         
@@ -52,7 +52,7 @@ class UpdateAuthorisation:
     def name(self):
         """Gets the name of this UpdateAuthorisation.
 
-        授权的名称。
+        实例名字。
 
         :return: The name of this UpdateAuthorisation.
         :rtype: str
@@ -63,7 +63,7 @@ class UpdateAuthorisation:
     def name(self, name):
         """Sets the name of this UpdateAuthorisation.
 
-        授权的名称。
+        实例名字。
 
         :param name: The name of this UpdateAuthorisation.
         :type name: str
@@ -74,7 +74,7 @@ class UpdateAuthorisation:
     def description(self):
         """Gets the description of this UpdateAuthorisation.
 
-        授权的描述信息。
+        实例描述。不支持 <>。
 
         :return: The description of this UpdateAuthorisation.
         :rtype: str
@@ -85,7 +85,7 @@ class UpdateAuthorisation:
     def description(self, description):
         """Sets the description of this UpdateAuthorisation.
 
-        授权的描述信息。
+        实例描述。不支持 <>。
 
         :param description: The description of this UpdateAuthorisation.
         :type description: str

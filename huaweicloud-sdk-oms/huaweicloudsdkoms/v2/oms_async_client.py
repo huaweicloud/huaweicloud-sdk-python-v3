@@ -16,13 +16,16 @@ class OmsAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "OmsAsyncClient":
+                raise TypeError("client type error, support client type is OmsAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "OmsClient":
-            raise TypeError("client type error, support client type is OmsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_sync_events_async(self, request):
         """创建同步事件

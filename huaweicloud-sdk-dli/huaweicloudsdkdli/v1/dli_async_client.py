@@ -16,13 +16,16 @@ class DliAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "DliAsyncClient":
+                raise TypeError("client type error, support client type is DliAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "DliClient":
-            raise TypeError("client type error, support client type is DliClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_job_templates_async(self, request):
         """创建作业模板

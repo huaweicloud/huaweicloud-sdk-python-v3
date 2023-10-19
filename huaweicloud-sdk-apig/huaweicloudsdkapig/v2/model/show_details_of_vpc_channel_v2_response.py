@@ -54,7 +54,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param name: VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 &gt; 中文字符必须为UTF-8或者unicode编码。
+        :param name: VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线、点组成，且只能以英文或中文开头。 &gt; 中文字符必须为UTF-8或者unicode编码。
         :type name: str
         :param port: VPC通道中主机的端口号。  取值范围1 ~ 65535。
         :type port: int
@@ -126,7 +126,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
     def name(self):
         """Gets the name of this ShowDetailsOfVpcChannelV2Response.
 
-        VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
+        VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线、点组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
         :return: The name of this ShowDetailsOfVpcChannelV2Response.
         :rtype: str
@@ -137,7 +137,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
     def name(self, name):
         """Sets the name of this ShowDetailsOfVpcChannelV2Response.
 
-        VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
+        VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线、点组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param name: The name of this ShowDetailsOfVpcChannelV2Response.
         :type name: str

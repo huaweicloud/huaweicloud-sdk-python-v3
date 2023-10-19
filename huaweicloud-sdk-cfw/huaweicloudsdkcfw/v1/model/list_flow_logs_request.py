@@ -32,7 +32,8 @@ class ListFlowLogsRequest:
         'next_date': 'int',
         'offset': 'int',
         'limit': 'int',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'dst_host': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class ListFlowLogsRequest:
         'next_date': 'next_date',
         'offset': 'offset',
         'limit': 'limit',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'dst_host': 'dst_host'
     }
 
-    def __init__(self, fw_instance_id=None, direction=None, log_type=None, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, enterprise_project_id=None):
+    def __init__(self, fw_instance_id=None, direction=None, log_type=None, start_time=None, end_time=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, log_id=None, next_date=None, offset=None, limit=None, enterprise_project_id=None, dst_host=None):
         """ListFlowLogsRequest
 
         The model defined in huaweicloud sdk
@@ -87,10 +89,12 @@ class ListFlowLogsRequest:
         :type next_date: int
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param limit: 每页显示个数
+        :param limit: 每页显示个数，范围为1-1024
         :type limit: int
         :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
         :type enterprise_project_id: str
+        :param dst_host: 目的主机
+        :type dst_host: str
         """
         
         
@@ -111,6 +115,7 @@ class ListFlowLogsRequest:
         self._offset = None
         self._limit = None
         self._enterprise_project_id = None
+        self._dst_host = None
         self.discriminator = None
 
         self.fw_instance_id = fw_instance_id
@@ -141,6 +146,8 @@ class ListFlowLogsRequest:
         self.limit = limit
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if dst_host is not None:
+            self.dst_host = dst_host
 
     @property
     def fw_instance_id(self):
@@ -454,7 +461,7 @@ class ListFlowLogsRequest:
     def limit(self):
         """Gets the limit of this ListFlowLogsRequest.
 
-        每页显示个数
+        每页显示个数，范围为1-1024
 
         :return: The limit of this ListFlowLogsRequest.
         :rtype: int
@@ -465,7 +472,7 @@ class ListFlowLogsRequest:
     def limit(self, limit):
         """Sets the limit of this ListFlowLogsRequest.
 
-        每页显示个数
+        每页显示个数，范围为1-1024
 
         :param limit: The limit of this ListFlowLogsRequest.
         :type limit: int
@@ -493,6 +500,28 @@ class ListFlowLogsRequest:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def dst_host(self):
+        """Gets the dst_host of this ListFlowLogsRequest.
+
+        目的主机
+
+        :return: The dst_host of this ListFlowLogsRequest.
+        :rtype: str
+        """
+        return self._dst_host
+
+    @dst_host.setter
+    def dst_host(self, dst_host):
+        """Sets the dst_host of this ListFlowLogsRequest.
+
+        目的主机
+
+        :param dst_host: The dst_host of this ListFlowLogsRequest.
+        :type dst_host: str
+        """
+        self._dst_host = dst_host
 
     def to_dict(self):
         """Returns the model properties as a dict"""

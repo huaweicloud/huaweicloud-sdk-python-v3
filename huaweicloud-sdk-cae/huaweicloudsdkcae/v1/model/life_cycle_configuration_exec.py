@@ -17,7 +17,7 @@ class LifeCycleConfigurationExec:
     sensitive_list = []
 
     openapi_types = {
-        'command': 'list[object]'
+        'command': 'list[str]'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class LifeCycleConfigurationExec:
         The model defined in huaweicloud sdk
 
         :param command: shell语句。
-        :type command: list[object]
+        :type command: list[str]
         """
         
         
@@ -48,7 +48,7 @@ class LifeCycleConfigurationExec:
         shell语句。
 
         :return: The command of this LifeCycleConfigurationExec.
-        :rtype: list[object]
+        :rtype: list[str]
         """
         return self._command
 
@@ -59,7 +59,7 @@ class LifeCycleConfigurationExec:
         shell语句。
 
         :param command: The command of this LifeCycleConfigurationExec.
-        :type command: list[object]
+        :type command: list[str]
         """
         self._command = command
 

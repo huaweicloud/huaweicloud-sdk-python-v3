@@ -16,13 +16,16 @@ class CssClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "CssClient":
+                raise TypeError("client type error, support client type is CssClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "CssClient":
-            raise TypeError("client type error, support client type is CssClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_cluster(self, request):
         """创建集群V2

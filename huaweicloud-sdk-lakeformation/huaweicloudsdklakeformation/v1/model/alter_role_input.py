@@ -31,9 +31,9 @@ class AlterRoleInput:
 
         The model defined in huaweicloud sdk
 
-        :param description: 描述信息
+        :param description: 描述信息。最大长度为4000个字符。
         :type description: str
-        :param role_name: 角色名称
+        :param role_name: 角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
         :type role_name: str
         """
         
@@ -45,14 +45,13 @@ class AlterRoleInput:
 
         if description is not None:
             self.description = description
-        if role_name is not None:
-            self.role_name = role_name
+        self.role_name = role_name
 
     @property
     def description(self):
         """Gets the description of this AlterRoleInput.
 
-        描述信息
+        描述信息。最大长度为4000个字符。
 
         :return: The description of this AlterRoleInput.
         :rtype: str
@@ -63,7 +62,7 @@ class AlterRoleInput:
     def description(self, description):
         """Sets the description of this AlterRoleInput.
 
-        描述信息
+        描述信息。最大长度为4000个字符。
 
         :param description: The description of this AlterRoleInput.
         :type description: str
@@ -74,7 +73,7 @@ class AlterRoleInput:
     def role_name(self):
         """Gets the role_name of this AlterRoleInput.
 
-        角色名称
+        角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 
         :return: The role_name of this AlterRoleInput.
         :rtype: str
@@ -85,7 +84,7 @@ class AlterRoleInput:
     def role_name(self, role_name):
         """Sets the role_name of this AlterRoleInput.
 
-        角色名称
+        角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 
         :param role_name: The role_name of this AlterRoleInput.
         :type role_name: str

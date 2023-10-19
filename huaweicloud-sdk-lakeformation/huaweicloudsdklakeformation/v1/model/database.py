@@ -21,6 +21,7 @@ class Database:
         'database_name': 'str',
         'owner': 'str',
         'owner_type': 'str',
+        'owner_auth_source_type': 'str',
         'description': 'str',
         'location': 'str',
         'parameters': 'dict(str, str)',
@@ -33,6 +34,7 @@ class Database:
         'database_name': 'database_name',
         'owner': 'owner',
         'owner_type': 'owner_type',
+        'owner_auth_source_type': 'owner_auth_source_type',
         'description': 'description',
         'location': 'location',
         'parameters': 'parameters',
@@ -40,28 +42,30 @@ class Database:
         'function_location_list': 'function_location_list'
     }
 
-    def __init__(self, catalog_name=None, database_name=None, owner=None, owner_type=None, description=None, location=None, parameters=None, table_location_list=None, function_location_list=None):
+    def __init__(self, catalog_name=None, database_name=None, owner=None, owner_type=None, owner_auth_source_type=None, description=None, location=None, parameters=None, table_location_list=None, function_location_list=None):
         """Database
 
         The model defined in huaweicloud sdk
 
-        :param catalog_name: catalog名字
+        :param catalog_name: catalog名称
         :type catalog_name: str
-        :param database_name: 数据库名
+        :param database_name: 数据库名称
         :type database_name: str
         :param owner: 数据库所有者
         :type owner: str
-        :param owner_type: 所有者类型
+        :param owner_type: 所有者类型,USER-用户,GROUP-组,ROLE-角色
         :type owner_type: str
+        :param owner_auth_source_type: 所有者授权来源类型,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+        :type owner_auth_source_type: str
         :param description: 数据库描述信息
         :type description: str
-        :param location: 数据库路径地址
+        :param location: 数据库路径地址。例如obs://location/uri/
         :type location: str
         :param parameters: 参数信息
         :type parameters: dict(str, str)
-        :param table_location_list: 表路径列表
+        :param table_location_list: 表路径列表。LakeFormation服务分为一期和二期，一期响应Body无该参数，二期默认为null。当值为null时，响应Body无该参数。
         :type table_location_list: list[str]
-        :param function_location_list: 函数路径列表
+        :param function_location_list: 函数路径列表。默认为null，当值为null时，响应Body无该参数。
         :type function_location_list: list[str]
         """
         
@@ -71,6 +75,7 @@ class Database:
         self._database_name = None
         self._owner = None
         self._owner_type = None
+        self._owner_auth_source_type = None
         self._description = None
         self._location = None
         self._parameters = None
@@ -82,6 +87,8 @@ class Database:
         self.database_name = database_name
         self.owner = owner
         self.owner_type = owner_type
+        if owner_auth_source_type is not None:
+            self.owner_auth_source_type = owner_auth_source_type
         self.description = description
         self.location = location
         self.parameters = parameters
@@ -94,7 +101,7 @@ class Database:
     def catalog_name(self):
         """Gets the catalog_name of this Database.
 
-        catalog名字
+        catalog名称
 
         :return: The catalog_name of this Database.
         :rtype: str
@@ -105,7 +112,7 @@ class Database:
     def catalog_name(self, catalog_name):
         """Sets the catalog_name of this Database.
 
-        catalog名字
+        catalog名称
 
         :param catalog_name: The catalog_name of this Database.
         :type catalog_name: str
@@ -116,7 +123,7 @@ class Database:
     def database_name(self):
         """Gets the database_name of this Database.
 
-        数据库名
+        数据库名称
 
         :return: The database_name of this Database.
         :rtype: str
@@ -127,7 +134,7 @@ class Database:
     def database_name(self, database_name):
         """Sets the database_name of this Database.
 
-        数据库名
+        数据库名称
 
         :param database_name: The database_name of this Database.
         :type database_name: str
@@ -160,7 +167,7 @@ class Database:
     def owner_type(self):
         """Gets the owner_type of this Database.
 
-        所有者类型
+        所有者类型,USER-用户,GROUP-组,ROLE-角色
 
         :return: The owner_type of this Database.
         :rtype: str
@@ -171,12 +178,34 @@ class Database:
     def owner_type(self, owner_type):
         """Sets the owner_type of this Database.
 
-        所有者类型
+        所有者类型,USER-用户,GROUP-组,ROLE-角色
 
         :param owner_type: The owner_type of this Database.
         :type owner_type: str
         """
         self._owner_type = owner_type
+
+    @property
+    def owner_auth_source_type(self):
+        """Gets the owner_auth_source_type of this Database.
+
+        所有者授权来源类型,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+
+        :return: The owner_auth_source_type of this Database.
+        :rtype: str
+        """
+        return self._owner_auth_source_type
+
+    @owner_auth_source_type.setter
+    def owner_auth_source_type(self, owner_auth_source_type):
+        """Sets the owner_auth_source_type of this Database.
+
+        所有者授权来源类型,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+
+        :param owner_auth_source_type: The owner_auth_source_type of this Database.
+        :type owner_auth_source_type: str
+        """
+        self._owner_auth_source_type = owner_auth_source_type
 
     @property
     def description(self):
@@ -204,7 +233,7 @@ class Database:
     def location(self):
         """Gets the location of this Database.
 
-        数据库路径地址
+        数据库路径地址。例如obs://location/uri/
 
         :return: The location of this Database.
         :rtype: str
@@ -215,7 +244,7 @@ class Database:
     def location(self, location):
         """Sets the location of this Database.
 
-        数据库路径地址
+        数据库路径地址。例如obs://location/uri/
 
         :param location: The location of this Database.
         :type location: str
@@ -248,7 +277,7 @@ class Database:
     def table_location_list(self):
         """Gets the table_location_list of this Database.
 
-        表路径列表
+        表路径列表。LakeFormation服务分为一期和二期，一期响应Body无该参数，二期默认为null。当值为null时，响应Body无该参数。
 
         :return: The table_location_list of this Database.
         :rtype: list[str]
@@ -259,7 +288,7 @@ class Database:
     def table_location_list(self, table_location_list):
         """Sets the table_location_list of this Database.
 
-        表路径列表
+        表路径列表。LakeFormation服务分为一期和二期，一期响应Body无该参数，二期默认为null。当值为null时，响应Body无该参数。
 
         :param table_location_list: The table_location_list of this Database.
         :type table_location_list: list[str]
@@ -270,7 +299,7 @@ class Database:
     def function_location_list(self):
         """Gets the function_location_list of this Database.
 
-        函数路径列表
+        函数路径列表。默认为null，当值为null时，响应Body无该参数。
 
         :return: The function_location_list of this Database.
         :rtype: list[str]
@@ -281,7 +310,7 @@ class Database:
     def function_location_list(self, function_location_list):
         """Sets the function_location_list of this Database.
 
-        函数路径列表
+        函数路径列表。默认为null，当值为null时，响应Body无该参数。
 
         :param function_location_list: The function_location_list of this Database.
         :type function_location_list: list[str]

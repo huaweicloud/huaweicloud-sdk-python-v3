@@ -16,13 +16,16 @@ class SaAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "SaAsyncClient":
+                raise TypeError("client type error, support client type is SaAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "SaClient":
-            raise TypeError("client type error, support client type is SaClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_alert_rule_async(self, request):
         """创建告警规则（仅支持华东-上海一使用）

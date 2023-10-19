@@ -16,13 +16,16 @@ class GaAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "GaAsyncClient":
+                raise TypeError("client type error, support client type is GaAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "GaClient":
-            raise TypeError("client type error, support client type is GaClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_accelerator_async(self, request):
         """创建全球加速器

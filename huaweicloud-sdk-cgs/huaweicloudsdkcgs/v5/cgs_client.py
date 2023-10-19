@@ -16,13 +16,16 @@ class CgsClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "CgsClient":
+                raise TypeError("client type error, support client type is CgsClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "CgsClient":
-            raise TypeError("client type error, support client type is CgsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def list_container_nodes(self, request):
         """查询容器节点列表

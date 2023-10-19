@@ -16,13 +16,16 @@ class RamClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls, "GlobalCredentials")
+        if not clazz:
+            client_builder = ClientBuilder(cls, "GlobalCredentials")
+        else:
+            if clazz.__name__ != "RamClient":
+                raise TypeError("client type error, support client type is RamClient")
+            client_builder = ClientBuilder(clazz, "GlobalCredentials")
 
-        if clazz.__name__ != "RamClient":
-            raise TypeError("client type error, support client type is RamClient")
+        
 
-        return ClientBuilder(clazz, "GlobalCredentials")
+        return client_builder
 
     def associate_resource_share_permission(self, request):
         """绑定或替换共享资源权限

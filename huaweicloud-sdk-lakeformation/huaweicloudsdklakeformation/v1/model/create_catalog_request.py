@@ -31,7 +31,7 @@ class CreateCatalogRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例Id
+        :param instance_id: LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
         :type instance_id: str
         :param body: Body of the CreateCatalogRequest
         :type body: :class:`huaweicloudsdklakeformation.v1.CatalogInput`
@@ -51,7 +51,7 @@ class CreateCatalogRequest:
     def instance_id(self):
         """Gets the instance_id of this CreateCatalogRequest.
 
-        实例Id
+        LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
         :return: The instance_id of this CreateCatalogRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateCatalogRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CreateCatalogRequest.
 
-        实例Id
+        LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
         :param instance_id: The instance_id of this CreateCatalogRequest.
         :type instance_id: str

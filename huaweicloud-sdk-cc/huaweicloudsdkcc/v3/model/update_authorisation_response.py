@@ -18,36 +18,56 @@ class UpdateAuthorisationResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'authorisation': 'Authorisation',
-        'request_id': 'str'
+        'request_id': 'str',
+        'authorisation': 'Authorisation'
     }
 
     attribute_map = {
-        'authorisation': 'authorisation',
-        'request_id': 'request_id'
+        'request_id': 'request_id',
+        'authorisation': 'authorisation'
     }
 
-    def __init__(self, authorisation=None, request_id=None):
+    def __init__(self, request_id=None, authorisation=None):
         """UpdateAuthorisationResponse
 
         The model defined in huaweicloud sdk
 
+        :param request_id: 资源ID标识符。
+        :type request_id: str
         :param authorisation: 
         :type authorisation: :class:`huaweicloudsdkcc.v3.Authorisation`
-        :param request_id: 请求ID。
-        :type request_id: str
         """
         
         super(UpdateAuthorisationResponse, self).__init__()
 
-        self._authorisation = None
         self._request_id = None
+        self._authorisation = None
         self.discriminator = None
 
-        if authorisation is not None:
-            self.authorisation = authorisation
-        if request_id is not None:
-            self.request_id = request_id
+        self.request_id = request_id
+        self.authorisation = authorisation
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this UpdateAuthorisationResponse.
+
+        资源ID标识符。
+
+        :return: The request_id of this UpdateAuthorisationResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this UpdateAuthorisationResponse.
+
+        资源ID标识符。
+
+        :param request_id: The request_id of this UpdateAuthorisationResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
 
     @property
     def authorisation(self):
@@ -66,28 +86,6 @@ class UpdateAuthorisationResponse(SdkResponse):
         :type authorisation: :class:`huaweicloudsdkcc.v3.Authorisation`
         """
         self._authorisation = authorisation
-
-    @property
-    def request_id(self):
-        """Gets the request_id of this UpdateAuthorisationResponse.
-
-        请求ID。
-
-        :return: The request_id of this UpdateAuthorisationResponse.
-        :rtype: str
-        """
-        return self._request_id
-
-    @request_id.setter
-    def request_id(self, request_id):
-        """Sets the request_id of this UpdateAuthorisationResponse.
-
-        请求ID。
-
-        :param request_id: The request_id of this UpdateAuthorisationResponse.
-        :type request_id: str
-        """
-        self._request_id = request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

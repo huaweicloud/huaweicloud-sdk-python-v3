@@ -16,13 +16,16 @@ class DcsClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "DcsClient":
+                raise TypeError("client type error, support client type is DcsClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "DcsClient":
-            raise TypeError("client type error, support client type is DcsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def batch_create_or_delete_tags(self, request):
         """批量添加或删除标签
@@ -371,6 +374,66 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_acl_account(self, request):
+        """创建ACL账号
+
+        \&quot;为redis4.0/5.0实例（Cluster集群实例除外）创建权限访问账号，包含读写和只读权限。
+        如果实例默认账号已开启免密访问，您创建的普通账号不能使用，如需使用普通账号请先关闭默认账号的免密访问。
+        单机、主备实例默认账号的密码不能带有冒号(:)，否则无法创建普通账号。\&quot;
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAclAccount
+        :type request: :class:`huaweicloudsdkdcs.v2.CreateAclAccountRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.CreateAclAccountResponse`
+        """
+        return self._create_acl_account_with_http_info(request)
+
+    def _create_acl_account_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/accounts',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateAclAccountResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_auto_expire_scan_task(self, request):
         """创建过期key扫描任务
 
@@ -480,6 +543,64 @@ class DcsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateBigkeyScanTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_connectivity_test(self, request):
+        """创建备份导入页面实例连接测试
+
+        创建备份导入页面实例连接测试
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateConnectivityTest
+        :type request: :class:`huaweicloudsdkdcs.v2.CreateConnectivityTestRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.CreateConnectivityTestResponse`
+        """
+        return self._create_connectivity_test_with_http_info(request)
+
+    def _create_connectivity_test_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instance/{instance_id}/connectivity-test',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateConnectivityTestResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -945,6 +1066,64 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_acl_account(self, request):
+        """删除ACL账号
+
+        删除所创建的ACL普通账号
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAclAccount
+        :type request: :class:`huaweicloudsdkdcs.v2.DeleteAclAccountRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.DeleteAclAccountResponse`
+        """
+        return self._delete_acl_account_with_http_info(request)
+
+    def _delete_acl_account_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'account_id' in local_var_params:
+            path_params['account_id'] = local_var_params['account_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/accounts/{account_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteAclAccountResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_background_task(self, request):
         """删除后台任务
 
@@ -1114,6 +1293,62 @@ class DcsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteBigkeyScanTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_config_template(self, request):
+        """删除自定义模板
+
+        删除自定义模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteConfigTemplate
+        :type request: :class:`huaweicloudsdkdcs.v2.DeleteConfigTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.DeleteConfigTemplateResponse`
+        """
+        return self._delete_config_template_with_http_info(request)
+
+    def _delete_config_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/config-templates/{template_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteConfigTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1406,6 +1641,62 @@ class DcsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ExecuteClusterSwitchoverResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_acl_accounts(self, request):
+        """查询ACL账户列表
+
+        查询ACL账户列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAclAccounts
+        :type request: :class:`huaweicloudsdkdcs.v2.ListAclAccountsRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ListAclAccountsResponse`
+        """
+        return self._list_acl_accounts_with_http_info(request)
+
+    def _list_acl_accounts_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/accounts',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListAclAccountsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2815,6 +3106,66 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def reset_acl_account_pass_word(self, request):
+        """重置ACL账号密码
+
+        重置ACL账号密码。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ResetAclAccountPassWord
+        :type request: :class:`huaweicloudsdkdcs.v2.ResetAclAccountPassWordRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ResetAclAccountPassWordResponse`
+        """
+        return self._reset_acl_account_pass_word_with_http_info(request)
+
+    def _reset_acl_account_pass_word_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'account_id' in local_var_params:
+            path_params['account_id'] = local_var_params['account_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/accounts/{account_id}/password/reset',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ResetAclAccountPassWordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def reset_password(self, request):
         """重置密码
 
@@ -3215,6 +3566,64 @@ class DcsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowBigkeyScanTaskDetailsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_config_template(self, request):
+        """查询参数模板详情
+
+        查询参数模板详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowConfigTemplate
+        :type request: :class:`huaweicloudsdkdcs.v2.ShowConfigTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ShowConfigTemplateResponse`
+        """
+        return self._show_config_template_with_http_info(request)
+
+    def _show_config_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/config-templates/{template_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowConfigTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3726,6 +4135,64 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_replication_states(self, request):
+        """获取副本状态
+
+        获取副本状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowReplicationStates
+        :type request: :class:`huaweicloudsdkdcs.v2.ShowReplicationStatesRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.ShowReplicationStatesResponse`
+        """
+        return self._show_replication_states_with_http_info(request)
+
+    def _show_replication_states_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instance/{instance_id}/groups/{group_id}/group-nodes-state',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowReplicationStatesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_tags(self, request):
         """查询单个实例标签
 
@@ -3894,6 +4361,186 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_acl_account_pass_word(self, request):
+        """修改ACL账号密码
+
+        修改ACL账号密码。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAclAccountPassWord
+        :type request: :class:`huaweicloudsdkdcs.v2.UpdateAclAccountPassWordRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.UpdateAclAccountPassWordResponse`
+        """
+        return self._update_acl_account_pass_word_with_http_info(request)
+
+    def _update_acl_account_pass_word_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'account_id' in local_var_params:
+            path_params['account_id'] = local_var_params['account_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/accounts/{account_id}/password/modify',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateAclAccountPassWordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_acl_account_remark(self, request):
+        """ACL账号修改备注
+
+        ACL账号修改备注
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAclAccountRemark
+        :type request: :class:`huaweicloudsdkdcs.v2.UpdateAclAccountRemarkRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.UpdateAclAccountRemarkResponse`
+        """
+        return self._update_acl_account_remark_with_http_info(request)
+
+    def _update_acl_account_remark_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'account_id' in local_var_params:
+            path_params['account_id'] = local_var_params['account_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/accounts/{account_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateAclAccountRemarkResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_acl_account_role(self, request):
+        """修改ACL角色
+
+        修改用户的类型。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAclAccountRole
+        :type request: :class:`huaweicloudsdkdcs.v2.UpdateAclAccountRoleRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.UpdateAclAccountRoleResponse`
+        """
+        return self._update_acl_account_role_with_http_info(request)
+
+    def _update_acl_account_role_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'account_id' in local_var_params:
+            path_params['account_id'] = local_var_params['account_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/accounts/{account_id}/role',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateAclAccountRoleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_bigkey_autoscan_config(self, request):
         """设置大key自动分析配置
 
@@ -3947,6 +4594,64 @@ class DcsClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateBigkeyAutoscanConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_config_template(self, request):
+        """修改自定义模板
+
+        修改自定义模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateConfigTemplate
+        :type request: :class:`huaweicloudsdkdcs.v2.UpdateConfigTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdcs.v2.UpdateConfigTemplateResponse`
+        """
+        return self._update_config_template_with_http_info(request)
+
+    def _update_config_template_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/config-templates/{template_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateConfigTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

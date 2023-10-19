@@ -17,7 +17,7 @@ class HealthCheckConfigurationExec:
     sensitive_list = []
 
     openapi_types = {
-        'command': 'list[object]'
+        'command': 'list[str]'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class HealthCheckConfigurationExec:
         The model defined in huaweicloud sdk
 
         :param command: shell语句。
-        :type command: list[object]
+        :type command: list[str]
         """
         
         
@@ -48,7 +48,7 @@ class HealthCheckConfigurationExec:
         shell语句。
 
         :return: The command of this HealthCheckConfigurationExec.
-        :rtype: list[object]
+        :rtype: list[str]
         """
         return self._command
 
@@ -59,7 +59,7 @@ class HealthCheckConfigurationExec:
         shell语句。
 
         :param command: The command of this HealthCheckConfigurationExec.
-        :type command: list[object]
+        :type command: list[str]
         """
         self._command = command
 

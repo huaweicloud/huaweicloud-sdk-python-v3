@@ -27,7 +27,9 @@ class GetEastWestFirewallResponseBody:
         'protect_infos': 'list[EwProtectResourceInfo]',
         'total': 'int',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'mode': 'str',
+        'ew_vpc_route_limit': 'int'
     }
 
     attribute_map = {
@@ -41,10 +43,12 @@ class GetEastWestFirewallResponseBody:
         'protect_infos': 'protect_infos',
         'total': 'total',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'mode': 'mode',
+        'ew_vpc_route_limit': 'ew_vpc_route_limit'
     }
 
-    def __init__(self, object_id=None, project_id=None, status=None, er_associated_subnet=None, firewall_associated_subnets=None, er=None, inspection_vpc=None, protect_infos=None, total=None, offset=None, limit=None):
+    def __init__(self, object_id=None, project_id=None, status=None, er_associated_subnet=None, firewall_associated_subnets=None, er=None, inspection_vpc=None, protect_infos=None, total=None, offset=None, limit=None, mode=None, ew_vpc_route_limit=None):
         """GetEastWestFirewallResponseBody
 
         The model defined in huaweicloud sdk
@@ -69,8 +73,12 @@ class GetEastWestFirewallResponseBody:
         :type total: int
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param limit: 每页显示个数
+        :param limit: 每页显示个数，范围为1-1024
         :type limit: int
+        :param mode: 防护模式
+        :type mode: str
+        :param ew_vpc_route_limit: 东西向路由限制
+        :type ew_vpc_route_limit: int
         """
         
         
@@ -86,6 +94,8 @@ class GetEastWestFirewallResponseBody:
         self._total = None
         self._offset = None
         self._limit = None
+        self._mode = None
+        self._ew_vpc_route_limit = None
         self.discriminator = None
 
         if object_id is not None:
@@ -110,6 +120,10 @@ class GetEastWestFirewallResponseBody:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if mode is not None:
+            self.mode = mode
+        if ew_vpc_route_limit is not None:
+            self.ew_vpc_route_limit = ew_vpc_route_limit
 
     @property
     def object_id(self):
@@ -323,7 +337,7 @@ class GetEastWestFirewallResponseBody:
     def limit(self):
         """Gets the limit of this GetEastWestFirewallResponseBody.
 
-        每页显示个数
+        每页显示个数，范围为1-1024
 
         :return: The limit of this GetEastWestFirewallResponseBody.
         :rtype: int
@@ -334,12 +348,56 @@ class GetEastWestFirewallResponseBody:
     def limit(self, limit):
         """Sets the limit of this GetEastWestFirewallResponseBody.
 
-        每页显示个数
+        每页显示个数，范围为1-1024
 
         :param limit: The limit of this GetEastWestFirewallResponseBody.
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def mode(self):
+        """Gets the mode of this GetEastWestFirewallResponseBody.
+
+        防护模式
+
+        :return: The mode of this GetEastWestFirewallResponseBody.
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        """Sets the mode of this GetEastWestFirewallResponseBody.
+
+        防护模式
+
+        :param mode: The mode of this GetEastWestFirewallResponseBody.
+        :type mode: str
+        """
+        self._mode = mode
+
+    @property
+    def ew_vpc_route_limit(self):
+        """Gets the ew_vpc_route_limit of this GetEastWestFirewallResponseBody.
+
+        东西向路由限制
+
+        :return: The ew_vpc_route_limit of this GetEastWestFirewallResponseBody.
+        :rtype: int
+        """
+        return self._ew_vpc_route_limit
+
+    @ew_vpc_route_limit.setter
+    def ew_vpc_route_limit(self, ew_vpc_route_limit):
+        """Sets the ew_vpc_route_limit of this GetEastWestFirewallResponseBody.
+
+        东西向路由限制
+
+        :param ew_vpc_route_limit: The ew_vpc_route_limit of this GetEastWestFirewallResponseBody.
+        :type ew_vpc_route_limit: int
+        """
+        self._ew_vpc_route_limit = ew_vpc_route_limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

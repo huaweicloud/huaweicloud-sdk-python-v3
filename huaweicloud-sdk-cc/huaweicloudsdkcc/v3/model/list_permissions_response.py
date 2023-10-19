@@ -18,65 +18,63 @@ class ListPermissionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'permissions': 'list[Permission]',
+        'request_id': 'str',
         'page_info': 'PageInfo',
-        'request_id': 'str'
+        'permissions': 'list[Permission]'
     }
 
     attribute_map = {
-        'permissions': 'permissions',
+        'request_id': 'request_id',
         'page_info': 'page_info',
-        'request_id': 'request_id'
+        'permissions': 'permissions'
     }
 
-    def __init__(self, permissions=None, page_info=None, request_id=None):
+    def __init__(self, request_id=None, page_info=None, permissions=None):
         """ListPermissionsResponse
 
         The model defined in huaweicloud sdk
 
-        :param permissions: 权限的详细信息。
-        :type permissions: list[:class:`huaweicloudsdkcc.v3.Permission`]
+        :param request_id: 资源ID标识符。
+        :type request_id: str
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
-        :param request_id: 请求ID。
-        :type request_id: str
+        :param permissions: 权限实例列表。
+        :type permissions: list[:class:`huaweicloudsdkcc.v3.Permission`]
         """
         
         super(ListPermissionsResponse, self).__init__()
 
-        self._permissions = None
-        self._page_info = None
         self._request_id = None
+        self._page_info = None
+        self._permissions = None
         self.discriminator = None
 
-        if permissions is not None:
-            self.permissions = permissions
+        self.request_id = request_id
         if page_info is not None:
             self.page_info = page_info
-        if request_id is not None:
-            self.request_id = request_id
+        self.permissions = permissions
 
     @property
-    def permissions(self):
-        """Gets the permissions of this ListPermissionsResponse.
+    def request_id(self):
+        """Gets the request_id of this ListPermissionsResponse.
 
-        权限的详细信息。
+        资源ID标识符。
 
-        :return: The permissions of this ListPermissionsResponse.
-        :rtype: list[:class:`huaweicloudsdkcc.v3.Permission`]
+        :return: The request_id of this ListPermissionsResponse.
+        :rtype: str
         """
-        return self._permissions
+        return self._request_id
 
-    @permissions.setter
-    def permissions(self, permissions):
-        """Sets the permissions of this ListPermissionsResponse.
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ListPermissionsResponse.
 
-        权限的详细信息。
+        资源ID标识符。
 
-        :param permissions: The permissions of this ListPermissionsResponse.
-        :type permissions: list[:class:`huaweicloudsdkcc.v3.Permission`]
+        :param request_id: The request_id of this ListPermissionsResponse.
+        :type request_id: str
         """
-        self._permissions = permissions
+        self._request_id = request_id
 
     @property
     def page_info(self):
@@ -97,26 +95,26 @@ class ListPermissionsResponse(SdkResponse):
         self._page_info = page_info
 
     @property
-    def request_id(self):
-        """Gets the request_id of this ListPermissionsResponse.
+    def permissions(self):
+        """Gets the permissions of this ListPermissionsResponse.
 
-        请求ID。
+        权限实例列表。
 
-        :return: The request_id of this ListPermissionsResponse.
-        :rtype: str
+        :return: The permissions of this ListPermissionsResponse.
+        :rtype: list[:class:`huaweicloudsdkcc.v3.Permission`]
         """
-        return self._request_id
+        return self._permissions
 
-    @request_id.setter
-    def request_id(self, request_id):
-        """Sets the request_id of this ListPermissionsResponse.
+    @permissions.setter
+    def permissions(self, permissions):
+        """Sets the permissions of this ListPermissionsResponse.
 
-        请求ID。
+        权限实例列表。
 
-        :param request_id: The request_id of this ListPermissionsResponse.
-        :type request_id: str
+        :param permissions: The permissions of this ListPermissionsResponse.
+        :type permissions: list[:class:`huaweicloudsdkcc.v3.Permission`]
         """
-        self._request_id = request_id
+        self._permissions = permissions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

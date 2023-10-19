@@ -20,45 +20,45 @@ class CreateAuthorisation:
         'name': 'str',
         'description': 'str',
         'instance_id': 'str',
-        'instance_type': 'str',
         'project_id': 'str',
         'region_id': 'str',
-        'cloud_connection_domain_id': 'str',
-        'cloud_connection_id': 'str'
+        'cloud_connection_id': 'str',
+        'instance_type': 'str',
+        'cloud_connection_domain_id': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
         'instance_id': 'instance_id',
-        'instance_type': 'instance_type',
         'project_id': 'project_id',
         'region_id': 'region_id',
-        'cloud_connection_domain_id': 'cloud_connection_domain_id',
-        'cloud_connection_id': 'cloud_connection_id'
+        'cloud_connection_id': 'cloud_connection_id',
+        'instance_type': 'instance_type',
+        'cloud_connection_domain_id': 'cloud_connection_domain_id'
     }
 
-    def __init__(self, name=None, description=None, instance_id=None, instance_type=None, project_id=None, region_id=None, cloud_connection_domain_id=None, cloud_connection_id=None):
+    def __init__(self, name=None, description=None, instance_id=None, project_id=None, region_id=None, cloud_connection_id=None, instance_type=None, cloud_connection_domain_id=None):
         """CreateAuthorisation
 
         The model defined in huaweicloud sdk
 
-        :param name: 授权的名称。
+        :param name: 实例名字。
         :type name: str
-        :param description: 授权的描述信息。
+        :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param instance_id: 授权网络实例的ID。
+        :param instance_id: 资源ID标识符。
         :type instance_id: str
+        :param project_id: 实例所属项目ID。
+        :type project_id: str
+        :param region_id: RegionID。
+        :type region_id: str
+        :param cloud_connection_id: 资源ID标识符。
+        :type cloud_connection_id: str
         :param instance_type: 授权网络实例的类型: - vpc：虚拟私有云
         :type instance_type: str
-        :param project_id: 授权网络实例所属项目。
-        :type project_id: str
-        :param region_id: 授权实例所属Region。
-        :type region_id: str
         :param cloud_connection_domain_id: 被授权云连接实例所属的账户ID。
         :type cloud_connection_domain_id: str
-        :param cloud_connection_id: 被授权云连接实例ID。
-        :type cloud_connection_id: str
         """
         
         
@@ -66,11 +66,11 @@ class CreateAuthorisation:
         self._name = None
         self._description = None
         self._instance_id = None
-        self._instance_type = None
         self._project_id = None
         self._region_id = None
-        self._cloud_connection_domain_id = None
         self._cloud_connection_id = None
+        self._instance_type = None
+        self._cloud_connection_domain_id = None
         self.discriminator = None
 
         if name is not None:
@@ -78,17 +78,17 @@ class CreateAuthorisation:
         if description is not None:
             self.description = description
         self.instance_id = instance_id
-        self.instance_type = instance_type
         self.project_id = project_id
         self.region_id = region_id
-        self.cloud_connection_domain_id = cloud_connection_domain_id
         self.cloud_connection_id = cloud_connection_id
+        self.instance_type = instance_type
+        self.cloud_connection_domain_id = cloud_connection_domain_id
 
     @property
     def name(self):
         """Gets the name of this CreateAuthorisation.
 
-        授权的名称。
+        实例名字。
 
         :return: The name of this CreateAuthorisation.
         :rtype: str
@@ -99,7 +99,7 @@ class CreateAuthorisation:
     def name(self, name):
         """Sets the name of this CreateAuthorisation.
 
-        授权的名称。
+        实例名字。
 
         :param name: The name of this CreateAuthorisation.
         :type name: str
@@ -110,7 +110,7 @@ class CreateAuthorisation:
     def description(self):
         """Gets the description of this CreateAuthorisation.
 
-        授权的描述信息。
+        实例描述。不支持 <>。
 
         :return: The description of this CreateAuthorisation.
         :rtype: str
@@ -121,7 +121,7 @@ class CreateAuthorisation:
     def description(self, description):
         """Sets the description of this CreateAuthorisation.
 
-        授权的描述信息。
+        实例描述。不支持 <>。
 
         :param description: The description of this CreateAuthorisation.
         :type description: str
@@ -132,7 +132,7 @@ class CreateAuthorisation:
     def instance_id(self):
         """Gets the instance_id of this CreateAuthorisation.
 
-        授权网络实例的ID。
+        资源ID标识符。
 
         :return: The instance_id of this CreateAuthorisation.
         :rtype: str
@@ -143,12 +143,78 @@ class CreateAuthorisation:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CreateAuthorisation.
 
-        授权网络实例的ID。
+        资源ID标识符。
 
         :param instance_id: The instance_id of this CreateAuthorisation.
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this CreateAuthorisation.
+
+        实例所属项目ID。
+
+        :return: The project_id of this CreateAuthorisation.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this CreateAuthorisation.
+
+        实例所属项目ID。
+
+        :param project_id: The project_id of this CreateAuthorisation.
+        :type project_id: str
+        """
+        self._project_id = project_id
+
+    @property
+    def region_id(self):
+        """Gets the region_id of this CreateAuthorisation.
+
+        RegionID。
+
+        :return: The region_id of this CreateAuthorisation.
+        :rtype: str
+        """
+        return self._region_id
+
+    @region_id.setter
+    def region_id(self, region_id):
+        """Sets the region_id of this CreateAuthorisation.
+
+        RegionID。
+
+        :param region_id: The region_id of this CreateAuthorisation.
+        :type region_id: str
+        """
+        self._region_id = region_id
+
+    @property
+    def cloud_connection_id(self):
+        """Gets the cloud_connection_id of this CreateAuthorisation.
+
+        资源ID标识符。
+
+        :return: The cloud_connection_id of this CreateAuthorisation.
+        :rtype: str
+        """
+        return self._cloud_connection_id
+
+    @cloud_connection_id.setter
+    def cloud_connection_id(self, cloud_connection_id):
+        """Sets the cloud_connection_id of this CreateAuthorisation.
+
+        资源ID标识符。
+
+        :param cloud_connection_id: The cloud_connection_id of this CreateAuthorisation.
+        :type cloud_connection_id: str
+        """
+        self._cloud_connection_id = cloud_connection_id
 
     @property
     def instance_type(self):
@@ -173,50 +239,6 @@ class CreateAuthorisation:
         self._instance_type = instance_type
 
     @property
-    def project_id(self):
-        """Gets the project_id of this CreateAuthorisation.
-
-        授权网络实例所属项目。
-
-        :return: The project_id of this CreateAuthorisation.
-        :rtype: str
-        """
-        return self._project_id
-
-    @project_id.setter
-    def project_id(self, project_id):
-        """Sets the project_id of this CreateAuthorisation.
-
-        授权网络实例所属项目。
-
-        :param project_id: The project_id of this CreateAuthorisation.
-        :type project_id: str
-        """
-        self._project_id = project_id
-
-    @property
-    def region_id(self):
-        """Gets the region_id of this CreateAuthorisation.
-
-        授权实例所属Region。
-
-        :return: The region_id of this CreateAuthorisation.
-        :rtype: str
-        """
-        return self._region_id
-
-    @region_id.setter
-    def region_id(self, region_id):
-        """Sets the region_id of this CreateAuthorisation.
-
-        授权实例所属Region。
-
-        :param region_id: The region_id of this CreateAuthorisation.
-        :type region_id: str
-        """
-        self._region_id = region_id
-
-    @property
     def cloud_connection_domain_id(self):
         """Gets the cloud_connection_domain_id of this CreateAuthorisation.
 
@@ -237,28 +259,6 @@ class CreateAuthorisation:
         :type cloud_connection_domain_id: str
         """
         self._cloud_connection_domain_id = cloud_connection_domain_id
-
-    @property
-    def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this CreateAuthorisation.
-
-        被授权云连接实例ID。
-
-        :return: The cloud_connection_id of this CreateAuthorisation.
-        :rtype: str
-        """
-        return self._cloud_connection_id
-
-    @cloud_connection_id.setter
-    def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this CreateAuthorisation.
-
-        被授权云连接实例ID。
-
-        :param cloud_connection_id: The cloud_connection_id of this CreateAuthorisation.
-        :type cloud_connection_id: str
-        """
-        self._cloud_connection_id = cloud_connection_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

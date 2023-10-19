@@ -16,13 +16,16 @@ class SmnAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "SmnAsyncClient":
+                raise TypeError("client type error, support client type is SmnAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "SmnClient":
-            raise TypeError("client type error, support client type is SmnClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def add_subscription_async(self, request):
         """订阅

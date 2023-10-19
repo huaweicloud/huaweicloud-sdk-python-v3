@@ -16,13 +16,16 @@ class SisClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "SisClient":
+                raise TypeError("client type error, support client type is SisClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "SisClient":
-            raise TypeError("client type error, support client type is SisClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def collect_transcriber_job(self, request):
         """获取录音文件识别结果
@@ -383,118 +386,6 @@ class SisClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='RecognizeShortAudioResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def run_audio_assessment(self, request):
-        """语音评测
-
-        口语评测接口，基于一小段朗读语音和预期文本，评价朗读者发音质量。当前仅支持华北-北京四。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for RunAudioAssessment
-        :type request: :class:`huaweicloudsdksis.v1.RunAudioAssessmentRequest`
-        :rtype: :class:`huaweicloudsdksis.v1.RunAudioAssessmentResponse`
-        """
-        return self._run_audio_assessment_with_http_info(request)
-
-    def _run_audio_assessment_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/assessment/audio',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunAudioAssessmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def run_multi_modal_assessment(self, request):
-        """多模态评测
-
-        多模态评测接口，根据朗读视频数据、视频对应的音频数据和试题文本，综合给出朗读者口语的评测分数。当前仅支持华北-北京四。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for RunMultiModalAssessment
-        :type request: :class:`huaweicloudsdksis.v1.RunMultiModalAssessmentRequest`
-        :rtype: :class:`huaweicloudsdksis.v1.RunMultiModalAssessmentResponse`
-        """
-        return self._run_multi_modal_assessment_with_http_info(request)
-
-    def _run_multi_modal_assessment_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/assessment/video',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunMultiModalAssessmentResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

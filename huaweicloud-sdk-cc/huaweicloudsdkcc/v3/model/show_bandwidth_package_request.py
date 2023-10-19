@@ -29,7 +29,7 @@ class ShowBandwidthPackageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 带宽包实例ID。
+        :param id: 资源的Id。
         :type id: str
         """
         
@@ -44,7 +44,7 @@ class ShowBandwidthPackageRequest:
     def id(self):
         """Gets the id of this ShowBandwidthPackageRequest.
 
-        带宽包实例ID。
+        资源的Id。
 
         :return: The id of this ShowBandwidthPackageRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowBandwidthPackageRequest:
     def id(self, id):
         """Sets the id of this ShowBandwidthPackageRequest.
 
-        带宽包实例ID。
+        资源的Id。
 
         :param id: The id of this ShowBandwidthPackageRequest.
         :type id: str

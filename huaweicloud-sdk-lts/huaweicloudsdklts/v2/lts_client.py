@@ -16,13 +16,16 @@ class LtsClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "LtsClient":
+                raise TypeError("client type error, support client type is LtsClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "LtsClient":
-            raise TypeError("client type error, support client type is LtsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_access_config(self, request):
         """创建日志接入

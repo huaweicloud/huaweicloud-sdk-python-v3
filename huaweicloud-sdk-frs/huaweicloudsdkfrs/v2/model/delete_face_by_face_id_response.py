@@ -20,16 +20,18 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
     openapi_types = {
         'face_number': 'int',
         'face_set_id': 'str',
-        'face_set_name': 'str'
+        'face_set_name': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'face_number': 'face_number',
         'face_set_id': 'face_set_id',
-        'face_set_name': 'face_set_name'
+        'face_set_name': 'face_set_name',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, face_number=None, face_set_id=None, face_set_name=None):
+    def __init__(self, face_number=None, face_set_id=None, face_set_name=None, x_request_id=None):
         """DeleteFaceByFaceIdResponse
 
         The model defined in huaweicloud sdk
@@ -40,6 +42,8 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
         :type face_set_id: str
         :param face_set_name: 人脸库名称。 调用失败时无此字段。
         :type face_set_name: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(DeleteFaceByFaceIdResponse, self).__init__()
@@ -47,6 +51,7 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
         self._face_number = None
         self._face_set_id = None
         self._face_set_name = None
+        self._x_request_id = None
         self.discriminator = None
 
         if face_number is not None:
@@ -55,6 +60,8 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
             self.face_set_id = face_set_id
         if face_set_name is not None:
             self.face_set_name = face_set_name
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def face_number(self):
@@ -121,6 +128,24 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
         :type face_set_name: str
         """
         self._face_set_name = face_set_name
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this DeleteFaceByFaceIdResponse.
+
+        :return: The x_request_id of this DeleteFaceByFaceIdResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this DeleteFaceByFaceIdResponse.
+
+        :param x_request_id: The x_request_id of this DeleteFaceByFaceIdResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

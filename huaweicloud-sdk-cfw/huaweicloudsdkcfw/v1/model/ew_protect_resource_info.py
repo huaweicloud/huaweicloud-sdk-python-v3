@@ -22,7 +22,8 @@ class EwProtectResourceInfo:
         'protected_resource_id': 'str',
         'protected_resource_nat_name': 'str',
         'protected_resource_nat_id': 'str',
-        'protected_resource_project_id': 'str'
+        'protected_resource_project_id': 'str',
+        'protected_resource_mode': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class EwProtectResourceInfo:
         'protected_resource_id': 'protected_resource_id',
         'protected_resource_nat_name': 'protected_resource_nat_name',
         'protected_resource_nat_id': 'protected_resource_nat_id',
-        'protected_resource_project_id': 'protected_resource_project_id'
+        'protected_resource_project_id': 'protected_resource_project_id',
+        'protected_resource_mode': 'protected_resource_mode'
     }
 
-    def __init__(self, protected_resource_type=None, protected_resource_name=None, protected_resource_id=None, protected_resource_nat_name=None, protected_resource_nat_id=None, protected_resource_project_id=None):
+    def __init__(self, protected_resource_type=None, protected_resource_name=None, protected_resource_id=None, protected_resource_nat_name=None, protected_resource_nat_id=None, protected_resource_project_id=None, protected_resource_mode=None):
         """EwProtectResourceInfo
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class EwProtectResourceInfo:
         :type protected_resource_nat_id: str
         :param protected_resource_project_id: 防护资源租户id
         :type protected_resource_project_id: str
+        :param protected_resource_mode: 防护资源模式
+        :type protected_resource_mode: str
         """
         
         
@@ -61,6 +65,7 @@ class EwProtectResourceInfo:
         self._protected_resource_nat_name = None
         self._protected_resource_nat_id = None
         self._protected_resource_project_id = None
+        self._protected_resource_mode = None
         self.discriminator = None
 
         self.protected_resource_type = protected_resource_type
@@ -72,6 +77,8 @@ class EwProtectResourceInfo:
             self.protected_resource_nat_id = protected_resource_nat_id
         if protected_resource_project_id is not None:
             self.protected_resource_project_id = protected_resource_project_id
+        if protected_resource_mode is not None:
+            self.protected_resource_mode = protected_resource_mode
 
     @property
     def protected_resource_type(self):
@@ -204,6 +211,28 @@ class EwProtectResourceInfo:
         :type protected_resource_project_id: str
         """
         self._protected_resource_project_id = protected_resource_project_id
+
+    @property
+    def protected_resource_mode(self):
+        """Gets the protected_resource_mode of this EwProtectResourceInfo.
+
+        防护资源模式
+
+        :return: The protected_resource_mode of this EwProtectResourceInfo.
+        :rtype: str
+        """
+        return self._protected_resource_mode
+
+    @protected_resource_mode.setter
+    def protected_resource_mode(self, protected_resource_mode):
+        """Sets the protected_resource_mode of this EwProtectResourceInfo.
+
+        防护资源模式
+
+        :param protected_resource_mode: The protected_resource_mode of this EwProtectResourceInfo.
+        :type protected_resource_mode: str
+        """
+        self._protected_resource_mode = protected_resource_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

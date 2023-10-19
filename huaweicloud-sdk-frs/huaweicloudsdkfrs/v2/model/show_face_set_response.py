@@ -18,29 +18,36 @@ class ShowFaceSetResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'face_set_info': 'FaceSetInfo'
+        'face_set_info': 'FaceSetInfo',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
-        'face_set_info': 'face_set_info'
+        'face_set_info': 'face_set_info',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, face_set_info=None):
+    def __init__(self, face_set_info=None, x_request_id=None):
         """ShowFaceSetResponse
 
         The model defined in huaweicloud sdk
 
         :param face_set_info: 
         :type face_set_info: :class:`huaweicloudsdkfrs.v2.FaceSetInfo`
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(ShowFaceSetResponse, self).__init__()
 
         self._face_set_info = None
+        self._x_request_id = None
         self.discriminator = None
 
         if face_set_info is not None:
             self.face_set_info = face_set_info
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def face_set_info(self):
@@ -59,6 +66,24 @@ class ShowFaceSetResponse(SdkResponse):
         :type face_set_info: :class:`huaweicloudsdkfrs.v2.FaceSetInfo`
         """
         self._face_set_info = face_set_info
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this ShowFaceSetResponse.
+
+        :return: The x_request_id of this ShowFaceSetResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this ShowFaceSetResponse.
+
+        :param x_request_id: The x_request_id of this ShowFaceSetResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

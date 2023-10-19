@@ -18,36 +18,56 @@ class ShowCloudConnectionRoutesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'cloud_connection_route': 'CloudConnectionRoute',
-        'request_id': 'str'
+        'request_id': 'str',
+        'cloud_connection_route': 'CloudConnectionRoute'
     }
 
     attribute_map = {
-        'cloud_connection_route': 'cloud_connection_route',
-        'request_id': 'request_id'
+        'request_id': 'request_id',
+        'cloud_connection_route': 'cloud_connection_route'
     }
 
-    def __init__(self, cloud_connection_route=None, request_id=None):
+    def __init__(self, request_id=None, cloud_connection_route=None):
         """ShowCloudConnectionRoutesResponse
 
         The model defined in huaweicloud sdk
 
+        :param request_id: 资源ID标识符。
+        :type request_id: str
         :param cloud_connection_route: 
         :type cloud_connection_route: :class:`huaweicloudsdkcc.v3.CloudConnectionRoute`
-        :param request_id: 请求ID。
-        :type request_id: str
         """
         
         super(ShowCloudConnectionRoutesResponse, self).__init__()
 
-        self._cloud_connection_route = None
         self._request_id = None
+        self._cloud_connection_route = None
         self.discriminator = None
 
-        if cloud_connection_route is not None:
-            self.cloud_connection_route = cloud_connection_route
-        if request_id is not None:
-            self.request_id = request_id
+        self.request_id = request_id
+        self.cloud_connection_route = cloud_connection_route
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this ShowCloudConnectionRoutesResponse.
+
+        资源ID标识符。
+
+        :return: The request_id of this ShowCloudConnectionRoutesResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ShowCloudConnectionRoutesResponse.
+
+        资源ID标识符。
+
+        :param request_id: The request_id of this ShowCloudConnectionRoutesResponse.
+        :type request_id: str
+        """
+        self._request_id = request_id
 
     @property
     def cloud_connection_route(self):
@@ -66,28 +86,6 @@ class ShowCloudConnectionRoutesResponse(SdkResponse):
         :type cloud_connection_route: :class:`huaweicloudsdkcc.v3.CloudConnectionRoute`
         """
         self._cloud_connection_route = cloud_connection_route
-
-    @property
-    def request_id(self):
-        """Gets the request_id of this ShowCloudConnectionRoutesResponse.
-
-        请求ID。
-
-        :return: The request_id of this ShowCloudConnectionRoutesResponse.
-        :rtype: str
-        """
-        return self._request_id
-
-    @request_id.setter
-    def request_id(self, request_id):
-        """Sets the request_id of this ShowCloudConnectionRoutesResponse.
-
-        请求ID。
-
-        :param request_id: The request_id of this ShowCloudConnectionRoutesResponse.
-        :type request_id: str
-        """
-        self._request_id = request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

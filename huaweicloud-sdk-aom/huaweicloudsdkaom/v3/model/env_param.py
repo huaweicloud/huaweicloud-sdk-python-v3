@@ -41,17 +41,17 @@ class EnvParam:
 
         The model defined in huaweicloud sdk
 
-        :param component_id: 环境关联组件id；id长度不能超过36位，由大小写字母、数字组成
+        :param component_id: 环境关联组件id；id长度不能超过36位，由大小写字母、数字组成。创建环境必传，修改环境时非必选
         :type component_id: str
-        :param description: 描述
+        :param description: 描述：最大255字符
         :type description: str
-        :param env_name: 环境名称
+        :param env_name: 显示名：字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
         :type env_name: str
-        :param env_type: 环境类型，取值：DEV、TEST、PRE、ONLINE
+        :param env_type: 环境类型，取值：DEV、TEST、PRE、ONLINE，不区分大小写
         :type env_type: str
-        :param os_type: OS类型，取值：LINUX、WINDOWS
+        :param os_type: OS类型，取值：LINUX、WINDOWS。创建环境必传，不可修改
         :type os_type: str
-        :param region: 环境关联region。创建环境必传
+        :param region: 环境关联region。创建环境必传，不可修改
         :type region: str
         :param register_type: 注册类型，取值：API、SERVICE_DISCOVERY、CONSOLE，默认值：API
         :type register_type: str
@@ -83,7 +83,7 @@ class EnvParam:
     def component_id(self):
         """Gets the component_id of this EnvParam.
 
-        环境关联组件id；id长度不能超过36位，由大小写字母、数字组成
+        环境关联组件id；id长度不能超过36位，由大小写字母、数字组成。创建环境必传，修改环境时非必选
 
         :return: The component_id of this EnvParam.
         :rtype: str
@@ -94,7 +94,7 @@ class EnvParam:
     def component_id(self, component_id):
         """Sets the component_id of this EnvParam.
 
-        环境关联组件id；id长度不能超过36位，由大小写字母、数字组成
+        环境关联组件id；id长度不能超过36位，由大小写字母、数字组成。创建环境必传，修改环境时非必选
 
         :param component_id: The component_id of this EnvParam.
         :type component_id: str
@@ -105,7 +105,7 @@ class EnvParam:
     def description(self):
         """Gets the description of this EnvParam.
 
-        描述
+        描述：最大255字符
 
         :return: The description of this EnvParam.
         :rtype: str
@@ -116,7 +116,7 @@ class EnvParam:
     def description(self, description):
         """Sets the description of this EnvParam.
 
-        描述
+        描述：最大255字符
 
         :param description: The description of this EnvParam.
         :type description: str
@@ -127,7 +127,7 @@ class EnvParam:
     def env_name(self):
         """Gets the env_name of this EnvParam.
 
-        环境名称
+        显示名：字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
 
         :return: The env_name of this EnvParam.
         :rtype: str
@@ -138,7 +138,7 @@ class EnvParam:
     def env_name(self, env_name):
         """Sets the env_name of this EnvParam.
 
-        环境名称
+        显示名：字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点
 
         :param env_name: The env_name of this EnvParam.
         :type env_name: str
@@ -149,7 +149,7 @@ class EnvParam:
     def env_type(self):
         """Gets the env_type of this EnvParam.
 
-        环境类型，取值：DEV、TEST、PRE、ONLINE
+        环境类型，取值：DEV、TEST、PRE、ONLINE，不区分大小写
 
         :return: The env_type of this EnvParam.
         :rtype: str
@@ -160,7 +160,7 @@ class EnvParam:
     def env_type(self, env_type):
         """Sets the env_type of this EnvParam.
 
-        环境类型，取值：DEV、TEST、PRE、ONLINE
+        环境类型，取值：DEV、TEST、PRE、ONLINE，不区分大小写
 
         :param env_type: The env_type of this EnvParam.
         :type env_type: str
@@ -171,7 +171,7 @@ class EnvParam:
     def os_type(self):
         """Gets the os_type of this EnvParam.
 
-        OS类型，取值：LINUX、WINDOWS
+        OS类型，取值：LINUX、WINDOWS。创建环境必传，不可修改
 
         :return: The os_type of this EnvParam.
         :rtype: str
@@ -182,7 +182,7 @@ class EnvParam:
     def os_type(self, os_type):
         """Sets the os_type of this EnvParam.
 
-        OS类型，取值：LINUX、WINDOWS
+        OS类型，取值：LINUX、WINDOWS。创建环境必传，不可修改
 
         :param os_type: The os_type of this EnvParam.
         :type os_type: str
@@ -193,7 +193,7 @@ class EnvParam:
     def region(self):
         """Gets the region of this EnvParam.
 
-        环境关联region。创建环境必传
+        环境关联region。创建环境必传，不可修改
 
         :return: The region of this EnvParam.
         :rtype: str
@@ -204,7 +204,7 @@ class EnvParam:
     def region(self, region):
         """Sets the region of this EnvParam.
 
-        环境关联region。创建环境必传
+        环境关联region。创建环境必传，不可修改
 
         :param region: The region of this EnvParam.
         :type region: str

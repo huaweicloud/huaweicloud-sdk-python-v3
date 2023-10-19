@@ -16,13 +16,16 @@ class SdrsClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "SdrsClient":
+                raise TypeError("client type error, support client type is SdrsClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "SdrsClient":
-            raise TypeError("client type error, support client type is SdrsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def add_protected_instance_nic(self, request):
         """保护实例添加网卡

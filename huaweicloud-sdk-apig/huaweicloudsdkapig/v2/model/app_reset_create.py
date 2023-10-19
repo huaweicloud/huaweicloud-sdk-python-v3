@@ -29,7 +29,7 @@ class AppResetCreate:
 
         The model defined in huaweicloud sdk
 
-        :param app_secret: 密钥支持英文，数字，“_”,“-”,“!”,“@”,“#”,“$”,“%”,且只能以英文或数字开头，8 ~ 64个字符。用户自定义APP的密钥需要开启配额开关
+        :param app_secret: 密钥。支持英文，数字，“_”，“-”，“!”，“@”，“#”，“$”，“%”，且只能以英文或数字开头，8 ~ 128个字符。用户自定义APP的密钥需要开启配额开关。
         :type app_secret: str
         """
         
@@ -45,7 +45,7 @@ class AppResetCreate:
     def app_secret(self):
         """Gets the app_secret of this AppResetCreate.
 
-        密钥支持英文，数字，“_”,“-”,“!”,“@”,“#”,“$”,“%”,且只能以英文或数字开头，8 ~ 64个字符。用户自定义APP的密钥需要开启配额开关
+        密钥。支持英文，数字，“_”，“-”，“!”，“@”，“#”，“$”，“%”，且只能以英文或数字开头，8 ~ 128个字符。用户自定义APP的密钥需要开启配额开关。
 
         :return: The app_secret of this AppResetCreate.
         :rtype: str
@@ -56,7 +56,7 @@ class AppResetCreate:
     def app_secret(self, app_secret):
         """Sets the app_secret of this AppResetCreate.
 
-        密钥支持英文，数字，“_”,“-”,“!”,“@”,“#”,“$”,“%”,且只能以英文或数字开头，8 ~ 64个字符。用户自定义APP的密钥需要开启配额开关
+        密钥。支持英文，数字，“_”，“-”，“!”，“@”，“#”，“$”，“%”，且只能以英文或数字开头，8 ~ 128个字符。用户自定义APP的密钥需要开启配额开关。
 
         :param app_secret: The app_secret of this AppResetCreate.
         :type app_secret: str

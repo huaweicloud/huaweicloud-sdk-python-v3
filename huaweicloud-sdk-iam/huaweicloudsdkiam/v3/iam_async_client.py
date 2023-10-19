@@ -16,13 +16,16 @@ class IamAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls, "GlobalCredentials,BasicCredentials,IamCredentials")
+        if not clazz:
+            client_builder = ClientBuilder(cls, "GlobalCredentials,BasicCredentials,IamCredentials")
+        else:
+            if clazz.__name__ != "IamAsyncClient":
+                raise TypeError("client type error, support client type is IamAsyncClient")
+            client_builder = ClientBuilder(clazz, "GlobalCredentials,BasicCredentials,IamCredentials")
 
-        if clazz.__name__ != "IamClient":
-            raise TypeError("client type error, support client type is IamClient")
+        
 
-        return ClientBuilder(clazz, "GlobalCredentials,BasicCredentials,IamCredentials")
+        return client_builder
 
     def associate_agency_with_all_projects_permission_async(self, request):
         """为委托授予所有项目服务权限

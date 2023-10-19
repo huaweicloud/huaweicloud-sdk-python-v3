@@ -16,13 +16,16 @@ class CtsAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "CtsAsyncClient":
+                raise TypeError("client type error, support client type is CtsAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "CtsClient":
-            raise TypeError("client type error, support client type is CtsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def batch_create_resource_tags_async(self, request):
         """批量添加CTS资源标签

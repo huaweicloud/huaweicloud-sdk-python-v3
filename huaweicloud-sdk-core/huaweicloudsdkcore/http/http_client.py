@@ -131,11 +131,7 @@ class HttpClient(object):
             try:
                 resp.raise_for_status()
             except HTTPError as httpError:
-                sdk_error = self._exception_handler.handle_exception(httpError.request, httpError.response)
-                if 400 <= httpError.response.status_code < 500:
-                    raise exceptions.ClientRequestException(httpError.response.status_code, sdk_error)
-                else:
-                    raise exceptions.ServerResponseException(httpError.response.status_code, sdk_error)
+                self._exception_handler.handle_exception(httpError.request, httpError.response)
             except Timeout as timeout:
                 raise exceptions.CallTimeoutException(str(timeout))
             except TooManyRedirects as tooManyRedirects:

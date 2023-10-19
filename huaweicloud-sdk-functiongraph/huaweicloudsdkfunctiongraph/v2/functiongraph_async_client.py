@@ -16,13 +16,16 @@ class FunctionGraphAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "FunctionGraphAsyncClient":
+                raise TypeError("client type error, support client type is FunctionGraphAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "FunctionGraphClient":
-            raise TypeError("client type error, support client type is FunctionGraphClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def async_invoke_function_async(self, request):
         """异步执行函数

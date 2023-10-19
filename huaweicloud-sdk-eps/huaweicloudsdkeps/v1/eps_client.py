@@ -16,13 +16,16 @@ class EpsClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls, "GlobalCredentials")
+        if not clazz:
+            client_builder = ClientBuilder(cls, "GlobalCredentials")
+        else:
+            if clazz.__name__ != "EpsClient":
+                raise TypeError("client type error, support client type is EpsClient")
+            client_builder = ClientBuilder(clazz, "GlobalCredentials")
 
-        if clazz.__name__ != "EpsClient":
-            raise TypeError("client type error, support client type is EpsClient")
+        
 
-        return ClientBuilder(clazz, "GlobalCredentials")
+        return client_builder
 
     def create_enterprise_project(self, request):
         """创建企业项目

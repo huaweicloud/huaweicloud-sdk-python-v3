@@ -30,7 +30,8 @@ class TableInput:
         'parameters': 'dict(str, str)',
         'comments': 'str',
         'view_expanded_text': 'str',
-        'view_original_text': 'str'
+        'view_original_text': 'str',
+        'ignore_obs_checked': 'bool'
     }
 
     attribute_map = {
@@ -47,21 +48,22 @@ class TableInput:
         'parameters': 'parameters',
         'comments': 'comments',
         'view_expanded_text': 'view_expanded_text',
-        'view_original_text': 'view_original_text'
+        'view_original_text': 'view_original_text',
+        'ignore_obs_checked': 'ignore_obs_checked'
     }
 
-    def __init__(self, table_name=None, table_type=None, owner=None, owner_type=None, create_time=None, last_access_time=None, last_analyzed_time=None, partition_keys=None, retention=None, storage_descriptor=None, parameters=None, comments=None, view_expanded_text=None, view_original_text=None):
+    def __init__(self, table_name=None, table_type=None, owner=None, owner_type=None, create_time=None, last_access_time=None, last_analyzed_time=None, partition_keys=None, retention=None, storage_descriptor=None, parameters=None, comments=None, view_expanded_text=None, view_original_text=None, ignore_obs_checked=None):
         """TableInput
 
         The model defined in huaweicloud sdk
 
-        :param table_name: 表名字
+        :param table_name: 表名称。只能包含中文、字母、数字和下划线，且长度为1~256个字符。
         :type table_name: str
-        :param table_type: 表类型
+        :param table_type: 表类型,MANAGED_TABLE-内表,EXTERNAL_TABLE-外表,VIRTUAL_VIEW-视图,MATERIALIZED_VIEW-物化视图
         :type table_type: str
-        :param owner: 表所有者
+        :param owner: 表所有者。只能包含字母、数字和下划线，且长度为1~49个字符。
         :type owner: str
-        :param owner_type: 所有者类型
+        :param owner_type: 所有者类型,USER-用户,GROUP-组,ROLE-角色
         :type owner_type: str
         :param create_time: 表创建时间
         :type create_time: datetime
@@ -77,12 +79,14 @@ class TableInput:
         :type storage_descriptor: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`
         :param parameters: 表参数信息，每个键是一个键字符串，不少于 1 个字节或超过 255 个字节 每个值是一个 UTF-8 字符串，不超过 4000 个字节
         :type parameters: dict(str, str)
-        :param comments: 表描述信息
+        :param comments: 表描述信息。由用户创建表时输入，最大长度为4000个字符。
         :type comments: str
         :param view_expanded_text: 如果表是视图，则为视图的扩展文本；否则为 null
         :type view_expanded_text: str
         :param view_original_text: 如果表是视图，则为视图的原始文本；否则为 null
         :type view_original_text: str
+        :param ignore_obs_checked: 是否忽略内表建表时对Obs路径的限制
+        :type ignore_obs_checked: bool
         """
         
         
@@ -101,6 +105,7 @@ class TableInput:
         self._comments = None
         self._view_expanded_text = None
         self._view_original_text = None
+        self._ignore_obs_checked = None
         self.discriminator = None
 
         self.table_name = table_name
@@ -126,12 +131,14 @@ class TableInput:
             self.view_expanded_text = view_expanded_text
         if view_original_text is not None:
             self.view_original_text = view_original_text
+        if ignore_obs_checked is not None:
+            self.ignore_obs_checked = ignore_obs_checked
 
     @property
     def table_name(self):
         """Gets the table_name of this TableInput.
 
-        表名字
+        表名称。只能包含中文、字母、数字和下划线，且长度为1~256个字符。
 
         :return: The table_name of this TableInput.
         :rtype: str
@@ -142,7 +149,7 @@ class TableInput:
     def table_name(self, table_name):
         """Sets the table_name of this TableInput.
 
-        表名字
+        表名称。只能包含中文、字母、数字和下划线，且长度为1~256个字符。
 
         :param table_name: The table_name of this TableInput.
         :type table_name: str
@@ -153,7 +160,7 @@ class TableInput:
     def table_type(self):
         """Gets the table_type of this TableInput.
 
-        表类型
+        表类型,MANAGED_TABLE-内表,EXTERNAL_TABLE-外表,VIRTUAL_VIEW-视图,MATERIALIZED_VIEW-物化视图
 
         :return: The table_type of this TableInput.
         :rtype: str
@@ -164,7 +171,7 @@ class TableInput:
     def table_type(self, table_type):
         """Sets the table_type of this TableInput.
 
-        表类型
+        表类型,MANAGED_TABLE-内表,EXTERNAL_TABLE-外表,VIRTUAL_VIEW-视图,MATERIALIZED_VIEW-物化视图
 
         :param table_type: The table_type of this TableInput.
         :type table_type: str
@@ -175,7 +182,7 @@ class TableInput:
     def owner(self):
         """Gets the owner of this TableInput.
 
-        表所有者
+        表所有者。只能包含字母、数字和下划线，且长度为1~49个字符。
 
         :return: The owner of this TableInput.
         :rtype: str
@@ -186,7 +193,7 @@ class TableInput:
     def owner(self, owner):
         """Sets the owner of this TableInput.
 
-        表所有者
+        表所有者。只能包含字母、数字和下划线，且长度为1~49个字符。
 
         :param owner: The owner of this TableInput.
         :type owner: str
@@ -197,7 +204,7 @@ class TableInput:
     def owner_type(self):
         """Gets the owner_type of this TableInput.
 
-        所有者类型
+        所有者类型,USER-用户,GROUP-组,ROLE-角色
 
         :return: The owner_type of this TableInput.
         :rtype: str
@@ -208,7 +215,7 @@ class TableInput:
     def owner_type(self, owner_type):
         """Sets the owner_type of this TableInput.
 
-        所有者类型
+        所有者类型,USER-用户,GROUP-组,ROLE-角色
 
         :param owner_type: The owner_type of this TableInput.
         :type owner_type: str
@@ -369,7 +376,7 @@ class TableInput:
     def comments(self):
         """Gets the comments of this TableInput.
 
-        表描述信息
+        表描述信息。由用户创建表时输入，最大长度为4000个字符。
 
         :return: The comments of this TableInput.
         :rtype: str
@@ -380,7 +387,7 @@ class TableInput:
     def comments(self, comments):
         """Sets the comments of this TableInput.
 
-        表描述信息
+        表描述信息。由用户创建表时输入，最大长度为4000个字符。
 
         :param comments: The comments of this TableInput.
         :type comments: str
@@ -430,6 +437,28 @@ class TableInput:
         :type view_original_text: str
         """
         self._view_original_text = view_original_text
+
+    @property
+    def ignore_obs_checked(self):
+        """Gets the ignore_obs_checked of this TableInput.
+
+        是否忽略内表建表时对Obs路径的限制
+
+        :return: The ignore_obs_checked of this TableInput.
+        :rtype: bool
+        """
+        return self._ignore_obs_checked
+
+    @ignore_obs_checked.setter
+    def ignore_obs_checked(self, ignore_obs_checked):
+        """Sets the ignore_obs_checked of this TableInput.
+
+        是否忽略内表建表时对Obs路径的限制
+
+        :param ignore_obs_checked: The ignore_obs_checked of this TableInput.
+        :type ignore_obs_checked: bool
+        """
+        self._ignore_obs_checked = ignore_obs_checked
 
     def to_dict(self):
         """Returns the model properties as a dict"""

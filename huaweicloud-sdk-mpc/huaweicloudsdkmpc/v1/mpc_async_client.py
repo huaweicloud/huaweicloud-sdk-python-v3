@@ -16,13 +16,16 @@ class MpcAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "MpcAsyncClient":
+                raise TypeError("client type error, support client type is MpcAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "MpcClient":
-            raise TypeError("client type error, support client type is MpcClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_animated_graphics_task_async(self, request):
         """新建转动图任务

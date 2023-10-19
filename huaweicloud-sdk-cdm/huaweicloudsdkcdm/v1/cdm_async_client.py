@@ -16,13 +16,16 @@ class CdmAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "CdmAsyncClient":
+                raise TypeError("client type error, support client type is CdmAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "CdmClient":
-            raise TypeError("client type error, support client type is CdmClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_and_start_random_cluster_job_async(self, request):
         """随机集群创建作业并执行

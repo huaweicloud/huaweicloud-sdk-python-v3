@@ -16,13 +16,16 @@ class SaClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "SaClient":
+                raise TypeError("client type error, support client type is SaClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "SaClient":
-            raise TypeError("client type error, support client type is SaClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def check_product_healthy(self, request):
         """检查心跳健康（仅支持华北-北京四使用）

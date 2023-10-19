@@ -21,6 +21,7 @@ class FunctionInput:
         'function_type': 'str',
         'owner': 'str',
         'owner_type': 'str',
+        'owner_auth_source_type': 'str',
         'class_name': 'str',
         'create_time': 'datetime',
         'resource_uris': 'list[FunctionResourceUri]'
@@ -31,25 +32,28 @@ class FunctionInput:
         'function_type': 'function_type',
         'owner': 'owner',
         'owner_type': 'owner_type',
+        'owner_auth_source_type': 'owner_auth_source_type',
         'class_name': 'class_name',
         'create_time': 'create_time',
         'resource_uris': 'resource_uris'
     }
 
-    def __init__(self, function_name=None, function_type=None, owner=None, owner_type=None, class_name=None, create_time=None, resource_uris=None):
+    def __init__(self, function_name=None, function_type=None, owner=None, owner_type=None, owner_auth_source_type=None, class_name=None, create_time=None, resource_uris=None):
         """FunctionInput
 
         The model defined in huaweicloud sdk
 
-        :param function_name: 函数名
+        :param function_name: 函数名称。只能包含字母、数字和下划线，且长度为1~256个字符。
         :type function_name: str
-        :param function_type: 函数类型
+        :param function_type: 函数类型，JAVA
         :type function_type: str
-        :param owner: 函数所有者
+        :param owner: 函数所有者。只能包含字母、数字和下划线，且长度为1~256个字符。
         :type owner: str
-        :param owner_type: 所有者类型
+        :param owner_type: 所有者类型，USER-用户,GROUP-组,ROLE-角色
         :type owner_type: str
-        :param class_name: 函数类名
+        :param owner_auth_source_type: 所有者授权来源类型,IAM-云,SAML-联邦,LDAP-ld用户,LOCAL-本地,AGENTTENANT-委托,OTHER-其它
+        :type owner_auth_source_type: str
+        :param class_name: 函数类名。长度为1~4000个字符。
         :type class_name: str
         :param create_time: 创建时间格式为yyyy-mm-ddThh:mm:sss
         :type create_time: datetime
@@ -63,6 +67,7 @@ class FunctionInput:
         self._function_type = None
         self._owner = None
         self._owner_type = None
+        self._owner_auth_source_type = None
         self._class_name = None
         self._create_time = None
         self._resource_uris = None
@@ -72,6 +77,8 @@ class FunctionInput:
         self.function_type = function_type
         self.owner = owner
         self.owner_type = owner_type
+        if owner_auth_source_type is not None:
+            self.owner_auth_source_type = owner_auth_source_type
         self.class_name = class_name
         if create_time is not None:
             self.create_time = create_time
@@ -82,7 +89,7 @@ class FunctionInput:
     def function_name(self):
         """Gets the function_name of this FunctionInput.
 
-        函数名
+        函数名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
         :return: The function_name of this FunctionInput.
         :rtype: str
@@ -93,7 +100,7 @@ class FunctionInput:
     def function_name(self, function_name):
         """Sets the function_name of this FunctionInput.
 
-        函数名
+        函数名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
         :param function_name: The function_name of this FunctionInput.
         :type function_name: str
@@ -104,7 +111,7 @@ class FunctionInput:
     def function_type(self):
         """Gets the function_type of this FunctionInput.
 
-        函数类型
+        函数类型，JAVA
 
         :return: The function_type of this FunctionInput.
         :rtype: str
@@ -115,7 +122,7 @@ class FunctionInput:
     def function_type(self, function_type):
         """Sets the function_type of this FunctionInput.
 
-        函数类型
+        函数类型，JAVA
 
         :param function_type: The function_type of this FunctionInput.
         :type function_type: str
@@ -126,7 +133,7 @@ class FunctionInput:
     def owner(self):
         """Gets the owner of this FunctionInput.
 
-        函数所有者
+        函数所有者。只能包含字母、数字和下划线，且长度为1~256个字符。
 
         :return: The owner of this FunctionInput.
         :rtype: str
@@ -137,7 +144,7 @@ class FunctionInput:
     def owner(self, owner):
         """Sets the owner of this FunctionInput.
 
-        函数所有者
+        函数所有者。只能包含字母、数字和下划线，且长度为1~256个字符。
 
         :param owner: The owner of this FunctionInput.
         :type owner: str
@@ -148,7 +155,7 @@ class FunctionInput:
     def owner_type(self):
         """Gets the owner_type of this FunctionInput.
 
-        所有者类型
+        所有者类型，USER-用户,GROUP-组,ROLE-角色
 
         :return: The owner_type of this FunctionInput.
         :rtype: str
@@ -159,7 +166,7 @@ class FunctionInput:
     def owner_type(self, owner_type):
         """Sets the owner_type of this FunctionInput.
 
-        所有者类型
+        所有者类型，USER-用户,GROUP-组,ROLE-角色
 
         :param owner_type: The owner_type of this FunctionInput.
         :type owner_type: str
@@ -167,10 +174,32 @@ class FunctionInput:
         self._owner_type = owner_type
 
     @property
+    def owner_auth_source_type(self):
+        """Gets the owner_auth_source_type of this FunctionInput.
+
+        所有者授权来源类型,IAM-云,SAML-联邦,LDAP-ld用户,LOCAL-本地,AGENTTENANT-委托,OTHER-其它
+
+        :return: The owner_auth_source_type of this FunctionInput.
+        :rtype: str
+        """
+        return self._owner_auth_source_type
+
+    @owner_auth_source_type.setter
+    def owner_auth_source_type(self, owner_auth_source_type):
+        """Sets the owner_auth_source_type of this FunctionInput.
+
+        所有者授权来源类型,IAM-云,SAML-联邦,LDAP-ld用户,LOCAL-本地,AGENTTENANT-委托,OTHER-其它
+
+        :param owner_auth_source_type: The owner_auth_source_type of this FunctionInput.
+        :type owner_auth_source_type: str
+        """
+        self._owner_auth_source_type = owner_auth_source_type
+
+    @property
     def class_name(self):
         """Gets the class_name of this FunctionInput.
 
-        函数类名
+        函数类名。长度为1~4000个字符。
 
         :return: The class_name of this FunctionInput.
         :rtype: str
@@ -181,7 +210,7 @@ class FunctionInput:
     def class_name(self, class_name):
         """Sets the class_name of this FunctionInput.
 
-        函数类名
+        函数类名。长度为1~4000个字符。
 
         :param class_name: The class_name of this FunctionInput.
         :type class_name: str

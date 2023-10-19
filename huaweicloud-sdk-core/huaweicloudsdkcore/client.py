@@ -37,8 +37,8 @@ from six.moves.urllib.parse import quote, urlparse
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, DerivedCredentials
 from huaweicloudsdkcore.auth.provider import CredentialProviderChain
-from huaweicloudsdkcore.exceptions import exception_handler
 from huaweicloudsdkcore.exceptions.exceptions import HostUnreachableException
+from huaweicloudsdkcore.exceptions.exception_handler import ExceptionHandler, DefaultExceptionHandler
 from huaweicloudsdkcore.http import progress
 from huaweicloudsdkcore.http.formdata import FormFile
 from huaweicloudsdkcore.http.http_client import HttpClient
@@ -84,6 +84,7 @@ class ClientBuilder(Generic[T]):
         self._http_handler = None
         self._file_logger_handler = None
         self._stream_logger_handler = None
+        self._exception_handler = None
 
     def with_http_config(self, config):
         """
@@ -120,6 +121,14 @@ class ClientBuilder(Generic[T]):
 
     def with_endpoints(self, endpoints):
         self._endpoints = endpoints
+        return self
+
+    def with_exception_handler(self, exception_handler):
+        """
+        :param exception_handler: ExceptionHandler for ClientBuilder
+        :type exception_handler: :class:`huaweicloudsdkcore.exceptions.exception_handler.ExceptionHandler`
+        """
+        self._exception_handler = exception_handler
         return self
 
     def with_http_handler(self, http_handler):
@@ -160,7 +169,8 @@ class ClientBuilder(Generic[T]):
         client = self._client_type() \
             .with_credentials(self._credentials) \
             .with_config(self._config) \
-            .with_http_handler(self._http_handler)
+            .with_http_handler(self._http_handler) \
+            .with_exception_handler(self._exception_handler)
 
         client.init_http_client()
 
@@ -218,9 +228,9 @@ class Client(object):
 
         self._http_client = None
         self._http_handler = None
+        self._exception_handler = None
 
         self.model_package = None
-        self.exception_handler = None
 
     @classmethod
     def _init_logger(cls):
@@ -253,6 +263,14 @@ class Client(object):
         self._endpoints += endpoints
         return self
 
+    def with_exception_handler(self, exception_handler):
+        """
+        :param exception_handler: ExceptionHandler for Client
+        :type exception_handler: :class:`huaweicloudsdkcore.exceptions.exception_handler.ExceptionHandler`
+        """
+        self._exception_handler = exception_handler
+        return self
+
     def with_http_handler(self, http_handler):
         """
         :param http_handler: HttpHandler for Client
@@ -262,10 +280,10 @@ class Client(object):
         return self
 
     def init_http_client(self):
-        if not self.exception_handler or not isinstance(self.exception_handler, exception_handler.ExceptionHandler):
-            self.exception_handler = exception_handler.DefaultExceptionHandler()
+        if not self._exception_handler or not isinstance(self._exception_handler, ExceptionHandler):
+            self._exception_handler = DefaultExceptionHandler()
         if not self._http_client:
-            self._http_client = HttpClient(self._config, self._http_handler, self.exception_handler, self._logger)
+            self._http_client = HttpClient(self._config, self._http_handler, self._exception_handler, self._logger)
 
     def add_stream_logger(self, stream, log_level, format_string):
         self._logger.setLevel(log_level)

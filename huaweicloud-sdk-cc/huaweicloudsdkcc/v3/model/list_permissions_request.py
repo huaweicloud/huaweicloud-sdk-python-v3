@@ -41,17 +41,17 @@ class ListPermissionsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 分页查询时，每页返回的个数。
+        :param limit: 每页返回的个数。 取值范围：1~1000。
         :type limit: int
-        :param marker: 分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+        :param marker: 翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
         :type marker: str
-        :param id: 根据ID过滤授权列表。
+        :param id: 根据id查询，可查询多个id。
         :type id: list[str]
-        :param name: 根据名称过滤授权列表。
+        :param name: 根据名字查询，可查询多个名字。
         :type name: list[str]
-        :param description: 根据描述过滤授权列表。
+        :param description: 根据描述查询，可查询多个描述。
         :type description: list[str]
-        :param cloud_connection_id: 根据云连接实例ID过滤授权列表。
+        :param cloud_connection_id: 根据云连接的ID过滤列表。
         :type cloud_connection_id: list[str]
         :param instance_id: 根据实例ID过滤授权列表。
         :type instance_id: list[str]
@@ -87,7 +87,7 @@ class ListPermissionsRequest:
     def limit(self):
         """Gets the limit of this ListPermissionsRequest.
 
-        分页查询时，每页返回的个数。
+        每页返回的个数。 取值范围：1~1000。
 
         :return: The limit of this ListPermissionsRequest.
         :rtype: int
@@ -98,7 +98,7 @@ class ListPermissionsRequest:
     def limit(self, limit):
         """Sets the limit of this ListPermissionsRequest.
 
-        分页查询时，每页返回的个数。
+        每页返回的个数。 取值范围：1~1000。
 
         :param limit: The limit of this ListPermissionsRequest.
         :type limit: int
@@ -109,7 +109,7 @@ class ListPermissionsRequest:
     def marker(self):
         """Gets the marker of this ListPermissionsRequest.
 
-        分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
         :return: The marker of this ListPermissionsRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class ListPermissionsRequest:
     def marker(self, marker):
         """Sets the marker of this ListPermissionsRequest.
 
-        分页查询时，上一页最后一条记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
+        翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
         :param marker: The marker of this ListPermissionsRequest.
         :type marker: str
@@ -131,7 +131,7 @@ class ListPermissionsRequest:
     def id(self):
         """Gets the id of this ListPermissionsRequest.
 
-        根据ID过滤授权列表。
+        根据id查询，可查询多个id。
 
         :return: The id of this ListPermissionsRequest.
         :rtype: list[str]
@@ -142,7 +142,7 @@ class ListPermissionsRequest:
     def id(self, id):
         """Sets the id of this ListPermissionsRequest.
 
-        根据ID过滤授权列表。
+        根据id查询，可查询多个id。
 
         :param id: The id of this ListPermissionsRequest.
         :type id: list[str]
@@ -153,7 +153,7 @@ class ListPermissionsRequest:
     def name(self):
         """Gets the name of this ListPermissionsRequest.
 
-        根据名称过滤授权列表。
+        根据名字查询，可查询多个名字。
 
         :return: The name of this ListPermissionsRequest.
         :rtype: list[str]
@@ -164,7 +164,7 @@ class ListPermissionsRequest:
     def name(self, name):
         """Sets the name of this ListPermissionsRequest.
 
-        根据名称过滤授权列表。
+        根据名字查询，可查询多个名字。
 
         :param name: The name of this ListPermissionsRequest.
         :type name: list[str]
@@ -175,7 +175,7 @@ class ListPermissionsRequest:
     def description(self):
         """Gets the description of this ListPermissionsRequest.
 
-        根据描述过滤授权列表。
+        根据描述查询，可查询多个描述。
 
         :return: The description of this ListPermissionsRequest.
         :rtype: list[str]
@@ -186,7 +186,7 @@ class ListPermissionsRequest:
     def description(self, description):
         """Sets the description of this ListPermissionsRequest.
 
-        根据描述过滤授权列表。
+        根据描述查询，可查询多个描述。
 
         :param description: The description of this ListPermissionsRequest.
         :type description: list[str]
@@ -197,7 +197,7 @@ class ListPermissionsRequest:
     def cloud_connection_id(self):
         """Gets the cloud_connection_id of this ListPermissionsRequest.
 
-        根据云连接实例ID过滤授权列表。
+        根据云连接的ID过滤列表。
 
         :return: The cloud_connection_id of this ListPermissionsRequest.
         :rtype: list[str]
@@ -208,7 +208,7 @@ class ListPermissionsRequest:
     def cloud_connection_id(self, cloud_connection_id):
         """Sets the cloud_connection_id of this ListPermissionsRequest.
 
-        根据云连接实例ID过滤授权列表。
+        根据云连接的ID过滤列表。
 
         :param cloud_connection_id: The cloud_connection_id of this ListPermissionsRequest.
         :type cloud_connection_id: list[str]

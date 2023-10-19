@@ -49,6 +49,8 @@ class ApigRegion:
                         "https://apig.cn-north-2.myhuaweicloud.com")
     EU_WEST_101 = Region("eu-west-101",
                         "https://apig.eu-west-101.myhuaweicloud.eu")
+    AE_AD_1 = Region("ae-ad-1",
+                        "https://apig.ae-ad-1.g42cloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -71,6 +73,7 @@ class ApigRegion:
         "tr-west-1": TR_WEST_1,
         "cn-north-2": CN_NORTH_2,
         "eu-west-101": EU_WEST_101,
+        "ae-ad-1": AE_AD_1,
     }
 
     @classmethod

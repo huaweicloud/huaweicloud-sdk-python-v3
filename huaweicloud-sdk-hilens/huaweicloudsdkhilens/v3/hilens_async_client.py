@@ -16,13 +16,16 @@ class HiLensAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "HiLensAsyncClient":
+                raise TypeError("client type error, support client type is HiLensAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "HiLensClient":
-            raise TypeError("client type error, support client type is HiLensClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def add_deployment_nodes_async(self, request):
         """批量部署

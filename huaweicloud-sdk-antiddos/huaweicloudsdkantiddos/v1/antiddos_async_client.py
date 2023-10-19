@@ -16,13 +16,16 @@ class AntiDDoSAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "AntiDDoSAsyncClient":
+                raise TypeError("client type error, support client type is AntiDDoSAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "AntiDDoSClient":
-            raise TypeError("client type error, support client type is AntiDDoSClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_default_config_async(self, request):
         """配置Anti-DDoS默认防护策略

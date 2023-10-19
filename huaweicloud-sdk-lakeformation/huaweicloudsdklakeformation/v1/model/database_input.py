@@ -20,6 +20,7 @@ class DatabaseInput:
         'database_name': 'str',
         'owner': 'str',
         'owner_type': 'str',
+        'owner_auth_source_type': 'str',
         'description': 'str',
         'location': 'str',
         'parameters': 'dict(str, str)',
@@ -31,6 +32,7 @@ class DatabaseInput:
         'database_name': 'database_name',
         'owner': 'owner',
         'owner_type': 'owner_type',
+        'owner_auth_source_type': 'owner_auth_source_type',
         'description': 'description',
         'location': 'location',
         'parameters': 'parameters',
@@ -38,20 +40,22 @@ class DatabaseInput:
         'function_location_list': 'function_location_list'
     }
 
-    def __init__(self, database_name=None, owner=None, owner_type=None, description=None, location=None, parameters=None, table_location_list=None, function_location_list=None):
+    def __init__(self, database_name=None, owner=None, owner_type=None, owner_auth_source_type=None, description=None, location=None, parameters=None, table_location_list=None, function_location_list=None):
         """DatabaseInput
 
         The model defined in huaweicloud sdk
 
-        :param database_name: 数据库名字
+        :param database_name: 数据库名称。只能包含中文、字母、数字和下划线，且长度为1~128个字符。
         :type database_name: str
-        :param owner: 数据库所有者
+        :param owner: 数据库所有者。长度为0~128个字符。
         :type owner: str
-        :param owner_type: 所有者类型
+        :param owner_type: 所有者类型,USER-用户,GROUP-组,ROLE-角色。LakeFormation服务分为一期和二期，一期响应Body无该参数。
         :type owner_type: str
-        :param description: 数据库描述信息
+        :param owner_auth_source_type: 所有者来源,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+        :type owner_auth_source_type: str
+        :param description: 数据库描述信息。由用户创建数据库时输入，最大长度为4000个字符。
         :type description: str
-        :param location: 数据库位置
+        :param location: 数据库路径地址。例如obs://location/uri/
         :type location: str
         :param parameters: 标签信息
         :type parameters: dict(str, str)
@@ -66,6 +70,7 @@ class DatabaseInput:
         self._database_name = None
         self._owner = None
         self._owner_type = None
+        self._owner_auth_source_type = None
         self._description = None
         self._location = None
         self._parameters = None
@@ -78,6 +83,8 @@ class DatabaseInput:
             self.owner = owner
         if owner_type is not None:
             self.owner_type = owner_type
+        if owner_auth_source_type is not None:
+            self.owner_auth_source_type = owner_auth_source_type
         if description is not None:
             self.description = description
         if location is not None:
@@ -93,7 +100,7 @@ class DatabaseInput:
     def database_name(self):
         """Gets the database_name of this DatabaseInput.
 
-        数据库名字
+        数据库名称。只能包含中文、字母、数字和下划线，且长度为1~128个字符。
 
         :return: The database_name of this DatabaseInput.
         :rtype: str
@@ -104,7 +111,7 @@ class DatabaseInput:
     def database_name(self, database_name):
         """Sets the database_name of this DatabaseInput.
 
-        数据库名字
+        数据库名称。只能包含中文、字母、数字和下划线，且长度为1~128个字符。
 
         :param database_name: The database_name of this DatabaseInput.
         :type database_name: str
@@ -115,7 +122,7 @@ class DatabaseInput:
     def owner(self):
         """Gets the owner of this DatabaseInput.
 
-        数据库所有者
+        数据库所有者。长度为0~128个字符。
 
         :return: The owner of this DatabaseInput.
         :rtype: str
@@ -126,7 +133,7 @@ class DatabaseInput:
     def owner(self, owner):
         """Sets the owner of this DatabaseInput.
 
-        数据库所有者
+        数据库所有者。长度为0~128个字符。
 
         :param owner: The owner of this DatabaseInput.
         :type owner: str
@@ -137,7 +144,7 @@ class DatabaseInput:
     def owner_type(self):
         """Gets the owner_type of this DatabaseInput.
 
-        所有者类型
+        所有者类型,USER-用户,GROUP-组,ROLE-角色。LakeFormation服务分为一期和二期，一期响应Body无该参数。
 
         :return: The owner_type of this DatabaseInput.
         :rtype: str
@@ -148,7 +155,7 @@ class DatabaseInput:
     def owner_type(self, owner_type):
         """Sets the owner_type of this DatabaseInput.
 
-        所有者类型
+        所有者类型,USER-用户,GROUP-组,ROLE-角色。LakeFormation服务分为一期和二期，一期响应Body无该参数。
 
         :param owner_type: The owner_type of this DatabaseInput.
         :type owner_type: str
@@ -156,10 +163,32 @@ class DatabaseInput:
         self._owner_type = owner_type
 
     @property
+    def owner_auth_source_type(self):
+        """Gets the owner_auth_source_type of this DatabaseInput.
+
+        所有者来源,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+
+        :return: The owner_auth_source_type of this DatabaseInput.
+        :rtype: str
+        """
+        return self._owner_auth_source_type
+
+    @owner_auth_source_type.setter
+    def owner_auth_source_type(self, owner_auth_source_type):
+        """Sets the owner_auth_source_type of this DatabaseInput.
+
+        所有者来源,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它。LakeFormation服务分为一期和二期，一期响应Body无该参数。
+
+        :param owner_auth_source_type: The owner_auth_source_type of this DatabaseInput.
+        :type owner_auth_source_type: str
+        """
+        self._owner_auth_source_type = owner_auth_source_type
+
+    @property
     def description(self):
         """Gets the description of this DatabaseInput.
 
-        数据库描述信息
+        数据库描述信息。由用户创建数据库时输入，最大长度为4000个字符。
 
         :return: The description of this DatabaseInput.
         :rtype: str
@@ -170,7 +199,7 @@ class DatabaseInput:
     def description(self, description):
         """Sets the description of this DatabaseInput.
 
-        数据库描述信息
+        数据库描述信息。由用户创建数据库时输入，最大长度为4000个字符。
 
         :param description: The description of this DatabaseInput.
         :type description: str
@@ -181,7 +210,7 @@ class DatabaseInput:
     def location(self):
         """Gets the location of this DatabaseInput.
 
-        数据库位置
+        数据库路径地址。例如obs://location/uri/
 
         :return: The location of this DatabaseInput.
         :rtype: str
@@ -192,7 +221,7 @@ class DatabaseInput:
     def location(self, location):
         """Sets the location of this DatabaseInput.
 
-        数据库位置
+        数据库路径地址。例如obs://location/uri/
 
         :param location: The location of this DatabaseInput.
         :type location: str

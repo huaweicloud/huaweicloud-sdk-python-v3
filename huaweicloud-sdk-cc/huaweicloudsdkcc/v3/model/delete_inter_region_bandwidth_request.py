@@ -29,7 +29,7 @@ class DeleteInterRegionBandwidthRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 域间带宽实例ID。
+        :param id: 资源的Id。
         :type id: str
         """
         
@@ -44,7 +44,7 @@ class DeleteInterRegionBandwidthRequest:
     def id(self):
         """Gets the id of this DeleteInterRegionBandwidthRequest.
 
-        域间带宽实例ID。
+        资源的Id。
 
         :return: The id of this DeleteInterRegionBandwidthRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteInterRegionBandwidthRequest:
     def id(self, id):
         """Sets the id of this DeleteInterRegionBandwidthRequest.
 
-        域间带宽实例ID。
+        资源的Id。
 
         :param id: The id of this DeleteInterRegionBandwidthRequest.
         :type id: str

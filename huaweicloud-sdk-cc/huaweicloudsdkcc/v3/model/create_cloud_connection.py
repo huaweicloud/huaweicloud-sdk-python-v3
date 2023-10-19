@@ -33,11 +33,11 @@ class CreateCloudConnection:
 
         The model defined in huaweicloud sdk
 
-        :param name: 云连接实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
+        :param name: 实例名字。
         :type name: str
-        :param description: 云连接实例的描述。不支持 &lt;&gt;。
+        :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param enterprise_project_id: 云连接实例所属的企业项目ID。企业项目账号必填；非企业项目账号不填。
+        :param enterprise_project_id: 实例所属企业项目ID。
         :type enterprise_project_id: str
         """
         
@@ -58,7 +58,7 @@ class CreateCloudConnection:
     def name(self):
         """Gets the name of this CreateCloudConnection.
 
-        云连接实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
+        实例名字。
 
         :return: The name of this CreateCloudConnection.
         :rtype: str
@@ -69,7 +69,7 @@ class CreateCloudConnection:
     def name(self, name):
         """Sets the name of this CreateCloudConnection.
 
-        云连接实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
+        实例名字。
 
         :param name: The name of this CreateCloudConnection.
         :type name: str
@@ -80,7 +80,7 @@ class CreateCloudConnection:
     def description(self):
         """Gets the description of this CreateCloudConnection.
 
-        云连接实例的描述。不支持 <>。
+        实例描述。不支持 <>。
 
         :return: The description of this CreateCloudConnection.
         :rtype: str
@@ -91,7 +91,7 @@ class CreateCloudConnection:
     def description(self, description):
         """Sets the description of this CreateCloudConnection.
 
-        云连接实例的描述。不支持 <>。
+        实例描述。不支持 <>。
 
         :param description: The description of this CreateCloudConnection.
         :type description: str
@@ -102,7 +102,7 @@ class CreateCloudConnection:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateCloudConnection.
 
-        云连接实例所属的企业项目ID。企业项目账号必填；非企业项目账号不填。
+        实例所属企业项目ID。
 
         :return: The enterprise_project_id of this CreateCloudConnection.
         :rtype: str
@@ -113,7 +113,7 @@ class CreateCloudConnection:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateCloudConnection.
 
-        云连接实例所属的企业项目ID。企业项目账号必填；非企业项目账号不填。
+        实例所属企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateCloudConnection.
         :type enterprise_project_id: str

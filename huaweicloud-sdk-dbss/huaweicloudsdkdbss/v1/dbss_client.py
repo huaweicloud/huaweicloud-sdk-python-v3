@@ -16,13 +16,16 @@ class DbssClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "DbssClient":
+                raise TypeError("client type error, support client type is DbssClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "DbssClient":
-            raise TypeError("client type error, support client type is DbssClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def add_rds_no_agent_database(self, request):
         """添加RDS免agent数据库

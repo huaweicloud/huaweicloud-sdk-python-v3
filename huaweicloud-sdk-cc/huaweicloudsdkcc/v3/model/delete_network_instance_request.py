@@ -29,7 +29,7 @@ class DeleteNetworkInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 网络实例ID。
+        :param id: 资源的Id。
         :type id: str
         """
         
@@ -44,7 +44,7 @@ class DeleteNetworkInstanceRequest:
     def id(self):
         """Gets the id of this DeleteNetworkInstanceRequest.
 
-        网络实例ID。
+        资源的Id。
 
         :return: The id of this DeleteNetworkInstanceRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteNetworkInstanceRequest:
     def id(self, id):
         """Sets the id of this DeleteNetworkInstanceRequest.
 
-        网络实例ID。
+        资源的Id。
 
         :param id: The id of this DeleteNetworkInstanceRequest.
         :type id: str

@@ -18,7 +18,7 @@ class ScaleConfigurationDataTrigger:
 
     openapi_types = {
         'type': 'str',
-        'metadata': 'ScaleConfigurationDataTriggerMetadata'
+        'metadata': 'ScalingTriggerMeta'
     }
 
     attribute_map = {
@@ -31,10 +31,10 @@ class ScaleConfigurationDataTrigger:
 
         The model defined in huaweicloud sdk
 
-        :param type: 指标类型，支持cpu、memory。
+        :param type: 指标类型，支持cpu、memory、cron。
         :type type: str
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkcae.v1.ScaleConfigurationDataTriggerMetadata`
+        :type metadata: :class:`huaweicloudsdkcae.v1.ScalingTriggerMeta`
         """
         
         
@@ -52,7 +52,7 @@ class ScaleConfigurationDataTrigger:
     def type(self):
         """Gets the type of this ScaleConfigurationDataTrigger.
 
-        指标类型，支持cpu、memory。
+        指标类型，支持cpu、memory、cron。
 
         :return: The type of this ScaleConfigurationDataTrigger.
         :rtype: str
@@ -63,7 +63,7 @@ class ScaleConfigurationDataTrigger:
     def type(self, type):
         """Sets the type of this ScaleConfigurationDataTrigger.
 
-        指标类型，支持cpu、memory。
+        指标类型，支持cpu、memory、cron。
 
         :param type: The type of this ScaleConfigurationDataTrigger.
         :type type: str
@@ -75,7 +75,7 @@ class ScaleConfigurationDataTrigger:
         """Gets the metadata of this ScaleConfigurationDataTrigger.
 
         :return: The metadata of this ScaleConfigurationDataTrigger.
-        :rtype: :class:`huaweicloudsdkcae.v1.ScaleConfigurationDataTriggerMetadata`
+        :rtype: :class:`huaweicloudsdkcae.v1.ScalingTriggerMeta`
         """
         return self._metadata
 
@@ -84,7 +84,7 @@ class ScaleConfigurationDataTrigger:
         """Sets the metadata of this ScaleConfigurationDataTrigger.
 
         :param metadata: The metadata of this ScaleConfigurationDataTrigger.
-        :type metadata: :class:`huaweicloudsdkcae.v1.ScaleConfigurationDataTriggerMetadata`
+        :type metadata: :class:`huaweicloudsdkcae.v1.ScalingTriggerMeta`
         """
         self._metadata = metadata
 

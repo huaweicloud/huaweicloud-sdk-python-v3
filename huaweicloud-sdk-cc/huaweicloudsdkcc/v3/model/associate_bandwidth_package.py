@@ -31,9 +31,9 @@ class AssociateBandwidthPackage:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 带宽包实例待关联的资源实例ID。
+        :param resource_id: 带宽包实例绑定的资源ID。
         :type resource_id: str
-        :param resource_type: 带宽包实例待关联的资源实例类型，cloud_connection：表示云连接实例。
+        :param resource_type: 带宽包实例绑定的资源类型。 cloud_connection: 云连接实例。
         :type resource_type: str
         """
         
@@ -50,7 +50,7 @@ class AssociateBandwidthPackage:
     def resource_id(self):
         """Gets the resource_id of this AssociateBandwidthPackage.
 
-        带宽包实例待关联的资源实例ID。
+        带宽包实例绑定的资源ID。
 
         :return: The resource_id of this AssociateBandwidthPackage.
         :rtype: str
@@ -61,7 +61,7 @@ class AssociateBandwidthPackage:
     def resource_id(self, resource_id):
         """Sets the resource_id of this AssociateBandwidthPackage.
 
-        带宽包实例待关联的资源实例ID。
+        带宽包实例绑定的资源ID。
 
         :param resource_id: The resource_id of this AssociateBandwidthPackage.
         :type resource_id: str
@@ -72,7 +72,7 @@ class AssociateBandwidthPackage:
     def resource_type(self):
         """Gets the resource_type of this AssociateBandwidthPackage.
 
-        带宽包实例待关联的资源实例类型，cloud_connection：表示云连接实例。
+        带宽包实例绑定的资源类型。 cloud_connection: 云连接实例。
 
         :return: The resource_type of this AssociateBandwidthPackage.
         :rtype: str
@@ -83,7 +83,7 @@ class AssociateBandwidthPackage:
     def resource_type(self, resource_type):
         """Sets the resource_type of this AssociateBandwidthPackage.
 
-        带宽包实例待关联的资源实例类型，cloud_connection：表示云连接实例。
+        带宽包实例绑定的资源类型。 cloud_connection: 云连接实例。
 
         :param resource_type: The resource_type of this AssociateBandwidthPackage.
         :type resource_type: str

@@ -16,13 +16,16 @@ class MasClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "MasClient":
+                raise TypeError("client type error, support client type is MasClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "MasClient":
-            raise TypeError("client type error, support client type is MasClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def show_name_space_list(self, request):
         """查询命名空间列表

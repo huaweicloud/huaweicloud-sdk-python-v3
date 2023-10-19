@@ -16,13 +16,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "GaussDBforNoSQLAsyncClient":
+                raise TypeError("client type error, support client type is GaussDBforNoSQLAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "GaussDBforNoSQLClient":
-            raise TypeError("client type error, support client type is GaussDBforNoSQLClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def apply_configuration_async(self, request):
         """应用参数模板

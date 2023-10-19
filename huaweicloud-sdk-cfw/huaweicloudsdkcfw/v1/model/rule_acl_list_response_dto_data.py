@@ -39,7 +39,7 @@ class RuleAclListResponseDTOData:
 
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
         :type offset: int
-        :param limit: 每页显示个数
+        :param limit: 每页显示个数，范围为1-1024
         :type limit: int
         :param total: 查询总条数
         :type total: int
@@ -95,7 +95,7 @@ class RuleAclListResponseDTOData:
     def limit(self):
         """Gets the limit of this RuleAclListResponseDTOData.
 
-        每页显示个数
+        每页显示个数，范围为1-1024
 
         :return: The limit of this RuleAclListResponseDTOData.
         :rtype: int
@@ -106,7 +106,7 @@ class RuleAclListResponseDTOData:
     def limit(self, limit):
         """Sets the limit of this RuleAclListResponseDTOData.
 
-        每页显示个数
+        每页显示个数，范围为1-1024
 
         :param limit: The limit of this RuleAclListResponseDTOData.
         :type limit: int

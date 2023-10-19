@@ -16,13 +16,16 @@ class CseClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "CseClient":
+                raise TypeError("client type error, support client type is CseClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "CseClient":
-            raise TypeError("client type error, support client type is CseClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_engine(self, request):
         """创建微服务引擎专享版

@@ -16,13 +16,16 @@ class OcrAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "OcrAsyncClient":
+                raise TypeError("client type error, support client type is OcrAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "OcrClient":
-            raise TypeError("client type error, support client type is OcrClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def recognize_acceptance_bill_async(self, request):
         """承兑汇票识别

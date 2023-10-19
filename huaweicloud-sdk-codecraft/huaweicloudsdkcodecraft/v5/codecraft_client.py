@@ -16,13 +16,16 @@ class CodeCraftClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "CodeCraftClient":
+                raise TypeError("client type error, support client type is CodeCraftClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "CodeCraftClient":
-            raise TypeError("client type error, support client type is CodeCraftClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_competition_score(self, request):
         """登记第三方提交的作品信息（得分回调）

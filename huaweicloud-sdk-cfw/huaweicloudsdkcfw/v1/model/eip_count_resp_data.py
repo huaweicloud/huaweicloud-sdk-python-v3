@@ -19,16 +19,18 @@ class EipCountRespData:
     openapi_types = {
         'object_id': 'str',
         'eip_total': 'int',
-        'eip_protected': 'int'
+        'eip_protected': 'int',
+        'eip_protected_self': 'int'
     }
 
     attribute_map = {
         'object_id': 'object_id',
         'eip_total': 'eip_total',
-        'eip_protected': 'eip_protected'
+        'eip_protected': 'eip_protected',
+        'eip_protected_self': 'eip_protected_self'
     }
 
-    def __init__(self, object_id=None, eip_total=None, eip_protected=None):
+    def __init__(self, object_id=None, eip_total=None, eip_protected=None, eip_protected_self=None):
         """EipCountRespData
 
         The model defined in huaweicloud sdk
@@ -37,8 +39,10 @@ class EipCountRespData:
         :type object_id: str
         :param eip_total: EIP总数
         :type eip_total: int
-        :param eip_protected: EIP防护数
+        :param eip_protected: 该账号下所有墙防护EIP总数量
         :type eip_protected: int
+        :param eip_protected_self: 该当前防火墙防护EIP数量
+        :type eip_protected_self: int
         """
         
         
@@ -46,6 +50,7 @@ class EipCountRespData:
         self._object_id = None
         self._eip_total = None
         self._eip_protected = None
+        self._eip_protected_self = None
         self.discriminator = None
 
         if object_id is not None:
@@ -54,6 +59,8 @@ class EipCountRespData:
             self.eip_total = eip_total
         if eip_protected is not None:
             self.eip_protected = eip_protected
+        if eip_protected_self is not None:
+            self.eip_protected_self = eip_protected_self
 
     @property
     def object_id(self):
@@ -103,7 +110,7 @@ class EipCountRespData:
     def eip_protected(self):
         """Gets the eip_protected of this EipCountRespData.
 
-        EIP防护数
+        该账号下所有墙防护EIP总数量
 
         :return: The eip_protected of this EipCountRespData.
         :rtype: int
@@ -114,12 +121,34 @@ class EipCountRespData:
     def eip_protected(self, eip_protected):
         """Sets the eip_protected of this EipCountRespData.
 
-        EIP防护数
+        该账号下所有墙防护EIP总数量
 
         :param eip_protected: The eip_protected of this EipCountRespData.
         :type eip_protected: int
         """
         self._eip_protected = eip_protected
+
+    @property
+    def eip_protected_self(self):
+        """Gets the eip_protected_self of this EipCountRespData.
+
+        该当前防火墙防护EIP数量
+
+        :return: The eip_protected_self of this EipCountRespData.
+        :rtype: int
+        """
+        return self._eip_protected_self
+
+    @eip_protected_self.setter
+    def eip_protected_self(self, eip_protected_self):
+        """Sets the eip_protected_self of this EipCountRespData.
+
+        该当前防火墙防护EIP数量
+
+        :param eip_protected_self: The eip_protected_self of this EipCountRespData.
+        :type eip_protected_self: int
+        """
+        self._eip_protected_self = eip_protected_self
 
     def to_dict(self):
         """Returns the model properties as a dict"""

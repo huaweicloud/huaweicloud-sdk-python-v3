@@ -26,7 +26,8 @@ class CreateCertificateAuthorityRequestBody:
         'signature_algorithm': 'str',
         'key_usages': 'list[str]',
         'crl_configuration': 'CrlConfiguration',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'ca_id': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class CreateCertificateAuthorityRequestBody:
         'signature_algorithm': 'signature_algorithm',
         'key_usages': 'key_usages',
         'crl_configuration': 'crl_configuration',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'ca_id': 'ca_id'
     }
 
-    def __init__(self, type=None, distinguished_name=None, key_algorithm=None, validity=None, issuer_id=None, path_length=None, signature_algorithm=None, key_usages=None, crl_configuration=None, enterprise_project_id=None):
+    def __init__(self, type=None, distinguished_name=None, key_algorithm=None, validity=None, issuer_id=None, path_length=None, signature_algorithm=None, key_usages=None, crl_configuration=None, enterprise_project_id=None, ca_id=None):
         """CreateCertificateAuthorityRequestBody
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class CreateCertificateAuthorityRequestBody:
         :type crl_configuration: :class:`huaweicloudsdkccm.v1.CrlConfiguration`
         :param enterprise_project_id: 企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
         :type enterprise_project_id: str
+        :param ca_id: CA证书ID。如果为空，则创建按需CA；如果不为空，则保存包周期CA信息。
+        :type ca_id: str
         """
         
         
@@ -81,6 +85,7 @@ class CreateCertificateAuthorityRequestBody:
         self._key_usages = None
         self._crl_configuration = None
         self._enterprise_project_id = None
+        self._ca_id = None
         self.discriminator = None
 
         self.type = type
@@ -100,6 +105,8 @@ class CreateCertificateAuthorityRequestBody:
             self.crl_configuration = crl_configuration
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if ca_id is not None:
+            self.ca_id = ca_id
 
     @property
     def type(self):
@@ -308,6 +315,28 @@ class CreateCertificateAuthorityRequestBody:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def ca_id(self):
+        """Gets the ca_id of this CreateCertificateAuthorityRequestBody.
+
+        CA证书ID。如果为空，则创建按需CA；如果不为空，则保存包周期CA信息。
+
+        :return: The ca_id of this CreateCertificateAuthorityRequestBody.
+        :rtype: str
+        """
+        return self._ca_id
+
+    @ca_id.setter
+    def ca_id(self, ca_id):
+        """Sets the ca_id of this CreateCertificateAuthorityRequestBody.
+
+        CA证书ID。如果为空，则创建按需CA；如果不为空，则保存包周期CA信息。
+
+        :param ca_id: The ca_id of this CreateCertificateAuthorityRequestBody.
+        :type ca_id: str
+        """
+        self._ca_id = ca_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,65 +18,63 @@ class ListAuthorisationsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'authorisations': 'list[Authorisation]',
+        'request_id': 'str',
         'page_info': 'PageInfo',
-        'request_id': 'str'
+        'authorisations': 'list[Authorisation]'
     }
 
     attribute_map = {
-        'authorisations': 'authorisations',
+        'request_id': 'request_id',
         'page_info': 'page_info',
-        'request_id': 'request_id'
+        'authorisations': 'authorisations'
     }
 
-    def __init__(self, authorisations=None, page_info=None, request_id=None):
+    def __init__(self, request_id=None, page_info=None, authorisations=None):
         """ListAuthorisationsResponse
 
         The model defined in huaweicloud sdk
 
-        :param authorisations: 授权的详细信息。
-        :type authorisations: list[:class:`huaweicloudsdkcc.v3.Authorisation`]
+        :param request_id: 资源ID标识符。
+        :type request_id: str
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
-        :param request_id: 请求ID。
-        :type request_id: str
+        :param authorisations: 授权实例列表。
+        :type authorisations: list[:class:`huaweicloudsdkcc.v3.Authorisation`]
         """
         
         super(ListAuthorisationsResponse, self).__init__()
 
-        self._authorisations = None
-        self._page_info = None
         self._request_id = None
+        self._page_info = None
+        self._authorisations = None
         self.discriminator = None
 
-        if authorisations is not None:
-            self.authorisations = authorisations
+        self.request_id = request_id
         if page_info is not None:
             self.page_info = page_info
-        if request_id is not None:
-            self.request_id = request_id
+        self.authorisations = authorisations
 
     @property
-    def authorisations(self):
-        """Gets the authorisations of this ListAuthorisationsResponse.
+    def request_id(self):
+        """Gets the request_id of this ListAuthorisationsResponse.
 
-        授权的详细信息。
+        资源ID标识符。
 
-        :return: The authorisations of this ListAuthorisationsResponse.
-        :rtype: list[:class:`huaweicloudsdkcc.v3.Authorisation`]
+        :return: The request_id of this ListAuthorisationsResponse.
+        :rtype: str
         """
-        return self._authorisations
+        return self._request_id
 
-    @authorisations.setter
-    def authorisations(self, authorisations):
-        """Sets the authorisations of this ListAuthorisationsResponse.
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ListAuthorisationsResponse.
 
-        授权的详细信息。
+        资源ID标识符。
 
-        :param authorisations: The authorisations of this ListAuthorisationsResponse.
-        :type authorisations: list[:class:`huaweicloudsdkcc.v3.Authorisation`]
+        :param request_id: The request_id of this ListAuthorisationsResponse.
+        :type request_id: str
         """
-        self._authorisations = authorisations
+        self._request_id = request_id
 
     @property
     def page_info(self):
@@ -97,26 +95,26 @@ class ListAuthorisationsResponse(SdkResponse):
         self._page_info = page_info
 
     @property
-    def request_id(self):
-        """Gets the request_id of this ListAuthorisationsResponse.
+    def authorisations(self):
+        """Gets the authorisations of this ListAuthorisationsResponse.
 
-        请求ID。
+        授权实例列表。
 
-        :return: The request_id of this ListAuthorisationsResponse.
-        :rtype: str
+        :return: The authorisations of this ListAuthorisationsResponse.
+        :rtype: list[:class:`huaweicloudsdkcc.v3.Authorisation`]
         """
-        return self._request_id
+        return self._authorisations
 
-    @request_id.setter
-    def request_id(self, request_id):
-        """Sets the request_id of this ListAuthorisationsResponse.
+    @authorisations.setter
+    def authorisations(self, authorisations):
+        """Sets the authorisations of this ListAuthorisationsResponse.
 
-        请求ID。
+        授权实例列表。
 
-        :param request_id: The request_id of this ListAuthorisationsResponse.
-        :type request_id: str
+        :param authorisations: The authorisations of this ListAuthorisationsResponse.
+        :type authorisations: list[:class:`huaweicloudsdkcc.v3.Authorisation`]
         """
-        self._request_id = request_id
+        self._authorisations = authorisations
 
     def to_dict(self):
         """Returns the model properties as a dict"""

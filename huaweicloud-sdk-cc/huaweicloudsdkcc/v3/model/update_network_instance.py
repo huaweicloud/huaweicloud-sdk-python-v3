@@ -33,9 +33,9 @@ class UpdateNetworkInstance:
 
         The model defined in huaweicloud sdk
 
-        :param name: 网络实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
+        :param name: 实例名字。
         :type name: str
-        :param description: 网络实例的描述。不支持 &lt;&gt;。
+        :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
         :param cidrs: 网络实例发布的网段路由列表。
         :type cidrs: list[str]
@@ -59,7 +59,7 @@ class UpdateNetworkInstance:
     def name(self):
         """Gets the name of this UpdateNetworkInstance.
 
-        网络实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
+        实例名字。
 
         :return: The name of this UpdateNetworkInstance.
         :rtype: str
@@ -70,7 +70,7 @@ class UpdateNetworkInstance:
     def name(self, name):
         """Sets the name of this UpdateNetworkInstance.
 
-        网络实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
+        实例名字。
 
         :param name: The name of this UpdateNetworkInstance.
         :type name: str
@@ -81,7 +81,7 @@ class UpdateNetworkInstance:
     def description(self):
         """Gets the description of this UpdateNetworkInstance.
 
-        网络实例的描述。不支持 <>。
+        实例描述。不支持 <>。
 
         :return: The description of this UpdateNetworkInstance.
         :rtype: str
@@ -92,7 +92,7 @@ class UpdateNetworkInstance:
     def description(self, description):
         """Sets the description of this UpdateNetworkInstance.
 
-        网络实例的描述。不支持 <>。
+        实例描述。不支持 <>。
 
         :param description: The description of this UpdateNetworkInstance.
         :type description: str

@@ -699,13 +699,17 @@ Notice: the name of environment variable is UPPER-CASE, replacing hyphens with u
 // Take ECS and IoTDA services as examples
 
 // linux
-export HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_99=https://ecs.cn-north-99.myhuaweicloud.com
-export HUAWEICLOUD_SDK_REGION_IOTDA_AP_SOUTHEAST_10=https://iotda.ap-southwest-10.myhuaweicloud.com
+export HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_9=https://ecs.cn-north-9.myhuaweicloud.com
+export HUAWEICLOUD_SDK_REGION_IOTDA_AP_SOUTHEAST_1=https://iotda.ap-southwest-1.myhuaweicloud.com
 
 // windows
-set HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_99=https://ecs.cn-north-99.myhuaweicloud.com
-set HUAWEICLOUD_SDK_REGION_IOTDA_AP_SOUTHEAST_10=https://iotda.ap-southwest-10.myhuaweicloud.com
+set HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_9=https://ecs.cn-north-9.myhuaweicloud.com
+set HUAWEICLOUD_SDK_REGION_IOTDA_AP_SOUTHEAST_1=https://iotda.ap-southwest-1.myhuaweicloud.com
 ```
+
+A region corresponding to multiple endpoints is supported since **v3.1.60**, if the main endpoint cannot be connected, it will automatically switch to the backup endpoint.
+
+The format is `HUAWEICLOUD_SDK_REGION_{SERIVCE_NAME}_{REGION_ID}={endpoint1},{endpoint2}`, separate multiple endpoints with commas, such as `HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_9=https://ecs.cn-north-9.myhuaweicloud.com,https://ecs.cn-north-9.myhuaweicloud.cn`
 
 ###### 3.3.2.2 Profile [:top:](#user-manual-top)
 
@@ -718,13 +722,23 @@ The file content format is as follows:
 ```yaml
 # Serivce name is case-insensitive
 ECS:
-  - id: 'cn-north-10'
-    endpoint: 'https://ecs.cn-north-10.myhuaweicloud.com'
-  - id: 'cn-north-11'
-    endpoint: 'https://ecs.cn-north-11.myhuaweicloud.com'
+  - id: 'cn-north-1'
+    endpoint: 'https://ecs.cn-north-1.myhuaweicloud.com'
+  - id: 'cn-north-9'
+    endpoint: 'https://ecs.cn-north-9.myhuaweicloud.com'
 IoTDA:
-  - id: 'ap-southwest-9'
-    endpoint: 'https://iotda.ap-southwest-9.myhuaweicloud.com'
+  - id: 'ap-southwest-1'
+    endpoint: 'https://iotda.ap-southwest-1.myhuaweicloud.com'
+```
+
+A region corresponding to multiple endpoints is supported since v3.1.62, if the main endpoint cannot be connected, it will automatically switch to the backup endpoint.
+
+```yaml
+ECS:
+  - id: 'cn-north-1'
+    endpoints:
+      - 'https://ecs.cn-north-1.myhuaweicloud.com'
+      - 'https://ecs.cn-north-1.myhuaweicloud.cn'
 ```
 
 ###### 3.3.2.3 Region supply chain [:top:](#user-manual-top)
@@ -734,8 +748,8 @@ The default order is **environment variables -> profile -> region defined in SDK
 ```python
 from huaweicloudsdkecs.v2.region.ecs_region import EcsRegion
 
-region1 = EcsRegion.value_of("cn-north-10")
-region2 = EcsRegion.value_of("cn-north-11")
+region1 = EcsRegion.value_of("cn-north-1")
+region2 = EcsRegion.value_of("cn-north-9")
 ```
 
 ### 4. Send Requests and Handle Responses [:top:](#user-manual-top)

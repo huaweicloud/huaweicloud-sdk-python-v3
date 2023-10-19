@@ -31,7 +31,7 @@ class DisassociateBandwidthPackageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 带宽包实例ID。
+        :param id: 资源的Id。
         :type id: str
         :param body: Body of the DisassociateBandwidthPackageRequest
         :type body: :class:`huaweicloudsdkcc.v3.DisassociateBandwidthPackageRequestBody`
@@ -51,7 +51,7 @@ class DisassociateBandwidthPackageRequest:
     def id(self):
         """Gets the id of this DisassociateBandwidthPackageRequest.
 
-        带宽包实例ID。
+        资源的Id。
 
         :return: The id of this DisassociateBandwidthPackageRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class DisassociateBandwidthPackageRequest:
     def id(self, id):
         """Sets the id of this DisassociateBandwidthPackageRequest.
 
-        带宽包实例ID。
+        资源的Id。
 
         :param id: The id of this DisassociateBandwidthPackageRequest.
         :type id: str

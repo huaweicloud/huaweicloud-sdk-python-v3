@@ -20,7 +20,7 @@ class ListAgentRequest:
         'limit': 'str',
         'offset': 'int',
         'status': 'str',
-        'agent_id': 'str'
+        'agent_id': 'list[str]'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class ListAgentRequest:
         :param status: 状态
         :type status: str
         :param agent_id: 客户端ID
-        :type agent_id: str
+        :type agent_id: list[str]
         """
         
         
@@ -135,7 +135,7 @@ class ListAgentRequest:
         客户端ID
 
         :return: The agent_id of this ListAgentRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._agent_id
 
@@ -146,7 +146,7 @@ class ListAgentRequest:
         客户端ID
 
         :param agent_id: The agent_id of this ListAgentRequest.
-        :type agent_id: str
+        :type agent_id: list[str]
         """
         self._agent_id = agent_id
 

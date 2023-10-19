@@ -21,13 +21,18 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
         'rule_name': 'str',
         'rule_id': 'str',
         'hit_time': 'int',
+        'src_region_id': 'str',
+        'src_region_name': 'str',
+        'dst_region_id': 'str',
+        'dst_region_name': 'str',
         'log_id': 'str',
         'src_ip': 'str',
         'src_port': 'str',
         'dst_ip': 'str',
         'dst_port': 'str',
         'protocol': 'str',
-        'app': 'str'
+        'app': 'str',
+        'dst_host': 'str'
     }
 
     attribute_map = {
@@ -35,16 +40,21 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
         'rule_name': 'rule_name',
         'rule_id': 'rule_id',
         'hit_time': 'hit_time',
+        'src_region_id': 'src_region_id',
+        'src_region_name': 'src_region_name',
+        'dst_region_id': 'dst_region_id',
+        'dst_region_name': 'dst_region_name',
         'log_id': 'log_id',
         'src_ip': 'src_ip',
         'src_port': 'src_port',
         'dst_ip': 'dst_ip',
         'dst_port': 'dst_port',
         'protocol': 'protocol',
-        'app': 'app'
+        'app': 'app',
+        'dst_host': 'dst_host'
     }
 
-    def __init__(self, action=None, rule_name=None, rule_id=None, hit_time=None, log_id=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None):
+    def __init__(self, action=None, rule_name=None, rule_id=None, hit_time=None, src_region_id=None, src_region_name=None, dst_region_id=None, dst_region_name=None, log_id=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, app=None, dst_host=None):
         """HttpQueryCfwAccessControllerLogsResponseDTODataRecords
 
         The model defined in huaweicloud sdk
@@ -57,6 +67,14 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
         :type rule_id: str
         :param hit_time: 命中时间
         :type hit_time: int
+        :param src_region_id: 源区域id
+        :type src_region_id: str
+        :param src_region_name: 源区域name
+        :type src_region_name: str
+        :param dst_region_id: 目的区域id
+        :type dst_region_id: str
+        :param dst_region_name: 目的区域name
+        :type dst_region_name: str
         :param log_id: 文档ID
         :type log_id: str
         :param src_ip: 源IP
@@ -71,6 +89,8 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
         :type protocol: str
         :param app: 应用协议
         :type app: str
+        :param dst_host: 目标主机
+        :type dst_host: str
         """
         
         
@@ -79,6 +99,10 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
         self._rule_name = None
         self._rule_id = None
         self._hit_time = None
+        self._src_region_id = None
+        self._src_region_name = None
+        self._dst_region_id = None
+        self._dst_region_name = None
         self._log_id = None
         self._src_ip = None
         self._src_port = None
@@ -86,6 +110,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
         self._dst_port = None
         self._protocol = None
         self._app = None
+        self._dst_host = None
         self.discriminator = None
 
         if action is not None:
@@ -96,6 +121,14 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
             self.rule_id = rule_id
         if hit_time is not None:
             self.hit_time = hit_time
+        if src_region_id is not None:
+            self.src_region_id = src_region_id
+        if src_region_name is not None:
+            self.src_region_name = src_region_name
+        if dst_region_id is not None:
+            self.dst_region_id = dst_region_id
+        if dst_region_name is not None:
+            self.dst_region_name = dst_region_name
         if log_id is not None:
             self.log_id = log_id
         if src_ip is not None:
@@ -110,6 +143,8 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
             self.protocol = protocol
         if app is not None:
             self.app = app
+        if dst_host is not None:
+            self.dst_host = dst_host
 
     @property
     def action(self):
@@ -198,6 +233,94 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
         :type hit_time: int
         """
         self._hit_time = hit_time
+
+    @property
+    def src_region_id(self):
+        """Gets the src_region_id of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+
+        源区域id
+
+        :return: The src_region_id of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._src_region_id
+
+    @src_region_id.setter
+    def src_region_id(self, src_region_id):
+        """Sets the src_region_id of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+
+        源区域id
+
+        :param src_region_id: The src_region_id of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+        :type src_region_id: str
+        """
+        self._src_region_id = src_region_id
+
+    @property
+    def src_region_name(self):
+        """Gets the src_region_name of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+
+        源区域name
+
+        :return: The src_region_name of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._src_region_name
+
+    @src_region_name.setter
+    def src_region_name(self, src_region_name):
+        """Sets the src_region_name of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+
+        源区域name
+
+        :param src_region_name: The src_region_name of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+        :type src_region_name: str
+        """
+        self._src_region_name = src_region_name
+
+    @property
+    def dst_region_id(self):
+        """Gets the dst_region_id of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+
+        目的区域id
+
+        :return: The dst_region_id of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_region_id
+
+    @dst_region_id.setter
+    def dst_region_id(self, dst_region_id):
+        """Sets the dst_region_id of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+
+        目的区域id
+
+        :param dst_region_id: The dst_region_id of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+        :type dst_region_id: str
+        """
+        self._dst_region_id = dst_region_id
+
+    @property
+    def dst_region_name(self):
+        """Gets the dst_region_name of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+
+        目的区域name
+
+        :return: The dst_region_name of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_region_name
+
+    @dst_region_name.setter
+    def dst_region_name(self, dst_region_name):
+        """Sets the dst_region_name of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+
+        目的区域name
+
+        :param dst_region_name: The dst_region_name of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+        :type dst_region_name: str
+        """
+        self._dst_region_name = dst_region_name
 
     @property
     def log_id(self):
@@ -352,6 +475,28 @@ class HttpQueryCfwAccessControllerLogsResponseDTODataRecords:
         :type app: str
         """
         self._app = app
+
+    @property
+    def dst_host(self):
+        """Gets the dst_host of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+
+        目标主机
+
+        :return: The dst_host of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_host
+
+    @dst_host.setter
+    def dst_host(self, dst_host):
+        """Sets the dst_host of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+
+        目标主机
+
+        :param dst_host: The dst_host of this HttpQueryCfwAccessControllerLogsResponseDTODataRecords.
+        :type dst_host: str
+        """
+        self._dst_host = dst_host
 
     def to_dict(self):
         """Returns the model properties as a dict"""

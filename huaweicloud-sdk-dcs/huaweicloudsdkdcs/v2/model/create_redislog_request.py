@@ -37,7 +37,7 @@ class CreateRedislogRequest:
 
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param query_time: 日期偏移量，表示从过去的n天开始查询，例如：传入0则表示查询今天的日志，传入7则表示查询过去7天的日志。最大支持0-7。
+        :param query_time: 日期偏移量，表示从过去的n天开始查询，例如：传入0则表示查询今天的日志，传入7则表示查询过去7天的日志。当前支持0，1，3，7。
         :type query_time: int
         :param log_type: 返回日志的类型，当前仅支持Redis运行日志，类型为run
         :type log_type: str
@@ -86,7 +86,7 @@ class CreateRedislogRequest:
     def query_time(self):
         """Gets the query_time of this CreateRedislogRequest.
 
-        日期偏移量，表示从过去的n天开始查询，例如：传入0则表示查询今天的日志，传入7则表示查询过去7天的日志。最大支持0-7。
+        日期偏移量，表示从过去的n天开始查询，例如：传入0则表示查询今天的日志，传入7则表示查询过去7天的日志。当前支持0，1，3，7。
 
         :return: The query_time of this CreateRedislogRequest.
         :rtype: int
@@ -97,7 +97,7 @@ class CreateRedislogRequest:
     def query_time(self, query_time):
         """Sets the query_time of this CreateRedislogRequest.
 
-        日期偏移量，表示从过去的n天开始查询，例如：传入0则表示查询今天的日志，传入7则表示查询过去7天的日志。最大支持0-7。
+        日期偏移量，表示从过去的n天开始查询，例如：传入0则表示查询今天的日志，传入7则表示查询过去7天的日志。当前支持0，1，3，7。
 
         :param query_time: The query_time of this CreateRedislogRequest.
         :type query_time: int

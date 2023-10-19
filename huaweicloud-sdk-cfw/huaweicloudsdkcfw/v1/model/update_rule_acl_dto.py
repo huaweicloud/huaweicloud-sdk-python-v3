@@ -32,7 +32,8 @@ class UpdateRuleAclDto:
         'source': 'RuleAddressDto',
         'destination': 'RuleAddressDto',
         'service': 'RuleServiceDto',
-        'type': 'int'
+        'type': 'int',
+        'tag': 'TagsVO'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class UpdateRuleAclDto:
         'source': 'source',
         'destination': 'destination',
         'service': 'service',
-        'type': 'type'
+        'type': 'type',
+        'tag': 'tag'
     }
 
-    def __init__(self, address_type=None, name=None, sequence=None, direction=None, action_type=None, status=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, source=None, destination=None, service=None, type=None):
+    def __init__(self, address_type=None, name=None, sequence=None, direction=None, action_type=None, status=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, source=None, destination=None, service=None, type=None, tag=None):
         """UpdateRuleAclDto
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class UpdateRuleAclDto:
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
         :param type: 规则type，0：互联网规则，1:vpc规则，2：nat规则
         :type type: int
+        :param tag: 
+        :type tag: :class:`huaweicloudsdkcfw.v1.TagsVO`
         """
         
         
@@ -111,6 +115,7 @@ class UpdateRuleAclDto:
         self._destination = None
         self._service = None
         self._type = None
+        self._tag = None
         self.discriminator = None
 
         if address_type is not None:
@@ -145,6 +150,8 @@ class UpdateRuleAclDto:
             self.service = service
         if type is not None:
             self.type = type
+        if tag is not None:
+            self.tag = tag
 
     @property
     def address_type(self):
@@ -481,6 +488,24 @@ class UpdateRuleAclDto:
         :type type: int
         """
         self._type = type
+
+    @property
+    def tag(self):
+        """Gets the tag of this UpdateRuleAclDto.
+
+        :return: The tag of this UpdateRuleAclDto.
+        :rtype: :class:`huaweicloudsdkcfw.v1.TagsVO`
+        """
+        return self._tag
+
+    @tag.setter
+    def tag(self, tag):
+        """Sets the tag of this UpdateRuleAclDto.
+
+        :param tag: The tag of this UpdateRuleAclDto.
+        :type tag: :class:`huaweicloudsdkcfw.v1.TagsVO`
+        """
+        self._tag = tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

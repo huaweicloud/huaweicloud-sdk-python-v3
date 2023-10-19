@@ -33,7 +33,8 @@ class RuleAclListResponseDTODataRecords:
         'source': 'RuleAddressDto',
         'destination': 'RuleAddressDto',
         'service': 'RuleServiceDto',
-        'type': 'int'
+        'type': 'int',
+        'tag': 'TagsVO'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class RuleAclListResponseDTODataRecords:
         'source': 'source',
         'destination': 'destination',
         'service': 'service',
-        'type': 'type'
+        'type': 'type',
+        'tag': 'tag'
     }
 
-    def __init__(self, rule_id=None, address_type=None, name=None, sequence=None, direction=None, action_type=None, status=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, source=None, destination=None, service=None, type=None):
+    def __init__(self, rule_id=None, address_type=None, name=None, sequence=None, direction=None, action_type=None, status=None, description=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, long_connect_time=None, long_connect_enable=None, source=None, destination=None, service=None, type=None, tag=None):
         """RuleAclListResponseDTODataRecords
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class RuleAclListResponseDTODataRecords:
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDto`
         :param type: 规则type，0：互联网规则，1：vpc规则，2nat规则
         :type type: int
+        :param tag: 
+        :type tag: :class:`huaweicloudsdkcfw.v1.TagsVO`
         """
         
         
@@ -116,6 +120,7 @@ class RuleAclListResponseDTODataRecords:
         self._destination = None
         self._service = None
         self._type = None
+        self._tag = None
         self.discriminator = None
 
         if rule_id is not None:
@@ -152,6 +157,8 @@ class RuleAclListResponseDTODataRecords:
             self.service = service
         if type is not None:
             self.type = type
+        if tag is not None:
+            self.tag = tag
 
     @property
     def rule_id(self):
@@ -510,6 +517,24 @@ class RuleAclListResponseDTODataRecords:
         :type type: int
         """
         self._type = type
+
+    @property
+    def tag(self):
+        """Gets the tag of this RuleAclListResponseDTODataRecords.
+
+        :return: The tag of this RuleAclListResponseDTODataRecords.
+        :rtype: :class:`huaweicloudsdkcfw.v1.TagsVO`
+        """
+        return self._tag
+
+    @tag.setter
+    def tag(self, tag):
+        """Sets the tag of this RuleAclListResponseDTODataRecords.
+
+        :param tag: The tag of this RuleAclListResponseDTODataRecords.
+        :type tag: :class:`huaweicloudsdkcfw.v1.TagsVO`
+        """
+        self._tag = tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

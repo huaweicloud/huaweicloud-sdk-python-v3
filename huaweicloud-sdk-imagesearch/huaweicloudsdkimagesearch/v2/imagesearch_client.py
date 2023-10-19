@@ -16,13 +16,16 @@ class ImageSearchClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "ImageSearchClient":
+                raise TypeError("client type error, support client type is ImageSearchClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "ImageSearchClient":
-            raise TypeError("client type error, support client type is ImageSearchClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def run_add_data(self, request):
         """添加数据

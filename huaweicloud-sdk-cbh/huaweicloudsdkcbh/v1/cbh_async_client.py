@@ -16,13 +16,16 @@ class CbhAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "CbhAsyncClient":
+                raise TypeError("client type error, support client type is CbhAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "CbhClient":
-            raise TypeError("client type error, support client type is CbhClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def change_instance_network_async(self, request):
         """修改实例网络

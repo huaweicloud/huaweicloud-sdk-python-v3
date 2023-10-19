@@ -19,15 +19,17 @@ class DetectStandardByIdCardImageResponse(SdkResponse):
 
     openapi_types = {
         'meta': 'Meta',
-        'result': 'IvsStandardByIdCardImageResponseBodyResult'
+        'result': 'IvsStandardByIdCardImageResponseBodyResult',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'meta': 'meta',
-        'result': 'result'
+        'result': 'result',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, meta=None, result=None):
+    def __init__(self, meta=None, result=None, x_request_id=None):
         """DetectStandardByIdCardImageResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class DetectStandardByIdCardImageResponse(SdkResponse):
         :type meta: :class:`huaweicloudsdkivs.v2.Meta`
         :param result: 
         :type result: :class:`huaweicloudsdkivs.v2.IvsStandardByIdCardImageResponseBodyResult`
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(DetectStandardByIdCardImageResponse, self).__init__()
 
         self._meta = None
         self._result = None
+        self._x_request_id = None
         self.discriminator = None
 
         if meta is not None:
             self.meta = meta
         if result is not None:
             self.result = result
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def meta(self):
@@ -84,6 +91,24 @@ class DetectStandardByIdCardImageResponse(SdkResponse):
         :type result: :class:`huaweicloudsdkivs.v2.IvsStandardByIdCardImageResponseBodyResult`
         """
         self._result = result
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this DetectStandardByIdCardImageResponse.
+
+        :return: The x_request_id of this DetectStandardByIdCardImageResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this DetectStandardByIdCardImageResponse.
+
+        :param x_request_id: The x_request_id of this DetectStandardByIdCardImageResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

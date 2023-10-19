@@ -16,13 +16,16 @@ class KmsAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "KmsAsyncClient":
+                raise TypeError("client type error, support client type is KmsAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "KmsClient":
-            raise TypeError("client type error, support client type is KmsClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def batch_create_kms_tags_async(self, request):
         """批量添加删除密钥标签

@@ -66,10 +66,12 @@ class ServiceResponseException(SdkException):
         self.status_code = status_code
         self.error_code = sdk_error.error_code
         self.request_id = sdk_error.request_id
+        self.encoded_auth_msg = sdk_error.encoded_auth_msg
 
     def __str__(self):
-        return "%s - {status_code:%s,request_id:%s,error_code:%s,error_msg:%s }" % (
-            self.__class__.__name__, self.status_code, self.request_id, self.error_code, self.error_msg)
+        return "%s - {status_code:%s,request_id:%s,error_code:%s,error_msg:%s,encoded_authorization_message:%s }" % (
+            self.__class__.__name__, self.status_code, self.request_id, self.error_code, self.error_msg,
+            self.encoded_auth_msg)
 
 
 class ClientRequestException(ServiceResponseException):
@@ -113,11 +115,11 @@ class RetryOutageException(RequestTimeoutException):
 
 
 class SdkError(object):
-    def __init__(self, request_id=None, error_code=None, error_msg=None, encoded_authorization_message=None):
+    def __init__(self, request_id=None, error_code=None, error_msg=None, encoded_auth_msg=None):
         self.error_msg = error_msg
         self.error_code = error_code
         self.request_id = request_id
-        self.encoded_authorization_message = encoded_authorization_message
+        self.encoded_auth_msg = encoded_auth_msg
 
 
 def render_path(path_to_item):

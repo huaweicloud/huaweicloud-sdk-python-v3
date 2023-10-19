@@ -16,13 +16,16 @@ class AsmAsyncClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls)
+        if not clazz:
+            client_builder = ClientBuilder(cls)
+        else:
+            if clazz.__name__ != "AsmAsyncClient":
+                raise TypeError("client type error, support client type is AsmAsyncClient")
+            client_builder = ClientBuilder(clazz)
 
-        if clazz.__name__ != "AsmClient":
-            raise TypeError("client type error, support client type is AsmClient")
+        
 
-        return ClientBuilder(clazz)
+        return client_builder
 
     def create_mesh_async(self, request):
         """新建网格

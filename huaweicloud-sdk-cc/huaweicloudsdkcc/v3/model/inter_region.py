@@ -35,13 +35,13 @@ class InterRegion:
 
         The model defined in huaweicloud sdk
 
-        :param id: 域间实例的ID。
+        :param id: 资源ID标识符。
         :type id: str
-        :param project_id: 域间实例本段的项目ID。
+        :param project_id: 实例所属项目ID。
         :type project_id: str
-        :param local_region_id: 域间实例本段的RegionID。
+        :param local_region_id: 域间实例本端的RegionID。
         :type local_region_id: str
-        :param remote_region_id: 域间实例对段的RegionID。
+        :param remote_region_id: 域间实例对端的RegionID。
         :type remote_region_id: str
         """
         
@@ -53,10 +53,8 @@ class InterRegion:
         self._remote_region_id = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if project_id is not None:
-            self.project_id = project_id
+        self.id = id
+        self.project_id = project_id
         if local_region_id is not None:
             self.local_region_id = local_region_id
         if remote_region_id is not None:
@@ -66,7 +64,7 @@ class InterRegion:
     def id(self):
         """Gets the id of this InterRegion.
 
-        域间实例的ID。
+        资源ID标识符。
 
         :return: The id of this InterRegion.
         :rtype: str
@@ -77,7 +75,7 @@ class InterRegion:
     def id(self, id):
         """Sets the id of this InterRegion.
 
-        域间实例的ID。
+        资源ID标识符。
 
         :param id: The id of this InterRegion.
         :type id: str
@@ -88,7 +86,7 @@ class InterRegion:
     def project_id(self):
         """Gets the project_id of this InterRegion.
 
-        域间实例本段的项目ID。
+        实例所属项目ID。
 
         :return: The project_id of this InterRegion.
         :rtype: str
@@ -99,7 +97,7 @@ class InterRegion:
     def project_id(self, project_id):
         """Sets the project_id of this InterRegion.
 
-        域间实例本段的项目ID。
+        实例所属项目ID。
 
         :param project_id: The project_id of this InterRegion.
         :type project_id: str
@@ -110,7 +108,7 @@ class InterRegion:
     def local_region_id(self):
         """Gets the local_region_id of this InterRegion.
 
-        域间实例本段的RegionID。
+        域间实例本端的RegionID。
 
         :return: The local_region_id of this InterRegion.
         :rtype: str
@@ -121,7 +119,7 @@ class InterRegion:
     def local_region_id(self, local_region_id):
         """Sets the local_region_id of this InterRegion.
 
-        域间实例本段的RegionID。
+        域间实例本端的RegionID。
 
         :param local_region_id: The local_region_id of this InterRegion.
         :type local_region_id: str
@@ -132,7 +130,7 @@ class InterRegion:
     def remote_region_id(self):
         """Gets the remote_region_id of this InterRegion.
 
-        域间实例对段的RegionID。
+        域间实例对端的RegionID。
 
         :return: The remote_region_id of this InterRegion.
         :rtype: str
@@ -143,7 +141,7 @@ class InterRegion:
     def remote_region_id(self, remote_region_id):
         """Sets the remote_region_id of this InterRegion.
 
-        域间实例对段的RegionID。
+        域间实例对端的RegionID。
 
         :param remote_region_id: The remote_region_id of this InterRegion.
         :type remote_region_id: str

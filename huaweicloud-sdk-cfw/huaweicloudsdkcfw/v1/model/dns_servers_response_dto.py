@@ -20,17 +20,19 @@ class DnsServersResponseDTO:
         'id': 'int',
         'is_applied': 'int',
         'is_customized': 'int',
-        'server_ip': 'str'
+        'server_ip': 'str',
+        'health_check_domain_name': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'is_applied': 'is_applied',
         'is_customized': 'is_customized',
-        'server_ip': 'server_ip'
+        'server_ip': 'server_ip',
+        'health_check_domain_name': 'health_check_domain_name'
     }
 
-    def __init__(self, id=None, is_applied=None, is_customized=None, server_ip=None):
+    def __init__(self, id=None, is_applied=None, is_customized=None, server_ip=None, health_check_domain_name=None):
         """DnsServersResponseDTO
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class DnsServersResponseDTO:
         :type is_customized: int
         :param server_ip: DNS服务器IP
         :type server_ip: str
+        :param health_check_domain_name: 健康检查域名
+        :type health_check_domain_name: str
         """
         
         
@@ -51,6 +55,7 @@ class DnsServersResponseDTO:
         self._is_applied = None
         self._is_customized = None
         self._server_ip = None
+        self._health_check_domain_name = None
         self.discriminator = None
 
         if id is not None:
@@ -61,6 +66,8 @@ class DnsServersResponseDTO:
             self.is_customized = is_customized
         if server_ip is not None:
             self.server_ip = server_ip
+        if health_check_domain_name is not None:
+            self.health_check_domain_name = health_check_domain_name
 
     @property
     def id(self):
@@ -149,6 +156,28 @@ class DnsServersResponseDTO:
         :type server_ip: str
         """
         self._server_ip = server_ip
+
+    @property
+    def health_check_domain_name(self):
+        """Gets the health_check_domain_name of this DnsServersResponseDTO.
+
+        健康检查域名
+
+        :return: The health_check_domain_name of this DnsServersResponseDTO.
+        :rtype: str
+        """
+        return self._health_check_domain_name
+
+    @health_check_domain_name.setter
+    def health_check_domain_name(self, health_check_domain_name):
+        """Sets the health_check_domain_name of this DnsServersResponseDTO.
+
+        健康检查域名
+
+        :param health_check_domain_name: The health_check_domain_name of this DnsServersResponseDTO.
+        :type health_check_domain_name: str
+        """
+        self._health_check_domain_name = health_check_domain_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

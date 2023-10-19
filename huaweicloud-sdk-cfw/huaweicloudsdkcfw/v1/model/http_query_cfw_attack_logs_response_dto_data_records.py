@@ -35,7 +35,12 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         'protocol': 'str',
         'packet': 'Packet',
         'app': 'str',
-        'packet_messages': 'list[PacketMessage]'
+        'packet_messages': 'list[PacketMessage]',
+        'dst_host': 'str',
+        'src_region_id': 'str',
+        'src_region_name': 'str',
+        'dst_region_id': 'str',
+        'dst_region_name': 'str'
     }
 
     attribute_map = {
@@ -57,10 +62,15 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         'protocol': 'protocol',
         'packet': 'packet',
         'app': 'app',
-        'packet_messages': 'packetMessages'
+        'packet_messages': 'packetMessages',
+        'dst_host': 'dst_host',
+        'src_region_id': 'src_region_id',
+        'src_region_name': 'src_region_name',
+        'dst_region_id': 'dst_region_id',
+        'dst_region_name': 'dst_region_name'
     }
 
-    def __init__(self, direction=None, action=None, event_time=None, attack_type=None, attack_rule=None, level=None, source=None, packet_length=None, attack_rule_id=None, hit_time=None, log_id=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, packet=None, app=None, packet_messages=None):
+    def __init__(self, direction=None, action=None, event_time=None, attack_type=None, attack_rule=None, level=None, source=None, packet_length=None, attack_rule_id=None, hit_time=None, log_id=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, packet=None, app=None, packet_messages=None, dst_host=None, src_region_id=None, src_region_name=None, dst_region_id=None, dst_region_name=None):
         """HttpQueryCfwAttackLogsResponseDTODataRecords
 
         The model defined in huaweicloud sdk
@@ -103,6 +113,16 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         :type app: str
         :param packet_messages: 攻击报文信息
         :type packet_messages: list[:class:`huaweicloudsdkcfw.v1.PacketMessage`]
+        :param dst_host: 目标主机
+        :type dst_host: str
+        :param src_region_id: 源区域id
+        :type src_region_id: str
+        :param src_region_name: 源区域名称
+        :type src_region_name: str
+        :param dst_region_id: 目的区域id
+        :type dst_region_id: str
+        :param dst_region_name: 目的区域名称
+        :type dst_region_name: str
         """
         
         
@@ -126,6 +146,11 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         self._packet = None
         self._app = None
         self._packet_messages = None
+        self._dst_host = None
+        self._src_region_id = None
+        self._src_region_name = None
+        self._dst_region_id = None
+        self._dst_region_name = None
         self.discriminator = None
 
         if direction is not None:
@@ -166,6 +191,16 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
             self.app = app
         if packet_messages is not None:
             self.packet_messages = packet_messages
+        if dst_host is not None:
+            self.dst_host = dst_host
+        if src_region_id is not None:
+            self.src_region_id = src_region_id
+        if src_region_name is not None:
+            self.src_region_name = src_region_name
+        if dst_region_id is not None:
+            self.dst_region_id = dst_region_id
+        if dst_region_name is not None:
+            self.dst_region_name = dst_region_name
 
     @property
     def direction(self):
@@ -580,6 +615,116 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
         :type packet_messages: list[:class:`huaweicloudsdkcfw.v1.PacketMessage`]
         """
         self._packet_messages = packet_messages
+
+    @property
+    def dst_host(self):
+        """Gets the dst_host of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        目标主机
+
+        :return: The dst_host of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_host
+
+    @dst_host.setter
+    def dst_host(self, dst_host):
+        """Sets the dst_host of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        目标主机
+
+        :param dst_host: The dst_host of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :type dst_host: str
+        """
+        self._dst_host = dst_host
+
+    @property
+    def src_region_id(self):
+        """Gets the src_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        源区域id
+
+        :return: The src_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._src_region_id
+
+    @src_region_id.setter
+    def src_region_id(self, src_region_id):
+        """Sets the src_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        源区域id
+
+        :param src_region_id: The src_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :type src_region_id: str
+        """
+        self._src_region_id = src_region_id
+
+    @property
+    def src_region_name(self):
+        """Gets the src_region_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        源区域名称
+
+        :return: The src_region_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._src_region_name
+
+    @src_region_name.setter
+    def src_region_name(self, src_region_name):
+        """Sets the src_region_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        源区域名称
+
+        :param src_region_name: The src_region_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :type src_region_name: str
+        """
+        self._src_region_name = src_region_name
+
+    @property
+    def dst_region_id(self):
+        """Gets the dst_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        目的区域id
+
+        :return: The dst_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_region_id
+
+    @dst_region_id.setter
+    def dst_region_id(self, dst_region_id):
+        """Sets the dst_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        目的区域id
+
+        :param dst_region_id: The dst_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :type dst_region_id: str
+        """
+        self._dst_region_id = dst_region_id
+
+    @property
+    def dst_region_name(self):
+        """Gets the dst_region_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        目的区域名称
+
+        :return: The dst_region_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :rtype: str
+        """
+        return self._dst_region_name
+
+    @dst_region_name.setter
+    def dst_region_name(self, dst_region_name):
+        """Sets the dst_region_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+
+        目的区域名称
+
+        :param dst_region_name: The dst_region_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        :type dst_region_name: str
+        """
+        self._dst_region_name = dst_region_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

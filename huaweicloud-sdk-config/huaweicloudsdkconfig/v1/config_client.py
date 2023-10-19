@@ -16,13 +16,16 @@ class ConfigClient(Client):
 
     @classmethod
     def new_builder(cls, clazz=None):
-        if clazz is None:
-            return ClientBuilder(cls, "GlobalCredentials")
+        if not clazz:
+            client_builder = ClientBuilder(cls, "GlobalCredentials")
+        else:
+            if clazz.__name__ != "ConfigClient":
+                raise TypeError("client type error, support client type is ConfigClient")
+            client_builder = ClientBuilder(clazz, "GlobalCredentials")
 
-        if clazz.__name__ != "ConfigClient":
-            raise TypeError("client type error, support client type is ConfigClient")
+        
 
-        return ClientBuilder(clazz, "GlobalCredentials")
+        return client_builder
 
     def create_aggregation_authorization(self, request):
         """创建资源聚合器授权
@@ -2015,7 +2018,7 @@ class ConfigClient(Client):
     def show_organization_conformance_pack_detailed_statuses(self, request):
         """查看组织合规规则包部署详细状态
 
-        查看指定组织合规规则包在成员账户中的部署状态详情。
+        查看指定组织合规规则包在成员帐号中的部署状态详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

@@ -31,7 +31,9 @@ class GetFirewallInstanceResponseRecord:
         'feature_toggle': 'dict(str, bool)',
         'resources': 'list[FirewallInstanceResource]',
         'fw_instance_name': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'resource_id': 'str',
+        'support_url_filtering': 'bool'
     }
 
     attribute_map = {
@@ -49,10 +51,12 @@ class GetFirewallInstanceResponseRecord:
         'feature_toggle': 'feature_toggle',
         'resources': 'resources',
         'fw_instance_name': 'fw_instance_name',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'resource_id': 'resource_id',
+        'support_url_filtering': 'support_url_filtering'
     }
 
-    def __init__(self, fw_instance_id=None, name=None, ha_type=None, charge_mode=None, service_type=None, engine_type=None, flavor=None, protect_objects=None, status=None, is_old_firewall_instance=None, support_ipv6=None, feature_toggle=None, resources=None, fw_instance_name=None, enterprise_project_id=None):
+    def __init__(self, fw_instance_id=None, name=None, ha_type=None, charge_mode=None, service_type=None, engine_type=None, flavor=None, protect_objects=None, status=None, is_old_firewall_instance=None, support_ipv6=None, feature_toggle=None, resources=None, fw_instance_name=None, enterprise_project_id=None, resource_id=None, support_url_filtering=None):
         """GetFirewallInstanceResponseRecord
 
         The model defined in huaweicloud sdk
@@ -87,6 +91,10 @@ class GetFirewallInstanceResponseRecord:
         :type fw_instance_name: str
         :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
         :type enterprise_project_id: str
+        :param resource_id: 资源id
+        :type resource_id: str
+        :param support_url_filtering: 是否支持url过滤，true表示是，false表示不是
+        :type support_url_filtering: bool
         """
         
         
@@ -106,6 +114,8 @@ class GetFirewallInstanceResponseRecord:
         self._resources = None
         self._fw_instance_name = None
         self._enterprise_project_id = None
+        self._resource_id = None
+        self._support_url_filtering = None
         self.discriminator = None
 
         if fw_instance_id is not None:
@@ -138,6 +148,10 @@ class GetFirewallInstanceResponseRecord:
             self.fw_instance_name = fw_instance_name
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if resource_id is not None:
+            self.resource_id = resource_id
+        if support_url_filtering is not None:
+            self.support_url_filtering = support_url_filtering
 
     @property
     def fw_instance_id(self):
@@ -464,6 +478,50 @@ class GetFirewallInstanceResponseRecord:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def resource_id(self):
+        """Gets the resource_id of this GetFirewallInstanceResponseRecord.
+
+        资源id
+
+        :return: The resource_id of this GetFirewallInstanceResponseRecord.
+        :rtype: str
+        """
+        return self._resource_id
+
+    @resource_id.setter
+    def resource_id(self, resource_id):
+        """Sets the resource_id of this GetFirewallInstanceResponseRecord.
+
+        资源id
+
+        :param resource_id: The resource_id of this GetFirewallInstanceResponseRecord.
+        :type resource_id: str
+        """
+        self._resource_id = resource_id
+
+    @property
+    def support_url_filtering(self):
+        """Gets the support_url_filtering of this GetFirewallInstanceResponseRecord.
+
+        是否支持url过滤，true表示是，false表示不是
+
+        :return: The support_url_filtering of this GetFirewallInstanceResponseRecord.
+        :rtype: bool
+        """
+        return self._support_url_filtering
+
+    @support_url_filtering.setter
+    def support_url_filtering(self, support_url_filtering):
+        """Sets the support_url_filtering of this GetFirewallInstanceResponseRecord.
+
+        是否支持url过滤，true表示是，false表示不是
+
+        :param support_url_filtering: The support_url_filtering of this GetFirewallInstanceResponseRecord.
+        :type support_url_filtering: bool
+        """
+        self._support_url_filtering = support_url_filtering
 
     def to_dict(self):
         """Returns the model properties as a dict"""
