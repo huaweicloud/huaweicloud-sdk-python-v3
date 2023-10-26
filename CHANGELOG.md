@@ -1,3 +1,345 @@
+# 3.1.63 2023-10-26
+
+### HuaweiCloud SDK AOS
+
+- _Features_
+  - Support the interfaces `ShowStackInstance`, `UpdateStackInstances`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDetailsOfApiV2**
+    - changes of response param
+      - `+ policy_functions.conditions.sys_param_name`
+      - `+ policy_functions.conditions.cookie_param_name`
+      - `+ policy_functions.conditions.frontend_authorizer_param_name`
+      - `+ policy_functions.conditions.condition_origin: enum value [system,cookie,frontend_authorizer]`
+  - **UpdateApiV2**
+    - changes of request param
+      - `+ policy_mocks.conditions.sys_param_name`
+      - `+ policy_mocks.conditions.cookie_param_name`
+      - `+ policy_mocks.conditions.frontend_authorizer_param_name`
+      - `+ policy_mocks.conditions.condition_origin: enum value [system,cookie,frontend_authorizer]`
+    - changes of response param
+      - `+ policy_functions.conditions.sys_param_name`
+      - `+ policy_functions.conditions.cookie_param_name`
+      - `+ policy_functions.conditions.frontend_authorizer_param_name`
+      - `+ policy_functions.conditions.condition_origin: enum value [system,cookie,frontend_authorizer]`
+  - **ListApiVersionDetailV2**
+    - changes of response param
+      - `+ policy_functions.conditions.sys_param_name`
+      - `+ policy_functions.conditions.cookie_param_name`
+      - `+ policy_functions.conditions.frontend_authorizer_param_name`
+      - `+ policy_functions.conditions.condition_origin: enum value [system,cookie,frontend_authorizer]`
+  - **CreateApiV2**
+    - changes of request param
+      - `+ policy_mocks.conditions.sys_param_name`
+      - `+ policy_mocks.conditions.cookie_param_name`
+      - `+ policy_mocks.conditions.frontend_authorizer_param_name`
+      - `+ policy_mocks.conditions.condition_origin: enum value [system,cookie,frontend_authorizer]`
+    - changes of response param
+      - `+ policy_functions.conditions.sys_param_name`
+      - `+ policy_functions.conditions.cookie_param_name`
+      - `+ policy_functions.conditions.frontend_authorizer_param_name`
+      - `+ policy_functions.conditions.condition_origin: enum value [system,cookie,frontend_authorizer]`
+
+### HuaweiCloud SDK BMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateBareMetalServers**
+    - changes of request param
+      - `+ server.extendparam.chargingMode: enum value [postPaid]`
+
+### HuaweiCloud SDK CC
+
+- _Features_
+  - Support the interface `ListCentralNetworkCapabilities`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - Support the following interfaces：
+    - `CreateRefreshTasks`
+    - `CreatePreheatingTasks`
+    - `ShowHistoryTasks`
+    - `ShowHistoryTaskDetails`
+    - `ShowUrlTaskInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateRefreshTasks**
+    - changes of request param
+      - `+ refresh_task.zh_url_encode`
+  - **CreatePreheatingTasks**
+    - changes of request param
+      - `+ preheating_task.zh_url_encode`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _Features_
+  - Support the interfaces `CreatePipelineNew`, `RetryPipelineRun`, `AcceptManualReview`, `RejectManualReview`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPipelines**
+    - changes of response param
+      - `+ pipelines.latest_run.stage_status_list.id`
+  - **CreatePipelineByTemplateId**
+    - changes of request param
+      - `+ variables`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - Support the following interfaces：
+    - `ShowBackgroundTaskProgress`
+    - `ListCenterTask`
+    - `StartInstanceResizeCheckJob`
+    - `ShowBackUpInfo`
+    - `CreateOrUpdateBackUpInfo`
+    - `ShowExpireKeyScanInfo`
+    - `ScanExpireKey`
+    - `ListMigrationTaskLogs`
+    - `CheckMigrationConnectivity`
+    - `ExchangeInstanceIp`
+    - `ExecuteCommandMobilization`
+    - `LoginWebCli`
+    - `UpdateMigrationTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListBatches**
+    - changes of request param
+      - `+ job-name`
+  - **CreateBatchJob**
+    - changes of response param
+      - `- req_body`
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - Support the following interfaces：
+    - `ListContainerNodes`
+    - `ListBlockedIp`
+    - `ChangeBlockedIp`
+    - `ListIsolatedFile`
+    - `ChangeIsolatedFile`
+    - `ListSwrImageRepository`
+    - `BatchScanSwrImage`
+    - `ListImageVulnerabilities`
+    - `ListVulnerabilityCve`
+    - `RunImageSynchronize`
+    - `ListImageRiskConfigs`
+    - `ListImageRiskConfigRules`
+    - `ShowImageCheckRuleDetail`
+    - `ShowVulScanPolicy`
+    - `ChangeVulScanPolicy`
+    - `ShowVulStatics`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPortStatistics**
+    - changes of request param
+      - `+ port_string`
+      - `+ sort_key`
+      - `+ sort_dir`
+    - changes of response param
+      - `+ data_list.status`
+  - **ListProtectionServer**
+    - changes of response param
+      - `+ data_list.host_source`
+  - **ListHostStatus**
+    - changes of request param
+      - `+ has_intrusion`
+      - `+ agent_upgradable`
+  - **ListVulHosts**
+    - changes of response param
+      - `+ data_list.support_restore`
+  - **ChangeVulStatus**
+    - changes of request param
+      - `+ backup_info_id`
+      - `+ custom_backup_hosts`
+  - **ListHostVuls**
+    - changes of response param
+      - `+ data_list.app_name`
+      - `+ data_list.app_version`
+      - `+ data_list.app_path`
+      - `+ data_list.version`
+      - `+ data_list.support_restore`
+  - **ListHostProtectHistoryInfo**
+    - changes of request param
+      - `+ host_name`
+      - `+ host_ip`
+      - `+ file_path`
+      - `+ file_operation`
+  - **ListProtectionPolicy**
+    - changes of response param
+      - `+ data_list.deploy_mode`
+      - `+ data_list.default_policy`
+  - **ListSecurityEvents**
+    - changes of request param
+      - `+ severity_list`
+      - `+ attack_tag`
+      - `+ asset_value`
+      - `+ tag_list`
+      - `+ att_ck`
+    - changes of response param
+      - `+ data_list.description`
+      - `+ data_list.event_abstract`
+      - `+ data_list.tag_list`
+      - `+ data_list.resource_info.container_status`
+      - `+ data_list.resource_info.pod_uid`
+      - `+ data_list.resource_info.pod_name`
+      - `+ data_list.resource_info.namespace`
+      - `+ data_list.resource_info.cluster_id`
+      - `+ data_list.resource_info.cluster_name`
+  - **ChangeEvent**
+    - changes of request param
+      - `+ operate_event_list.operate_detail_list.container_id`
+      - `+ operate_event_list.operate_detail_list.container_name`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListProducts**
+    - changes of request param
+      - `+ product_name`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ResizeInstance**
+    - changes of request param
+      - `+ tenant_ips`
+      - `+ second_tenant_subnet_id`
+  - **ResizeEngineInstance**
+    - changes of request param
+      - `+ tenant_ips`
+      - `+ second_tenant_subnet_id`
+
+### HuaweiCloud SDK LakeFormation
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateLakeFormationInstance**
+    - changes of request param
+      - `- order_id`
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - Support the interfaces `RunCreateAudioStreamModerationJob`, `RunCloseAudioStreamModerationJob`, `RunCreateVideoStreamModerationJob`, `RunCloseVideoStreamModerationJob`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeGeneralTable**
+    - changes of request param
+      - `+ with_borders`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interfaces `ListInstanceDiagnosis`, `ListInstancesInfoDiagnosis`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowGroup**
+    - changes of response param
+      - `+ group_desc`
+  - **CreateConsumerGroupOrBatchDeleteConsumerGroup**
+    - changes of request param
+      - `+ group_desc`
+  - **ListInstanceConsumerGroups**
+    - changes of response param
+      - `+ groups.group_desc`
+  - **BatchUpdateConsumerGroup**
+    - changes of request param
+      - `+ groups.group_desc`
+
+### HuaweiCloud SDK SFSTurbo
+
+- _Features_
+  - Support the following interfaces：
+    - `SetHpcCacheBackend`
+    - `CreateHpcCacheTask`
+    - `ShowHpcCacheTask`
+    - `ListHpcCacheTasks`
+    - `ListFsTasks`
+    - `CreateFsTask`
+    - `ShowFsTask`
+    - `DeleteFsTask`
+    - `ListBackendTargets`
+    - `CreateBackendTarget`
+    - `ShowBackendTargetInfo`
+    - `DeleteBackendTarget`
+    - `ShowFsDirUsage`
+    - `ListPermRules`
+    - `CreatePermRule`
+    - `ShowPermRule`
+    - `UpdatePermRule`
+    - `DeletePermRule`
+    - `UpdateHpcShare`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListShares**
+    - changes of response param
+      - `* shares: list<Shares> -> list<ShareInfo>`
+
 # 3.1.62 2023-10-19
 
 ### HuaweiCloud SDK APIG

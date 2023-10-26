@@ -2767,7 +2767,7 @@ class CesAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def update_notification_masks_async(self, request):
+    def update_notification_mask_async(self, request):
         """修改告警通知屏蔽规则
 
         修改告警通知屏蔽规则
@@ -2775,13 +2775,13 @@ class CesAsyncClient(Client):
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for UpdateNotificationMasks
-        :type request: :class:`huaweicloudsdkces.v2.UpdateNotificationMasksRequest`
-        :rtype: :class:`huaweicloudsdkces.v2.UpdateNotificationMasksResponse`
+        :param request: Request instance for UpdateNotificationMask
+        :type request: :class:`huaweicloudsdkces.v2.UpdateNotificationMaskRequest`
+        :rtype: :class:`huaweicloudsdkces.v2.UpdateNotificationMaskResponse`
         """
-        return self._update_notification_masks_with_http_info(request)
+        return self._update_notification_mask_with_http_info(request)
 
-    def _update_notification_masks_with_http_info(self, request):
+    def _update_notification_mask_with_http_info(self, request):
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2820,7 +2820,7 @@ class CesAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             cname=cname,
-            response_type='UpdateNotificationMasksResponse',
+            response_type='UpdateNotificationMaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

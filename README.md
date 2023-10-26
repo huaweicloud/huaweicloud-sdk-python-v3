@@ -691,7 +691,7 @@ credentials = BasicCredentials(ak, sk).with_iam_endpoint(iam_endpoint)
 
 ###### 3.3.2.1 Environment variable [:top:](#user-manual-top)
 
-Specified by environment variable, the format is `HUAWEICLOUD_SDK_REGION_{SERIVCE_NAME}_{REGION_ID}={endpoint}`
+Specified by environment variable, the format is `HUAWEICLOUD_SDK_REGION_{SERVICE_NAME}_{REGION_ID}={endpoint}`
 
 Notice: the name of environment variable is UPPER-CASE, replacing hyphens with underscores.
 
@@ -709,7 +709,7 @@ set HUAWEICLOUD_SDK_REGION_IOTDA_AP_SOUTHEAST_1=https://iotda.ap-southwest-1.myh
 
 A region corresponding to multiple endpoints is supported since **v3.1.60**, if the main endpoint cannot be connected, it will automatically switch to the backup endpoint.
 
-The format is `HUAWEICLOUD_SDK_REGION_{SERIVCE_NAME}_{REGION_ID}={endpoint1},{endpoint2}`, separate multiple endpoints with commas, such as `HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_9=https://ecs.cn-north-9.myhuaweicloud.com,https://ecs.cn-north-9.myhuaweicloud.cn`
+The format is `HUAWEICLOUD_SDK_REGION_{SERVICE_NAME}_{REGION_ID}={endpoint1},{endpoint2}`, separate multiple endpoints with commas, such as `HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_9=https://ecs.cn-north-9.myhuaweicloud.com,https://ecs.cn-north-9.myhuaweicloud.cn`
 
 ###### 3.3.2.2 Profile [:top:](#user-manual-top)
 

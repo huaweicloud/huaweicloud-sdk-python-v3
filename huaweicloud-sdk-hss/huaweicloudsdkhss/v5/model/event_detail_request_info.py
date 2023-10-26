@@ -26,7 +26,9 @@ class EventDetailRequestInfo:
         'hash': 'str',
         'private_ip': 'str',
         'login_ip': 'str',
-        'login_user_name': 'str'
+        'login_user_name': 'str',
+        'container_id': 'str',
+        'container_name': 'str'
     }
 
     attribute_map = {
@@ -39,10 +41,12 @@ class EventDetailRequestInfo:
         'hash': 'hash',
         'private_ip': 'private_ip',
         'login_ip': 'login_ip',
-        'login_user_name': 'login_user_name'
+        'login_user_name': 'login_user_name',
+        'container_id': 'container_id',
+        'container_name': 'container_name'
     }
 
-    def __init__(self, agent_id=None, process_pid=None, file_hash=None, file_path=None, file_attr=None, keyword=None, hash=None, private_ip=None, login_ip=None, login_user_name=None):
+    def __init__(self, agent_id=None, process_pid=None, file_hash=None, file_path=None, file_attr=None, keyword=None, hash=None, private_ip=None, login_ip=None, login_user_name=None, container_id=None, container_name=None):
         """EventDetailRequestInfo
 
         The model defined in huaweicloud sdk
@@ -67,6 +71,10 @@ class EventDetailRequestInfo:
         :type login_ip: str
         :param login_user_name: 登录用户名
         :type login_user_name: str
+        :param container_id: 容器ID
+        :type container_id: str
+        :param container_name: 容器名称
+        :type container_name: str
         """
         
         
@@ -81,6 +89,8 @@ class EventDetailRequestInfo:
         self._private_ip = None
         self._login_ip = None
         self._login_user_name = None
+        self._container_id = None
+        self._container_name = None
         self.discriminator = None
 
         if agent_id is not None:
@@ -103,6 +113,10 @@ class EventDetailRequestInfo:
             self.login_ip = login_ip
         if login_user_name is not None:
             self.login_user_name = login_user_name
+        if container_id is not None:
+            self.container_id = container_id
+        if container_name is not None:
+            self.container_name = container_name
 
     @property
     def agent_id(self):
@@ -323,6 +337,50 @@ class EventDetailRequestInfo:
         :type login_user_name: str
         """
         self._login_user_name = login_user_name
+
+    @property
+    def container_id(self):
+        """Gets the container_id of this EventDetailRequestInfo.
+
+        容器ID
+
+        :return: The container_id of this EventDetailRequestInfo.
+        :rtype: str
+        """
+        return self._container_id
+
+    @container_id.setter
+    def container_id(self, container_id):
+        """Sets the container_id of this EventDetailRequestInfo.
+
+        容器ID
+
+        :param container_id: The container_id of this EventDetailRequestInfo.
+        :type container_id: str
+        """
+        self._container_id = container_id
+
+    @property
+    def container_name(self):
+        """Gets the container_name of this EventDetailRequestInfo.
+
+        容器名称
+
+        :return: The container_name of this EventDetailRequestInfo.
+        :rtype: str
+        """
+        return self._container_name
+
+    @container_name.setter
+    def container_name(self, container_name):
+        """Sets the container_name of this EventDetailRequestInfo.
+
+        容器名称
+
+        :param container_name: The container_name of this EventDetailRequestInfo.
+        :type container_name: str
+        """
+        self._container_name = container_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

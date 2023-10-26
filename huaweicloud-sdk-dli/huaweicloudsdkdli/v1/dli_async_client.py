@@ -7025,6 +7025,8 @@ class DliAsyncClient(Client):
             query_params.append(('end', local_var_params['end']))
         if '_from' in local_var_params:
             query_params.append(('from', local_var_params['_from']))
+        if 'job_name' in local_var_params:
+            query_params.append(('job-name', local_var_params['job_name']))
         if 'job_id' in local_var_params:
             query_params.append(('job-id', local_var_params['job_id']))
         if 'order' in local_var_params:

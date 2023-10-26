@@ -26,6 +26,12 @@ class EventResourceResponseInfo:
         'vm_name': 'str',
         'vm_uuid': 'str',
         'container_id': 'str',
+        'container_status': 'str',
+        'pod_uid': 'str',
+        'pod_name': 'str',
+        'namespace': 'str',
+        'cluster_id': 'str',
+        'cluster_name': 'str',
         'image_id': 'str',
         'image_name': 'str',
         'host_attr': 'str',
@@ -48,6 +54,12 @@ class EventResourceResponseInfo:
         'vm_name': 'vm_name',
         'vm_uuid': 'vm_uuid',
         'container_id': 'container_id',
+        'container_status': 'container_status',
+        'pod_uid': 'pod_uid',
+        'pod_name': 'pod_name',
+        'namespace': 'namespace',
+        'cluster_id': 'cluster_id',
+        'cluster_name': 'cluster_name',
         'image_id': 'image_id',
         'image_name': 'image_name',
         'host_attr': 'host_attr',
@@ -60,7 +72,7 @@ class EventResourceResponseInfo:
         'os_version': 'os_version'
     }
 
-    def __init__(self, domain_id=None, project_id=None, enterprise_project_id=None, region_name=None, vpc_id=None, cloud_id=None, vm_name=None, vm_uuid=None, container_id=None, image_id=None, image_name=None, host_attr=None, service=None, micro_service=None, sys_arch=None, os_bit=None, os_type=None, os_name=None, os_version=None):
+    def __init__(self, domain_id=None, project_id=None, enterprise_project_id=None, region_name=None, vpc_id=None, cloud_id=None, vm_name=None, vm_uuid=None, container_id=None, container_status=None, pod_uid=None, pod_name=None, namespace=None, cluster_id=None, cluster_name=None, image_id=None, image_name=None, host_attr=None, service=None, micro_service=None, sys_arch=None, os_bit=None, os_type=None, os_name=None, os_version=None):
         """EventResourceResponseInfo
 
         The model defined in huaweicloud sdk
@@ -83,6 +95,18 @@ class EventResourceResponseInfo:
         :type vm_uuid: str
         :param container_id: 容器ID
         :type container_id: str
+        :param container_status: 容器状态
+        :type container_status: str
+        :param pod_uid: pod uid
+        :type pod_uid: str
+        :param pod_name: pod name
+        :type pod_name: str
+        :param namespace: namespace
+        :type namespace: str
+        :param cluster_id: 集群id
+        :type cluster_id: str
+        :param cluster_name: 集群名称
+        :type cluster_name: str
         :param image_id: 镜像ID
         :type image_id: str
         :param image_name: 镜像名称
@@ -116,6 +140,12 @@ class EventResourceResponseInfo:
         self._vm_name = None
         self._vm_uuid = None
         self._container_id = None
+        self._container_status = None
+        self._pod_uid = None
+        self._pod_name = None
+        self._namespace = None
+        self._cluster_id = None
+        self._cluster_name = None
         self._image_id = None
         self._image_name = None
         self._host_attr = None
@@ -146,6 +176,18 @@ class EventResourceResponseInfo:
             self.vm_uuid = vm_uuid
         if container_id is not None:
             self.container_id = container_id
+        if container_status is not None:
+            self.container_status = container_status
+        if pod_uid is not None:
+            self.pod_uid = pod_uid
+        if pod_name is not None:
+            self.pod_name = pod_name
+        if namespace is not None:
+            self.namespace = namespace
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
+        if cluster_name is not None:
+            self.cluster_name = cluster_name
         if image_id is not None:
             self.image_id = image_id
         if image_name is not None:
@@ -364,6 +406,138 @@ class EventResourceResponseInfo:
         :type container_id: str
         """
         self._container_id = container_id
+
+    @property
+    def container_status(self):
+        """Gets the container_status of this EventResourceResponseInfo.
+
+        容器状态
+
+        :return: The container_status of this EventResourceResponseInfo.
+        :rtype: str
+        """
+        return self._container_status
+
+    @container_status.setter
+    def container_status(self, container_status):
+        """Sets the container_status of this EventResourceResponseInfo.
+
+        容器状态
+
+        :param container_status: The container_status of this EventResourceResponseInfo.
+        :type container_status: str
+        """
+        self._container_status = container_status
+
+    @property
+    def pod_uid(self):
+        """Gets the pod_uid of this EventResourceResponseInfo.
+
+        pod uid
+
+        :return: The pod_uid of this EventResourceResponseInfo.
+        :rtype: str
+        """
+        return self._pod_uid
+
+    @pod_uid.setter
+    def pod_uid(self, pod_uid):
+        """Sets the pod_uid of this EventResourceResponseInfo.
+
+        pod uid
+
+        :param pod_uid: The pod_uid of this EventResourceResponseInfo.
+        :type pod_uid: str
+        """
+        self._pod_uid = pod_uid
+
+    @property
+    def pod_name(self):
+        """Gets the pod_name of this EventResourceResponseInfo.
+
+        pod name
+
+        :return: The pod_name of this EventResourceResponseInfo.
+        :rtype: str
+        """
+        return self._pod_name
+
+    @pod_name.setter
+    def pod_name(self, pod_name):
+        """Sets the pod_name of this EventResourceResponseInfo.
+
+        pod name
+
+        :param pod_name: The pod_name of this EventResourceResponseInfo.
+        :type pod_name: str
+        """
+        self._pod_name = pod_name
+
+    @property
+    def namespace(self):
+        """Gets the namespace of this EventResourceResponseInfo.
+
+        namespace
+
+        :return: The namespace of this EventResourceResponseInfo.
+        :rtype: str
+        """
+        return self._namespace
+
+    @namespace.setter
+    def namespace(self, namespace):
+        """Sets the namespace of this EventResourceResponseInfo.
+
+        namespace
+
+        :param namespace: The namespace of this EventResourceResponseInfo.
+        :type namespace: str
+        """
+        self._namespace = namespace
+
+    @property
+    def cluster_id(self):
+        """Gets the cluster_id of this EventResourceResponseInfo.
+
+        集群id
+
+        :return: The cluster_id of this EventResourceResponseInfo.
+        :rtype: str
+        """
+        return self._cluster_id
+
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        """Sets the cluster_id of this EventResourceResponseInfo.
+
+        集群id
+
+        :param cluster_id: The cluster_id of this EventResourceResponseInfo.
+        :type cluster_id: str
+        """
+        self._cluster_id = cluster_id
+
+    @property
+    def cluster_name(self):
+        """Gets the cluster_name of this EventResourceResponseInfo.
+
+        集群名称
+
+        :return: The cluster_name of this EventResourceResponseInfo.
+        :rtype: str
+        """
+        return self._cluster_name
+
+    @cluster_name.setter
+    def cluster_name(self, cluster_name):
+        """Sets the cluster_name of this EventResourceResponseInfo.
+
+        集群名称
+
+        :param cluster_name: The cluster_name of this EventResourceResponseInfo.
+        :type cluster_name: str
+        """
+        self._cluster_name = cluster_name
 
     @property
     def image_id(self):

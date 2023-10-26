@@ -18,7 +18,7 @@ class DeleteStackInstanceRequestBody:
 
     openapi_types = {
         'stack_set_id': 'str',
-        'deployment_targets': 'DeploymentTargetsPrimitiveTypeHolderDeploymentTargets'
+        'deployment_targets': 'DeploymentTargets'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class DeleteStackInstanceRequestBody:
         :param stack_set_id: 资源栈集（stack_set）的唯一ID。  此ID由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈集名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈集，删除，在重新创建一个同名资源栈集。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈集就是我以为的那个，而不是又其他队友删除后创建的同名资源栈集。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈集所对应的ID都不相同，更新不会影响ID。如果给与的stack_set_id和当前资源栈集的ID不一致，则返回400
         :type stack_set_id: str
         :param deployment_targets: 
-        :type deployment_targets: :class:`huaweicloudsdkaos.v1.DeploymentTargetsPrimitiveTypeHolderDeploymentTargets`
+        :type deployment_targets: :class:`huaweicloudsdkaos.v1.DeploymentTargets`
         """
         
         
@@ -74,7 +74,7 @@ class DeleteStackInstanceRequestBody:
         """Gets the deployment_targets of this DeleteStackInstanceRequestBody.
 
         :return: The deployment_targets of this DeleteStackInstanceRequestBody.
-        :rtype: :class:`huaweicloudsdkaos.v1.DeploymentTargetsPrimitiveTypeHolderDeploymentTargets`
+        :rtype: :class:`huaweicloudsdkaos.v1.DeploymentTargets`
         """
         return self._deployment_targets
 
@@ -83,7 +83,7 @@ class DeleteStackInstanceRequestBody:
         """Sets the deployment_targets of this DeleteStackInstanceRequestBody.
 
         :param deployment_targets: The deployment_targets of this DeleteStackInstanceRequestBody.
-        :type deployment_targets: :class:`huaweicloudsdkaos.v1.DeploymentTargetsPrimitiveTypeHolderDeploymentTargets`
+        :type deployment_targets: :class:`huaweicloudsdkaos.v1.DeploymentTargets`
         """
         self._deployment_targets = deployment_targets
 

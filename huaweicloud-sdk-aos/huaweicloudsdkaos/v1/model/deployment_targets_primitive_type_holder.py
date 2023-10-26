@@ -17,7 +17,7 @@ class DeploymentTargetsPrimitiveTypeHolder:
     sensitive_list = []
 
     openapi_types = {
-        'deployment_targets': 'DeploymentTargetsPrimitiveTypeHolderDeploymentTargets'
+        'deployment_targets': 'DeploymentTargets'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class DeploymentTargetsPrimitiveTypeHolder:
         The model defined in huaweicloud sdk
 
         :param deployment_targets: 
-        :type deployment_targets: :class:`huaweicloudsdkaos.v1.DeploymentTargetsPrimitiveTypeHolderDeploymentTargets`
+        :type deployment_targets: :class:`huaweicloudsdkaos.v1.DeploymentTargets`
         """
         
         
@@ -45,7 +45,7 @@ class DeploymentTargetsPrimitiveTypeHolder:
         """Gets the deployment_targets of this DeploymentTargetsPrimitiveTypeHolder.
 
         :return: The deployment_targets of this DeploymentTargetsPrimitiveTypeHolder.
-        :rtype: :class:`huaweicloudsdkaos.v1.DeploymentTargetsPrimitiveTypeHolderDeploymentTargets`
+        :rtype: :class:`huaweicloudsdkaos.v1.DeploymentTargets`
         """
         return self._deployment_targets
 
@@ -54,7 +54,7 @@ class DeploymentTargetsPrimitiveTypeHolder:
         """Sets the deployment_targets of this DeploymentTargetsPrimitiveTypeHolder.
 
         :param deployment_targets: The deployment_targets of this DeploymentTargetsPrimitiveTypeHolder.
-        :type deployment_targets: :class:`huaweicloudsdkaos.v1.DeploymentTargetsPrimitiveTypeHolderDeploymentTargets`
+        :type deployment_targets: :class:`huaweicloudsdkaos.v1.DeploymentTargets`
         """
         self._deployment_targets = deployment_targets
 

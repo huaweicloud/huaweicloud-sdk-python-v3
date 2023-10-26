@@ -36,7 +36,8 @@ class VulHostInfo:
         'asset_value': 'str',
         'is_affect_business': 'bool',
         'first_scan_time': 'int',
-        'scan_time': 'int'
+        'scan_time': 'int',
+        'support_restore': 'bool'
     }
 
     attribute_map = {
@@ -59,17 +60,18 @@ class VulHostInfo:
         'asset_value': 'asset_value',
         'is_affect_business': 'is_affect_business',
         'first_scan_time': 'first_scan_time',
-        'scan_time': 'scan_time'
+        'scan_time': 'scan_time',
+        'support_restore': 'support_restore'
     }
 
-    def __init__(self, host_id=None, severity_level=None, host_name=None, host_ip=None, agent_id=None, cve_num=None, cve_id_list=None, status=None, repair_cmd=None, app_path=None, region_name=None, public_ip=None, private_ip=None, group_id=None, group_name=None, os_type=None, asset_value=None, is_affect_business=None, first_scan_time=None, scan_time=None):
+    def __init__(self, host_id=None, severity_level=None, host_name=None, host_ip=None, agent_id=None, cve_num=None, cve_id_list=None, status=None, repair_cmd=None, app_path=None, region_name=None, public_ip=None, private_ip=None, group_id=None, group_name=None, os_type=None, asset_value=None, is_affect_business=None, first_scan_time=None, scan_time=None, support_restore=None):
         """VulHostInfo
 
         The model defined in huaweicloud sdk
 
         :param host_id: 主机id
         :type host_id: str
-        :param severity_level: 危险程度   - Critical : 高危   - High : 中危   - Medium : 中危   - Low : 低危
+        :param severity_level: 危险程度   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
         :type severity_level: str
         :param host_name: 受影响资产名称
         :type host_name: str
@@ -107,6 +109,8 @@ class VulHostInfo:
         :type first_scan_time: int
         :param scan_time: 扫描时间
         :type scan_time: int
+        :param support_restore: 是否可以回滚到修复漏洞时创建的备份
+        :type support_restore: bool
         """
         
         
@@ -131,6 +135,7 @@ class VulHostInfo:
         self._is_affect_business = None
         self._first_scan_time = None
         self._scan_time = None
+        self._support_restore = None
         self.discriminator = None
 
         if host_id is not None:
@@ -173,6 +178,8 @@ class VulHostInfo:
             self.first_scan_time = first_scan_time
         if scan_time is not None:
             self.scan_time = scan_time
+        if support_restore is not None:
+            self.support_restore = support_restore
 
     @property
     def host_id(self):
@@ -200,7 +207,7 @@ class VulHostInfo:
     def severity_level(self):
         """Gets the severity_level of this VulHostInfo.
 
-        危险程度   - Critical : 高危   - High : 中危   - Medium : 中危   - Low : 低危
+        危险程度   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
 
         :return: The severity_level of this VulHostInfo.
         :rtype: str
@@ -211,7 +218,7 @@ class VulHostInfo:
     def severity_level(self, severity_level):
         """Sets the severity_level of this VulHostInfo.
 
-        危险程度   - Critical : 高危   - High : 中危   - Medium : 中危   - Low : 低危
+        危险程度   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
 
         :param severity_level: The severity_level of this VulHostInfo.
         :type severity_level: str
@@ -613,6 +620,28 @@ class VulHostInfo:
         :type scan_time: int
         """
         self._scan_time = scan_time
+
+    @property
+    def support_restore(self):
+        """Gets the support_restore of this VulHostInfo.
+
+        是否可以回滚到修复漏洞时创建的备份
+
+        :return: The support_restore of this VulHostInfo.
+        :rtype: bool
+        """
+        return self._support_restore
+
+    @support_restore.setter
+    def support_restore(self, support_restore):
+        """Sets the support_restore of this VulHostInfo.
+
+        是否可以回滚到修复漏洞时创建的备份
+
+        :param support_restore: The support_restore of this VulHostInfo.
+        :type support_restore: bool
+        """
+        self._support_restore = support_restore
 
     def to_dict(self):
         """Returns the model properties as a dict"""

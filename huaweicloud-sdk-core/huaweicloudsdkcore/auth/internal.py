@@ -68,8 +68,7 @@ class Iam(object):
 
     @classmethod
     def get_iam_endpoint(cls):
-        iam_endpoint = os.environ.get(cls.IAM_ENDPOINT_ENV_NAME)
-        return iam_endpoint if iam_endpoint else cls.DEFAULT_ENDPOINT
+        return os.environ.get(cls.IAM_ENDPOINT_ENV_NAME, cls.DEFAULT_ENDPOINT)
 
     @classmethod
     def get_keystone_list_projects_request(cls, config, iam_endpoint=None, region_id=None):

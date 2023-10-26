@@ -673,6 +673,70 @@ class CodeArtsPipelineClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def accept_manual_review(self, request):
+        """通过人工审核
+
+        通过人工审核
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AcceptManualReview
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.AcceptManualReviewRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.AcceptManualReviewResponse`
+        """
+        return self._accept_manual_review_with_http_info(request)
+
+    def _accept_manual_review_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_run_id' in local_var_params:
+            path_params['job_run_id'] = local_var_params['job_run_id']
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+        if 'pipeline_run_id' in local_var_params:
+            path_params['pipeline_run_id'] = local_var_params['pipeline_run_id']
+        if 'step_run_id' in local_var_params:
+            path_params['step_run_id'] = local_var_params['step_run_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/api/pipelines/{pipeline_id}/pipeline-runs/{pipeline_run_id}/jobs/{job_run_id}/steps/{step_run_id}/pass',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='AcceptManualReviewResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def batch_show_pipelines_latest_status(self, request):
         """批量获取流水线状态
 
@@ -788,6 +852,66 @@ class CodeArtsPipelineClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreatePipelineByTemplateIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_pipeline_new(self, request):
+        """创建流水线
+
+        创建流水线
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePipelineNew
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.CreatePipelineNewRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.CreatePipelineNewResponse`
+        """
+        return self._create_pipeline_new_with_http_info(request)
+
+    def _create_pipeline_new_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'component_id' in local_var_params:
+            query_params.append(('component_id', local_var_params['component_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/api/pipelines',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreatePipelineNewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1022,6 +1146,130 @@ class CodeArtsPipelineClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListPipelinesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def reject_manual_review(self, request):
+        """驳回人工审核
+
+        驳回人工审核
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RejectManualReview
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.RejectManualReviewRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.RejectManualReviewResponse`
+        """
+        return self._reject_manual_review_with_http_info(request)
+
+    def _reject_manual_review_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_run_id' in local_var_params:
+            path_params['job_run_id'] = local_var_params['job_run_id']
+        if 'step_run_id' in local_var_params:
+            path_params['step_run_id'] = local_var_params['step_run_id']
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+        if 'pipeline_run_id' in local_var_params:
+            path_params['pipeline_run_id'] = local_var_params['pipeline_run_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/api/pipelines/{pipeline_id}/pipeline-runs/{pipeline_run_id}/jobs/{job_run_id}/steps/{step_run_id}/refuse',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RejectManualReviewResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def retry_pipeline_run(self, request):
+        """重试运行流水线
+
+        重试运行流水线
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RetryPipelineRun
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.RetryPipelineRunRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.RetryPipelineRunResponse`
+        """
+        return self._retry_pipeline_run_with_http_info(request)
+
+    def _retry_pipeline_run_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+        if 'pipeline_run_id' in local_var_params:
+            path_params['pipeline_run_id'] = local_var_params['pipeline_run_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/api/pipelines/{pipeline_id}/pipeline-runs/{pipeline_run_id}/retry',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RetryPipelineRunResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

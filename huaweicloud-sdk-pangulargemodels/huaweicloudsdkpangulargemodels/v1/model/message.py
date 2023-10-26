@@ -33,7 +33,7 @@ class Message:
 
         :param role: 角色
         :type role: str
-        :param content: 问答对文本内容
+        :param content: 问答对文本内容，最小长度：1，最大长度：模型支持的max_tokens数量乘以系数，默认系数为1.5，并且所有content的总长度不能超过该最大长度
         :type content: str
         """
         
@@ -73,7 +73,7 @@ class Message:
     def content(self):
         """Gets the content of this Message.
 
-        问答对文本内容
+        问答对文本内容，最小长度：1，最大长度：模型支持的max_tokens数量乘以系数，默认系数为1.5，并且所有content的总长度不能超过该最大长度
 
         :return: The content of this Message.
         :rtype: str
@@ -84,7 +84,7 @@ class Message:
     def content(self, content):
         """Sets the content of this Message.
 
-        问答对文本内容
+        问答对文本内容，最小长度：1，最大长度：模型支持的max_tokens数量乘以系数，默认系数为1.5，并且所有content的总长度不能超过该最大长度
 
         :param content: The content of this Message.
         :type content: str

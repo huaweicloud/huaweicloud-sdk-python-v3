@@ -65,9 +65,9 @@ class Share:
         :type security_group_id: str
         :param share_proto: 文件系统共享协议，有效值为NFS。NFS（Network File System），即网络文件系统。一种使用于分散式文件系统的协议，通过网络让不同的机器、不同的操作系统能够彼此分享数据。
         :type share_proto: str
-        :param share_type: 文件系统类型，有效值为STANDARD或者PERFORMANCE。
+        :param share_type: 文件系统类型，有效值为STANDARD或者PERFORMANCE。 通用型：标准型和标准型增强版填写STANDARD，性能型和性能型增强版填写PERFORMANCE。 HPC型：不校验该字段，可填写STANDARD或者PERFORMANCE。 HPC缓存型：不校验该字段，可填写STANDARD或者PERFORMANCE。 
         :type share_type: str
-        :param size: 普通文件系统容量，单位GB，取值范围500~32768。 增强型文件系统，即在“metadata”字段中设置了expand_type字段，则容量范围是10240~327680
+        :param size: 通用型-普通文件系统容量，取值范围500~32768，单位GB。 通用型-增强版文件系统，即在“metadata”字段中设置了expand_type&#x3D;\&quot;bandwidth\&quot;，则容量范围是10240~327680，单位GiB。 HPC型文件系统，即在“metadata”字段中设置了expand_type&#x3D;\&quot;hpc\&quot;，则容量范围是3686~1048576，单位GiB。HPC型文件系统的容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB-&gt;3686GiB, 4.8TiB-&gt;4915GiB，8.4TiB-&gt;8601GiB。 HPC缓存型文件系统，即在“metadata”字段中设置了expand_type&#x3D;\&quot;hpc_cache\&quot;，则容量范围是4096~1048576，单位GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
         :type size: int
         :param subnet_id: 用户在VPC下面的子网的网络ID。
         :type subnet_id: str
@@ -264,7 +264,7 @@ class Share:
     def share_type(self):
         """Gets the share_type of this Share.
 
-        文件系统类型，有效值为STANDARD或者PERFORMANCE。
+        文件系统类型，有效值为STANDARD或者PERFORMANCE。 通用型：标准型和标准型增强版填写STANDARD，性能型和性能型增强版填写PERFORMANCE。 HPC型：不校验该字段，可填写STANDARD或者PERFORMANCE。 HPC缓存型：不校验该字段，可填写STANDARD或者PERFORMANCE。 
 
         :return: The share_type of this Share.
         :rtype: str
@@ -275,7 +275,7 @@ class Share:
     def share_type(self, share_type):
         """Sets the share_type of this Share.
 
-        文件系统类型，有效值为STANDARD或者PERFORMANCE。
+        文件系统类型，有效值为STANDARD或者PERFORMANCE。 通用型：标准型和标准型增强版填写STANDARD，性能型和性能型增强版填写PERFORMANCE。 HPC型：不校验该字段，可填写STANDARD或者PERFORMANCE。 HPC缓存型：不校验该字段，可填写STANDARD或者PERFORMANCE。 
 
         :param share_type: The share_type of this Share.
         :type share_type: str
@@ -286,7 +286,7 @@ class Share:
     def size(self):
         """Gets the size of this Share.
 
-        普通文件系统容量，单位GB，取值范围500~32768。 增强型文件系统，即在“metadata”字段中设置了expand_type字段，则容量范围是10240~327680
+        通用型-普通文件系统容量，取值范围500~32768，单位GB。 通用型-增强版文件系统，即在“metadata”字段中设置了expand_type=\"bandwidth\"，则容量范围是10240~327680，单位GiB。 HPC型文件系统，即在“metadata”字段中设置了expand_type=\"hpc\"，则容量范围是3686~1048576，单位GiB。HPC型文件系统的容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。 HPC缓存型文件系统，即在“metadata”字段中设置了expand_type=\"hpc_cache\"，则容量范围是4096~1048576，单位GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
 
         :return: The size of this Share.
         :rtype: int
@@ -297,7 +297,7 @@ class Share:
     def size(self, size):
         """Sets the size of this Share.
 
-        普通文件系统容量，单位GB，取值范围500~32768。 增强型文件系统，即在“metadata”字段中设置了expand_type字段，则容量范围是10240~327680
+        通用型-普通文件系统容量，取值范围500~32768，单位GB。 通用型-增强版文件系统，即在“metadata”字段中设置了expand_type=\"bandwidth\"，则容量范围是10240~327680，单位GiB。 HPC型文件系统，即在“metadata”字段中设置了expand_type=\"hpc\"，则容量范围是3686~1048576，单位GiB。HPC型文件系统的容量必须为1.2TiB的倍数，换算为GiB后需要向下取整。如3.6TiB->3686GiB, 4.8TiB->4915GiB，8.4TiB->8601GiB。 HPC缓存型文件系统，即在“metadata”字段中设置了expand_type=\"hpc_cache\"，则容量范围是4096~1048576，单位GiB。不同带宽，起步容量不一样，步长均为1TiB。如2GB/s带宽，起步容量为4TiB，即4096GiB；4GB/s带宽，起步容量为8TiB，即8192GiB；8GB/s带宽，起步容量为16TiB，即16384GiB。 
 
         :param size: The size of this Share.
         :type size: int

@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class Shares:
+class ShareInfo:
 
     """
     Attributes:
@@ -65,7 +65,7 @@ class Shares:
     }
 
     def __init__(self, action_progress=None, version=None, avail_capacity=None, availability_zone=None, az_name=None, created_at=None, crypt_key_id=None, expand_type=None, export_location=None, id=None, name=None, pay_model=None, region=None, security_group_id=None, share_proto=None, share_type=None, size=None, status=None, sub_status=None, subnet_id=None, vpc_id=None):
-        """Shares
+        """ShareInfo
 
         The model defined in huaweicloud sdk
 
@@ -103,9 +103,9 @@ class Shares:
         :type share_type: str
         :param size: SFS Turbo文件系统总容量，单位GB。
         :type size: str
-        :param status: SFS Turbo文件系统的状态。&#39;100&#39;表示创建中，&#39;200&#39;表示可用，&#39;303&#39;表示创建失败。
+        :param status: SFS Turbo文件系统的状态。&#39;100&#39;表示创建中，&#39;200&#39;表示可用，&#39;303&#39;表示创建失败，&#39;800&#39;表示实例被冻结。
         :type status: str
-        :param sub_status: SFS Turbo文件系统的子状态。&#39;121&#39;表示扩容中，&#39;221&#39;表示扩容成功，&#39;321&#39;表示扩容失败。
+        :param sub_status: SFS Turbo文件系统的子状态。 &#39;121&#39;表示扩容中；&#39;132&#39;表示修改安全组中；&#39;137&#39;表示添加VPC中；&#39;138&#39;表示删除VPC中；&#39;150&#39;表示配置联动后端中；&#39;151&#39;表示删除联动后端配置中； &#39;221&#39;表示扩容成功；&#39;232&#39;表示修改安全组成功；&#39;237&#39;表示添加VPC成功；&#39;238&#39;表示删除VPC成功；&#39;250&#39;表示配置联动后端成功；&#39;251&#39;表示删除联动后端配置成功； &#39;321&#39;表示扩容失败；&#39;332&#39;表示修改安全组失败；&#39;337&#39;表示添加VPC失败；&#39;338&#39;表示删除VPC失败；&#39;350&#39;表示配置联动后端失败；&#39;351&#39;表示删除联动后端配置失败； 
         :type sub_status: str
         :param subnet_id: 用户指定的子网的网络ID。
         :type subnet_id: str
@@ -183,458 +183,458 @@ class Shares:
 
     @property
     def action_progress(self):
-        """Gets the action_progress of this Shares.
+        """Gets the action_progress of this ShareInfo.
 
-        :return: The action_progress of this Shares.
+        :return: The action_progress of this ShareInfo.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ActionProgress`
         """
         return self._action_progress
 
     @action_progress.setter
     def action_progress(self, action_progress):
-        """Sets the action_progress of this Shares.
+        """Sets the action_progress of this ShareInfo.
 
-        :param action_progress: The action_progress of this Shares.
+        :param action_progress: The action_progress of this ShareInfo.
         :type action_progress: :class:`huaweicloudsdksfsturbo.v1.ActionProgress`
         """
         self._action_progress = action_progress
 
     @property
     def version(self):
-        """Gets the version of this Shares.
+        """Gets the version of this ShareInfo.
 
         SFS Turbo文件系统的版本号。
 
-        :return: The version of this Shares.
+        :return: The version of this ShareInfo.
         :rtype: str
         """
         return self._version
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Shares.
+        """Sets the version of this ShareInfo.
 
         SFS Turbo文件系统的版本号。
 
-        :param version: The version of this Shares.
+        :param version: The version of this ShareInfo.
         :type version: str
         """
         self._version = version
 
     @property
     def avail_capacity(self):
-        """Gets the avail_capacity of this Shares.
+        """Gets the avail_capacity of this ShareInfo.
 
         SFS Turbo文件系统剩余容量，单位GB。
 
-        :return: The avail_capacity of this Shares.
+        :return: The avail_capacity of this ShareInfo.
         :rtype: str
         """
         return self._avail_capacity
 
     @avail_capacity.setter
     def avail_capacity(self, avail_capacity):
-        """Sets the avail_capacity of this Shares.
+        """Sets the avail_capacity of this ShareInfo.
 
         SFS Turbo文件系统剩余容量，单位GB。
 
-        :param avail_capacity: The avail_capacity of this Shares.
+        :param avail_capacity: The avail_capacity of this ShareInfo.
         :type avail_capacity: str
         """
         self._avail_capacity = avail_capacity
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this Shares.
+        """Gets the availability_zone of this ShareInfo.
 
         SFS Turbo文件系统所在可用区编码。
 
-        :return: The availability_zone of this Shares.
+        :return: The availability_zone of this ShareInfo.
         :rtype: str
         """
         return self._availability_zone
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this Shares.
+        """Sets the availability_zone of this ShareInfo.
 
         SFS Turbo文件系统所在可用区编码。
 
-        :param availability_zone: The availability_zone of this Shares.
+        :param availability_zone: The availability_zone of this ShareInfo.
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
     @property
     def az_name(self):
-        """Gets the az_name of this Shares.
+        """Gets the az_name of this ShareInfo.
 
         SFS Turbo文件系统所在可用区名称。
 
-        :return: The az_name of this Shares.
+        :return: The az_name of this ShareInfo.
         :rtype: str
         """
         return self._az_name
 
     @az_name.setter
     def az_name(self, az_name):
-        """Sets the az_name of this Shares.
+        """Sets the az_name of this ShareInfo.
 
         SFS Turbo文件系统所在可用区名称。
 
-        :param az_name: The az_name of this Shares.
+        :param az_name: The az_name of this ShareInfo.
         :type az_name: str
         """
         self._az_name = az_name
 
     @property
     def created_at(self):
-        """Gets the created_at of this Shares.
+        """Gets the created_at of this ShareInfo.
 
         创建时间。UTC时间，例如：2018-11-19T04:02:03
 
-        :return: The created_at of this Shares.
+        :return: The created_at of this ShareInfo.
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Shares.
+        """Sets the created_at of this ShareInfo.
 
         创建时间。UTC时间，例如：2018-11-19T04:02:03
 
-        :param created_at: The created_at of this Shares.
+        :param created_at: The created_at of this ShareInfo.
         :type created_at: datetime
         """
         self._created_at = created_at
 
     @property
     def crypt_key_id(self):
-        """Gets the crypt_key_id of this Shares.
+        """Gets the crypt_key_id of this ShareInfo.
 
         用户指定的加密密钥ID，非加密盘时不返回。
 
-        :return: The crypt_key_id of this Shares.
+        :return: The crypt_key_id of this ShareInfo.
         :rtype: str
         """
         return self._crypt_key_id
 
     @crypt_key_id.setter
     def crypt_key_id(self, crypt_key_id):
-        """Sets the crypt_key_id of this Shares.
+        """Sets the crypt_key_id of this ShareInfo.
 
         用户指定的加密密钥ID，非加密盘时不返回。
 
-        :param crypt_key_id: The crypt_key_id of this Shares.
+        :param crypt_key_id: The crypt_key_id of this ShareInfo.
         :type crypt_key_id: str
         """
         self._crypt_key_id = crypt_key_id
 
     @property
     def expand_type(self):
-        """Gets the expand_type of this Shares.
+        """Gets the expand_type of this ShareInfo.
 
         如果是增强型文件系统，该字段返回bandwidth，否则不返回。
 
-        :return: The expand_type of this Shares.
+        :return: The expand_type of this ShareInfo.
         :rtype: str
         """
         return self._expand_type
 
     @expand_type.setter
     def expand_type(self, expand_type):
-        """Sets the expand_type of this Shares.
+        """Sets the expand_type of this ShareInfo.
 
         如果是增强型文件系统，该字段返回bandwidth，否则不返回。
 
-        :param expand_type: The expand_type of this Shares.
+        :param expand_type: The expand_type of this ShareInfo.
         :type expand_type: str
         """
         self._expand_type = expand_type
 
     @property
     def export_location(self):
-        """Gets the export_location of this Shares.
+        """Gets the export_location of this ShareInfo.
 
         SFS Turbo文件系统的挂载端点。
 
-        :return: The export_location of this Shares.
+        :return: The export_location of this ShareInfo.
         :rtype: str
         """
         return self._export_location
 
     @export_location.setter
     def export_location(self, export_location):
-        """Sets the export_location of this Shares.
+        """Sets the export_location of this ShareInfo.
 
         SFS Turbo文件系统的挂载端点。
 
-        :param export_location: The export_location of this Shares.
+        :param export_location: The export_location of this ShareInfo.
         :type export_location: str
         """
         self._export_location = export_location
 
     @property
     def id(self):
-        """Gets the id of this Shares.
+        """Gets the id of this ShareInfo.
 
         SFS Turbo的文件系统ID。
 
-        :return: The id of this Shares.
+        :return: The id of this ShareInfo.
         :rtype: str
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Shares.
+        """Sets the id of this ShareInfo.
 
         SFS Turbo的文件系统ID。
 
-        :param id: The id of this Shares.
+        :param id: The id of this ShareInfo.
         :type id: str
         """
         self._id = id
 
     @property
     def name(self):
-        """Gets the name of this Shares.
+        """Gets the name of this ShareInfo.
 
         创建时指定的SFS Turbo文件系统名称。
 
-        :return: The name of this Shares.
+        :return: The name of this ShareInfo.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Shares.
+        """Sets the name of this ShareInfo.
 
         创建时指定的SFS Turbo文件系统名称。
 
-        :param name: The name of this Shares.
+        :param name: The name of this ShareInfo.
         :type name: str
         """
         self._name = name
 
     @property
     def pay_model(self):
-        """Gets the pay_model of this Shares.
+        """Gets the pay_model of this ShareInfo.
 
         SFS Turbo文件系统的计费模式。'0'代表按需付费，'1'代表包周期计费。
 
-        :return: The pay_model of this Shares.
+        :return: The pay_model of this ShareInfo.
         :rtype: str
         """
         return self._pay_model
 
     @pay_model.setter
     def pay_model(self, pay_model):
-        """Sets the pay_model of this Shares.
+        """Sets the pay_model of this ShareInfo.
 
         SFS Turbo文件系统的计费模式。'0'代表按需付费，'1'代表包周期计费。
 
-        :param pay_model: The pay_model of this Shares.
+        :param pay_model: The pay_model of this ShareInfo.
         :type pay_model: str
         """
         self._pay_model = pay_model
 
     @property
     def region(self):
-        """Gets the region of this Shares.
+        """Gets the region of this ShareInfo.
 
         SFS Turbo文件系统所在区域。
 
-        :return: The region of this Shares.
+        :return: The region of this ShareInfo.
         :rtype: str
         """
         return self._region
 
     @region.setter
     def region(self, region):
-        """Sets the region of this Shares.
+        """Sets the region of this ShareInfo.
 
         SFS Turbo文件系统所在区域。
 
-        :param region: The region of this Shares.
+        :param region: The region of this ShareInfo.
         :type region: str
         """
         self._region = region
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this Shares.
+        """Gets the security_group_id of this ShareInfo.
 
         用户指定的安全组ID。
 
-        :return: The security_group_id of this Shares.
+        :return: The security_group_id of this ShareInfo.
         :rtype: str
         """
         return self._security_group_id
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this Shares.
+        """Sets the security_group_id of this ShareInfo.
 
         用户指定的安全组ID。
 
-        :param security_group_id: The security_group_id of this Shares.
+        :param security_group_id: The security_group_id of this ShareInfo.
         :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
     @property
     def share_proto(self):
-        """Gets the share_proto of this Shares.
+        """Gets the share_proto of this ShareInfo.
 
         SFS Turbo文件系统的协议类型，当前为NFS
 
-        :return: The share_proto of this Shares.
+        :return: The share_proto of this ShareInfo.
         :rtype: str
         """
         return self._share_proto
 
     @share_proto.setter
     def share_proto(self, share_proto):
-        """Sets the share_proto of this Shares.
+        """Sets the share_proto of this ShareInfo.
 
         SFS Turbo文件系统的协议类型，当前为NFS
 
-        :param share_proto: The share_proto of this Shares.
+        :param share_proto: The share_proto of this ShareInfo.
         :type share_proto: str
         """
         self._share_proto = share_proto
 
     @property
     def share_type(self):
-        """Gets the share_type of this Shares.
+        """Gets the share_type of this ShareInfo.
 
         SFS Turbo文件系统性能类型，包括“STANDARD”标准型和“PERFORMANCE”性能型。
 
-        :return: The share_type of this Shares.
+        :return: The share_type of this ShareInfo.
         :rtype: str
         """
         return self._share_type
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this Shares.
+        """Sets the share_type of this ShareInfo.
 
         SFS Turbo文件系统性能类型，包括“STANDARD”标准型和“PERFORMANCE”性能型。
 
-        :param share_type: The share_type of this Shares.
+        :param share_type: The share_type of this ShareInfo.
         :type share_type: str
         """
         self._share_type = share_type
 
     @property
     def size(self):
-        """Gets the size of this Shares.
+        """Gets the size of this ShareInfo.
 
         SFS Turbo文件系统总容量，单位GB。
 
-        :return: The size of this Shares.
+        :return: The size of this ShareInfo.
         :rtype: str
         """
         return self._size
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Shares.
+        """Sets the size of this ShareInfo.
 
         SFS Turbo文件系统总容量，单位GB。
 
-        :param size: The size of this Shares.
+        :param size: The size of this ShareInfo.
         :type size: str
         """
         self._size = size
 
     @property
     def status(self):
-        """Gets the status of this Shares.
+        """Gets the status of this ShareInfo.
 
-        SFS Turbo文件系统的状态。'100'表示创建中，'200'表示可用，'303'表示创建失败。
+        SFS Turbo文件系统的状态。'100'表示创建中，'200'表示可用，'303'表示创建失败，'800'表示实例被冻结。
 
-        :return: The status of this Shares.
+        :return: The status of this ShareInfo.
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Shares.
+        """Sets the status of this ShareInfo.
 
-        SFS Turbo文件系统的状态。'100'表示创建中，'200'表示可用，'303'表示创建失败。
+        SFS Turbo文件系统的状态。'100'表示创建中，'200'表示可用，'303'表示创建失败，'800'表示实例被冻结。
 
-        :param status: The status of this Shares.
+        :param status: The status of this ShareInfo.
         :type status: str
         """
         self._status = status
 
     @property
     def sub_status(self):
-        """Gets the sub_status of this Shares.
+        """Gets the sub_status of this ShareInfo.
 
-        SFS Turbo文件系统的子状态。'121'表示扩容中，'221'表示扩容成功，'321'表示扩容失败。
+        SFS Turbo文件系统的子状态。 '121'表示扩容中；'132'表示修改安全组中；'137'表示添加VPC中；'138'表示删除VPC中；'150'表示配置联动后端中；'151'表示删除联动后端配置中； '221'表示扩容成功；'232'表示修改安全组成功；'237'表示添加VPC成功；'238'表示删除VPC成功；'250'表示配置联动后端成功；'251'表示删除联动后端配置成功； '321'表示扩容失败；'332'表示修改安全组失败；'337'表示添加VPC失败；'338'表示删除VPC失败；'350'表示配置联动后端失败；'351'表示删除联动后端配置失败； 
 
-        :return: The sub_status of this Shares.
+        :return: The sub_status of this ShareInfo.
         :rtype: str
         """
         return self._sub_status
 
     @sub_status.setter
     def sub_status(self, sub_status):
-        """Sets the sub_status of this Shares.
+        """Sets the sub_status of this ShareInfo.
 
-        SFS Turbo文件系统的子状态。'121'表示扩容中，'221'表示扩容成功，'321'表示扩容失败。
+        SFS Turbo文件系统的子状态。 '121'表示扩容中；'132'表示修改安全组中；'137'表示添加VPC中；'138'表示删除VPC中；'150'表示配置联动后端中；'151'表示删除联动后端配置中； '221'表示扩容成功；'232'表示修改安全组成功；'237'表示添加VPC成功；'238'表示删除VPC成功；'250'表示配置联动后端成功；'251'表示删除联动后端配置成功； '321'表示扩容失败；'332'表示修改安全组失败；'337'表示添加VPC失败；'338'表示删除VPC失败；'350'表示配置联动后端失败；'351'表示删除联动后端配置失败； 
 
-        :param sub_status: The sub_status of this Shares.
+        :param sub_status: The sub_status of this ShareInfo.
         :type sub_status: str
         """
         self._sub_status = sub_status
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this Shares.
+        """Gets the subnet_id of this ShareInfo.
 
         用户指定的子网的网络ID。
 
-        :return: The subnet_id of this Shares.
+        :return: The subnet_id of this ShareInfo.
         :rtype: str
         """
         return self._subnet_id
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this Shares.
+        """Sets the subnet_id of this ShareInfo.
 
         用户指定的子网的网络ID。
 
-        :param subnet_id: The subnet_id of this Shares.
+        :param subnet_id: The subnet_id of this ShareInfo.
         :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this Shares.
+        """Gets the vpc_id of this ShareInfo.
 
         用户指定的VPC ID。
 
-        :return: The vpc_id of this Shares.
+        :return: The vpc_id of this ShareInfo.
         :rtype: str
         """
         return self._vpc_id
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this Shares.
+        """Sets the vpc_id of this ShareInfo.
 
         用户指定的VPC ID。
 
-        :param vpc_id: The vpc_id of this Shares.
+        :param vpc_id: The vpc_id of this ShareInfo.
         :type vpc_id: str
         """
         self._vpc_id = vpc_id
@@ -681,7 +681,7 @@ class Shares:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Shares):
+        if not isinstance(other, ShareInfo):
             return False
 
         return self.__dict__ == other.__dict__

@@ -1,3 +1,345 @@
+# 3.1.63 2023-10-26
+
+### HuaweiCloud SDK AOS
+
+- _新增特性_
+  - 支持接口`ShowStackInstance`、`UpdateStackInstances`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDetailsOfApiV2**
+    - 响应参数变更
+      - `+ policy_functions.conditions.sys_param_name`
+      - `+ policy_functions.conditions.cookie_param_name`
+      - `+ policy_functions.conditions.frontend_authorizer_param_name`
+      - `+ policy_functions.conditions.condition_origin: enum value [system,cookie,frontend_authorizer]`
+  - **UpdateApiV2**
+    - 请求参数变更
+      - `+ policy_mocks.conditions.sys_param_name`
+      - `+ policy_mocks.conditions.cookie_param_name`
+      - `+ policy_mocks.conditions.frontend_authorizer_param_name`
+      - `+ policy_mocks.conditions.condition_origin: enum value [system,cookie,frontend_authorizer]`
+    - 响应参数变更
+      - `+ policy_functions.conditions.sys_param_name`
+      - `+ policy_functions.conditions.cookie_param_name`
+      - `+ policy_functions.conditions.frontend_authorizer_param_name`
+      - `+ policy_functions.conditions.condition_origin: enum value [system,cookie,frontend_authorizer]`
+  - **ListApiVersionDetailV2**
+    - 响应参数变更
+      - `+ policy_functions.conditions.sys_param_name`
+      - `+ policy_functions.conditions.cookie_param_name`
+      - `+ policy_functions.conditions.frontend_authorizer_param_name`
+      - `+ policy_functions.conditions.condition_origin: enum value [system,cookie,frontend_authorizer]`
+  - **CreateApiV2**
+    - 请求参数变更
+      - `+ policy_mocks.conditions.sys_param_name`
+      - `+ policy_mocks.conditions.cookie_param_name`
+      - `+ policy_mocks.conditions.frontend_authorizer_param_name`
+      - `+ policy_mocks.conditions.condition_origin: enum value [system,cookie,frontend_authorizer]`
+    - 响应参数变更
+      - `+ policy_functions.conditions.sys_param_name`
+      - `+ policy_functions.conditions.cookie_param_name`
+      - `+ policy_functions.conditions.frontend_authorizer_param_name`
+      - `+ policy_functions.conditions.condition_origin: enum value [system,cookie,frontend_authorizer]`
+
+### HuaweiCloud SDK BMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateBareMetalServers**
+    - 请求参数变更
+      - `+ server.extendparam.chargingMode: enum value [postPaid]`
+
+### HuaweiCloud SDK CC
+
+- _新增特性_
+  - 支持接口`ListCentralNetworkCapabilities`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreateRefreshTasks`
+    - `CreatePreheatingTasks`
+    - `ShowHistoryTasks`
+    - `ShowHistoryTaskDetails`
+    - `ShowUrlTaskInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateRefreshTasks**
+    - 请求参数变更
+      - `+ refresh_task.zh_url_encode`
+  - **CreatePreheatingTasks**
+    - 请求参数变更
+      - `+ preheating_task.zh_url_encode`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _新增特性_
+  - 支持接口`CreatePipelineNew`、`RetryPipelineRun`、`AcceptManualReview`、`RejectManualReview`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPipelines**
+    - 响应参数变更
+      - `+ pipelines.latest_run.stage_status_list.id`
+  - **CreatePipelineByTemplateId**
+    - 请求参数变更
+      - `+ variables`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowBackgroundTaskProgress`
+    - `ListCenterTask`
+    - `StartInstanceResizeCheckJob`
+    - `ShowBackUpInfo`
+    - `CreateOrUpdateBackUpInfo`
+    - `ShowExpireKeyScanInfo`
+    - `ScanExpireKey`
+    - `ListMigrationTaskLogs`
+    - `CheckMigrationConnectivity`
+    - `ExchangeInstanceIp`
+    - `ExecuteCommandMobilization`
+    - `LoginWebCli`
+    - `UpdateMigrationTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListBatches**
+    - 请求参数变更
+      - `+ job-name`
+  - **CreateBatchJob**
+    - 响应参数变更
+      - `- req_body`
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListContainerNodes`
+    - `ListBlockedIp`
+    - `ChangeBlockedIp`
+    - `ListIsolatedFile`
+    - `ChangeIsolatedFile`
+    - `ListSwrImageRepository`
+    - `BatchScanSwrImage`
+    - `ListImageVulnerabilities`
+    - `ListVulnerabilityCve`
+    - `RunImageSynchronize`
+    - `ListImageRiskConfigs`
+    - `ListImageRiskConfigRules`
+    - `ShowImageCheckRuleDetail`
+    - `ShowVulScanPolicy`
+    - `ChangeVulScanPolicy`
+    - `ShowVulStatics`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPortStatistics**
+    - 请求参数变更
+      - `+ port_string`
+      - `+ sort_key`
+      - `+ sort_dir`
+    - 响应参数变更
+      - `+ data_list.status`
+  - **ListProtectionServer**
+    - 响应参数变更
+      - `+ data_list.host_source`
+  - **ListHostStatus**
+    - 请求参数变更
+      - `+ has_intrusion`
+      - `+ agent_upgradable`
+  - **ListVulHosts**
+    - 响应参数变更
+      - `+ data_list.support_restore`
+  - **ChangeVulStatus**
+    - 请求参数变更
+      - `+ backup_info_id`
+      - `+ custom_backup_hosts`
+  - **ListHostVuls**
+    - 响应参数变更
+      - `+ data_list.app_name`
+      - `+ data_list.app_version`
+      - `+ data_list.app_path`
+      - `+ data_list.version`
+      - `+ data_list.support_restore`
+  - **ListHostProtectHistoryInfo**
+    - 请求参数变更
+      - `+ host_name`
+      - `+ host_ip`
+      - `+ file_path`
+      - `+ file_operation`
+  - **ListProtectionPolicy**
+    - 响应参数变更
+      - `+ data_list.deploy_mode`
+      - `+ data_list.default_policy`
+  - **ListSecurityEvents**
+    - 请求参数变更
+      - `+ severity_list`
+      - `+ attack_tag`
+      - `+ asset_value`
+      - `+ tag_list`
+      - `+ att_ck`
+    - 响应参数变更
+      - `+ data_list.description`
+      - `+ data_list.event_abstract`
+      - `+ data_list.tag_list`
+      - `+ data_list.resource_info.container_status`
+      - `+ data_list.resource_info.pod_uid`
+      - `+ data_list.resource_info.pod_name`
+      - `+ data_list.resource_info.namespace`
+      - `+ data_list.resource_info.cluster_id`
+      - `+ data_list.resource_info.cluster_name`
+  - **ChangeEvent**
+    - 请求参数变更
+      - `+ operate_event_list.operate_detail_list.container_id`
+      - `+ operate_event_list.operate_detail_list.container_name`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListProducts**
+    - 请求参数变更
+      - `+ product_name`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ResizeInstance**
+    - 请求参数变更
+      - `+ tenant_ips`
+      - `+ second_tenant_subnet_id`
+  - **ResizeEngineInstance**
+    - 请求参数变更
+      - `+ tenant_ips`
+      - `+ second_tenant_subnet_id`
+
+### HuaweiCloud SDK LakeFormation
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateLakeFormationInstance**
+    - 请求参数变更
+      - `- order_id`
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 支持接口`RunCreateAudioStreamModerationJob`、`RunCloseAudioStreamModerationJob`、`RunCreateVideoStreamModerationJob`、`RunCloseVideoStreamModerationJob`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeGeneralTable**
+    - 请求参数变更
+      - `+ with_borders`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ListInstanceDiagnosis`、`ListInstancesInfoDiagnosis`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowGroup**
+    - 响应参数变更
+      - `+ group_desc`
+  - **CreateConsumerGroupOrBatchDeleteConsumerGroup**
+    - 请求参数变更
+      - `+ group_desc`
+  - **ListInstanceConsumerGroups**
+    - 响应参数变更
+      - `+ groups.group_desc`
+  - **BatchUpdateConsumerGroup**
+    - 请求参数变更
+      - `+ groups.group_desc`
+
+### HuaweiCloud SDK SFSTurbo
+
+- _新增特性_
+  - 支持以下接口：
+    - `SetHpcCacheBackend`
+    - `CreateHpcCacheTask`
+    - `ShowHpcCacheTask`
+    - `ListHpcCacheTasks`
+    - `ListFsTasks`
+    - `CreateFsTask`
+    - `ShowFsTask`
+    - `DeleteFsTask`
+    - `ListBackendTargets`
+    - `CreateBackendTarget`
+    - `ShowBackendTargetInfo`
+    - `DeleteBackendTarget`
+    - `ShowFsDirUsage`
+    - `ListPermRules`
+    - `CreatePermRule`
+    - `ShowPermRule`
+    - `UpdatePermRule`
+    - `DeletePermRule`
+    - `UpdateHpcShare`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListShares**
+    - 响应参数变更
+      - `* shares: list<Shares> -> list<ShareInfo>`
+
 # 3.1.62 2023-10-19
 
 ### HuaweiCloud SDK APIG

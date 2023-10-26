@@ -51,10 +51,13 @@ class EventManagementResponseInfo:
         'system_info': 'object',
         'extend_info': 'object',
         'recommendation': 'str',
+        'description': 'str',
+        'event_abstract': 'str',
         'process_info_list': 'list[EventProcessResponseInfo]',
         'user_info_list': 'list[EventUserResponseInfo]',
         'file_info_list': 'list[EventFileResponseInfo]',
-        'event_details': 'str'
+        'event_details': 'str',
+        'tag_list': 'list[str]'
     }
 
     attribute_map = {
@@ -92,13 +95,16 @@ class EventManagementResponseInfo:
         'system_info': 'system_info',
         'extend_info': 'extend_info',
         'recommendation': 'recommendation',
+        'description': 'description',
+        'event_abstract': 'event_abstract',
         'process_info_list': 'process_info_list',
         'user_info_list': 'user_info_list',
         'file_info_list': 'file_info_list',
-        'event_details': 'event_details'
+        'event_details': 'event_details',
+        'tag_list': 'tag_list'
     }
 
-    def __init__(self, event_id=None, event_class_id=None, event_type=None, event_name=None, severity=None, container_name=None, image_name=None, host_name=None, host_id=None, private_ip=None, public_ip=None, os_type=None, host_status=None, agent_status=None, protect_status=None, asset_value=None, attack_phase=None, attack_tag=None, occur_time=None, handle_time=None, handle_status=None, handle_method=None, handler=None, operate_accept_list=None, operate_detail_list=None, forensic_info=None, resource_info=None, geo_info=None, malware_info=None, network_info=None, app_info=None, system_info=None, extend_info=None, recommendation=None, process_info_list=None, user_info_list=None, file_info_list=None, event_details=None):
+    def __init__(self, event_id=None, event_class_id=None, event_type=None, event_name=None, severity=None, container_name=None, image_name=None, host_name=None, host_id=None, private_ip=None, public_ip=None, os_type=None, host_status=None, agent_status=None, protect_status=None, asset_value=None, attack_phase=None, attack_tag=None, occur_time=None, handle_time=None, handle_status=None, handle_method=None, handler=None, operate_accept_list=None, operate_detail_list=None, forensic_info=None, resource_info=None, geo_info=None, malware_info=None, network_info=None, app_info=None, system_info=None, extend_info=None, recommendation=None, description=None, event_abstract=None, process_info_list=None, user_info_list=None, file_info_list=None, event_details=None, tag_list=None):
         """EventManagementResponseInfo
 
         The model defined in huaweicloud sdk
@@ -107,7 +113,7 @@ class EventManagementResponseInfo:
         :type event_id: str
         :param event_class_id: 事件分类，包含如下:   - container_1001 : 容器命名空间   - container_1002 : 容器开放端口   - container_1003 : 容器安全选项   - container_1004 : 容器挂载目录   - containerescape_0001 : 容器高危系统调用   - containerescape_0002 : Shocker攻击   - containerescape_0003 : DirtCow攻击   - containerescape_0004 : 容器文件逃逸攻击   - dockerfile_001 : 用户自定义容器保护文件被修改   - dockerfile_002 : 容器文件系统可执行文件被修改   - dockerproc_001 : 容器进程异常事件上报   - fileprotect_0001 : 文件提权   - fileprotect_0002 : 关键文件变更   - fileprotect_0003 : 关键文件路径变更   - fileprotect_0004 : 文件/目录变更   - av_1002 : 病毒   - av_1003 : 蠕虫   - av_1004 : 木马   - av_1005 : 僵尸网络   - av_1006 : 后门   - av_1007 : 间谍软件   - av_1008 : 恶意广告软件   - av_1009 : 钓鱼   - av_1010 : Rootkit   - av_1011 : 勒索软件   - av_1012 : 黑客工具   - av_1013 : 灰色软件   - av_1015 : Webshell   - av_1016 : 挖矿软件   - login_0001 : 尝试暴力破解   - login_0002 : 爆破成功   - login_1001 : 登录成功   - login_1002 : 异地登录   - login_1003 : 弱口令   - malware_0001 : shell变更事件上报   - malware_0002 : 反弹shell事件上报   - malware_1001 : 恶意程序   - procdet_0001 : 进程异常行为检测   - procdet_0002 : 进程提权   - procreport_0001 : 危险命令   - user_1001 : 账号变更   - user_1002 : 风险账号   - vmescape_0001 : 虚拟机敏感命令执行   - vmescape_0002 : 虚拟化进程访问敏感文件   - vmescape_0003 : 虚拟机异常端口访问   - webshell_0001 : 网站后门   - network_1001 : 恶意挖矿   - network_1002 : 对外DDoS攻击   - network_1003 : 恶意扫描   - network_1004 : 敏感区域攻击   - ransomware_0001 : 勒索攻击   - ransomware_0002 : 勒索攻击   - ransomware_0003 : 勒索攻击   - fileless_0001 : 进程注入   - fileless_0002 : 动态库注入进程   - fileless_0003 : 关键配置变更   - fileless_0004 : 环境变量变更   - fileless_0005 : 内存文件进程   - fileless_0006 : vdso劫持   - crontab_1001 : Crontab可疑任务   - vul_exploit_0001 : Redis漏洞利用攻击   - vul_exploit_0002 : Hadoop漏洞利用攻击   - vul_exploit_0003 : MySQL漏洞利用攻击   - rootkit_0001 : 可疑rootkit文件   - rootkit_0002 : 可疑内核模块   - RASP_0004 : 上传Webshell   - RASP_0018 : 无文件Webshell   - blockexec_001 : 已知勒索攻击   - hips_0001 : Windows Defender防护被禁用   - hips_0002 : 可疑的黑客工具   - hips_0003 : 可疑的勒索加密行为   - hips_0004 : 隐藏账号创建   - hips_0005 : 读取用户密码凭据   - hips_0006 : 可疑的SAM文件导出   - hips_0007 : 可疑shadow copy删除操作   - hips_0008 : 备份文件删除   - hips_0009 : 可疑勒索病毒操作注册表   - hips_0010 : 可疑的异常进程行为   - hips_0011 : 可疑的扫描探测   - hips_0012 : 可疑的勒索病毒脚本运行   - hips_0013 : 可疑的挖矿命令执行   - hips_0014 : 可疑的禁用windows安全中心   - hips_0015 : 可疑的停止防火墙服务行为   - hips_0016 : 可疑的系统自动恢复禁用   - hips_0017 : Offies 创建可执行文件   - hips_0018 : 带宏Offies文件异常创建   - hips_0019 : 可疑的注册表操作   - hips_0020 : Confluence远程代码执行   - hips_0021 : MSDT远程代码执行   - portscan_0001 : 通用端口扫描   - portscan_0002 : 秘密端口扫描   - k8s_1001 : Kubernetes事件删除   - k8s_1002 : 创建特权Pod   - k8s_1003 : Pod中使用交互式shell   - k8s_1004 : 创建敏感目录Pod   - k8s_1005 : 创建主机网络的Pod   - k8s_1006 : 创建主机Pid空间的Pod   - k8s_1007 : 普通pod访问APIserver认证失败   - k8s_1008 : 普通Pod通过Curl访问APIServer   - k8s_1009 : 系统管理空间执行exec   - k8s_1010 : 系统管理空间创建Pod   - k8s_1011 : 创建静态Pod   - k8s_1012 : 创建DaemonSet   - k8s_1013 : 创建集群计划任务   - k8s_1014 : Secrets操作   - k8s_1015 : 枚举用户可执行的操作   - k8s_1016 : 高权限RoleBinding或ClusterRoleBinding   - k8s_1017 : ServiceAccount创建   - k8s_1018 : 创建Cronjob   - k8s_1019 : Pod中exec使用交互式shell   - k8s_1020 : 无权限访问Apiserver   - k8s_1021 : 使用curl访问APIServer   - k8s_1022 : Ingress漏洞   - k8s_1023 : 中间人攻击   - k8s_1024 : 蠕虫挖矿木马   - k8s_1025 : K8s事件删除   - k8s_1026 : SelfSubjectRulesReview场景   - imgblock_0001 : 镜像白名单阻断   - imgblock_0002 : 镜像黑名单阻断   - imgblock_0003 : 镜像标签白名单阻断   - imgblock_0004 : 镜像标签黑名单阻断   - imgblock_0005 : 创建容器白名单阻断   - imgblock_0006 : 创建容器黑名单阻断   - imgblock_0007 : 容器mount proc阻断   - imgblock_0008 : 容器seccomp unconfined阻断   - imgblock_0009 : 容器特权阻断   - imgblock_0010 : 容器capabilities阻断
         :type event_class_id: str
-        :param event_type: 事件类型，包含如下:   - 1001 : 通用恶意软件   - 1002 : 病毒   - 1003 : 蠕虫   - 1004 : 木马   - 1005 : 僵尸网络   - 1006 : 后门   - 1010 : Rootkit   - 1011 : 勒索软件   - 1012 ：黑客工具   - 1015 : Webshell   - 1016 : 挖矿   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2012 : 远程代码执行   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 3029 ：系统安全防护被禁用   - 3030 ：备份删除   - 3031 ：异常注册表操作   - 3036 : 容器镜像阻断   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号   - 4014 ：用户账号添加   - 4020 ：用户密码窃取   - 6002 : 端口扫描   - 6003 ：主机扫描   - 13001 : Kubernetes事件删除   - 13002 : Pod异常行为   - 13003 : 枚举用户信息   - 13004 : 绑定集群用户角色
+        :param event_type: 事件类型，包含如下:   - 1001 : 通用恶意软件   - 1002 : 病毒   - 1003 : 蠕虫   - 1004 : 木马   - 1005 : 僵尸网络   - 1006 : 后门   - 1010 : Rootkit   - 1011 : 勒索软件   - 1012 ：黑客工具   - 1015 : Webshell   - 1016 : 挖矿   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2012 : 远程代码执行   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 3029 ：系统安全防护被禁用   - 3030 ：备份删除   - 3031 ：异常注册表操作   - 3036 : 容器镜像阻断   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号   - 4014 : 用户账号添加   - 4020 : 用户密码窃取   - 6002 : 端口扫描   - 6003 : 主机扫描   - 13001 : Kubernetes事件删除   - 13002 : Pod异常行为   - 13003 : 枚举用户信息   - 13004 : 绑定集群用户角色
         :type event_type: int
         :param event_name: 事件名称
         :type event_name: str
@@ -171,6 +177,10 @@ class EventManagementResponseInfo:
         :type extend_info: object
         :param recommendation: 处置建议
         :type recommendation: str
+        :param description: 告警说明
+        :type description: str
+        :param event_abstract: 告警摘要
+        :type event_abstract: str
         :param process_info_list: 进程信息列表
         :type process_info_list: list[:class:`huaweicloudsdkhss.v5.EventProcessResponseInfo`]
         :param user_info_list: 用户信息列表
@@ -179,6 +189,8 @@ class EventManagementResponseInfo:
         :type file_info_list: list[:class:`huaweicloudsdkhss.v5.EventFileResponseInfo`]
         :param event_details: 事件信息的简述
         :type event_details: str
+        :param tag_list: 标签列表
+        :type tag_list: list[str]
         """
         
         
@@ -217,10 +229,13 @@ class EventManagementResponseInfo:
         self._system_info = None
         self._extend_info = None
         self._recommendation = None
+        self._description = None
+        self._event_abstract = None
         self._process_info_list = None
         self._user_info_list = None
         self._file_info_list = None
         self._event_details = None
+        self._tag_list = None
         self.discriminator = None
 
         if event_id is not None:
@@ -291,6 +306,10 @@ class EventManagementResponseInfo:
             self.extend_info = extend_info
         if recommendation is not None:
             self.recommendation = recommendation
+        if description is not None:
+            self.description = description
+        if event_abstract is not None:
+            self.event_abstract = event_abstract
         if process_info_list is not None:
             self.process_info_list = process_info_list
         if user_info_list is not None:
@@ -299,6 +318,8 @@ class EventManagementResponseInfo:
             self.file_info_list = file_info_list
         if event_details is not None:
             self.event_details = event_details
+        if tag_list is not None:
+            self.tag_list = tag_list
 
     @property
     def event_id(self):
@@ -348,7 +369,7 @@ class EventManagementResponseInfo:
     def event_type(self):
         """Gets the event_type of this EventManagementResponseInfo.
 
-        事件类型，包含如下:   - 1001 : 通用恶意软件   - 1002 : 病毒   - 1003 : 蠕虫   - 1004 : 木马   - 1005 : 僵尸网络   - 1006 : 后门   - 1010 : Rootkit   - 1011 : 勒索软件   - 1012 ：黑客工具   - 1015 : Webshell   - 1016 : 挖矿   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2012 : 远程代码执行   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 3029 ：系统安全防护被禁用   - 3030 ：备份删除   - 3031 ：异常注册表操作   - 3036 : 容器镜像阻断   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号   - 4014 ：用户账号添加   - 4020 ：用户密码窃取   - 6002 : 端口扫描   - 6003 ：主机扫描   - 13001 : Kubernetes事件删除   - 13002 : Pod异常行为   - 13003 : 枚举用户信息   - 13004 : 绑定集群用户角色
+        事件类型，包含如下:   - 1001 : 通用恶意软件   - 1002 : 病毒   - 1003 : 蠕虫   - 1004 : 木马   - 1005 : 僵尸网络   - 1006 : 后门   - 1010 : Rootkit   - 1011 : 勒索软件   - 1012 ：黑客工具   - 1015 : Webshell   - 1016 : 挖矿   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2012 : 远程代码执行   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 3029 ：系统安全防护被禁用   - 3030 ：备份删除   - 3031 ：异常注册表操作   - 3036 : 容器镜像阻断   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号   - 4014 : 用户账号添加   - 4020 : 用户密码窃取   - 6002 : 端口扫描   - 6003 : 主机扫描   - 13001 : Kubernetes事件删除   - 13002 : Pod异常行为   - 13003 : 枚举用户信息   - 13004 : 绑定集群用户角色
 
         :return: The event_type of this EventManagementResponseInfo.
         :rtype: int
@@ -359,7 +380,7 @@ class EventManagementResponseInfo:
     def event_type(self, event_type):
         """Sets the event_type of this EventManagementResponseInfo.
 
-        事件类型，包含如下:   - 1001 : 通用恶意软件   - 1002 : 病毒   - 1003 : 蠕虫   - 1004 : 木马   - 1005 : 僵尸网络   - 1006 : 后门   - 1010 : Rootkit   - 1011 : 勒索软件   - 1012 ：黑客工具   - 1015 : Webshell   - 1016 : 挖矿   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2012 : 远程代码执行   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 3029 ：系统安全防护被禁用   - 3030 ：备份删除   - 3031 ：异常注册表操作   - 3036 : 容器镜像阻断   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号   - 4014 ：用户账号添加   - 4020 ：用户密码窃取   - 6002 : 端口扫描   - 6003 ：主机扫描   - 13001 : Kubernetes事件删除   - 13002 : Pod异常行为   - 13003 : 枚举用户信息   - 13004 : 绑定集群用户角色
+        事件类型，包含如下:   - 1001 : 通用恶意软件   - 1002 : 病毒   - 1003 : 蠕虫   - 1004 : 木马   - 1005 : 僵尸网络   - 1006 : 后门   - 1010 : Rootkit   - 1011 : 勒索软件   - 1012 ：黑客工具   - 1015 : Webshell   - 1016 : 挖矿   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2012 : 远程代码执行   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 3029 ：系统安全防护被禁用   - 3030 ：备份删除   - 3031 ：异常注册表操作   - 3036 : 容器镜像阻断   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号   - 4014 : 用户账号添加   - 4020 : 用户密码窃取   - 6002 : 端口扫描   - 6003 : 主机扫描   - 13001 : Kubernetes事件删除   - 13002 : Pod异常行为   - 13003 : 枚举用户信息   - 13004 : 绑定集群用户角色
 
         :param event_type: The event_type of this EventManagementResponseInfo.
         :type event_type: int
@@ -1045,6 +1066,50 @@ class EventManagementResponseInfo:
         self._recommendation = recommendation
 
     @property
+    def description(self):
+        """Gets the description of this EventManagementResponseInfo.
+
+        告警说明
+
+        :return: The description of this EventManagementResponseInfo.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this EventManagementResponseInfo.
+
+        告警说明
+
+        :param description: The description of this EventManagementResponseInfo.
+        :type description: str
+        """
+        self._description = description
+
+    @property
+    def event_abstract(self):
+        """Gets the event_abstract of this EventManagementResponseInfo.
+
+        告警摘要
+
+        :return: The event_abstract of this EventManagementResponseInfo.
+        :rtype: str
+        """
+        return self._event_abstract
+
+    @event_abstract.setter
+    def event_abstract(self, event_abstract):
+        """Sets the event_abstract of this EventManagementResponseInfo.
+
+        告警摘要
+
+        :param event_abstract: The event_abstract of this EventManagementResponseInfo.
+        :type event_abstract: str
+        """
+        self._event_abstract = event_abstract
+
+    @property
     def process_info_list(self):
         """Gets the process_info_list of this EventManagementResponseInfo.
 
@@ -1131,6 +1196,28 @@ class EventManagementResponseInfo:
         :type event_details: str
         """
         self._event_details = event_details
+
+    @property
+    def tag_list(self):
+        """Gets the tag_list of this EventManagementResponseInfo.
+
+        标签列表
+
+        :return: The tag_list of this EventManagementResponseInfo.
+        :rtype: list[str]
+        """
+        return self._tag_list
+
+    @tag_list.setter
+    def tag_list(self, tag_list):
+        """Sets the tag_list of this EventManagementResponseInfo.
+
+        标签列表
+
+        :param tag_list: The tag_list of this EventManagementResponseInfo.
+        :type tag_list: list[str]
+        """
+        self._tag_list = tag_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -39,7 +39,7 @@ class ShowOpenApiCalledRecordsRequest:
 
         :param limit: 分页大小，默认1000，最大2000。
         :type limit: int
-        :param called_url: 需要查询调用记录的URL，例如：/v1/{project_id}/sdg/database/watermark/embed。
+        :param called_url: 需要查询调用记录的URL，例如：/v1/{project_id}/sdg/database/watermark/embed
         :type called_url: str
         :param start_time: 开始时间（Unix timestamp），单位：毫秒，例如：0
         :type start_time: int
@@ -95,7 +95,7 @@ class ShowOpenApiCalledRecordsRequest:
     def called_url(self):
         """Gets the called_url of this ShowOpenApiCalledRecordsRequest.
 
-        需要查询调用记录的URL，例如：/v1/{project_id}/sdg/database/watermark/embed。
+        需要查询调用记录的URL，例如：/v1/{project_id}/sdg/database/watermark/embed
 
         :return: The called_url of this ShowOpenApiCalledRecordsRequest.
         :rtype: str
@@ -106,7 +106,7 @@ class ShowOpenApiCalledRecordsRequest:
     def called_url(self, called_url):
         """Sets the called_url of this ShowOpenApiCalledRecordsRequest.
 
-        需要查询调用记录的URL，例如：/v1/{project_id}/sdg/database/watermark/embed。
+        需要查询调用记录的URL，例如：/v1/{project_id}/sdg/database/watermark/embed
 
         :param called_url: The called_url of this ShowOpenApiCalledRecordsRequest.
         :type called_url: str

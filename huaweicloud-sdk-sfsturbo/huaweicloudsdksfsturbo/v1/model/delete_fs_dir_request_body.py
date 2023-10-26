@@ -29,7 +29,7 @@ class DeleteFsDirRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param path: 合法的的目录全路径
+        :param path: 合法的目录全路径
         :type path: str
         """
         
@@ -44,7 +44,7 @@ class DeleteFsDirRequestBody:
     def path(self):
         """Gets the path of this DeleteFsDirRequestBody.
 
-        合法的的目录全路径
+        合法的目录全路径
 
         :return: The path of this DeleteFsDirRequestBody.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteFsDirRequestBody:
     def path(self, path):
         """Sets the path of this DeleteFsDirRequestBody.
 
-        合法的的目录全路径
+        合法的目录全路径
 
         :param path: The path of this DeleteFsDirRequestBody.
         :type path: str

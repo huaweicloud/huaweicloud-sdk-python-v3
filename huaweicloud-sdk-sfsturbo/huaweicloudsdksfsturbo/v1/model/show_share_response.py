@@ -104,9 +104,9 @@ class ShowShareResponse(SdkResponse):
         :type share_type: str
         :param size: SFS Turbo文件系统总容量，单位GB。
         :type size: str
-        :param status: SFS Turbo文件系统的状态。&#39;100&#39;表示创建中，&#39;200&#39;表示可用，&#39;303&#39;表示创建失败。
+        :param status: SFS Turbo文件系统的状态。&#39;100&#39;表示创建中，&#39;200&#39;表示可用，&#39;303&#39;表示创建失败，&#39;800&#39;表示实例被冻结。
         :type status: str
-        :param sub_status: SFS Turbo文件系统的子状态。&#39;121&#39;表示扩容中，&#39;221&#39;表示扩容成功，&#39;321&#39;表示扩容失败。
+        :param sub_status: SFS Turbo文件系统的子状态。 &#39;121&#39;表示扩容中；&#39;132&#39;表示修改安全组中；&#39;137&#39;表示添加VPC中；&#39;138&#39;表示删除VPC中；&#39;150&#39;表示配置联动后端中；&#39;151&#39;表示删除联动后端配置中； &#39;221&#39;表示扩容成功；&#39;232&#39;表示修改安全组成功；&#39;237&#39;表示添加VPC成功；&#39;238&#39;表示删除VPC成功；&#39;250&#39;表示配置联动后端成功；&#39;251&#39;表示删除联动后端配置成功； &#39;321&#39;表示扩容失败；&#39;332&#39;表示修改安全组失败；&#39;337&#39;表示添加VPC失败；&#39;338&#39;表示删除VPC失败；&#39;350&#39;表示配置联动后端失败；&#39;351&#39;表示删除联动后端配置失败； 
         :type sub_status: str
         :param subnet_id: 用户指定的子网的网络ID。
         :type subnet_id: str
@@ -556,7 +556,7 @@ class ShowShareResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowShareResponse.
 
-        SFS Turbo文件系统的状态。'100'表示创建中，'200'表示可用，'303'表示创建失败。
+        SFS Turbo文件系统的状态。'100'表示创建中，'200'表示可用，'303'表示创建失败，'800'表示实例被冻结。
 
         :return: The status of this ShowShareResponse.
         :rtype: str
@@ -567,7 +567,7 @@ class ShowShareResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowShareResponse.
 
-        SFS Turbo文件系统的状态。'100'表示创建中，'200'表示可用，'303'表示创建失败。
+        SFS Turbo文件系统的状态。'100'表示创建中，'200'表示可用，'303'表示创建失败，'800'表示实例被冻结。
 
         :param status: The status of this ShowShareResponse.
         :type status: str
@@ -578,7 +578,7 @@ class ShowShareResponse(SdkResponse):
     def sub_status(self):
         """Gets the sub_status of this ShowShareResponse.
 
-        SFS Turbo文件系统的子状态。'121'表示扩容中，'221'表示扩容成功，'321'表示扩容失败。
+        SFS Turbo文件系统的子状态。 '121'表示扩容中；'132'表示修改安全组中；'137'表示添加VPC中；'138'表示删除VPC中；'150'表示配置联动后端中；'151'表示删除联动后端配置中； '221'表示扩容成功；'232'表示修改安全组成功；'237'表示添加VPC成功；'238'表示删除VPC成功；'250'表示配置联动后端成功；'251'表示删除联动后端配置成功； '321'表示扩容失败；'332'表示修改安全组失败；'337'表示添加VPC失败；'338'表示删除VPC失败；'350'表示配置联动后端失败；'351'表示删除联动后端配置失败； 
 
         :return: The sub_status of this ShowShareResponse.
         :rtype: str
@@ -589,7 +589,7 @@ class ShowShareResponse(SdkResponse):
     def sub_status(self, sub_status):
         """Sets the sub_status of this ShowShareResponse.
 
-        SFS Turbo文件系统的子状态。'121'表示扩容中，'221'表示扩容成功，'321'表示扩容失败。
+        SFS Turbo文件系统的子状态。 '121'表示扩容中；'132'表示修改安全组中；'137'表示添加VPC中；'138'表示删除VPC中；'150'表示配置联动后端中；'151'表示删除联动后端配置中； '221'表示扩容成功；'232'表示修改安全组成功；'237'表示添加VPC成功；'238'表示删除VPC成功；'250'表示配置联动后端成功；'251'表示删除联动后端配置成功； '321'表示扩容失败；'332'表示修改安全组失败；'337'表示添加VPC失败；'338'表示删除VPC失败；'350'表示配置联动后端失败；'351'表示删除联动后端配置失败； 
 
         :param sub_status: The sub_status of this ShowShareResponse.
         :type sub_status: str

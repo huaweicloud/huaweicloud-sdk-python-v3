@@ -20,17 +20,19 @@ class PipelineByTemplateDTO:
         'name': 'str',
         'description': 'str',
         'is_publish': 'bool',
-        'sources': 'list[CodeSource]'
+        'sources': 'list[CodeSource]',
+        'variables': 'list[PipelineByTemplateDTOVariables]'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
         'is_publish': 'is_publish',
-        'sources': 'sources'
+        'sources': 'sources',
+        'variables': 'variables'
     }
 
-    def __init__(self, name=None, description=None, is_publish=None, sources=None):
+    def __init__(self, name=None, description=None, is_publish=None, sources=None, variables=None):
         """PipelineByTemplateDTO
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class PipelineByTemplateDTO:
         :type is_publish: bool
         :param sources: 流水线源
         :type sources: list[:class:`huaweicloudsdkcodeartspipeline.v2.CodeSource`]
+        :param variables: 流水线参数
+        :type variables: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineByTemplateDTOVariables`]
         """
         
         
@@ -51,6 +55,7 @@ class PipelineByTemplateDTO:
         self._description = None
         self._is_publish = None
         self._sources = None
+        self._variables = None
         self.discriminator = None
 
         if name is not None:
@@ -61,6 +66,8 @@ class PipelineByTemplateDTO:
             self.is_publish = is_publish
         if sources is not None:
             self.sources = sources
+        if variables is not None:
+            self.variables = variables
 
     @property
     def name(self):
@@ -149,6 +156,28 @@ class PipelineByTemplateDTO:
         :type sources: list[:class:`huaweicloudsdkcodeartspipeline.v2.CodeSource`]
         """
         self._sources = sources
+
+    @property
+    def variables(self):
+        """Gets the variables of this PipelineByTemplateDTO.
+
+        流水线参数
+
+        :return: The variables of this PipelineByTemplateDTO.
+        :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineByTemplateDTOVariables`]
+        """
+        return self._variables
+
+    @variables.setter
+    def variables(self, variables):
+        """Sets the variables of this PipelineByTemplateDTO.
+
+        流水线参数
+
+        :param variables: The variables of this PipelineByTemplateDTO.
+        :type variables: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineByTemplateDTOVariables`]
+        """
+        self._variables = variables
 
     def to_dict(self):
         """Returns the model properties as a dict"""

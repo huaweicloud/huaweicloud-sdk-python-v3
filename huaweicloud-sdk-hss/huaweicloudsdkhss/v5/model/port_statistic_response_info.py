@@ -19,16 +19,18 @@ class PortStatisticResponseInfo:
     openapi_types = {
         'port': 'int',
         'type': 'str',
-        'num': 'int'
+        'num': 'int',
+        'status': 'str'
     }
 
     attribute_map = {
         'port': 'port',
         'type': 'type',
-        'num': 'num'
+        'num': 'num',
+        'status': 'status'
     }
 
-    def __init__(self, port=None, type=None, num=None):
+    def __init__(self, port=None, type=None, num=None, status=None):
         """PortStatisticResponseInfo
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class PortStatisticResponseInfo:
         :type type: str
         :param num: 端口数量
         :type num: int
+        :param status: 危险类型:danger/unknown
+        :type status: str
         """
         
         
@@ -46,6 +50,7 @@ class PortStatisticResponseInfo:
         self._port = None
         self._type = None
         self._num = None
+        self._status = None
         self.discriminator = None
 
         if port is not None:
@@ -54,6 +59,8 @@ class PortStatisticResponseInfo:
             self.type = type
         if num is not None:
             self.num = num
+        if status is not None:
+            self.status = status
 
     @property
     def port(self):
@@ -120,6 +127,28 @@ class PortStatisticResponseInfo:
         :type num: int
         """
         self._num = num
+
+    @property
+    def status(self):
+        """Gets the status of this PortStatisticResponseInfo.
+
+        危险类型:danger/unknown
+
+        :return: The status of this PortStatisticResponseInfo.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this PortStatisticResponseInfo.
+
+        危险类型:danger/unknown
+
+        :param status: The status of this PortStatisticResponseInfo.
+        :type status: str
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

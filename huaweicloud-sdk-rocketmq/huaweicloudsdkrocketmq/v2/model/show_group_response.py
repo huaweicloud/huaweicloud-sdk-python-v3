@@ -22,6 +22,7 @@ class ShowGroupResponse(SdkResponse):
         'broadcast': 'bool',
         'brokers': 'list[str]',
         'name': 'str',
+        'group_desc': 'str',
         'retry_max_time': 'float',
         'app_id': 'str',
         'app_name': 'str',
@@ -33,13 +34,14 @@ class ShowGroupResponse(SdkResponse):
         'broadcast': 'broadcast',
         'brokers': 'brokers',
         'name': 'name',
+        'group_desc': 'group_desc',
         'retry_max_time': 'retry_max_time',
         'app_id': 'app_id',
         'app_name': 'app_name',
         'permissions': 'permissions'
     }
 
-    def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, retry_max_time=None, app_id=None, app_name=None, permissions=None):
+    def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, group_desc=None, retry_max_time=None, app_id=None, app_name=None, permissions=None):
         """ShowGroupResponse
 
         The model defined in huaweicloud sdk
@@ -52,6 +54,8 @@ class ShowGroupResponse(SdkResponse):
         :type brokers: list[str]
         :param name: 消费组名称。
         :type name: str
+        :param group_desc: 消费组描述。
+        :type group_desc: str
         :param retry_max_time: 最大重试次数。
         :type retry_max_time: float
         :param app_id: 应用id。
@@ -68,6 +72,7 @@ class ShowGroupResponse(SdkResponse):
         self._broadcast = None
         self._brokers = None
         self._name = None
+        self._group_desc = None
         self._retry_max_time = None
         self._app_id = None
         self._app_name = None
@@ -82,6 +87,8 @@ class ShowGroupResponse(SdkResponse):
             self.brokers = brokers
         if name is not None:
             self.name = name
+        if group_desc is not None:
+            self.group_desc = group_desc
         if retry_max_time is not None:
             self.retry_max_time = retry_max_time
         if app_id is not None:
@@ -178,6 +185,28 @@ class ShowGroupResponse(SdkResponse):
         :type name: str
         """
         self._name = name
+
+    @property
+    def group_desc(self):
+        """Gets the group_desc of this ShowGroupResponse.
+
+        消费组描述。
+
+        :return: The group_desc of this ShowGroupResponse.
+        :rtype: str
+        """
+        return self._group_desc
+
+    @group_desc.setter
+    def group_desc(self, group_desc):
+        """Sets the group_desc of this ShowGroupResponse.
+
+        消费组描述。
+
+        :param group_desc: The group_desc of this ShowGroupResponse.
+        :type group_desc: str
+        """
+        self._group_desc = group_desc
 
     @property
     def retry_max_time(self):

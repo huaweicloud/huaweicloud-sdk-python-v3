@@ -18,31 +18,43 @@ class ListPortStatisticsRequest:
 
     openapi_types = {
         'port': 'int',
+        'port_string': 'str',
         'type': 'str',
         'enterprise_project_id': 'str',
+        'sort_key': 'str',
+        'sort_dir': 'str',
         'limit': 'int',
         'offset': 'int'
     }
 
     attribute_map = {
         'port': 'port',
+        'port_string': 'port_string',
         'type': 'type',
         'enterprise_project_id': 'enterprise_project_id',
+        'sort_key': 'sort_key',
+        'sort_dir': 'sort_dir',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, port=None, type=None, enterprise_project_id=None, limit=None, offset=None):
+    def __init__(self, port=None, port_string=None, type=None, enterprise_project_id=None, sort_key=None, sort_dir=None, limit=None, offset=None):
         """ListPortStatisticsRequest
 
         The model defined in huaweicloud sdk
 
-        :param port: 端口号
+        :param port: 端口号，精确匹配
         :type port: int
+        :param port_string: 端口字符串，用来进行模糊匹配
+        :type port_string: str
         :param type: 端口类型
         :type type: str
         :param enterprise_project_id: 企业项目
         :type enterprise_project_id: str
+        :param sort_key: 排序的key值，目前支持按照端口号port排序
+        :type sort_key: str
+        :param sort_dir: 升序还是降序，默认升序，asc
+        :type sort_dir: str
         :param limit: 默认10
         :type limit: int
         :param offset: 默认是0
@@ -52,18 +64,27 @@ class ListPortStatisticsRequest:
         
 
         self._port = None
+        self._port_string = None
         self._type = None
         self._enterprise_project_id = None
+        self._sort_key = None
+        self._sort_dir = None
         self._limit = None
         self._offset = None
         self.discriminator = None
 
         if port is not None:
             self.port = port
+        if port_string is not None:
+            self.port_string = port_string
         if type is not None:
             self.type = type
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if sort_key is not None:
+            self.sort_key = sort_key
+        if sort_dir is not None:
+            self.sort_dir = sort_dir
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -73,7 +94,7 @@ class ListPortStatisticsRequest:
     def port(self):
         """Gets the port of this ListPortStatisticsRequest.
 
-        端口号
+        端口号，精确匹配
 
         :return: The port of this ListPortStatisticsRequest.
         :rtype: int
@@ -84,12 +105,34 @@ class ListPortStatisticsRequest:
     def port(self, port):
         """Sets the port of this ListPortStatisticsRequest.
 
-        端口号
+        端口号，精确匹配
 
         :param port: The port of this ListPortStatisticsRequest.
         :type port: int
         """
         self._port = port
+
+    @property
+    def port_string(self):
+        """Gets the port_string of this ListPortStatisticsRequest.
+
+        端口字符串，用来进行模糊匹配
+
+        :return: The port_string of this ListPortStatisticsRequest.
+        :rtype: str
+        """
+        return self._port_string
+
+    @port_string.setter
+    def port_string(self, port_string):
+        """Sets the port_string of this ListPortStatisticsRequest.
+
+        端口字符串，用来进行模糊匹配
+
+        :param port_string: The port_string of this ListPortStatisticsRequest.
+        :type port_string: str
+        """
+        self._port_string = port_string
 
     @property
     def type(self):
@@ -134,6 +177,50 @@ class ListPortStatisticsRequest:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def sort_key(self):
+        """Gets the sort_key of this ListPortStatisticsRequest.
+
+        排序的key值，目前支持按照端口号port排序
+
+        :return: The sort_key of this ListPortStatisticsRequest.
+        :rtype: str
+        """
+        return self._sort_key
+
+    @sort_key.setter
+    def sort_key(self, sort_key):
+        """Sets the sort_key of this ListPortStatisticsRequest.
+
+        排序的key值，目前支持按照端口号port排序
+
+        :param sort_key: The sort_key of this ListPortStatisticsRequest.
+        :type sort_key: str
+        """
+        self._sort_key = sort_key
+
+    @property
+    def sort_dir(self):
+        """Gets the sort_dir of this ListPortStatisticsRequest.
+
+        升序还是降序，默认升序，asc
+
+        :return: The sort_dir of this ListPortStatisticsRequest.
+        :rtype: str
+        """
+        return self._sort_dir
+
+    @sort_dir.setter
+    def sort_dir(self, sort_dir):
+        """Sets the sort_dir of this ListPortStatisticsRequest.
+
+        升序还是降序，默认升序，asc
+
+        :param sort_dir: The sort_dir of this ListPortStatisticsRequest.
+        :type sort_dir: str
+        """
+        self._sort_dir = sort_dir
 
     @property
     def limit(self):

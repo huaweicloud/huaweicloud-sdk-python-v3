@@ -32,6 +32,7 @@ class ListHostStatusRequest:
         'group_id': 'str',
         'group_name': 'str',
         'region': 'str',
+        'has_intrusion': 'bool',
         'policy_group_id': 'str',
         'policy_group_name': 'str',
         'charging_mode': 'str',
@@ -41,6 +42,7 @@ class ListHostStatusRequest:
         'asset_value': 'str',
         'label': 'str',
         'server_group': 'str',
+        'agent_upgradable': 'bool',
         'limit': 'int',
         'offset': 'int'
     }
@@ -61,6 +63,7 @@ class ListHostStatusRequest:
         'group_id': 'group_id',
         'group_name': 'group_name',
         'region': 'region',
+        'has_intrusion': 'has_intrusion',
         'policy_group_id': 'policy_group_id',
         'policy_group_name': 'policy_group_name',
         'charging_mode': 'charging_mode',
@@ -70,11 +73,12 @@ class ListHostStatusRequest:
         'asset_value': 'asset_value',
         'label': 'label',
         'server_group': 'server_group',
+        'agent_upgradable': 'agent_upgradable',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, enterprise_project_id=None, version=None, agent_status=None, detect_result=None, host_name=None, host_id=None, host_status=None, os_type=None, private_ip=None, public_ip=None, ip_addr=None, protect_status=None, group_id=None, group_name=None, region=None, policy_group_id=None, policy_group_name=None, charging_mode=None, refresh=None, above_version=None, outside_host=None, asset_value=None, label=None, server_group=None, limit=None, offset=None):
+    def __init__(self, enterprise_project_id=None, version=None, agent_status=None, detect_result=None, host_name=None, host_id=None, host_status=None, os_type=None, private_ip=None, public_ip=None, ip_addr=None, protect_status=None, group_id=None, group_name=None, region=None, has_intrusion=None, policy_group_id=None, policy_group_name=None, charging_mode=None, refresh=None, above_version=None, outside_host=None, asset_value=None, label=None, server_group=None, agent_upgradable=None, limit=None, offset=None):
         """ListHostStatusRequest
 
         The model defined in huaweicloud sdk
@@ -109,6 +113,8 @@ class ListHostStatusRequest:
         :type group_name: str
         :param region: region id
         :type region: str
+        :param has_intrusion: 存在告警事件
+        :type has_intrusion: bool
         :param policy_group_id: 策略组ID
         :type policy_group_id: str
         :param policy_group_name: 策略组名称
@@ -127,6 +133,8 @@ class ListHostStatusRequest:
         :type label: str
         :param server_group: 资产服务器组
         :type server_group: str
+        :param agent_upgradable: agent是否可升级
+        :type agent_upgradable: bool
         :param limit: 每页显示个数，默认10
         :type limit: int
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
@@ -150,6 +158,7 @@ class ListHostStatusRequest:
         self._group_id = None
         self._group_name = None
         self._region = None
+        self._has_intrusion = None
         self._policy_group_id = None
         self._policy_group_name = None
         self._charging_mode = None
@@ -159,6 +168,7 @@ class ListHostStatusRequest:
         self._asset_value = None
         self._label = None
         self._server_group = None
+        self._agent_upgradable = None
         self._limit = None
         self._offset = None
         self.discriminator = None
@@ -193,6 +203,8 @@ class ListHostStatusRequest:
             self.group_name = group_name
         if region is not None:
             self.region = region
+        if has_intrusion is not None:
+            self.has_intrusion = has_intrusion
         if policy_group_id is not None:
             self.policy_group_id = policy_group_id
         if policy_group_name is not None:
@@ -211,6 +223,8 @@ class ListHostStatusRequest:
             self.label = label
         if server_group is not None:
             self.server_group = server_group
+        if agent_upgradable is not None:
+            self.agent_upgradable = agent_upgradable
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -547,6 +561,28 @@ class ListHostStatusRequest:
         self._region = region
 
     @property
+    def has_intrusion(self):
+        """Gets the has_intrusion of this ListHostStatusRequest.
+
+        存在告警事件
+
+        :return: The has_intrusion of this ListHostStatusRequest.
+        :rtype: bool
+        """
+        return self._has_intrusion
+
+    @has_intrusion.setter
+    def has_intrusion(self, has_intrusion):
+        """Sets the has_intrusion of this ListHostStatusRequest.
+
+        存在告警事件
+
+        :param has_intrusion: The has_intrusion of this ListHostStatusRequest.
+        :type has_intrusion: bool
+        """
+        self._has_intrusion = has_intrusion
+
+    @property
     def policy_group_id(self):
         """Gets the policy_group_id of this ListHostStatusRequest.
 
@@ -743,6 +779,28 @@ class ListHostStatusRequest:
         :type server_group: str
         """
         self._server_group = server_group
+
+    @property
+    def agent_upgradable(self):
+        """Gets the agent_upgradable of this ListHostStatusRequest.
+
+        agent是否可升级
+
+        :return: The agent_upgradable of this ListHostStatusRequest.
+        :rtype: bool
+        """
+        return self._agent_upgradable
+
+    @agent_upgradable.setter
+    def agent_upgradable(self, agent_upgradable):
+        """Sets the agent_upgradable of this ListHostStatusRequest.
+
+        agent是否可升级
+
+        :param agent_upgradable: The agent_upgradable of this ListHostStatusRequest.
+        :type agent_upgradable: bool
+        """
+        self._agent_upgradable = agent_upgradable
 
     @property
     def limit(self):

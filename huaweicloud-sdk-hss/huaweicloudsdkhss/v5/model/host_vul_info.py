@@ -33,7 +33,12 @@ class HostVulInfo:
         'repair_success_num': 'int',
         'cve_list': 'list[HostVulInfoCveList]',
         'is_affect_business': 'bool',
-        'first_scan_time': 'int'
+        'first_scan_time': 'int',
+        'app_name': 'str',
+        'app_version': 'str',
+        'app_path': 'str',
+        'version': 'str',
+        'support_restore': 'bool'
     }
 
     attribute_map = {
@@ -53,10 +58,15 @@ class HostVulInfo:
         'repair_success_num': 'repair_success_num',
         'cve_list': 'cve_list',
         'is_affect_business': 'is_affect_business',
-        'first_scan_time': 'first_scan_time'
+        'first_scan_time': 'first_scan_time',
+        'app_name': 'app_name',
+        'app_version': 'app_version',
+        'app_path': 'app_path',
+        'version': 'version',
+        'support_restore': 'support_restore'
     }
 
-    def __init__(self, vul_name=None, vul_id=None, label_list=None, repair_necessity=None, scan_time=None, type=None, app_list=None, severity_level=None, solution_detail=None, url=None, description=None, repair_cmd=None, status=None, repair_success_num=None, cve_list=None, is_affect_business=None, first_scan_time=None):
+    def __init__(self, vul_name=None, vul_id=None, label_list=None, repair_necessity=None, scan_time=None, type=None, app_list=None, severity_level=None, solution_detail=None, url=None, description=None, repair_cmd=None, status=None, repair_success_num=None, cve_list=None, is_affect_business=None, first_scan_time=None, app_name=None, app_version=None, app_path=None, version=None, support_restore=None):
         """HostVulInfo
 
         The model defined in huaweicloud sdk
@@ -75,7 +85,7 @@ class HostVulInfo:
         :type type: str
         :param app_list: 服务器上受该漏洞影响的软件列表
         :type app_list: list[:class:`huaweicloudsdkhss.v5.HostVulInfoAppList`]
-        :param severity_level: 危险程度   - Critical : 致命   - High : 高危   - Medium : 中危   - Low : 低危
+        :param severity_level: 危险程度   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
         :type severity_level: str
         :param solution_detail: 解决方案
         :type solution_detail: str
@@ -95,6 +105,16 @@ class HostVulInfo:
         :type is_affect_business: bool
         :param first_scan_time: 首次扫描时间
         :type first_scan_time: int
+        :param app_name: 软件名称
+        :type app_name: str
+        :param app_version: 软件版本
+        :type app_version: str
+        :param app_path: 软件路径
+        :type app_path: str
+        :param version: 主机配额
+        :type version: str
+        :param support_restore: 是否可以回滚到修复漏洞时创建的备份
+        :type support_restore: bool
         """
         
         
@@ -116,6 +136,11 @@ class HostVulInfo:
         self._cve_list = None
         self._is_affect_business = None
         self._first_scan_time = None
+        self._app_name = None
+        self._app_version = None
+        self._app_path = None
+        self._version = None
+        self._support_restore = None
         self.discriminator = None
 
         if vul_name is not None:
@@ -152,6 +177,16 @@ class HostVulInfo:
             self.is_affect_business = is_affect_business
         if first_scan_time is not None:
             self.first_scan_time = first_scan_time
+        if app_name is not None:
+            self.app_name = app_name
+        if app_version is not None:
+            self.app_version = app_version
+        if app_path is not None:
+            self.app_path = app_path
+        if version is not None:
+            self.version = version
+        if support_restore is not None:
+            self.support_restore = support_restore
 
     @property
     def vul_name(self):
@@ -311,7 +346,7 @@ class HostVulInfo:
     def severity_level(self):
         """Gets the severity_level of this HostVulInfo.
 
-        危险程度   - Critical : 致命   - High : 高危   - Medium : 中危   - Low : 低危
+        危险程度   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
 
         :return: The severity_level of this HostVulInfo.
         :rtype: str
@@ -322,7 +357,7 @@ class HostVulInfo:
     def severity_level(self, severity_level):
         """Sets the severity_level of this HostVulInfo.
 
-        危险程度   - Critical : 致命   - High : 高危   - Medium : 中危   - Low : 低危
+        危险程度   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
 
         :param severity_level: The severity_level of this HostVulInfo.
         :type severity_level: str
@@ -526,6 +561,116 @@ class HostVulInfo:
         :type first_scan_time: int
         """
         self._first_scan_time = first_scan_time
+
+    @property
+    def app_name(self):
+        """Gets the app_name of this HostVulInfo.
+
+        软件名称
+
+        :return: The app_name of this HostVulInfo.
+        :rtype: str
+        """
+        return self._app_name
+
+    @app_name.setter
+    def app_name(self, app_name):
+        """Sets the app_name of this HostVulInfo.
+
+        软件名称
+
+        :param app_name: The app_name of this HostVulInfo.
+        :type app_name: str
+        """
+        self._app_name = app_name
+
+    @property
+    def app_version(self):
+        """Gets the app_version of this HostVulInfo.
+
+        软件版本
+
+        :return: The app_version of this HostVulInfo.
+        :rtype: str
+        """
+        return self._app_version
+
+    @app_version.setter
+    def app_version(self, app_version):
+        """Sets the app_version of this HostVulInfo.
+
+        软件版本
+
+        :param app_version: The app_version of this HostVulInfo.
+        :type app_version: str
+        """
+        self._app_version = app_version
+
+    @property
+    def app_path(self):
+        """Gets the app_path of this HostVulInfo.
+
+        软件路径
+
+        :return: The app_path of this HostVulInfo.
+        :rtype: str
+        """
+        return self._app_path
+
+    @app_path.setter
+    def app_path(self, app_path):
+        """Sets the app_path of this HostVulInfo.
+
+        软件路径
+
+        :param app_path: The app_path of this HostVulInfo.
+        :type app_path: str
+        """
+        self._app_path = app_path
+
+    @property
+    def version(self):
+        """Gets the version of this HostVulInfo.
+
+        主机配额
+
+        :return: The version of this HostVulInfo.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this HostVulInfo.
+
+        主机配额
+
+        :param version: The version of this HostVulInfo.
+        :type version: str
+        """
+        self._version = version
+
+    @property
+    def support_restore(self):
+        """Gets the support_restore of this HostVulInfo.
+
+        是否可以回滚到修复漏洞时创建的备份
+
+        :return: The support_restore of this HostVulInfo.
+        :rtype: bool
+        """
+        return self._support_restore
+
+    @support_restore.setter
+    def support_restore(self, support_restore):
+        """Sets the support_restore of this HostVulInfo.
+
+        是否可以回滚到修复漏洞时创建的备份
+
+        :param support_restore: The support_restore of this HostVulInfo.
+        :type support_restore: bool
+        """
+        self._support_restore = support_restore
 
     def to_dict(self):
         """Returns the model properties as a dict"""

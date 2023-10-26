@@ -50,7 +50,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
         :param id: 任务id。
         :type id: str
-        :param task_type: 任务类型，REFRESH：刷新任务；PREHEATING：预热任务。
+        :param task_type: 任务类型，refresh：刷新任务；preheating：预热任务。
         :type task_type: str
         :param status: 任务执行结果,task_done:成功，task_inprocess:处理中。
         :type status: str
@@ -131,7 +131,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
     def task_type(self):
         """Gets the task_type of this ShowHistoryTaskDetailsResponse.
 
-        任务类型，REFRESH：刷新任务；PREHEATING：预热任务。
+        任务类型，refresh：刷新任务；preheating：预热任务。
 
         :return: The task_type of this ShowHistoryTaskDetailsResponse.
         :rtype: str
@@ -142,7 +142,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
     def task_type(self, task_type):
         """Sets the task_type of this ShowHistoryTaskDetailsResponse.
 
-        任务类型，REFRESH：刷新任务；PREHEATING：预热任务。
+        任务类型，refresh：刷新任务；preheating：预热任务。
 
         :param task_type: The task_type of this ShowHistoryTaskDetailsResponse.
         :type task_type: str

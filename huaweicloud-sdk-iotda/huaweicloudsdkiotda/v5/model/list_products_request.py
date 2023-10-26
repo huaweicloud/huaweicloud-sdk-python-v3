@@ -21,6 +21,7 @@ class ListProductsRequest:
         'limit': 'int',
         'marker': 'str',
         'app_id': 'str',
+        'product_name': 'str',
         'offset': 'int'
     }
 
@@ -29,10 +30,11 @@ class ListProductsRequest:
         'limit': 'limit',
         'marker': 'marker',
         'app_id': 'app_id',
+        'product_name': 'product_name',
         'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None, limit=None, marker=None, app_id=None, offset=None):
+    def __init__(self, instance_id=None, limit=None, marker=None, app_id=None, product_name=None, offset=None):
         """ListProductsRequest
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ListProductsRequest:
         :type marker: str
         :param app_id: **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，可以携带该参数查询指定资源空间下的产品列表，不携带该参数则会查询该用户下所有产品列表。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
         :type app_id: str
+        :param product_name: **参数说明**：产品名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-等字符的组合。
+        :type product_name: str
         :param offset: **参数说明**：表示从marker后偏移offset条记录开始查询。当offset为0时，表示从marker后第一条记录开始输出。限制offset最大值是出于API性能考虑，您可以搭配marker使用该参数实现翻页，例如每页50条记录，1-11页内都可以直接使用offset跳转到指定页，但到11页后，由于offset限制为500，您需要使用第11页返回的marker作为下次查询的marker，以实现翻页到12-22页。 **取值范围**：0-500的整数，默认为0。
         :type offset: int
         """
@@ -55,6 +59,7 @@ class ListProductsRequest:
         self._limit = None
         self._marker = None
         self._app_id = None
+        self._product_name = None
         self._offset = None
         self.discriminator = None
 
@@ -66,6 +71,8 @@ class ListProductsRequest:
             self.marker = marker
         if app_id is not None:
             self.app_id = app_id
+        if product_name is not None:
+            self.product_name = product_name
         if offset is not None:
             self.offset = offset
 
@@ -156,6 +163,28 @@ class ListProductsRequest:
         :type app_id: str
         """
         self._app_id = app_id
+
+    @property
+    def product_name(self):
+        """Gets the product_name of this ListProductsRequest.
+
+        **参数说明**：产品名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
+
+        :return: The product_name of this ListProductsRequest.
+        :rtype: str
+        """
+        return self._product_name
+
+    @product_name.setter
+    def product_name(self, product_name):
+        """Sets the product_name of this ListProductsRequest.
+
+        **参数说明**：产品名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
+
+        :param product_name: The product_name of this ListProductsRequest.
+        :type product_name: str
+        """
+        self._product_name = product_name
 
     @property
     def offset(self):

@@ -21,7 +21,8 @@ class ListPipelinesPageLatestRunStageStatusList:
         'sequence': 'int',
         'status': 'str',
         'start_time': 'str',
-        'end_time': 'str'
+        'end_time': 'str',
+        'id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ListPipelinesPageLatestRunStageStatusList:
         'sequence': 'sequence',
         'status': 'status',
         'start_time': 'start_time',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'id': 'id'
     }
 
-    def __init__(self, name=None, sequence=None, status=None, start_time=None, end_time=None):
+    def __init__(self, name=None, sequence=None, status=None, start_time=None, end_time=None, id=None):
         """ListPipelinesPageLatestRunStageStatusList
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ListPipelinesPageLatestRunStageStatusList:
         :type start_time: str
         :param end_time: 结束时间
         :type end_time: str
+        :param id: 阶段ID
+        :type id: str
         """
         
         
@@ -56,6 +60,7 @@ class ListPipelinesPageLatestRunStageStatusList:
         self._status = None
         self._start_time = None
         self._end_time = None
+        self._id = None
         self.discriminator = None
 
         if name is not None:
@@ -68,6 +73,8 @@ class ListPipelinesPageLatestRunStageStatusList:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if id is not None:
+            self.id = id
 
     @property
     def name(self):
@@ -178,6 +185,28 @@ class ListPipelinesPageLatestRunStageStatusList:
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def id(self):
+        """Gets the id of this ListPipelinesPageLatestRunStageStatusList.
+
+        阶段ID
+
+        :return: The id of this ListPipelinesPageLatestRunStageStatusList.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ListPipelinesPageLatestRunStageStatusList.
+
+        阶段ID
+
+        :param id: The id of this ListPipelinesPageLatestRunStageStatusList.
+        :type id: str
+        """
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

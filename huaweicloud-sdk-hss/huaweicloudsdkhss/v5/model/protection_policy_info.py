@@ -21,6 +21,7 @@ class ProtectionPolicyInfo:
         'policy_name': 'str',
         'protection_mode': 'str',
         'bait_protection_status': 'str',
+        'deploy_mode': 'str',
         'protection_directory': 'str',
         'protection_type': 'str',
         'exclude_directory': 'str',
@@ -28,7 +29,8 @@ class ProtectionPolicyInfo:
         'runtime_detection_directory': 'str',
         'count_associated_server': 'int',
         'operating_system': 'str',
-        'process_whitelist': 'list[TrustProcessInfo]'
+        'process_whitelist': 'list[TrustProcessInfo]',
+        'default_policy': 'int'
     }
 
     attribute_map = {
@@ -36,6 +38,7 @@ class ProtectionPolicyInfo:
         'policy_name': 'policy_name',
         'protection_mode': 'protection_mode',
         'bait_protection_status': 'bait_protection_status',
+        'deploy_mode': 'deploy_mode',
         'protection_directory': 'protection_directory',
         'protection_type': 'protection_type',
         'exclude_directory': 'exclude_directory',
@@ -43,10 +46,11 @@ class ProtectionPolicyInfo:
         'runtime_detection_directory': 'runtime_detection_directory',
         'count_associated_server': 'count_associated_server',
         'operating_system': 'operating_system',
-        'process_whitelist': 'process_whitelist'
+        'process_whitelist': 'process_whitelist',
+        'default_policy': 'default_policy'
     }
 
-    def __init__(self, policy_id=None, policy_name=None, protection_mode=None, bait_protection_status=None, protection_directory=None, protection_type=None, exclude_directory=None, runtime_detection_status=None, runtime_detection_directory=None, count_associated_server=None, operating_system=None, process_whitelist=None):
+    def __init__(self, policy_id=None, policy_name=None, protection_mode=None, bait_protection_status=None, deploy_mode=None, protection_directory=None, protection_type=None, exclude_directory=None, runtime_detection_status=None, runtime_detection_directory=None, count_associated_server=None, operating_system=None, process_whitelist=None, default_policy=None):
         """ProtectionPolicyInfo
 
         The model defined in huaweicloud sdk
@@ -59,6 +63,8 @@ class ProtectionPolicyInfo:
         :type protection_mode: str
         :param bait_protection_status: 是否开启诱饵防护，包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。
         :type bait_protection_status: str
+        :param deploy_mode: 是否开启动态诱饵防护，包含如下2种, 默认为关闭动态诱饵防护。   - opened ：开启。   - closed ：关闭。
+        :type deploy_mode: str
         :param protection_directory: 防护目录
         :type protection_directory: str
         :param protection_type: 防护文件类型
@@ -75,6 +81,8 @@ class ProtectionPolicyInfo:
         :type operating_system: str
         :param process_whitelist: 进程白名单
         :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
+        :param default_policy: 是否为默认策略，包含如下2种。   - 0 ：非默认策略。   - 1 ：默认策略
+        :type default_policy: int
         """
         
         
@@ -83,6 +91,7 @@ class ProtectionPolicyInfo:
         self._policy_name = None
         self._protection_mode = None
         self._bait_protection_status = None
+        self._deploy_mode = None
         self._protection_directory = None
         self._protection_type = None
         self._exclude_directory = None
@@ -91,6 +100,7 @@ class ProtectionPolicyInfo:
         self._count_associated_server = None
         self._operating_system = None
         self._process_whitelist = None
+        self._default_policy = None
         self.discriminator = None
 
         if policy_id is not None:
@@ -101,6 +111,8 @@ class ProtectionPolicyInfo:
             self.protection_mode = protection_mode
         if bait_protection_status is not None:
             self.bait_protection_status = bait_protection_status
+        if deploy_mode is not None:
+            self.deploy_mode = deploy_mode
         if protection_directory is not None:
             self.protection_directory = protection_directory
         if protection_type is not None:
@@ -117,6 +129,8 @@ class ProtectionPolicyInfo:
             self.operating_system = operating_system
         if process_whitelist is not None:
             self.process_whitelist = process_whitelist
+        if default_policy is not None:
+            self.default_policy = default_policy
 
     @property
     def policy_id(self):
@@ -205,6 +219,28 @@ class ProtectionPolicyInfo:
         :type bait_protection_status: str
         """
         self._bait_protection_status = bait_protection_status
+
+    @property
+    def deploy_mode(self):
+        """Gets the deploy_mode of this ProtectionPolicyInfo.
+
+        是否开启动态诱饵防护，包含如下2种, 默认为关闭动态诱饵防护。   - opened ：开启。   - closed ：关闭。
+
+        :return: The deploy_mode of this ProtectionPolicyInfo.
+        :rtype: str
+        """
+        return self._deploy_mode
+
+    @deploy_mode.setter
+    def deploy_mode(self, deploy_mode):
+        """Sets the deploy_mode of this ProtectionPolicyInfo.
+
+        是否开启动态诱饵防护，包含如下2种, 默认为关闭动态诱饵防护。   - opened ：开启。   - closed ：关闭。
+
+        :param deploy_mode: The deploy_mode of this ProtectionPolicyInfo.
+        :type deploy_mode: str
+        """
+        self._deploy_mode = deploy_mode
 
     @property
     def protection_directory(self):
@@ -381,6 +417,28 @@ class ProtectionPolicyInfo:
         :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
         """
         self._process_whitelist = process_whitelist
+
+    @property
+    def default_policy(self):
+        """Gets the default_policy of this ProtectionPolicyInfo.
+
+        是否为默认策略，包含如下2种。   - 0 ：非默认策略。   - 1 ：默认策略
+
+        :return: The default_policy of this ProtectionPolicyInfo.
+        :rtype: int
+        """
+        return self._default_policy
+
+    @default_policy.setter
+    def default_policy(self, default_policy):
+        """Sets the default_policy of this ProtectionPolicyInfo.
+
+        是否为默认策略，包含如下2种。   - 0 ：非默认策略。   - 1 ：默认策略
+
+        :param default_policy: The default_policy of this ProtectionPolicyInfo.
+        :type default_policy: int
+        """
+        self._default_policy = default_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

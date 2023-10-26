@@ -33,9 +33,9 @@ class Extend:
 
         The model defined in huaweicloud sdk
 
-        :param new_size: 扩容后文件系统的新容量，以GB为单位。扩容步长大于等于100GB。  普通文件系统容量，取值范围500~32768。  带宽型文件系统，容量范围是10240~327680
+        :param new_size: 扩容后文件系统的新容量，以GiB为单位。  通用型-标准型和性能型，取值范围500~32768 GiB，扩容步长大于等于100 GiB。  通用型-标准型增强版和性能型增强版。容量范围是10240~327680 GiB。扩容步长大于等于100 GiB。  HPC型文件系统，容量范围是3686~1048576 GiB。HPC型文件系统的容量必须为1.2TiB的倍数，扩容步长需要大于等于1.2TiB，需要将目标容量换算为GiB后需要向下取整。如4.8TiB-&gt;4915GiB，8.4TiB-&gt;8601GiB。  HPC缓存型文件系统，容量范围是4096~1048576 GiB。扩容步长均为1TiB。需要将目标容量换算为GiB。
         :type new_size: int
-        :param new_bandwidth: 扩缩带宽后文件系统的新带宽，以 GB 为单位。仅支持 hpc cache 型文件系统
+        :param new_bandwidth: 带宽的目标值，单位：GB。仅HPC缓存型支持带宽扩缩。 支持的带宽值为：\&quot;2G\&quot;、\&quot;4G\&quot;、\&quot;8G\&quot;、\&quot;16G\&quot;、\&quot;24G\&quot;、\&quot;32G\&quot;、\&quot;48G\&quot;。 
         :type new_bandwidth: int
         :param bss_param: 
         :type bss_param: :class:`huaweicloudsdksfsturbo.v1.BssInfoExtend`
@@ -58,7 +58,7 @@ class Extend:
     def new_size(self):
         """Gets the new_size of this Extend.
 
-        扩容后文件系统的新容量，以GB为单位。扩容步长大于等于100GB。  普通文件系统容量，取值范围500~32768。  带宽型文件系统，容量范围是10240~327680
+        扩容后文件系统的新容量，以GiB为单位。  通用型-标准型和性能型，取值范围500~32768 GiB，扩容步长大于等于100 GiB。  通用型-标准型增强版和性能型增强版。容量范围是10240~327680 GiB。扩容步长大于等于100 GiB。  HPC型文件系统，容量范围是3686~1048576 GiB。HPC型文件系统的容量必须为1.2TiB的倍数，扩容步长需要大于等于1.2TiB，需要将目标容量换算为GiB后需要向下取整。如4.8TiB->4915GiB，8.4TiB->8601GiB。  HPC缓存型文件系统，容量范围是4096~1048576 GiB。扩容步长均为1TiB。需要将目标容量换算为GiB。
 
         :return: The new_size of this Extend.
         :rtype: int
@@ -69,7 +69,7 @@ class Extend:
     def new_size(self, new_size):
         """Sets the new_size of this Extend.
 
-        扩容后文件系统的新容量，以GB为单位。扩容步长大于等于100GB。  普通文件系统容量，取值范围500~32768。  带宽型文件系统，容量范围是10240~327680
+        扩容后文件系统的新容量，以GiB为单位。  通用型-标准型和性能型，取值范围500~32768 GiB，扩容步长大于等于100 GiB。  通用型-标准型增强版和性能型增强版。容量范围是10240~327680 GiB。扩容步长大于等于100 GiB。  HPC型文件系统，容量范围是3686~1048576 GiB。HPC型文件系统的容量必须为1.2TiB的倍数，扩容步长需要大于等于1.2TiB，需要将目标容量换算为GiB后需要向下取整。如4.8TiB->4915GiB，8.4TiB->8601GiB。  HPC缓存型文件系统，容量范围是4096~1048576 GiB。扩容步长均为1TiB。需要将目标容量换算为GiB。
 
         :param new_size: The new_size of this Extend.
         :type new_size: int
@@ -80,7 +80,7 @@ class Extend:
     def new_bandwidth(self):
         """Gets the new_bandwidth of this Extend.
 
-        扩缩带宽后文件系统的新带宽，以 GB 为单位。仅支持 hpc cache 型文件系统
+        带宽的目标值，单位：GB。仅HPC缓存型支持带宽扩缩。 支持的带宽值为：\"2G\"、\"4G\"、\"8G\"、\"16G\"、\"24G\"、\"32G\"、\"48G\"。 
 
         :return: The new_bandwidth of this Extend.
         :rtype: int
@@ -91,7 +91,7 @@ class Extend:
     def new_bandwidth(self, new_bandwidth):
         """Sets the new_bandwidth of this Extend.
 
-        扩缩带宽后文件系统的新带宽，以 GB 为单位。仅支持 hpc cache 型文件系统
+        带宽的目标值，单位：GB。仅HPC缓存型支持带宽扩缩。 支持的带宽值为：\"2G\"、\"4G\"、\"8G\"、\"16G\"、\"24G\"、\"32G\"、\"48G\"。 
 
         :param new_bandwidth: The new_bandwidth of this Extend.
         :type new_bandwidth: int

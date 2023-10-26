@@ -6,7 +6,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class UpdateNotificationMasksResponse(SdkResponse):
+class CheckMigrationConnectivityResponse(SdkResponse):
 
     """
     Attributes:
@@ -18,20 +18,47 @@ class UpdateNotificationMasksResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'body': 'str'
     }
 
     attribute_map = {
+        'body': 'body'
     }
 
-    def __init__(self):
-        """UpdateNotificationMasksResponse
+    def __init__(self, body=None):
+        """CheckMigrationConnectivityResponse
 
         The model defined in huaweicloud sdk
 
+        :param body: 
+        :type body: str
         """
         
-        super(UpdateNotificationMasksResponse, self).__init__()
+        super(CheckMigrationConnectivityResponse, self).__init__()
+
+        self._body = None
         self.discriminator = None
+
+        if body is not None:
+            self.body = body
+
+    @property
+    def body(self):
+        """Gets the body of this CheckMigrationConnectivityResponse.
+
+        :return: The body of this CheckMigrationConnectivityResponse.
+        :rtype: str
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this CheckMigrationConnectivityResponse.
+
+        :param body: The body of this CheckMigrationConnectivityResponse.
+        :type body: str
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -75,7 +102,7 @@ class UpdateNotificationMasksResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdateNotificationMasksResponse):
+        if not isinstance(other, CheckMigrationConnectivityResponse):
             return False
 
         return self.__dict__ == other.__dict__

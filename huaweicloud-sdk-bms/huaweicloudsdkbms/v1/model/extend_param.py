@@ -41,7 +41,7 @@ class ExtendParam:
 
         The model defined in huaweicloud sdk
 
-        :param charging_mode: 计费模式。取值范围：prePaid：预付费，即包年包月。默认值是prePaid。
+        :param charging_mode: 计费模式。取值范围：prePaid：预付费，即包年包月; postPaid-后付费，即按需付费。默认值是prePaid。
         :type charging_mode: str
         :param region_id: 裸金属服务器所在区域ID。请参考地区和终端节点获取。
         :type region_id: str
@@ -87,7 +87,7 @@ class ExtendParam:
     def charging_mode(self):
         """Gets the charging_mode of this ExtendParam.
 
-        计费模式。取值范围：prePaid：预付费，即包年包月。默认值是prePaid。
+        计费模式。取值范围：prePaid：预付费，即包年包月; postPaid-后付费，即按需付费。默认值是prePaid。
 
         :return: The charging_mode of this ExtendParam.
         :rtype: str
@@ -98,7 +98,7 @@ class ExtendParam:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ExtendParam.
 
-        计费模式。取值范围：prePaid：预付费，即包年包月。默认值是prePaid。
+        计费模式。取值范围：prePaid：预付费，即包年包月; postPaid-后付费，即按需付费。默认值是prePaid。
 
         :param charging_mode: The charging_mode of this ExtendParam.
         :type charging_mode: str

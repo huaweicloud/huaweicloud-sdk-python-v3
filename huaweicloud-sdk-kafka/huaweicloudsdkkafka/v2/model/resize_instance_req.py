@@ -22,7 +22,9 @@ class ResizeInstanceReq:
         'oper_type': 'str',
         'new_broker_num': 'int',
         'new_product_id': 'str',
-        'publicip_id': 'str'
+        'publicip_id': 'str',
+        'tenant_ips': 'list[str]',
+        'second_tenant_subnet_id': 'str'
     }
 
     attribute_map = {
@@ -31,10 +33,12 @@ class ResizeInstanceReq:
         'oper_type': 'oper_type',
         'new_broker_num': 'new_broker_num',
         'new_product_id': 'new_product_id',
-        'publicip_id': 'publicip_id'
+        'publicip_id': 'publicip_id',
+        'tenant_ips': 'tenant_ips',
+        'second_tenant_subnet_id': 'second_tenant_subnet_id'
     }
 
-    def __init__(self, new_spec_code=None, new_storage_space=None, oper_type=None, new_broker_num=None, new_product_id=None, publicip_id=None):
+    def __init__(self, new_spec_code=None, new_storage_space=None, oper_type=None, new_broker_num=None, new_product_id=None, publicip_id=None, tenant_ips=None, second_tenant_subnet_id=None):
         """ResizeInstanceReq
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class ResizeInstanceReq:
         :type new_product_id: str
         :param publicip_id: 实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网再进行扩容，需要填写此参数。
         :type publicip_id: str
+        :param tenant_ips: 创建节点可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网地址数量必须小于等于购买的节点数量。  当小于购买的节点数量时,未指定的节点则随机分配。
+        :type tenant_ips: list[str]
+        :param second_tenant_subnet_id: 实例扩容时新节点使用备用子网的id。  当实例扩容使用备用子网，则传入此值。  需要联系客服添加白名单才能传入此值。
+        :type second_tenant_subnet_id: str
         """
         
         
@@ -61,6 +69,8 @@ class ResizeInstanceReq:
         self._new_broker_num = None
         self._new_product_id = None
         self._publicip_id = None
+        self._tenant_ips = None
+        self._second_tenant_subnet_id = None
         self.discriminator = None
 
         if new_spec_code is not None:
@@ -75,6 +85,10 @@ class ResizeInstanceReq:
             self.new_product_id = new_product_id
         if publicip_id is not None:
             self.publicip_id = publicip_id
+        if tenant_ips is not None:
+            self.tenant_ips = tenant_ips
+        if second_tenant_subnet_id is not None:
+            self.second_tenant_subnet_id = second_tenant_subnet_id
 
     @property
     def new_spec_code(self):
@@ -207,6 +221,50 @@ class ResizeInstanceReq:
         :type publicip_id: str
         """
         self._publicip_id = publicip_id
+
+    @property
+    def tenant_ips(self):
+        """Gets the tenant_ips of this ResizeInstanceReq.
+
+        创建节点可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网地址数量必须小于等于购买的节点数量。  当小于购买的节点数量时,未指定的节点则随机分配。
+
+        :return: The tenant_ips of this ResizeInstanceReq.
+        :rtype: list[str]
+        """
+        return self._tenant_ips
+
+    @tenant_ips.setter
+    def tenant_ips(self, tenant_ips):
+        """Sets the tenant_ips of this ResizeInstanceReq.
+
+        创建节点可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网地址数量必须小于等于购买的节点数量。  当小于购买的节点数量时,未指定的节点则随机分配。
+
+        :param tenant_ips: The tenant_ips of this ResizeInstanceReq.
+        :type tenant_ips: list[str]
+        """
+        self._tenant_ips = tenant_ips
+
+    @property
+    def second_tenant_subnet_id(self):
+        """Gets the second_tenant_subnet_id of this ResizeInstanceReq.
+
+        实例扩容时新节点使用备用子网的id。  当实例扩容使用备用子网，则传入此值。  需要联系客服添加白名单才能传入此值。
+
+        :return: The second_tenant_subnet_id of this ResizeInstanceReq.
+        :rtype: str
+        """
+        return self._second_tenant_subnet_id
+
+    @second_tenant_subnet_id.setter
+    def second_tenant_subnet_id(self, second_tenant_subnet_id):
+        """Sets the second_tenant_subnet_id of this ResizeInstanceReq.
+
+        实例扩容时新节点使用备用子网的id。  当实例扩容使用备用子网，则传入此值。  需要联系客服添加白名单才能传入此值。
+
+        :param second_tenant_subnet_id: The second_tenant_subnet_id of this ResizeInstanceReq.
+        :type second_tenant_subnet_id: str
+        """
+        self._second_tenant_subnet_id = second_tenant_subnet_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

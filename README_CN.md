@@ -683,7 +683,7 @@ credentials = BasicCredentials(ak, sk).with_iam_endpoint(iam_endpoint)
 
 ###### 3.3.2.1 环境变量 [:top:](#用户手册-top)
 
-通过环境变量配置，格式为`HUAWEICLOUD_SDK_REGION_{SERIVCE_NAME}_{REGION_ID}={endpoint}`
+通过环境变量配置，格式为`HUAWEICLOUD_SDK_REGION_{SERVICE_NAME}_{REGION_ID}={endpoint}`
 
 注：环境变量名全大写，中划线替换为下划线
 
@@ -701,7 +701,7 @@ set HUAWEICLOUD_SDK_REGION_IOTDA_AP_SOUTHEAST_1=https://iotda.ap-southwest-1.myh
 
 从**3.1.62**版本起，支持配置一个region对应多个endpoint，主要endpoint无法连接会自动切换到备用endpoint
 
-格式为`HUAWEICLOUD_SDK_REGION_{SERIVCE_NAME}_{REGION_ID}={endpoint1},{endpoint2}`, 多个endpoint之间用英文逗号隔开, 比如`HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_9=https://ecs.cn-north-9.myhuaweicloud.com,https://ecs.cn-north-9.myhuaweicloud.cn`
+格式为`HUAWEICLOUD_SDK_REGION_{SERVICE_NAME}_{REGION_ID}={endpoint1},{endpoint2}`, 多个endpoint之间用英文逗号隔开, 比如`HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_9=https://ecs.cn-north-9.myhuaweicloud.com,https://ecs.cn-north-9.myhuaweicloud.cn`
 
 ###### 3.3.2.2 文件配置 [:top:](#用户手册-top)
 

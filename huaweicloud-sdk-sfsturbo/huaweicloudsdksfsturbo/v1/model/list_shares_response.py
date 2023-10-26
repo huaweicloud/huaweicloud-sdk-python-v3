@@ -18,7 +18,7 @@ class ListSharesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'shares': 'list[Shares]',
+        'shares': 'list[ShareInfo]',
         'count': 'int'
     }
 
@@ -33,7 +33,7 @@ class ListSharesResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param shares: SFS Turbo文件系统的列表。
-        :type shares: list[:class:`huaweicloudsdksfsturbo.v1.Shares`]
+        :type shares: list[:class:`huaweicloudsdksfsturbo.v1.ShareInfo`]
         :param count: SFS Turbo文件系统的数量。
         :type count: int
         """
@@ -56,7 +56,7 @@ class ListSharesResponse(SdkResponse):
         SFS Turbo文件系统的列表。
 
         :return: The shares of this ListSharesResponse.
-        :rtype: list[:class:`huaweicloudsdksfsturbo.v1.Shares`]
+        :rtype: list[:class:`huaweicloudsdksfsturbo.v1.ShareInfo`]
         """
         return self._shares
 
@@ -67,7 +67,7 @@ class ListSharesResponse(SdkResponse):
         SFS Turbo文件系统的列表。
 
         :param shares: The shares of this ListSharesResponse.
-        :type shares: list[:class:`huaweicloudsdksfsturbo.v1.Shares`]
+        :type shares: list[:class:`huaweicloudsdksfsturbo.v1.ShareInfo`]
         """
         self._shares = shares
 

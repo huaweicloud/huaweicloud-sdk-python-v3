@@ -43,9 +43,9 @@ class Metadata:
         :type dedicated_flavor: str
         :param dedicated_storage_id: 创专属文件系统，要指定一个专属分布式存储的ID。
         :type dedicated_storage_id: str
-        :param expand_type: 扩展类型。当前有效值为bandwidth，即创建增强型的文件系统。
+        :param expand_type: 扩展类型。创建增强型/HPC型/HPC缓存型文件系统时，该参数必填。 创建增强型的文件系统，包括标准型-增强版和性能型-增强版，需要填写\&quot;bandwidth\&quot;。 创建HPC型文件系统，需要填写\&quot;hpc\&quot;。 创建HPC缓存型，需要填写\&quot;hpc_cache\&quot;。 
         :type expand_type: str
-        :param hpc_bw: hpc型带宽,仅创建hpc型需要
+        :param hpc_bw: 文件系统的带宽规格。创建HPC型/HPC缓存型文件系统时，该参数必填。 HPC型，可以填写\&quot;125M\&quot;、\&quot;250M\&quot;。 HPC缓存型，可以填写\&quot;2G\&quot;、\&quot;4G\&quot;、\&quot;8G\&quot;、\&quot;16G\&quot;、\&quot;24G\&quot;、\&quot;32G\&quot;、\&quot;48G\&quot;。 
         :type hpc_bw: str
         """
         
@@ -139,7 +139,7 @@ class Metadata:
     def expand_type(self):
         """Gets the expand_type of this Metadata.
 
-        扩展类型。当前有效值为bandwidth，即创建增强型的文件系统。
+        扩展类型。创建增强型/HPC型/HPC缓存型文件系统时，该参数必填。 创建增强型的文件系统，包括标准型-增强版和性能型-增强版，需要填写\"bandwidth\"。 创建HPC型文件系统，需要填写\"hpc\"。 创建HPC缓存型，需要填写\"hpc_cache\"。 
 
         :return: The expand_type of this Metadata.
         :rtype: str
@@ -150,7 +150,7 @@ class Metadata:
     def expand_type(self, expand_type):
         """Sets the expand_type of this Metadata.
 
-        扩展类型。当前有效值为bandwidth，即创建增强型的文件系统。
+        扩展类型。创建增强型/HPC型/HPC缓存型文件系统时，该参数必填。 创建增强型的文件系统，包括标准型-增强版和性能型-增强版，需要填写\"bandwidth\"。 创建HPC型文件系统，需要填写\"hpc\"。 创建HPC缓存型，需要填写\"hpc_cache\"。 
 
         :param expand_type: The expand_type of this Metadata.
         :type expand_type: str
@@ -161,7 +161,7 @@ class Metadata:
     def hpc_bw(self):
         """Gets the hpc_bw of this Metadata.
 
-        hpc型带宽,仅创建hpc型需要
+        文件系统的带宽规格。创建HPC型/HPC缓存型文件系统时，该参数必填。 HPC型，可以填写\"125M\"、\"250M\"。 HPC缓存型，可以填写\"2G\"、\"4G\"、\"8G\"、\"16G\"、\"24G\"、\"32G\"、\"48G\"。 
 
         :return: The hpc_bw of this Metadata.
         :rtype: str
@@ -172,7 +172,7 @@ class Metadata:
     def hpc_bw(self, hpc_bw):
         """Sets the hpc_bw of this Metadata.
 
-        hpc型带宽,仅创建hpc型需要
+        文件系统的带宽规格。创建HPC型/HPC缓存型文件系统时，该参数必填。 HPC型，可以填写\"125M\"、\"250M\"。 HPC缓存型，可以填写\"2G\"、\"4G\"、\"8G\"、\"16G\"、\"24G\"、\"32G\"、\"48G\"。 
 
         :param hpc_bw: The hpc_bw of this Metadata.
         :type hpc_bw: str

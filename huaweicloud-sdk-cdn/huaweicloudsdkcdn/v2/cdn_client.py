@@ -84,6 +84,122 @@ class CdnClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_preheating_tasks(self, request):
+        """创建预热缓存任务
+
+        创建预热任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePreheatingTasks
+        :type request: :class:`huaweicloudsdkcdn.v2.CreatePreheatingTasksRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.CreatePreheatingTasksResponse`
+        """
+        return self._create_preheating_tasks_with_http_info(request)
+
+    def _create_preheating_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/cdn/content/preheating-tasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreatePreheatingTasksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_refresh_tasks(self, request):
+        """创建刷新缓存任务
+
+        创建刷新缓存任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateRefreshTasks
+        :type request: :class:`huaweicloudsdkcdn.v2.CreateRefreshTasksRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.CreateRefreshTasksResponse`
+        """
+        return self._create_refresh_tasks_with_http_info(request)
+
+    def _create_refresh_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/cdn/content/refresh-tasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateRefreshTasksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def download_region_carrier_excel(self, request):
         """下载区域运营商指标数据表格文件
 
@@ -820,6 +936,148 @@ class CdnClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_history_task_details(self, request):
+        """查询刷新预热任务详情
+
+        查询刷新预热任务详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowHistoryTaskDetails
+        :type request: :class:`huaweicloudsdkcdn.v2.ShowHistoryTaskDetailsRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ShowHistoryTaskDetailsResponse`
+        """
+        return self._show_history_task_details_with_http_info(request)
+
+    def _show_history_task_details_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'history_tasks_id' in local_var_params:
+            path_params['history_tasks_id'] = local_var_params['history_tasks_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'page_number' in local_var_params:
+            query_params.append(('page_number', local_var_params['page_number']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'url' in local_var_params:
+            query_params.append(('url', local_var_params['url']))
+        if 'create_time' in local_var_params:
+            query_params.append(('create_time', local_var_params['create_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/cdn/historytasks/{history_tasks_id}/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowHistoryTaskDetailsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_history_tasks(self, request):
+        """查询刷新预热任务
+
+        查询刷新预热任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowHistoryTasks
+        :type request: :class:`huaweicloudsdkcdn.v2.ShowHistoryTasksRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ShowHistoryTasksResponse`
+        """
+        return self._show_history_tasks_with_http_info(request)
+
+    def _show_history_tasks_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'page_number' in local_var_params:
+            query_params.append(('page_number', local_var_params['page_number']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'start_date' in local_var_params:
+            query_params.append(('start_date', local_var_params['start_date']))
+        if 'end_date' in local_var_params:
+            query_params.append(('end_date', local_var_params['end_date']))
+        if 'order_field' in local_var_params:
+            query_params.append(('order_field', local_var_params['order_field']))
+        if 'order_type' in local_var_params:
+            query_params.append(('order_type', local_var_params['order_type']))
+        if 'file_type' in local_var_params:
+            query_params.append(('file_type', local_var_params['file_type']))
+        if 'task_type' in local_var_params:
+            query_params.append(('task_type', local_var_params['task_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/cdn/historytasks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowHistoryTasksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_top_domain_names(self, request):
         """查询TOP域名
 
@@ -971,6 +1229,76 @@ class CdnClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowTopUrlResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_url_task_info(self, request):
+        """查询刷新预热URL记录
+
+        查询刷新预热URL记录。如需此接口，请提交工单开通。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowUrlTaskInfo
+        :type request: :class:`huaweicloudsdkcdn.v2.ShowUrlTaskInfoRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ShowUrlTaskInfoResponse`
+        """
+        return self._show_url_task_info_with_http_info(request)
+
+    def _show_url_task_info_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'url' in local_var_params:
+            query_params.append(('url', local_var_params['url']))
+        if 'task_type' in local_var_params:
+            query_params.append(('task_type', local_var_params['task_type']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'file_type' in local_var_params:
+            query_params.append(('file_type', local_var_params['file_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/cdn/contentgateway/url-tasks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowUrlTaskInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

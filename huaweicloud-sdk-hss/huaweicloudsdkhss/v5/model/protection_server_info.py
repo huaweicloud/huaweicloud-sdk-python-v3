@@ -37,6 +37,7 @@ class ProtectionServerInfo:
         'count_backuped': 'int',
         'agent_status': 'str',
         'version': 'str',
+        'host_source': 'str',
         'vault_id': 'str',
         'vault_name': 'str',
         'vault_size': 'int',
@@ -71,6 +72,7 @@ class ProtectionServerInfo:
         'count_backuped': 'count_backuped',
         'agent_status': 'agent_status',
         'version': 'version',
+        'host_source': 'host_source',
         'vault_id': 'vault_id',
         'vault_name': 'vault_name',
         'vault_size': 'vault_size',
@@ -84,7 +86,7 @@ class ProtectionServerInfo:
         'resources_num': 'resources_num'
     }
 
-    def __init__(self, host_id=None, agent_id=None, host_name=None, host_ip=None, private_ip=None, os_type=None, os_name=None, host_status=None, ransom_protection_status=None, protect_status=None, group_id=None, group_name=None, protect_policy_id=None, protect_policy_name=None, backup_error=None, backup_protection_status=None, count_protect_event=None, count_backuped=None, agent_status=None, version=None, vault_id=None, vault_name=None, vault_size=None, vault_used=None, vault_allocated=None, vault_charging_mode=None, vault_status=None, backup_policy_id=None, backup_policy_name=None, backup_policy_enabled=None, resources_num=None):
+    def __init__(self, host_id=None, agent_id=None, host_name=None, host_ip=None, private_ip=None, os_type=None, os_name=None, host_status=None, ransom_protection_status=None, protect_status=None, group_id=None, group_name=None, protect_policy_id=None, protect_policy_name=None, backup_error=None, backup_protection_status=None, count_protect_event=None, count_backuped=None, agent_status=None, version=None, host_source=None, vault_id=None, vault_name=None, vault_size=None, vault_used=None, vault_allocated=None, vault_charging_mode=None, vault_status=None, backup_policy_id=None, backup_policy_name=None, backup_policy_enabled=None, resources_num=None):
         """ProtectionServerInfo
 
         The model defined in huaweicloud sdk
@@ -129,6 +131,8 @@ class ProtectionServerInfo:
         :type agent_status: str
         :param version: 主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
         :type version: str
+        :param host_source: 服务器类型，包含如下3种输入。   - ecs ：ecs。   - outside ：线下主机。   - workspace ：云桌面。
+        :type host_source: str
         :param vault_id: 存储库ID
         :type vault_id: str
         :param vault_name: 存储库名称
@@ -175,6 +179,7 @@ class ProtectionServerInfo:
         self._count_backuped = None
         self._agent_status = None
         self._version = None
+        self._host_source = None
         self._vault_id = None
         self._vault_name = None
         self._vault_size = None
@@ -228,6 +233,8 @@ class ProtectionServerInfo:
             self.agent_status = agent_status
         if version is not None:
             self.version = version
+        if host_source is not None:
+            self.host_source = host_source
         if vault_id is not None:
             self.vault_id = vault_id
         if vault_name is not None:
@@ -686,6 +693,28 @@ class ProtectionServerInfo:
         :type version: str
         """
         self._version = version
+
+    @property
+    def host_source(self):
+        """Gets the host_source of this ProtectionServerInfo.
+
+        服务器类型，包含如下3种输入。   - ecs ：ecs。   - outside ：线下主机。   - workspace ：云桌面。
+
+        :return: The host_source of this ProtectionServerInfo.
+        :rtype: str
+        """
+        return self._host_source
+
+    @host_source.setter
+    def host_source(self, host_source):
+        """Sets the host_source of this ProtectionServerInfo.
+
+        服务器类型，包含如下3种输入。   - ecs ：ecs。   - outside ：线下主机。   - workspace ：云桌面。
+
+        :param host_source: The host_source of this ProtectionServerInfo.
+        :type host_source: str
+        """
+        self._host_source = host_source
 
     @property
     def vault_id(self):

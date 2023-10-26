@@ -54,7 +54,7 @@ class CbrRegion:
     ME_EAST_1 = Region("me-east-1",
                         "https://cbr.me-east-1.myhuaweicloud.com")
     AE_AD_1 = Region("ae-ad-1",
-                        "https://cbr.ae-ad-1.g42cloud.com")
+                        "https://cbr.ae-ad-1.myhuaweicloud.com")
 
     static_fields = {
         "eu-west-101": EU_WEST_101,

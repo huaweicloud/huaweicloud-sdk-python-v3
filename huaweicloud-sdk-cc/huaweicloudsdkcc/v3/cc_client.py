@@ -2174,6 +2174,63 @@ class CcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_central_network_capabilities(self, request):
+        """查询中心网络能力列表
+
+        查询中心网络能力列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCentralNetworkCapabilities
+        :type request: :class:`huaweicloudsdkcc.v3.ListCentralNetworkCapabilitiesRequest`
+        :rtype: :class:`huaweicloudsdkcc.v3.ListCentralNetworkCapabilitiesResponse`
+        """
+        return self._list_central_network_capabilities_with_http_info(request)
+
+    def _list_central_network_capabilities_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'capability' in local_var_params:
+            query_params.append(('capability', local_var_params['capability']))
+            collection_formats['capability'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{domain_id}/gcn/capabilities',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListCentralNetworkCapabilitiesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_central_network_connections(self, request):
         """查询中心网络连接列表
 

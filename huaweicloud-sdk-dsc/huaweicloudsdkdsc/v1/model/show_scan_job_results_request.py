@@ -47,9 +47,9 @@ class ShowScanJobResultsRequest:
         :type limit: int
         :param type: 资产类型
         :type type: str
-        :param start_time: 预留，待启用
+        :param start_time: 起始时间（预留，待启用）
         :type start_time: str
-        :param end_time: 预留，待启用
+        :param end_time: 结束时间（预留，待启用）
         :type end_time: str
         """
         
@@ -167,7 +167,7 @@ class ShowScanJobResultsRequest:
     def start_time(self):
         """Gets the start_time of this ShowScanJobResultsRequest.
 
-        预留，待启用
+        起始时间（预留，待启用）
 
         :return: The start_time of this ShowScanJobResultsRequest.
         :rtype: str
@@ -178,7 +178,7 @@ class ShowScanJobResultsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ShowScanJobResultsRequest.
 
-        预留，待启用
+        起始时间（预留，待启用）
 
         :param start_time: The start_time of this ShowScanJobResultsRequest.
         :type start_time: str
@@ -189,7 +189,7 @@ class ShowScanJobResultsRequest:
     def end_time(self):
         """Gets the end_time of this ShowScanJobResultsRequest.
 
-        预留，待启用
+        结束时间（预留，待启用）
 
         :return: The end_time of this ShowScanJobResultsRequest.
         :rtype: str
@@ -200,7 +200,7 @@ class ShowScanJobResultsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowScanJobResultsRequest.
 
-        预留，待启用
+        结束时间（预留，待启用）
 
         :param end_time: The end_time of this ShowScanJobResultsRequest.
         :type end_time: str

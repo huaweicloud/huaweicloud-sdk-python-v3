@@ -217,6 +217,7 @@ class Client(object):
     _HEADERS = "headers"
 
     def __init__(self):
+        self.preset_headers = {}
         self._agent = {"User-Agent": "huaweicloud-usdk-python/3.0"}
         self._logger = self._init_logger()
 
@@ -321,6 +322,8 @@ class Client(object):
             header_params = dict(http_utils.parameters_to_tuples(header_params, collection_formats))
             header_params = {k: str(v) for k, v in header_params.items()}
         header_params.update(self._agent)
+        if self.preset_headers:
+            header_params.update(self.preset_headers)
         return header_params
 
     def _parse_path_params(self, collection_formats, path_params, resource_path, update_path_params):

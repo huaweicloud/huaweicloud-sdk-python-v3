@@ -35,7 +35,7 @@ class DefaultTopicRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 告警主题id
+        :param id: DSC告警主题ID（非消息通知服务主题ID）
         :type id: str
         :param project_id: 项目ID
         :type project_id: str
@@ -66,7 +66,7 @@ class DefaultTopicRequest:
     def id(self):
         """Gets the id of this DefaultTopicRequest.
 
-        告警主题id
+        DSC告警主题ID（非消息通知服务主题ID）
 
         :return: The id of this DefaultTopicRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class DefaultTopicRequest:
     def id(self, id):
         """Sets the id of this DefaultTopicRequest.
 
-        告警主题id
+        DSC告警主题ID（非消息通知服务主题ID）
 
         :param id: The id of this DefaultTopicRequest.
         :type id: str

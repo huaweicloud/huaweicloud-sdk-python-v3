@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class UpdateNotificationMasksRequest:
+class ListSwrImageRepositoryResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,75 +18,80 @@ class UpdateNotificationMasksRequest:
     sensitive_list = []
 
     openapi_types = {
-        'notification_mask_id': 'str',
-        'body': 'UpdateNotificationMasksRequestBody'
+        'total_num': 'int',
+        'data_list': 'list[PrivateImageRepositoryInfo]'
     }
 
     attribute_map = {
-        'notification_mask_id': 'notification_mask_id',
-        'body': 'body'
+        'total_num': 'total_num',
+        'data_list': 'data_list'
     }
 
-    def __init__(self, notification_mask_id=None, body=None):
-        """UpdateNotificationMasksRequest
+    def __init__(self, total_num=None, data_list=None):
+        """ListSwrImageRepositoryResponse
 
         The model defined in huaweicloud sdk
 
-        :param notification_mask_id: 屏蔽规则ID
-        :type notification_mask_id: str
-        :param body: Body of the UpdateNotificationMasksRequest
-        :type body: :class:`huaweicloudsdkces.v2.UpdateNotificationMasksRequestBody`
+        :param total_num: 总数
+        :type total_num: int
+        :param data_list: 查询swr镜像仓库镜像列表
+        :type data_list: list[:class:`huaweicloudsdkhss.v5.PrivateImageRepositoryInfo`]
         """
         
-        
+        super(ListSwrImageRepositoryResponse, self).__init__()
 
-        self._notification_mask_id = None
-        self._body = None
+        self._total_num = None
+        self._data_list = None
         self.discriminator = None
 
-        self.notification_mask_id = notification_mask_id
-        if body is not None:
-            self.body = body
+        if total_num is not None:
+            self.total_num = total_num
+        if data_list is not None:
+            self.data_list = data_list
 
     @property
-    def notification_mask_id(self):
-        """Gets the notification_mask_id of this UpdateNotificationMasksRequest.
+    def total_num(self):
+        """Gets the total_num of this ListSwrImageRepositoryResponse.
 
-        屏蔽规则ID
+        总数
 
-        :return: The notification_mask_id of this UpdateNotificationMasksRequest.
-        :rtype: str
+        :return: The total_num of this ListSwrImageRepositoryResponse.
+        :rtype: int
         """
-        return self._notification_mask_id
+        return self._total_num
 
-    @notification_mask_id.setter
-    def notification_mask_id(self, notification_mask_id):
-        """Sets the notification_mask_id of this UpdateNotificationMasksRequest.
+    @total_num.setter
+    def total_num(self, total_num):
+        """Sets the total_num of this ListSwrImageRepositoryResponse.
 
-        屏蔽规则ID
+        总数
 
-        :param notification_mask_id: The notification_mask_id of this UpdateNotificationMasksRequest.
-        :type notification_mask_id: str
+        :param total_num: The total_num of this ListSwrImageRepositoryResponse.
+        :type total_num: int
         """
-        self._notification_mask_id = notification_mask_id
+        self._total_num = total_num
 
     @property
-    def body(self):
-        """Gets the body of this UpdateNotificationMasksRequest.
+    def data_list(self):
+        """Gets the data_list of this ListSwrImageRepositoryResponse.
 
-        :return: The body of this UpdateNotificationMasksRequest.
-        :rtype: :class:`huaweicloudsdkces.v2.UpdateNotificationMasksRequestBody`
+        查询swr镜像仓库镜像列表
+
+        :return: The data_list of this ListSwrImageRepositoryResponse.
+        :rtype: list[:class:`huaweicloudsdkhss.v5.PrivateImageRepositoryInfo`]
         """
-        return self._body
+        return self._data_list
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this UpdateNotificationMasksRequest.
+    @data_list.setter
+    def data_list(self, data_list):
+        """Sets the data_list of this ListSwrImageRepositoryResponse.
 
-        :param body: The body of this UpdateNotificationMasksRequest.
-        :type body: :class:`huaweicloudsdkces.v2.UpdateNotificationMasksRequestBody`
+        查询swr镜像仓库镜像列表
+
+        :param data_list: The data_list of this ListSwrImageRepositoryResponse.
+        :type data_list: list[:class:`huaweicloudsdkhss.v5.PrivateImageRepositoryInfo`]
         """
-        self._body = body
+        self._data_list = data_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -129,7 +135,7 @@ class UpdateNotificationMasksRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdateNotificationMasksRequest):
+        if not isinstance(other, ListSwrImageRepositoryResponse):
             return False
 
         return self.__dict__ == other.__dict__

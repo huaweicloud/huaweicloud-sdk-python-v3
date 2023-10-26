@@ -3542,6 +3542,8 @@ class IoTDAAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
         if 'app_id' in local_var_params:
             query_params.append(('app_id', local_var_params['app_id']))
+        if 'product_name' in local_var_params:
+            query_params.append(('product_name', local_var_params['product_name']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
 

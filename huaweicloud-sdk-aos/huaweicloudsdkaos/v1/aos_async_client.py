@@ -1660,7 +1660,7 @@ class AosAsyncClient(Client):
         
         此API用于删除指定资源栈集下指定局点（region）或指定成员账户（domain_id）的资源栈实例，并返回资源栈集操作ID（stack_set_operation_id）
         
-        **请谨慎操作，删除资源栈实例将会删除与该资源栈实例相关的堆栈以及堆栈所管理的一切资源。
+        **请谨慎操作，删除资源栈实例将会删除与该资源栈实例相关的堆栈以及堆栈所管理的一切资源。**
         
         * 用户可以根据资源栈集操作ID（stack_set_operation_id），通过ShowStackSetOperationMetadata API获取资源栈集操作状态
         
@@ -2082,6 +2082,71 @@ class AosAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_stack_instance_async(self, request):
+        """获取资源栈实例
+
+        获取资源栈实例（ShowStackInstance）
+        
+        用户可以使用此API获取资源栈实例的详细信息，包括关联资源栈名称与id，创建时间，参数覆盖等
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStackInstance
+        :type request: :class:`huaweicloudsdkaos.v1.ShowStackInstanceRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.ShowStackInstanceResponse`
+        """
+        return self._show_stack_instance_with_http_info(request)
+
+    def _show_stack_instance_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'stack_set_name' in local_var_params:
+            path_params['stack_set_name'] = local_var_params['stack_set_name']
+        if 'stack_instance_addr' in local_var_params:
+            path_params['stack_instance_addr'] = local_var_params['stack_instance_addr']
+
+        query_params = []
+        if 'stack_set_id' in local_var_params:
+            query_params.append(('stack_set_id', local_var_params['stack_set_id']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        return self.call_api(
+            resource_path='/v1/stack-sets/{stack_set_name}/stack-instances/{stack_instance_addr}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowStackInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_stack_set_metadata_async(self, request):
         """获取资源栈集元数据
 
@@ -2273,6 +2338,79 @@ class AosAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowStackSetTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_stack_instances_async(self, request):
+        """更新资源栈实例
+
+        更新资源栈实例（UpdateStackInstances）
+        
+        此API用于更新并部署指定资源栈实例集合，并返回资源栈集操作ID（stack_set_operation_id）
+        
+        此API可以通过var_overrides参数，更新指定资源栈实例的参数值，进行参数覆盖。若var_overrides参数未给与，则默认使用当前资源栈集中记录的参数进行部署，详见：var_overrides参数描述。用户只可以更新已经存在的资源栈实例，如果用户想要增加额外的资源栈实例，请使用CreateStackInstances API。
+        
+        通过DeployStackSet API更新资源栈集参数后，资源栈实例中已经被覆盖的参数不会被更新，仍然保留覆盖值。
+        
+        用户只能覆盖已经在资源栈集中记录的参数，如果用户想要增加可以覆盖的参数，需要先通过DeployStackSet API更新资源栈集记录的参数集合。
+        
+        * 当触发的部署失败时，资源栈实例不会自动回滚参数覆盖，但部署失败的资源栈会默认自动回滚，已经部署成功的资源栈不会触发回滚。
+        
+        * 用户可以根据资源栈集操作ID（stack_set_operation_id），通过ShowStackSetOperationMetadata API获取资源栈集操作状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateStackInstances
+        :type request: :class:`huaweicloudsdkaos.v1.UpdateStackInstancesRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.UpdateStackInstancesResponse`
+        """
+        return self._update_stack_instances_with_http_info(request)
+
+    def _update_stack_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'stack_set_name' in local_var_params:
+            path_params['stack_set_name'] = local_var_params['stack_set_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        return self.call_api(
+            resource_path='/v1/stack-sets/{stack_set_name}/stack-instances',
+            method='PATCH',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateStackInstancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2802,7 +2940,7 @@ class AosAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["Location", ]
+        response_headers = ["Location"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

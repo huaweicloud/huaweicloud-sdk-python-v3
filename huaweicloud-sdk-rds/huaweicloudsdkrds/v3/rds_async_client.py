@@ -2106,6 +2106,63 @@ class RdsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_instance_diagnosis_async(self, request):
+        """获取诊断后的实例数量
+
+        获取诊断后的实例数量
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstanceDiagnosis
+        :type request: :class:`huaweicloudsdkrds.v3.ListInstanceDiagnosisRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListInstanceDiagnosisResponse`
+        """
+        return self._list_instance_diagnosis_with_http_info(request)
+
+    def _list_instance_diagnosis_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'engine' in local_var_params:
+            query_params.append(('engine', local_var_params['engine']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/diagnosis',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListInstanceDiagnosisResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_instance_param_histories_async(self, request):
         """查询实例参数修改历史
 
@@ -2302,6 +2359,69 @@ class RdsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_instances_info_diagnosis_async(self, request):
+        """获取指定诊断项的诊断结果
+
+        获取指定诊断项的诊断结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstancesInfoDiagnosis
+        :type request: :class:`huaweicloudsdkrds.v3.ListInstancesInfoDiagnosisRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListInstancesInfoDiagnosisResponse`
+        """
+        return self._list_instances_info_diagnosis_with_http_info(request)
+
+    def _list_instances_info_diagnosis_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'engine' in local_var_params:
+            query_params.append(('engine', local_var_params['engine']))
+        if 'diagnosis' in local_var_params:
+            query_params.append(('diagnosis', local_var_params['diagnosis']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/diagnosis/info',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListInstancesInfoDiagnosisResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

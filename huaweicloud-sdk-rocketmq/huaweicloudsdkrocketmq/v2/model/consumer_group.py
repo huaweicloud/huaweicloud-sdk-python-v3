@@ -21,6 +21,7 @@ class ConsumerGroup:
         'broadcast': 'bool',
         'brokers': 'list[str]',
         'name': 'str',
+        'group_desc': 'str',
         'retry_max_time': 'float',
         'from_beginning': 'bool'
     }
@@ -30,11 +31,12 @@ class ConsumerGroup:
         'broadcast': 'broadcast',
         'brokers': 'brokers',
         'name': 'name',
+        'group_desc': 'group_desc',
         'retry_max_time': 'retry_max_time',
         'from_beginning': 'from_beginning'
     }
 
-    def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, retry_max_time=None, from_beginning=None):
+    def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, group_desc=None, retry_max_time=None, from_beginning=None):
         """ConsumerGroup
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ConsumerGroup:
         :type brokers: list[str]
         :param name: 消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
         :type name: str
+        :param group_desc: 消费组描述，长度0~200个字符。
+        :type group_desc: str
         :param retry_max_time: 最大重试次数。
         :type retry_max_time: float
         :param from_beginning: 是否重头消费。
@@ -59,6 +63,7 @@ class ConsumerGroup:
         self._broadcast = None
         self._brokers = None
         self._name = None
+        self._group_desc = None
         self._retry_max_time = None
         self._from_beginning = None
         self.discriminator = None
@@ -71,6 +76,8 @@ class ConsumerGroup:
             self.brokers = brokers
         if name is not None:
             self.name = name
+        if group_desc is not None:
+            self.group_desc = group_desc
         if retry_max_time is not None:
             self.retry_max_time = retry_max_time
         if from_beginning is not None:
@@ -163,6 +170,28 @@ class ConsumerGroup:
         :type name: str
         """
         self._name = name
+
+    @property
+    def group_desc(self):
+        """Gets the group_desc of this ConsumerGroup.
+
+        消费组描述，长度0~200个字符。
+
+        :return: The group_desc of this ConsumerGroup.
+        :rtype: str
+        """
+        return self._group_desc
+
+    @group_desc.setter
+    def group_desc(self, group_desc):
+        """Sets the group_desc of this ConsumerGroup.
+
+        消费组描述，长度0~200个字符。
+
+        :param group_desc: The group_desc of this ConsumerGroup.
+        :type group_desc: str
+        """
+        self._group_desc = group_desc
 
     @property
     def retry_max_time(self):

@@ -22,7 +22,6 @@ class CreateInstanceRequestBody:
         'enterprise_project_id': 'str',
         'description': 'str',
         'shared': 'bool',
-        'order_id': 'str',
         'specs': 'list[CreateSpec]',
         'tags': 'list[ResourceTag]'
     }
@@ -33,12 +32,11 @@ class CreateInstanceRequestBody:
         'enterprise_project_id': 'enterprise_project_id',
         'description': 'description',
         'shared': 'shared',
-        'order_id': 'order_id',
         'specs': 'specs',
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, charge_mode=None, enterprise_project_id=None, description=None, shared=None, order_id=None, specs=None, tags=None):
+    def __init__(self, name=None, charge_mode=None, enterprise_project_id=None, description=None, shared=None, specs=None, tags=None):
         """CreateInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -53,8 +51,6 @@ class CreateInstanceRequestBody:
         :type description: str
         :param shared: false为物理多租；true为逻辑多租。默认为true。
         :type shared: bool
-        :param order_id: 包周期订购时的订单ID。
-        :type order_id: str
         :param specs: 规格列表
         :type specs: list[:class:`huaweicloudsdklakeformation.v1.CreateSpec`]
         :param tags: 标签列表，最多添加20个标签。
@@ -68,7 +64,6 @@ class CreateInstanceRequestBody:
         self._enterprise_project_id = None
         self._description = None
         self._shared = None
-        self._order_id = None
         self._specs = None
         self._tags = None
         self.discriminator = None
@@ -80,8 +75,6 @@ class CreateInstanceRequestBody:
         if description is not None:
             self.description = description
         self.shared = shared
-        if order_id is not None:
-            self.order_id = order_id
         if specs is not None:
             self.specs = specs
         if tags is not None:
@@ -196,28 +189,6 @@ class CreateInstanceRequestBody:
         :type shared: bool
         """
         self._shared = shared
-
-    @property
-    def order_id(self):
-        """Gets the order_id of this CreateInstanceRequestBody.
-
-        包周期订购时的订单ID。
-
-        :return: The order_id of this CreateInstanceRequestBody.
-        :rtype: str
-        """
-        return self._order_id
-
-    @order_id.setter
-    def order_id(self, order_id):
-        """Sets the order_id of this CreateInstanceRequestBody.
-
-        包周期订购时的订单ID。
-
-        :param order_id: The order_id of this CreateInstanceRequestBody.
-        :type order_id: str
-        """
-        self._order_id = order_id
 
     @property
     def specs(self):

@@ -23,7 +23,11 @@ class ListHostProtectHistoryInfoRequest:
         'start_time': 'int',
         'end_time': 'int',
         'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'host_name': 'str',
+        'host_ip': 'str',
+        'file_path': 'str',
+        'file_operation': 'str'
     }
 
     attribute_map = {
@@ -33,10 +37,14 @@ class ListHostProtectHistoryInfoRequest:
         'start_time': 'start_time',
         'end_time': 'end_time',
         'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'host_name': 'host_name',
+        'host_ip': 'host_ip',
+        'file_path': 'file_path',
+        'file_operation': 'file_operation'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, host_id=None, start_time=None, end_time=None, limit=None, offset=None):
+    def __init__(self, region=None, enterprise_project_id=None, host_id=None, start_time=None, end_time=None, limit=None, offset=None, host_name=None, host_ip=None, file_path=None, file_operation=None):
         """ListHostProtectHistoryInfoRequest
 
         The model defined in huaweicloud sdk
@@ -55,6 +63,14 @@ class ListHostProtectHistoryInfoRequest:
         :type limit: int
         :param offset: offset
         :type offset: int
+        :param host_name: 服务器名称
+        :type host_name: str
+        :param host_ip: 服务器ip
+        :type host_ip: str
+        :param file_path: 防护文件
+        :type file_path: str
+        :param file_operation: 文件操作类型   - add: 新增   - delete: 删除   - modify: 修改内容   - attribute: 修改属性
+        :type file_operation: str
         """
         
         
@@ -66,6 +82,10 @@ class ListHostProtectHistoryInfoRequest:
         self._end_time = None
         self._limit = None
         self._offset = None
+        self._host_name = None
+        self._host_ip = None
+        self._file_path = None
+        self._file_operation = None
         self.discriminator = None
 
         self.region = region
@@ -76,6 +96,14 @@ class ListHostProtectHistoryInfoRequest:
         self.end_time = end_time
         self.limit = limit
         self.offset = offset
+        if host_name is not None:
+            self.host_name = host_name
+        if host_ip is not None:
+            self.host_ip = host_ip
+        if file_path is not None:
+            self.file_path = file_path
+        if file_operation is not None:
+            self.file_operation = file_operation
 
     @property
     def region(self):
@@ -230,6 +258,94 @@ class ListHostProtectHistoryInfoRequest:
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def host_name(self):
+        """Gets the host_name of this ListHostProtectHistoryInfoRequest.
+
+        服务器名称
+
+        :return: The host_name of this ListHostProtectHistoryInfoRequest.
+        :rtype: str
+        """
+        return self._host_name
+
+    @host_name.setter
+    def host_name(self, host_name):
+        """Sets the host_name of this ListHostProtectHistoryInfoRequest.
+
+        服务器名称
+
+        :param host_name: The host_name of this ListHostProtectHistoryInfoRequest.
+        :type host_name: str
+        """
+        self._host_name = host_name
+
+    @property
+    def host_ip(self):
+        """Gets the host_ip of this ListHostProtectHistoryInfoRequest.
+
+        服务器ip
+
+        :return: The host_ip of this ListHostProtectHistoryInfoRequest.
+        :rtype: str
+        """
+        return self._host_ip
+
+    @host_ip.setter
+    def host_ip(self, host_ip):
+        """Sets the host_ip of this ListHostProtectHistoryInfoRequest.
+
+        服务器ip
+
+        :param host_ip: The host_ip of this ListHostProtectHistoryInfoRequest.
+        :type host_ip: str
+        """
+        self._host_ip = host_ip
+
+    @property
+    def file_path(self):
+        """Gets the file_path of this ListHostProtectHistoryInfoRequest.
+
+        防护文件
+
+        :return: The file_path of this ListHostProtectHistoryInfoRequest.
+        :rtype: str
+        """
+        return self._file_path
+
+    @file_path.setter
+    def file_path(self, file_path):
+        """Sets the file_path of this ListHostProtectHistoryInfoRequest.
+
+        防护文件
+
+        :param file_path: The file_path of this ListHostProtectHistoryInfoRequest.
+        :type file_path: str
+        """
+        self._file_path = file_path
+
+    @property
+    def file_operation(self):
+        """Gets the file_operation of this ListHostProtectHistoryInfoRequest.
+
+        文件操作类型   - add: 新增   - delete: 删除   - modify: 修改内容   - attribute: 修改属性
+
+        :return: The file_operation of this ListHostProtectHistoryInfoRequest.
+        :rtype: str
+        """
+        return self._file_operation
+
+    @file_operation.setter
+    def file_operation(self, file_operation):
+        """Sets the file_operation of this ListHostProtectHistoryInfoRequest.
+
+        文件操作类型   - add: 新增   - delete: 删除   - modify: 修改内容   - attribute: 修改属性
+
+        :param file_operation: The file_operation of this ListHostProtectHistoryInfoRequest.
+        :type file_operation: str
+        """
+        self._file_operation = file_operation
 
     def to_dict(self):
         """Returns the model properties as a dict"""

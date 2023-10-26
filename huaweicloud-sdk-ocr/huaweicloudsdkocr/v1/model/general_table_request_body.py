@@ -23,7 +23,8 @@ class GeneralTableRequestBody:
         'return_char_location': 'bool',
         'return_confidence': 'bool',
         'return_excel': 'bool',
-        'return_rectification_matrix': 'bool'
+        'return_rectification_matrix': 'bool',
+        'with_borders': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class GeneralTableRequestBody:
         'return_char_location': 'return_char_location',
         'return_confidence': 'return_confidence',
         'return_excel': 'return_excel',
-        'return_rectification_matrix': 'return_rectification_matrix'
+        'return_rectification_matrix': 'return_rectification_matrix',
+        'with_borders': 'with_borders'
     }
 
-    def __init__(self, image=None, url=None, return_text_location=None, return_char_location=None, return_confidence=None, return_excel=None, return_rectification_matrix=None):
+    def __init__(self, image=None, url=None, return_text_location=None, return_char_location=None, return_confidence=None, return_excel=None, return_rectification_matrix=None, with_borders=None):
         """GeneralTableRequestBody
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class GeneralTableRequestBody:
         :type return_excel: bool
         :param return_rectification_matrix: 可选值包括： - true：返回透视变换矩阵 - false：不返回  未传入该参数时默认为false，即不返回透视变换矩阵。 
         :type return_rectification_matrix: bool
+        :param with_borders: 可选值包括： - true：输入图像仅包含有线表格，仅进行有线表格识别。 - false: 输入图像可能包含无线表格，同时进行有线表格与无线表格识别。  未传入该参数时默认为false，即同时进行有线表格与无线表格识别。当确认输入仅包含有线表格时，该参数设为true可达到更优识别效果。 
+        :type with_borders: bool
         """
         
         
@@ -66,6 +70,7 @@ class GeneralTableRequestBody:
         self._return_confidence = None
         self._return_excel = None
         self._return_rectification_matrix = None
+        self._with_borders = None
         self.discriminator = None
 
         if image is not None:
@@ -82,6 +87,8 @@ class GeneralTableRequestBody:
             self.return_excel = return_excel
         if return_rectification_matrix is not None:
             self.return_rectification_matrix = return_rectification_matrix
+        if with_borders is not None:
+            self.with_borders = with_borders
 
     @property
     def image(self):
@@ -236,6 +243,28 @@ class GeneralTableRequestBody:
         :type return_rectification_matrix: bool
         """
         self._return_rectification_matrix = return_rectification_matrix
+
+    @property
+    def with_borders(self):
+        """Gets the with_borders of this GeneralTableRequestBody.
+
+        可选值包括： - true：输入图像仅包含有线表格，仅进行有线表格识别。 - false: 输入图像可能包含无线表格，同时进行有线表格与无线表格识别。  未传入该参数时默认为false，即同时进行有线表格与无线表格识别。当确认输入仅包含有线表格时，该参数设为true可达到更优识别效果。 
+
+        :return: The with_borders of this GeneralTableRequestBody.
+        :rtype: bool
+        """
+        return self._with_borders
+
+    @with_borders.setter
+    def with_borders(self, with_borders):
+        """Sets the with_borders of this GeneralTableRequestBody.
+
+        可选值包括： - true：输入图像仅包含有线表格，仅进行有线表格识别。 - false: 输入图像可能包含无线表格，同时进行有线表格与无线表格识别。  未传入该参数时默认为false，即同时进行有线表格与无线表格识别。当确认输入仅包含有线表格时，该参数设为true可达到更优识别效果。 
+
+        :param with_borders: The with_borders of this GeneralTableRequestBody.
+        :type with_borders: bool
+        """
+        self._with_borders = with_borders
 
     def to_dict(self):
         """Returns the model properties as a dict"""

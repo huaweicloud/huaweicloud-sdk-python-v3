@@ -20,6 +20,7 @@ class ListBatchesRequest:
         'cluster_name': 'str',
         'end': 'int',
         '_from': 'int',
+        'job_name': 'str',
         'job_id': 'str',
         'order': 'str',
         'queue_name': 'str',
@@ -32,6 +33,7 @@ class ListBatchesRequest:
         'cluster_name': 'cluster_name',
         'end': 'end',
         '_from': 'from',
+        'job_name': 'job-name',
         'job_id': 'job-id',
         'order': 'order',
         'queue_name': 'queue_name',
@@ -40,7 +42,7 @@ class ListBatchesRequest:
         'state': 'state'
     }
 
-    def __init__(self, cluster_name=None, end=None, _from=None, job_id=None, order=None, queue_name=None, size=None, start=None, state=None):
+    def __init__(self, cluster_name=None, end=None, _from=None, job_name=None, job_id=None, order=None, queue_name=None, size=None, start=None, state=None):
         """ListBatchesRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ListBatchesRequest:
         :type end: int
         :param _from: 起始批处理作业的索引号，默认从0开始。
         :type _from: int
+        :param job_name: 批处理作业的名称。
+        :type job_name: str
         :param job_id: 
         :type job_id: str
         :param order: 指定作业排序方式，默认为CREATE_TIME_DESC（作业提交时间降序），支持DURATION_DESC（作业运行时长降序）、DURATION_ASC（作业运行时长升序）、CREATE_TIME_DESC（作业提交时间降序）、CREATE_TIME_ASC（作业提交时间升序）四种排序方式。
@@ -70,6 +74,7 @@ class ListBatchesRequest:
         self._cluster_name = None
         self._end = None
         self.__from = None
+        self._job_name = None
         self._job_id = None
         self._order = None
         self._queue_name = None
@@ -84,6 +89,8 @@ class ListBatchesRequest:
             self.end = end
         if _from is not None:
             self._from = _from
+        if job_name is not None:
+            self.job_name = job_name
         if job_id is not None:
             self.job_id = job_id
         if order is not None:
@@ -162,6 +169,28 @@ class ListBatchesRequest:
         :type _from: int
         """
         self.__from = _from
+
+    @property
+    def job_name(self):
+        """Gets the job_name of this ListBatchesRequest.
+
+        批处理作业的名称。
+
+        :return: The job_name of this ListBatchesRequest.
+        :rtype: str
+        """
+        return self._job_name
+
+    @job_name.setter
+    def job_name(self, job_name):
+        """Sets the job_name of this ListBatchesRequest.
+
+        批处理作业的名称。
+
+        :param job_name: The job_name of this ListBatchesRequest.
+        :type job_name: str
+        """
+        self._job_name = job_name
 
     @property
     def job_id(self):

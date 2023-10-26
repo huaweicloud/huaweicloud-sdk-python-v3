@@ -22,7 +22,9 @@ class ChangeVulStatusRequestInfo:
         'select_type': 'str',
         'type': 'str',
         'data_list': 'list[VulOperateInfo]',
-        'host_data_list': 'list[HostVulOperateInfo]'
+        'host_data_list': 'list[HostVulOperateInfo]',
+        'backup_info_id': 'str',
+        'custom_backup_hosts': 'list[ChangeVulStatusRequestInfoCustomBackupHosts]'
     }
 
     attribute_map = {
@@ -31,10 +33,12 @@ class ChangeVulStatusRequestInfo:
         'select_type': 'select_type',
         'type': 'type',
         'data_list': 'data_list',
-        'host_data_list': 'host_data_list'
+        'host_data_list': 'host_data_list',
+        'backup_info_id': 'backup_info_id',
+        'custom_backup_hosts': 'custom_backup_hosts'
     }
 
-    def __init__(self, operate_type=None, remark=None, select_type=None, type=None, data_list=None, host_data_list=None):
+    def __init__(self, operate_type=None, remark=None, select_type=None, type=None, data_list=None, host_data_list=None, backup_info_id=None, custom_backup_hosts=None):
         """ChangeVulStatusRequestInfo
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class ChangeVulStatusRequestInfo:
         :type data_list: list[:class:`huaweicloudsdkhss.v5.VulOperateInfo`]
         :param host_data_list: 主机维度漏洞列表
         :type host_data_list: list[:class:`huaweicloudsdkhss.v5.HostVulOperateInfo`]
+        :param backup_info_id: 本次漏洞处理的备份信息id，若不传该参数，则不进行备份
+        :type backup_info_id: str
+        :param custom_backup_hosts: 自定义备份主机使用的存储库及备份名称；不在该列表中的主机备份时系统会自动选取剩余空间最大的存储库，并自动生成备份名称
+        :type custom_backup_hosts: list[:class:`huaweicloudsdkhss.v5.ChangeVulStatusRequestInfoCustomBackupHosts`]
         """
         
         
@@ -61,6 +69,8 @@ class ChangeVulStatusRequestInfo:
         self._type = None
         self._data_list = None
         self._host_data_list = None
+        self._backup_info_id = None
+        self._custom_backup_hosts = None
         self.discriminator = None
 
         self.operate_type = operate_type
@@ -73,6 +83,10 @@ class ChangeVulStatusRequestInfo:
         self.data_list = data_list
         if host_data_list is not None:
             self.host_data_list = host_data_list
+        if backup_info_id is not None:
+            self.backup_info_id = backup_info_id
+        if custom_backup_hosts is not None:
+            self.custom_backup_hosts = custom_backup_hosts
 
     @property
     def operate_type(self):
@@ -205,6 +219,50 @@ class ChangeVulStatusRequestInfo:
         :type host_data_list: list[:class:`huaweicloudsdkhss.v5.HostVulOperateInfo`]
         """
         self._host_data_list = host_data_list
+
+    @property
+    def backup_info_id(self):
+        """Gets the backup_info_id of this ChangeVulStatusRequestInfo.
+
+        本次漏洞处理的备份信息id，若不传该参数，则不进行备份
+
+        :return: The backup_info_id of this ChangeVulStatusRequestInfo.
+        :rtype: str
+        """
+        return self._backup_info_id
+
+    @backup_info_id.setter
+    def backup_info_id(self, backup_info_id):
+        """Sets the backup_info_id of this ChangeVulStatusRequestInfo.
+
+        本次漏洞处理的备份信息id，若不传该参数，则不进行备份
+
+        :param backup_info_id: The backup_info_id of this ChangeVulStatusRequestInfo.
+        :type backup_info_id: str
+        """
+        self._backup_info_id = backup_info_id
+
+    @property
+    def custom_backup_hosts(self):
+        """Gets the custom_backup_hosts of this ChangeVulStatusRequestInfo.
+
+        自定义备份主机使用的存储库及备份名称；不在该列表中的主机备份时系统会自动选取剩余空间最大的存储库，并自动生成备份名称
+
+        :return: The custom_backup_hosts of this ChangeVulStatusRequestInfo.
+        :rtype: list[:class:`huaweicloudsdkhss.v5.ChangeVulStatusRequestInfoCustomBackupHosts`]
+        """
+        return self._custom_backup_hosts
+
+    @custom_backup_hosts.setter
+    def custom_backup_hosts(self, custom_backup_hosts):
+        """Sets the custom_backup_hosts of this ChangeVulStatusRequestInfo.
+
+        自定义备份主机使用的存储库及备份名称；不在该列表中的主机备份时系统会自动选取剩余空间最大的存储库，并自动生成备份名称
+
+        :param custom_backup_hosts: The custom_backup_hosts of this ChangeVulStatusRequestInfo.
+        :type custom_backup_hosts: list[:class:`huaweicloudsdkhss.v5.ChangeVulStatusRequestInfoCustomBackupHosts`]
+        """
+        self._custom_backup_hosts = custom_backup_hosts
 
     def to_dict(self):
         """Returns the model properties as a dict"""
