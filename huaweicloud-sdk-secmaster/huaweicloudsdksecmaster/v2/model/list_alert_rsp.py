@@ -32,18 +32,18 @@ class ListAlertRsp:
         'serverity': 'str',
         'criticality': 'int',
         'alert_type': 'object',
-        'network_list': 'list[ShowAlertRspNetworkList]',
+        'network_list': 'list[ListAlertRspNetworkList]',
         'resource_list': 'list[ShowAlertRspResourceList]',
         'remediation': 'ShowAlertRspRemediation',
         'verification_state': 'str',
         'handle_status': 'str',
-        'sla': 'int',
+        'sla': 'str',
         'update_time': 'str',
         'close_time': 'str',
         'chop_phase': 'str',
         'ipdrr_phase': 'str',
         'ppdr_phase': 'str',
-        'simulation': 'bool',
+        'simulation': 'str',
         'actor': 'str',
         'owner': 'str',
         'cteator': 'str',
@@ -51,7 +51,7 @@ class ListAlertRsp:
         'close_comment': 'str',
         'malware': 'ShowAlertRspMalware',
         'system_info': 'object',
-        'process': 'list[ShowAlertRspProcess]',
+        'process': 'list[ListAlertRspProcess]',
         'user_info': 'list[ShowAlertRspUserInfo]',
         'file_info': 'list[ShowAlertRspFileInfo]',
         'system_alert_table': 'object',
@@ -138,7 +138,7 @@ class ListAlertRsp:
         :param alert_type: 事件分类
         :type alert_type: object
         :param network_list: network_list
-        :type network_list: list[:class:`huaweicloudsdksecmaster.v2.ShowAlertRspNetworkList`]
+        :type network_list: list[:class:`huaweicloudsdksecmaster.v2.ListAlertRspNetworkList`]
         :param resource_list: network_list
         :type resource_list: list[:class:`huaweicloudsdksecmaster.v2.ShowAlertRspResourceList`]
         :param remediation: 
@@ -148,7 +148,7 @@ class ListAlertRsp:
         :param handle_status: 事件处理状态
         :type handle_status: str
         :param sla: sla
-        :type sla: int
+        :type sla: str
         :param update_time: Create time
         :type update_time: str
         :param close_time: Create time
@@ -160,7 +160,7 @@ class ListAlertRsp:
         :param ppdr_phase: 周期/处置阶段编号
         :type ppdr_phase: str
         :param simulation: 是否为调试事件.
-        :type simulation: bool
+        :type simulation: str
         :param actor: 委托人
         :type actor: str
         :param owner: The name, display only
@@ -176,7 +176,7 @@ class ListAlertRsp:
         :param system_info: 系统信息
         :type system_info: object
         :param process: 进程信息
-        :type process: list[:class:`huaweicloudsdksecmaster.v2.ShowAlertRspProcess`]
+        :type process: list[:class:`huaweicloudsdksecmaster.v2.ListAlertRspProcess`]
         :param user_info: 用户信息
         :type user_info: list[:class:`huaweicloudsdksecmaster.v2.ShowAlertRspUserInfo`]
         :param file_info: 文件信息
@@ -643,7 +643,7 @@ class ListAlertRsp:
         network_list
 
         :return: The network_list of this ListAlertRsp.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v2.ShowAlertRspNetworkList`]
+        :rtype: list[:class:`huaweicloudsdksecmaster.v2.ListAlertRspNetworkList`]
         """
         return self._network_list
 
@@ -654,7 +654,7 @@ class ListAlertRsp:
         network_list
 
         :param network_list: The network_list of this ListAlertRsp.
-        :type network_list: list[:class:`huaweicloudsdksecmaster.v2.ShowAlertRspNetworkList`]
+        :type network_list: list[:class:`huaweicloudsdksecmaster.v2.ListAlertRspNetworkList`]
         """
         self._network_list = network_list
 
@@ -749,7 +749,7 @@ class ListAlertRsp:
         sla
 
         :return: The sla of this ListAlertRsp.
-        :rtype: int
+        :rtype: str
         """
         return self._sla
 
@@ -760,7 +760,7 @@ class ListAlertRsp:
         sla
 
         :param sla: The sla of this ListAlertRsp.
-        :type sla: int
+        :type sla: str
         """
         self._sla = sla
 
@@ -881,7 +881,7 @@ class ListAlertRsp:
         是否为调试事件.
 
         :return: The simulation of this ListAlertRsp.
-        :rtype: bool
+        :rtype: str
         """
         return self._simulation
 
@@ -892,7 +892,7 @@ class ListAlertRsp:
         是否为调试事件.
 
         :param simulation: The simulation of this ListAlertRsp.
-        :type simulation: bool
+        :type simulation: str
         """
         self._simulation = simulation
 
@@ -1053,7 +1053,7 @@ class ListAlertRsp:
         进程信息
 
         :return: The process of this ListAlertRsp.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v2.ShowAlertRspProcess`]
+        :rtype: list[:class:`huaweicloudsdksecmaster.v2.ListAlertRspProcess`]
         """
         return self._process
 
@@ -1064,7 +1064,7 @@ class ListAlertRsp:
         进程信息
 
         :param process: The process of this ListAlertRsp.
-        :type process: list[:class:`huaweicloudsdksecmaster.v2.ShowAlertRspProcess`]
+        :type process: list[:class:`huaweicloudsdksecmaster.v2.ListAlertRspProcess`]
         """
         self._process = process
 

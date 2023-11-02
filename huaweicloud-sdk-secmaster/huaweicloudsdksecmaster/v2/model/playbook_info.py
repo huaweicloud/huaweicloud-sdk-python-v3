@@ -63,33 +63,33 @@ class PlaybookInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: Id value
+        :param id: 剧本ID
         :type id: str
-        :param name: The name, display only
+        :param name: 剧本名称
         :type name: str
-        :param description: The description, display only
+        :param description: 描述信息
         :type description: str
-        :param create_time: Create time
+        :param create_time: 剧本创建时间
         :type create_time: str
-        :param update_time: Update time
+        :param update_time: 剧本更新时间
         :type update_time: str
-        :param project_id: Project id value
+        :param project_id: 项目ID
         :type project_id: str
-        :param version_id: version Id value
+        :param version_id: 剧本版本ID
         :type version_id: str
-        :param enabled: If is enabled, false for disenabled, true for enabled
+        :param enabled: 是否启用
         :type enabled: bool
-        :param workspace_id: 工作空间id
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param approve_role: Role required for approve
+        :param approve_role: 审核用户角色
         :type approve_role: str
         :param user_role: 用户角色
         :type user_role: str
-        :param edit_role: Role required for edit
+        :param edit_role: 编辑用户角色
         :type edit_role: str
-        :param owner_id: Owner id
+        :param owner_id: 所有者ID
         :type owner_id: str
-        :param version: version
+        :param version: 版本号
         :type version: str
         :param dataclass_name: 数据类名称
         :type dataclass_name: str
@@ -164,7 +164,7 @@ class PlaybookInfo:
     def id(self):
         """Gets the id of this PlaybookInfo.
 
-        Id value
+        剧本ID
 
         :return: The id of this PlaybookInfo.
         :rtype: str
@@ -175,7 +175,7 @@ class PlaybookInfo:
     def id(self, id):
         """Sets the id of this PlaybookInfo.
 
-        Id value
+        剧本ID
 
         :param id: The id of this PlaybookInfo.
         :type id: str
@@ -186,7 +186,7 @@ class PlaybookInfo:
     def name(self):
         """Gets the name of this PlaybookInfo.
 
-        The name, display only
+        剧本名称
 
         :return: The name of this PlaybookInfo.
         :rtype: str
@@ -197,7 +197,7 @@ class PlaybookInfo:
     def name(self, name):
         """Sets the name of this PlaybookInfo.
 
-        The name, display only
+        剧本名称
 
         :param name: The name of this PlaybookInfo.
         :type name: str
@@ -208,7 +208,7 @@ class PlaybookInfo:
     def description(self):
         """Gets the description of this PlaybookInfo.
 
-        The description, display only
+        描述信息
 
         :return: The description of this PlaybookInfo.
         :rtype: str
@@ -219,7 +219,7 @@ class PlaybookInfo:
     def description(self, description):
         """Sets the description of this PlaybookInfo.
 
-        The description, display only
+        描述信息
 
         :param description: The description of this PlaybookInfo.
         :type description: str
@@ -230,7 +230,7 @@ class PlaybookInfo:
     def create_time(self):
         """Gets the create_time of this PlaybookInfo.
 
-        Create time
+        剧本创建时间
 
         :return: The create_time of this PlaybookInfo.
         :rtype: str
@@ -241,7 +241,7 @@ class PlaybookInfo:
     def create_time(self, create_time):
         """Sets the create_time of this PlaybookInfo.
 
-        Create time
+        剧本创建时间
 
         :param create_time: The create_time of this PlaybookInfo.
         :type create_time: str
@@ -252,7 +252,7 @@ class PlaybookInfo:
     def update_time(self):
         """Gets the update_time of this PlaybookInfo.
 
-        Update time
+        剧本更新时间
 
         :return: The update_time of this PlaybookInfo.
         :rtype: str
@@ -263,7 +263,7 @@ class PlaybookInfo:
     def update_time(self, update_time):
         """Sets the update_time of this PlaybookInfo.
 
-        Update time
+        剧本更新时间
 
         :param update_time: The update_time of this PlaybookInfo.
         :type update_time: str
@@ -274,7 +274,7 @@ class PlaybookInfo:
     def project_id(self):
         """Gets the project_id of this PlaybookInfo.
 
-        Project id value
+        项目ID
 
         :return: The project_id of this PlaybookInfo.
         :rtype: str
@@ -285,7 +285,7 @@ class PlaybookInfo:
     def project_id(self, project_id):
         """Sets the project_id of this PlaybookInfo.
 
-        Project id value
+        项目ID
 
         :param project_id: The project_id of this PlaybookInfo.
         :type project_id: str
@@ -296,7 +296,7 @@ class PlaybookInfo:
     def version_id(self):
         """Gets the version_id of this PlaybookInfo.
 
-        version Id value
+        剧本版本ID
 
         :return: The version_id of this PlaybookInfo.
         :rtype: str
@@ -307,7 +307,7 @@ class PlaybookInfo:
     def version_id(self, version_id):
         """Sets the version_id of this PlaybookInfo.
 
-        version Id value
+        剧本版本ID
 
         :param version_id: The version_id of this PlaybookInfo.
         :type version_id: str
@@ -318,7 +318,7 @@ class PlaybookInfo:
     def enabled(self):
         """Gets the enabled of this PlaybookInfo.
 
-        If is enabled, false for disenabled, true for enabled
+        是否启用
 
         :return: The enabled of this PlaybookInfo.
         :rtype: bool
@@ -329,7 +329,7 @@ class PlaybookInfo:
     def enabled(self, enabled):
         """Sets the enabled of this PlaybookInfo.
 
-        If is enabled, false for disenabled, true for enabled
+        是否启用
 
         :param enabled: The enabled of this PlaybookInfo.
         :type enabled: bool
@@ -340,7 +340,7 @@ class PlaybookInfo:
     def workspace_id(self):
         """Gets the workspace_id of this PlaybookInfo.
 
-        工作空间id
+        工作空间ID
 
         :return: The workspace_id of this PlaybookInfo.
         :rtype: str
@@ -351,7 +351,7 @@ class PlaybookInfo:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this PlaybookInfo.
 
-        工作空间id
+        工作空间ID
 
         :param workspace_id: The workspace_id of this PlaybookInfo.
         :type workspace_id: str
@@ -362,7 +362,7 @@ class PlaybookInfo:
     def approve_role(self):
         """Gets the approve_role of this PlaybookInfo.
 
-        Role required for approve
+        审核用户角色
 
         :return: The approve_role of this PlaybookInfo.
         :rtype: str
@@ -373,7 +373,7 @@ class PlaybookInfo:
     def approve_role(self, approve_role):
         """Sets the approve_role of this PlaybookInfo.
 
-        Role required for approve
+        审核用户角色
 
         :param approve_role: The approve_role of this PlaybookInfo.
         :type approve_role: str
@@ -406,7 +406,7 @@ class PlaybookInfo:
     def edit_role(self):
         """Gets the edit_role of this PlaybookInfo.
 
-        Role required for edit
+        编辑用户角色
 
         :return: The edit_role of this PlaybookInfo.
         :rtype: str
@@ -417,7 +417,7 @@ class PlaybookInfo:
     def edit_role(self, edit_role):
         """Sets the edit_role of this PlaybookInfo.
 
-        Role required for edit
+        编辑用户角色
 
         :param edit_role: The edit_role of this PlaybookInfo.
         :type edit_role: str
@@ -428,7 +428,7 @@ class PlaybookInfo:
     def owner_id(self):
         """Gets the owner_id of this PlaybookInfo.
 
-        Owner id
+        所有者ID
 
         :return: The owner_id of this PlaybookInfo.
         :rtype: str
@@ -439,7 +439,7 @@ class PlaybookInfo:
     def owner_id(self, owner_id):
         """Sets the owner_id of this PlaybookInfo.
 
-        Owner id
+        所有者ID
 
         :param owner_id: The owner_id of this PlaybookInfo.
         :type owner_id: str
@@ -450,7 +450,7 @@ class PlaybookInfo:
     def version(self):
         """Gets the version of this PlaybookInfo.
 
-        version
+        版本号
 
         :return: The version of this PlaybookInfo.
         :rtype: str
@@ -461,7 +461,7 @@ class PlaybookInfo:
     def version(self, version):
         """Sets the version of this PlaybookInfo.
 
-        version
+        版本号
 
         :param version: The version of this PlaybookInfo.
         :type version: str

@@ -23,7 +23,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
         'project_id': 'str',
         'playbook': 'PlaybookInfoRef',
         'dataclass': 'DataclassInfoRef',
-        'dataobject': 'DataclassInfoRef',
+        'dataobject': 'DataobjectInfo',
         'status': 'str',
         'trigger_type': 'str',
         'start_time': 'str',
@@ -50,25 +50,25 @@ class ShowPlaybookInstanceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: Id value
+        :param id: 剧本实例ID
         :type id: str
-        :param name: The name, display only
+        :param name: 剧本实例名称
         :type name: str
-        :param project_id: Project id value
+        :param project_id: 项目ID
         :type project_id: str
         :param playbook: 
         :type playbook: :class:`huaweicloudsdksecmaster.v2.PlaybookInfoRef`
         :param dataclass: 
         :type dataclass: :class:`huaweicloudsdksecmaster.v2.DataclassInfoRef`
         :param dataobject: 
-        :type dataobject: :class:`huaweicloudsdksecmaster.v2.DataclassInfoRef`
-        :param status: Playbook instance status. RUNNING、FINISHED、FAILED、RETRYING、 TERMINATING、TERMINATED
+        :type dataobject: :class:`huaweicloudsdksecmaster.v2.DataobjectInfo`
+        :param status: 剧本实例状态. (RUNNING--运行中、FINISHED--成功、FAILED--失败、RETRYING--重试中、TERMINATING--终止中、TERMINATED--已终止)
         :type status: str
-        :param trigger_type: trigger type. DEBUG, TIMER, EVENT, MANUAL
+        :param trigger_type: 触发类型. TIMER--定时触发, EVENT--事件触发
         :type trigger_type: str
-        :param start_time: Create time
+        :param start_time: 创建时间
         :type start_time: str
-        :param end_time: Update time
+        :param end_time: 更新时间
         :type end_time: str
         :param x_request_id: 
         :type x_request_id: str
@@ -116,7 +116,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
     def id(self):
         """Gets the id of this ShowPlaybookInstanceResponse.
 
-        Id value
+        剧本实例ID
 
         :return: The id of this ShowPlaybookInstanceResponse.
         :rtype: str
@@ -127,7 +127,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this ShowPlaybookInstanceResponse.
 
-        Id value
+        剧本实例ID
 
         :param id: The id of this ShowPlaybookInstanceResponse.
         :type id: str
@@ -138,7 +138,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
     def name(self):
         """Gets the name of this ShowPlaybookInstanceResponse.
 
-        The name, display only
+        剧本实例名称
 
         :return: The name of this ShowPlaybookInstanceResponse.
         :rtype: str
@@ -149,7 +149,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this ShowPlaybookInstanceResponse.
 
-        The name, display only
+        剧本实例名称
 
         :param name: The name of this ShowPlaybookInstanceResponse.
         :type name: str
@@ -160,7 +160,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
     def project_id(self):
         """Gets the project_id of this ShowPlaybookInstanceResponse.
 
-        Project id value
+        项目ID
 
         :return: The project_id of this ShowPlaybookInstanceResponse.
         :rtype: str
@@ -171,7 +171,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
     def project_id(self, project_id):
         """Sets the project_id of this ShowPlaybookInstanceResponse.
 
-        Project id value
+        项目ID
 
         :param project_id: The project_id of this ShowPlaybookInstanceResponse.
         :type project_id: str
@@ -219,7 +219,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
         """Gets the dataobject of this ShowPlaybookInstanceResponse.
 
         :return: The dataobject of this ShowPlaybookInstanceResponse.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.DataclassInfoRef`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DataobjectInfo`
         """
         return self._dataobject
 
@@ -228,7 +228,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
         """Sets the dataobject of this ShowPlaybookInstanceResponse.
 
         :param dataobject: The dataobject of this ShowPlaybookInstanceResponse.
-        :type dataobject: :class:`huaweicloudsdksecmaster.v2.DataclassInfoRef`
+        :type dataobject: :class:`huaweicloudsdksecmaster.v2.DataobjectInfo`
         """
         self._dataobject = dataobject
 
@@ -236,7 +236,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowPlaybookInstanceResponse.
 
-        Playbook instance status. RUNNING、FINISHED、FAILED、RETRYING、 TERMINATING、TERMINATED
+        剧本实例状态. (RUNNING--运行中、FINISHED--成功、FAILED--失败、RETRYING--重试中、TERMINATING--终止中、TERMINATED--已终止)
 
         :return: The status of this ShowPlaybookInstanceResponse.
         :rtype: str
@@ -247,7 +247,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowPlaybookInstanceResponse.
 
-        Playbook instance status. RUNNING、FINISHED、FAILED、RETRYING、 TERMINATING、TERMINATED
+        剧本实例状态. (RUNNING--运行中、FINISHED--成功、FAILED--失败、RETRYING--重试中、TERMINATING--终止中、TERMINATED--已终止)
 
         :param status: The status of this ShowPlaybookInstanceResponse.
         :type status: str
@@ -258,7 +258,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
     def trigger_type(self):
         """Gets the trigger_type of this ShowPlaybookInstanceResponse.
 
-        trigger type. DEBUG, TIMER, EVENT, MANUAL
+        触发类型. TIMER--定时触发, EVENT--事件触发
 
         :return: The trigger_type of this ShowPlaybookInstanceResponse.
         :rtype: str
@@ -269,7 +269,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
     def trigger_type(self, trigger_type):
         """Sets the trigger_type of this ShowPlaybookInstanceResponse.
 
-        trigger type. DEBUG, TIMER, EVENT, MANUAL
+        触发类型. TIMER--定时触发, EVENT--事件触发
 
         :param trigger_type: The trigger_type of this ShowPlaybookInstanceResponse.
         :type trigger_type: str
@@ -280,7 +280,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
     def start_time(self):
         """Gets the start_time of this ShowPlaybookInstanceResponse.
 
-        Create time
+        创建时间
 
         :return: The start_time of this ShowPlaybookInstanceResponse.
         :rtype: str
@@ -291,7 +291,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
     def start_time(self, start_time):
         """Sets the start_time of this ShowPlaybookInstanceResponse.
 
-        Create time
+        创建时间
 
         :param start_time: The start_time of this ShowPlaybookInstanceResponse.
         :type start_time: str
@@ -302,7 +302,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
     def end_time(self):
         """Gets the end_time of this ShowPlaybookInstanceResponse.
 
-        Update time
+        更新时间
 
         :return: The end_time of this ShowPlaybookInstanceResponse.
         :rtype: str
@@ -313,7 +313,7 @@ class ShowPlaybookInstanceResponse(SdkResponse):
     def end_time(self, end_time):
         """Sets the end_time of this ShowPlaybookInstanceResponse.
 
-        Update time
+        更新时间
 
         :param end_time: The end_time of this ShowPlaybookInstanceResponse.
         :type end_time: str

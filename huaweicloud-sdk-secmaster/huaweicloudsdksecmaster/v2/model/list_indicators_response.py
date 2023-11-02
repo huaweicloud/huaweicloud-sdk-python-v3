@@ -38,13 +38,13 @@ class ListIndicatorsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: Id value
+        :param code: 错误码
         :type code: str
-        :param message: Error message
+        :param message: 错误信息
         :type message: str
-        :param total: tatal count
+        :param total: 总数
         :type total: int
-        :param data: list of informations of indicator
+        :param data: 指标列表数据
         :type data: list[:class:`huaweicloudsdksecmaster.v2.IndicatorDetail`]
         :param x_request_id: 
         :type x_request_id: str
@@ -74,7 +74,7 @@ class ListIndicatorsResponse(SdkResponse):
     def code(self):
         """Gets the code of this ListIndicatorsResponse.
 
-        Id value
+        错误码
 
         :return: The code of this ListIndicatorsResponse.
         :rtype: str
@@ -85,7 +85,7 @@ class ListIndicatorsResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ListIndicatorsResponse.
 
-        Id value
+        错误码
 
         :param code: The code of this ListIndicatorsResponse.
         :type code: str
@@ -96,7 +96,7 @@ class ListIndicatorsResponse(SdkResponse):
     def message(self):
         """Gets the message of this ListIndicatorsResponse.
 
-        Error message
+        错误信息
 
         :return: The message of this ListIndicatorsResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ListIndicatorsResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ListIndicatorsResponse.
 
-        Error message
+        错误信息
 
         :param message: The message of this ListIndicatorsResponse.
         :type message: str
@@ -118,7 +118,7 @@ class ListIndicatorsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListIndicatorsResponse.
 
-        tatal count
+        总数
 
         :return: The total of this ListIndicatorsResponse.
         :rtype: int
@@ -129,7 +129,7 @@ class ListIndicatorsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListIndicatorsResponse.
 
-        tatal count
+        总数
 
         :param total: The total of this ListIndicatorsResponse.
         :type total: int
@@ -140,7 +140,7 @@ class ListIndicatorsResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListIndicatorsResponse.
 
-        list of informations of indicator
+        指标列表数据
 
         :return: The data of this ListIndicatorsResponse.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.IndicatorDetail`]
@@ -151,7 +151,7 @@ class ListIndicatorsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListIndicatorsResponse.
 
-        list of informations of indicator
+        指标列表数据
 
         :param data: The data of this ListIndicatorsResponse.
         :type data: list[:class:`huaweicloudsdksecmaster.v2.IndicatorDetail`]

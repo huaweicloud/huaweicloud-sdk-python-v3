@@ -18,15 +18,26 @@
  under the LICENSE.
 """
 
-import os
 import json
-import six
+import os
+
 import requests
 from requests.exceptions import HTTPError
+from six.moves.urllib.parse import urlparse
 from urllib3.exceptions import SSLError, NewConnectionError
+
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.sdk_request import SdkRequest
-from six.moves.urllib.parse import urlparse
+
+_NO_DOMAIN_ID_ERR_MSG = '''no domain id found, please select one of the following solutions:
+  1. Manually specify domain_id when initializing the credentials, credentials = GlobalCredentials(ak, sk, domain_id)
+  2. Use the domain account to grant IAM read permission to the current account
+  3. Replace the ak/sk of the IAM account with the ak/sk of the domain account'''
+
+_NO_PROJECT_ID_ERR_MSG = '''no project id found, please select one of the following solutions:
+  1. Manually specify project_id when initializing the credentials, credentials = BasicCredentials(ak, sk, project_id)
+  2. Use the domain account to grant IAM read permission to the current account
+  3. Replace the ak/sk of the IAM account with the ak/sk of the domain account'''
 
 
 class Metadata(object):
@@ -78,8 +89,14 @@ class Iam(object):
         resource_path = cls.KEYSTONE_LIST_PROJECT_URI
         query_params = [('name', region_id)]
 
-        sdk_request = SdkRequest(method="GET", schema=schema, host=host, resource_path=resource_path, header_params={},
-                                 query_params=query_params, body="", signing_algorithm=config.signing_algorithm)
+        sdk_request = SdkRequest(method="GET",
+                                 schema=schema,
+                                 host=host,
+                                 resource_path=resource_path,
+                                 header_params={"User-Agent": "huaweicloud-usdk-python/3.0"},
+                                 query_params=query_params,
+                                 body="",
+                                 signing_algorithm=config.signing_algorithm)
 
         return sdk_request
 
@@ -102,9 +119,17 @@ class Iam(object):
         schema = url_parse_result.scheme
         host = url_parse_result.netloc
         resource_path = Iam.CREATE_TOKEN_BY_ID_TOKEN_URI
-        header_params = {"X-Idp-Id": idp_id, "Content-Type": "application/json;charset=UTF-8"}
-        return SdkRequest(method="POST", schema=schema, host=host, resource_path=resource_path, uri=resource_path,
-                          header_params=header_params, query_params=[], body=json.dumps(request_body), stream=False,
+        header_params = {"X-Idp-Id": idp_id,
+                         "Content-Type": "application/json;charset=UTF-8", "User-Agent": "huaweicloud-usdk-python/3.0"}
+        return SdkRequest(method="POST",
+                          schema=schema,
+                          host=host,
+                          resource_path=resource_path,
+                          uri=resource_path,
+                          header_params=header_params,
+                          query_params=[],
+                          body=json.dumps(request_body),
+                          stream=False,
                           signing_algorithm=config.signing_algorithm)
 
     @classmethod
@@ -123,20 +148,20 @@ class Iam(object):
             http_response = http_client.do_request_sync(request)
         except exceptions.ServiceResponseException as e:
             raise e
-        if http_response and hasattr(http_response, "content"):
-            content = getattr(http_response, "content")
-            response = json.loads(six.ensure_str(content))
-            if "projects" in response and len(response["projects"]) == 1:
-                return response["projects"][0]["id"]
-            elif "projects" in response and len(response["projects"]) > 1:
-                raise exceptions.ApiValueError("Multiple project ids have been returned, \
-                     please specify one when initializing the credentials.")
-            else:
-                raise exceptions.ApiValueError("No project id found, "
-                                               "please specify project_id manually when initializing the credentials.")
-        else:
-            raise exceptions.ApiValueError("No project id found, "
-                                           "please specify project_id manually when initializing the credentials.")
+
+        if not hasattr(http_response, "content"):
+            raise exceptions.ApiValueError(_NO_PROJECT_ID_ERR_MSG)
+
+        content = json.loads(http_response.content)
+        projects = content.get("projects")
+        if not projects:
+            raise exceptions.ApiValueError("Result projects is null. " + _NO_PROJECT_ID_ERR_MSG)
+        if len(projects) > 1:
+            project_ids = ",".join((project.get("id") for project in projects))
+            raise exceptions.ApiValueError("multiple project ids found: [%s], "
+                                           "please specify one when initializing the credentials, "
+                                           "credentials = BasicCredentials(ak, sk, project_id)" % project_ids)
+        return projects[0]["id"]
 
     @classmethod
     def get_keystone_list_auth_domains_request(cls, config, iam_endpoint=None):
@@ -145,8 +170,14 @@ class Iam(object):
         host = url_parse_result.netloc
         resource_path = cls.KEYSTONE_LIST_AUTH_DOMAINS_URI
 
-        sdk_request = SdkRequest(method="GET", schema=schema, host=host, resource_path=resource_path, header_params={},
-                                 query_params=[], body="", signing_algorithm=config.signing_algorithm)
+        sdk_request = SdkRequest(method="GET",
+                                 schema=schema,
+                                 host=host,
+                                 resource_path=resource_path,
+                                 header_params={"User-Agent": "huaweicloud-usdk-python/3.0"},
+                                 query_params=[],
+                                 body="",
+                                 signing_algorithm=config.signing_algorithm)
 
         return sdk_request
 
@@ -156,20 +187,17 @@ class Iam(object):
             http_response = http_client.do_request_sync(request)
         except exceptions.ServiceResponseException as e:
             raise e
-        if http_response and hasattr(http_response, "content"):
-            content = getattr(http_response, "content")
-            response = json.loads(six.ensure_str(content))
-            if "domains" in response and len(response["domains"]) == 1:
-                return response["domains"][0]["id"]
-            else:
-                raise exceptions.ApiValueError("No domain id found, please select one of the following solutions:\n\t"
-                                               "1. Manually specify domain_id when initializing the credentials.\n\t"
-                                               "2. Use the domain account to grant the current account permissions "
-                                               "of the IAM service.\n\t"
-                                               "3. Use AK/SK of the domain account.")
-        else:
-            raise exceptions.ApiValueError("No domain id found, please select one of the following solutions:\n\t"
-                                           "1. Manually specify domain_id when initializing the credentials.\n\t"
-                                           "2. Use the domain account to grant the current account permissions of "
-                                           "the IAM service.\n\t "
-                                           "3. Use AK/SK of the domain account.")
+
+        if not hasattr(http_response, "content"):
+            raise exceptions.ApiValueError(_NO_DOMAIN_ID_ERR_MSG)
+
+        content = json.loads(http_response.content)
+        domains = content.get("domains")
+        if not domains:
+            raise exceptions.ApiValueError("result domains is null. " + _NO_DOMAIN_ID_ERR_MSG)
+        if len(domains) > 1:
+            domain_ids = ",".join((domain.get("id") for domain in domains))
+            raise exceptions.ApiValueError("multiple domain ids found: [%s], "
+                                           "please specify one when initializing the credentials, "
+                                           "credentials = GlobalCredentials(ak, sk, domain_id)" % domain_ids)
+        return domains[0]["id"]

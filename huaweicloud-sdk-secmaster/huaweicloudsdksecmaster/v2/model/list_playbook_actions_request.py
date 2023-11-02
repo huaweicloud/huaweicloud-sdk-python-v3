@@ -37,15 +37,15 @@ class ListPlaybookActionsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: ID of project
+        :param project_id: 项目ID
         :type project_id: str
-        :param workspace_id: ID of workspace
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param version_id: version Id value
+        :param version_id: 剧本版本ID
         :type version_id: str
-        :param limit: request limit size
+        :param limit: 分页查询参数，用于指定一次查询最多的结果数，从1开始
         :type limit: int
-        :param offset: request offset, from 0
+        :param offset: 分页查询参数。用于指定查询结果的起始位置，从0开始
         :type offset: int
         """
         
@@ -61,16 +61,14 @@ class ListPlaybookActionsRequest:
         self.project_id = project_id
         self.workspace_id = workspace_id
         self.version_id = version_id
-        if limit is not None:
-            self.limit = limit
-        if offset is not None:
-            self.offset = offset
+        self.limit = limit
+        self.offset = offset
 
     @property
     def project_id(self):
         """Gets the project_id of this ListPlaybookActionsRequest.
 
-        ID of project
+        项目ID
 
         :return: The project_id of this ListPlaybookActionsRequest.
         :rtype: str
@@ -81,7 +79,7 @@ class ListPlaybookActionsRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ListPlaybookActionsRequest.
 
-        ID of project
+        项目ID
 
         :param project_id: The project_id of this ListPlaybookActionsRequest.
         :type project_id: str
@@ -92,7 +90,7 @@ class ListPlaybookActionsRequest:
     def workspace_id(self):
         """Gets the workspace_id of this ListPlaybookActionsRequest.
 
-        ID of workspace
+        工作空间ID
 
         :return: The workspace_id of this ListPlaybookActionsRequest.
         :rtype: str
@@ -103,7 +101,7 @@ class ListPlaybookActionsRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this ListPlaybookActionsRequest.
 
-        ID of workspace
+        工作空间ID
 
         :param workspace_id: The workspace_id of this ListPlaybookActionsRequest.
         :type workspace_id: str
@@ -114,7 +112,7 @@ class ListPlaybookActionsRequest:
     def version_id(self):
         """Gets the version_id of this ListPlaybookActionsRequest.
 
-        version Id value
+        剧本版本ID
 
         :return: The version_id of this ListPlaybookActionsRequest.
         :rtype: str
@@ -125,7 +123,7 @@ class ListPlaybookActionsRequest:
     def version_id(self, version_id):
         """Sets the version_id of this ListPlaybookActionsRequest.
 
-        version Id value
+        剧本版本ID
 
         :param version_id: The version_id of this ListPlaybookActionsRequest.
         :type version_id: str
@@ -136,7 +134,7 @@ class ListPlaybookActionsRequest:
     def limit(self):
         """Gets the limit of this ListPlaybookActionsRequest.
 
-        request limit size
+        分页查询参数，用于指定一次查询最多的结果数，从1开始
 
         :return: The limit of this ListPlaybookActionsRequest.
         :rtype: int
@@ -147,7 +145,7 @@ class ListPlaybookActionsRequest:
     def limit(self, limit):
         """Sets the limit of this ListPlaybookActionsRequest.
 
-        request limit size
+        分页查询参数，用于指定一次查询最多的结果数，从1开始
 
         :param limit: The limit of this ListPlaybookActionsRequest.
         :type limit: int
@@ -158,7 +156,7 @@ class ListPlaybookActionsRequest:
     def offset(self):
         """Gets the offset of this ListPlaybookActionsRequest.
 
-        request offset, from 0
+        分页查询参数。用于指定查询结果的起始位置，从0开始
 
         :return: The offset of this ListPlaybookActionsRequest.
         :rtype: int
@@ -169,7 +167,7 @@ class ListPlaybookActionsRequest:
     def offset(self, offset):
         """Sets the offset of this ListPlaybookActionsRequest.
 
-        request offset, from 0
+        分页查询参数。用于指定查询结果的起始位置，从0开始
 
         :param offset: The offset of this ListPlaybookActionsRequest.
         :type offset: int

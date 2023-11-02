@@ -12,7 +12,7 @@ class CgsRegion:
     CN_SOUTH_4 = Region("cn-south-4",
                         "https://cgs.cn-south-4.myhuaweicloud.com")
     AE_AD_1 = Region("ae-ad-1",
-                        "https://hss.ae-ad-1.myhuaweicloud.com")
+                        "https://cgs.ae-ad-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-south-4": CN_SOUTH_4,

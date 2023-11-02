@@ -20,29 +20,33 @@ class MeshSpec:
         'region': 'str',
         'type': 'str',
         'version': 'str',
-        'extend_params': 'MeshExtendParams'
+        'extend_params': 'MeshExtendParams',
+        'tags': 'list[MeshTags]'
     }
 
     attribute_map = {
         'region': 'region',
         'type': 'type',
         'version': 'version',
-        'extend_params': 'extendParams'
+        'extend_params': 'extendParams',
+        'tags': 'tags'
     }
 
-    def __init__(self, region=None, type=None, version=None, extend_params=None):
+    def __init__(self, region=None, type=None, version=None, extend_params=None, tags=None):
         """MeshSpec
 
         The model defined in huaweicloud sdk
 
-        :param region: 网格控制面组件所在的region。 创建企业版网格时需要填写该参数，选择控制面组件所在的region； 创建基础版时网格组件安装在用户所提供的集群中，不需要填写该参数。
+        :param region: 网格控制面组件所在的region 可选参数
         :type region: str
-        :param type: 网格类型：  Managed：企业版网格  InCluster：基础版网格
+        :param type: 网格类型： InCluster：基础版网格
         :type type: str
         :param version: 网格版本
         :type version: str
         :param extend_params: 
         :type extend_params: :class:`huaweicloudsdkasm.v1.MeshExtendParams`
+        :param tags: 网格资源标签
+        :type tags: list[:class:`huaweicloudsdkasm.v1.MeshTags`]
         """
         
         
@@ -51,6 +55,7 @@ class MeshSpec:
         self._type = None
         self._version = None
         self._extend_params = None
+        self._tags = None
         self.discriminator = None
 
         if region is not None:
@@ -59,12 +64,14 @@ class MeshSpec:
         self.version = version
         if extend_params is not None:
             self.extend_params = extend_params
+        if tags is not None:
+            self.tags = tags
 
     @property
     def region(self):
         """Gets the region of this MeshSpec.
 
-        网格控制面组件所在的region。 创建企业版网格时需要填写该参数，选择控制面组件所在的region； 创建基础版时网格组件安装在用户所提供的集群中，不需要填写该参数。
+        网格控制面组件所在的region 可选参数
 
         :return: The region of this MeshSpec.
         :rtype: str
@@ -75,7 +82,7 @@ class MeshSpec:
     def region(self, region):
         """Sets the region of this MeshSpec.
 
-        网格控制面组件所在的region。 创建企业版网格时需要填写该参数，选择控制面组件所在的region； 创建基础版时网格组件安装在用户所提供的集群中，不需要填写该参数。
+        网格控制面组件所在的region 可选参数
 
         :param region: The region of this MeshSpec.
         :type region: str
@@ -86,7 +93,7 @@ class MeshSpec:
     def type(self):
         """Gets the type of this MeshSpec.
 
-        网格类型：  Managed：企业版网格  InCluster：基础版网格
+        网格类型： InCluster：基础版网格
 
         :return: The type of this MeshSpec.
         :rtype: str
@@ -97,7 +104,7 @@ class MeshSpec:
     def type(self, type):
         """Sets the type of this MeshSpec.
 
-        网格类型：  Managed：企业版网格  InCluster：基础版网格
+        网格类型： InCluster：基础版网格
 
         :param type: The type of this MeshSpec.
         :type type: str
@@ -143,6 +150,28 @@ class MeshSpec:
         :type extend_params: :class:`huaweicloudsdkasm.v1.MeshExtendParams`
         """
         self._extend_params = extend_params
+
+    @property
+    def tags(self):
+        """Gets the tags of this MeshSpec.
+
+        网格资源标签
+
+        :return: The tags of this MeshSpec.
+        :rtype: list[:class:`huaweicloudsdkasm.v1.MeshTags`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this MeshSpec.
+
+        网格资源标签
+
+        :param tags: The tags of this MeshSpec.
+        :type tags: list[:class:`huaweicloudsdkasm.v1.MeshTags`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

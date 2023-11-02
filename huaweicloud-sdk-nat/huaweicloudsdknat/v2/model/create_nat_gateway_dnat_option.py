@@ -26,7 +26,8 @@ class CreateNatGatewayDnatOption:
         'external_service_port': 'int',
         'protocol': 'str',
         'internal_service_port_range': 'str',
-        'external_service_port_range': 'str'
+        'external_service_port_range': 'str',
+        'global_eip_id': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class CreateNatGatewayDnatOption:
         'external_service_port': 'external_service_port',
         'protocol': 'protocol',
         'internal_service_port_range': 'internal_service_port_range',
-        'external_service_port_range': 'external_service_port_range'
+        'external_service_port_range': 'external_service_port_range',
+        'global_eip_id': 'global_eip_id'
     }
 
-    def __init__(self, description=None, port_id=None, private_ip=None, nat_gateway_id=None, internal_service_port=None, floating_ip_id=None, external_service_port=None, protocol=None, internal_service_port_range=None, external_service_port_range=None):
+    def __init__(self, description=None, port_id=None, private_ip=None, nat_gateway_id=None, internal_service_port=None, floating_ip_id=None, external_service_port=None, protocol=None, internal_service_port_range=None, external_service_port_range=None, global_eip_id=None):
         """CreateNatGatewayDnatOption
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class CreateNatGatewayDnatOption:
         :type internal_service_port_range: str
         :param external_service_port_range: Floatingip对外提供服务的端口号范围。 功能说明：该端口范围与internal _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
         :type external_service_port_range: str
+        :param global_eip_id: 全域弹性公网IP的id。
+        :type global_eip_id: str
         """
         
         
@@ -81,6 +85,7 @@ class CreateNatGatewayDnatOption:
         self._protocol = None
         self._internal_service_port_range = None
         self._external_service_port_range = None
+        self._global_eip_id = None
         self.discriminator = None
 
         if description is not None:
@@ -98,6 +103,8 @@ class CreateNatGatewayDnatOption:
             self.internal_service_port_range = internal_service_port_range
         if external_service_port_range is not None:
             self.external_service_port_range = external_service_port_range
+        if global_eip_id is not None:
+            self.global_eip_id = global_eip_id
 
     @property
     def description(self):
@@ -318,6 +325,28 @@ class CreateNatGatewayDnatOption:
         :type external_service_port_range: str
         """
         self._external_service_port_range = external_service_port_range
+
+    @property
+    def global_eip_id(self):
+        """Gets the global_eip_id of this CreateNatGatewayDnatOption.
+
+        全域弹性公网IP的id。
+
+        :return: The global_eip_id of this CreateNatGatewayDnatOption.
+        :rtype: str
+        """
+        return self._global_eip_id
+
+    @global_eip_id.setter
+    def global_eip_id(self, global_eip_id):
+        """Sets the global_eip_id of this CreateNatGatewayDnatOption.
+
+        全域弹性公网IP的id。
+
+        :param global_eip_id: The global_eip_id of this CreateNatGatewayDnatOption.
+        :type global_eip_id: str
+        """
+        self._global_eip_id = global_eip_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

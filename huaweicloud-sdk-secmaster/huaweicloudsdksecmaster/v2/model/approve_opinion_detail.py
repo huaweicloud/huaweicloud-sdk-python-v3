@@ -31,9 +31,9 @@ class ApproveOpinionDetail:
 
         The model defined in huaweicloud sdk
 
-        :param result: Approve Result.
+        :param result: 审核结果
         :type result: str
-        :param content: Approve content.
+        :param content: 审核内容
         :type content: str
         """
         
@@ -52,7 +52,7 @@ class ApproveOpinionDetail:
     def result(self):
         """Gets the result of this ApproveOpinionDetail.
 
-        Approve Result.
+        审核结果
 
         :return: The result of this ApproveOpinionDetail.
         :rtype: str
@@ -63,7 +63,7 @@ class ApproveOpinionDetail:
     def result(self, result):
         """Sets the result of this ApproveOpinionDetail.
 
-        Approve Result.
+        审核结果
 
         :param result: The result of this ApproveOpinionDetail.
         :type result: str
@@ -74,7 +74,7 @@ class ApproveOpinionDetail:
     def content(self):
         """Gets the content of this ApproveOpinionDetail.
 
-        Approve content.
+        审核内容
 
         :return: The content of this ApproveOpinionDetail.
         :rtype: str
@@ -85,7 +85,7 @@ class ApproveOpinionDetail:
     def content(self, content):
         """Sets the content of this ApproveOpinionDetail.
 
-        Approve content.
+        审核内容
 
         :param content: The content of this ApproveOpinionDetail.
         :type content: str

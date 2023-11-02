@@ -35,9 +35,9 @@ class ChangeAlertRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: ID of project
+        :param project_id: 项目id
         :type project_id: str
-        :param workspace_id: ID of workspace
+        :param workspace_id: 工作空间id
         :type workspace_id: str
         :param alert_id: 告警ID
         :type alert_id: str
@@ -63,7 +63,7 @@ class ChangeAlertRequest:
     def project_id(self):
         """Gets the project_id of this ChangeAlertRequest.
 
-        ID of project
+        项目id
 
         :return: The project_id of this ChangeAlertRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class ChangeAlertRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ChangeAlertRequest.
 
-        ID of project
+        项目id
 
         :param project_id: The project_id of this ChangeAlertRequest.
         :type project_id: str
@@ -85,7 +85,7 @@ class ChangeAlertRequest:
     def workspace_id(self):
         """Gets the workspace_id of this ChangeAlertRequest.
 
-        ID of workspace
+        工作空间id
 
         :return: The workspace_id of this ChangeAlertRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class ChangeAlertRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this ChangeAlertRequest.
 
-        ID of workspace
+        工作空间id
 
         :param workspace_id: The workspace_id of this ChangeAlertRequest.
         :type workspace_id: str

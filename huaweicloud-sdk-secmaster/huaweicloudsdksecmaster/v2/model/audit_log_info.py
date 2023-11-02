@@ -53,31 +53,31 @@ class AuditLogInfo:
 
         The model defined in huaweicloud sdk
 
-        :param instance_type: instance type.
+        :param instance_type: 实例类型（AOP_WORKFLOW--流程, SCRIPT--脚本, PLAYBOOK--剧本）
         :type instance_type: str
-        :param action_id: Action id.
+        :param action_id: 流程ID
         :type action_id: str
-        :param action_name: action name.
+        :param action_name: 流程名称
         :type action_name: str
-        :param instance_id: Instance id.
+        :param instance_id: 实例ID
         :type instance_id: str
-        :param parent_instance_id: parent instance id.
+        :param parent_instance_id: 父节点实例ID
         :type parent_instance_id: str
-        :param log_level: log level.
+        :param log_level: 日志级别
         :type log_level: str
-        :param input: input.
+        :param input: 输入
         :type input: str
-        :param output: output.
+        :param output: 输出
         :type output: str
-        :param error_msg: error_msg.
+        :param error_msg: 错误信息
         :type error_msg: str
-        :param start_time: start_time.
+        :param start_time: 开始时间
         :type start_time: str
-        :param end_time: end_time.
+        :param end_time: 结束时间
         :type end_time: str
-        :param status: status.
+        :param status: 状态。(RUNNING--运行中、FINISHED--成功、FAILED--失败、RETRYING--重试中、TERMINATING--终止中、TERMINATED--已终止)
         :type status: str
-        :param trigger_type: trigger type.
+        :param trigger_type: 触发类型. TIMER--定时触发, EVENT--事件触发
         :type trigger_type: str
         """
         
@@ -129,7 +129,7 @@ class AuditLogInfo:
     def instance_type(self):
         """Gets the instance_type of this AuditLogInfo.
 
-        instance type.
+        实例类型（AOP_WORKFLOW--流程, SCRIPT--脚本, PLAYBOOK--剧本）
 
         :return: The instance_type of this AuditLogInfo.
         :rtype: str
@@ -140,7 +140,7 @@ class AuditLogInfo:
     def instance_type(self, instance_type):
         """Sets the instance_type of this AuditLogInfo.
 
-        instance type.
+        实例类型（AOP_WORKFLOW--流程, SCRIPT--脚本, PLAYBOOK--剧本）
 
         :param instance_type: The instance_type of this AuditLogInfo.
         :type instance_type: str
@@ -151,7 +151,7 @@ class AuditLogInfo:
     def action_id(self):
         """Gets the action_id of this AuditLogInfo.
 
-        Action id.
+        流程ID
 
         :return: The action_id of this AuditLogInfo.
         :rtype: str
@@ -162,7 +162,7 @@ class AuditLogInfo:
     def action_id(self, action_id):
         """Sets the action_id of this AuditLogInfo.
 
-        Action id.
+        流程ID
 
         :param action_id: The action_id of this AuditLogInfo.
         :type action_id: str
@@ -173,7 +173,7 @@ class AuditLogInfo:
     def action_name(self):
         """Gets the action_name of this AuditLogInfo.
 
-        action name.
+        流程名称
 
         :return: The action_name of this AuditLogInfo.
         :rtype: str
@@ -184,7 +184,7 @@ class AuditLogInfo:
     def action_name(self, action_name):
         """Sets the action_name of this AuditLogInfo.
 
-        action name.
+        流程名称
 
         :param action_name: The action_name of this AuditLogInfo.
         :type action_name: str
@@ -195,7 +195,7 @@ class AuditLogInfo:
     def instance_id(self):
         """Gets the instance_id of this AuditLogInfo.
 
-        Instance id.
+        实例ID
 
         :return: The instance_id of this AuditLogInfo.
         :rtype: str
@@ -206,7 +206,7 @@ class AuditLogInfo:
     def instance_id(self, instance_id):
         """Sets the instance_id of this AuditLogInfo.
 
-        Instance id.
+        实例ID
 
         :param instance_id: The instance_id of this AuditLogInfo.
         :type instance_id: str
@@ -217,7 +217,7 @@ class AuditLogInfo:
     def parent_instance_id(self):
         """Gets the parent_instance_id of this AuditLogInfo.
 
-        parent instance id.
+        父节点实例ID
 
         :return: The parent_instance_id of this AuditLogInfo.
         :rtype: str
@@ -228,7 +228,7 @@ class AuditLogInfo:
     def parent_instance_id(self, parent_instance_id):
         """Sets the parent_instance_id of this AuditLogInfo.
 
-        parent instance id.
+        父节点实例ID
 
         :param parent_instance_id: The parent_instance_id of this AuditLogInfo.
         :type parent_instance_id: str
@@ -239,7 +239,7 @@ class AuditLogInfo:
     def log_level(self):
         """Gets the log_level of this AuditLogInfo.
 
-        log level.
+        日志级别
 
         :return: The log_level of this AuditLogInfo.
         :rtype: str
@@ -250,7 +250,7 @@ class AuditLogInfo:
     def log_level(self, log_level):
         """Sets the log_level of this AuditLogInfo.
 
-        log level.
+        日志级别
 
         :param log_level: The log_level of this AuditLogInfo.
         :type log_level: str
@@ -261,7 +261,7 @@ class AuditLogInfo:
     def input(self):
         """Gets the input of this AuditLogInfo.
 
-        input.
+        输入
 
         :return: The input of this AuditLogInfo.
         :rtype: str
@@ -272,7 +272,7 @@ class AuditLogInfo:
     def input(self, input):
         """Sets the input of this AuditLogInfo.
 
-        input.
+        输入
 
         :param input: The input of this AuditLogInfo.
         :type input: str
@@ -283,7 +283,7 @@ class AuditLogInfo:
     def output(self):
         """Gets the output of this AuditLogInfo.
 
-        output.
+        输出
 
         :return: The output of this AuditLogInfo.
         :rtype: str
@@ -294,7 +294,7 @@ class AuditLogInfo:
     def output(self, output):
         """Sets the output of this AuditLogInfo.
 
-        output.
+        输出
 
         :param output: The output of this AuditLogInfo.
         :type output: str
@@ -305,7 +305,7 @@ class AuditLogInfo:
     def error_msg(self):
         """Gets the error_msg of this AuditLogInfo.
 
-        error_msg.
+        错误信息
 
         :return: The error_msg of this AuditLogInfo.
         :rtype: str
@@ -316,7 +316,7 @@ class AuditLogInfo:
     def error_msg(self, error_msg):
         """Sets the error_msg of this AuditLogInfo.
 
-        error_msg.
+        错误信息
 
         :param error_msg: The error_msg of this AuditLogInfo.
         :type error_msg: str
@@ -327,7 +327,7 @@ class AuditLogInfo:
     def start_time(self):
         """Gets the start_time of this AuditLogInfo.
 
-        start_time.
+        开始时间
 
         :return: The start_time of this AuditLogInfo.
         :rtype: str
@@ -338,7 +338,7 @@ class AuditLogInfo:
     def start_time(self, start_time):
         """Sets the start_time of this AuditLogInfo.
 
-        start_time.
+        开始时间
 
         :param start_time: The start_time of this AuditLogInfo.
         :type start_time: str
@@ -349,7 +349,7 @@ class AuditLogInfo:
     def end_time(self):
         """Gets the end_time of this AuditLogInfo.
 
-        end_time.
+        结束时间
 
         :return: The end_time of this AuditLogInfo.
         :rtype: str
@@ -360,7 +360,7 @@ class AuditLogInfo:
     def end_time(self, end_time):
         """Sets the end_time of this AuditLogInfo.
 
-        end_time.
+        结束时间
 
         :param end_time: The end_time of this AuditLogInfo.
         :type end_time: str
@@ -371,7 +371,7 @@ class AuditLogInfo:
     def status(self):
         """Gets the status of this AuditLogInfo.
 
-        status.
+        状态。(RUNNING--运行中、FINISHED--成功、FAILED--失败、RETRYING--重试中、TERMINATING--终止中、TERMINATED--已终止)
 
         :return: The status of this AuditLogInfo.
         :rtype: str
@@ -382,7 +382,7 @@ class AuditLogInfo:
     def status(self, status):
         """Sets the status of this AuditLogInfo.
 
-        status.
+        状态。(RUNNING--运行中、FINISHED--成功、FAILED--失败、RETRYING--重试中、TERMINATING--终止中、TERMINATED--已终止)
 
         :param status: The status of this AuditLogInfo.
         :type status: str
@@ -393,7 +393,7 @@ class AuditLogInfo:
     def trigger_type(self):
         """Gets the trigger_type of this AuditLogInfo.
 
-        trigger type.
+        触发类型. TIMER--定时触发, EVENT--事件触发
 
         :return: The trigger_type of this AuditLogInfo.
         :rtype: str
@@ -404,7 +404,7 @@ class AuditLogInfo:
     def trigger_type(self, trigger_type):
         """Sets the trigger_type of this AuditLogInfo.
 
-        trigger type.
+        触发类型. TIMER--定时触发, EVENT--事件触发
 
         :param trigger_type: The trigger_type of this AuditLogInfo.
         :type trigger_type: str

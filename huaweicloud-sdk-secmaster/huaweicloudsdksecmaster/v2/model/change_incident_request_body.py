@@ -17,29 +17,58 @@ class ChangeIncidentRequestBody:
     sensitive_list = []
 
     openapi_types = {
+        'batch_ids': 'list[str]',
         'data_object': 'Incident'
     }
 
     attribute_map = {
+        'batch_ids': 'batch_ids',
         'data_object': 'data_object'
     }
 
-    def __init__(self, data_object=None):
+    def __init__(self, batch_ids=None, data_object=None):
         """ChangeIncidentRequestBody
 
         The model defined in huaweicloud sdk
 
+        :param batch_ids: 更新事件的ID列表
+        :type batch_ids: list[str]
         :param data_object: 
         :type data_object: :class:`huaweicloudsdksecmaster.v2.Incident`
         """
         
         
 
+        self._batch_ids = None
         self._data_object = None
         self.discriminator = None
 
+        if batch_ids is not None:
+            self.batch_ids = batch_ids
         if data_object is not None:
             self.data_object = data_object
+
+    @property
+    def batch_ids(self):
+        """Gets the batch_ids of this ChangeIncidentRequestBody.
+
+        更新事件的ID列表
+
+        :return: The batch_ids of this ChangeIncidentRequestBody.
+        :rtype: list[str]
+        """
+        return self._batch_ids
+
+    @batch_ids.setter
+    def batch_ids(self, batch_ids):
+        """Sets the batch_ids of this ChangeIncidentRequestBody.
+
+        更新事件的ID列表
+
+        :param batch_ids: The batch_ids of this ChangeIncidentRequestBody.
+        :type batch_ids: list[str]
+        """
+        self._batch_ids = batch_ids
 
     @property
     def data_object(self):

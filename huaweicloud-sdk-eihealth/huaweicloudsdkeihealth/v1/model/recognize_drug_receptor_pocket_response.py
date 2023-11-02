@@ -19,7 +19,7 @@ class RecognizeDrugReceptorPocketResponse(SdkResponse):
 
     openapi_types = {
         'mode': 'RecognizeReceptorPocketMode',
-        'pockets': 'list[BoundingBoxDto]'
+        'pockets': 'list[DrugBoundingBoxDto]'
     }
 
     attribute_map = {
@@ -35,7 +35,7 @@ class RecognizeDrugReceptorPocketResponse(SdkResponse):
         :param mode: 
         :type mode: :class:`huaweicloudsdkeihealth.v1.RecognizeReceptorPocketMode`
         :param pockets: 口袋列表
-        :type pockets: list[:class:`huaweicloudsdkeihealth.v1.BoundingBoxDto`]
+        :type pockets: list[:class:`huaweicloudsdkeihealth.v1.DrugBoundingBoxDto`]
         """
         
         super(RecognizeDrugReceptorPocketResponse, self).__init__()
@@ -74,7 +74,7 @@ class RecognizeDrugReceptorPocketResponse(SdkResponse):
         口袋列表
 
         :return: The pockets of this RecognizeDrugReceptorPocketResponse.
-        :rtype: list[:class:`huaweicloudsdkeihealth.v1.BoundingBoxDto`]
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.DrugBoundingBoxDto`]
         """
         return self._pockets
 
@@ -85,7 +85,7 @@ class RecognizeDrugReceptorPocketResponse(SdkResponse):
         口袋列表
 
         :param pockets: The pockets of this RecognizeDrugReceptorPocketResponse.
-        :type pockets: list[:class:`huaweicloudsdkeihealth.v1.BoundingBoxDto`]
+        :type pockets: list[:class:`huaweicloudsdkeihealth.v1.DrugBoundingBoxDto`]
         """
         self._pockets = pockets
 

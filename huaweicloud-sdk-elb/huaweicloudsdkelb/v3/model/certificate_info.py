@@ -67,7 +67,7 @@ class CertificateInfo:
         :type id: str
         :param name: 证书的名称。
         :type name: str
-        :param private_key: 服务器证书的私钥。PEM编码格式。 当type为client时，该参数被忽略，不影响证书的创建和使用。 当type为server时，该字段必须符合格式要求，且私钥必须是有效的。
+        :param private_key: HTTPS协议监听器使用的证书私钥。取值范围：PEM编码格式，最大长度8192字符。  使用说明： - 仅当type为server时该字段有效且必选。 - 当type为client时该字段无效，不需要传入。如果传入则必须是符合PEM格式的字符串，但仍然不会生效。
         :type private_key: str
         :param type: SSL证书的类型。分为服务器证书(server)、CA证书(client)。默认值：server。
         :type type: str
@@ -256,7 +256,7 @@ class CertificateInfo:
     def private_key(self):
         """Gets the private_key of this CertificateInfo.
 
-        服务器证书的私钥。PEM编码格式。 当type为client时，该参数被忽略，不影响证书的创建和使用。 当type为server时，该字段必须符合格式要求，且私钥必须是有效的。
+        HTTPS协议监听器使用的证书私钥。取值范围：PEM编码格式，最大长度8192字符。  使用说明： - 仅当type为server时该字段有效且必选。 - 当type为client时该字段无效，不需要传入。如果传入则必须是符合PEM格式的字符串，但仍然不会生效。
 
         :return: The private_key of this CertificateInfo.
         :rtype: str
@@ -267,7 +267,7 @@ class CertificateInfo:
     def private_key(self, private_key):
         """Sets the private_key of this CertificateInfo.
 
-        服务器证书的私钥。PEM编码格式。 当type为client时，该参数被忽略，不影响证书的创建和使用。 当type为server时，该字段必须符合格式要求，且私钥必须是有效的。
+        HTTPS协议监听器使用的证书私钥。取值范围：PEM编码格式，最大长度8192字符。  使用说明： - 仅当type为server时该字段有效且必选。 - 当type为client时该字段无效，不需要传入。如果传入则必须是符合PEM格式的字符串，但仍然不会生效。
 
         :param private_key: The private_key of this CertificateInfo.
         :type private_key: str

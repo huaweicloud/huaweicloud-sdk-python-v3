@@ -17,36 +17,29 @@ class Selector:
     sensitive_list = []
 
     openapi_types = {
-        'field_selector': 'FieldSelector',
-        'label_selector': 'LabelSelector'
+        'field_selector': 'FieldSelector'
     }
 
     attribute_map = {
-        'field_selector': 'fieldSelector',
-        'label_selector': 'labelSelector'
+        'field_selector': 'fieldSelector'
     }
 
-    def __init__(self, field_selector=None, label_selector=None):
+    def __init__(self, field_selector=None):
         """Selector
 
         The model defined in huaweicloud sdk
 
         :param field_selector: 
         :type field_selector: :class:`huaweicloudsdkasm.v1.FieldSelector`
-        :param label_selector: 
-        :type label_selector: :class:`huaweicloudsdkasm.v1.LabelSelector`
         """
         
         
 
         self._field_selector = None
-        self._label_selector = None
         self.discriminator = None
 
         if field_selector is not None:
             self.field_selector = field_selector
-        if label_selector is not None:
-            self.label_selector = label_selector
 
     @property
     def field_selector(self):
@@ -65,24 +58,6 @@ class Selector:
         :type field_selector: :class:`huaweicloudsdkasm.v1.FieldSelector`
         """
         self._field_selector = field_selector
-
-    @property
-    def label_selector(self):
-        """Gets the label_selector of this Selector.
-
-        :return: The label_selector of this Selector.
-        :rtype: :class:`huaweicloudsdkasm.v1.LabelSelector`
-        """
-        return self._label_selector
-
-    @label_selector.setter
-    def label_selector(self, label_selector):
-        """Sets the label_selector of this Selector.
-
-        :param label_selector: The label_selector of this Selector.
-        :type label_selector: :class:`huaweicloudsdkasm.v1.LabelSelector`
-        """
-        self._label_selector = label_selector
 
     def to_dict(self):
         """Returns the model properties as a dict"""

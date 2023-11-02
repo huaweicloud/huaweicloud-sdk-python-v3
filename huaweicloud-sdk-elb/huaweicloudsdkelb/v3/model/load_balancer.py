@@ -157,15 +157,15 @@ class LoadBalancer:
         :type ipv6_vip_port_id: str
         :param availability_zone_list: 负载均衡器所在的可用区列表。
         :type availability_zone_list: list[str]
-        :param enterprise_project_id: 企业项目ID。创建时不传则返回\&quot;0\&quot;，表示资源属于default企业项目。  注：\&quot;0\&quot;并不是真实存在的企业项目ID，在创建、更新和查询时不能作为请求参数传入。  [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
+        :param enterprise_project_id: 企业项目ID。创建时不传则返回\&quot;0\&quot;，表示资源属于default企业项目。  注：\&quot;0\&quot;并不是真实存在的企业项目ID，在创建、更新和查询时不能作为请求参数传入。  [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt,ctc,cmcc)
         :type enterprise_project_id: str
-        :param billing_info: 资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584: az:057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        :param billing_info: 资源账单信息。  [取值： - 空：按需计费。 - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584: az:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用](tag:hws_ocb,ocb,hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,cmcc)
         :type billing_info: str
-        :param l4_flavor_id: 四层Flavor ID。  对于弹性扩缩容实例，表示上限规格。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        :param l4_flavor_id: 四层Flavor ID。[对于弹性扩缩容实例，表示上限规格ID。](tag:hws,hws_hk,ocb,ctc,cmcc,hws_ocb)  [使用说明： - 仅当guaranteed是true的场合，才支持更新。 - 不允许非null变成null，null变成非null，即不配置七层规格和配置七层规格之间不允许切换； - 可以支持规格改大改小，注意改小过程中可能会造成部分长连接中断，影响部分链接的新建， ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,dt)  [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt)  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
         :type l4_flavor_id: str
         :param l4_scale_flavor_id: 四层弹性Flavor ID。  不支持该字段，请勿使用。
         :type l4_scale_flavor_id: str
-        :param l7_flavor_id: 七层Flavor ID。 对于弹性扩缩容实例，表示上限规格ID。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        :param l7_flavor_id: 七层Flavor ID。[对于弹性扩缩容实例，表示上限规格ID。](tag:hws,hws_hk,ocb,ctc,cmcc,hws_ocb)  [使用说明： - 仅当guaranteed是true的场合，才支持更新。 - 不允许非null变成null，null变成非null，即不配置七层规格和配置七层规格之间不允许切换； - 可以支持规格改大改小，注意改小过程中可能会造成部分长连接中断，影响部分链接的新建， ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,dt) [- autoscaling.enable&#x3D;true时，修改无意义，不生效。](tag:hws,hws_hk,ocb,ctc,cmcc,hws_ocb)  [只支持设置为l7_flavor.elb.shared。](tag:hcso_dt)  [所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
         :type l7_flavor_id: str
         :param l7_scale_flavor_id: 七层弹性Flavor ID。  不支持该字段，请勿使用。
         :type l7_scale_flavor_id: str
@@ -175,15 +175,15 @@ class LoadBalancer:
         :type global_eips: list[:class:`huaweicloudsdkelb.v3.GlobalEipInfo`]
         :param elb_virsubnet_ids: 下联面子网的网络ID列表。
         :type elb_virsubnet_ids: list[str]
-        :param elb_virsubnet_type: 下联面子网类型 - ipv4：ipv4 - dualstack：双栈
+        :param elb_virsubnet_type: 下联面子网类型 - ipv4：ipv4 - dualstack：双栈  [不支持dualstack。](tag:dt,dt_test)
         :type elb_virsubnet_type: str
-        :param ip_target_enable: 是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        :param ip_target_enable: 是否启用跨VPC后端转发。 开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加 [其他VPC、](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs) 其他云、云下数据中心的服务器。  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)
         :type ip_target_enable: bool
         :param frozen_scene: 负载均衡器的冻结场景。 [若负载均衡器有多个冻结场景，用逗号分隔。  取值： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。](tag:hws,hws_hk)  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,ocb,hws_ocb)
         :type frozen_scene: str
         :param ipv6_bandwidth: 
         :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
-        :param deletion_protection_enable: 是否开启删除保护。  取值： - false：不开启。 - true：开启。 &gt;退场时需要先关闭所有资源的删除保护开关。  仅当前局点启用删除保护特性后才会返回该字段。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        :param deletion_protection_enable: 是否开启删除保护。  取值： - false：不开启。 - true：开启。 &gt;退场时需要先关闭所有资源的删除保护开关。  仅当前局点启用删除保护特性后才会返回该字段。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
         :type deletion_protection_enable: bool
         :param autoscaling: 
         :type autoscaling: :class:`huaweicloudsdkelb.v3.AutoscalingRef`
@@ -802,7 +802,7 @@ class LoadBalancer:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this LoadBalancer.
 
-        企业项目ID。创建时不传则返回\"0\"，表示资源属于default企业项目。  注：\"0\"并不是真实存在的企业项目ID，在创建、更新和查询时不能作为请求参数传入。  [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
+        企业项目ID。创建时不传则返回\"0\"，表示资源属于default企业项目。  注：\"0\"并不是真实存在的企业项目ID，在创建、更新和查询时不能作为请求参数传入。  [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt,ctc,cmcc)
 
         :return: The enterprise_project_id of this LoadBalancer.
         :rtype: str
@@ -813,7 +813,7 @@ class LoadBalancer:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this LoadBalancer.
 
-        企业项目ID。创建时不传则返回\"0\"，表示资源属于default企业项目。  注：\"0\"并不是真实存在的企业项目ID，在创建、更新和查询时不能作为请求参数传入。  [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
+        企业项目ID。创建时不传则返回\"0\"，表示资源属于default企业项目。  注：\"0\"并不是真实存在的企业项目ID，在创建、更新和查询时不能作为请求参数传入。  [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt,ctc,cmcc)
 
         :param enterprise_project_id: The enterprise_project_id of this LoadBalancer.
         :type enterprise_project_id: str
@@ -824,7 +824,7 @@ class LoadBalancer:
     def billing_info(self):
         """Gets the billing_info of this LoadBalancer.
 
-        资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584: az:057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        资源账单信息。  [取值： - 空：按需计费。 - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584: az:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用](tag:hws_ocb,ocb,hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,cmcc)
 
         :return: The billing_info of this LoadBalancer.
         :rtype: str
@@ -835,7 +835,7 @@ class LoadBalancer:
     def billing_info(self, billing_info):
         """Sets the billing_info of this LoadBalancer.
 
-        资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584: az:057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        资源账单信息。  [取值： - 空：按需计费。 - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584: az:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用](tag:hws_ocb,ocb,hws_eu,g42,hk_g42,dt,dt_test,hcso_dt,fcs,ctc,cmcc)
 
         :param billing_info: The billing_info of this LoadBalancer.
         :type billing_info: str
@@ -846,7 +846,7 @@ class LoadBalancer:
     def l4_flavor_id(self):
         """Gets the l4_flavor_id of this LoadBalancer.
 
-        四层Flavor ID。  对于弹性扩缩容实例，表示上限规格。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        四层Flavor ID。[对于弹性扩缩容实例，表示上限规格ID。](tag:hws,hws_hk,ocb,ctc,cmcc,hws_ocb)  [使用说明： - 仅当guaranteed是true的场合，才支持更新。 - 不允许非null变成null，null变成非null，即不配置七层规格和配置七层规格之间不允许切换； - 可以支持规格改大改小，注意改小过程中可能会造成部分长连接中断，影响部分链接的新建， ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,dt)  [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt)  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
 
         :return: The l4_flavor_id of this LoadBalancer.
         :rtype: str
@@ -857,7 +857,7 @@ class LoadBalancer:
     def l4_flavor_id(self, l4_flavor_id):
         """Sets the l4_flavor_id of this LoadBalancer.
 
-        四层Flavor ID。  对于弹性扩缩容实例，表示上限规格。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        四层Flavor ID。[对于弹性扩缩容实例，表示上限规格ID。](tag:hws,hws_hk,ocb,ctc,cmcc,hws_ocb)  [使用说明： - 仅当guaranteed是true的场合，才支持更新。 - 不允许非null变成null，null变成非null，即不配置七层规格和配置七层规格之间不允许切换； - 可以支持规格改大改小，注意改小过程中可能会造成部分长连接中断，影响部分链接的新建， ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,dt)  [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt)  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
 
         :param l4_flavor_id: The l4_flavor_id of this LoadBalancer.
         :type l4_flavor_id: str
@@ -890,7 +890,7 @@ class LoadBalancer:
     def l7_flavor_id(self):
         """Gets the l7_flavor_id of this LoadBalancer.
 
-        七层Flavor ID。 对于弹性扩缩容实例，表示上限规格ID。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        七层Flavor ID。[对于弹性扩缩容实例，表示上限规格ID。](tag:hws,hws_hk,ocb,ctc,cmcc,hws_ocb)  [使用说明： - 仅当guaranteed是true的场合，才支持更新。 - 不允许非null变成null，null变成非null，即不配置七层规格和配置七层规格之间不允许切换； - 可以支持规格改大改小，注意改小过程中可能会造成部分长连接中断，影响部分链接的新建， ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,dt) [- autoscaling.enable=true时，修改无意义，不生效。](tag:hws,hws_hk,ocb,ctc,cmcc,hws_ocb)  [只支持设置为l7_flavor.elb.shared。](tag:hcso_dt)  [所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
 
         :return: The l7_flavor_id of this LoadBalancer.
         :rtype: str
@@ -901,7 +901,7 @@ class LoadBalancer:
     def l7_flavor_id(self, l7_flavor_id):
         """Sets the l7_flavor_id of this LoadBalancer.
 
-        七层Flavor ID。 对于弹性扩缩容实例，表示上限规格ID。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
+        七层Flavor ID。[对于弹性扩缩容实例，表示上限规格ID。](tag:hws,hws_hk,ocb,ctc,cmcc,hws_ocb)  [使用说明： - 仅当guaranteed是true的场合，才支持更新。 - 不允许非null变成null，null变成非null，即不配置七层规格和配置七层规格之间不允许切换； - 可以支持规格改大改小，注意改小过程中可能会造成部分长连接中断，影响部分链接的新建， ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,dt) [- autoscaling.enable=true时，修改无意义，不生效。](tag:hws,hws_hk,ocb,ctc,cmcc,hws_ocb)  [只支持设置为l7_flavor.elb.shared。](tag:hcso_dt)  [所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
 
         :param l7_flavor_id: The l7_flavor_id of this LoadBalancer.
         :type l7_flavor_id: str
@@ -1000,7 +1000,7 @@ class LoadBalancer:
     def elb_virsubnet_type(self):
         """Gets the elb_virsubnet_type of this LoadBalancer.
 
-        下联面子网类型 - ipv4：ipv4 - dualstack：双栈
+        下联面子网类型 - ipv4：ipv4 - dualstack：双栈  [不支持dualstack。](tag:dt,dt_test)
 
         :return: The elb_virsubnet_type of this LoadBalancer.
         :rtype: str
@@ -1011,7 +1011,7 @@ class LoadBalancer:
     def elb_virsubnet_type(self, elb_virsubnet_type):
         """Sets the elb_virsubnet_type of this LoadBalancer.
 
-        下联面子网类型 - ipv4：ipv4 - dualstack：双栈
+        下联面子网类型 - ipv4：ipv4 - dualstack：双栈  [不支持dualstack。](tag:dt,dt_test)
 
         :param elb_virsubnet_type: The elb_virsubnet_type of this LoadBalancer.
         :type elb_virsubnet_type: str
@@ -1022,7 +1022,7 @@ class LoadBalancer:
     def ip_target_enable(self):
         """Gets the ip_target_enable of this LoadBalancer.
 
-        是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        是否启用跨VPC后端转发。 开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加 [其他VPC、](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs) 其他云、云下数据中心的服务器。  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)
 
         :return: The ip_target_enable of this LoadBalancer.
         :rtype: bool
@@ -1033,7 +1033,7 @@ class LoadBalancer:
     def ip_target_enable(self, ip_target_enable):
         """Sets the ip_target_enable of this LoadBalancer.
 
-        是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        是否启用跨VPC后端转发。 开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加 [其他VPC、](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs) 其他云、云下数据中心的服务器。  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。 - 使用共享VPC的实例使用此特性时，需确保共享资源所有者已开通VPC对等连接，否则通信异常。 [- 仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)
 
         :param ip_target_enable: The ip_target_enable of this LoadBalancer.
         :type ip_target_enable: bool
@@ -1084,7 +1084,7 @@ class LoadBalancer:
     def deletion_protection_enable(self):
         """Gets the deletion_protection_enable of this LoadBalancer.
 
-        是否开启删除保护。  取值： - false：不开启。 - true：开启。 >退场时需要先关闭所有资源的删除保护开关。  仅当前局点启用删除保护特性后才会返回该字段。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        是否开启删除保护。  取值： - false：不开启。 - true：开启。 >退场时需要先关闭所有资源的删除保护开关。  仅当前局点启用删除保护特性后才会返回该字段。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
 
         :return: The deletion_protection_enable of this LoadBalancer.
         :rtype: bool
@@ -1095,7 +1095,7 @@ class LoadBalancer:
     def deletion_protection_enable(self, deletion_protection_enable):
         """Sets the deletion_protection_enable of this LoadBalancer.
 
-        是否开启删除保护。  取值： - false：不开启。 - true：开启。 >退场时需要先关闭所有资源的删除保护开关。  仅当前局点启用删除保护特性后才会返回该字段。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        是否开启删除保护。  取值： - false：不开启。 - true：开启。 >退场时需要先关闭所有资源的删除保护开关。  仅当前局点启用删除保护特性后才会返回该字段。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
 
         :param deletion_protection_enable: The deletion_protection_enable of this LoadBalancer.
         :type deletion_protection_enable: bool

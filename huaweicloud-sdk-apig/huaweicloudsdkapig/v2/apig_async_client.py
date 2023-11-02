@@ -9270,6 +9270,8 @@ class ApigAsyncClient(Client):
             query_params.append(('type', local_var_params['type']))
         if 'precise_search' in local_var_params:
             query_params.append(('precise_search', local_var_params['precise_search']))
+        if 'vpc_channel_name' in local_var_params:
+            query_params.append(('vpc_channel_name', local_var_params['vpc_channel_name']))
 
         header_params = {}
 

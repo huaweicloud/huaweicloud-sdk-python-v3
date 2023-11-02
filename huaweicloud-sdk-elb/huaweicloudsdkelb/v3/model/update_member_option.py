@@ -37,11 +37,11 @@ class UpdateMemberOption:
 
         :param admin_state_up: 后端云服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
         :type admin_state_up: bool
-        :param name: 后端云服务器名称。
+        :param name: 后端云服务器名称。注意：该名称并非ECS名称，若不传则返回为空。
         :type name: str
         :param weight: 后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明：若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
         :type weight: int
-        :param protocol_port: 后端服务器端口。 &gt;在开启端口透传的pool下的member，该字段无法更新
+        :param protocol_port: 后端服务器端口。 &gt; 在开启端口透传的pool下的member，该字段无法更新。
         :type protocol_port: int
         """
         
@@ -88,7 +88,7 @@ class UpdateMemberOption:
     def name(self):
         """Gets the name of this UpdateMemberOption.
 
-        后端云服务器名称。
+        后端云服务器名称。注意：该名称并非ECS名称，若不传则返回为空。
 
         :return: The name of this UpdateMemberOption.
         :rtype: str
@@ -99,7 +99,7 @@ class UpdateMemberOption:
     def name(self, name):
         """Sets the name of this UpdateMemberOption.
 
-        后端云服务器名称。
+        后端云服务器名称。注意：该名称并非ECS名称，若不传则返回为空。
 
         :param name: The name of this UpdateMemberOption.
         :type name: str
@@ -132,7 +132,7 @@ class UpdateMemberOption:
     def protocol_port(self):
         """Gets the protocol_port of this UpdateMemberOption.
 
-        后端服务器端口。 >在开启端口透传的pool下的member，该字段无法更新
+        后端服务器端口。 > 在开启端口透传的pool下的member，该字段无法更新。
 
         :return: The protocol_port of this UpdateMemberOption.
         :rtype: int
@@ -143,7 +143,7 @@ class UpdateMemberOption:
     def protocol_port(self, protocol_port):
         """Sets the protocol_port of this UpdateMemberOption.
 
-        后端服务器端口。 >在开启端口透传的pool下的member，该字段无法更新
+        后端服务器端口。 > 在开启端口透传的pool下的member，该字段无法更新。
 
         :param protocol_port: The protocol_port of this UpdateMemberOption.
         :type protocol_port: int

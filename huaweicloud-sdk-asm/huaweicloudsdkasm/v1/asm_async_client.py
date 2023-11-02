@@ -30,7 +30,7 @@ class AsmAsyncClient(Client):
     def create_mesh_async(self, request):
         """新建网格
 
-        该API用于创建一个网格。
+        该API用于创建一个网格
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -91,7 +91,7 @@ class AsmAsyncClient(Client):
     def delete_mesh_async(self, request):
         """删除网格
 
-        该API用于删除一个指定的网格。
+        该API用于删除一个指定的网格
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -152,7 +152,7 @@ class AsmAsyncClient(Client):
     def list_meshes_async(self, request):
         """查询网格列表
 
-        该API用于获取用户所有网格的详细信息。
+        该API用于获取用户所有网格的详细信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -177,8 +177,6 @@ class AsmAsyncClient(Client):
         header_params = {}
         if 'content_type' in local_var_params:
             header_params['Content-Type'] = local_var_params['content_type']
-        if 'x_apply_domain_id' in local_var_params:
-            header_params['X-Apply-DomainID'] = local_var_params['x_apply_domain_id']
         if 'x_apply_project_id' in local_var_params:
             header_params['X-Apply-ProjectID'] = local_var_params['x_apply_project_id']
 
@@ -213,7 +211,7 @@ class AsmAsyncClient(Client):
     def show_mesh_async(self, request):
         """查询网格
 
-        该API用于获取指定网格的详细信息。
+        该API用于获取指定网格的详细信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -240,8 +238,6 @@ class AsmAsyncClient(Client):
         header_params = {}
         if 'content_type' in local_var_params:
             header_params['Content-Type'] = local_var_params['content_type']
-        if 'x_apply_domain_id' in local_var_params:
-            header_params['X-Apply-DomainID'] = local_var_params['x_apply_domain_id']
         if 'x_apply_project_id' in local_var_params:
             header_params['X-Apply-ProjectID'] = local_var_params['x_apply_project_id']
 

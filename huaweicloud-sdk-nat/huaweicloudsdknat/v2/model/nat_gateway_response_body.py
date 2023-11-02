@@ -28,7 +28,11 @@ class NatGatewayResponseBody:
         'router_id': 'str',
         'internal_network_id': 'str',
         'enterprise_project_id': 'str',
-        'session_conf': 'SessionConfiguration'
+        'session_conf': 'SessionConfiguration',
+        'ngport_ip_address': 'str',
+        'billing_info': 'str',
+        'dnat_rules_limit': 'int',
+        'snat_rule_public_ip_limit': 'int'
     }
 
     attribute_map = {
@@ -43,10 +47,14 @@ class NatGatewayResponseBody:
         'router_id': 'router_id',
         'internal_network_id': 'internal_network_id',
         'enterprise_project_id': 'enterprise_project_id',
-        'session_conf': 'session_conf'
+        'session_conf': 'session_conf',
+        'ngport_ip_address': 'ngport_ip_address',
+        'billing_info': 'billing_info',
+        'dnat_rules_limit': 'dnat_rules_limit',
+        'snat_rule_public_ip_limit': 'snat_rule_public_ip_limit'
     }
 
-    def __init__(self, id=None, tenant_id=None, name=None, description=None, spec=None, status=None, admin_state_up=None, created_at=None, router_id=None, internal_network_id=None, enterprise_project_id=None, session_conf=None):
+    def __init__(self, id=None, tenant_id=None, name=None, description=None, spec=None, status=None, admin_state_up=None, created_at=None, router_id=None, internal_network_id=None, enterprise_project_id=None, session_conf=None, ngport_ip_address=None, billing_info=None, dnat_rules_limit=None, snat_rule_public_ip_limit=None):
         """NatGatewayResponseBody
 
         The model defined in huaweicloud sdk
@@ -61,7 +69,7 @@ class NatGatewayResponseBody:
         :type description: str
         :param spec: 公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 
         :type spec: str
-        :param status: 公网NAT网关实例的状态。
+        :param status: 公网NAT网关实例的状态。 取值为： \&quot;ACTIVE\&quot;: 可用 \&quot;PENDING_CREATE\&quot;：创建中 \&quot;PENDING_UPDATE\&quot;：更新中 \&quot;PENDING_DELETE\&quot;：删除中 \&quot;INACTIVE\&quot;：不可用
         :type status: str
         :param admin_state_up: 解冻/冻结状态。 取值范围： - \&quot;true\&quot;：解冻 - \&quot;false\&quot;：冻结
         :type admin_state_up: bool
@@ -75,6 +83,14 @@ class NatGatewayResponseBody:
         :type enterprise_project_id: str
         :param session_conf: 
         :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
+        :param ngport_ip_address: 公网NAT网关私有IP地址，由VPC中子网分配。
+        :type ngport_ip_address: str
+        :param billing_info: 订单信息。
+        :type billing_info: str
+        :param dnat_rules_limit: 公网NAT网关下DNAT规则数量限制，默认为200。
+        :type dnat_rules_limit: int
+        :param snat_rule_public_ip_limit: 公网NAT网关下SNAT规则EIP池中EIP数量限制，默认为20。
+        :type snat_rule_public_ip_limit: int
         """
         
         
@@ -91,6 +107,10 @@ class NatGatewayResponseBody:
         self._internal_network_id = None
         self._enterprise_project_id = None
         self._session_conf = None
+        self._ngport_ip_address = None
+        self._billing_info = None
+        self._dnat_rules_limit = None
+        self._snat_rule_public_ip_limit = None
         self.discriminator = None
 
         self.id = id
@@ -105,6 +125,10 @@ class NatGatewayResponseBody:
         self.internal_network_id = internal_network_id
         self.enterprise_project_id = enterprise_project_id
         self.session_conf = session_conf
+        self.ngport_ip_address = ngport_ip_address
+        self.billing_info = billing_info
+        self.dnat_rules_limit = dnat_rules_limit
+        self.snat_rule_public_ip_limit = snat_rule_public_ip_limit
 
     @property
     def id(self):
@@ -220,7 +244,7 @@ class NatGatewayResponseBody:
     def status(self):
         """Gets the status of this NatGatewayResponseBody.
 
-        公网NAT网关实例的状态。
+        公网NAT网关实例的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"INACTIVE\"：不可用
 
         :return: The status of this NatGatewayResponseBody.
         :rtype: str
@@ -231,7 +255,7 @@ class NatGatewayResponseBody:
     def status(self, status):
         """Sets the status of this NatGatewayResponseBody.
 
-        公网NAT网关实例的状态。
+        公网NAT网关实例的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"INACTIVE\"：不可用
 
         :param status: The status of this NatGatewayResponseBody.
         :type status: str
@@ -365,6 +389,94 @@ class NatGatewayResponseBody:
         :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
         """
         self._session_conf = session_conf
+
+    @property
+    def ngport_ip_address(self):
+        """Gets the ngport_ip_address of this NatGatewayResponseBody.
+
+        公网NAT网关私有IP地址，由VPC中子网分配。
+
+        :return: The ngport_ip_address of this NatGatewayResponseBody.
+        :rtype: str
+        """
+        return self._ngport_ip_address
+
+    @ngport_ip_address.setter
+    def ngport_ip_address(self, ngport_ip_address):
+        """Sets the ngport_ip_address of this NatGatewayResponseBody.
+
+        公网NAT网关私有IP地址，由VPC中子网分配。
+
+        :param ngport_ip_address: The ngport_ip_address of this NatGatewayResponseBody.
+        :type ngport_ip_address: str
+        """
+        self._ngport_ip_address = ngport_ip_address
+
+    @property
+    def billing_info(self):
+        """Gets the billing_info of this NatGatewayResponseBody.
+
+        订单信息。
+
+        :return: The billing_info of this NatGatewayResponseBody.
+        :rtype: str
+        """
+        return self._billing_info
+
+    @billing_info.setter
+    def billing_info(self, billing_info):
+        """Sets the billing_info of this NatGatewayResponseBody.
+
+        订单信息。
+
+        :param billing_info: The billing_info of this NatGatewayResponseBody.
+        :type billing_info: str
+        """
+        self._billing_info = billing_info
+
+    @property
+    def dnat_rules_limit(self):
+        """Gets the dnat_rules_limit of this NatGatewayResponseBody.
+
+        公网NAT网关下DNAT规则数量限制，默认为200。
+
+        :return: The dnat_rules_limit of this NatGatewayResponseBody.
+        :rtype: int
+        """
+        return self._dnat_rules_limit
+
+    @dnat_rules_limit.setter
+    def dnat_rules_limit(self, dnat_rules_limit):
+        """Sets the dnat_rules_limit of this NatGatewayResponseBody.
+
+        公网NAT网关下DNAT规则数量限制，默认为200。
+
+        :param dnat_rules_limit: The dnat_rules_limit of this NatGatewayResponseBody.
+        :type dnat_rules_limit: int
+        """
+        self._dnat_rules_limit = dnat_rules_limit
+
+    @property
+    def snat_rule_public_ip_limit(self):
+        """Gets the snat_rule_public_ip_limit of this NatGatewayResponseBody.
+
+        公网NAT网关下SNAT规则EIP池中EIP数量限制，默认为20。
+
+        :return: The snat_rule_public_ip_limit of this NatGatewayResponseBody.
+        :rtype: int
+        """
+        return self._snat_rule_public_ip_limit
+
+    @snat_rule_public_ip_limit.setter
+    def snat_rule_public_ip_limit(self, snat_rule_public_ip_limit):
+        """Sets the snat_rule_public_ip_limit of this NatGatewayResponseBody.
+
+        公网NAT网关下SNAT规则EIP池中EIP数量限制，默认为20。
+
+        :param snat_rule_public_ip_limit: The snat_rule_public_ip_limit of this NatGatewayResponseBody.
+        :type snat_rule_public_ip_limit: int
+        """
+        self._snat_rule_public_ip_limit = snat_rule_public_ip_limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

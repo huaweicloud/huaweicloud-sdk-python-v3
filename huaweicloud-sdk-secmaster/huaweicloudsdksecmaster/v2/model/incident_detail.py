@@ -17,92 +17,107 @@ class IncidentDetail:
     sensitive_list = []
 
     openapi_types = {
-        'data_object': 'Incident',
         'create_time': 'str',
-        'update_time': 'str',
+        'data_object': 'Incident',
+        'dataclass_ref': 'AlertDetailDataclassRef',
+        'format_version': 'int',
+        'id': 'str',
         'project_id': 'str',
-        'workspace_id': 'str',
-        'dataclass_id': 'str',
-        'layout_id': 'str',
-        'name': 'str',
-        'type': 'str',
-        'dataclass': 'ShowAlertDetailDataclassRef'
+        'update_time': 'str',
+        'version': 'int',
+        'workspace_id': 'str'
     }
 
     attribute_map = {
-        'data_object': 'data_object',
         'create_time': 'create_time',
-        'update_time': 'update_time',
+        'data_object': 'data_object',
+        'dataclass_ref': 'dataclass_ref',
+        'format_version': 'format_version',
+        'id': 'id',
         'project_id': 'project_id',
-        'workspace_id': 'workspace_id',
-        'dataclass_id': 'dataclass_id',
-        'layout_id': 'layout_id',
-        'name': 'name',
-        'type': 'type',
-        'dataclass': 'dataclass'
+        'update_time': 'update_time',
+        'version': 'version',
+        'workspace_id': 'workspace_id'
     }
 
-    def __init__(self, data_object=None, create_time=None, update_time=None, project_id=None, workspace_id=None, dataclass_id=None, layout_id=None, name=None, type=None, dataclass=None):
+    def __init__(self, create_time=None, data_object=None, dataclass_ref=None, format_version=None, id=None, project_id=None, update_time=None, version=None, workspace_id=None):
         """IncidentDetail
 
         The model defined in huaweicloud sdk
 
+        :param create_time: 记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
+        :type create_time: str
         :param data_object: 
         :type data_object: :class:`huaweicloudsdksecmaster.v2.Incident`
-        :param create_time: Create time
-        :type create_time: str
-        :param update_time: Update time
-        :type update_time: str
-        :param project_id: Id value
+        :param dataclass_ref: 
+        :type dataclass_ref: :class:`huaweicloudsdksecmaster.v2.AlertDetailDataclassRef`
+        :param format_version: 格式版本
+        :type format_version: int
+        :param id: 事件唯一标识，UUID格式，最大36个字符
+        :type id: str
+        :param project_id: 当前项目的id
         :type project_id: str
-        :param workspace_id: Id value
+        :param update_time: 更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为告警发生时区，无法解析时区的时间，默认时区填东八区
+        :type update_time: str
+        :param version: 版本
+        :type version: int
+        :param workspace_id: 当前的工作空间id
         :type workspace_id: str
-        :param dataclass_id: Id value
-        :type dataclass_id: str
-        :param layout_id: Id value
-        :type layout_id: str
-        :param name: The name, display only
-        :type name: str
-        :param type: The name, display only
-        :type type: str
-        :param dataclass: 
-        :type dataclass: :class:`huaweicloudsdksecmaster.v2.ShowAlertDetailDataclassRef`
         """
         
         
 
-        self._data_object = None
         self._create_time = None
-        self._update_time = None
+        self._data_object = None
+        self._dataclass_ref = None
+        self._format_version = None
+        self._id = None
         self._project_id = None
+        self._update_time = None
+        self._version = None
         self._workspace_id = None
-        self._dataclass_id = None
-        self._layout_id = None
-        self._name = None
-        self._type = None
-        self._dataclass = None
         self.discriminator = None
 
-        if data_object is not None:
-            self.data_object = data_object
         if create_time is not None:
             self.create_time = create_time
-        if update_time is not None:
-            self.update_time = update_time
+        if data_object is not None:
+            self.data_object = data_object
+        if dataclass_ref is not None:
+            self.dataclass_ref = dataclass_ref
+        if format_version is not None:
+            self.format_version = format_version
+        if id is not None:
+            self.id = id
         if project_id is not None:
             self.project_id = project_id
+        if update_time is not None:
+            self.update_time = update_time
+        if version is not None:
+            self.version = version
         if workspace_id is not None:
             self.workspace_id = workspace_id
-        if dataclass_id is not None:
-            self.dataclass_id = dataclass_id
-        if layout_id is not None:
-            self.layout_id = layout_id
-        if name is not None:
-            self.name = name
-        if type is not None:
-            self.type = type
-        if dataclass is not None:
-            self.dataclass = dataclass
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this IncidentDetail.
+
+        记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
+
+        :return: The create_time of this IncidentDetail.
+        :rtype: str
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this IncidentDetail.
+
+        记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
+
+        :param create_time: The create_time of this IncidentDetail.
+        :type create_time: str
+        """
+        self._create_time = create_time
 
     @property
     def data_object(self):
@@ -123,54 +138,72 @@ class IncidentDetail:
         self._data_object = data_object
 
     @property
-    def create_time(self):
-        """Gets the create_time of this IncidentDetail.
+    def dataclass_ref(self):
+        """Gets the dataclass_ref of this IncidentDetail.
 
-        Create time
-
-        :return: The create_time of this IncidentDetail.
-        :rtype: str
+        :return: The dataclass_ref of this IncidentDetail.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.AlertDetailDataclassRef`
         """
-        return self._create_time
+        return self._dataclass_ref
 
-    @create_time.setter
-    def create_time(self, create_time):
-        """Sets the create_time of this IncidentDetail.
+    @dataclass_ref.setter
+    def dataclass_ref(self, dataclass_ref):
+        """Sets the dataclass_ref of this IncidentDetail.
 
-        Create time
-
-        :param create_time: The create_time of this IncidentDetail.
-        :type create_time: str
+        :param dataclass_ref: The dataclass_ref of this IncidentDetail.
+        :type dataclass_ref: :class:`huaweicloudsdksecmaster.v2.AlertDetailDataclassRef`
         """
-        self._create_time = create_time
+        self._dataclass_ref = dataclass_ref
 
     @property
-    def update_time(self):
-        """Gets the update_time of this IncidentDetail.
+    def format_version(self):
+        """Gets the format_version of this IncidentDetail.
 
-        Update time
+        格式版本
 
-        :return: The update_time of this IncidentDetail.
+        :return: The format_version of this IncidentDetail.
+        :rtype: int
+        """
+        return self._format_version
+
+    @format_version.setter
+    def format_version(self, format_version):
+        """Sets the format_version of this IncidentDetail.
+
+        格式版本
+
+        :param format_version: The format_version of this IncidentDetail.
+        :type format_version: int
+        """
+        self._format_version = format_version
+
+    @property
+    def id(self):
+        """Gets the id of this IncidentDetail.
+
+        事件唯一标识，UUID格式，最大36个字符
+
+        :return: The id of this IncidentDetail.
         :rtype: str
         """
-        return self._update_time
+        return self._id
 
-    @update_time.setter
-    def update_time(self, update_time):
-        """Sets the update_time of this IncidentDetail.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this IncidentDetail.
 
-        Update time
+        事件唯一标识，UUID格式，最大36个字符
 
-        :param update_time: The update_time of this IncidentDetail.
-        :type update_time: str
+        :param id: The id of this IncidentDetail.
+        :type id: str
         """
-        self._update_time = update_time
+        self._id = id
 
     @property
     def project_id(self):
         """Gets the project_id of this IncidentDetail.
 
-        Id value
+        当前项目的id
 
         :return: The project_id of this IncidentDetail.
         :rtype: str
@@ -181,7 +214,7 @@ class IncidentDetail:
     def project_id(self, project_id):
         """Sets the project_id of this IncidentDetail.
 
-        Id value
+        当前项目的id
 
         :param project_id: The project_id of this IncidentDetail.
         :type project_id: str
@@ -189,10 +222,54 @@ class IncidentDetail:
         self._project_id = project_id
 
     @property
+    def update_time(self):
+        """Gets the update_time of this IncidentDetail.
+
+        更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为告警发生时区，无法解析时区的时间，默认时区填东八区
+
+        :return: The update_time of this IncidentDetail.
+        :rtype: str
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        """Sets the update_time of this IncidentDetail.
+
+        更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为告警发生时区，无法解析时区的时间，默认时区填东八区
+
+        :param update_time: The update_time of this IncidentDetail.
+        :type update_time: str
+        """
+        self._update_time = update_time
+
+    @property
+    def version(self):
+        """Gets the version of this IncidentDetail.
+
+        版本
+
+        :return: The version of this IncidentDetail.
+        :rtype: int
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this IncidentDetail.
+
+        版本
+
+        :param version: The version of this IncidentDetail.
+        :type version: int
+        """
+        self._version = version
+
+    @property
     def workspace_id(self):
         """Gets the workspace_id of this IncidentDetail.
 
-        Id value
+        当前的工作空间id
 
         :return: The workspace_id of this IncidentDetail.
         :rtype: str
@@ -203,118 +280,12 @@ class IncidentDetail:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this IncidentDetail.
 
-        Id value
+        当前的工作空间id
 
         :param workspace_id: The workspace_id of this IncidentDetail.
         :type workspace_id: str
         """
         self._workspace_id = workspace_id
-
-    @property
-    def dataclass_id(self):
-        """Gets the dataclass_id of this IncidentDetail.
-
-        Id value
-
-        :return: The dataclass_id of this IncidentDetail.
-        :rtype: str
-        """
-        return self._dataclass_id
-
-    @dataclass_id.setter
-    def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this IncidentDetail.
-
-        Id value
-
-        :param dataclass_id: The dataclass_id of this IncidentDetail.
-        :type dataclass_id: str
-        """
-        self._dataclass_id = dataclass_id
-
-    @property
-    def layout_id(self):
-        """Gets the layout_id of this IncidentDetail.
-
-        Id value
-
-        :return: The layout_id of this IncidentDetail.
-        :rtype: str
-        """
-        return self._layout_id
-
-    @layout_id.setter
-    def layout_id(self, layout_id):
-        """Sets the layout_id of this IncidentDetail.
-
-        Id value
-
-        :param layout_id: The layout_id of this IncidentDetail.
-        :type layout_id: str
-        """
-        self._layout_id = layout_id
-
-    @property
-    def name(self):
-        """Gets the name of this IncidentDetail.
-
-        The name, display only
-
-        :return: The name of this IncidentDetail.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this IncidentDetail.
-
-        The name, display only
-
-        :param name: The name of this IncidentDetail.
-        :type name: str
-        """
-        self._name = name
-
-    @property
-    def type(self):
-        """Gets the type of this IncidentDetail.
-
-        The name, display only
-
-        :return: The type of this IncidentDetail.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this IncidentDetail.
-
-        The name, display only
-
-        :param type: The type of this IncidentDetail.
-        :type type: str
-        """
-        self._type = type
-
-    @property
-    def dataclass(self):
-        """Gets the dataclass of this IncidentDetail.
-
-        :return: The dataclass of this IncidentDetail.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowAlertDetailDataclassRef`
-        """
-        return self._dataclass
-
-    @dataclass.setter
-    def dataclass(self, dataclass):
-        """Sets the dataclass of this IncidentDetail.
-
-        :param dataclass: The dataclass of this IncidentDetail.
-        :type dataclass: :class:`huaweicloudsdksecmaster.v2.ShowAlertDetailDataclassRef`
-        """
-        self._dataclass = dataclass
 
     def to_dict(self):
         """Returns the model properties as a dict"""

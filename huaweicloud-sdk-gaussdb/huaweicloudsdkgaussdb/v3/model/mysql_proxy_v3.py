@@ -37,7 +37,8 @@ class MysqlProxyV3:
         'switch_connection_pool_type_enabled': 'bool',
         'route_mode': 'int',
         'balance_route_mode_enabled': 'bool',
-        'consistence_mode': 'str'
+        'consistence_mode': 'str',
+        'subnet_id': 'str'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class MysqlProxyV3:
         'switch_connection_pool_type_enabled': 'switch_connection_pool_type_enabled',
         'route_mode': 'route_mode',
         'balance_route_mode_enabled': 'balance_route_mode_enabled',
-        'consistence_mode': 'consistence_mode'
+        'consistence_mode': 'consistence_mode',
+        'subnet_id': 'subnet_id'
     }
 
-    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None, transaction_split=None, connection_pool_type=None, switch_connection_pool_type_enabled=None, route_mode=None, balance_route_mode_enabled=None, consistence_mode=None):
+    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None, transaction_split=None, connection_pool_type=None, switch_connection_pool_type_enabled=None, route_mode=None, balance_route_mode_enabled=None, consistence_mode=None, subnet_id=None):
         """MysqlProxyV3
 
         The model defined in huaweicloud sdk
@@ -109,8 +111,10 @@ class MysqlProxyV3:
         :type route_mode: int
         :param balance_route_mode_enabled: 数据库代理版本是否支持负载均衡模式。  取值范围: - true 支持; - false 不支持。
         :type balance_route_mode_enabled: bool
-        :param consistence_mode: 一致性模式。默认值为空，此时以会话一致性参数session_consistence为准。 - session: 会话一致性 - global: 全局一致性 - eventual: 最终一致性
+        :param consistence_mode: 一致性模式。默认值为空，此时以会话一致性参数session_consistence为准。 - session: 会话一致性。 - global: 全局一致性。 - eventual: 最终一致性。
         :type consistence_mode: str
+        :param subnet_id: 数据库代理所属的子网ID。
+        :type subnet_id: str
         """
         
         
@@ -136,6 +140,7 @@ class MysqlProxyV3:
         self._route_mode = None
         self._balance_route_mode_enabled = None
         self._consistence_mode = None
+        self._subnet_id = None
         self.discriminator = None
 
         if pool_id is not None:
@@ -180,6 +185,8 @@ class MysqlProxyV3:
             self.balance_route_mode_enabled = balance_route_mode_enabled
         if consistence_mode is not None:
             self.consistence_mode = consistence_mode
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
 
     @property
     def pool_id(self):
@@ -625,7 +632,7 @@ class MysqlProxyV3:
     def consistence_mode(self):
         """Gets the consistence_mode of this MysqlProxyV3.
 
-        一致性模式。默认值为空，此时以会话一致性参数session_consistence为准。 - session: 会话一致性 - global: 全局一致性 - eventual: 最终一致性
+        一致性模式。默认值为空，此时以会话一致性参数session_consistence为准。 - session: 会话一致性。 - global: 全局一致性。 - eventual: 最终一致性。
 
         :return: The consistence_mode of this MysqlProxyV3.
         :rtype: str
@@ -636,12 +643,34 @@ class MysqlProxyV3:
     def consistence_mode(self, consistence_mode):
         """Sets the consistence_mode of this MysqlProxyV3.
 
-        一致性模式。默认值为空，此时以会话一致性参数session_consistence为准。 - session: 会话一致性 - global: 全局一致性 - eventual: 最终一致性
+        一致性模式。默认值为空，此时以会话一致性参数session_consistence为准。 - session: 会话一致性。 - global: 全局一致性。 - eventual: 最终一致性。
 
         :param consistence_mode: The consistence_mode of this MysqlProxyV3.
         :type consistence_mode: str
         """
         self._consistence_mode = consistence_mode
+
+    @property
+    def subnet_id(self):
+        """Gets the subnet_id of this MysqlProxyV3.
+
+        数据库代理所属的子网ID。
+
+        :return: The subnet_id of this MysqlProxyV3.
+        :rtype: str
+        """
+        return self._subnet_id
+
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        """Sets the subnet_id of this MysqlProxyV3.
+
+        数据库代理所属的子网ID。
+
+        :param subnet_id: The subnet_id of this MysqlProxyV3.
+        :type subnet_id: str
+        """
+        self._subnet_id = subnet_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

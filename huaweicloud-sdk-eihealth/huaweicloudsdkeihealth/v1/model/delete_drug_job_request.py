@@ -31,7 +31,7 @@ class DeleteDrugJobRequest:
 
         The model defined in huaweicloud sdk
 
-        :param eihealth_project_id: 盘古辅助制药平台项目ID。
+        :param eihealth_project_id: 平台项目ID。
         :type eihealth_project_id: str
         :param job_id: 作业id
         :type job_id: str
@@ -50,7 +50,7 @@ class DeleteDrugJobRequest:
     def eihealth_project_id(self):
         """Gets the eihealth_project_id of this DeleteDrugJobRequest.
 
-        盘古辅助制药平台项目ID。
+        平台项目ID。
 
         :return: The eihealth_project_id of this DeleteDrugJobRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class DeleteDrugJobRequest:
     def eihealth_project_id(self, eihealth_project_id):
         """Sets the eihealth_project_id of this DeleteDrugJobRequest.
 
-        盘古辅助制药平台项目ID。
+        平台项目ID。
 
         :param eihealth_project_id: The eihealth_project_id of this DeleteDrugJobRequest.
         :type eihealth_project_id: str

@@ -31,7 +31,7 @@ class ShowDrugLigandPreviewTaskRequest:
 
         The model defined in huaweicloud sdk
 
-        :param eihealth_project_id: 医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        :param eihealth_project_id: 平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
         :type eihealth_project_id: str
         :param task_id: 任务ID，通过创建任务接口取得。
         :type task_id: str
@@ -50,7 +50,7 @@ class ShowDrugLigandPreviewTaskRequest:
     def eihealth_project_id(self):
         """Gets the eihealth_project_id of this ShowDrugLigandPreviewTaskRequest.
 
-        医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
         :return: The eihealth_project_id of this ShowDrugLigandPreviewTaskRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowDrugLigandPreviewTaskRequest:
     def eihealth_project_id(self, eihealth_project_id):
         """Sets the eihealth_project_id of this ShowDrugLigandPreviewTaskRequest.
 
-        医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
         :param eihealth_project_id: The eihealth_project_id of this ShowDrugLigandPreviewTaskRequest.
         :type eihealth_project_id: str

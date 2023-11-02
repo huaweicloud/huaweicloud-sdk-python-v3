@@ -26,7 +26,8 @@ class ListInstancesRequest:
         'subnet_id': 'str',
         'offset': 'int',
         'limit': 'int',
-        'tags': 'list[str]'
+        'tags': 'list[str]',
+        'charge_mode': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ListInstancesRequest:
         'subnet_id': 'subnet_id',
         'offset': 'offset',
         'limit': 'limit',
-        'tags': 'tags'
+        'tags': 'tags',
+        'charge_mode': 'charge_mode'
     }
 
-    def __init__(self, x_language=None, id=None, name=None, type=None, datastore_type=None, vpc_id=None, subnet_id=None, offset=None, limit=None, tags=None):
+    def __init__(self, x_language=None, id=None, name=None, type=None, datastore_type=None, vpc_id=None, subnet_id=None, offset=None, limit=None, tags=None, charge_mode=None):
         """ListInstancesRequest
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class ListInstancesRequest:
         :type limit: int
         :param tags: 根据实例标签键值对进行查询。  {key}表示标签键，不可以为空或重复。最大长度127个unicode字符。key不能为空或者空字符串，不能为空格，使用之前先trim前后半角空格。不能包含+/?#&amp;&#x3D;,%特殊字符。  {value}表示标签值，可以为空。最大长度255个unicode字符，使用之前先trim 前后半角空格。不能包含+/?#&amp;&#x3D;,%特殊字符。  如果value为空，则表示any_value（查询任意value）。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，最多包含10组。
         :type tags: list[str]
+        :param charge_mode: 计费模式。  取值范围：   postPaid：后付费，即按需付费。  prePaid：预付费，即包年/包月。
+        :type charge_mode: str
         """
         
         
@@ -81,6 +85,7 @@ class ListInstancesRequest:
         self._offset = None
         self._limit = None
         self._tags = None
+        self._charge_mode = None
         self.discriminator = None
 
         if x_language is not None:
@@ -103,6 +108,8 @@ class ListInstancesRequest:
             self.limit = limit
         if tags is not None:
             self.tags = tags
+        if charge_mode is not None:
+            self.charge_mode = charge_mode
 
     @property
     def x_language(self):
@@ -323,6 +330,28 @@ class ListInstancesRequest:
         :type tags: list[str]
         """
         self._tags = tags
+
+    @property
+    def charge_mode(self):
+        """Gets the charge_mode of this ListInstancesRequest.
+
+        计费模式。  取值范围：   postPaid：后付费，即按需付费。  prePaid：预付费，即包年/包月。
+
+        :return: The charge_mode of this ListInstancesRequest.
+        :rtype: str
+        """
+        return self._charge_mode
+
+    @charge_mode.setter
+    def charge_mode(self, charge_mode):
+        """Sets the charge_mode of this ListInstancesRequest.
+
+        计费模式。  取值范围：   postPaid：后付费，即按需付费。  prePaid：预付费，即包年/包月。
+
+        :param charge_mode: The charge_mode of this ListInstancesRequest.
+        :type charge_mode: str
+        """
+        self._charge_mode = charge_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

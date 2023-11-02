@@ -70,6 +70,10 @@ class HttpClient(object):
     def config(self):
         return self._config
 
+    @property
+    def logger(self):
+        return self._logger
+
     def do_request_sync(self, request):
         invoke = getattr(self._session, request.method.lower())
 
@@ -109,8 +113,9 @@ class HttpClient(object):
         fun = getattr(FutureSession(self._session, self._executor), request.method.lower())
         hooks.append(self.response_error_hook_factory())
 
+        url = "%s://%s%s" % (request.schema, request.host, request.uri)
         future = fun(
-            "%s://%s%s" % (request.schema, request.host, request.uri),
+            url,
             timeout=self._config.timeout,
             headers=request.header_params,
             proxies=self._proxy,

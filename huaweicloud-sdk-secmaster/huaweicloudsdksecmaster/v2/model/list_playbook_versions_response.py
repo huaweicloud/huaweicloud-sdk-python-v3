@@ -42,17 +42,17 @@ class ListPlaybookVersionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: Error code
+        :param code: 错误码
         :type code: str
-        :param message: Error message
+        :param message: 错误信息
         :type message: str
-        :param size: current page count
+        :param size: 分页查询数据大小
         :type size: int
-        :param page: current page size
+        :param page: 当前页码
         :type page: int
-        :param total: tatal count
+        :param total: 总数
         :type total: int
-        :param data: list of informations of playbook version
+        :param data: 剧本版本列表信息
         :type data: list[:class:`huaweicloudsdksecmaster.v2.PlaybookVersionListEntity`]
         :param x_request_id: 
         :type x_request_id: str
@@ -88,7 +88,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
     def code(self):
         """Gets the code of this ListPlaybookVersionsResponse.
 
-        Error code
+        错误码
 
         :return: The code of this ListPlaybookVersionsResponse.
         :rtype: str
@@ -99,7 +99,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ListPlaybookVersionsResponse.
 
-        Error code
+        错误码
 
         :param code: The code of this ListPlaybookVersionsResponse.
         :type code: str
@@ -110,7 +110,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
     def message(self):
         """Gets the message of this ListPlaybookVersionsResponse.
 
-        Error message
+        错误信息
 
         :return: The message of this ListPlaybookVersionsResponse.
         :rtype: str
@@ -121,7 +121,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ListPlaybookVersionsResponse.
 
-        Error message
+        错误信息
 
         :param message: The message of this ListPlaybookVersionsResponse.
         :type message: str
@@ -132,7 +132,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
     def size(self):
         """Gets the size of this ListPlaybookVersionsResponse.
 
-        current page count
+        分页查询数据大小
 
         :return: The size of this ListPlaybookVersionsResponse.
         :rtype: int
@@ -143,7 +143,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
     def size(self, size):
         """Sets the size of this ListPlaybookVersionsResponse.
 
-        current page count
+        分页查询数据大小
 
         :param size: The size of this ListPlaybookVersionsResponse.
         :type size: int
@@ -154,7 +154,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
     def page(self):
         """Gets the page of this ListPlaybookVersionsResponse.
 
-        current page size
+        当前页码
 
         :return: The page of this ListPlaybookVersionsResponse.
         :rtype: int
@@ -165,7 +165,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
     def page(self, page):
         """Sets the page of this ListPlaybookVersionsResponse.
 
-        current page size
+        当前页码
 
         :param page: The page of this ListPlaybookVersionsResponse.
         :type page: int
@@ -176,7 +176,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListPlaybookVersionsResponse.
 
-        tatal count
+        总数
 
         :return: The total of this ListPlaybookVersionsResponse.
         :rtype: int
@@ -187,7 +187,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListPlaybookVersionsResponse.
 
-        tatal count
+        总数
 
         :param total: The total of this ListPlaybookVersionsResponse.
         :type total: int
@@ -198,7 +198,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListPlaybookVersionsResponse.
 
-        list of informations of playbook version
+        剧本版本列表信息
 
         :return: The data of this ListPlaybookVersionsResponse.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.PlaybookVersionListEntity`]
@@ -209,7 +209,7 @@ class ListPlaybookVersionsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListPlaybookVersionsResponse.
 
-        list of informations of playbook version
+        剧本版本列表信息
 
         :param data: The data of this ListPlaybookVersionsResponse.
         :type data: list[:class:`huaweicloudsdksecmaster.v2.PlaybookVersionListEntity`]

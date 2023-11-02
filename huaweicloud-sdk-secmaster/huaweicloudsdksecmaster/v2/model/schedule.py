@@ -39,17 +39,17 @@ class Schedule:
 
         The model defined in huaweicloud sdk
 
-        :param frequency_interval: frequency_interval
+        :param frequency_interval: 调度间隔。Frequency interval.
         :type frequency_interval: int
-        :param frequency_unit: frequency_unit. MINUTE, HOUR, DAY.
+        :param frequency_unit: 调度间隔单位，分钟、小时、天。Frequency unit. MINUTE, HOUR, DAY.
         :type frequency_unit: str
-        :param period_interval: frequency_interval
+        :param period_interval: 时间窗口间隔。Period interval.
         :type period_interval: int
-        :param period_unit: period_unit. MINUTE, HOUR, DAY.
+        :param period_unit: 时间窗口单位，分钟、小时、天。Period unit. MINUTE, HOUR, DAY.
         :type period_unit: str
-        :param delay_interval: delay_interval
+        :param delay_interval: 延迟间隔。Delay interval
         :type delay_interval: int
-        :param overtime_interval: overtime_interval
+        :param overtime_interval: 超时间隔。Overtime interval
         :type overtime_interval: int
         """
         
@@ -76,7 +76,7 @@ class Schedule:
     def frequency_interval(self):
         """Gets the frequency_interval of this Schedule.
 
-        frequency_interval
+        调度间隔。Frequency interval.
 
         :return: The frequency_interval of this Schedule.
         :rtype: int
@@ -87,7 +87,7 @@ class Schedule:
     def frequency_interval(self, frequency_interval):
         """Sets the frequency_interval of this Schedule.
 
-        frequency_interval
+        调度间隔。Frequency interval.
 
         :param frequency_interval: The frequency_interval of this Schedule.
         :type frequency_interval: int
@@ -98,7 +98,7 @@ class Schedule:
     def frequency_unit(self):
         """Gets the frequency_unit of this Schedule.
 
-        frequency_unit. MINUTE, HOUR, DAY.
+        调度间隔单位，分钟、小时、天。Frequency unit. MINUTE, HOUR, DAY.
 
         :return: The frequency_unit of this Schedule.
         :rtype: str
@@ -109,7 +109,7 @@ class Schedule:
     def frequency_unit(self, frequency_unit):
         """Sets the frequency_unit of this Schedule.
 
-        frequency_unit. MINUTE, HOUR, DAY.
+        调度间隔单位，分钟、小时、天。Frequency unit. MINUTE, HOUR, DAY.
 
         :param frequency_unit: The frequency_unit of this Schedule.
         :type frequency_unit: str
@@ -120,7 +120,7 @@ class Schedule:
     def period_interval(self):
         """Gets the period_interval of this Schedule.
 
-        frequency_interval
+        时间窗口间隔。Period interval.
 
         :return: The period_interval of this Schedule.
         :rtype: int
@@ -131,7 +131,7 @@ class Schedule:
     def period_interval(self, period_interval):
         """Sets the period_interval of this Schedule.
 
-        frequency_interval
+        时间窗口间隔。Period interval.
 
         :param period_interval: The period_interval of this Schedule.
         :type period_interval: int
@@ -142,7 +142,7 @@ class Schedule:
     def period_unit(self):
         """Gets the period_unit of this Schedule.
 
-        period_unit. MINUTE, HOUR, DAY.
+        时间窗口单位，分钟、小时、天。Period unit. MINUTE, HOUR, DAY.
 
         :return: The period_unit of this Schedule.
         :rtype: str
@@ -153,7 +153,7 @@ class Schedule:
     def period_unit(self, period_unit):
         """Sets the period_unit of this Schedule.
 
-        period_unit. MINUTE, HOUR, DAY.
+        时间窗口单位，分钟、小时、天。Period unit. MINUTE, HOUR, DAY.
 
         :param period_unit: The period_unit of this Schedule.
         :type period_unit: str
@@ -164,7 +164,7 @@ class Schedule:
     def delay_interval(self):
         """Gets the delay_interval of this Schedule.
 
-        delay_interval
+        延迟间隔。Delay interval
 
         :return: The delay_interval of this Schedule.
         :rtype: int
@@ -175,7 +175,7 @@ class Schedule:
     def delay_interval(self, delay_interval):
         """Sets the delay_interval of this Schedule.
 
-        delay_interval
+        延迟间隔。Delay interval
 
         :param delay_interval: The delay_interval of this Schedule.
         :type delay_interval: int
@@ -186,7 +186,7 @@ class Schedule:
     def overtime_interval(self):
         """Gets the overtime_interval of this Schedule.
 
-        overtime_interval
+        超时间隔。Overtime interval
 
         :return: The overtime_interval of this Schedule.
         :rtype: int
@@ -197,7 +197,7 @@ class Schedule:
     def overtime_interval(self, overtime_interval):
         """Sets the overtime_interval of this Schedule.
 
-        overtime_interval
+        超时间隔。Overtime interval
 
         :param overtime_interval: The overtime_interval of this Schedule.
         :type overtime_interval: int

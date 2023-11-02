@@ -55,7 +55,7 @@ class ListDataJobRequest:
 
         :param creator: 创建者名称
         :type creator: str
-        :param eihealth_project_id: 医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        :param eihealth_project_id: 平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
         :type eihealth_project_id: str
         :param from_time: 查询该时间之后创建的数据作业
         :type from_time: int
@@ -150,7 +150,7 @@ class ListDataJobRequest:
     def eihealth_project_id(self):
         """Gets the eihealth_project_id of this ListDataJobRequest.
 
-        医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
         :return: The eihealth_project_id of this ListDataJobRequest.
         :rtype: str
@@ -161,7 +161,7 @@ class ListDataJobRequest:
     def eihealth_project_id(self, eihealth_project_id):
         """Sets the eihealth_project_id of this ListDataJobRequest.
 
-        医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
         :param eihealth_project_id: The eihealth_project_id of this ListDataJobRequest.
         :type eihealth_project_id: str

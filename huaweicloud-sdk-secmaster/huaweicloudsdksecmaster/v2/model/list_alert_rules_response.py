@@ -34,9 +34,9 @@ class ListAlertRulesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: total count
+        :param count: 总数量。Total count.
         :type count: int
-        :param records: rules
+        :param records: 告警模型。Alert rules.
         :type records: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
         :param x_request_id: 
         :type x_request_id: str
@@ -60,7 +60,7 @@ class ListAlertRulesResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListAlertRulesResponse.
 
-        total count
+        总数量。Total count.
 
         :return: The count of this ListAlertRulesResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListAlertRulesResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListAlertRulesResponse.
 
-        total count
+        总数量。Total count.
 
         :param count: The count of this ListAlertRulesResponse.
         :type count: int
@@ -82,7 +82,7 @@ class ListAlertRulesResponse(SdkResponse):
     def records(self):
         """Gets the records of this ListAlertRulesResponse.
 
-        rules
+        告警模型。Alert rules.
 
         :return: The records of this ListAlertRulesResponse.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
@@ -93,7 +93,7 @@ class ListAlertRulesResponse(SdkResponse):
     def records(self, records):
         """Sets the records of this ListAlertRulesResponse.
 
-        rules
+        告警模型。Alert rules.
 
         :param records: The records of this ListAlertRulesResponse.
         :type records: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]

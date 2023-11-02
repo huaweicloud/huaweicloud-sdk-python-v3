@@ -23,7 +23,8 @@ class CreateNatGatewayOption:
         'description': 'str',
         'spec': 'str',
         'enterprise_project_id': 'str',
-        'session_conf': 'SessionConfiguration'
+        'session_conf': 'SessionConfiguration',
+        'ngport_ip_address': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class CreateNatGatewayOption:
         'description': 'description',
         'spec': 'spec',
         'enterprise_project_id': 'enterprise_project_id',
-        'session_conf': 'session_conf'
+        'session_conf': 'session_conf',
+        'ngport_ip_address': 'ngport_ip_address'
     }
 
-    def __init__(self, name=None, router_id=None, internal_network_id=None, description=None, spec=None, enterprise_project_id=None, session_conf=None):
+    def __init__(self, name=None, router_id=None, internal_network_id=None, description=None, spec=None, enterprise_project_id=None, session_conf=None, ngport_ip_address=None):
         """CreateNatGatewayOption
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class CreateNatGatewayOption:
         :type enterprise_project_id: str
         :param session_conf: 
         :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
+        :param ngport_ip_address: 公网NAT网关私有IP地址，由VPC中子网分配。
+        :type ngport_ip_address: str
         """
         
         
@@ -66,6 +70,7 @@ class CreateNatGatewayOption:
         self._spec = None
         self._enterprise_project_id = None
         self._session_conf = None
+        self._ngport_ip_address = None
         self.discriminator = None
 
         self.name = name
@@ -78,6 +83,8 @@ class CreateNatGatewayOption:
             self.enterprise_project_id = enterprise_project_id
         if session_conf is not None:
             self.session_conf = session_conf
+        if ngport_ip_address is not None:
+            self.ngport_ip_address = ngport_ip_address
 
     @property
     def name(self):
@@ -228,6 +235,28 @@ class CreateNatGatewayOption:
         :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
         """
         self._session_conf = session_conf
+
+    @property
+    def ngport_ip_address(self):
+        """Gets the ngport_ip_address of this CreateNatGatewayOption.
+
+        公网NAT网关私有IP地址，由VPC中子网分配。
+
+        :return: The ngport_ip_address of this CreateNatGatewayOption.
+        :rtype: str
+        """
+        return self._ngport_ip_address
+
+    @ngport_ip_address.setter
+    def ngport_ip_address(self, ngport_ip_address):
+        """Sets the ngport_ip_address of this CreateNatGatewayOption.
+
+        公网NAT网关私有IP地址，由VPC中子网分配。
+
+        :param ngport_ip_address: The ngport_ip_address of this CreateNatGatewayOption.
+        :type ngport_ip_address: str
+        """
+        self._ngport_ip_address = ngport_ip_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

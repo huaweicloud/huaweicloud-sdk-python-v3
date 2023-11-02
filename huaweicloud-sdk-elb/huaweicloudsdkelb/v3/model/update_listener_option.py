@@ -35,6 +35,7 @@ class UpdateListenerOption:
         'keepalive_timeout': 'int',
         'ipgroup': 'UpdateListenerIpGroupOption',
         'transparent_client_ip_enable': 'bool',
+        'proxy_protocol_enable': 'bool',
         'enhance_l7policy_enable': 'bool',
         'quic_config': 'UpdateListenerQuicConfigOption',
         'protection_status': 'str',
@@ -61,6 +62,7 @@ class UpdateListenerOption:
         'keepalive_timeout': 'keepalive_timeout',
         'ipgroup': 'ipgroup',
         'transparent_client_ip_enable': 'transparent_client_ip_enable',
+        'proxy_protocol_enable': 'proxy_protocol_enable',
         'enhance_l7policy_enable': 'enhance_l7policy_enable',
         'quic_config': 'quic_config',
         'protection_status': 'protection_status',
@@ -68,14 +70,14 @@ class UpdateListenerOption:
         'gzip_enable': 'gzip_enable'
     }
 
-    def __init__(self, admin_state_up=None, client_ca_tls_container_ref=None, default_pool_id=None, default_tls_container_ref=None, description=None, http2_enable=None, insert_headers=None, name=None, sni_container_refs=None, sni_match_algo=None, tls_ciphers_policy=None, security_policy_id=None, enable_member_retry=None, member_timeout=None, client_timeout=None, keepalive_timeout=None, ipgroup=None, transparent_client_ip_enable=None, enhance_l7policy_enable=None, quic_config=None, protection_status=None, protection_reason=None, gzip_enable=None):
+    def __init__(self, admin_state_up=None, client_ca_tls_container_ref=None, default_pool_id=None, default_tls_container_ref=None, description=None, http2_enable=None, insert_headers=None, name=None, sni_container_refs=None, sni_match_algo=None, tls_ciphers_policy=None, security_policy_id=None, enable_member_retry=None, member_timeout=None, client_timeout=None, keepalive_timeout=None, ipgroup=None, transparent_client_ip_enable=None, proxy_protocol_enable=None, enhance_l7policy_enable=None, quic_config=None, protection_status=None, protection_reason=None, gzip_enable=None):
         """UpdateListenerOption
 
         The model defined in huaweicloud sdk
 
         :param admin_state_up: 监听器的管理状态。只能设置为true。  不支持该字段，请勿使用。
         :type admin_state_up: bool
-        :param client_ca_tls_container_ref: 监听器使用的CA证书ID。当且仅当type&#x3D;client时，才会使用该字段对应的证书。  监听器协议为QUIC时不支持该字段。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        :param client_ca_tls_container_ref: 监听器使用的CA证书ID。当且仅当type&#x3D;client时，才会使用该字段对应的证书。  [监听器协议为QUIC时不支持该字段。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs)
         :type client_ca_tls_container_ref: str
         :param default_pool_id: 监听器的默认后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。
         :type default_pool_id: str
@@ -83,21 +85,21 @@ class UpdateListenerOption:
         :type default_tls_container_ref: str
         :param description: 监听器的描述信息。
         :type description: str
-        :param http2_enable: 客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  使用说明： - 仅HTTPS协议监听器有效。 - QUIC监听器不能设置该字段，固定返回为true。 - 其他协议的监听器可设置该字段但无效，无论取值如何都不影响监听器正常运行。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        :param http2_enable: 客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  使用说明： - 仅HTTPS协议监听器有效。 [- QUIC监听器不能设置该字段，固定返回为true。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs) - 其他协议的监听器可设置该字段但无效，无论取值如何都不影响监听器正常运行。
         :type http2_enable: bool
         :param insert_headers: 
         :type insert_headers: :class:`huaweicloudsdkelb.v3.ListenerInsertHeaders`
-        :param name: 监听器的名称。  注意：若名称为空，则console上无法选中并查看详情。
+        :param name: 监听器的名称。  注意：若名称为空，则在控制台的监听器列表无法选择并查看监听器详情。
         :type name: str
-        :param sni_container_refs: 监听器使用的SNI证书（带域名的服务器证书）ID列表。  使用说明： - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过50。
+        :param sni_container_refs: 监听器使用的SNI证书（带域名的服务器证书）ID列表。  使用说明： - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过50。 [- QUIC监听器仅支持RSA证书。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs)
         :type sni_container_refs: list[str]
         :param sni_match_algo: 监听器使用的SNI证书泛域名匹配方式。 longest_suffix表示最长尾缀匹配，wildcard表示标准域名分级匹配。 默认为wildcard。
         :type sni_match_algo: str
-        :param tls_ciphers_policy: 监听器使用的安全策略。  [取值：tls-1-0-inherit,tls-1-0, tls-1-1, tls-1-2,tls-1-2-strict，tls-1-2-fs，tls-1-0-with-1-3, tls-1-2-fs-with-1-3, hybrid-policy-1-0，默认：tls-1-0。 ](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,tm,cmcc,dt)  [取值：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，默认：tls-1-0。](tag:hws_eu,g42,hk_g42,hcso_dt)  [使用说明： - 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。 - QUIC监听器不支持该字段。 - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 - 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa） ](tag:hws,hws_hk,hws_eu,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt)  [使用说明： - 仅对HTTPS协议类型的监听器有效](tag:hcso_dt)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        :param tls_ciphers_policy: 监听器使用的安全策略。  [取值：tls-1-0, tls-1-0-inherit, tls-1-1,tls-1-2, tls-1-2-strict，tls-1-2-fs，tls-1-0-with-1-3, tls-1-2-fs-with-1-3, hybrid-policy-1-0, tls-1-2-strict-no-cbc，默认：tls-1-0。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,tm,cmcc,dt)  [取值：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，默认：tls-1-0。](tag:hws_eu,g42,hk_g42,hcso_dt,tm)  使用说明： [- 仅对HTTPS协议类型的监听器有效。](tag:hws_eu,hcso_dt) [- 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs,tm,g42,hk_g42,dt,dt_test) [- QUIC监听器不支持该字段。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs) - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 [- 加密套件的优先顺序为ecc套件、rsa套件](tag:tm,hws_eu,g42,hk_g42) [- 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa）](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs,hcso_dt,dt,dt_test)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)
         :type tls_ciphers_policy: str
-        :param security_policy_id: 自定义安全策略的ID。  [使用说明： - 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。 - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 - 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa） ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcso,g42,tm,cmcc,hk-g42,dt)  [使用说明： - 仅对HTTPS协议类型的监听器有效](tag:hcso_dt)  [不支持tls1.3协议的套件。](tag:hws_eu,g42,hk_g42)
+        :param security_policy_id: 自定义安全策略的ID。  使用说明： [- 仅对HTTPS协议类型的监听器有效。](tag:hws_eu,hcso_dt) [- 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs,tm,g42,hk_g42,dt,dt_test) [- QUIC监听器不支持该字段。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs) - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 [- 加密套件的优先顺序为ecc套件、rsa套件](tag:tm,hws_eu,g42,hk_g42) [- 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa）](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs,hcso_dt,dt,dt_test)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)
         :type security_policy_id: str
-        :param enable_member_retry: 是否开启后端服务器的重试。  取值：true 开启重试，false 不开启重试。默认：true。  [使用说明： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  [使用说明： - 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt)  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        :param enable_member_retry: 是否开启后端服务器的重试。  取值：true 开启重试，false 不开启重试。默认：true。  使用说明： [- 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt) [- 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。](tag:hws,hws_hk,ocb,ctc,hcs,g42,cmcc,hws_ocb,fcs,tm,g42,hk_g42,dt,dt_test) [- 若关联是独享型LB，仅在protocol为HTTP和HTTPS时才能传入该字段。](tag:tm,g42,hk_g42,dt,dt_test) [- 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs)
         :type enable_member_retry: bool
         :param member_timeout: 等待后端服务器响应超时时间。请求转发后端服务器后，在等待超时member_timeout时长没有响应，负载均衡将终止等待，并返回 HTTP504错误码。  取值：1-300s。  使用说明：仅支持协议为HTTP/HTTPS的监听器。
         :type member_timeout: int
@@ -109,7 +111,9 @@ class UpdateListenerOption:
         :type ipgroup: :class:`huaweicloudsdkelb.v3.UpdateListenerIpGroupOption`
         :param transparent_client_ip_enable: 是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。 [仅作用于共享型LB的TCP/UDP监听器。  取值： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。  使用说明： - 开启特性后，ELB和后端服务器之间直接使用真实的IP访问，需要确保已正确设置服务器的安全组以及访问控制策略。 - 开启特性后，不支持同一台服务器既作为后端服务器又作为客户端的场景。 - 开启特性后，不支持变更后端服务器规格。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  [只设支持置为true，不传默认为true。](tag:hws_eu,hcso_dt)
         :type transparent_client_ip_enable: bool
-        :param enhance_l7policy_enable: 是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  [荷兰region不支持该字段，请勿使用。](tag:dt) &gt; 开启后不支持关闭
+        :param proxy_protocol_enable: 是否开启proxy_protocol。仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
+        :type proxy_protocol_enable: bool
+        :param enhance_l7policy_enable: 是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  &gt; 开启后不支持关闭
         :type enhance_l7policy_enable: bool
         :param quic_config: 
         :type quic_config: :class:`huaweicloudsdkelb.v3.UpdateListenerQuicConfigOption`
@@ -141,6 +145,7 @@ class UpdateListenerOption:
         self._keepalive_timeout = None
         self._ipgroup = None
         self._transparent_client_ip_enable = None
+        self._proxy_protocol_enable = None
         self._enhance_l7policy_enable = None
         self._quic_config = None
         self._protection_status = None
@@ -184,6 +189,8 @@ class UpdateListenerOption:
             self.ipgroup = ipgroup
         if transparent_client_ip_enable is not None:
             self.transparent_client_ip_enable = transparent_client_ip_enable
+        if proxy_protocol_enable is not None:
+            self.proxy_protocol_enable = proxy_protocol_enable
         if enhance_l7policy_enable is not None:
             self.enhance_l7policy_enable = enhance_l7policy_enable
         if quic_config is not None:
@@ -221,7 +228,7 @@ class UpdateListenerOption:
     def client_ca_tls_container_ref(self):
         """Gets the client_ca_tls_container_ref of this UpdateListenerOption.
 
-        监听器使用的CA证书ID。当且仅当type=client时，才会使用该字段对应的证书。  监听器协议为QUIC时不支持该字段。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        监听器使用的CA证书ID。当且仅当type=client时，才会使用该字段对应的证书。  [监听器协议为QUIC时不支持该字段。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs)
 
         :return: The client_ca_tls_container_ref of this UpdateListenerOption.
         :rtype: str
@@ -232,7 +239,7 @@ class UpdateListenerOption:
     def client_ca_tls_container_ref(self, client_ca_tls_container_ref):
         """Sets the client_ca_tls_container_ref of this UpdateListenerOption.
 
-        监听器使用的CA证书ID。当且仅当type=client时，才会使用该字段对应的证书。  监听器协议为QUIC时不支持该字段。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        监听器使用的CA证书ID。当且仅当type=client时，才会使用该字段对应的证书。  [监听器协议为QUIC时不支持该字段。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs)
 
         :param client_ca_tls_container_ref: The client_ca_tls_container_ref of this UpdateListenerOption.
         :type client_ca_tls_container_ref: str
@@ -309,7 +316,7 @@ class UpdateListenerOption:
     def http2_enable(self):
         """Gets the http2_enable of this UpdateListenerOption.
 
-        客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  使用说明： - 仅HTTPS协议监听器有效。 - QUIC监听器不能设置该字段，固定返回为true。 - 其他协议的监听器可设置该字段但无效，无论取值如何都不影响监听器正常运行。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  使用说明： - 仅HTTPS协议监听器有效。 [- QUIC监听器不能设置该字段，固定返回为true。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs) - 其他协议的监听器可设置该字段但无效，无论取值如何都不影响监听器正常运行。
 
         :return: The http2_enable of this UpdateListenerOption.
         :rtype: bool
@@ -320,7 +327,7 @@ class UpdateListenerOption:
     def http2_enable(self, http2_enable):
         """Sets the http2_enable of this UpdateListenerOption.
 
-        客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  使用说明： - 仅HTTPS协议监听器有效。 - QUIC监听器不能设置该字段，固定返回为true。 - 其他协议的监听器可设置该字段但无效，无论取值如何都不影响监听器正常运行。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  使用说明： - 仅HTTPS协议监听器有效。 [- QUIC监听器不能设置该字段，固定返回为true。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs) - 其他协议的监听器可设置该字段但无效，无论取值如何都不影响监听器正常运行。
 
         :param http2_enable: The http2_enable of this UpdateListenerOption.
         :type http2_enable: bool
@@ -349,7 +356,7 @@ class UpdateListenerOption:
     def name(self):
         """Gets the name of this UpdateListenerOption.
 
-        监听器的名称。  注意：若名称为空，则console上无法选中并查看详情。
+        监听器的名称。  注意：若名称为空，则在控制台的监听器列表无法选择并查看监听器详情。
 
         :return: The name of this UpdateListenerOption.
         :rtype: str
@@ -360,7 +367,7 @@ class UpdateListenerOption:
     def name(self, name):
         """Sets the name of this UpdateListenerOption.
 
-        监听器的名称。  注意：若名称为空，则console上无法选中并查看详情。
+        监听器的名称。  注意：若名称为空，则在控制台的监听器列表无法选择并查看监听器详情。
 
         :param name: The name of this UpdateListenerOption.
         :type name: str
@@ -371,7 +378,7 @@ class UpdateListenerOption:
     def sni_container_refs(self):
         """Gets the sni_container_refs of this UpdateListenerOption.
 
-        监听器使用的SNI证书（带域名的服务器证书）ID列表。  使用说明： - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过50。
+        监听器使用的SNI证书（带域名的服务器证书）ID列表。  使用说明： - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过50。 [- QUIC监听器仅支持RSA证书。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs)
 
         :return: The sni_container_refs of this UpdateListenerOption.
         :rtype: list[str]
@@ -382,7 +389,7 @@ class UpdateListenerOption:
     def sni_container_refs(self, sni_container_refs):
         """Sets the sni_container_refs of this UpdateListenerOption.
 
-        监听器使用的SNI证书（带域名的服务器证书）ID列表。  使用说明： - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过50。
+        监听器使用的SNI证书（带域名的服务器证书）ID列表。  使用说明： - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过50。 [- QUIC监听器仅支持RSA证书。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs)
 
         :param sni_container_refs: The sni_container_refs of this UpdateListenerOption.
         :type sni_container_refs: list[str]
@@ -415,7 +422,7 @@ class UpdateListenerOption:
     def tls_ciphers_policy(self):
         """Gets the tls_ciphers_policy of this UpdateListenerOption.
 
-        监听器使用的安全策略。  [取值：tls-1-0-inherit,tls-1-0, tls-1-1, tls-1-2,tls-1-2-strict，tls-1-2-fs，tls-1-0-with-1-3, tls-1-2-fs-with-1-3, hybrid-policy-1-0，默认：tls-1-0。 ](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,tm,cmcc,dt)  [取值：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，默认：tls-1-0。](tag:hws_eu,g42,hk_g42,hcso_dt)  [使用说明： - 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。 - QUIC监听器不支持该字段。 - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 - 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa） ](tag:hws,hws_hk,hws_eu,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt)  [使用说明： - 仅对HTTPS协议类型的监听器有效](tag:hcso_dt)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        监听器使用的安全策略。  [取值：tls-1-0, tls-1-0-inherit, tls-1-1,tls-1-2, tls-1-2-strict，tls-1-2-fs，tls-1-0-with-1-3, tls-1-2-fs-with-1-3, hybrid-policy-1-0, tls-1-2-strict-no-cbc，默认：tls-1-0。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,tm,cmcc,dt)  [取值：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，默认：tls-1-0。](tag:hws_eu,g42,hk_g42,hcso_dt,tm)  使用说明： [- 仅对HTTPS协议类型的监听器有效。](tag:hws_eu,hcso_dt) [- 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs,tm,g42,hk_g42,dt,dt_test) [- QUIC监听器不支持该字段。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs) - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 [- 加密套件的优先顺序为ecc套件、rsa套件](tag:tm,hws_eu,g42,hk_g42) [- 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa）](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs,hcso_dt,dt,dt_test)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)
 
         :return: The tls_ciphers_policy of this UpdateListenerOption.
         :rtype: str
@@ -426,7 +433,7 @@ class UpdateListenerOption:
     def tls_ciphers_policy(self, tls_ciphers_policy):
         """Sets the tls_ciphers_policy of this UpdateListenerOption.
 
-        监听器使用的安全策略。  [取值：tls-1-0-inherit,tls-1-0, tls-1-1, tls-1-2,tls-1-2-strict，tls-1-2-fs，tls-1-0-with-1-3, tls-1-2-fs-with-1-3, hybrid-policy-1-0，默认：tls-1-0。 ](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,tm,cmcc,dt)  [取值：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，默认：tls-1-0。](tag:hws_eu,g42,hk_g42,hcso_dt)  [使用说明： - 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。 - QUIC监听器不支持该字段。 - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 - 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa） ](tag:hws,hws_hk,hws_eu,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt)  [使用说明： - 仅对HTTPS协议类型的监听器有效](tag:hcso_dt)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        监听器使用的安全策略。  [取值：tls-1-0, tls-1-0-inherit, tls-1-1,tls-1-2, tls-1-2-strict，tls-1-2-fs，tls-1-0-with-1-3, tls-1-2-fs-with-1-3, hybrid-policy-1-0, tls-1-2-strict-no-cbc，默认：tls-1-0。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,tm,cmcc,dt)  [取值：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，默认：tls-1-0。](tag:hws_eu,g42,hk_g42,hcso_dt,tm)  使用说明： [- 仅对HTTPS协议类型的监听器有效。](tag:hws_eu,hcso_dt) [- 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs,tm,g42,hk_g42,dt,dt_test) [- QUIC监听器不支持该字段。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs) - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 [- 加密套件的优先顺序为ecc套件、rsa套件](tag:tm,hws_eu,g42,hk_g42) [- 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa）](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs,hcso_dt,dt,dt_test)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)
 
         :param tls_ciphers_policy: The tls_ciphers_policy of this UpdateListenerOption.
         :type tls_ciphers_policy: str
@@ -437,7 +444,7 @@ class UpdateListenerOption:
     def security_policy_id(self):
         """Gets the security_policy_id of this UpdateListenerOption.
 
-        自定义安全策略的ID。  [使用说明： - 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。 - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 - 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa） ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcso,g42,tm,cmcc,hk-g42,dt)  [使用说明： - 仅对HTTPS协议类型的监听器有效](tag:hcso_dt)  [不支持tls1.3协议的套件。](tag:hws_eu,g42,hk_g42)
+        自定义安全策略的ID。  使用说明： [- 仅对HTTPS协议类型的监听器有效。](tag:hws_eu,hcso_dt) [- 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs,tm,g42,hk_g42,dt,dt_test) [- QUIC监听器不支持该字段。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs) - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 [- 加密套件的优先顺序为ecc套件、rsa套件](tag:tm,hws_eu,g42,hk_g42) [- 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa）](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs,hcso_dt,dt,dt_test)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)
 
         :return: The security_policy_id of this UpdateListenerOption.
         :rtype: str
@@ -448,7 +455,7 @@ class UpdateListenerOption:
     def security_policy_id(self, security_policy_id):
         """Sets the security_policy_id of this UpdateListenerOption.
 
-        自定义安全策略的ID。  [使用说明： - 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。 - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 - 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa） ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcso,g42,tm,cmcc,hk-g42,dt)  [使用说明： - 仅对HTTPS协议类型的监听器有效](tag:hcso_dt)  [不支持tls1.3协议的套件。](tag:hws_eu,g42,hk_g42)
+        自定义安全策略的ID。  使用说明： [- 仅对HTTPS协议类型的监听器有效。](tag:hws_eu,hcso_dt) [- 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs,tm,g42,hk_g42,dt,dt_test) [- QUIC监听器不支持该字段。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs) - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 [- 加密套件的优先顺序为ecc套件、rsa套件](tag:tm,hws_eu,g42,hk_g42) [- 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa）](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs,hcso_dt,dt,dt_test)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)
 
         :param security_policy_id: The security_policy_id of this UpdateListenerOption.
         :type security_policy_id: str
@@ -459,7 +466,7 @@ class UpdateListenerOption:
     def enable_member_retry(self):
         """Gets the enable_member_retry of this UpdateListenerOption.
 
-        是否开启后端服务器的重试。  取值：true 开启重试，false 不开启重试。默认：true。  [使用说明： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  [使用说明： - 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt)  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        是否开启后端服务器的重试。  取值：true 开启重试，false 不开启重试。默认：true。  使用说明： [- 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt) [- 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。](tag:hws,hws_hk,ocb,ctc,hcs,g42,cmcc,hws_ocb,fcs,tm,g42,hk_g42,dt,dt_test) [- 若关联是独享型LB，仅在protocol为HTTP和HTTPS时才能传入该字段。](tag:tm,g42,hk_g42,dt,dt_test) [- 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs)
 
         :return: The enable_member_retry of this UpdateListenerOption.
         :rtype: bool
@@ -470,7 +477,7 @@ class UpdateListenerOption:
     def enable_member_retry(self, enable_member_retry):
         """Sets the enable_member_retry of this UpdateListenerOption.
 
-        是否开启后端服务器的重试。  取值：true 开启重试，false 不开启重试。默认：true。  [使用说明： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  [使用说明： - 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt)  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        是否开启后端服务器的重试。  取值：true 开启重试，false 不开启重试。默认：true。  使用说明： [- 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt) [- 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。](tag:hws,hws_hk,ocb,ctc,hcs,g42,cmcc,hws_ocb,fcs,tm,g42,hk_g42,dt,dt_test) [- 若关联是独享型LB，仅在protocol为HTTP和HTTPS时才能传入该字段。](tag:tm,g42,hk_g42,dt,dt_test) [- 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs)
 
         :param enable_member_retry: The enable_member_retry of this UpdateListenerOption.
         :type enable_member_retry: bool
@@ -584,10 +591,32 @@ class UpdateListenerOption:
         self._transparent_client_ip_enable = transparent_client_ip_enable
 
     @property
+    def proxy_protocol_enable(self):
+        """Gets the proxy_protocol_enable of this UpdateListenerOption.
+
+        是否开启proxy_protocol。仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
+
+        :return: The proxy_protocol_enable of this UpdateListenerOption.
+        :rtype: bool
+        """
+        return self._proxy_protocol_enable
+
+    @proxy_protocol_enable.setter
+    def proxy_protocol_enable(self, proxy_protocol_enable):
+        """Sets the proxy_protocol_enable of this UpdateListenerOption.
+
+        是否开启proxy_protocol。仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
+
+        :param proxy_protocol_enable: The proxy_protocol_enable of this UpdateListenerOption.
+        :type proxy_protocol_enable: bool
+        """
+        self._proxy_protocol_enable = proxy_protocol_enable
+
+    @property
     def enhance_l7policy_enable(self):
         """Gets the enhance_l7policy_enable of this UpdateListenerOption.
 
-        是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  [荷兰region不支持该字段，请勿使用。](tag:dt) > 开启后不支持关闭
+        是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  > 开启后不支持关闭
 
         :return: The enhance_l7policy_enable of this UpdateListenerOption.
         :rtype: bool
@@ -598,7 +627,7 @@ class UpdateListenerOption:
     def enhance_l7policy_enable(self, enhance_l7policy_enable):
         """Sets the enhance_l7policy_enable of this UpdateListenerOption.
 
-        是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  [荷兰region不支持该字段，请勿使用。](tag:dt) > 开启后不支持关闭
+        是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。  开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL, FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  > 开启后不支持关闭
 
         :param enhance_l7policy_enable: The enhance_l7policy_enable of this UpdateListenerOption.
         :type enhance_l7policy_enable: bool

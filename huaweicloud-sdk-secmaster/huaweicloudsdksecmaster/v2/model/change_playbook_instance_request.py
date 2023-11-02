@@ -35,11 +35,11 @@ class ChangePlaybookInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: ID of project
+        :param project_id: 项目ID
         :type project_id: str
-        :param workspace_id: ID of workspace
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param instance_id: instance _id
+        :param instance_id: 剧本实例ID
         :type instance_id: str
         :param body: Body of the ChangePlaybookInstanceRequest
         :type body: :class:`huaweicloudsdksecmaster.v2.OperationPlaybookInfo`
@@ -63,7 +63,7 @@ class ChangePlaybookInstanceRequest:
     def project_id(self):
         """Gets the project_id of this ChangePlaybookInstanceRequest.
 
-        ID of project
+        项目ID
 
         :return: The project_id of this ChangePlaybookInstanceRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class ChangePlaybookInstanceRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ChangePlaybookInstanceRequest.
 
-        ID of project
+        项目ID
 
         :param project_id: The project_id of this ChangePlaybookInstanceRequest.
         :type project_id: str
@@ -85,7 +85,7 @@ class ChangePlaybookInstanceRequest:
     def workspace_id(self):
         """Gets the workspace_id of this ChangePlaybookInstanceRequest.
 
-        ID of workspace
+        工作空间ID
 
         :return: The workspace_id of this ChangePlaybookInstanceRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class ChangePlaybookInstanceRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this ChangePlaybookInstanceRequest.
 
-        ID of workspace
+        工作空间ID
 
         :param workspace_id: The workspace_id of this ChangePlaybookInstanceRequest.
         :type workspace_id: str
@@ -107,7 +107,7 @@ class ChangePlaybookInstanceRequest:
     def instance_id(self):
         """Gets the instance_id of this ChangePlaybookInstanceRequest.
 
-        instance _id
+        剧本实例ID
 
         :return: The instance_id of this ChangePlaybookInstanceRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class ChangePlaybookInstanceRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ChangePlaybookInstanceRequest.
 
-        instance _id
+        剧本实例ID
 
         :param instance_id: The instance_id of this ChangePlaybookInstanceRequest.
         :type instance_id: str

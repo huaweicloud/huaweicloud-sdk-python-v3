@@ -23,7 +23,6 @@ class ListPlaybookVersionsRequest:
         'status': 'str',
         'enabled': 'int',
         'version_type': 'int',
-        'approve_role': 'str',
         'offset': 'int',
         'limit': 'int'
     }
@@ -35,21 +34,20 @@ class ListPlaybookVersionsRequest:
         'status': 'status',
         'enabled': 'enabled',
         'version_type': 'version_type',
-        'approve_role': 'approve_role',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, project_id=None, workspace_id=None, playbook_id=None, status=None, enabled=None, version_type=None, approve_role=None, offset=None, limit=None):
+    def __init__(self, project_id=None, workspace_id=None, playbook_id=None, status=None, enabled=None, version_type=None, offset=None, limit=None):
         """ListPlaybookVersionsRequest
 
         The model defined in huaweicloud sdk
 
-        :param project_id: ID of project
+        :param project_id: 项目ID
         :type project_id: str
-        :param workspace_id: ID of workspace
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param playbook_id: ID of playbook
+        :param playbook_id: 剧本ID
         :type playbook_id: str
         :param status: 剧本版本状态，编辑中：EDITING  审核中：APPROVING  不通过：UNPASSED 已发布：PUBLISHED
         :type status: str
@@ -57,11 +55,9 @@ class ListPlaybookVersionsRequest:
         :type enabled: int
         :param version_type: 版本类型， 草稿版本：0  正式版本：1
         :type version_type: int
-        :param approve_role: 审核角色
-        :type approve_role: str
-        :param offset: request offset, from 0
+        :param offset: 分页查询参数。用于指定查询结果的起始位置，从0开始
         :type offset: int
-        :param limit: request limit size
+        :param limit: 分页查询参数，用于指定一次查询最多的结果数，从1开始
         :type limit: int
         """
         
@@ -73,7 +69,6 @@ class ListPlaybookVersionsRequest:
         self._status = None
         self._enabled = None
         self._version_type = None
-        self._approve_role = None
         self._offset = None
         self._limit = None
         self.discriminator = None
@@ -87,8 +82,6 @@ class ListPlaybookVersionsRequest:
             self.enabled = enabled
         if version_type is not None:
             self.version_type = version_type
-        if approve_role is not None:
-            self.approve_role = approve_role
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -98,7 +91,7 @@ class ListPlaybookVersionsRequest:
     def project_id(self):
         """Gets the project_id of this ListPlaybookVersionsRequest.
 
-        ID of project
+        项目ID
 
         :return: The project_id of this ListPlaybookVersionsRequest.
         :rtype: str
@@ -109,7 +102,7 @@ class ListPlaybookVersionsRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ListPlaybookVersionsRequest.
 
-        ID of project
+        项目ID
 
         :param project_id: The project_id of this ListPlaybookVersionsRequest.
         :type project_id: str
@@ -120,7 +113,7 @@ class ListPlaybookVersionsRequest:
     def workspace_id(self):
         """Gets the workspace_id of this ListPlaybookVersionsRequest.
 
-        ID of workspace
+        工作空间ID
 
         :return: The workspace_id of this ListPlaybookVersionsRequest.
         :rtype: str
@@ -131,7 +124,7 @@ class ListPlaybookVersionsRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this ListPlaybookVersionsRequest.
 
-        ID of workspace
+        工作空间ID
 
         :param workspace_id: The workspace_id of this ListPlaybookVersionsRequest.
         :type workspace_id: str
@@ -142,7 +135,7 @@ class ListPlaybookVersionsRequest:
     def playbook_id(self):
         """Gets the playbook_id of this ListPlaybookVersionsRequest.
 
-        ID of playbook
+        剧本ID
 
         :return: The playbook_id of this ListPlaybookVersionsRequest.
         :rtype: str
@@ -153,7 +146,7 @@ class ListPlaybookVersionsRequest:
     def playbook_id(self, playbook_id):
         """Sets the playbook_id of this ListPlaybookVersionsRequest.
 
-        ID of playbook
+        剧本ID
 
         :param playbook_id: The playbook_id of this ListPlaybookVersionsRequest.
         :type playbook_id: str
@@ -227,32 +220,10 @@ class ListPlaybookVersionsRequest:
         self._version_type = version_type
 
     @property
-    def approve_role(self):
-        """Gets the approve_role of this ListPlaybookVersionsRequest.
-
-        审核角色
-
-        :return: The approve_role of this ListPlaybookVersionsRequest.
-        :rtype: str
-        """
-        return self._approve_role
-
-    @approve_role.setter
-    def approve_role(self, approve_role):
-        """Sets the approve_role of this ListPlaybookVersionsRequest.
-
-        审核角色
-
-        :param approve_role: The approve_role of this ListPlaybookVersionsRequest.
-        :type approve_role: str
-        """
-        self._approve_role = approve_role
-
-    @property
     def offset(self):
         """Gets the offset of this ListPlaybookVersionsRequest.
 
-        request offset, from 0
+        分页查询参数。用于指定查询结果的起始位置，从0开始
 
         :return: The offset of this ListPlaybookVersionsRequest.
         :rtype: int
@@ -263,7 +234,7 @@ class ListPlaybookVersionsRequest:
     def offset(self, offset):
         """Sets the offset of this ListPlaybookVersionsRequest.
 
-        request offset, from 0
+        分页查询参数。用于指定查询结果的起始位置，从0开始
 
         :param offset: The offset of this ListPlaybookVersionsRequest.
         :type offset: int
@@ -274,7 +245,7 @@ class ListPlaybookVersionsRequest:
     def limit(self):
         """Gets the limit of this ListPlaybookVersionsRequest.
 
-        request limit size
+        分页查询参数，用于指定一次查询最多的结果数，从1开始
 
         :return: The limit of this ListPlaybookVersionsRequest.
         :rtype: int
@@ -285,7 +256,7 @@ class ListPlaybookVersionsRequest:
     def limit(self, limit):
         """Sets the limit of this ListPlaybookVersionsRequest.
 
-        request limit size
+        分页查询参数，用于指定一次查询最多的结果数，从1开始
 
         :param limit: The limit of this ListPlaybookVersionsRequest.
         :type limit: int

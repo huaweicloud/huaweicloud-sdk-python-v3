@@ -49,7 +49,7 @@ class CreateMemberOption:
         :type name: str
         :param project_id: 后端云服务器所在的项目ID。
         :type project_id: str
-        :param protocol_port: 后端服务器业务端口。 &gt;在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
+        :param protocol_port: 后端服务器业务端口。 &gt; 在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
         :type protocol_port: int
         :param subnet_cidr_id: 后端云服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。 此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
         :type subnet_cidr_id: str
@@ -174,7 +174,7 @@ class CreateMemberOption:
     def protocol_port(self):
         """Gets the protocol_port of this CreateMemberOption.
 
-        后端服务器业务端口。 >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
+        后端服务器业务端口。 > 在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
 
         :return: The protocol_port of this CreateMemberOption.
         :rtype: int
@@ -185,7 +185,7 @@ class CreateMemberOption:
     def protocol_port(self, protocol_port):
         """Sets the protocol_port of this CreateMemberOption.
 
-        后端服务器业务端口。 >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
+        后端服务器业务端口。 > 在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
 
         :param protocol_port: The protocol_port of this CreateMemberOption.
         :type protocol_port: int

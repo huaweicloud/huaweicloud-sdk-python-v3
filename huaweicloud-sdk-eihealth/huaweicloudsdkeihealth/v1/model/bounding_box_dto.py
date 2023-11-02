@@ -18,39 +18,46 @@ class BoundingBoxDto:
 
     openapi_types = {
         'center': 'list[float]',
-        'size': 'list[float]'
+        'size': 'list[float]',
+        'padding': 'int'
     }
 
     attribute_map = {
         'center': 'center',
-        'size': 'size'
+        'size': 'size',
+        'padding': 'padding'
     }
 
-    def __init__(self, center=None, size=None):
+    def __init__(self, center=None, size=None, padding=None):
         """BoundingBoxDto
 
         The model defined in huaweicloud sdk
 
-        :param center: 口袋中心坐标; x, y, z轴的坐标
+        :param center: 口袋中心坐标； x, y, z轴的坐标
         :type center: list[float]
-        :param size: 口袋尺寸大小;  x, y, z轴的大小
+        :param size: 口袋尺寸大小；  x, y, z轴的大小
         :type size: list[float]
+        :param padding: 填充
+        :type padding: int
         """
         
         
 
         self._center = None
         self._size = None
+        self._padding = None
         self.discriminator = None
 
         self.center = center
         self.size = size
+        if padding is not None:
+            self.padding = padding
 
     @property
     def center(self):
         """Gets the center of this BoundingBoxDto.
 
-        口袋中心坐标; x, y, z轴的坐标
+        口袋中心坐标； x, y, z轴的坐标
 
         :return: The center of this BoundingBoxDto.
         :rtype: list[float]
@@ -61,7 +68,7 @@ class BoundingBoxDto:
     def center(self, center):
         """Sets the center of this BoundingBoxDto.
 
-        口袋中心坐标; x, y, z轴的坐标
+        口袋中心坐标； x, y, z轴的坐标
 
         :param center: The center of this BoundingBoxDto.
         :type center: list[float]
@@ -72,7 +79,7 @@ class BoundingBoxDto:
     def size(self):
         """Gets the size of this BoundingBoxDto.
 
-        口袋尺寸大小;  x, y, z轴的大小
+        口袋尺寸大小；  x, y, z轴的大小
 
         :return: The size of this BoundingBoxDto.
         :rtype: list[float]
@@ -83,12 +90,34 @@ class BoundingBoxDto:
     def size(self, size):
         """Sets the size of this BoundingBoxDto.
 
-        口袋尺寸大小;  x, y, z轴的大小
+        口袋尺寸大小；  x, y, z轴的大小
 
         :param size: The size of this BoundingBoxDto.
         :type size: list[float]
         """
         self._size = size
+
+    @property
+    def padding(self):
+        """Gets the padding of this BoundingBoxDto.
+
+        填充
+
+        :return: The padding of this BoundingBoxDto.
+        :rtype: int
+        """
+        return self._padding
+
+    @padding.setter
+    def padding(self, padding):
+        """Sets the padding of this BoundingBoxDto.
+
+        填充
+
+        :param padding: The padding of this BoundingBoxDto.
+        :type padding: int
+        """
+        self._padding = padding
 
     def to_dict(self):
         """Returns the model properties as a dict"""

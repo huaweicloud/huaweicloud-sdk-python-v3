@@ -20,6 +20,7 @@ class DrugJobDto:
         'id': 'str',
         'name': 'str',
         'labels': 'list[str]',
+        'priority': 'int',
         'status': 'str',
         'type': 'str',
         'create_time': 'str',
@@ -37,6 +38,7 @@ class DrugJobDto:
         'id': 'id',
         'name': 'name',
         'labels': 'labels',
+        'priority': 'priority',
         'status': 'status',
         'type': 'type',
         'create_time': 'create_time',
@@ -50,7 +52,7 @@ class DrugJobDto:
         'progress': 'progress'
     }
 
-    def __init__(self, id=None, name=None, labels=None, status=None, type=None, create_time=None, finish_time=None, start_time=None, failed_message=None, user_name=None, output_dir=None, expect_charge_num=None, real_charge_num=None, progress=None):
+    def __init__(self, id=None, name=None, labels=None, priority=None, status=None, type=None, create_time=None, finish_time=None, start_time=None, failed_message=None, user_name=None, output_dir=None, expect_charge_num=None, real_charge_num=None, progress=None):
         """DrugJobDto
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class DrugJobDto:
         :type name: str
         :param labels: 作业标签
         :type labels: list[str]
+        :param priority: 作业的优先级,取值范围[0,9]，0最低，默认数值0
+        :type priority: int
         :param status: 作业状态
         :type status: str
         :param type: 作业类型
@@ -90,6 +94,7 @@ class DrugJobDto:
         self._id = None
         self._name = None
         self._labels = None
+        self._priority = None
         self._status = None
         self._type = None
         self._create_time = None
@@ -109,6 +114,8 @@ class DrugJobDto:
             self.name = name
         if labels is not None:
             self.labels = labels
+        if priority is not None:
+            self.priority = priority
         if status is not None:
             self.status = status
         if type is not None:
@@ -197,6 +204,28 @@ class DrugJobDto:
         :type labels: list[str]
         """
         self._labels = labels
+
+    @property
+    def priority(self):
+        """Gets the priority of this DrugJobDto.
+
+        作业的优先级,取值范围[0,9]，0最低，默认数值0
+
+        :return: The priority of this DrugJobDto.
+        :rtype: int
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        """Sets the priority of this DrugJobDto.
+
+        作业的优先级,取值范围[0,9]，0最低，默认数值0
+
+        :param priority: The priority of this DrugJobDto.
+        :type priority: int
+        """
+        self._priority = priority
 
     @property
     def status(self):

@@ -19,13 +19,10 @@ class IndicatorDetail:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'dataclass_id': 'str',
-        'type': 'str',
         'data_object': 'IndicatorDataObjectDetail',
         'workspace_id': 'str',
         'project_id': 'str',
-        'layout_id': 'str',
-        'dataclass': 'DataClassRefPojo',
+        'dataclass_ref': 'DataClassRefPojo',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -33,18 +30,15 @@ class IndicatorDetail:
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'dataclass_id': 'dataclass_id',
-        'type': 'type',
         'data_object': 'data_object',
         'workspace_id': 'workspace_id',
         'project_id': 'project_id',
-        'layout_id': 'layout_id',
-        'dataclass': 'dataclass',
+        'dataclass_ref': 'dataclass_ref',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, id=None, name=None, dataclass_id=None, type=None, data_object=None, workspace_id=None, project_id=None, layout_id=None, dataclass=None, create_time=None, update_time=None):
+    def __init__(self, id=None, name=None, data_object=None, workspace_id=None, project_id=None, dataclass_ref=None, create_time=None, update_time=None):
         """IndicatorDetail
 
         The model defined in huaweicloud sdk
@@ -53,23 +47,17 @@ class IndicatorDetail:
         :type id: str
         :param name: 指标名称
         :type name: str
-        :param dataclass_id: 数据类ID
-        :type dataclass_id: str
-        :param type: 类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
-        :type type: str
         :param data_object: 
         :type data_object: :class:`huaweicloudsdksecmaster.v2.IndicatorDataObjectDetail`
-        :param workspace_id: workspace id
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param project_id: Project id value
+        :param project_id: 项目ID
         :type project_id: str
-        :param layout_id: 布局ID
-        :type layout_id: str
-        :param dataclass: 
-        :type dataclass: :class:`huaweicloudsdksecmaster.v2.DataClassRefPojo`
-        :param create_time: Create time
+        :param dataclass_ref: 
+        :type dataclass_ref: :class:`huaweicloudsdksecmaster.v2.DataClassRefPojo`
+        :param create_time: 创建时间
         :type create_time: str
-        :param update_time: Update time
+        :param update_time: 更新时间
         :type update_time: str
         """
         
@@ -77,13 +65,10 @@ class IndicatorDetail:
 
         self._id = None
         self._name = None
-        self._dataclass_id = None
-        self._type = None
         self._data_object = None
         self._workspace_id = None
         self._project_id = None
-        self._layout_id = None
-        self._dataclass = None
+        self._dataclass_ref = None
         self._create_time = None
         self._update_time = None
         self.discriminator = None
@@ -91,20 +76,14 @@ class IndicatorDetail:
         if id is not None:
             self.id = id
         self.name = name
-        if dataclass_id is not None:
-            self.dataclass_id = dataclass_id
-        if type is not None:
-            self.type = type
         if data_object is not None:
             self.data_object = data_object
         if workspace_id is not None:
             self.workspace_id = workspace_id
         if project_id is not None:
             self.project_id = project_id
-        if layout_id is not None:
-            self.layout_id = layout_id
-        if dataclass is not None:
-            self.dataclass = dataclass
+        if dataclass_ref is not None:
+            self.dataclass_ref = dataclass_ref
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -155,50 +134,6 @@ class IndicatorDetail:
         self._name = name
 
     @property
-    def dataclass_id(self):
-        """Gets the dataclass_id of this IndicatorDetail.
-
-        数据类ID
-
-        :return: The dataclass_id of this IndicatorDetail.
-        :rtype: str
-        """
-        return self._dataclass_id
-
-    @dataclass_id.setter
-    def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this IndicatorDetail.
-
-        数据类ID
-
-        :param dataclass_id: The dataclass_id of this IndicatorDetail.
-        :type dataclass_id: str
-        """
-        self._dataclass_id = dataclass_id
-
-    @property
-    def type(self):
-        """Gets the type of this IndicatorDetail.
-
-        类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
-
-        :return: The type of this IndicatorDetail.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this IndicatorDetail.
-
-        类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
-
-        :param type: The type of this IndicatorDetail.
-        :type type: str
-        """
-        self._type = type
-
-    @property
     def data_object(self):
         """Gets the data_object of this IndicatorDetail.
 
@@ -220,7 +155,7 @@ class IndicatorDetail:
     def workspace_id(self):
         """Gets the workspace_id of this IndicatorDetail.
 
-        workspace id
+        工作空间ID
 
         :return: The workspace_id of this IndicatorDetail.
         :rtype: str
@@ -231,7 +166,7 @@ class IndicatorDetail:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this IndicatorDetail.
 
-        workspace id
+        工作空间ID
 
         :param workspace_id: The workspace_id of this IndicatorDetail.
         :type workspace_id: str
@@ -242,7 +177,7 @@ class IndicatorDetail:
     def project_id(self):
         """Gets the project_id of this IndicatorDetail.
 
-        Project id value
+        项目ID
 
         :return: The project_id of this IndicatorDetail.
         :rtype: str
@@ -253,7 +188,7 @@ class IndicatorDetail:
     def project_id(self, project_id):
         """Sets the project_id of this IndicatorDetail.
 
-        Project id value
+        项目ID
 
         :param project_id: The project_id of this IndicatorDetail.
         :type project_id: str
@@ -261,50 +196,28 @@ class IndicatorDetail:
         self._project_id = project_id
 
     @property
-    def layout_id(self):
-        """Gets the layout_id of this IndicatorDetail.
+    def dataclass_ref(self):
+        """Gets the dataclass_ref of this IndicatorDetail.
 
-        布局ID
-
-        :return: The layout_id of this IndicatorDetail.
-        :rtype: str
-        """
-        return self._layout_id
-
-    @layout_id.setter
-    def layout_id(self, layout_id):
-        """Sets the layout_id of this IndicatorDetail.
-
-        布局ID
-
-        :param layout_id: The layout_id of this IndicatorDetail.
-        :type layout_id: str
-        """
-        self._layout_id = layout_id
-
-    @property
-    def dataclass(self):
-        """Gets the dataclass of this IndicatorDetail.
-
-        :return: The dataclass of this IndicatorDetail.
+        :return: The dataclass_ref of this IndicatorDetail.
         :rtype: :class:`huaweicloudsdksecmaster.v2.DataClassRefPojo`
         """
-        return self._dataclass
+        return self._dataclass_ref
 
-    @dataclass.setter
-    def dataclass(self, dataclass):
-        """Sets the dataclass of this IndicatorDetail.
+    @dataclass_ref.setter
+    def dataclass_ref(self, dataclass_ref):
+        """Sets the dataclass_ref of this IndicatorDetail.
 
-        :param dataclass: The dataclass of this IndicatorDetail.
-        :type dataclass: :class:`huaweicloudsdksecmaster.v2.DataClassRefPojo`
+        :param dataclass_ref: The dataclass_ref of this IndicatorDetail.
+        :type dataclass_ref: :class:`huaweicloudsdksecmaster.v2.DataClassRefPojo`
         """
-        self._dataclass = dataclass
+        self._dataclass_ref = dataclass_ref
 
     @property
     def create_time(self):
         """Gets the create_time of this IndicatorDetail.
 
-        Create time
+        创建时间
 
         :return: The create_time of this IndicatorDetail.
         :rtype: str
@@ -315,7 +228,7 @@ class IndicatorDetail:
     def create_time(self, create_time):
         """Sets the create_time of this IndicatorDetail.
 
-        Create time
+        创建时间
 
         :param create_time: The create_time of this IndicatorDetail.
         :type create_time: str
@@ -326,7 +239,7 @@ class IndicatorDetail:
     def update_time(self):
         """Gets the update_time of this IndicatorDetail.
 
-        Update time
+        更新时间
 
         :return: The update_time of this IndicatorDetail.
         :rtype: str
@@ -337,7 +250,7 @@ class IndicatorDetail:
     def update_time(self, update_time):
         """Sets the update_time of this IndicatorDetail.
 
-        Update time
+        更新时间
 
         :param update_time: The update_time of this IndicatorDetail.
         :type update_time: str

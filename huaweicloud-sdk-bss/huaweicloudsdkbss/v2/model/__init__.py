@@ -7,7 +7,6 @@ from huaweicloudsdkbss.v2.model.account_balance_v2 import AccountBalanceV2
 from huaweicloudsdkbss.v2.model.account_balance_v3 import AccountBalanceV3
 from huaweicloudsdkbss.v2.model.account_change_record import AccountChangeRecord
 from huaweicloudsdkbss.v2.model.account_manager import AccountManager
-from huaweicloudsdkbss.v2.model.add_postal_req import AddPostalReq
 from huaweicloudsdkbss.v2.model.adjust_account_req import AdjustAccountReq
 from huaweicloudsdkbss.v2.model.adjust_coupon_quotas_req import AdjustCouponQuotasReq
 from huaweicloudsdkbss.v2.model.adjust_record_v3 import AdjustRecordV3
@@ -61,8 +60,6 @@ from huaweicloudsdkbss.v2.model.create_partner_coupons_request import CreatePart
 from huaweicloudsdkbss.v2.model.create_partner_coupons_response import CreatePartnerCouponsResponse
 from huaweicloudsdkbss.v2.model.create_personal_realname_auth_request import CreatePersonalRealnameAuthRequest
 from huaweicloudsdkbss.v2.model.create_personal_realname_auth_response import CreatePersonalRealnameAuthResponse
-from huaweicloudsdkbss.v2.model.create_postal_request import CreatePostalRequest
-from huaweicloudsdkbss.v2.model.create_postal_response import CreatePostalResponse
 from huaweicloudsdkbss.v2.model.create_sub_customer_req_v2 import CreateSubCustomerReqV2
 from huaweicloudsdkbss.v2.model.create_sub_customer_request import CreateSubCustomerRequest
 from huaweicloudsdkbss.v2.model.create_sub_customer_response import CreateSubCustomerResponse
@@ -75,9 +72,6 @@ from huaweicloudsdkbss.v2.model.customer_information import CustomerInformation
 from huaweicloudsdkbss.v2.model.customer_on_demand_resource import CustomerOnDemandResource
 from huaweicloudsdkbss.v2.model.customer_order_v2 import CustomerOrderV2
 from huaweicloudsdkbss.v2.model.customer_order_v3 import CustomerOrderV3
-from huaweicloudsdkbss.v2.model.customer_postal_address_v2 import CustomerPostalAddressV2
-from huaweicloudsdkbss.v2.model.delete_postal_request import DeletePostalRequest
-from huaweicloudsdkbss.v2.model.delete_postal_response import DeletePostalResponse
 from huaweicloudsdkbss.v2.model.demand_discount_rating_result import DemandDiscountRatingResult
 from huaweicloudsdkbss.v2.model.demand_product_info import DemandProductInfo
 from huaweicloudsdkbss.v2.model.demand_product_rating_result import DemandProductRatingResult
@@ -178,8 +172,6 @@ from huaweicloudsdkbss.v2.model.list_partner_coupons_record_request import ListP
 from huaweicloudsdkbss.v2.model.list_partner_coupons_record_response import ListPartnerCouponsRecordResponse
 from huaweicloudsdkbss.v2.model.list_pay_per_use_customer_resources_request import ListPayPerUseCustomerResourcesRequest
 from huaweicloudsdkbss.v2.model.list_pay_per_use_customer_resources_response import ListPayPerUseCustomerResourcesResponse
-from huaweicloudsdkbss.v2.model.list_postal_address_request import ListPostalAddressRequest
-from huaweicloudsdkbss.v2.model.list_postal_address_response import ListPostalAddressResponse
 from huaweicloudsdkbss.v2.model.list_provinces_request import ListProvincesRequest
 from huaweicloudsdkbss.v2.model.list_provinces_response import ListProvincesResponse
 from huaweicloudsdkbss.v2.model.list_quota_coupons_request import ListQuotaCouponsRequest
@@ -316,9 +308,6 @@ from huaweicloudsdkbss.v2.model.update_indirect_partner_account_request import U
 from huaweicloudsdkbss.v2.model.update_indirect_partner_account_response import UpdateIndirectPartnerAccountResponse
 from huaweicloudsdkbss.v2.model.update_period_to_on_demand_request import UpdatePeriodToOnDemandRequest
 from huaweicloudsdkbss.v2.model.update_period_to_on_demand_response import UpdatePeriodToOnDemandResponse
-from huaweicloudsdkbss.v2.model.update_postal_req import UpdatePostalReq
-from huaweicloudsdkbss.v2.model.update_postal_request import UpdatePostalRequest
-from huaweicloudsdkbss.v2.model.update_postal_response import UpdatePostalResponse
 from huaweicloudsdkbss.v2.model.update_sub_enterprise_amount_request import UpdateSubEnterpriseAmountRequest
 from huaweicloudsdkbss.v2.model.update_sub_enterprise_amount_response import UpdateSubEnterpriseAmountResponse
 from huaweicloudsdkbss.v2.model.usage_type import UsageType

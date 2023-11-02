@@ -385,6 +385,64 @@ class GaussDBClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def check_resource(self, request):
+        """资源预校验
+
+        资源预校验。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CheckResource
+        :type request: :class:`huaweicloudsdkgaussdb.v3.CheckResourceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CheckResourceResponse`
+        """
+        return self._check_resource_with_http_info(request)
+
+    def _check_resource_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/resource-check',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CheckResourceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def copy_configurations(self, request):
         """复制参数组
 
@@ -440,6 +498,68 @@ class GaussDBClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CopyConfigurationsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def copy_instance_configurations(self, request):
+        """复制实例参数组
+
+        复制实例参数组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CopyInstanceConfigurations
+        :type request: :class:`huaweicloudsdkgaussdb.v3.CopyInstanceConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CopyInstanceConfigurationsResponse`
+        """
+        return self._copy_instance_configurations_with_http_info(request)
+
+    def _copy_instance_configurations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'configuration_id' in local_var_params:
+            path_params['configuration_id'] = local_var_params['configuration_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/configurations/{configuration_id}/copy',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CopyInstanceConfigurationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3730,6 +3850,64 @@ class GaussDBClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_auto_scaling_policy(self, request):
+        """查询自动变配
+
+        查询自动变配。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutoScalingPolicy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowAutoScalingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowAutoScalingPolicyResponse`
+        """
+        return self._show_auto_scaling_policy_with_http_info(request)
+
+    def _show_auto_scaling_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/auto-scaling/policy',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowAutoScalingPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_backup_restore_time(self, request):
         """查询可恢复时间段
 
@@ -3849,9 +4027,9 @@ class GaussDBClient(Client):
             request_type=request.__class__.__name__)
 
     def show_gauss_my_sql_backup_list(self, request):
-        """查询备份列表
+        """查询全量备份列表
 
-        查询备份列表。
+        查询全量备份列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3885,6 +4063,10 @@ class GaussDBClient(Client):
             query_params.append(('begin_time', local_var_params['begin_time']))
         if 'end_time' in local_var_params:
             query_params.append(('end_time', local_var_params['end_time']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'instance_name' in local_var_params:
+            query_params.append(('instance_name', local_var_params['instance_name']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -4578,6 +4760,64 @@ class GaussDBClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_instance_database_version(self, request):
+        """查询内核版本信息
+
+        查询内核版本信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowInstanceDatabaseVersion
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceDatabaseVersionRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceDatabaseVersionResponse`
+        """
+        return self._show_instance_database_version_with_http_info(request)
+
+    def _show_instance_database_version_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/database-version',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowInstanceDatabaseVersionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_instance_monitor_extend(self, request):
         """查询实例秒级监控
 
@@ -4631,6 +4871,187 @@ class GaussDBClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowInstanceMonitorExtendResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_intelligent_diagnosis_abnormal_count_of_instances(self, request):
+        """获取各指标的异常实例数
+
+        获取各指标的异常实例数。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowIntelligentDiagnosisAbnormalCountOfInstances
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowIntelligentDiagnosisAbnormalCountOfInstancesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowIntelligentDiagnosisAbnormalCountOfInstancesResponse`
+        """
+        return self._show_intelligent_diagnosis_abnormal_count_of_instances_with_http_info(request)
+
+    def _show_intelligent_diagnosis_abnormal_count_of_instances_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/diagnosis-instance-count',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowIntelligentDiagnosisAbnormalCountOfInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_intelligent_diagnosis_instance_infos_per_metric(self, request):
+        """获取某个指标的异常实例信息
+
+        获取某个指标的异常实例信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowIntelligentDiagnosisInstanceInfosPerMetric
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowIntelligentDiagnosisInstanceInfosPerMetricRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowIntelligentDiagnosisInstanceInfosPerMetricResponse`
+        """
+        return self._show_intelligent_diagnosis_instance_infos_per_metric_with_http_info(request)
+
+    def _show_intelligent_diagnosis_instance_infos_per_metric_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'metric_name' in local_var_params:
+            query_params.append(('metric_name', local_var_params['metric_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/diagnosis-instance-infos',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowIntelligentDiagnosisInstanceInfosPerMetricResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def shrink_gauss_my_sql_proxy(self, request):
+        """减少数据库代理节点的数量
+
+        缩容数据库代理节点的数量。
+        DeC专属云账号暂不支持数据库代理。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShrinkGaussMySqlProxy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShrinkGaussMySqlProxyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShrinkGaussMySqlProxyResponse`
+        """
+        return self._shrink_gauss_my_sql_proxy_with_http_info(request)
+
+    def _shrink_gauss_my_sql_proxy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/reduce',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShrinkGaussMySqlProxyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4873,6 +5294,66 @@ class GaussDBClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateAuditLogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_auto_scaling_policy(self, request):
+        """设置自动变配
+
+        设置自动变配。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAutoScalingPolicy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateAutoScalingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateAutoScalingPolicyResponse`
+        """
+        return self._update_auto_scaling_policy_with_http_info(request)
+
+    def _update_auto_scaling_policy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/auto-scaling/policy',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateAutoScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -5651,6 +6132,66 @@ class GaussDBClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateGaussMySqlQuotasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_instance_configurations(self, request):
+        """修改指定实例的参数
+
+        修改指定实例的参数。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateInstanceConfigurations
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateInstanceConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateInstanceConfigurationsResponse`
+        """
+        return self._update_instance_configurations_with_http_info(request)
+
+    def _update_instance_configurations_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/configurations',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateInstanceConfigurationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

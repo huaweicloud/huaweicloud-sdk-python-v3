@@ -17,6 +17,7 @@ class StrongConstraintDto:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'name': 'str',
         'type': 'StrongConstraintType',
         'bool': 'bool',
@@ -25,6 +26,7 @@ class StrongConstraintDto:
     }
 
     attribute_map = {
+        'id': 'id',
         'name': 'name',
         'type': 'type',
         'bool': 'bool',
@@ -32,11 +34,13 @@ class StrongConstraintDto:
         'struct': 'struct'
     }
 
-    def __init__(self, name=None, type=None, bool=None, range=None, struct=None):
+    def __init__(self, id=None, name=None, type=None, bool=None, range=None, struct=None):
         """StrongConstraintDto
 
         The model defined in huaweicloud sdk
 
+        :param id: 自定义模型id，仅强约束为模型时填写
+        :type id: str
         :param name: 属性名称
         :type name: str
         :param type: 
@@ -51,6 +55,7 @@ class StrongConstraintDto:
         
         
 
+        self._id = None
         self._name = None
         self._type = None
         self._bool = None
@@ -58,6 +63,8 @@ class StrongConstraintDto:
         self._struct = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if name is not None:
             self.name = name
         self.type = type
@@ -67,6 +74,28 @@ class StrongConstraintDto:
             self.range = range
         if struct is not None:
             self.struct = struct
+
+    @property
+    def id(self):
+        """Gets the id of this StrongConstraintDto.
+
+        自定义模型id，仅强约束为模型时填写
+
+        :return: The id of this StrongConstraintDto.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this StrongConstraintDto.
+
+        自定义模型id，仅强约束为模型时填写
+
+        :param id: The id of this StrongConstraintDto.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def name(self):

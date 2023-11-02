@@ -34,9 +34,9 @@ class ShowPlaybookTopologyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: tatal count
+        :param count: 总数
         :type count: int
-        :param action_instances: Playbook action instances list
+        :param action_instances: 流程实例列表
         :type action_instances: list[:class:`huaweicloudsdksecmaster.v2.ActionInstanceInfo`]
         :param x_request_id: 
         :type x_request_id: str
@@ -60,7 +60,7 @@ class ShowPlaybookTopologyResponse(SdkResponse):
     def count(self):
         """Gets the count of this ShowPlaybookTopologyResponse.
 
-        tatal count
+        总数
 
         :return: The count of this ShowPlaybookTopologyResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ShowPlaybookTopologyResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ShowPlaybookTopologyResponse.
 
-        tatal count
+        总数
 
         :param count: The count of this ShowPlaybookTopologyResponse.
         :type count: int
@@ -82,7 +82,7 @@ class ShowPlaybookTopologyResponse(SdkResponse):
     def action_instances(self):
         """Gets the action_instances of this ShowPlaybookTopologyResponse.
 
-        Playbook action instances list
+        流程实例列表
 
         :return: The action_instances of this ShowPlaybookTopologyResponse.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.ActionInstanceInfo`]
@@ -93,7 +93,7 @@ class ShowPlaybookTopologyResponse(SdkResponse):
     def action_instances(self, action_instances):
         """Sets the action_instances of this ShowPlaybookTopologyResponse.
 
-        Playbook action instances list
+        流程实例列表
 
         :param action_instances: The action_instances of this ShowPlaybookTopologyResponse.
         :type action_instances: list[:class:`huaweicloudsdksecmaster.v2.ActionInstanceInfo`]

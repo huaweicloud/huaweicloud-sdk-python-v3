@@ -17,7 +17,7 @@ class BindSiteDto:
     sensitive_list = []
 
     openapi_types = {
-        'receptor': 'DrugFile',
+        'receptor': 'ReceptorDrugFile',
         'bounding_box': 'BoundingBoxDto',
         'remove_ion': 'bool',
         'remove_water': 'bool',
@@ -38,7 +38,7 @@ class BindSiteDto:
         The model defined in huaweicloud sdk
 
         :param receptor: 
-        :type receptor: :class:`huaweicloudsdkeihealth.v1.DrugFile`
+        :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
         :param bounding_box: 
         :type bounding_box: :class:`huaweicloudsdkeihealth.v1.BoundingBoxDto`
         :param remove_ion: 去除受体中的离子
@@ -73,7 +73,7 @@ class BindSiteDto:
         """Gets the receptor of this BindSiteDto.
 
         :return: The receptor of this BindSiteDto.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFile`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
         """
         return self._receptor
 
@@ -82,7 +82,7 @@ class BindSiteDto:
         """Sets the receptor of this BindSiteDto.
 
         :param receptor: The receptor of this BindSiteDto.
-        :type receptor: :class:`huaweicloudsdkeihealth.v1.DrugFile`
+        :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
         """
         self._receptor = receptor
 

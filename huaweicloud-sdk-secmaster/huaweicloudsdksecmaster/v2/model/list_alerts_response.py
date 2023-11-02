@@ -44,17 +44,17 @@ class ListAlertsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: Id value
+        :param code: 错误码
         :type code: str
-        :param message: Error message
+        :param message: 错误信息
         :type message: str
-        :param total: tatal count
+        :param total: 告警总数
         :type total: int
-        :param limit: 当前页大小
+        :param limit: 分页大小
         :type limit: int
-        :param offset: 当前页码
+        :param offset: 偏移量
         :type offset: int
-        :param success: success
+        :param success: 是否成功
         :type success: bool
         :param data: 告警列表
         :type data: list[:class:`huaweicloudsdksecmaster.v2.ListAlertDetail`]
@@ -95,7 +95,7 @@ class ListAlertsResponse(SdkResponse):
     def code(self):
         """Gets the code of this ListAlertsResponse.
 
-        Id value
+        错误码
 
         :return: The code of this ListAlertsResponse.
         :rtype: str
@@ -106,7 +106,7 @@ class ListAlertsResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ListAlertsResponse.
 
-        Id value
+        错误码
 
         :param code: The code of this ListAlertsResponse.
         :type code: str
@@ -117,7 +117,7 @@ class ListAlertsResponse(SdkResponse):
     def message(self):
         """Gets the message of this ListAlertsResponse.
 
-        Error message
+        错误信息
 
         :return: The message of this ListAlertsResponse.
         :rtype: str
@@ -128,7 +128,7 @@ class ListAlertsResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ListAlertsResponse.
 
-        Error message
+        错误信息
 
         :param message: The message of this ListAlertsResponse.
         :type message: str
@@ -139,7 +139,7 @@ class ListAlertsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListAlertsResponse.
 
-        tatal count
+        告警总数
 
         :return: The total of this ListAlertsResponse.
         :rtype: int
@@ -150,7 +150,7 @@ class ListAlertsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListAlertsResponse.
 
-        tatal count
+        告警总数
 
         :param total: The total of this ListAlertsResponse.
         :type total: int
@@ -161,7 +161,7 @@ class ListAlertsResponse(SdkResponse):
     def limit(self):
         """Gets the limit of this ListAlertsResponse.
 
-        当前页大小
+        分页大小
 
         :return: The limit of this ListAlertsResponse.
         :rtype: int
@@ -172,7 +172,7 @@ class ListAlertsResponse(SdkResponse):
     def limit(self, limit):
         """Sets the limit of this ListAlertsResponse.
 
-        当前页大小
+        分页大小
 
         :param limit: The limit of this ListAlertsResponse.
         :type limit: int
@@ -183,7 +183,7 @@ class ListAlertsResponse(SdkResponse):
     def offset(self):
         """Gets the offset of this ListAlertsResponse.
 
-        当前页码
+        偏移量
 
         :return: The offset of this ListAlertsResponse.
         :rtype: int
@@ -194,7 +194,7 @@ class ListAlertsResponse(SdkResponse):
     def offset(self, offset):
         """Sets the offset of this ListAlertsResponse.
 
-        当前页码
+        偏移量
 
         :param offset: The offset of this ListAlertsResponse.
         :type offset: int
@@ -205,7 +205,7 @@ class ListAlertsResponse(SdkResponse):
     def success(self):
         """Gets the success of this ListAlertsResponse.
 
-        success
+        是否成功
 
         :return: The success of this ListAlertsResponse.
         :rtype: bool
@@ -216,7 +216,7 @@ class ListAlertsResponse(SdkResponse):
     def success(self, success):
         """Sets the success of this ListAlertsResponse.
 
-        success
+        是否成功
 
         :param success: The success of this ListAlertsResponse.
         :type success: bool

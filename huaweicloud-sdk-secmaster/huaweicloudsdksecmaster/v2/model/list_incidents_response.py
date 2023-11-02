@@ -24,7 +24,7 @@ class ListIncidentsResponse(SdkResponse):
         'limit': 'int',
         'offset': 'int',
         'success': 'bool',
-        'data': 'list[ListIncidentDetail]',
+        'data': 'list[IncidentDetail]',
         'x_request_id': 'str'
     }
 
@@ -44,20 +44,20 @@ class ListIncidentsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: Id value
+        :param code: 错误码
         :type code: str
-        :param message: Error message
+        :param message: 错误信息
         :type message: str
-        :param total: tatal count
+        :param total: 事件总数
         :type total: int
-        :param limit: 当前页大小
+        :param limit: 分页大小
         :type limit: int
-        :param offset: 当前页码
+        :param offset: 偏移量
         :type offset: int
-        :param success: success
+        :param success: 是否成功
         :type success: bool
         :param data: 事件列表
-        :type data: list[:class:`huaweicloudsdksecmaster.v2.ListIncidentDetail`]
+        :type data: list[:class:`huaweicloudsdksecmaster.v2.IncidentDetail`]
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -95,7 +95,7 @@ class ListIncidentsResponse(SdkResponse):
     def code(self):
         """Gets the code of this ListIncidentsResponse.
 
-        Id value
+        错误码
 
         :return: The code of this ListIncidentsResponse.
         :rtype: str
@@ -106,7 +106,7 @@ class ListIncidentsResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ListIncidentsResponse.
 
-        Id value
+        错误码
 
         :param code: The code of this ListIncidentsResponse.
         :type code: str
@@ -117,7 +117,7 @@ class ListIncidentsResponse(SdkResponse):
     def message(self):
         """Gets the message of this ListIncidentsResponse.
 
-        Error message
+        错误信息
 
         :return: The message of this ListIncidentsResponse.
         :rtype: str
@@ -128,7 +128,7 @@ class ListIncidentsResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ListIncidentsResponse.
 
-        Error message
+        错误信息
 
         :param message: The message of this ListIncidentsResponse.
         :type message: str
@@ -139,7 +139,7 @@ class ListIncidentsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListIncidentsResponse.
 
-        tatal count
+        事件总数
 
         :return: The total of this ListIncidentsResponse.
         :rtype: int
@@ -150,7 +150,7 @@ class ListIncidentsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListIncidentsResponse.
 
-        tatal count
+        事件总数
 
         :param total: The total of this ListIncidentsResponse.
         :type total: int
@@ -161,7 +161,7 @@ class ListIncidentsResponse(SdkResponse):
     def limit(self):
         """Gets the limit of this ListIncidentsResponse.
 
-        当前页大小
+        分页大小
 
         :return: The limit of this ListIncidentsResponse.
         :rtype: int
@@ -172,7 +172,7 @@ class ListIncidentsResponse(SdkResponse):
     def limit(self, limit):
         """Sets the limit of this ListIncidentsResponse.
 
-        当前页大小
+        分页大小
 
         :param limit: The limit of this ListIncidentsResponse.
         :type limit: int
@@ -183,7 +183,7 @@ class ListIncidentsResponse(SdkResponse):
     def offset(self):
         """Gets the offset of this ListIncidentsResponse.
 
-        当前页码
+        偏移量
 
         :return: The offset of this ListIncidentsResponse.
         :rtype: int
@@ -194,7 +194,7 @@ class ListIncidentsResponse(SdkResponse):
     def offset(self, offset):
         """Sets the offset of this ListIncidentsResponse.
 
-        当前页码
+        偏移量
 
         :param offset: The offset of this ListIncidentsResponse.
         :type offset: int
@@ -205,7 +205,7 @@ class ListIncidentsResponse(SdkResponse):
     def success(self):
         """Gets the success of this ListIncidentsResponse.
 
-        success
+        是否成功
 
         :return: The success of this ListIncidentsResponse.
         :rtype: bool
@@ -216,7 +216,7 @@ class ListIncidentsResponse(SdkResponse):
     def success(self, success):
         """Sets the success of this ListIncidentsResponse.
 
-        success
+        是否成功
 
         :param success: The success of this ListIncidentsResponse.
         :type success: bool
@@ -230,7 +230,7 @@ class ListIncidentsResponse(SdkResponse):
         事件列表
 
         :return: The data of this ListIncidentsResponse.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v2.ListIncidentDetail`]
+        :rtype: list[:class:`huaweicloudsdksecmaster.v2.IncidentDetail`]
         """
         return self._data
 
@@ -241,7 +241,7 @@ class ListIncidentsResponse(SdkResponse):
         事件列表
 
         :param data: The data of this ListIncidentsResponse.
-        :type data: list[:class:`huaweicloudsdksecmaster.v2.ListIncidentDetail`]
+        :type data: list[:class:`huaweicloudsdksecmaster.v2.IncidentDetail`]
         """
         self._data = data
 

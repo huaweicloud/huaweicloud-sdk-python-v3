@@ -53,7 +53,7 @@ class ApiConditionBase:
         :type condition_type: str
         :param condition_origin: 策略类型 - param：参数 - source：源IP - system: 系统参数-网关内置参数 - cookie: COOKIE参数 - frontend_authorizer: 系统参数-前端认证参数
         :type condition_origin: str
-        :param condition_value: 策略值;策略类型为param,source,cookie,frontend_authorizer时必填
+        :param condition_value: 策略值;
         :type condition_value: str
         """
         
@@ -217,7 +217,7 @@ class ApiConditionBase:
     def condition_value(self):
         """Gets the condition_value of this ApiConditionBase.
 
-        策略值;策略类型为param,source,cookie,frontend_authorizer时必填
+        策略值;
 
         :return: The condition_value of this ApiConditionBase.
         :rtype: str
@@ -228,7 +228,7 @@ class ApiConditionBase:
     def condition_value(self, condition_value):
         """Sets the condition_value of this ApiConditionBase.
 
-        策略值;策略类型为param,source,cookie,frontend_authorizer时必填
+        策略值;
 
         :param condition_value: The condition_value of this ApiConditionBase.
         :type condition_value: str

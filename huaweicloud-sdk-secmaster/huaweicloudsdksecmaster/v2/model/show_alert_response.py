@@ -20,7 +20,7 @@ class ShowAlertResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
-        'data': 'ShowAlertDetail',
+        'data': 'AlertDetail',
         'x_request_id': 'str'
     }
 
@@ -36,12 +36,12 @@ class ShowAlertResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: Id value
+        :param code: 错误码
         :type code: str
-        :param message: Error message
+        :param message: 错误信息
         :type message: str
         :param data: 
-        :type data: :class:`huaweicloudsdksecmaster.v2.ShowAlertDetail`
+        :type data: :class:`huaweicloudsdksecmaster.v2.AlertDetail`
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -67,7 +67,7 @@ class ShowAlertResponse(SdkResponse):
     def code(self):
         """Gets the code of this ShowAlertResponse.
 
-        Id value
+        错误码
 
         :return: The code of this ShowAlertResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowAlertResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ShowAlertResponse.
 
-        Id value
+        错误码
 
         :param code: The code of this ShowAlertResponse.
         :type code: str
@@ -89,7 +89,7 @@ class ShowAlertResponse(SdkResponse):
     def message(self):
         """Gets the message of this ShowAlertResponse.
 
-        Error message
+        错误信息
 
         :return: The message of this ShowAlertResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class ShowAlertResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ShowAlertResponse.
 
-        Error message
+        错误信息
 
         :param message: The message of this ShowAlertResponse.
         :type message: str
@@ -112,7 +112,7 @@ class ShowAlertResponse(SdkResponse):
         """Gets the data of this ShowAlertResponse.
 
         :return: The data of this ShowAlertResponse.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowAlertDetail`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.AlertDetail`
         """
         return self._data
 
@@ -121,7 +121,7 @@ class ShowAlertResponse(SdkResponse):
         """Sets the data of this ShowAlertResponse.
 
         :param data: The data of this ShowAlertResponse.
-        :type data: :class:`huaweicloudsdksecmaster.v2.ShowAlertDetail`
+        :type data: :class:`huaweicloudsdksecmaster.v2.AlertDetail`
         """
         self._data = data
 

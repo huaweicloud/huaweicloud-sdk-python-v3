@@ -31,7 +31,7 @@ class CreateOptmJobRequest:
 
         The model defined in huaweicloud sdk
 
-        :param eihealth_project_id: 盘古辅助制药平台项目ID。
+        :param eihealth_project_id: 平台项目ID。
         :type eihealth_project_id: str
         :param body: Body of the CreateOptmJobRequest
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateOptmJobReq`
@@ -51,7 +51,7 @@ class CreateOptmJobRequest:
     def eihealth_project_id(self):
         """Gets the eihealth_project_id of this CreateOptmJobRequest.
 
-        盘古辅助制药平台项目ID。
+        平台项目ID。
 
         :return: The eihealth_project_id of this CreateOptmJobRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateOptmJobRequest:
     def eihealth_project_id(self, eihealth_project_id):
         """Sets the eihealth_project_id of this CreateOptmJobRequest.
 
-        盘古辅助制药平台项目ID。
+        平台项目ID。
 
         :param eihealth_project_id: The eihealth_project_id of this CreateOptmJobRequest.
         :type eihealth_project_id: str

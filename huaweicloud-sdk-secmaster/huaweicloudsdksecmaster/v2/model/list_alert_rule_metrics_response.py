@@ -18,58 +18,87 @@ class ListAlertRuleMetricsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'dict(str, AlertRuleMetric)',
+        'category': 'str',
+        'metric': 'dict(str, float)',
         'x_request_id': 'str'
     }
 
     attribute_map = {
-        'body': 'body',
+        'category': 'category',
+        'metric': 'metric',
         'x_request_id': 'X-request-id'
     }
 
-    def __init__(self, body=None, x_request_id=None):
+    def __init__(self, category=None, metric=None, x_request_id=None):
         """ListAlertRuleMetricsResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: ListAlertRuleMetricsResponseBody
-        :type body: dict(str, AlertRuleMetric)
+        :param category: 指标类型，分组数量。Metric category. GROUP_COUNT.
+        :type category: str
+        :param metric: 指标值。Metric value.
+        :type metric: dict(str, float)
         :param x_request_id: 
         :type x_request_id: str
         """
         
         super(ListAlertRuleMetricsResponse, self).__init__()
 
-        self._body = None
+        self._category = None
+        self._metric = None
         self._x_request_id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if category is not None:
+            self.category = category
+        if metric is not None:
+            self.metric = metric
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
     @property
-    def body(self):
-        """Gets the body of this ListAlertRuleMetricsResponse.
+    def category(self):
+        """Gets the category of this ListAlertRuleMetricsResponse.
 
-        ListAlertRuleMetricsResponseBody
+        指标类型，分组数量。Metric category. GROUP_COUNT.
 
-        :return: The body of this ListAlertRuleMetricsResponse.
-        :rtype: dict(str, AlertRuleMetric)
+        :return: The category of this ListAlertRuleMetricsResponse.
+        :rtype: str
         """
-        return self._body
+        return self._category
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this ListAlertRuleMetricsResponse.
+    @category.setter
+    def category(self, category):
+        """Sets the category of this ListAlertRuleMetricsResponse.
 
-        ListAlertRuleMetricsResponseBody
+        指标类型，分组数量。Metric category. GROUP_COUNT.
 
-        :param body: The body of this ListAlertRuleMetricsResponse.
-        :type body: dict(str, AlertRuleMetric)
+        :param category: The category of this ListAlertRuleMetricsResponse.
+        :type category: str
         """
-        self._body = body
+        self._category = category
+
+    @property
+    def metric(self):
+        """Gets the metric of this ListAlertRuleMetricsResponse.
+
+        指标值。Metric value.
+
+        :return: The metric of this ListAlertRuleMetricsResponse.
+        :rtype: dict(str, float)
+        """
+        return self._metric
+
+    @metric.setter
+    def metric(self, metric):
+        """Sets the metric of this ListAlertRuleMetricsResponse.
+
+        指标值。Metric value.
+
+        :param metric: The metric of this ListAlertRuleMetricsResponse.
+        :type metric: dict(str, float)
+        """
+        self._metric = metric
 
     @property
     def x_request_id(self):

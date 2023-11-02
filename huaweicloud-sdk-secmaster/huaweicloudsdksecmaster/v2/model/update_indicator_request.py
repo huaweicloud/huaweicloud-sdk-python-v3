@@ -35,11 +35,11 @@ class UpdateIndicatorRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: ID of project
+        :param project_id: 项目ID
         :type project_id: str
-        :param workspace_id: workspace id
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param indicator_id: ID of indicator
+        :param indicator_id: 情报ID
         :type indicator_id: str
         :param body: Body of the UpdateIndicatorRequest
         :type body: :class:`huaweicloudsdksecmaster.v2.UpdateIndicatorRequestBody`
@@ -63,7 +63,7 @@ class UpdateIndicatorRequest:
     def project_id(self):
         """Gets the project_id of this UpdateIndicatorRequest.
 
-        ID of project
+        项目ID
 
         :return: The project_id of this UpdateIndicatorRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class UpdateIndicatorRequest:
     def project_id(self, project_id):
         """Sets the project_id of this UpdateIndicatorRequest.
 
-        ID of project
+        项目ID
 
         :param project_id: The project_id of this UpdateIndicatorRequest.
         :type project_id: str
@@ -85,7 +85,7 @@ class UpdateIndicatorRequest:
     def workspace_id(self):
         """Gets the workspace_id of this UpdateIndicatorRequest.
 
-        workspace id
+        工作空间ID
 
         :return: The workspace_id of this UpdateIndicatorRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class UpdateIndicatorRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this UpdateIndicatorRequest.
 
-        workspace id
+        工作空间ID
 
         :param workspace_id: The workspace_id of this UpdateIndicatorRequest.
         :type workspace_id: str
@@ -107,7 +107,7 @@ class UpdateIndicatorRequest:
     def indicator_id(self):
         """Gets the indicator_id of this UpdateIndicatorRequest.
 
-        ID of indicator
+        情报ID
 
         :return: The indicator_id of this UpdateIndicatorRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class UpdateIndicatorRequest:
     def indicator_id(self, indicator_id):
         """Sets the indicator_id of this UpdateIndicatorRequest.
 
-        ID of indicator
+        情报ID
 
         :param indicator_id: The indicator_id of this UpdateIndicatorRequest.
         :type indicator_id: str

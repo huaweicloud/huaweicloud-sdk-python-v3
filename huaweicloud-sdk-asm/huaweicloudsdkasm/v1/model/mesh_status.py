@@ -17,42 +17,35 @@ class MeshStatus:
     sensitive_list = []
 
     openapi_types = {
-        'phase': 'str',
-        'updated_at': 'datetime'
+        'phase': 'str'
     }
 
     attribute_map = {
-        'phase': 'phase',
-        'updated_at': 'updatedAt'
+        'phase': 'phase'
     }
 
-    def __init__(self, phase=None, updated_at=None):
+    def __init__(self, phase=None):
         """MeshStatus
 
         The model defined in huaweicloud sdk
 
-        :param phase: 网格状态，取值如下 - Running：运行中，表示网格处于正常运行状态。 - Creating：创建中，表示网格正处于创建过程中。 - CreateFailed：创建失败。 - Deleting：删除中，表示网格正处于删除过程中。 - DeleteFailed：删除失败。 - Upgrading：升级中，表示网格正处于升级过程中。 - UpgradeFailed：升级失败。 - RollingBack：回滚中，表示网格正处于回滚过程中。 - RollbackFailed：回滚失败。
+        :param phase: 网格状态，取值如下 - Running：运行中，表示网格处于正常运行状态 - Creating：创建中，表示网格正处于创建过程中 - CreateFailed：创建失败 - Deleting：删除中，表示网格正处于删除过程中 - DeleteFailed：删除失败 - Upgrading：升级中，表示网格正处于升级过程中 - UpgradeFailed：升级失败 - RollingBack：回滚中，表示网格正处于回滚过程中 - RollbackFailed：回滚失败
         :type phase: str
-        :param updated_at: 网格更新时间
-        :type updated_at: datetime
         """
         
         
 
         self._phase = None
-        self._updated_at = None
         self.discriminator = None
 
         if phase is not None:
             self.phase = phase
-        if updated_at is not None:
-            self.updated_at = updated_at
 
     @property
     def phase(self):
         """Gets the phase of this MeshStatus.
 
-        网格状态，取值如下 - Running：运行中，表示网格处于正常运行状态。 - Creating：创建中，表示网格正处于创建过程中。 - CreateFailed：创建失败。 - Deleting：删除中，表示网格正处于删除过程中。 - DeleteFailed：删除失败。 - Upgrading：升级中，表示网格正处于升级过程中。 - UpgradeFailed：升级失败。 - RollingBack：回滚中，表示网格正处于回滚过程中。 - RollbackFailed：回滚失败。
+        网格状态，取值如下 - Running：运行中，表示网格处于正常运行状态 - Creating：创建中，表示网格正处于创建过程中 - CreateFailed：创建失败 - Deleting：删除中，表示网格正处于删除过程中 - DeleteFailed：删除失败 - Upgrading：升级中，表示网格正处于升级过程中 - UpgradeFailed：升级失败 - RollingBack：回滚中，表示网格正处于回滚过程中 - RollbackFailed：回滚失败
 
         :return: The phase of this MeshStatus.
         :rtype: str
@@ -63,34 +56,12 @@ class MeshStatus:
     def phase(self, phase):
         """Sets the phase of this MeshStatus.
 
-        网格状态，取值如下 - Running：运行中，表示网格处于正常运行状态。 - Creating：创建中，表示网格正处于创建过程中。 - CreateFailed：创建失败。 - Deleting：删除中，表示网格正处于删除过程中。 - DeleteFailed：删除失败。 - Upgrading：升级中，表示网格正处于升级过程中。 - UpgradeFailed：升级失败。 - RollingBack：回滚中，表示网格正处于回滚过程中。 - RollbackFailed：回滚失败。
+        网格状态，取值如下 - Running：运行中，表示网格处于正常运行状态 - Creating：创建中，表示网格正处于创建过程中 - CreateFailed：创建失败 - Deleting：删除中，表示网格正处于删除过程中 - DeleteFailed：删除失败 - Upgrading：升级中，表示网格正处于升级过程中 - UpgradeFailed：升级失败 - RollingBack：回滚中，表示网格正处于回滚过程中 - RollbackFailed：回滚失败
 
         :param phase: The phase of this MeshStatus.
         :type phase: str
         """
         self._phase = phase
-
-    @property
-    def updated_at(self):
-        """Gets the updated_at of this MeshStatus.
-
-        网格更新时间
-
-        :return: The updated_at of this MeshStatus.
-        :rtype: datetime
-        """
-        return self._updated_at
-
-    @updated_at.setter
-    def updated_at(self, updated_at):
-        """Sets the updated_at of this MeshStatus.
-
-        网格更新时间
-
-        :param updated_at: The updated_at of this MeshStatus.
-        :type updated_at: datetime
-        """
-        self._updated_at = updated_at
 
     def to_dict(self):
         """Returns the model properties as a dict"""

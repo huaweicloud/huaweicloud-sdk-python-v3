@@ -20,7 +20,6 @@ class ListPlaybookInstancesRequest:
         'project_id': 'str',
         'workspace_id': 'str',
         'status': 'str',
-        'date_type': 'str',
         'name': 'str',
         'playbook_name': 'str',
         'dataclass_name': 'str',
@@ -36,7 +35,6 @@ class ListPlaybookInstancesRequest:
         'project_id': 'project_id',
         'workspace_id': 'workspace_id',
         'status': 'status',
-        'date_type': 'date_type',
         'name': 'name',
         'playbook_name': 'playbook_name',
         'dataclass_name': 'dataclass_name',
@@ -48,36 +46,34 @@ class ListPlaybookInstancesRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, project_id=None, workspace_id=None, status=None, date_type=None, name=None, playbook_name=None, dataclass_name=None, dataobject_name=None, trigger_type=None, from_date=None, to_date=None, limit=None, offset=None):
+    def __init__(self, project_id=None, workspace_id=None, status=None, name=None, playbook_name=None, dataclass_name=None, dataobject_name=None, trigger_type=None, from_date=None, to_date=None, limit=None, offset=None):
         """ListPlaybookInstancesRequest
 
         The model defined in huaweicloud sdk
 
-        :param project_id: ID of project
+        :param project_id: 项目ID
         :type project_id: str
-        :param workspace_id: ID of workspace
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param status: Playbook instance status. RUNNING、FINISHED、FAILED、RETRYING、 TERMINATING、TERMINATED
+        :param status: 剧本实例状态. (RUNNING--运行中、FINISHED--成功、FAILED--失败、RETRYING--重试中、TERMINATING--终止中、TERMINATED--已终止)
         :type status: str
-        :param date_type: date type, START END
-        :type date_type: str
-        :param name: name
+        :param name: 实例名称
         :type name: str
-        :param playbook_name: Playbook name.
+        :param playbook_name: 剧本名称
         :type playbook_name: str
-        :param dataclass_name: Dataclass name.
+        :param dataclass_name: 数据类名称
         :type dataclass_name: str
-        :param dataobject_name: Dataobject name.
+        :param dataobject_name: 数据对象名称
         :type dataobject_name: str
-        :param trigger_type: trigger type. DEBUG, TIMER, EVENT, MANUAL
+        :param trigger_type: 触发类型. TIMER--定时触发, EVENT--事件触发
         :type trigger_type: str
-        :param from_date: 起始时间
+        :param from_date: 查询起始时间
         :type from_date: str
-        :param to_date: 结束时间
+        :param to_date: 查询结束时间
         :type to_date: str
-        :param limit: request limit size
+        :param limit: 分页查询参数，用于指定一次查询最多的结果数，从1开始
         :type limit: int
-        :param offset: request offset, from 0
+        :param offset: 分页查询参数。用于指定查询结果的起始位置，从0开始
         :type offset: int
         """
         
@@ -86,7 +82,6 @@ class ListPlaybookInstancesRequest:
         self._project_id = None
         self._workspace_id = None
         self._status = None
-        self._date_type = None
         self._name = None
         self._playbook_name = None
         self._dataclass_name = None
@@ -102,8 +97,6 @@ class ListPlaybookInstancesRequest:
         self.workspace_id = workspace_id
         if status is not None:
             self.status = status
-        if date_type is not None:
-            self.date_type = date_type
         if name is not None:
             self.name = name
         if playbook_name is not None:
@@ -118,16 +111,14 @@ class ListPlaybookInstancesRequest:
             self.from_date = from_date
         if to_date is not None:
             self.to_date = to_date
-        if limit is not None:
-            self.limit = limit
-        if offset is not None:
-            self.offset = offset
+        self.limit = limit
+        self.offset = offset
 
     @property
     def project_id(self):
         """Gets the project_id of this ListPlaybookInstancesRequest.
 
-        ID of project
+        项目ID
 
         :return: The project_id of this ListPlaybookInstancesRequest.
         :rtype: str
@@ -138,7 +129,7 @@ class ListPlaybookInstancesRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ListPlaybookInstancesRequest.
 
-        ID of project
+        项目ID
 
         :param project_id: The project_id of this ListPlaybookInstancesRequest.
         :type project_id: str
@@ -149,7 +140,7 @@ class ListPlaybookInstancesRequest:
     def workspace_id(self):
         """Gets the workspace_id of this ListPlaybookInstancesRequest.
 
-        ID of workspace
+        工作空间ID
 
         :return: The workspace_id of this ListPlaybookInstancesRequest.
         :rtype: str
@@ -160,7 +151,7 @@ class ListPlaybookInstancesRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this ListPlaybookInstancesRequest.
 
-        ID of workspace
+        工作空间ID
 
         :param workspace_id: The workspace_id of this ListPlaybookInstancesRequest.
         :type workspace_id: str
@@ -171,7 +162,7 @@ class ListPlaybookInstancesRequest:
     def status(self):
         """Gets the status of this ListPlaybookInstancesRequest.
 
-        Playbook instance status. RUNNING、FINISHED、FAILED、RETRYING、 TERMINATING、TERMINATED
+        剧本实例状态. (RUNNING--运行中、FINISHED--成功、FAILED--失败、RETRYING--重试中、TERMINATING--终止中、TERMINATED--已终止)
 
         :return: The status of this ListPlaybookInstancesRequest.
         :rtype: str
@@ -182,7 +173,7 @@ class ListPlaybookInstancesRequest:
     def status(self, status):
         """Sets the status of this ListPlaybookInstancesRequest.
 
-        Playbook instance status. RUNNING、FINISHED、FAILED、RETRYING、 TERMINATING、TERMINATED
+        剧本实例状态. (RUNNING--运行中、FINISHED--成功、FAILED--失败、RETRYING--重试中、TERMINATING--终止中、TERMINATED--已终止)
 
         :param status: The status of this ListPlaybookInstancesRequest.
         :type status: str
@@ -190,32 +181,10 @@ class ListPlaybookInstancesRequest:
         self._status = status
 
     @property
-    def date_type(self):
-        """Gets the date_type of this ListPlaybookInstancesRequest.
-
-        date type, START END
-
-        :return: The date_type of this ListPlaybookInstancesRequest.
-        :rtype: str
-        """
-        return self._date_type
-
-    @date_type.setter
-    def date_type(self, date_type):
-        """Sets the date_type of this ListPlaybookInstancesRequest.
-
-        date type, START END
-
-        :param date_type: The date_type of this ListPlaybookInstancesRequest.
-        :type date_type: str
-        """
-        self._date_type = date_type
-
-    @property
     def name(self):
         """Gets the name of this ListPlaybookInstancesRequest.
 
-        name
+        实例名称
 
         :return: The name of this ListPlaybookInstancesRequest.
         :rtype: str
@@ -226,7 +195,7 @@ class ListPlaybookInstancesRequest:
     def name(self, name):
         """Sets the name of this ListPlaybookInstancesRequest.
 
-        name
+        实例名称
 
         :param name: The name of this ListPlaybookInstancesRequest.
         :type name: str
@@ -237,7 +206,7 @@ class ListPlaybookInstancesRequest:
     def playbook_name(self):
         """Gets the playbook_name of this ListPlaybookInstancesRequest.
 
-        Playbook name.
+        剧本名称
 
         :return: The playbook_name of this ListPlaybookInstancesRequest.
         :rtype: str
@@ -248,7 +217,7 @@ class ListPlaybookInstancesRequest:
     def playbook_name(self, playbook_name):
         """Sets the playbook_name of this ListPlaybookInstancesRequest.
 
-        Playbook name.
+        剧本名称
 
         :param playbook_name: The playbook_name of this ListPlaybookInstancesRequest.
         :type playbook_name: str
@@ -259,7 +228,7 @@ class ListPlaybookInstancesRequest:
     def dataclass_name(self):
         """Gets the dataclass_name of this ListPlaybookInstancesRequest.
 
-        Dataclass name.
+        数据类名称
 
         :return: The dataclass_name of this ListPlaybookInstancesRequest.
         :rtype: str
@@ -270,7 +239,7 @@ class ListPlaybookInstancesRequest:
     def dataclass_name(self, dataclass_name):
         """Sets the dataclass_name of this ListPlaybookInstancesRequest.
 
-        Dataclass name.
+        数据类名称
 
         :param dataclass_name: The dataclass_name of this ListPlaybookInstancesRequest.
         :type dataclass_name: str
@@ -281,7 +250,7 @@ class ListPlaybookInstancesRequest:
     def dataobject_name(self):
         """Gets the dataobject_name of this ListPlaybookInstancesRequest.
 
-        Dataobject name.
+        数据对象名称
 
         :return: The dataobject_name of this ListPlaybookInstancesRequest.
         :rtype: str
@@ -292,7 +261,7 @@ class ListPlaybookInstancesRequest:
     def dataobject_name(self, dataobject_name):
         """Sets the dataobject_name of this ListPlaybookInstancesRequest.
 
-        Dataobject name.
+        数据对象名称
 
         :param dataobject_name: The dataobject_name of this ListPlaybookInstancesRequest.
         :type dataobject_name: str
@@ -303,7 +272,7 @@ class ListPlaybookInstancesRequest:
     def trigger_type(self):
         """Gets the trigger_type of this ListPlaybookInstancesRequest.
 
-        trigger type. DEBUG, TIMER, EVENT, MANUAL
+        触发类型. TIMER--定时触发, EVENT--事件触发
 
         :return: The trigger_type of this ListPlaybookInstancesRequest.
         :rtype: str
@@ -314,7 +283,7 @@ class ListPlaybookInstancesRequest:
     def trigger_type(self, trigger_type):
         """Sets the trigger_type of this ListPlaybookInstancesRequest.
 
-        trigger type. DEBUG, TIMER, EVENT, MANUAL
+        触发类型. TIMER--定时触发, EVENT--事件触发
 
         :param trigger_type: The trigger_type of this ListPlaybookInstancesRequest.
         :type trigger_type: str
@@ -325,7 +294,7 @@ class ListPlaybookInstancesRequest:
     def from_date(self):
         """Gets the from_date of this ListPlaybookInstancesRequest.
 
-        起始时间
+        查询起始时间
 
         :return: The from_date of this ListPlaybookInstancesRequest.
         :rtype: str
@@ -336,7 +305,7 @@ class ListPlaybookInstancesRequest:
     def from_date(self, from_date):
         """Sets the from_date of this ListPlaybookInstancesRequest.
 
-        起始时间
+        查询起始时间
 
         :param from_date: The from_date of this ListPlaybookInstancesRequest.
         :type from_date: str
@@ -347,7 +316,7 @@ class ListPlaybookInstancesRequest:
     def to_date(self):
         """Gets the to_date of this ListPlaybookInstancesRequest.
 
-        结束时间
+        查询结束时间
 
         :return: The to_date of this ListPlaybookInstancesRequest.
         :rtype: str
@@ -358,7 +327,7 @@ class ListPlaybookInstancesRequest:
     def to_date(self, to_date):
         """Sets the to_date of this ListPlaybookInstancesRequest.
 
-        结束时间
+        查询结束时间
 
         :param to_date: The to_date of this ListPlaybookInstancesRequest.
         :type to_date: str
@@ -369,7 +338,7 @@ class ListPlaybookInstancesRequest:
     def limit(self):
         """Gets the limit of this ListPlaybookInstancesRequest.
 
-        request limit size
+        分页查询参数，用于指定一次查询最多的结果数，从1开始
 
         :return: The limit of this ListPlaybookInstancesRequest.
         :rtype: int
@@ -380,7 +349,7 @@ class ListPlaybookInstancesRequest:
     def limit(self, limit):
         """Sets the limit of this ListPlaybookInstancesRequest.
 
-        request limit size
+        分页查询参数，用于指定一次查询最多的结果数，从1开始
 
         :param limit: The limit of this ListPlaybookInstancesRequest.
         :type limit: int
@@ -391,7 +360,7 @@ class ListPlaybookInstancesRequest:
     def offset(self):
         """Gets the offset of this ListPlaybookInstancesRequest.
 
-        request offset, from 0
+        分页查询参数。用于指定查询结果的起始位置，从0开始
 
         :return: The offset of this ListPlaybookInstancesRequest.
         :rtype: int
@@ -402,7 +371,7 @@ class ListPlaybookInstancesRequest:
     def offset(self, offset):
         """Sets the offset of this ListPlaybookInstancesRequest.
 
-        request offset, from 0
+        分页查询参数。用于指定查询结果的起始位置，从0开始
 
         :param offset: The offset of this ListPlaybookInstancesRequest.
         :type offset: int

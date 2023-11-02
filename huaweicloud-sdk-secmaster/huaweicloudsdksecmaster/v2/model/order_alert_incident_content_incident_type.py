@@ -18,55 +18,48 @@ class OrderAlertIncidentContentIncidentType:
 
     openapi_types = {
         'id': 'str',
-        'layout_id': 'str',
-        'incident_type': 'str',
-        'category': 'str'
+        'category': 'str',
+        'incident_type': 'str'
     }
 
     attribute_map = {
         'id': 'id',
-        'layout_id': 'layoutId',
-        'incident_type': 'incident_type',
-        'category': 'category'
+        'category': 'category',
+        'incident_type': 'incident_type'
     }
 
-    def __init__(self, id=None, layout_id=None, incident_type=None, category=None):
+    def __init__(self, id=None, category=None, incident_type=None):
         """OrderAlertIncidentContentIncidentType
 
         The model defined in huaweicloud sdk
 
-        :param id: Id value
+        :param id: 事件类型id
         :type id: str
-        :param layout_id: Id value
-        :type layout_id: str
-        :param incident_type: Id value
-        :type incident_type: str
-        :param category: Id value
+        :param category: 事件类型父类
         :type category: str
+        :param incident_type: 事件类型子类
+        :type incident_type: str
         """
         
         
 
         self._id = None
-        self._layout_id = None
-        self._incident_type = None
         self._category = None
+        self._incident_type = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
-        if layout_id is not None:
-            self.layout_id = layout_id
-        if incident_type is not None:
-            self.incident_type = incident_type
         if category is not None:
             self.category = category
+        if incident_type is not None:
+            self.incident_type = incident_type
 
     @property
     def id(self):
         """Gets the id of this OrderAlertIncidentContentIncidentType.
 
-        Id value
+        事件类型id
 
         :return: The id of this OrderAlertIncidentContentIncidentType.
         :rtype: str
@@ -77,7 +70,7 @@ class OrderAlertIncidentContentIncidentType:
     def id(self, id):
         """Sets the id of this OrderAlertIncidentContentIncidentType.
 
-        Id value
+        事件类型id
 
         :param id: The id of this OrderAlertIncidentContentIncidentType.
         :type id: str
@@ -85,54 +78,10 @@ class OrderAlertIncidentContentIncidentType:
         self._id = id
 
     @property
-    def layout_id(self):
-        """Gets the layout_id of this OrderAlertIncidentContentIncidentType.
-
-        Id value
-
-        :return: The layout_id of this OrderAlertIncidentContentIncidentType.
-        :rtype: str
-        """
-        return self._layout_id
-
-    @layout_id.setter
-    def layout_id(self, layout_id):
-        """Sets the layout_id of this OrderAlertIncidentContentIncidentType.
-
-        Id value
-
-        :param layout_id: The layout_id of this OrderAlertIncidentContentIncidentType.
-        :type layout_id: str
-        """
-        self._layout_id = layout_id
-
-    @property
-    def incident_type(self):
-        """Gets the incident_type of this OrderAlertIncidentContentIncidentType.
-
-        Id value
-
-        :return: The incident_type of this OrderAlertIncidentContentIncidentType.
-        :rtype: str
-        """
-        return self._incident_type
-
-    @incident_type.setter
-    def incident_type(self, incident_type):
-        """Sets the incident_type of this OrderAlertIncidentContentIncidentType.
-
-        Id value
-
-        :param incident_type: The incident_type of this OrderAlertIncidentContentIncidentType.
-        :type incident_type: str
-        """
-        self._incident_type = incident_type
-
-    @property
     def category(self):
         """Gets the category of this OrderAlertIncidentContentIncidentType.
 
-        Id value
+        事件类型父类
 
         :return: The category of this OrderAlertIncidentContentIncidentType.
         :rtype: str
@@ -143,12 +92,34 @@ class OrderAlertIncidentContentIncidentType:
     def category(self, category):
         """Sets the category of this OrderAlertIncidentContentIncidentType.
 
-        Id value
+        事件类型父类
 
         :param category: The category of this OrderAlertIncidentContentIncidentType.
         :type category: str
         """
         self._category = category
+
+    @property
+    def incident_type(self):
+        """Gets the incident_type of this OrderAlertIncidentContentIncidentType.
+
+        事件类型子类
+
+        :return: The incident_type of this OrderAlertIncidentContentIncidentType.
+        :rtype: str
+        """
+        return self._incident_type
+
+    @incident_type.setter
+    def incident_type(self, incident_type):
+        """Sets the incident_type of this OrderAlertIncidentContentIncidentType.
+
+        事件类型子类
+
+        :param incident_type: The incident_type of this OrderAlertIncidentContentIncidentType.
+        :type incident_type: str
+        """
+        self._incident_type = incident_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

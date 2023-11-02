@@ -35,11 +35,11 @@ class ModifyPlaybookInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: The name, display only
+        :param name: 剧本名称
         :type name: str
-        :param description: The description, display only
+        :param description: 描述
         :type description: str
-        :param enabled: If is enabled, false for disenabled, true for enabled
+        :param enabled: 是否启用
         :type enabled: bool
         :param active_version_id: 启用的剧本版本ID
         :type active_version_id: str
@@ -66,7 +66,7 @@ class ModifyPlaybookInfo:
     def name(self):
         """Gets the name of this ModifyPlaybookInfo.
 
-        The name, display only
+        剧本名称
 
         :return: The name of this ModifyPlaybookInfo.
         :rtype: str
@@ -77,7 +77,7 @@ class ModifyPlaybookInfo:
     def name(self, name):
         """Sets the name of this ModifyPlaybookInfo.
 
-        The name, display only
+        剧本名称
 
         :param name: The name of this ModifyPlaybookInfo.
         :type name: str
@@ -88,7 +88,7 @@ class ModifyPlaybookInfo:
     def description(self):
         """Gets the description of this ModifyPlaybookInfo.
 
-        The description, display only
+        描述
 
         :return: The description of this ModifyPlaybookInfo.
         :rtype: str
@@ -99,7 +99,7 @@ class ModifyPlaybookInfo:
     def description(self, description):
         """Sets the description of this ModifyPlaybookInfo.
 
-        The description, display only
+        描述
 
         :param description: The description of this ModifyPlaybookInfo.
         :type description: str
@@ -110,7 +110,7 @@ class ModifyPlaybookInfo:
     def enabled(self):
         """Gets the enabled of this ModifyPlaybookInfo.
 
-        If is enabled, false for disenabled, true for enabled
+        是否启用
 
         :return: The enabled of this ModifyPlaybookInfo.
         :rtype: bool
@@ -121,7 +121,7 @@ class ModifyPlaybookInfo:
     def enabled(self, enabled):
         """Sets the enabled of this ModifyPlaybookInfo.
 
-        If is enabled, false for disenabled, true for enabled
+        是否启用
 
         :param enabled: The enabled of this ModifyPlaybookInfo.
         :type enabled: bool

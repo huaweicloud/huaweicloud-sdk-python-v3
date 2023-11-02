@@ -29,7 +29,9 @@ class NatGatewayUpdateSnatRuleResponseBody:
         'network_id': 'str',
         'admin_state_up': 'bool',
         'floating_ip_address': 'str',
-        'public_ip_address': 'str'
+        'public_ip_address': 'str',
+        'global_eip_address': 'str',
+        'global_eip_id': 'str'
     }
 
     attribute_map = {
@@ -45,10 +47,12 @@ class NatGatewayUpdateSnatRuleResponseBody:
         'network_id': 'network_id',
         'admin_state_up': 'admin_state_up',
         'floating_ip_address': 'floating_ip_address',
-        'public_ip_address': 'public_ip_address'
+        'public_ip_address': 'public_ip_address',
+        'global_eip_address': 'global_eip_address',
+        'global_eip_id': 'global_eip_id'
     }
 
-    def __init__(self, id=None, tenant_id=None, nat_gateway_id=None, source_type=None, cidr=None, floating_ip_id=None, description=None, status=None, created_at=None, network_id=None, admin_state_up=None, floating_ip_address=None, public_ip_address=None):
+    def __init__(self, id=None, tenant_id=None, nat_gateway_id=None, source_type=None, cidr=None, floating_ip_id=None, description=None, status=None, created_at=None, network_id=None, admin_state_up=None, floating_ip_address=None, public_ip_address=None, global_eip_address=None, global_eip_id=None):
         """NatGatewayUpdateSnatRuleResponseBody
 
         The model defined in huaweicloud sdk
@@ -67,7 +71,7 @@ class NatGatewayUpdateSnatRuleResponseBody:
         :type floating_ip_id: str
         :param description: SNAT规则的描述，长度限制为255。
         :type description: str
-        :param status: 功能说明：SNAT规则的状态。
+        :param status: SNAT规则的状态。 取值为： \&quot;ACTIVE\&quot;: 可用 \&quot;PENDING_CREATE\&quot;：创建中 \&quot;PENDING_UPDATE\&quot;：更新中 \&quot;PENDING_DELETE\&quot;：删除中 \&quot;EIP_FREEZED\&quot;：EIP冻结 \&quot;INACTIVE\&quot;：不可用
         :type status: str
         :param created_at: SNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
         :type created_at: str
@@ -75,10 +79,14 @@ class NatGatewayUpdateSnatRuleResponseBody:
         :type network_id: str
         :param admin_state_up: 解冻/冻结状态。 取值范围： - \&quot;true\&quot;：解冻 - \&quot;false\&quot;：冻结
         :type admin_state_up: bool
-        :param floating_ip_address: 功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
+        :param floating_ip_address: 功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。
         :type floating_ip_address: str
-        :param public_ip_address: 功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
+        :param public_ip_address: 功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。
         :type public_ip_address: str
+        :param global_eip_address: 全域弹性公网IP的地址。
+        :type global_eip_address: str
+        :param global_eip_id: 全域弹性公网IP的id。
+        :type global_eip_id: str
         """
         
         
@@ -96,6 +104,8 @@ class NatGatewayUpdateSnatRuleResponseBody:
         self._admin_state_up = None
         self._floating_ip_address = None
         self._public_ip_address = None
+        self._global_eip_address = None
+        self._global_eip_id = None
         self.discriminator = None
 
         self.id = id
@@ -111,6 +121,8 @@ class NatGatewayUpdateSnatRuleResponseBody:
         self.admin_state_up = admin_state_up
         self.floating_ip_address = floating_ip_address
         self.public_ip_address = public_ip_address
+        self.global_eip_address = global_eip_address
+        self.global_eip_id = global_eip_id
 
     @property
     def id(self):
@@ -270,7 +282,7 @@ class NatGatewayUpdateSnatRuleResponseBody:
     def status(self):
         """Gets the status of this NatGatewayUpdateSnatRuleResponseBody.
 
-        功能说明：SNAT规则的状态。
+        SNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
 
         :return: The status of this NatGatewayUpdateSnatRuleResponseBody.
         :rtype: str
@@ -281,7 +293,7 @@ class NatGatewayUpdateSnatRuleResponseBody:
     def status(self, status):
         """Sets the status of this NatGatewayUpdateSnatRuleResponseBody.
 
-        功能说明：SNAT规则的状态。
+        SNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
 
         :param status: The status of this NatGatewayUpdateSnatRuleResponseBody.
         :type status: str
@@ -358,7 +370,7 @@ class NatGatewayUpdateSnatRuleResponseBody:
     def floating_ip_address(self):
         """Gets the floating_ip_address of this NatGatewayUpdateSnatRuleResponseBody.
 
-        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
+        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。
 
         :return: The floating_ip_address of this NatGatewayUpdateSnatRuleResponseBody.
         :rtype: str
@@ -369,7 +381,7 @@ class NatGatewayUpdateSnatRuleResponseBody:
     def floating_ip_address(self, floating_ip_address):
         """Sets the floating_ip_address of this NatGatewayUpdateSnatRuleResponseBody.
 
-        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
+        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。
 
         :param floating_ip_address: The floating_ip_address of this NatGatewayUpdateSnatRuleResponseBody.
         :type floating_ip_address: str
@@ -380,7 +392,7 @@ class NatGatewayUpdateSnatRuleResponseBody:
     def public_ip_address(self):
         """Gets the public_ip_address of this NatGatewayUpdateSnatRuleResponseBody.
 
-        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
+        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。
 
         :return: The public_ip_address of this NatGatewayUpdateSnatRuleResponseBody.
         :rtype: str
@@ -391,12 +403,56 @@ class NatGatewayUpdateSnatRuleResponseBody:
     def public_ip_address(self, public_ip_address):
         """Sets the public_ip_address of this NatGatewayUpdateSnatRuleResponseBody.
 
-        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
+        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。
 
         :param public_ip_address: The public_ip_address of this NatGatewayUpdateSnatRuleResponseBody.
         :type public_ip_address: str
         """
         self._public_ip_address = public_ip_address
+
+    @property
+    def global_eip_address(self):
+        """Gets the global_eip_address of this NatGatewayUpdateSnatRuleResponseBody.
+
+        全域弹性公网IP的地址。
+
+        :return: The global_eip_address of this NatGatewayUpdateSnatRuleResponseBody.
+        :rtype: str
+        """
+        return self._global_eip_address
+
+    @global_eip_address.setter
+    def global_eip_address(self, global_eip_address):
+        """Sets the global_eip_address of this NatGatewayUpdateSnatRuleResponseBody.
+
+        全域弹性公网IP的地址。
+
+        :param global_eip_address: The global_eip_address of this NatGatewayUpdateSnatRuleResponseBody.
+        :type global_eip_address: str
+        """
+        self._global_eip_address = global_eip_address
+
+    @property
+    def global_eip_id(self):
+        """Gets the global_eip_id of this NatGatewayUpdateSnatRuleResponseBody.
+
+        全域弹性公网IP的id。
+
+        :return: The global_eip_id of this NatGatewayUpdateSnatRuleResponseBody.
+        :rtype: str
+        """
+        return self._global_eip_id
+
+    @global_eip_id.setter
+    def global_eip_id(self, global_eip_id):
+        """Sets the global_eip_id of this NatGatewayUpdateSnatRuleResponseBody.
+
+        全域弹性公网IP的id。
+
+        :param global_eip_id: The global_eip_id of this NatGatewayUpdateSnatRuleResponseBody.
+        :type global_eip_id: str
+        """
+        self._global_eip_id = global_eip_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

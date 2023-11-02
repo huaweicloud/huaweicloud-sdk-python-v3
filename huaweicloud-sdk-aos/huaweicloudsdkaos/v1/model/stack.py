@@ -41,7 +41,7 @@ class Stack:
 
         The model defined in huaweicloud sdk
 
-        :param stack_name: 资源栈的名称。此名字在domain_id + 区域 + project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
+        :param stack_name: 资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
         :type stack_name: str
         :param description: 资源栈的描述。可用于客户识别自己的资源栈。
         :type description: str
@@ -68,8 +68,7 @@ class Stack:
         self._status_message = None
         self.discriminator = None
 
-        if stack_name is not None:
-            self.stack_name = stack_name
+        self.stack_name = stack_name
         if description is not None:
             self.description = description
         if stack_id is not None:
@@ -87,7 +86,7 @@ class Stack:
     def stack_name(self):
         """Gets the stack_name of this Stack.
 
-        资源栈的名称。此名字在domain_id + 区域 + project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
+        资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
         :return: The stack_name of this Stack.
         :rtype: str
@@ -98,7 +97,7 @@ class Stack:
     def stack_name(self, stack_name):
         """Sets the stack_name of this Stack.
 
-        资源栈的名称。此名字在domain_id + 区域 + project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
+        资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
         :param stack_name: The stack_name of this Stack.
         :type stack_name: str

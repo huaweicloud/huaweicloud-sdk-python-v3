@@ -10,6 +10,7 @@ class LigandSimilarityGraphMode:
     allowed enum values
     """
     CENTER = "CENTER"
+    FREE = "FREE"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -153,9 +153,9 @@ class ListLoadBalancersRequest:
         :type enterprise_project_id: list[str]
         :param ip_version: IP版本信息。  取值：4代表IPv4，6代表IPv6。  支持多值查询，查询条件格式：*ip_version&#x3D;xxx&amp;ip_version&#x3D;xxx*。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
         :type ip_version: list[int]
-        :param deletion_protection_enable: 是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        :param deletion_protection_enable: 是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
         :type deletion_protection_enable: bool
-        :param elb_virsubnet_type: 下联面子网类型。  取值： - ipv4：ipv4。 - dualstack：双栈。  支持多值查询，查询条件格式： *elb_virsubnet_type&#x3D;ipv4&amp;elb_virsubnet_type&#x3D;dualstack*。
+        :param elb_virsubnet_type: 下联面子网类型。  取值： - ipv4：ipv4。 - dualstack：双栈。  支持多值查询，查询条件格式： *elb_virsubnet_type&#x3D;ipv4&amp;elb_virsubnet_type&#x3D;dualstack*。  [不支持dualstack。](tag:dt,dt_test)
         :type elb_virsubnet_type: list[str]
         :param autoscaling: 是否开启弹性扩缩容。示例如下： \&quot;autoscaling\&quot;: {             \&quot;enable\&quot;: \&quot;true\&quot;         }  支持多值查询，查询条件格式：  *autoscaling&#x3D;enable&#x3D;true&amp;autoscaling&#x3D;enable&#x3D;false*。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,hcso,fcs,fcs_vm,mix,hcso_g42,hcso_g42_b)
         :type autoscaling: list[str]
@@ -914,7 +914,7 @@ class ListLoadBalancersRequest:
     def deletion_protection_enable(self):
         """Gets the deletion_protection_enable of this ListLoadBalancersRequest.
 
-        是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
 
         :return: The deletion_protection_enable of this ListLoadBalancersRequest.
         :rtype: bool
@@ -925,7 +925,7 @@ class ListLoadBalancersRequest:
     def deletion_protection_enable(self, deletion_protection_enable):
         """Sets the deletion_protection_enable of this ListLoadBalancersRequest.
 
-        是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        是否开启删除保护，false不开启，true开启。[不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
 
         :param deletion_protection_enable: The deletion_protection_enable of this ListLoadBalancersRequest.
         :type deletion_protection_enable: bool
@@ -936,7 +936,7 @@ class ListLoadBalancersRequest:
     def elb_virsubnet_type(self):
         """Gets the elb_virsubnet_type of this ListLoadBalancersRequest.
 
-        下联面子网类型。  取值： - ipv4：ipv4。 - dualstack：双栈。  支持多值查询，查询条件格式： *elb_virsubnet_type=ipv4&elb_virsubnet_type=dualstack*。
+        下联面子网类型。  取值： - ipv4：ipv4。 - dualstack：双栈。  支持多值查询，查询条件格式： *elb_virsubnet_type=ipv4&elb_virsubnet_type=dualstack*。  [不支持dualstack。](tag:dt,dt_test)
 
         :return: The elb_virsubnet_type of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -947,7 +947,7 @@ class ListLoadBalancersRequest:
     def elb_virsubnet_type(self, elb_virsubnet_type):
         """Sets the elb_virsubnet_type of this ListLoadBalancersRequest.
 
-        下联面子网类型。  取值： - ipv4：ipv4。 - dualstack：双栈。  支持多值查询，查询条件格式： *elb_virsubnet_type=ipv4&elb_virsubnet_type=dualstack*。
+        下联面子网类型。  取值： - ipv4：ipv4。 - dualstack：双栈。  支持多值查询，查询条件格式： *elb_virsubnet_type=ipv4&elb_virsubnet_type=dualstack*。  [不支持dualstack。](tag:dt,dt_test)
 
         :param elb_virsubnet_type: The elb_virsubnet_type of this ListLoadBalancersRequest.
         :type elb_virsubnet_type: list[str]

@@ -29,7 +29,7 @@ class OperationPlaybookInfo:
 
         The model defined in huaweicloud sdk
 
-        :param operation: 重试： RETRY  终止： TERMINATE
+        :param operation: 操作类型。重试： RETRY  终止： TERMINATE
         :type operation: str
         """
         
@@ -45,7 +45,7 @@ class OperationPlaybookInfo:
     def operation(self):
         """Gets the operation of this OperationPlaybookInfo.
 
-        重试： RETRY  终止： TERMINATE
+        操作类型。重试： RETRY  终止： TERMINATE
 
         :return: The operation of this OperationPlaybookInfo.
         :rtype: str
@@ -56,7 +56,7 @@ class OperationPlaybookInfo:
     def operation(self, operation):
         """Sets the operation of this OperationPlaybookInfo.
 
-        重试： RETRY  终止： TERMINATE
+        操作类型。重试： RETRY  终止： TERMINATE
 
         :param operation: The operation of this OperationPlaybookInfo.
         :type operation: str

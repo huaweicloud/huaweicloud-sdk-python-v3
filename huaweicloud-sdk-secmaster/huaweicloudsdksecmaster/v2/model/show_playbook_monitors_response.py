@@ -36,9 +36,9 @@ class ShowPlaybookMonitorsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: Error code
+        :param code: 错误码
         :type code: str
-        :param message: Error message
+        :param message: 错误信息
         :type message: str
         :param data: 
         :type data: :class:`huaweicloudsdksecmaster.v2.PlaybookInstanceMonitorDetail`
@@ -67,7 +67,7 @@ class ShowPlaybookMonitorsResponse(SdkResponse):
     def code(self):
         """Gets the code of this ShowPlaybookMonitorsResponse.
 
-        Error code
+        错误码
 
         :return: The code of this ShowPlaybookMonitorsResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowPlaybookMonitorsResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ShowPlaybookMonitorsResponse.
 
-        Error code
+        错误码
 
         :param code: The code of this ShowPlaybookMonitorsResponse.
         :type code: str
@@ -89,7 +89,7 @@ class ShowPlaybookMonitorsResponse(SdkResponse):
     def message(self):
         """Gets the message of this ShowPlaybookMonitorsResponse.
 
-        Error message
+        错误信息
 
         :return: The message of this ShowPlaybookMonitorsResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class ShowPlaybookMonitorsResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ShowPlaybookMonitorsResponse.
 
-        Error message
+        错误信息
 
         :param message: The message of this ShowPlaybookMonitorsResponse.
         :type message: str

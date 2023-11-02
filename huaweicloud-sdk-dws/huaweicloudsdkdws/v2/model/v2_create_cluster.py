@@ -77,7 +77,7 @@ class V2CreateCluster:
         :type num_node: int
         :param db_name: 管理员用户名称。用户命名要求如下： 只能由小写字母、数字或下划线组成。 必须由小写字母或下划线开头。 长度为1~63个字符。用户名不能为DWS数据库的关键字。
         :type db_name: str
-        :param db_password: 管理员用户密码。 8~32个字符 至少包含以下字符中的3种：大写字母、小写字母、数字和特殊字符（~!?,.:;-_(){}[]/&lt;&gt;@#%^&amp;*+|\\&#x3D;）。不能与用户名或倒序的用户名相同。
+        :param db_password: 管理员用户密码。 12~32个字符 至少包含以下字符中的3种：大写字母、小写字母、数字和特殊字符（~!?,.:;-_(){}[]/&lt;&gt;@#%^&amp;*+|\\&#x3D;）。不能与用户名或倒序的用户名相同。
         :type db_password: str
         :param db_port: 集群数据库端口，取值范围为8000~30000，默认值：8000。
         :type db_port: int
@@ -277,7 +277,7 @@ class V2CreateCluster:
     def db_password(self):
         """Gets the db_password of this V2CreateCluster.
 
-        管理员用户密码。 8~32个字符 至少包含以下字符中的3种：大写字母、小写字母、数字和特殊字符（~!?,.:;-_(){}[]/<>@#%^&*+|\\=）。不能与用户名或倒序的用户名相同。
+        管理员用户密码。 12~32个字符 至少包含以下字符中的3种：大写字母、小写字母、数字和特殊字符（~!?,.:;-_(){}[]/<>@#%^&*+|\\=）。不能与用户名或倒序的用户名相同。
 
         :return: The db_password of this V2CreateCluster.
         :rtype: str
@@ -288,7 +288,7 @@ class V2CreateCluster:
     def db_password(self, db_password):
         """Sets the db_password of this V2CreateCluster.
 
-        管理员用户密码。 8~32个字符 至少包含以下字符中的3种：大写字母、小写字母、数字和特殊字符（~!?,.:;-_(){}[]/<>@#%^&*+|\\=）。不能与用户名或倒序的用户名相同。
+        管理员用户密码。 12~32个字符 至少包含以下字符中的3种：大写字母、小写字母、数字和特殊字符（~!?,.:;-_(){}[]/<>@#%^&*+|\\=）。不能与用户名或倒序的用户名相同。
 
         :param db_password: The db_password of this V2CreateCluster.
         :type db_password: str

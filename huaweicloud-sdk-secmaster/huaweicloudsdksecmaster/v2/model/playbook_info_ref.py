@@ -35,13 +35,13 @@ class PlaybookInfoRef:
 
         The model defined in huaweicloud sdk
 
-        :param id: Id value
+        :param id: 剧本ID
         :type id: str
-        :param version_id: Id value
+        :param version_id: 剧本版本ID
         :type version_id: str
-        :param name: Id value
+        :param name: 名称
         :type name: str
-        :param version: version
+        :param version: 版本
         :type version: str
         """
         
@@ -66,7 +66,7 @@ class PlaybookInfoRef:
     def id(self):
         """Gets the id of this PlaybookInfoRef.
 
-        Id value
+        剧本ID
 
         :return: The id of this PlaybookInfoRef.
         :rtype: str
@@ -77,7 +77,7 @@ class PlaybookInfoRef:
     def id(self, id):
         """Sets the id of this PlaybookInfoRef.
 
-        Id value
+        剧本ID
 
         :param id: The id of this PlaybookInfoRef.
         :type id: str
@@ -88,7 +88,7 @@ class PlaybookInfoRef:
     def version_id(self):
         """Gets the version_id of this PlaybookInfoRef.
 
-        Id value
+        剧本版本ID
 
         :return: The version_id of this PlaybookInfoRef.
         :rtype: str
@@ -99,7 +99,7 @@ class PlaybookInfoRef:
     def version_id(self, version_id):
         """Sets the version_id of this PlaybookInfoRef.
 
-        Id value
+        剧本版本ID
 
         :param version_id: The version_id of this PlaybookInfoRef.
         :type version_id: str
@@ -110,7 +110,7 @@ class PlaybookInfoRef:
     def name(self):
         """Gets the name of this PlaybookInfoRef.
 
-        Id value
+        名称
 
         :return: The name of this PlaybookInfoRef.
         :rtype: str
@@ -121,7 +121,7 @@ class PlaybookInfoRef:
     def name(self, name):
         """Sets the name of this PlaybookInfoRef.
 
-        Id value
+        名称
 
         :param name: The name of this PlaybookInfoRef.
         :type name: str
@@ -132,7 +132,7 @@ class PlaybookInfoRef:
     def version(self):
         """Gets the version of this PlaybookInfoRef.
 
-        version
+        版本
 
         :return: The version of this PlaybookInfoRef.
         :rtype: str
@@ -143,7 +143,7 @@ class PlaybookInfoRef:
     def version(self, version):
         """Sets the version of this PlaybookInfoRef.
 
-        version
+        版本
 
         :param version: The version of this PlaybookInfoRef.
         :type version: str

@@ -27,7 +27,8 @@ class UpdatePoolOption:
         'vpc_id': 'str',
         'type': 'str',
         'protection_status': 'str',
-        'protection_reason': 'str'
+        'protection_reason': 'str',
+        'any_port_enable': 'bool'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class UpdatePoolOption:
         'vpc_id': 'vpc_id',
         'type': 'type',
         'protection_status': 'protection_status',
-        'protection_reason': 'protection_reason'
+        'protection_reason': 'protection_reason',
+        'any_port_enable': 'any_port_enable'
     }
 
-    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, name=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None, vpc_id=None, type=None, protection_status=None, protection_reason=None):
+    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, name=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None, vpc_id=None, type=None, protection_status=None, protection_reason=None, any_port_enable=None):
         """UpdatePoolOption
 
         The model defined in huaweicloud sdk
@@ -53,7 +55,7 @@ class UpdatePoolOption:
         :type admin_state_up: bool
         :param description: 后端云服务器组的描述信息。
         :type description: str
-        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
+        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt,tm)
         :type lb_algorithm: str
         :param name: 后端云服务器组的名称。
         :type name: str
@@ -61,7 +63,7 @@ class UpdatePoolOption:
         :type session_persistence: :class:`huaweicloudsdkelb.v3.UpdatePoolSessionPersistenceOption`
         :param slow_start: 
         :type slow_start: :class:`huaweicloudsdkelb.v3.UpdatePoolSlowStartOption`
-        :param member_deletion_protection_enable: 是否开启删除保护。  取值：false不开启，true开启。  &gt; 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        :param member_deletion_protection_enable: 是否开启删除保护。  取值：false不开启，true开启。  &gt; 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
         :type member_deletion_protection_enable: bool
         :param vpc_id: 后端云服务器组关联的虚拟私有云的ID。  只有vpc_id为空时允许更新。
         :type vpc_id: str
@@ -71,6 +73,8 @@ class UpdatePoolOption:
         :type protection_status: str
         :param protection_reason: 设置保护的原因 &gt;仅当protection_status为consoleProtection时有效。
         :type protection_reason: str
+        :param any_port_enable: 后端是否开启端口透传，开启后，后端服务器端口与前端监听器端口保持一致。  使用说明： - 仅QUIC,TCP,UDP的pool支持。  &gt; 关闭端口透传后，请求会转发给后端服务器protocol_port字段指定端口。
+        :type any_port_enable: bool
         """
         
         
@@ -86,6 +90,7 @@ class UpdatePoolOption:
         self._type = None
         self._protection_status = None
         self._protection_reason = None
+        self._any_port_enable = None
         self.discriminator = None
 
         if admin_state_up is not None:
@@ -110,6 +115,8 @@ class UpdatePoolOption:
             self.protection_status = protection_status
         if protection_reason is not None:
             self.protection_reason = protection_reason
+        if any_port_enable is not None:
+            self.any_port_enable = any_port_enable
 
     @property
     def admin_state_up(self):
@@ -159,7 +166,7 @@ class UpdatePoolOption:
     def lb_algorithm(self):
         """Gets the lb_algorithm of this UpdatePoolOption.
 
-        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
+        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt,tm)
 
         :return: The lb_algorithm of this UpdatePoolOption.
         :rtype: str
@@ -170,7 +177,7 @@ class UpdatePoolOption:
     def lb_algorithm(self, lb_algorithm):
         """Sets the lb_algorithm of this UpdatePoolOption.
 
-        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  [不支持QUIC_CID。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt,dt_test)
+        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt,tm)
 
         :param lb_algorithm: The lb_algorithm of this UpdatePoolOption.
         :type lb_algorithm: str
@@ -239,7 +246,7 @@ class UpdatePoolOption:
     def member_deletion_protection_enable(self):
         """Gets the member_deletion_protection_enable of this UpdatePoolOption.
 
-        是否开启删除保护。  取值：false不开启，true开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        是否开启删除保护。  取值：false不开启，true开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
 
         :return: The member_deletion_protection_enable of this UpdatePoolOption.
         :rtype: bool
@@ -250,7 +257,7 @@ class UpdatePoolOption:
     def member_deletion_protection_enable(self, member_deletion_protection_enable):
         """Sets the member_deletion_protection_enable of this UpdatePoolOption.
 
-        是否开启删除保护。  取值：false不开启，true开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        是否开启删除保护。  取值：false不开启，true开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
 
         :param member_deletion_protection_enable: The member_deletion_protection_enable of this UpdatePoolOption.
         :type member_deletion_protection_enable: bool
@@ -344,6 +351,28 @@ class UpdatePoolOption:
         :type protection_reason: str
         """
         self._protection_reason = protection_reason
+
+    @property
+    def any_port_enable(self):
+        """Gets the any_port_enable of this UpdatePoolOption.
+
+        后端是否开启端口透传，开启后，后端服务器端口与前端监听器端口保持一致。  使用说明： - 仅QUIC,TCP,UDP的pool支持。  > 关闭端口透传后，请求会转发给后端服务器protocol_port字段指定端口。
+
+        :return: The any_port_enable of this UpdatePoolOption.
+        :rtype: bool
+        """
+        return self._any_port_enable
+
+    @any_port_enable.setter
+    def any_port_enable(self, any_port_enable):
+        """Sets the any_port_enable of this UpdatePoolOption.
+
+        后端是否开启端口透传，开启后，后端服务器端口与前端监听器端口保持一致。  使用说明： - 仅QUIC,TCP,UDP的pool支持。  > 关闭端口透传后，请求会转发给后端服务器protocol_port字段指定端口。
+
+        :param any_port_enable: The any_port_enable of this UpdatePoolOption.
+        :type any_port_enable: bool
+        """
+        self._any_port_enable = any_port_enable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

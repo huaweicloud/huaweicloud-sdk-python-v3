@@ -34,9 +34,9 @@ class CreateAlertRuleSimulationResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param alert_count: alert_count
+        :param alert_count: 告警数量。Alert count.
         :type alert_count: int
-        :param severity: severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        :param severity: 严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
         :type severity: str
         :param x_request_id: 
         :type x_request_id: str
@@ -60,7 +60,7 @@ class CreateAlertRuleSimulationResponse(SdkResponse):
     def alert_count(self):
         """Gets the alert_count of this CreateAlertRuleSimulationResponse.
 
-        alert_count
+        告警数量。Alert count.
 
         :return: The alert_count of this CreateAlertRuleSimulationResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class CreateAlertRuleSimulationResponse(SdkResponse):
     def alert_count(self, alert_count):
         """Sets the alert_count of this CreateAlertRuleSimulationResponse.
 
-        alert_count
+        告警数量。Alert count.
 
         :param alert_count: The alert_count of this CreateAlertRuleSimulationResponse.
         :type alert_count: int
@@ -82,7 +82,7 @@ class CreateAlertRuleSimulationResponse(SdkResponse):
     def severity(self):
         """Gets the severity of this CreateAlertRuleSimulationResponse.
 
-        severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
         :return: The severity of this CreateAlertRuleSimulationResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class CreateAlertRuleSimulationResponse(SdkResponse):
     def severity(self, severity):
         """Sets the severity of this CreateAlertRuleSimulationResponse.
 
-        severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
         :param severity: The severity of this CreateAlertRuleSimulationResponse.
         :type severity: str

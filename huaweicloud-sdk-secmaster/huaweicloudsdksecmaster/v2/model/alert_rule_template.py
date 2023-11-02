@@ -51,29 +51,29 @@ class AlertRuleTemplate:
 
         The model defined in huaweicloud sdk
 
-        :param template_id: template_id
+        :param template_id: 告警规则模板 ID。Alert rule template ID.
         :type template_id: str
-        :param update_time: update_time
+        :param update_time: 更新时间。Update time.
         :type update_time: int
-        :param template_name: template_name
+        :param template_name: 告警规则模板名称。Alert rule template name.
         :type template_name: str
-        :param data_source: data_source
+        :param data_source: 数据源。Data source.
         :type data_source: str
-        :param version: version
+        :param version: 版本。Version
         :type version: str
-        :param query: query
+        :param query: 查询语句。Query.
         :type query: str
-        :param query_type: query_type. SQL, CBSL.
+        :param query_type: 查询语法，SQL。Query type. SQL.
         :type query_type: str
-        :param severity: severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        :param severity: 严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
         :type severity: str
-        :param custom_properties: custom_properties
+        :param custom_properties: 自定义扩展信息。Custom properties.
         :type custom_properties: dict(str, str)
-        :param event_grouping: event_grouping
+        :param event_grouping: 告警分组。Event grouping.
         :type event_grouping: bool
         :param schedule: 
         :type schedule: :class:`huaweicloudsdksecmaster.v2.Schedule`
-        :param triggers: triggers
+        :param triggers: 告警触发规则。Alert triggers.
         :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
         """
         
@@ -116,7 +116,7 @@ class AlertRuleTemplate:
     def template_id(self):
         """Gets the template_id of this AlertRuleTemplate.
 
-        template_id
+        告警规则模板 ID。Alert rule template ID.
 
         :return: The template_id of this AlertRuleTemplate.
         :rtype: str
@@ -127,7 +127,7 @@ class AlertRuleTemplate:
     def template_id(self, template_id):
         """Sets the template_id of this AlertRuleTemplate.
 
-        template_id
+        告警规则模板 ID。Alert rule template ID.
 
         :param template_id: The template_id of this AlertRuleTemplate.
         :type template_id: str
@@ -138,7 +138,7 @@ class AlertRuleTemplate:
     def update_time(self):
         """Gets the update_time of this AlertRuleTemplate.
 
-        update_time
+        更新时间。Update time.
 
         :return: The update_time of this AlertRuleTemplate.
         :rtype: int
@@ -149,7 +149,7 @@ class AlertRuleTemplate:
     def update_time(self, update_time):
         """Sets the update_time of this AlertRuleTemplate.
 
-        update_time
+        更新时间。Update time.
 
         :param update_time: The update_time of this AlertRuleTemplate.
         :type update_time: int
@@ -160,7 +160,7 @@ class AlertRuleTemplate:
     def template_name(self):
         """Gets the template_name of this AlertRuleTemplate.
 
-        template_name
+        告警规则模板名称。Alert rule template name.
 
         :return: The template_name of this AlertRuleTemplate.
         :rtype: str
@@ -171,7 +171,7 @@ class AlertRuleTemplate:
     def template_name(self, template_name):
         """Sets the template_name of this AlertRuleTemplate.
 
-        template_name
+        告警规则模板名称。Alert rule template name.
 
         :param template_name: The template_name of this AlertRuleTemplate.
         :type template_name: str
@@ -182,7 +182,7 @@ class AlertRuleTemplate:
     def data_source(self):
         """Gets the data_source of this AlertRuleTemplate.
 
-        data_source
+        数据源。Data source.
 
         :return: The data_source of this AlertRuleTemplate.
         :rtype: str
@@ -193,7 +193,7 @@ class AlertRuleTemplate:
     def data_source(self, data_source):
         """Sets the data_source of this AlertRuleTemplate.
 
-        data_source
+        数据源。Data source.
 
         :param data_source: The data_source of this AlertRuleTemplate.
         :type data_source: str
@@ -204,7 +204,7 @@ class AlertRuleTemplate:
     def version(self):
         """Gets the version of this AlertRuleTemplate.
 
-        version
+        版本。Version
 
         :return: The version of this AlertRuleTemplate.
         :rtype: str
@@ -215,7 +215,7 @@ class AlertRuleTemplate:
     def version(self, version):
         """Sets the version of this AlertRuleTemplate.
 
-        version
+        版本。Version
 
         :param version: The version of this AlertRuleTemplate.
         :type version: str
@@ -226,7 +226,7 @@ class AlertRuleTemplate:
     def query(self):
         """Gets the query of this AlertRuleTemplate.
 
-        query
+        查询语句。Query.
 
         :return: The query of this AlertRuleTemplate.
         :rtype: str
@@ -237,7 +237,7 @@ class AlertRuleTemplate:
     def query(self, query):
         """Sets the query of this AlertRuleTemplate.
 
-        query
+        查询语句。Query.
 
         :param query: The query of this AlertRuleTemplate.
         :type query: str
@@ -248,7 +248,7 @@ class AlertRuleTemplate:
     def query_type(self):
         """Gets the query_type of this AlertRuleTemplate.
 
-        query_type. SQL, CBSL.
+        查询语法，SQL。Query type. SQL.
 
         :return: The query_type of this AlertRuleTemplate.
         :rtype: str
@@ -259,7 +259,7 @@ class AlertRuleTemplate:
     def query_type(self, query_type):
         """Sets the query_type of this AlertRuleTemplate.
 
-        query_type. SQL, CBSL.
+        查询语法，SQL。Query type. SQL.
 
         :param query_type: The query_type of this AlertRuleTemplate.
         :type query_type: str
@@ -270,7 +270,7 @@ class AlertRuleTemplate:
     def severity(self):
         """Gets the severity of this AlertRuleTemplate.
 
-        severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
         :return: The severity of this AlertRuleTemplate.
         :rtype: str
@@ -281,7 +281,7 @@ class AlertRuleTemplate:
     def severity(self, severity):
         """Sets the severity of this AlertRuleTemplate.
 
-        severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
         :param severity: The severity of this AlertRuleTemplate.
         :type severity: str
@@ -292,7 +292,7 @@ class AlertRuleTemplate:
     def custom_properties(self):
         """Gets the custom_properties of this AlertRuleTemplate.
 
-        custom_properties
+        自定义扩展信息。Custom properties.
 
         :return: The custom_properties of this AlertRuleTemplate.
         :rtype: dict(str, str)
@@ -303,7 +303,7 @@ class AlertRuleTemplate:
     def custom_properties(self, custom_properties):
         """Sets the custom_properties of this AlertRuleTemplate.
 
-        custom_properties
+        自定义扩展信息。Custom properties.
 
         :param custom_properties: The custom_properties of this AlertRuleTemplate.
         :type custom_properties: dict(str, str)
@@ -314,7 +314,7 @@ class AlertRuleTemplate:
     def event_grouping(self):
         """Gets the event_grouping of this AlertRuleTemplate.
 
-        event_grouping
+        告警分组。Event grouping.
 
         :return: The event_grouping of this AlertRuleTemplate.
         :rtype: bool
@@ -325,7 +325,7 @@ class AlertRuleTemplate:
     def event_grouping(self, event_grouping):
         """Sets the event_grouping of this AlertRuleTemplate.
 
-        event_grouping
+        告警分组。Event grouping.
 
         :param event_grouping: The event_grouping of this AlertRuleTemplate.
         :type event_grouping: bool
@@ -354,7 +354,7 @@ class AlertRuleTemplate:
     def triggers(self):
         """Gets the triggers of this AlertRuleTemplate.
 
-        triggers
+        告警触发规则。Alert triggers.
 
         :return: The triggers of this AlertRuleTemplate.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
@@ -365,7 +365,7 @@ class AlertRuleTemplate:
     def triggers(self, triggers):
         """Sets the triggers of this AlertRuleTemplate.
 
-        triggers
+        告警触发规则。Alert triggers.
 
         :param triggers: The triggers of this AlertRuleTemplate.
         :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]

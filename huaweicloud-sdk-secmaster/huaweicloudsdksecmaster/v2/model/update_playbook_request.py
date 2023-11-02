@@ -35,11 +35,11 @@ class UpdatePlaybookRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: ID of project
+        :param project_id: 项目ID
         :type project_id: str
-        :param workspace_id: ID of workspace
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param playbook_id: ID of playbook
+        :param playbook_id: 剧本ID
         :type playbook_id: str
         :param body: Body of the UpdatePlaybookRequest
         :type body: :class:`huaweicloudsdksecmaster.v2.ModifyPlaybookInfo`
@@ -63,7 +63,7 @@ class UpdatePlaybookRequest:
     def project_id(self):
         """Gets the project_id of this UpdatePlaybookRequest.
 
-        ID of project
+        项目ID
 
         :return: The project_id of this UpdatePlaybookRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class UpdatePlaybookRequest:
     def project_id(self, project_id):
         """Sets the project_id of this UpdatePlaybookRequest.
 
-        ID of project
+        项目ID
 
         :param project_id: The project_id of this UpdatePlaybookRequest.
         :type project_id: str
@@ -85,7 +85,7 @@ class UpdatePlaybookRequest:
     def workspace_id(self):
         """Gets the workspace_id of this UpdatePlaybookRequest.
 
-        ID of workspace
+        工作空间ID
 
         :return: The workspace_id of this UpdatePlaybookRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class UpdatePlaybookRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this UpdatePlaybookRequest.
 
-        ID of workspace
+        工作空间ID
 
         :param workspace_id: The workspace_id of this UpdatePlaybookRequest.
         :type workspace_id: str
@@ -107,7 +107,7 @@ class UpdatePlaybookRequest:
     def playbook_id(self):
         """Gets the playbook_id of this UpdatePlaybookRequest.
 
-        ID of playbook
+        剧本ID
 
         :return: The playbook_id of this UpdatePlaybookRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class UpdatePlaybookRequest:
     def playbook_id(self, playbook_id):
         """Sets the playbook_id of this UpdatePlaybookRequest.
 
-        ID of playbook
+        剧本ID
 
         :param playbook_id: The playbook_id of this UpdatePlaybookRequest.
         :type playbook_id: str

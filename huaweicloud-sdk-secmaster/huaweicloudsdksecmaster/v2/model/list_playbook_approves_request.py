@@ -35,13 +35,13 @@ class ListPlaybookApprovesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: ID of project
+        :param project_id: 项目ID
         :type project_id: str
-        :param workspace_id: ID of workspace
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param resource_id: Resource Id, PlaybookId or AopworkflowId
+        :param resource_id: 资源ID
         :type resource_id: str
-        :param approve_type: PLAYBOOK, AOP_WORKFLOW
+        :param approve_type: 审核类型。（PLAYBOOK-剧本, AOP_WORKFLOW--流程)
         :type approve_type: str
         """
         
@@ -64,7 +64,7 @@ class ListPlaybookApprovesRequest:
     def project_id(self):
         """Gets the project_id of this ListPlaybookApprovesRequest.
 
-        ID of project
+        项目ID
 
         :return: The project_id of this ListPlaybookApprovesRequest.
         :rtype: str
@@ -75,7 +75,7 @@ class ListPlaybookApprovesRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ListPlaybookApprovesRequest.
 
-        ID of project
+        项目ID
 
         :param project_id: The project_id of this ListPlaybookApprovesRequest.
         :type project_id: str
@@ -86,7 +86,7 @@ class ListPlaybookApprovesRequest:
     def workspace_id(self):
         """Gets the workspace_id of this ListPlaybookApprovesRequest.
 
-        ID of workspace
+        工作空间ID
 
         :return: The workspace_id of this ListPlaybookApprovesRequest.
         :rtype: str
@@ -97,7 +97,7 @@ class ListPlaybookApprovesRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this ListPlaybookApprovesRequest.
 
-        ID of workspace
+        工作空间ID
 
         :param workspace_id: The workspace_id of this ListPlaybookApprovesRequest.
         :type workspace_id: str
@@ -108,7 +108,7 @@ class ListPlaybookApprovesRequest:
     def resource_id(self):
         """Gets the resource_id of this ListPlaybookApprovesRequest.
 
-        Resource Id, PlaybookId or AopworkflowId
+        资源ID
 
         :return: The resource_id of this ListPlaybookApprovesRequest.
         :rtype: str
@@ -119,7 +119,7 @@ class ListPlaybookApprovesRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ListPlaybookApprovesRequest.
 
-        Resource Id, PlaybookId or AopworkflowId
+        资源ID
 
         :param resource_id: The resource_id of this ListPlaybookApprovesRequest.
         :type resource_id: str
@@ -130,7 +130,7 @@ class ListPlaybookApprovesRequest:
     def approve_type(self):
         """Gets the approve_type of this ListPlaybookApprovesRequest.
 
-        PLAYBOOK, AOP_WORKFLOW
+        审核类型。（PLAYBOOK-剧本, AOP_WORKFLOW--流程)
 
         :return: The approve_type of this ListPlaybookApprovesRequest.
         :rtype: str
@@ -141,7 +141,7 @@ class ListPlaybookApprovesRequest:
     def approve_type(self, approve_type):
         """Sets the approve_type of this ListPlaybookApprovesRequest.
 
-        PLAYBOOK, AOP_WORKFLOW
+        审核类型。（PLAYBOOK-剧本, AOP_WORKFLOW--流程)
 
         :param approve_type: The approve_type of this ListPlaybookApprovesRequest.
         :type approve_type: str

@@ -41,6 +41,7 @@ class ListListenersRequest:
         'client_timeout': 'list[int]',
         'keepalive_timeout': 'list[int]',
         'transparent_client_ip_enable': 'bool',
+        'proxy_protocol_enable': 'bool',
         'enhance_l7policy_enable': 'bool',
         'member_instance_id': 'list[str]',
         'protection_status': 'list[str]'
@@ -71,12 +72,13 @@ class ListListenersRequest:
         'client_timeout': 'client_timeout',
         'keepalive_timeout': 'keepalive_timeout',
         'transparent_client_ip_enable': 'transparent_client_ip_enable',
+        'proxy_protocol_enable': 'proxy_protocol_enable',
         'enhance_l7policy_enable': 'enhance_l7policy_enable',
         'member_instance_id': 'member_instance_id',
         'protection_status': 'protection_status'
     }
 
-    def __init__(self, limit=None, marker=None, page_reverse=None, protocol_port=None, protocol=None, description=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, admin_state_up=None, connection_limit=None, default_pool_id=None, id=None, name=None, http2_enable=None, loadbalancer_id=None, tls_ciphers_policy=None, member_address=None, member_device_id=None, enterprise_project_id=None, enable_member_retry=None, member_timeout=None, client_timeout=None, keepalive_timeout=None, transparent_client_ip_enable=None, enhance_l7policy_enable=None, member_instance_id=None, protection_status=None):
+    def __init__(self, limit=None, marker=None, page_reverse=None, protocol_port=None, protocol=None, description=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, admin_state_up=None, connection_limit=None, default_pool_id=None, id=None, name=None, http2_enable=None, loadbalancer_id=None, tls_ciphers_policy=None, member_address=None, member_device_id=None, enterprise_project_id=None, enable_member_retry=None, member_timeout=None, client_timeout=None, keepalive_timeout=None, transparent_client_ip_enable=None, proxy_protocol_enable=None, enhance_l7policy_enable=None, member_instance_id=None, protection_status=None):
         """ListListenersRequest
 
         The model defined in huaweicloud sdk
@@ -89,7 +91,7 @@ class ListListenersRequest:
         :type page_reverse: bool
         :param protocol_port: 监听器的前端监听端口。  支持多值查询，查询条件格式：*protocol_port&#x3D;xxx&amp;protocol_port&#x3D;xxx*。
         :type protocol_port: list[str]
-        :param protocol: 监听器的监听协议。  [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC。  说明：TERMINATED_HTTPS为共享型LB上的监听器独有的协议。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  [取值：TCP、UDP、HTTP、HTTPS。](tag:hws_eu,hcso_dt)  支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        :param protocol: 监听器的监听协议。  [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs) [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS。](tag:tm,g42,hk_g42,dt,dt_test) [取值：TCP、UDP、HTTP、HTTPS。](tag:hws_eu,hcso_dt)  [说明：TERMINATED_HTTPS为共享型LB上的监听器独有的协议。](tag:hws,hws_hk,ocb,ctc,hcs,g42,cmcc,hws_ocb,fcs,tm,g42,hk_g42,dt,dt_test)  支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。
         :type protocol: list[str]
         :param description: 监听器的描述信息。  支持多值查询，查询条件格式：*description&#x3D;xxx&amp;description&#x3D;xxx*。
         :type description: list[str]
@@ -107,7 +109,7 @@ class ListListenersRequest:
         :type id: list[str]
         :param name: 监听器名称。  支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。
         :type name: list[str]
-        :param http2_enable: 客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  使用说明： - 仅HTTPS协议监听器有效。 - QUIC监听器不能设置该字段，固定返回为true。 - 其他协议的监听器可设置该字段但无效，无论取值如何都不影响监听器正常运行。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        :param http2_enable: 客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  使用说明： - 仅HTTPS协议监听器有效。 [- QUIC监听器不能设置该字段，固定返回为true。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs) - 其他协议的监听器可设置该字段但无效，无论取值如何都不影响监听器正常运行。
         :type http2_enable: bool
         :param loadbalancer_id: 监听器所属的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id&#x3D;xxx&amp;loadbalancer_id&#x3D;xxx*。
         :type loadbalancer_id: list[str]
@@ -129,7 +131,9 @@ class ListListenersRequest:
         :type keepalive_timeout: list[int]
         :param transparent_client_ip_enable: 是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。  [仅作用于共享型LB的TCP/UDP监听器。取值：true开启，false不开启。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt,hk_tm)
         :type transparent_client_ip_enable: bool
-        :param enhance_l7policy_enable: 是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        :param proxy_protocol_enable: 是否开启proxy_protocol。仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
+        :type proxy_protocol_enable: bool
+        :param enhance_l7policy_enable: 是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。
         :type enhance_l7policy_enable: bool
         :param member_instance_id: 后端云服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id&#x3D;xxx&amp;member_instance_id&#x3D;xxx*。
         :type member_instance_id: list[str]
@@ -163,6 +167,7 @@ class ListListenersRequest:
         self._client_timeout = None
         self._keepalive_timeout = None
         self._transparent_client_ip_enable = None
+        self._proxy_protocol_enable = None
         self._enhance_l7policy_enable = None
         self._member_instance_id = None
         self._protection_status = None
@@ -216,6 +221,8 @@ class ListListenersRequest:
             self.keepalive_timeout = keepalive_timeout
         if transparent_client_ip_enable is not None:
             self.transparent_client_ip_enable = transparent_client_ip_enable
+        if proxy_protocol_enable is not None:
+            self.proxy_protocol_enable = proxy_protocol_enable
         if enhance_l7policy_enable is not None:
             self.enhance_l7policy_enable = enhance_l7policy_enable
         if member_instance_id is not None:
@@ -315,7 +322,7 @@ class ListListenersRequest:
     def protocol(self):
         """Gets the protocol of this ListListenersRequest.
 
-        监听器的监听协议。  [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC。  说明：TERMINATED_HTTPS为共享型LB上的监听器独有的协议。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  [取值：TCP、UDP、HTTP、HTTPS。](tag:hws_eu,hcso_dt)  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        监听器的监听协议。  [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs) [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS。](tag:tm,g42,hk_g42,dt,dt_test) [取值：TCP、UDP、HTTP、HTTPS。](tag:hws_eu,hcso_dt)  [说明：TERMINATED_HTTPS为共享型LB上的监听器独有的协议。](tag:hws,hws_hk,ocb,ctc,hcs,g42,cmcc,hws_ocb,fcs,tm,g42,hk_g42,dt,dt_test)  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。
 
         :return: The protocol of this ListListenersRequest.
         :rtype: list[str]
@@ -326,7 +333,7 @@ class ListListenersRequest:
     def protocol(self, protocol):
         """Sets the protocol of this ListListenersRequest.
 
-        监听器的监听协议。  [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC。  说明：TERMINATED_HTTPS为共享型LB上的监听器独有的协议。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  [取值：TCP、UDP、HTTP、HTTPS。](tag:hws_eu,hcso_dt)  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        监听器的监听协议。  [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs) [取值：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS。](tag:tm,g42,hk_g42,dt,dt_test) [取值：TCP、UDP、HTTP、HTTPS。](tag:hws_eu,hcso_dt)  [说明：TERMINATED_HTTPS为共享型LB上的监听器独有的协议。](tag:hws,hws_hk,ocb,ctc,hcs,g42,cmcc,hws_ocb,fcs,tm,g42,hk_g42,dt,dt_test)  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。
 
         :param protocol: The protocol of this ListListenersRequest.
         :type protocol: list[str]
@@ -513,7 +520,7 @@ class ListListenersRequest:
     def http2_enable(self):
         """Gets the http2_enable of this ListListenersRequest.
 
-        客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  使用说明： - 仅HTTPS协议监听器有效。 - QUIC监听器不能设置该字段，固定返回为true。 - 其他协议的监听器可设置该字段但无效，无论取值如何都不影响监听器正常运行。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  使用说明： - 仅HTTPS协议监听器有效。 [- QUIC监听器不能设置该字段，固定返回为true。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs) - 其他协议的监听器可设置该字段但无效，无论取值如何都不影响监听器正常运行。
 
         :return: The http2_enable of this ListListenersRequest.
         :rtype: bool
@@ -524,7 +531,7 @@ class ListListenersRequest:
     def http2_enable(self, http2_enable):
         """Sets the http2_enable of this ListListenersRequest.
 
-        客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  使用说明： - 仅HTTPS协议监听器有效。 - QUIC监听器不能设置该字段，固定返回为true。 - 其他协议的监听器可设置该字段但无效，无论取值如何都不影响监听器正常运行。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt,dt_test)
+        客户端与LB之间的HTTPS请求的HTTP2功能的开启状态。 开启后，可提升客户端与LB间的访问性能，但LB与后端服务器间仍采用HTTP1.X协议。  使用说明： - 仅HTTPS协议监听器有效。 [- QUIC监听器不能设置该字段，固定返回为true。](tag:hws,hws_hk,ocb,ctc,hcs,cmcc,hws_ocb,fcs) - 其他协议的监听器可设置该字段但无效，无论取值如何都不影响监听器正常运行。
 
         :param http2_enable: The http2_enable of this ListListenersRequest.
         :type http2_enable: bool
@@ -752,10 +759,32 @@ class ListListenersRequest:
         self._transparent_client_ip_enable = transparent_client_ip_enable
 
     @property
+    def proxy_protocol_enable(self):
+        """Gets the proxy_protocol_enable of this ListListenersRequest.
+
+        是否开启proxy_protocol。仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
+
+        :return: The proxy_protocol_enable of this ListListenersRequest.
+        :rtype: bool
+        """
+        return self._proxy_protocol_enable
+
+    @proxy_protocol_enable.setter
+    def proxy_protocol_enable(self, proxy_protocol_enable):
+        """Sets the proxy_protocol_enable of this ListListenersRequest.
+
+        是否开启proxy_protocol。仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。
+
+        :param proxy_protocol_enable: The proxy_protocol_enable of this ListListenersRequest.
+        :type proxy_protocol_enable: bool
+        """
+        self._proxy_protocol_enable = proxy_protocol_enable
+
+    @property
     def enhance_l7policy_enable(self):
         """Gets the enhance_l7policy_enable of this ListListenersRequest.
 
-        是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。
 
         :return: The enhance_l7policy_enable of this ListListenersRequest.
         :rtype: bool
@@ -766,7 +795,7 @@ class ListListenersRequest:
     def enhance_l7policy_enable(self, enhance_l7policy_enable):
         """Sets the enhance_l7policy_enable of this ListListenersRequest.
 
-        是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
+        是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。  取值：true开启，false不开启。
 
         :param enhance_l7policy_enable: The enhance_l7policy_enable of this ListListenersRequest.
         :type enhance_l7policy_enable: bool

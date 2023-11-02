@@ -33,11 +33,11 @@ class ShowAlertRuleTemplateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: project_id
+        :param project_id: 项目 ID。Project ID.
         :type project_id: str
-        :param workspace_id: workspace_id
+        :param workspace_id: 工作空间 ID。Workspace ID.
         :type workspace_id: str
-        :param template_id: template_id
+        :param template_id: 告警规则模板 ID。Alert rule template ID.
         :type template_id: str
         """
         
@@ -56,7 +56,7 @@ class ShowAlertRuleTemplateRequest:
     def project_id(self):
         """Gets the project_id of this ShowAlertRuleTemplateRequest.
 
-        project_id
+        项目 ID。Project ID.
 
         :return: The project_id of this ShowAlertRuleTemplateRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowAlertRuleTemplateRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ShowAlertRuleTemplateRequest.
 
-        project_id
+        项目 ID。Project ID.
 
         :param project_id: The project_id of this ShowAlertRuleTemplateRequest.
         :type project_id: str
@@ -78,7 +78,7 @@ class ShowAlertRuleTemplateRequest:
     def workspace_id(self):
         """Gets the workspace_id of this ShowAlertRuleTemplateRequest.
 
-        workspace_id
+        工作空间 ID。Workspace ID.
 
         :return: The workspace_id of this ShowAlertRuleTemplateRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class ShowAlertRuleTemplateRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this ShowAlertRuleTemplateRequest.
 
-        workspace_id
+        工作空间 ID。Workspace ID.
 
         :param workspace_id: The workspace_id of this ShowAlertRuleTemplateRequest.
         :type workspace_id: str
@@ -100,7 +100,7 @@ class ShowAlertRuleTemplateRequest:
     def template_id(self):
         """Gets the template_id of this ShowAlertRuleTemplateRequest.
 
-        template_id
+        告警规则模板 ID。Alert rule template ID.
 
         :return: The template_id of this ShowAlertRuleTemplateRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ShowAlertRuleTemplateRequest:
     def template_id(self, template_id):
         """Sets the template_id of this ShowAlertRuleTemplateRequest.
 
-        template_id
+        告警规则模板 ID。Alert rule template ID.
 
         :param template_id: The template_id of this ShowAlertRuleTemplateRequest.
         :type template_id: str

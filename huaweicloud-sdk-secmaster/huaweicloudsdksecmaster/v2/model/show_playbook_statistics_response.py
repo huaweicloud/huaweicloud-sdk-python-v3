@@ -36,9 +36,9 @@ class ShowPlaybookStatisticsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: Error code
+        :param code: 错误码
         :type code: str
-        :param message: Error message
+        :param message: 错误信息
         :type message: str
         :param data: 
         :type data: :class:`huaweicloudsdksecmaster.v2.PlaybookStatisticDetail`
@@ -67,7 +67,7 @@ class ShowPlaybookStatisticsResponse(SdkResponse):
     def code(self):
         """Gets the code of this ShowPlaybookStatisticsResponse.
 
-        Error code
+        错误码
 
         :return: The code of this ShowPlaybookStatisticsResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowPlaybookStatisticsResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ShowPlaybookStatisticsResponse.
 
-        Error code
+        错误码
 
         :param code: The code of this ShowPlaybookStatisticsResponse.
         :type code: str
@@ -89,7 +89,7 @@ class ShowPlaybookStatisticsResponse(SdkResponse):
     def message(self):
         """Gets the message of this ShowPlaybookStatisticsResponse.
 
-        Error message
+        错误信息
 
         :return: The message of this ShowPlaybookStatisticsResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class ShowPlaybookStatisticsResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ShowPlaybookStatisticsResponse.
 
-        Error message
+        错误信息
 
         :param message: The message of this ShowPlaybookStatisticsResponse.
         :type message: str

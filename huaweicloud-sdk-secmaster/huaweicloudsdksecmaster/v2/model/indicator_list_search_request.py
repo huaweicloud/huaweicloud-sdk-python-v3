@@ -19,39 +19,39 @@ class IndicatorListSearchRequest:
     openapi_types = {
         'ids': 'list[str]',
         'name': 'str',
-        'type': 'str',
         'dataclass_id': 'str',
         'condition': 'str',
         'offset': 'int',
         'limit': 'int',
-        'sort_by': 'str'
+        'sort_by': 'str',
+        'from_date': 'str',
+        'to_date': 'str'
     }
 
     attribute_map = {
         'ids': 'ids',
         'name': 'name',
-        'type': 'type',
         'dataclass_id': 'dataclass_id',
         'condition': 'condition',
         'offset': 'offset',
         'limit': 'limit',
-        'sort_by': 'sort_by'
+        'sort_by': 'sort_by',
+        'from_date': 'from_date',
+        'to_date': 'to_date'
     }
 
-    def __init__(self, ids=None, name=None, type=None, dataclass_id=None, condition=None, offset=None, limit=None, sort_by=None):
+    def __init__(self, ids=None, name=None, dataclass_id=None, condition=None, offset=None, limit=None, sort_by=None, from_date=None, to_date=None):
         """IndicatorListSearchRequest
 
         The model defined in huaweicloud sdk
 
-        :param ids: id list
+        :param ids: 指标ID列表
         :type ids: list[str]
         :param name: 指标名称
         :type name: str
-        :param type: 类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
-        :type type: str
         :param dataclass_id: 数据类ID
         :type dataclass_id: str
-        :param condition: search condition
+        :param condition: 查询条件
         :type condition: str
         :param offset: request offset, from 0
         :type offset: int
@@ -59,42 +59,46 @@ class IndicatorListSearchRequest:
         :type limit: int
         :param sort_by: sort by property, create_time.
         :type sort_by: str
+        :param from_date: 查询起始时间
+        :type from_date: str
+        :param to_date: 查询截止时间
+        :type to_date: str
         """
         
         
 
         self._ids = None
         self._name = None
-        self._type = None
         self._dataclass_id = None
         self._condition = None
         self._offset = None
         self._limit = None
         self._sort_by = None
+        self._from_date = None
+        self._to_date = None
         self.discriminator = None
 
         if ids is not None:
             self.ids = ids
         if name is not None:
             self.name = name
-        if type is not None:
-            self.type = type
         if dataclass_id is not None:
             self.dataclass_id = dataclass_id
-        if condition is not None:
-            self.condition = condition
-        if offset is not None:
-            self.offset = offset
-        if limit is not None:
-            self.limit = limit
+        self.condition = condition
+        self.offset = offset
+        self.limit = limit
         if sort_by is not None:
             self.sort_by = sort_by
+        if from_date is not None:
+            self.from_date = from_date
+        if to_date is not None:
+            self.to_date = to_date
 
     @property
     def ids(self):
         """Gets the ids of this IndicatorListSearchRequest.
 
-        id list
+        指标ID列表
 
         :return: The ids of this IndicatorListSearchRequest.
         :rtype: list[str]
@@ -105,7 +109,7 @@ class IndicatorListSearchRequest:
     def ids(self, ids):
         """Sets the ids of this IndicatorListSearchRequest.
 
-        id list
+        指标ID列表
 
         :param ids: The ids of this IndicatorListSearchRequest.
         :type ids: list[str]
@@ -135,28 +139,6 @@ class IndicatorListSearchRequest:
         self._name = name
 
     @property
-    def type(self):
-        """Gets the type of this IndicatorListSearchRequest.
-
-        类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
-
-        :return: The type of this IndicatorListSearchRequest.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this IndicatorListSearchRequest.
-
-        类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
-
-        :param type: The type of this IndicatorListSearchRequest.
-        :type type: str
-        """
-        self._type = type
-
-    @property
     def dataclass_id(self):
         """Gets the dataclass_id of this IndicatorListSearchRequest.
 
@@ -182,7 +164,7 @@ class IndicatorListSearchRequest:
     def condition(self):
         """Gets the condition of this IndicatorListSearchRequest.
 
-        search condition
+        查询条件
 
         :return: The condition of this IndicatorListSearchRequest.
         :rtype: str
@@ -193,7 +175,7 @@ class IndicatorListSearchRequest:
     def condition(self, condition):
         """Sets the condition of this IndicatorListSearchRequest.
 
-        search condition
+        查询条件
 
         :param condition: The condition of this IndicatorListSearchRequest.
         :type condition: str
@@ -265,6 +247,50 @@ class IndicatorListSearchRequest:
         :type sort_by: str
         """
         self._sort_by = sort_by
+
+    @property
+    def from_date(self):
+        """Gets the from_date of this IndicatorListSearchRequest.
+
+        查询起始时间
+
+        :return: The from_date of this IndicatorListSearchRequest.
+        :rtype: str
+        """
+        return self._from_date
+
+    @from_date.setter
+    def from_date(self, from_date):
+        """Sets the from_date of this IndicatorListSearchRequest.
+
+        查询起始时间
+
+        :param from_date: The from_date of this IndicatorListSearchRequest.
+        :type from_date: str
+        """
+        self._from_date = from_date
+
+    @property
+    def to_date(self):
+        """Gets the to_date of this IndicatorListSearchRequest.
+
+        查询截止时间
+
+        :return: The to_date of this IndicatorListSearchRequest.
+        :rtype: str
+        """
+        return self._to_date
+
+    @to_date.setter
+    def to_date(self, to_date):
+        """Sets the to_date of this IndicatorListSearchRequest.
+
+        查询截止时间
+
+        :param to_date: The to_date of this IndicatorListSearchRequest.
+        :type to_date: str
+        """
+        self._to_date = to_date
 
     def to_dict(self):
         """Returns the model properties as a dict"""

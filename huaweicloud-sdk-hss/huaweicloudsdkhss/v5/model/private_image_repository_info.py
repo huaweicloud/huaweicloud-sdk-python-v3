@@ -34,7 +34,7 @@ class PrivateImageRepositoryInfo:
         'malicious_file_num': 'int',
         'domain_name': 'str',
         'shared_status': 'str',
-        'scanable': 'bool',
+        'scannable': 'bool',
         'association_images': 'list[AssociateImages]'
     }
 
@@ -56,11 +56,11 @@ class PrivateImageRepositoryInfo:
         'malicious_file_num': 'malicious_file_num',
         'domain_name': 'domain_name',
         'shared_status': 'shared_status',
-        'scanable': 'scanable',
+        'scannable': 'scannable',
         'association_images': 'association_images'
     }
 
-    def __init__(self, id=None, namespace=None, image_name=None, image_id=None, image_digest=None, image_version=None, image_type=None, latest_version=None, scan_status=None, image_size=None, latest_update_time=None, latest_scan_time=None, vul_num=None, unsafe_setting_num=None, malicious_file_num=None, domain_name=None, shared_status=None, scanable=None, association_images=None):
+    def __init__(self, id=None, namespace=None, image_name=None, image_id=None, image_digest=None, image_version=None, image_type=None, latest_version=None, scan_status=None, image_size=None, latest_update_time=None, latest_scan_time=None, vul_num=None, unsafe_setting_num=None, malicious_file_num=None, domain_name=None, shared_status=None, scannable=None, association_images=None):
         """PrivateImageRepositoryInfo
 
         The model defined in huaweicloud sdk
@@ -99,8 +99,8 @@ class PrivateImageRepositoryInfo:
         :type domain_name: str
         :param shared_status: 共享镜像状态，包含如下2种。   - expired ：已过期。   - effective ：有效。
         :type shared_status: str
-        :param scanable: 是否可扫描
-        :type scanable: bool
+        :param scannable: 是否可扫描
+        :type scannable: bool
         :param association_images: 多架构关联镜像信息
         :type association_images: list[:class:`huaweicloudsdkhss.v5.AssociateImages`]
         """
@@ -124,7 +124,7 @@ class PrivateImageRepositoryInfo:
         self._malicious_file_num = None
         self._domain_name = None
         self._shared_status = None
-        self._scanable = None
+        self._scannable = None
         self._association_images = None
         self.discriminator = None
 
@@ -162,8 +162,8 @@ class PrivateImageRepositoryInfo:
             self.domain_name = domain_name
         if shared_status is not None:
             self.shared_status = shared_status
-        if scanable is not None:
-            self.scanable = scanable
+        if scannable is not None:
+            self.scannable = scannable
         if association_images is not None:
             self.association_images = association_images
 
@@ -542,26 +542,26 @@ class PrivateImageRepositoryInfo:
         self._shared_status = shared_status
 
     @property
-    def scanable(self):
-        """Gets the scanable of this PrivateImageRepositoryInfo.
+    def scannable(self):
+        """Gets the scannable of this PrivateImageRepositoryInfo.
 
         是否可扫描
 
-        :return: The scanable of this PrivateImageRepositoryInfo.
+        :return: The scannable of this PrivateImageRepositoryInfo.
         :rtype: bool
         """
-        return self._scanable
+        return self._scannable
 
-    @scanable.setter
-    def scanable(self, scanable):
-        """Sets the scanable of this PrivateImageRepositoryInfo.
+    @scannable.setter
+    def scannable(self, scannable):
+        """Sets the scannable of this PrivateImageRepositoryInfo.
 
         是否可扫描
 
-        :param scanable: The scanable of this PrivateImageRepositoryInfo.
-        :type scanable: bool
+        :param scannable: The scannable of this PrivateImageRepositoryInfo.
+        :type scannable: bool
         """
-        self._scanable = scanable
+        self._scannable = scannable
 
     @property
     def association_images(self):

@@ -33,11 +33,11 @@ class ShowIndicatorDetailRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: ID of project
+        :param project_id: 项目ID
         :type project_id: str
-        :param workspace_id: workspace id
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param indicator_id: ID of indicator
+        :param indicator_id: 情报指标ID
         :type indicator_id: str
         """
         
@@ -56,7 +56,7 @@ class ShowIndicatorDetailRequest:
     def project_id(self):
         """Gets the project_id of this ShowIndicatorDetailRequest.
 
-        ID of project
+        项目ID
 
         :return: The project_id of this ShowIndicatorDetailRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowIndicatorDetailRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ShowIndicatorDetailRequest.
 
-        ID of project
+        项目ID
 
         :param project_id: The project_id of this ShowIndicatorDetailRequest.
         :type project_id: str
@@ -78,7 +78,7 @@ class ShowIndicatorDetailRequest:
     def workspace_id(self):
         """Gets the workspace_id of this ShowIndicatorDetailRequest.
 
-        workspace id
+        工作空间ID
 
         :return: The workspace_id of this ShowIndicatorDetailRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class ShowIndicatorDetailRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this ShowIndicatorDetailRequest.
 
-        workspace id
+        工作空间ID
 
         :param workspace_id: The workspace_id of this ShowIndicatorDetailRequest.
         :type workspace_id: str
@@ -100,7 +100,7 @@ class ShowIndicatorDetailRequest:
     def indicator_id(self):
         """Gets the indicator_id of this ShowIndicatorDetailRequest.
 
-        ID of indicator
+        情报指标ID
 
         :return: The indicator_id of this ShowIndicatorDetailRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ShowIndicatorDetailRequest:
     def indicator_id(self, indicator_id):
         """Sets the indicator_id of this ShowIndicatorDetailRequest.
 
-        ID of indicator
+        情报指标ID
 
         :param indicator_id: The indicator_id of this ShowIndicatorDetailRequest.
         :type indicator_id: str

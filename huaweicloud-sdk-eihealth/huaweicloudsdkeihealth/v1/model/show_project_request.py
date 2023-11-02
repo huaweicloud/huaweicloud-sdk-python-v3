@@ -37,7 +37,7 @@ class ShowProjectRequest:
         :type x_bucket_name: str
         :param x_namespace_name: X-Namespace
         :type x_namespace_name: str
-        :param eihealth_project_id: 医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        :param eihealth_project_id: 平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
         :type eihealth_project_id: str
         """
         
@@ -102,7 +102,7 @@ class ShowProjectRequest:
     def eihealth_project_id(self):
         """Gets the eihealth_project_id of this ShowProjectRequest.
 
-        医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
         :return: The eihealth_project_id of this ShowProjectRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class ShowProjectRequest:
     def eihealth_project_id(self, eihealth_project_id):
         """Sets the eihealth_project_id of this ShowProjectRequest.
 
-        医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
         :param eihealth_project_id: The eihealth_project_id of this ShowProjectRequest.
         :type eihealth_project_id: str

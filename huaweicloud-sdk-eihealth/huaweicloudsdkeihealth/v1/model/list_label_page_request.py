@@ -29,7 +29,7 @@ class ListLabelPageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param eihealth_project_id: 华为云项目ID，您可以从[获取项目ID](eihealth_33_0044.xml)中获取。
+        :param eihealth_project_id: 平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
         :type eihealth_project_id: str
         """
         
@@ -44,7 +44,7 @@ class ListLabelPageRequest:
     def eihealth_project_id(self):
         """Gets the eihealth_project_id of this ListLabelPageRequest.
 
-        华为云项目ID，您可以从[获取项目ID](eihealth_33_0044.xml)中获取。
+        平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
         :return: The eihealth_project_id of this ListLabelPageRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ListLabelPageRequest:
     def eihealth_project_id(self, eihealth_project_id):
         """Sets the eihealth_project_id of this ListLabelPageRequest.
 
-        华为云项目ID，您可以从[获取项目ID](eihealth_33_0044.xml)中获取。
+        平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
         :param eihealth_project_id: The eihealth_project_id of this ListLabelPageRequest.
         :type eihealth_project_id: str

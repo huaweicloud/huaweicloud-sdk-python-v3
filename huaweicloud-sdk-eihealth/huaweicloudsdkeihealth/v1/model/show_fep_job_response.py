@@ -23,7 +23,8 @@ class ShowFepJobResponse(SdkResponse):
         'ligands': 'list[LigandPreviewDto]',
         'graph': 'FepGraphDto',
         'params': 'FepParamDto',
-        'job_result': 'JobResult'
+        'job_result': 'JobResult',
+        'part_failed_reason': 'list[FailedReasonRecord]'
     }
 
     attribute_map = {
@@ -32,10 +33,11 @@ class ShowFepJobResponse(SdkResponse):
         'ligands': 'ligands',
         'graph': 'graph',
         'params': 'params',
-        'job_result': 'job_result'
+        'job_result': 'job_result',
+        'part_failed_reason': 'part_failed_reason'
     }
 
-    def __init__(self, basic_info=None, receptor=None, ligands=None, graph=None, params=None, job_result=None):
+    def __init__(self, basic_info=None, receptor=None, ligands=None, graph=None, params=None, job_result=None, part_failed_reason=None):
         """ShowFepJobResponse
 
         The model defined in huaweicloud sdk
@@ -52,6 +54,8 @@ class ShowFepJobResponse(SdkResponse):
         :type params: :class:`huaweicloudsdkeihealth.v1.FepParamDto`
         :param job_result: 
         :type job_result: :class:`huaweicloudsdkeihealth.v1.JobResult`
+        :param part_failed_reason: 部分失败原因和数量
+        :type part_failed_reason: list[:class:`huaweicloudsdkeihealth.v1.FailedReasonRecord`]
         """
         
         super(ShowFepJobResponse, self).__init__()
@@ -62,6 +66,7 @@ class ShowFepJobResponse(SdkResponse):
         self._graph = None
         self._params = None
         self._job_result = None
+        self._part_failed_reason = None
         self.discriminator = None
 
         if basic_info is not None:
@@ -76,6 +81,8 @@ class ShowFepJobResponse(SdkResponse):
             self.params = params
         if job_result is not None:
             self.job_result = job_result
+        if part_failed_reason is not None:
+            self.part_failed_reason = part_failed_reason
 
     @property
     def basic_info(self):
@@ -188,6 +195,28 @@ class ShowFepJobResponse(SdkResponse):
         :type job_result: :class:`huaweicloudsdkeihealth.v1.JobResult`
         """
         self._job_result = job_result
+
+    @property
+    def part_failed_reason(self):
+        """Gets the part_failed_reason of this ShowFepJobResponse.
+
+        部分失败原因和数量
+
+        :return: The part_failed_reason of this ShowFepJobResponse.
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.FailedReasonRecord`]
+        """
+        return self._part_failed_reason
+
+    @part_failed_reason.setter
+    def part_failed_reason(self, part_failed_reason):
+        """Sets the part_failed_reason of this ShowFepJobResponse.
+
+        部分失败原因和数量
+
+        :param part_failed_reason: The part_failed_reason of this ShowFepJobResponse.
+        :type part_failed_reason: list[:class:`huaweicloudsdkeihealth.v1.FailedReasonRecord`]
+        """
+        self._part_failed_reason = part_failed_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

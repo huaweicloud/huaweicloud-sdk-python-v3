@@ -17,92 +17,107 @@ class AlertDetail:
     sensitive_list = []
 
     openapi_types = {
-        'data_object': 'Alert',
         'create_time': 'str',
-        'update_time': 'str',
-        'project_id': 'str',
-        'workspace_id': 'str',
-        'id': 'str',
-        'type': 'str',
-        'version': 'int',
+        'data_object': 'Alert',
+        'dataclass_ref': 'AlertDetailDataclassRef',
         'format_version': 'int',
-        'dataclass_ref': 'ShowAlertDetailDataclassRef'
+        'id': 'str',
+        'project_id': 'str',
+        'update_time': 'str',
+        'version': 'int',
+        'workspace_id': 'str'
     }
 
     attribute_map = {
-        'data_object': 'data_object',
         'create_time': 'create_time',
-        'update_time': 'update_time',
-        'project_id': 'project_id',
-        'workspace_id': 'workspace_id',
-        'id': 'id',
-        'type': 'type',
-        'version': 'version',
+        'data_object': 'data_object',
+        'dataclass_ref': 'dataclass_ref',
         'format_version': 'format_version',
-        'dataclass_ref': 'dataclass_ref'
+        'id': 'id',
+        'project_id': 'project_id',
+        'update_time': 'update_time',
+        'version': 'version',
+        'workspace_id': 'workspace_id'
     }
 
-    def __init__(self, data_object=None, create_time=None, update_time=None, project_id=None, workspace_id=None, id=None, type=None, version=None, format_version=None, dataclass_ref=None):
+    def __init__(self, create_time=None, data_object=None, dataclass_ref=None, format_version=None, id=None, project_id=None, update_time=None, version=None, workspace_id=None):
         """AlertDetail
 
         The model defined in huaweicloud sdk
 
+        :param create_time: 记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
+        :type create_time: str
         :param data_object: 
         :type data_object: :class:`huaweicloudsdksecmaster.v2.Alert`
-        :param create_time: Create time
-        :type create_time: str
-        :param update_time: Update time
-        :type update_time: str
-        :param project_id: Id value
-        :type project_id: str
-        :param workspace_id: Id value
-        :type workspace_id: str
-        :param id: The name, display only
-        :type id: str
-        :param type: The name, display only
-        :type type: str
-        :param version: The name, display only
-        :type version: int
-        :param format_version: The name, display only
-        :type format_version: int
         :param dataclass_ref: 
-        :type dataclass_ref: :class:`huaweicloudsdksecmaster.v2.ShowAlertDetailDataclassRef`
+        :type dataclass_ref: :class:`huaweicloudsdksecmaster.v2.AlertDetailDataclassRef`
+        :param format_version: 格式版本
+        :type format_version: int
+        :param id: 事件唯一标识，UUID格式，最大36个字符
+        :type id: str
+        :param project_id: 当前项目的id
+        :type project_id: str
+        :param update_time: 更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
+        :type update_time: str
+        :param version: 版本
+        :type version: int
+        :param workspace_id: 当前的工作空间id
+        :type workspace_id: str
         """
         
         
 
-        self._data_object = None
         self._create_time = None
-        self._update_time = None
-        self._project_id = None
-        self._workspace_id = None
-        self._id = None
-        self._type = None
-        self._version = None
-        self._format_version = None
+        self._data_object = None
         self._dataclass_ref = None
+        self._format_version = None
+        self._id = None
+        self._project_id = None
+        self._update_time = None
+        self._version = None
+        self._workspace_id = None
         self.discriminator = None
 
-        if data_object is not None:
-            self.data_object = data_object
         if create_time is not None:
             self.create_time = create_time
-        if update_time is not None:
-            self.update_time = update_time
-        if project_id is not None:
-            self.project_id = project_id
-        if workspace_id is not None:
-            self.workspace_id = workspace_id
-        if id is not None:
-            self.id = id
-        if type is not None:
-            self.type = type
-        if version is not None:
-            self.version = version
-        if format_version is not None:
-            self.format_version = format_version
+        if data_object is not None:
+            self.data_object = data_object
         if dataclass_ref is not None:
             self.dataclass_ref = dataclass_ref
+        if format_version is not None:
+            self.format_version = format_version
+        if id is not None:
+            self.id = id
+        if project_id is not None:
+            self.project_id = project_id
+        if update_time is not None:
+            self.update_time = update_time
+        if version is not None:
+            self.version = version
+        if workspace_id is not None:
+            self.workspace_id = workspace_id
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this AlertDetail.
+
+        记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
+
+        :return: The create_time of this AlertDetail.
+        :rtype: str
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this AlertDetail.
+
+        记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
+
+        :param create_time: The create_time of this AlertDetail.
+        :type create_time: str
+        """
+        self._create_time = create_time
 
     @property
     def data_object(self):
@@ -123,164 +138,28 @@ class AlertDetail:
         self._data_object = data_object
 
     @property
-    def create_time(self):
-        """Gets the create_time of this AlertDetail.
+    def dataclass_ref(self):
+        """Gets the dataclass_ref of this AlertDetail.
 
-        Create time
-
-        :return: The create_time of this AlertDetail.
-        :rtype: str
+        :return: The dataclass_ref of this AlertDetail.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.AlertDetailDataclassRef`
         """
-        return self._create_time
+        return self._dataclass_ref
 
-    @create_time.setter
-    def create_time(self, create_time):
-        """Sets the create_time of this AlertDetail.
+    @dataclass_ref.setter
+    def dataclass_ref(self, dataclass_ref):
+        """Sets the dataclass_ref of this AlertDetail.
 
-        Create time
-
-        :param create_time: The create_time of this AlertDetail.
-        :type create_time: str
+        :param dataclass_ref: The dataclass_ref of this AlertDetail.
+        :type dataclass_ref: :class:`huaweicloudsdksecmaster.v2.AlertDetailDataclassRef`
         """
-        self._create_time = create_time
-
-    @property
-    def update_time(self):
-        """Gets the update_time of this AlertDetail.
-
-        Update time
-
-        :return: The update_time of this AlertDetail.
-        :rtype: str
-        """
-        return self._update_time
-
-    @update_time.setter
-    def update_time(self, update_time):
-        """Sets the update_time of this AlertDetail.
-
-        Update time
-
-        :param update_time: The update_time of this AlertDetail.
-        :type update_time: str
-        """
-        self._update_time = update_time
-
-    @property
-    def project_id(self):
-        """Gets the project_id of this AlertDetail.
-
-        Id value
-
-        :return: The project_id of this AlertDetail.
-        :rtype: str
-        """
-        return self._project_id
-
-    @project_id.setter
-    def project_id(self, project_id):
-        """Sets the project_id of this AlertDetail.
-
-        Id value
-
-        :param project_id: The project_id of this AlertDetail.
-        :type project_id: str
-        """
-        self._project_id = project_id
-
-    @property
-    def workspace_id(self):
-        """Gets the workspace_id of this AlertDetail.
-
-        Id value
-
-        :return: The workspace_id of this AlertDetail.
-        :rtype: str
-        """
-        return self._workspace_id
-
-    @workspace_id.setter
-    def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this AlertDetail.
-
-        Id value
-
-        :param workspace_id: The workspace_id of this AlertDetail.
-        :type workspace_id: str
-        """
-        self._workspace_id = workspace_id
-
-    @property
-    def id(self):
-        """Gets the id of this AlertDetail.
-
-        The name, display only
-
-        :return: The id of this AlertDetail.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this AlertDetail.
-
-        The name, display only
-
-        :param id: The id of this AlertDetail.
-        :type id: str
-        """
-        self._id = id
-
-    @property
-    def type(self):
-        """Gets the type of this AlertDetail.
-
-        The name, display only
-
-        :return: The type of this AlertDetail.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this AlertDetail.
-
-        The name, display only
-
-        :param type: The type of this AlertDetail.
-        :type type: str
-        """
-        self._type = type
-
-    @property
-    def version(self):
-        """Gets the version of this AlertDetail.
-
-        The name, display only
-
-        :return: The version of this AlertDetail.
-        :rtype: int
-        """
-        return self._version
-
-    @version.setter
-    def version(self, version):
-        """Sets the version of this AlertDetail.
-
-        The name, display only
-
-        :param version: The version of this AlertDetail.
-        :type version: int
-        """
-        self._version = version
+        self._dataclass_ref = dataclass_ref
 
     @property
     def format_version(self):
         """Gets the format_version of this AlertDetail.
 
-        The name, display only
+        格式版本
 
         :return: The format_version of this AlertDetail.
         :rtype: int
@@ -291,7 +170,7 @@ class AlertDetail:
     def format_version(self, format_version):
         """Sets the format_version of this AlertDetail.
 
-        The name, display only
+        格式版本
 
         :param format_version: The format_version of this AlertDetail.
         :type format_version: int
@@ -299,22 +178,114 @@ class AlertDetail:
         self._format_version = format_version
 
     @property
-    def dataclass_ref(self):
-        """Gets the dataclass_ref of this AlertDetail.
+    def id(self):
+        """Gets the id of this AlertDetail.
 
-        :return: The dataclass_ref of this AlertDetail.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowAlertDetailDataclassRef`
+        事件唯一标识，UUID格式，最大36个字符
+
+        :return: The id of this AlertDetail.
+        :rtype: str
         """
-        return self._dataclass_ref
+        return self._id
 
-    @dataclass_ref.setter
-    def dataclass_ref(self, dataclass_ref):
-        """Sets the dataclass_ref of this AlertDetail.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this AlertDetail.
 
-        :param dataclass_ref: The dataclass_ref of this AlertDetail.
-        :type dataclass_ref: :class:`huaweicloudsdksecmaster.v2.ShowAlertDetailDataclassRef`
+        事件唯一标识，UUID格式，最大36个字符
+
+        :param id: The id of this AlertDetail.
+        :type id: str
         """
-        self._dataclass_ref = dataclass_ref
+        self._id = id
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this AlertDetail.
+
+        当前项目的id
+
+        :return: The project_id of this AlertDetail.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this AlertDetail.
+
+        当前项目的id
+
+        :param project_id: The project_id of this AlertDetail.
+        :type project_id: str
+        """
+        self._project_id = project_id
+
+    @property
+    def update_time(self):
+        """Gets the update_time of this AlertDetail.
+
+        更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
+
+        :return: The update_time of this AlertDetail.
+        :rtype: str
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        """Sets the update_time of this AlertDetail.
+
+        更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
+
+        :param update_time: The update_time of this AlertDetail.
+        :type update_time: str
+        """
+        self._update_time = update_time
+
+    @property
+    def version(self):
+        """Gets the version of this AlertDetail.
+
+        版本
+
+        :return: The version of this AlertDetail.
+        :rtype: int
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this AlertDetail.
+
+        版本
+
+        :param version: The version of this AlertDetail.
+        :type version: int
+        """
+        self._version = version
+
+    @property
+    def workspace_id(self):
+        """Gets the workspace_id of this AlertDetail.
+
+        当前的工作空间id
+
+        :return: The workspace_id of this AlertDetail.
+        :rtype: str
+        """
+        return self._workspace_id
+
+    @workspace_id.setter
+    def workspace_id(self, workspace_id):
+        """Sets the workspace_id of this AlertDetail.
+
+        当前的工作空间id
+
+        :param workspace_id: The workspace_id of this AlertDetail.
+        :type workspace_id: str
+        """
+        self._workspace_id = workspace_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

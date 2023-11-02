@@ -42,17 +42,17 @@ class ListPlaybookActionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: Error code
+        :param code: 错误码
         :type code: str
-        :param message: Error message
+        :param message: 错误信息
         :type message: str
-        :param total: tatal count
+        :param total: 总数
         :type total: int
-        :param size: current page count
+        :param size: 分页大小
         :type size: int
-        :param page: current page size
+        :param page: 当前页数
         :type page: int
-        :param data: list of informations of playbook action
+        :param data: 剧本动作列表信息
         :type data: list[:class:`huaweicloudsdksecmaster.v2.ActionInfo`]
         :param x_request_id: 
         :type x_request_id: str
@@ -88,7 +88,7 @@ class ListPlaybookActionsResponse(SdkResponse):
     def code(self):
         """Gets the code of this ListPlaybookActionsResponse.
 
-        Error code
+        错误码
 
         :return: The code of this ListPlaybookActionsResponse.
         :rtype: str
@@ -99,7 +99,7 @@ class ListPlaybookActionsResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ListPlaybookActionsResponse.
 
-        Error code
+        错误码
 
         :param code: The code of this ListPlaybookActionsResponse.
         :type code: str
@@ -110,7 +110,7 @@ class ListPlaybookActionsResponse(SdkResponse):
     def message(self):
         """Gets the message of this ListPlaybookActionsResponse.
 
-        Error message
+        错误信息
 
         :return: The message of this ListPlaybookActionsResponse.
         :rtype: str
@@ -121,7 +121,7 @@ class ListPlaybookActionsResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ListPlaybookActionsResponse.
 
-        Error message
+        错误信息
 
         :param message: The message of this ListPlaybookActionsResponse.
         :type message: str
@@ -132,7 +132,7 @@ class ListPlaybookActionsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListPlaybookActionsResponse.
 
-        tatal count
+        总数
 
         :return: The total of this ListPlaybookActionsResponse.
         :rtype: int
@@ -143,7 +143,7 @@ class ListPlaybookActionsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListPlaybookActionsResponse.
 
-        tatal count
+        总数
 
         :param total: The total of this ListPlaybookActionsResponse.
         :type total: int
@@ -154,7 +154,7 @@ class ListPlaybookActionsResponse(SdkResponse):
     def size(self):
         """Gets the size of this ListPlaybookActionsResponse.
 
-        current page count
+        分页大小
 
         :return: The size of this ListPlaybookActionsResponse.
         :rtype: int
@@ -165,7 +165,7 @@ class ListPlaybookActionsResponse(SdkResponse):
     def size(self, size):
         """Sets the size of this ListPlaybookActionsResponse.
 
-        current page count
+        分页大小
 
         :param size: The size of this ListPlaybookActionsResponse.
         :type size: int
@@ -176,7 +176,7 @@ class ListPlaybookActionsResponse(SdkResponse):
     def page(self):
         """Gets the page of this ListPlaybookActionsResponse.
 
-        current page size
+        当前页数
 
         :return: The page of this ListPlaybookActionsResponse.
         :rtype: int
@@ -187,7 +187,7 @@ class ListPlaybookActionsResponse(SdkResponse):
     def page(self, page):
         """Sets the page of this ListPlaybookActionsResponse.
 
-        current page size
+        当前页数
 
         :param page: The page of this ListPlaybookActionsResponse.
         :type page: int
@@ -198,7 +198,7 @@ class ListPlaybookActionsResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListPlaybookActionsResponse.
 
-        list of informations of playbook action
+        剧本动作列表信息
 
         :return: The data of this ListPlaybookActionsResponse.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.ActionInfo`]
@@ -209,7 +209,7 @@ class ListPlaybookActionsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListPlaybookActionsResponse.
 
-        list of informations of playbook action
+        剧本动作列表信息
 
         :param data: The data of this ListPlaybookActionsResponse.
         :type data: list[:class:`huaweicloudsdksecmaster.v2.ActionInfo`]

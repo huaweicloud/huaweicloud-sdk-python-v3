@@ -36,7 +36,7 @@ class ShowPlaybookVersionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: Error code
+        :param code: 错误码
         :type code: str
         :param message: Error message
         :type message: str
@@ -67,7 +67,7 @@ class ShowPlaybookVersionResponse(SdkResponse):
     def code(self):
         """Gets the code of this ShowPlaybookVersionResponse.
 
-        Error code
+        错误码
 
         :return: The code of this ShowPlaybookVersionResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowPlaybookVersionResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ShowPlaybookVersionResponse.
 
-        Error code
+        错误码
 
         :param code: The code of this ShowPlaybookVersionResponse.
         :type code: str

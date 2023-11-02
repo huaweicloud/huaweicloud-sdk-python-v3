@@ -37,13 +37,13 @@ class UpdatePlaybookRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: ID of project
+        :param project_id: 项目ID
         :type project_id: str
-        :param workspace_id: ID of workspace
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param version_id: version Id value
+        :param version_id: 剧本版本ID
         :type version_id: str
-        :param rule_id: rule_id
+        :param rule_id: 剧本规则ID
         :type rule_id: str
         :param body: Body of the UpdatePlaybookRuleRequest
         :type body: :class:`huaweicloudsdksecmaster.v2.ModifyRuleInfo`
@@ -69,7 +69,7 @@ class UpdatePlaybookRuleRequest:
     def project_id(self):
         """Gets the project_id of this UpdatePlaybookRuleRequest.
 
-        ID of project
+        项目ID
 
         :return: The project_id of this UpdatePlaybookRuleRequest.
         :rtype: str
@@ -80,7 +80,7 @@ class UpdatePlaybookRuleRequest:
     def project_id(self, project_id):
         """Sets the project_id of this UpdatePlaybookRuleRequest.
 
-        ID of project
+        项目ID
 
         :param project_id: The project_id of this UpdatePlaybookRuleRequest.
         :type project_id: str
@@ -91,7 +91,7 @@ class UpdatePlaybookRuleRequest:
     def workspace_id(self):
         """Gets the workspace_id of this UpdatePlaybookRuleRequest.
 
-        ID of workspace
+        工作空间ID
 
         :return: The workspace_id of this UpdatePlaybookRuleRequest.
         :rtype: str
@@ -102,7 +102,7 @@ class UpdatePlaybookRuleRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this UpdatePlaybookRuleRequest.
 
-        ID of workspace
+        工作空间ID
 
         :param workspace_id: The workspace_id of this UpdatePlaybookRuleRequest.
         :type workspace_id: str
@@ -113,7 +113,7 @@ class UpdatePlaybookRuleRequest:
     def version_id(self):
         """Gets the version_id of this UpdatePlaybookRuleRequest.
 
-        version Id value
+        剧本版本ID
 
         :return: The version_id of this UpdatePlaybookRuleRequest.
         :rtype: str
@@ -124,7 +124,7 @@ class UpdatePlaybookRuleRequest:
     def version_id(self, version_id):
         """Sets the version_id of this UpdatePlaybookRuleRequest.
 
-        version Id value
+        剧本版本ID
 
         :param version_id: The version_id of this UpdatePlaybookRuleRequest.
         :type version_id: str
@@ -135,7 +135,7 @@ class UpdatePlaybookRuleRequest:
     def rule_id(self):
         """Gets the rule_id of this UpdatePlaybookRuleRequest.
 
-        rule_id
+        剧本规则ID
 
         :return: The rule_id of this UpdatePlaybookRuleRequest.
         :rtype: str
@@ -146,7 +146,7 @@ class UpdatePlaybookRuleRequest:
     def rule_id(self, rule_id):
         """Sets the rule_id of this UpdatePlaybookRuleRequest.
 
-        rule_id
+        剧本规则ID
 
         :param rule_id: The rule_id of this UpdatePlaybookRuleRequest.
         :type rule_id: str

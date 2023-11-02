@@ -585,6 +585,67 @@ class DrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def collect_position_async_async(self, request):
+        """采集数据库位点信息
+
+        采集数据库位点信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CollectPositionAsync
+        :type request: :class:`huaweicloudsdkdrs.v5.CollectPositionAsyncRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.CollectPositionAsyncResponse`
+        """
+        return self._collect_position_async_with_http_info(request)
+
+    def _collect_position_async_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/jobs/{job_id}/collect-db-position',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CollectPositionAsyncResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def commit_async_job_async(self, request):
         """提交批量创建异步任务
 
@@ -2716,6 +2777,67 @@ class DrsAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowObjectMappingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_position_result_async(self, request):
+        """获取查询数据库位点的结果
+
+        获取查询数据库位点的结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPositionResult
+        :type request: :class:`huaweicloudsdkdrs.v5.ShowPositionResultRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v5.ShowPositionResultResponse`
+        """
+        return self._show_position_result_with_http_info(request)
+
+    def _show_position_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'query_id' in local_var_params:
+            query_params.append(('query_id', local_var_params['query_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/jobs/{job_id}/db-position',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowPositionResultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

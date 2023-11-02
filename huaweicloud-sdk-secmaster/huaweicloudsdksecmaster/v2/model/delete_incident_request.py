@@ -19,7 +19,7 @@ class DeleteIncidentRequest:
     openapi_types = {
         'project_id': 'str',
         'workspace_id': 'str',
-        'body': 'DeleteIncident'
+        'body': 'DeleteIncidentRequestBody'
     }
 
     attribute_map = {
@@ -33,12 +33,12 @@ class DeleteIncidentRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: ID of project
+        :param project_id: 项目id
         :type project_id: str
-        :param workspace_id: ID of workspace
+        :param workspace_id: 工作空间id
         :type workspace_id: str
         :param body: Body of the DeleteIncidentRequest
-        :type body: :class:`huaweicloudsdksecmaster.v2.DeleteIncident`
+        :type body: :class:`huaweicloudsdksecmaster.v2.DeleteIncidentRequestBody`
         """
         
         
@@ -57,7 +57,7 @@ class DeleteIncidentRequest:
     def project_id(self):
         """Gets the project_id of this DeleteIncidentRequest.
 
-        ID of project
+        项目id
 
         :return: The project_id of this DeleteIncidentRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class DeleteIncidentRequest:
     def project_id(self, project_id):
         """Sets the project_id of this DeleteIncidentRequest.
 
-        ID of project
+        项目id
 
         :param project_id: The project_id of this DeleteIncidentRequest.
         :type project_id: str
@@ -79,7 +79,7 @@ class DeleteIncidentRequest:
     def workspace_id(self):
         """Gets the workspace_id of this DeleteIncidentRequest.
 
-        ID of workspace
+        工作空间id
 
         :return: The workspace_id of this DeleteIncidentRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class DeleteIncidentRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this DeleteIncidentRequest.
 
-        ID of workspace
+        工作空间id
 
         :param workspace_id: The workspace_id of this DeleteIncidentRequest.
         :type workspace_id: str
@@ -102,7 +102,7 @@ class DeleteIncidentRequest:
         """Gets the body of this DeleteIncidentRequest.
 
         :return: The body of this DeleteIncidentRequest.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteIncident`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteIncidentRequestBody`
         """
         return self._body
 
@@ -111,7 +111,7 @@ class DeleteIncidentRequest:
         """Sets the body of this DeleteIncidentRequest.
 
         :param body: The body of this DeleteIncidentRequest.
-        :type body: :class:`huaweicloudsdksecmaster.v2.DeleteIncident`
+        :type body: :class:`huaweicloudsdksecmaster.v2.DeleteIncidentRequestBody`
         """
         self._body = body
 

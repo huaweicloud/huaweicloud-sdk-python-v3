@@ -18,7 +18,7 @@ class ImportPrivateKeyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'keypair': 'KeypairBean'
+        'keypair': 'ImportPrivateKeyAction'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class ImportPrivateKeyResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param keypair: 
-        :type keypair: :class:`huaweicloudsdkkps.v3.KeypairBean`
+        :type keypair: :class:`huaweicloudsdkkps.v3.ImportPrivateKeyAction`
         """
         
         super(ImportPrivateKeyResponse, self).__init__()
@@ -47,7 +47,7 @@ class ImportPrivateKeyResponse(SdkResponse):
         """Gets the keypair of this ImportPrivateKeyResponse.
 
         :return: The keypair of this ImportPrivateKeyResponse.
-        :rtype: :class:`huaweicloudsdkkps.v3.KeypairBean`
+        :rtype: :class:`huaweicloudsdkkps.v3.ImportPrivateKeyAction`
         """
         return self._keypair
 
@@ -56,7 +56,7 @@ class ImportPrivateKeyResponse(SdkResponse):
         """Sets the keypair of this ImportPrivateKeyResponse.
 
         :param keypair: The keypair of this ImportPrivateKeyResponse.
-        :type keypair: :class:`huaweicloudsdkkps.v3.KeypairBean`
+        :type keypair: :class:`huaweicloudsdkkps.v3.ImportPrivateKeyAction`
         """
         self._keypair = keypair
 

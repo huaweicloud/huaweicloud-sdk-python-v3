@@ -17,6 +17,7 @@ class WeakConstraintDto:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'name': 'str',
         'type': 'WeakConstraintType',
         'bool': 'bool',
@@ -26,6 +27,7 @@ class WeakConstraintDto:
     }
 
     attribute_map = {
+        'id': 'id',
         'name': 'name',
         'type': 'type',
         'bool': 'bool',
@@ -34,11 +36,13 @@ class WeakConstraintDto:
         'quantiles': 'quantiles'
     }
 
-    def __init__(self, name=None, type=None, bool=None, range=None, struct=None, quantiles=None):
+    def __init__(self, id=None, name=None, type=None, bool=None, range=None, struct=None, quantiles=None):
         """WeakConstraintDto
 
         The model defined in huaweicloud sdk
 
+        :param id: 自定义模型id，仅弱约束为模型时填写
+        :type id: str
         :param name: 属性名称
         :type name: str
         :param type: 
@@ -55,6 +59,7 @@ class WeakConstraintDto:
         
         
 
+        self._id = None
         self._name = None
         self._type = None
         self._bool = None
@@ -63,6 +68,8 @@ class WeakConstraintDto:
         self._quantiles = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if name is not None:
             self.name = name
         self.type = type
@@ -74,6 +81,28 @@ class WeakConstraintDto:
             self.struct = struct
         if quantiles is not None:
             self.quantiles = quantiles
+
+    @property
+    def id(self):
+        """Gets the id of this WeakConstraintDto.
+
+        自定义模型id，仅弱约束为模型时填写
+
+        :return: The id of this WeakConstraintDto.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this WeakConstraintDto.
+
+        自定义模型id，仅弱约束为模型时填写
+
+        :param id: The id of this WeakConstraintDto.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def name(self):

@@ -20,22 +20,28 @@ class ShowOptmJobResponse(SdkResponse):
     openapi_types = {
         'basic_info': 'DrugJobDto',
         'smiles': 'str',
+        'molecule_file': 'DrugFile',
         'num_trials': 'int',
         'binding_site': 'BindSiteDto',
         'weak_constraints': 'list[WeakConstraintDto]',
-        'strong_constraints': 'list[StrongConstraintDto]'
+        'strong_constraints': 'list[StrongConstraintDto]',
+        'sampler_mixin_weight': 'float',
+        'models': 'list[BasicDrugModel]'
     }
 
     attribute_map = {
         'basic_info': 'basic_info',
         'smiles': 'smiles',
+        'molecule_file': 'molecule_file',
         'num_trials': 'num_trials',
         'binding_site': 'binding_site',
         'weak_constraints': 'weak_constraints',
-        'strong_constraints': 'strong_constraints'
+        'strong_constraints': 'strong_constraints',
+        'sampler_mixin_weight': 'sampler_mixin_weight',
+        'models': 'models'
     }
 
-    def __init__(self, basic_info=None, smiles=None, num_trials=None, binding_site=None, weak_constraints=None, strong_constraints=None):
+    def __init__(self, basic_info=None, smiles=None, molecule_file=None, num_trials=None, binding_site=None, weak_constraints=None, strong_constraints=None, sampler_mixin_weight=None, models=None):
         """ShowOptmJobResponse
 
         The model defined in huaweicloud sdk
@@ -44,6 +50,8 @@ class ShowOptmJobResponse(SdkResponse):
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
         :param smiles: 分子SMILES表达式
         :type smiles: str
+        :param molecule_file: 
+        :type molecule_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
         :param num_trials: 生成分子数量
         :type num_trials: int
         :param binding_site: 
@@ -52,22 +60,31 @@ class ShowOptmJobResponse(SdkResponse):
         :type weak_constraints: list[:class:`huaweicloudsdkeihealth.v1.WeakConstraintDto`]
         :param strong_constraints: 强约束集合
         :type strong_constraints: list[:class:`huaweicloudsdkeihealth.v1.StrongConstraintDto`]
+        :param sampler_mixin_weight: 初始化采样权重
+        :type sampler_mixin_weight: float
+        :param models: 模型列表
+        :type models: list[:class:`huaweicloudsdkeihealth.v1.BasicDrugModel`]
         """
         
         super(ShowOptmJobResponse, self).__init__()
 
         self._basic_info = None
         self._smiles = None
+        self._molecule_file = None
         self._num_trials = None
         self._binding_site = None
         self._weak_constraints = None
         self._strong_constraints = None
+        self._sampler_mixin_weight = None
+        self._models = None
         self.discriminator = None
 
         if basic_info is not None:
             self.basic_info = basic_info
         if smiles is not None:
             self.smiles = smiles
+        if molecule_file is not None:
+            self.molecule_file = molecule_file
         if num_trials is not None:
             self.num_trials = num_trials
         if binding_site is not None:
@@ -76,6 +93,10 @@ class ShowOptmJobResponse(SdkResponse):
             self.weak_constraints = weak_constraints
         if strong_constraints is not None:
             self.strong_constraints = strong_constraints
+        if sampler_mixin_weight is not None:
+            self.sampler_mixin_weight = sampler_mixin_weight
+        if models is not None:
+            self.models = models
 
     @property
     def basic_info(self):
@@ -116,6 +137,24 @@ class ShowOptmJobResponse(SdkResponse):
         :type smiles: str
         """
         self._smiles = smiles
+
+    @property
+    def molecule_file(self):
+        """Gets the molecule_file of this ShowOptmJobResponse.
+
+        :return: The molecule_file of this ShowOptmJobResponse.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFile`
+        """
+        return self._molecule_file
+
+    @molecule_file.setter
+    def molecule_file(self, molecule_file):
+        """Sets the molecule_file of this ShowOptmJobResponse.
+
+        :param molecule_file: The molecule_file of this ShowOptmJobResponse.
+        :type molecule_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
+        """
+        self._molecule_file = molecule_file
 
     @property
     def num_trials(self):
@@ -200,6 +239,50 @@ class ShowOptmJobResponse(SdkResponse):
         :type strong_constraints: list[:class:`huaweicloudsdkeihealth.v1.StrongConstraintDto`]
         """
         self._strong_constraints = strong_constraints
+
+    @property
+    def sampler_mixin_weight(self):
+        """Gets the sampler_mixin_weight of this ShowOptmJobResponse.
+
+        初始化采样权重
+
+        :return: The sampler_mixin_weight of this ShowOptmJobResponse.
+        :rtype: float
+        """
+        return self._sampler_mixin_weight
+
+    @sampler_mixin_weight.setter
+    def sampler_mixin_weight(self, sampler_mixin_weight):
+        """Sets the sampler_mixin_weight of this ShowOptmJobResponse.
+
+        初始化采样权重
+
+        :param sampler_mixin_weight: The sampler_mixin_weight of this ShowOptmJobResponse.
+        :type sampler_mixin_weight: float
+        """
+        self._sampler_mixin_weight = sampler_mixin_weight
+
+    @property
+    def models(self):
+        """Gets the models of this ShowOptmJobResponse.
+
+        模型列表
+
+        :return: The models of this ShowOptmJobResponse.
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.BasicDrugModel`]
+        """
+        return self._models
+
+    @models.setter
+    def models(self, models):
+        """Sets the models of this ShowOptmJobResponse.
+
+        模型列表
+
+        :param models: The models of this ShowOptmJobResponse.
+        :type models: list[:class:`huaweicloudsdkeihealth.v1.BasicDrugModel`]
+        """
+        self._models = models
 
     def to_dict(self):
         """Returns the model properties as a dict"""

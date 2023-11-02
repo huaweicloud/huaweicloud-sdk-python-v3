@@ -36,11 +36,11 @@ class ListPlaybookApprovesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: Error code
+        :param code: 错误码
         :type code: str
-        :param message: Error message
+        :param message: 响应消息
         :type message: str
-        :param data: 
+        :param data: 剧本审核详情
         :type data: list[:class:`huaweicloudsdksecmaster.v2.ApproveOpinionDetail`]
         :param x_request_id: 
         :type x_request_id: str
@@ -67,7 +67,7 @@ class ListPlaybookApprovesResponse(SdkResponse):
     def code(self):
         """Gets the code of this ListPlaybookApprovesResponse.
 
-        Error code
+        错误码
 
         :return: The code of this ListPlaybookApprovesResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ListPlaybookApprovesResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ListPlaybookApprovesResponse.
 
-        Error code
+        错误码
 
         :param code: The code of this ListPlaybookApprovesResponse.
         :type code: str
@@ -89,7 +89,7 @@ class ListPlaybookApprovesResponse(SdkResponse):
     def message(self):
         """Gets the message of this ListPlaybookApprovesResponse.
 
-        Error message
+        响应消息
 
         :return: The message of this ListPlaybookApprovesResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class ListPlaybookApprovesResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ListPlaybookApprovesResponse.
 
-        Error message
+        响应消息
 
         :param message: The message of this ListPlaybookApprovesResponse.
         :type message: str
@@ -111,6 +111,8 @@ class ListPlaybookApprovesResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListPlaybookApprovesResponse.
 
+        剧本审核详情
+
         :return: The data of this ListPlaybookApprovesResponse.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.ApproveOpinionDetail`]
         """
@@ -119,6 +121,8 @@ class ListPlaybookApprovesResponse(SdkResponse):
     @data.setter
     def data(self, data):
         """Sets the data of this ListPlaybookApprovesResponse.
+
+        剧本审核详情
 
         :param data: The data of this ListPlaybookApprovesResponse.
         :type data: list[:class:`huaweicloudsdksecmaster.v2.ApproveOpinionDetail`]

@@ -36,6 +36,7 @@ from huaweicloudsdkkps.v3.model.export_private_key_request import ExportPrivateK
 from huaweicloudsdkkps.v3.model.export_private_key_request_body import ExportPrivateKeyRequestBody
 from huaweicloudsdkkps.v3.model.export_private_key_response import ExportPrivateKeyResponse
 from huaweicloudsdkkps.v3.model.failed_tasks import FailedTasks
+from huaweicloudsdkkps.v3.model.import_private_key_action import ImportPrivateKeyAction
 from huaweicloudsdkkps.v3.model.import_private_key_keypair_bean import ImportPrivateKeyKeypairBean
 from huaweicloudsdkkps.v3.model.import_private_key_protection import ImportPrivateKeyProtection
 from huaweicloudsdkkps.v3.model.import_private_key_request import ImportPrivateKeyRequest

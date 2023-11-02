@@ -54,29 +54,29 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param template_id: template_id
+        :param template_id: 告警规则模板 ID。Alert rule template ID.
         :type template_id: str
-        :param update_time: update_time
+        :param update_time: 更新时间。Update time.
         :type update_time: int
-        :param template_name: template_name
+        :param template_name: 告警规则模板名称。Alert rule template name.
         :type template_name: str
-        :param data_source: data_source
+        :param data_source: 数据源。Data source.
         :type data_source: str
-        :param version: version
+        :param version: 版本。Version
         :type version: str
-        :param query: query
+        :param query: 查询语句。Query.
         :type query: str
-        :param query_type: query_type. SQL, CBSL.
+        :param query_type: 查询语法，SQL。Query type. SQL.
         :type query_type: str
-        :param severity: severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        :param severity: 严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
         :type severity: str
-        :param custom_properties: custom_properties
+        :param custom_properties: 自定义扩展信息。Custom properties.
         :type custom_properties: dict(str, str)
-        :param event_grouping: event_grouping
+        :param event_grouping: 告警分组。Event grouping.
         :type event_grouping: bool
         :param schedule: 
         :type schedule: :class:`huaweicloudsdksecmaster.v2.Schedule`
-        :param triggers: triggers
+        :param triggers: 告警触发规则。Alert triggers.
         :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
         :param x_request_id: 
         :type x_request_id: str
@@ -130,7 +130,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def template_id(self):
         """Gets the template_id of this ShowAlertRuleTemplateResponse.
 
-        template_id
+        告警规则模板 ID。Alert rule template ID.
 
         :return: The template_id of this ShowAlertRuleTemplateResponse.
         :rtype: str
@@ -141,7 +141,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def template_id(self, template_id):
         """Sets the template_id of this ShowAlertRuleTemplateResponse.
 
-        template_id
+        告警规则模板 ID。Alert rule template ID.
 
         :param template_id: The template_id of this ShowAlertRuleTemplateResponse.
         :type template_id: str
@@ -152,7 +152,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def update_time(self):
         """Gets the update_time of this ShowAlertRuleTemplateResponse.
 
-        update_time
+        更新时间。Update time.
 
         :return: The update_time of this ShowAlertRuleTemplateResponse.
         :rtype: int
@@ -163,7 +163,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def update_time(self, update_time):
         """Sets the update_time of this ShowAlertRuleTemplateResponse.
 
-        update_time
+        更新时间。Update time.
 
         :param update_time: The update_time of this ShowAlertRuleTemplateResponse.
         :type update_time: int
@@ -174,7 +174,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def template_name(self):
         """Gets the template_name of this ShowAlertRuleTemplateResponse.
 
-        template_name
+        告警规则模板名称。Alert rule template name.
 
         :return: The template_name of this ShowAlertRuleTemplateResponse.
         :rtype: str
@@ -185,7 +185,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def template_name(self, template_name):
         """Sets the template_name of this ShowAlertRuleTemplateResponse.
 
-        template_name
+        告警规则模板名称。Alert rule template name.
 
         :param template_name: The template_name of this ShowAlertRuleTemplateResponse.
         :type template_name: str
@@ -196,7 +196,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def data_source(self):
         """Gets the data_source of this ShowAlertRuleTemplateResponse.
 
-        data_source
+        数据源。Data source.
 
         :return: The data_source of this ShowAlertRuleTemplateResponse.
         :rtype: str
@@ -207,7 +207,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def data_source(self, data_source):
         """Sets the data_source of this ShowAlertRuleTemplateResponse.
 
-        data_source
+        数据源。Data source.
 
         :param data_source: The data_source of this ShowAlertRuleTemplateResponse.
         :type data_source: str
@@ -218,7 +218,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def version(self):
         """Gets the version of this ShowAlertRuleTemplateResponse.
 
-        version
+        版本。Version
 
         :return: The version of this ShowAlertRuleTemplateResponse.
         :rtype: str
@@ -229,7 +229,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def version(self, version):
         """Sets the version of this ShowAlertRuleTemplateResponse.
 
-        version
+        版本。Version
 
         :param version: The version of this ShowAlertRuleTemplateResponse.
         :type version: str
@@ -240,7 +240,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def query(self):
         """Gets the query of this ShowAlertRuleTemplateResponse.
 
-        query
+        查询语句。Query.
 
         :return: The query of this ShowAlertRuleTemplateResponse.
         :rtype: str
@@ -251,7 +251,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def query(self, query):
         """Sets the query of this ShowAlertRuleTemplateResponse.
 
-        query
+        查询语句。Query.
 
         :param query: The query of this ShowAlertRuleTemplateResponse.
         :type query: str
@@ -262,7 +262,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def query_type(self):
         """Gets the query_type of this ShowAlertRuleTemplateResponse.
 
-        query_type. SQL, CBSL.
+        查询语法，SQL。Query type. SQL.
 
         :return: The query_type of this ShowAlertRuleTemplateResponse.
         :rtype: str
@@ -273,7 +273,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def query_type(self, query_type):
         """Sets the query_type of this ShowAlertRuleTemplateResponse.
 
-        query_type. SQL, CBSL.
+        查询语法，SQL。Query type. SQL.
 
         :param query_type: The query_type of this ShowAlertRuleTemplateResponse.
         :type query_type: str
@@ -284,7 +284,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def severity(self):
         """Gets the severity of this ShowAlertRuleTemplateResponse.
 
-        severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
         :return: The severity of this ShowAlertRuleTemplateResponse.
         :rtype: str
@@ -295,7 +295,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def severity(self, severity):
         """Sets the severity of this ShowAlertRuleTemplateResponse.
 
-        severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
         :param severity: The severity of this ShowAlertRuleTemplateResponse.
         :type severity: str
@@ -306,7 +306,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def custom_properties(self):
         """Gets the custom_properties of this ShowAlertRuleTemplateResponse.
 
-        custom_properties
+        自定义扩展信息。Custom properties.
 
         :return: The custom_properties of this ShowAlertRuleTemplateResponse.
         :rtype: dict(str, str)
@@ -317,7 +317,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def custom_properties(self, custom_properties):
         """Sets the custom_properties of this ShowAlertRuleTemplateResponse.
 
-        custom_properties
+        自定义扩展信息。Custom properties.
 
         :param custom_properties: The custom_properties of this ShowAlertRuleTemplateResponse.
         :type custom_properties: dict(str, str)
@@ -328,7 +328,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def event_grouping(self):
         """Gets the event_grouping of this ShowAlertRuleTemplateResponse.
 
-        event_grouping
+        告警分组。Event grouping.
 
         :return: The event_grouping of this ShowAlertRuleTemplateResponse.
         :rtype: bool
@@ -339,7 +339,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def event_grouping(self, event_grouping):
         """Sets the event_grouping of this ShowAlertRuleTemplateResponse.
 
-        event_grouping
+        告警分组。Event grouping.
 
         :param event_grouping: The event_grouping of this ShowAlertRuleTemplateResponse.
         :type event_grouping: bool
@@ -368,7 +368,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def triggers(self):
         """Gets the triggers of this ShowAlertRuleTemplateResponse.
 
-        triggers
+        告警触发规则。Alert triggers.
 
         :return: The triggers of this ShowAlertRuleTemplateResponse.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
@@ -379,7 +379,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def triggers(self, triggers):
         """Sets the triggers of this ShowAlertRuleTemplateResponse.
 
-        triggers
+        告警触发规则。Alert triggers.
 
         :param triggers: The triggers of this ShowAlertRuleTemplateResponse.
         :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]

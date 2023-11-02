@@ -41,19 +41,19 @@ class ListAlertRuleTemplatesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: project_id
+        :param project_id: 项目 ID。Project ID.
         :type project_id: str
-        :param workspace_id: workspace_id
+        :param workspace_id: 工作空间 ID。Workspace ID.
         :type workspace_id: str
-        :param offset: offset
+        :param offset: 偏移量。Offset.
         :type offset: int
-        :param limit: limit
+        :param limit: 条数。Limit.
         :type limit: int
-        :param sort_key: sort_key
+        :param sort_key: 排序字段。Sort key
         :type sort_key: str
-        :param sort_dir: sort_dir. asc, desc
+        :param sort_dir: 排序顺序，顺序、逆序。Sort direction, asc, desc。
         :type sort_dir: str
-        :param severity: severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        :param severity: 严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
         :type severity: list[str]
         """
         
@@ -83,7 +83,7 @@ class ListAlertRuleTemplatesRequest:
     def project_id(self):
         """Gets the project_id of this ListAlertRuleTemplatesRequest.
 
-        project_id
+        项目 ID。Project ID.
 
         :return: The project_id of this ListAlertRuleTemplatesRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class ListAlertRuleTemplatesRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ListAlertRuleTemplatesRequest.
 
-        project_id
+        项目 ID。Project ID.
 
         :param project_id: The project_id of this ListAlertRuleTemplatesRequest.
         :type project_id: str
@@ -105,7 +105,7 @@ class ListAlertRuleTemplatesRequest:
     def workspace_id(self):
         """Gets the workspace_id of this ListAlertRuleTemplatesRequest.
 
-        workspace_id
+        工作空间 ID。Workspace ID.
 
         :return: The workspace_id of this ListAlertRuleTemplatesRequest.
         :rtype: str
@@ -116,7 +116,7 @@ class ListAlertRuleTemplatesRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this ListAlertRuleTemplatesRequest.
 
-        workspace_id
+        工作空间 ID。Workspace ID.
 
         :param workspace_id: The workspace_id of this ListAlertRuleTemplatesRequest.
         :type workspace_id: str
@@ -127,7 +127,7 @@ class ListAlertRuleTemplatesRequest:
     def offset(self):
         """Gets the offset of this ListAlertRuleTemplatesRequest.
 
-        offset
+        偏移量。Offset.
 
         :return: The offset of this ListAlertRuleTemplatesRequest.
         :rtype: int
@@ -138,7 +138,7 @@ class ListAlertRuleTemplatesRequest:
     def offset(self, offset):
         """Sets the offset of this ListAlertRuleTemplatesRequest.
 
-        offset
+        偏移量。Offset.
 
         :param offset: The offset of this ListAlertRuleTemplatesRequest.
         :type offset: int
@@ -149,7 +149,7 @@ class ListAlertRuleTemplatesRequest:
     def limit(self):
         """Gets the limit of this ListAlertRuleTemplatesRequest.
 
-        limit
+        条数。Limit.
 
         :return: The limit of this ListAlertRuleTemplatesRequest.
         :rtype: int
@@ -160,7 +160,7 @@ class ListAlertRuleTemplatesRequest:
     def limit(self, limit):
         """Sets the limit of this ListAlertRuleTemplatesRequest.
 
-        limit
+        条数。Limit.
 
         :param limit: The limit of this ListAlertRuleTemplatesRequest.
         :type limit: int
@@ -171,7 +171,7 @@ class ListAlertRuleTemplatesRequest:
     def sort_key(self):
         """Gets the sort_key of this ListAlertRuleTemplatesRequest.
 
-        sort_key
+        排序字段。Sort key
 
         :return: The sort_key of this ListAlertRuleTemplatesRequest.
         :rtype: str
@@ -182,7 +182,7 @@ class ListAlertRuleTemplatesRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListAlertRuleTemplatesRequest.
 
-        sort_key
+        排序字段。Sort key
 
         :param sort_key: The sort_key of this ListAlertRuleTemplatesRequest.
         :type sort_key: str
@@ -193,7 +193,7 @@ class ListAlertRuleTemplatesRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListAlertRuleTemplatesRequest.
 
-        sort_dir. asc, desc
+        排序顺序，顺序、逆序。Sort direction, asc, desc。
 
         :return: The sort_dir of this ListAlertRuleTemplatesRequest.
         :rtype: str
@@ -204,7 +204,7 @@ class ListAlertRuleTemplatesRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListAlertRuleTemplatesRequest.
 
-        sort_dir. asc, desc
+        排序顺序，顺序、逆序。Sort direction, asc, desc。
 
         :param sort_dir: The sort_dir of this ListAlertRuleTemplatesRequest.
         :type sort_dir: str
@@ -215,7 +215,7 @@ class ListAlertRuleTemplatesRequest:
     def severity(self):
         """Gets the severity of this ListAlertRuleTemplatesRequest.
 
-        severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
         :return: The severity of this ListAlertRuleTemplatesRequest.
         :rtype: list[str]
@@ -226,7 +226,7 @@ class ListAlertRuleTemplatesRequest:
     def severity(self, severity):
         """Sets the severity of this ListAlertRuleTemplatesRequest.
 
-        severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
         :param severity: The severity of this ListAlertRuleTemplatesRequest.
         :type severity: list[str]

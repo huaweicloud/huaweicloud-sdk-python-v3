@@ -34,11 +34,11 @@ class ListMeshesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param api_version: 
+        :param api_version: API版本，固定值“v1”，该值不可修改
         :type api_version: str
-        :param kind: 
+        :param kind: API类型，固定值“MeshList”，该值不可修改
         :type kind: str
-        :param items: 
+        :param items: 网格列表
         :type items: list[:class:`huaweicloudsdkasm.v1.Mesh`]
         """
         
@@ -60,6 +60,8 @@ class ListMeshesResponse(SdkResponse):
     def api_version(self):
         """Gets the api_version of this ListMeshesResponse.
 
+        API版本，固定值“v1”，该值不可修改
+
         :return: The api_version of this ListMeshesResponse.
         :rtype: str
         """
@@ -68,6 +70,8 @@ class ListMeshesResponse(SdkResponse):
     @api_version.setter
     def api_version(self, api_version):
         """Sets the api_version of this ListMeshesResponse.
+
+        API版本，固定值“v1”，该值不可修改
 
         :param api_version: The api_version of this ListMeshesResponse.
         :type api_version: str
@@ -78,6 +82,8 @@ class ListMeshesResponse(SdkResponse):
     def kind(self):
         """Gets the kind of this ListMeshesResponse.
 
+        API类型，固定值“MeshList”，该值不可修改
+
         :return: The kind of this ListMeshesResponse.
         :rtype: str
         """
@@ -86,6 +92,8 @@ class ListMeshesResponse(SdkResponse):
     @kind.setter
     def kind(self, kind):
         """Sets the kind of this ListMeshesResponse.
+
+        API类型，固定值“MeshList”，该值不可修改
 
         :param kind: The kind of this ListMeshesResponse.
         :type kind: str
@@ -96,6 +104,8 @@ class ListMeshesResponse(SdkResponse):
     def items(self):
         """Gets the items of this ListMeshesResponse.
 
+        网格列表
+
         :return: The items of this ListMeshesResponse.
         :rtype: list[:class:`huaweicloudsdkasm.v1.Mesh`]
         """
@@ -104,6 +114,8 @@ class ListMeshesResponse(SdkResponse):
     @items.setter
     def items(self, items):
         """Sets the items of this ListMeshesResponse.
+
+        网格列表
 
         :param items: The items of this ListMeshesResponse.
         :type items: list[:class:`huaweicloudsdkasm.v1.Mesh`]

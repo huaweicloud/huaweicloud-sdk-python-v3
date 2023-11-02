@@ -23,7 +23,7 @@ class ReceptorLigandInfoDto:
         'smiles': 'str',
         'formula': 'str',
         'structure': 'LigandStructureDto',
-        'bounding_box': 'BoundingBoxDto'
+        'bounding_box': 'DrugBoundingBoxDto'
     }
 
     attribute_map = {
@@ -54,7 +54,7 @@ class ReceptorLigandInfoDto:
         :param structure: 
         :type structure: :class:`huaweicloudsdkeihealth.v1.LigandStructureDto`
         :param bounding_box: 
-        :type bounding_box: :class:`huaweicloudsdkeihealth.v1.BoundingBoxDto`
+        :type bounding_box: :class:`huaweicloudsdkeihealth.v1.DrugBoundingBoxDto`
         """
         
         
@@ -213,7 +213,7 @@ class ReceptorLigandInfoDto:
         """Gets the bounding_box of this ReceptorLigandInfoDto.
 
         :return: The bounding_box of this ReceptorLigandInfoDto.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.BoundingBoxDto`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.DrugBoundingBoxDto`
         """
         return self._bounding_box
 
@@ -222,7 +222,7 @@ class ReceptorLigandInfoDto:
         """Sets the bounding_box of this ReceptorLigandInfoDto.
 
         :param bounding_box: The bounding_box of this ReceptorLigandInfoDto.
-        :type bounding_box: :class:`huaweicloudsdkeihealth.v1.BoundingBoxDto`
+        :type bounding_box: :class:`huaweicloudsdkeihealth.v1.DrugBoundingBoxDto`
         """
         self._bounding_box = bounding_box
 

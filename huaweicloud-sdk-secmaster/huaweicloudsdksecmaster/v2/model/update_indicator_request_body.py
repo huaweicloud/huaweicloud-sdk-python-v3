@@ -17,58 +17,29 @@ class UpdateIndicatorRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'trigger_flag': 'bool',
         'data_object': 'IndicatorDataObjectDetail'
     }
 
     attribute_map = {
-        'trigger_flag': 'trigger_flag',
         'data_object': 'data_object'
     }
 
-    def __init__(self, trigger_flag=None, data_object=None):
+    def __init__(self, data_object=None):
         """UpdateIndicatorRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param trigger_flag: 触发标志
-        :type trigger_flag: bool
         :param data_object: 
         :type data_object: :class:`huaweicloudsdksecmaster.v2.IndicatorDataObjectDetail`
         """
         
         
 
-        self._trigger_flag = None
         self._data_object = None
         self.discriminator = None
 
-        if trigger_flag is not None:
-            self.trigger_flag = trigger_flag
         if data_object is not None:
             self.data_object = data_object
-
-    @property
-    def trigger_flag(self):
-        """Gets the trigger_flag of this UpdateIndicatorRequestBody.
-
-        触发标志
-
-        :return: The trigger_flag of this UpdateIndicatorRequestBody.
-        :rtype: bool
-        """
-        return self._trigger_flag
-
-    @trigger_flag.setter
-    def trigger_flag(self, trigger_flag):
-        """Sets the trigger_flag of this UpdateIndicatorRequestBody.
-
-        触发标志
-
-        :param trigger_flag: The trigger_flag of this UpdateIndicatorRequestBody.
-        :type trigger_flag: bool
-        """
-        self._trigger_flag = trigger_flag
 
     @property
     def data_object(self):

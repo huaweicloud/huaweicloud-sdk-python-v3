@@ -22,7 +22,8 @@ class CreateNatGatewaySnatRuleOption:
         'network_id': 'str',
         'description': 'str',
         'source_type': 'int',
-        'floating_ip_id': 'str'
+        'floating_ip_id': 'str',
+        'global_eip_id': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class CreateNatGatewaySnatRuleOption:
         'network_id': 'network_id',
         'description': 'description',
         'source_type': 'source_type',
-        'floating_ip_id': 'floating_ip_id'
+        'floating_ip_id': 'floating_ip_id',
+        'global_eip_id': 'global_eip_id'
     }
 
-    def __init__(self, nat_gateway_id=None, cidr=None, network_id=None, description=None, source_type=None, floating_ip_id=None):
+    def __init__(self, nat_gateway_id=None, cidr=None, network_id=None, description=None, source_type=None, floating_ip_id=None, global_eip_id=None):
         """CreateNatGatewaySnatRuleOption
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class CreateNatGatewaySnatRuleOption:
         :type source_type: int
         :param floating_ip_id: 功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。 约束：弹性公网IP的id个数不能超过20个。 
         :type floating_ip_id: str
+        :param global_eip_id: 全域弹性公网IP的id。
+        :type global_eip_id: str
         """
         
         
@@ -61,6 +65,7 @@ class CreateNatGatewaySnatRuleOption:
         self._description = None
         self._source_type = None
         self._floating_ip_id = None
+        self._global_eip_id = None
         self.discriminator = None
 
         self.nat_gateway_id = nat_gateway_id
@@ -73,6 +78,8 @@ class CreateNatGatewaySnatRuleOption:
         if source_type is not None:
             self.source_type = source_type
         self.floating_ip_id = floating_ip_id
+        if global_eip_id is not None:
+            self.global_eip_id = global_eip_id
 
     @property
     def nat_gateway_id(self):
@@ -205,6 +212,28 @@ class CreateNatGatewaySnatRuleOption:
         :type floating_ip_id: str
         """
         self._floating_ip_id = floating_ip_id
+
+    @property
+    def global_eip_id(self):
+        """Gets the global_eip_id of this CreateNatGatewaySnatRuleOption.
+
+        全域弹性公网IP的id。
+
+        :return: The global_eip_id of this CreateNatGatewaySnatRuleOption.
+        :rtype: str
+        """
+        return self._global_eip_id
+
+    @global_eip_id.setter
+    def global_eip_id(self, global_eip_id):
+        """Sets the global_eip_id of this CreateNatGatewaySnatRuleOption.
+
+        全域弹性公网IP的id。
+
+        :param global_eip_id: The global_eip_id of this CreateNatGatewaySnatRuleOption.
+        :type global_eip_id: str
+        """
+        self._global_eip_id = global_eip_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

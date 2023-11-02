@@ -21,7 +21,8 @@ class CreateNextflowJobRequestBody:
         'description': 'str',
         'labels': 'list[str]',
         'workflow_id': 'str',
-        'params': 'file'
+        'params': 'file',
+        'priority': 'int'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class CreateNextflowJobRequestBody:
         'description': 'description',
         'labels': 'labels',
         'workflow_id': 'workflow_id',
-        'params': 'params'
+        'params': 'params',
+        'priority': 'priority'
     }
 
-    def __init__(self, name=None, description=None, labels=None, workflow_id=None, params=None):
+    def __init__(self, name=None, description=None, labels=None, workflow_id=None, params=None, priority=None):
         """CreateNextflowJobRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class CreateNextflowJobRequestBody:
         :type workflow_id: str
         :param params: 流程参数列表文件，取值范围[0, 10M]
         :type params: :class:`huaweicloudsdkcore.http.formdata.FormFile`
+        :param priority: 作业的优先级,取值范围[0,9]，0最低，默认数值0
+        :type priority: int
         """
         
         
@@ -56,6 +60,7 @@ class CreateNextflowJobRequestBody:
         self._labels = None
         self._workflow_id = None
         self._params = None
+        self._priority = None
         self.discriminator = None
 
         self.name = name
@@ -66,6 +71,8 @@ class CreateNextflowJobRequestBody:
         self.workflow_id = workflow_id
         if params is not None:
             self.params = params
+        if priority is not None:
+            self.priority = priority
 
     @property
     def name(self):
@@ -176,6 +183,28 @@ class CreateNextflowJobRequestBody:
         :type params: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         self._params = params
+
+    @property
+    def priority(self):
+        """Gets the priority of this CreateNextflowJobRequestBody.
+
+        作业的优先级,取值范围[0,9]，0最低，默认数值0
+
+        :return: The priority of this CreateNextflowJobRequestBody.
+        :rtype: int
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        """Sets the priority of this CreateNextflowJobRequestBody.
+
+        作业的优先级,取值范围[0,9]，0最低，默认数值0
+
+        :param priority: The priority of this CreateNextflowJobRequestBody.
+        :type priority: int
+        """
+        self._priority = priority
 
     def to_dict(self):
         """Returns the model properties as a dict"""

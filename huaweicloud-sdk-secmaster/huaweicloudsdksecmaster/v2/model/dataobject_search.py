@@ -41,17 +41,17 @@ class DataobjectSearch:
 
         The model defined in huaweicloud sdk
 
-        :param limit: limit
+        :param limit: 分页大小
         :type limit: int
-        :param offset: offset
+        :param offset: 偏移量
         :type offset: int
-        :param sort_by: sortby
+        :param sort_by: 排序字段：create_time | update_time
         :type sort_by: str
-        :param order: order
+        :param order: 排序方式：DESC | ASC
         :type order: str
-        :param from_date: search start time
+        :param from_date: 搜索开始时间
         :type from_date: str
-        :param to_date: search end time
+        :param to_date: 搜索结束时间
         :type to_date: str
         :param condition: 
         :type condition: :class:`huaweicloudsdksecmaster.v2.DataobjectSearchCondition`
@@ -87,7 +87,7 @@ class DataobjectSearch:
     def limit(self):
         """Gets the limit of this DataobjectSearch.
 
-        limit
+        分页大小
 
         :return: The limit of this DataobjectSearch.
         :rtype: int
@@ -98,7 +98,7 @@ class DataobjectSearch:
     def limit(self, limit):
         """Sets the limit of this DataobjectSearch.
 
-        limit
+        分页大小
 
         :param limit: The limit of this DataobjectSearch.
         :type limit: int
@@ -109,7 +109,7 @@ class DataobjectSearch:
     def offset(self):
         """Gets the offset of this DataobjectSearch.
 
-        offset
+        偏移量
 
         :return: The offset of this DataobjectSearch.
         :rtype: int
@@ -120,7 +120,7 @@ class DataobjectSearch:
     def offset(self, offset):
         """Sets the offset of this DataobjectSearch.
 
-        offset
+        偏移量
 
         :param offset: The offset of this DataobjectSearch.
         :type offset: int
@@ -131,7 +131,7 @@ class DataobjectSearch:
     def sort_by(self):
         """Gets the sort_by of this DataobjectSearch.
 
-        sortby
+        排序字段：create_time | update_time
 
         :return: The sort_by of this DataobjectSearch.
         :rtype: str
@@ -142,7 +142,7 @@ class DataobjectSearch:
     def sort_by(self, sort_by):
         """Sets the sort_by of this DataobjectSearch.
 
-        sortby
+        排序字段：create_time | update_time
 
         :param sort_by: The sort_by of this DataobjectSearch.
         :type sort_by: str
@@ -153,7 +153,7 @@ class DataobjectSearch:
     def order(self):
         """Gets the order of this DataobjectSearch.
 
-        order
+        排序方式：DESC | ASC
 
         :return: The order of this DataobjectSearch.
         :rtype: str
@@ -164,7 +164,7 @@ class DataobjectSearch:
     def order(self, order):
         """Sets the order of this DataobjectSearch.
 
-        order
+        排序方式：DESC | ASC
 
         :param order: The order of this DataobjectSearch.
         :type order: str
@@ -175,7 +175,7 @@ class DataobjectSearch:
     def from_date(self):
         """Gets the from_date of this DataobjectSearch.
 
-        search start time
+        搜索开始时间
 
         :return: The from_date of this DataobjectSearch.
         :rtype: str
@@ -186,7 +186,7 @@ class DataobjectSearch:
     def from_date(self, from_date):
         """Sets the from_date of this DataobjectSearch.
 
-        search start time
+        搜索开始时间
 
         :param from_date: The from_date of this DataobjectSearch.
         :type from_date: str
@@ -197,7 +197,7 @@ class DataobjectSearch:
     def to_date(self):
         """Gets the to_date of this DataobjectSearch.
 
-        search end time
+        搜索结束时间
 
         :return: The to_date of this DataobjectSearch.
         :rtype: str
@@ -208,7 +208,7 @@ class DataobjectSearch:
     def to_date(self, to_date):
         """Sets the to_date of this DataobjectSearch.
 
-        search end time
+        搜索结束时间
 
         :param to_date: The to_date of this DataobjectSearch.
         :type to_date: str

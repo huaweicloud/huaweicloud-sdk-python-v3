@@ -34,9 +34,9 @@ class DeleteAlertRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param rule_id: rule_id
+        :param rule_id: 告警规则 ID。Alert rule ID.
         :type rule_id: str
-        :param delete_time: delete_time
+        :param delete_time: 删除时间。Delete time.
         :type delete_time: int
         :param x_request_id: 
         :type x_request_id: str
@@ -60,7 +60,7 @@ class DeleteAlertRuleResponse(SdkResponse):
     def rule_id(self):
         """Gets the rule_id of this DeleteAlertRuleResponse.
 
-        rule_id
+        告警规则 ID。Alert rule ID.
 
         :return: The rule_id of this DeleteAlertRuleResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class DeleteAlertRuleResponse(SdkResponse):
     def rule_id(self, rule_id):
         """Sets the rule_id of this DeleteAlertRuleResponse.
 
-        rule_id
+        告警规则 ID。Alert rule ID.
 
         :param rule_id: The rule_id of this DeleteAlertRuleResponse.
         :type rule_id: str
@@ -82,7 +82,7 @@ class DeleteAlertRuleResponse(SdkResponse):
     def delete_time(self):
         """Gets the delete_time of this DeleteAlertRuleResponse.
 
-        delete_time
+        删除时间。Delete time.
 
         :return: The delete_time of this DeleteAlertRuleResponse.
         :rtype: int
@@ -93,7 +93,7 @@ class DeleteAlertRuleResponse(SdkResponse):
     def delete_time(self, delete_time):
         """Sets the delete_time of this DeleteAlertRuleResponse.
 
-        delete_time
+        删除时间。Delete time.
 
         :param delete_time: The delete_time of this DeleteAlertRuleResponse.
         :type delete_time: int

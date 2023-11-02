@@ -55,6 +55,8 @@ from huaweicloudsdkcsms.v1.model.page_info import PageInfo
 from huaweicloudsdkcsms.v1.model.record import Record
 from huaweicloudsdkcsms.v1.model.restore_secret_request import RestoreSecretRequest
 from huaweicloudsdkcsms.v1.model.restore_secret_response import RestoreSecretResponse
+from huaweicloudsdkcsms.v1.model.rotate_secret_request import RotateSecretRequest
+from huaweicloudsdkcsms.v1.model.rotate_secret_response import RotateSecretResponse
 from huaweicloudsdkcsms.v1.model.secret import Secret
 from huaweicloudsdkcsms.v1.model.show_secret_event_request import ShowSecretEventRequest
 from huaweicloudsdkcsms.v1.model.show_secret_event_response import ShowSecretEventResponse

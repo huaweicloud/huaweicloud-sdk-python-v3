@@ -36,9 +36,9 @@ class CreateIndicatorResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: Id value
+        :param code: 错误码
         :type code: str
-        :param message: Error message
+        :param message: 错误信息
         :type message: str
         :param data: 
         :type data: :class:`huaweicloudsdksecmaster.v2.IndicatorDetail`
@@ -67,7 +67,7 @@ class CreateIndicatorResponse(SdkResponse):
     def code(self):
         """Gets the code of this CreateIndicatorResponse.
 
-        Id value
+        错误码
 
         :return: The code of this CreateIndicatorResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class CreateIndicatorResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this CreateIndicatorResponse.
 
-        Id value
+        错误码
 
         :param code: The code of this CreateIndicatorResponse.
         :type code: str
@@ -89,7 +89,7 @@ class CreateIndicatorResponse(SdkResponse):
     def message(self):
         """Gets the message of this CreateIndicatorResponse.
 
-        Error message
+        错误信息
 
         :return: The message of this CreateIndicatorResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class CreateIndicatorResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this CreateIndicatorResponse.
 
-        Error message
+        错误信息
 
         :param message: The message of this CreateIndicatorResponse.
         :type message: str

@@ -88,7 +88,7 @@ class ElbClient(Client):
     def batch_delete_members(self, request):
         """批量删除后端服务器
 
-        在指定pool下批量删除后端服务器。一次最多添加200个。
+        在指定pool下批量删除后端服务器。一次最多删除200个。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -146,7 +146,7 @@ class ElbClient(Client):
     def batch_update_members(self, request):
         """批量更新后端服务器
 
-        在指定pool下批量更新后端服务器。一次最多添加200个。
+        在指定pool下批量更新后端服务器。一次最多更新200个。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -666,7 +666,7 @@ class ElbClient(Client):
     def create_logtank(self, request):
         """创建云日志
 
-        创建云日志。[荷兰region不支持云日志功能，请勿使用。](tag:dt)
+        创建云日志。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -837,8 +837,6 @@ class ElbClient(Client):
         """创建自定义安全策略
 
         创建自定义安全策略。用于在创建HTTPS监听器时，请求参数中指定security_policy_id来设置监听器的自定义安全策略。
-        
-        [荷兰region不支持自定义安全策略功能，请勿使用。](tag:dt)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1344,7 +1342,7 @@ class ElbClient(Client):
     def delete_logtank(self, request):
         """删除云日志
 
-        删除云日志。[荷兰region不支持云日志功能，请勿使用。](tag:dt)
+        删除云日志。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1514,7 +1512,7 @@ class ElbClient(Client):
     def delete_security_policy(self, request):
         """删除自定义安全策略
 
-        删除自定义安全策略。[荷兰region不支持自定义安全策略功能，请勿使用。](tag:dt)
+        删除自定义安全策略。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2249,6 +2247,8 @@ class ElbClient(Client):
             collection_formats['keepalive_timeout'] = 'multi'
         if 'transparent_client_ip_enable' in local_var_params:
             query_params.append(('transparent_client_ip_enable', local_var_params['transparent_client_ip_enable']))
+        if 'proxy_protocol_enable' in local_var_params:
+            query_params.append(('proxy_protocol_enable', local_var_params['proxy_protocol_enable']))
         if 'enhance_l7policy_enable' in local_var_params:
             query_params.append(('enhance_l7policy_enable', local_var_params['enhance_l7policy_enable']))
         if 'member_instance_id' in local_var_params:
@@ -2441,7 +2441,7 @@ class ElbClient(Client):
     def list_logtanks(self, request):
         """查询云日志列表
 
-        查询云日志列表。[荷兰region不支持云日志功能，请勿使用。](tag:dt)
+        查询云日志列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2782,7 +2782,7 @@ class ElbClient(Client):
     def list_security_policies(self, request):
         """查询自定义安全策略列表
 
-        查询自定义安全策略列表。[荷兰region不支持自定义安全策略功能，请勿使用。](tag:dt)
+        查询自定义安全策略列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3366,7 +3366,7 @@ class ElbClient(Client):
     def show_logtank(self, request):
         """查询云日志详情
 
-        云日志详情。[荷兰region不支持云日志功能，请勿使用。](tag:dt)
+        云日志详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3590,7 +3590,7 @@ class ElbClient(Client):
     def show_security_policy(self, request):
         """查询自定义安全策略详情
 
-        查询自定义安全策略详情。[荷兰region不支持自定义安全策略功能，请勿使用。](tag:dt)
+        查询自定义安全策略详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3996,7 +3996,7 @@ class ElbClient(Client):
     def update_logtank(self, request):
         """更新云日志
 
-        更新云日志。[荷兰region不支持云日志功能，请勿使用。](tag:dt)
+        更新云日志。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4172,7 +4172,7 @@ class ElbClient(Client):
     def update_security_policy(self, request):
         """更新自定义安全策略
 
-        更新自定义安全策略。[荷兰region不支持自定义安全策略功能，请勿使用。](tag:dt)
+        更新自定义安全策略。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4282,9 +4282,9 @@ class ElbClient(Client):
             request_type=request.__class__.__name__)
 
     def batch_delete_ip_list(self, request):
-        """删除IP地址组的IP列表项
+        """批量删除IP地址组的IP地址
 
-        批量删除IP地址组的IP列表信息。[荷兰region不支持该API](tag:dt,dt_test)
+        批量删除IP地址组的IP地址。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4426,7 +4426,7 @@ class ElbClient(Client):
         
         需要注意0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，只会保存其中一个。
         
-        [荷兰region不支持IP地址组功能，请勿使用。](tag:dt)
+        [不支持IPv6。](tag:dt,dt_test)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4482,7 +4482,7 @@ class ElbClient(Client):
     def delete_ip_group(self, request):
         """删除IP地址组
 
-        删除ip地址组。[荷兰region不支持IP地址组功能，请勿使用。](tag:dt)
+        删除IP地址组。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4538,7 +4538,7 @@ class ElbClient(Client):
     def list_ip_groups(self, request):
         """查询IP地址组列表
 
-        查询IP地址组列表。[荷兰region不支持IP地址组功能，请勿使用。](tag:dt)
+        查询IP地址组列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4610,7 +4610,7 @@ class ElbClient(Client):
     def show_ip_group(self, request):
         """查询IP地址组详情
 
-        获取IP地址组详情。[荷兰region不支持IP地址组功能，请勿使用。](tag:dt)
+        获取IP地址组详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4671,7 +4671,7 @@ class ElbClient(Client):
         
         需要注意0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，只会保存其中一个。
         
-        [荷兰region不支持IP地址组功能，请勿使用。](tag:dt)
+        [不支持IPv6。](tag:dt,dt_test)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4727,9 +4727,9 @@ class ElbClient(Client):
             request_type=request.__class__.__name__)
 
     def update_ip_list(self, request):
-        """更新IP地址组的IP列表项
+        """更新IP地址组的IP列表
 
-        更新IP地址组的IP列表信息。[荷兰region不支持该API](tag:dt,dt_test)
+        更新IP地址组的IP列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

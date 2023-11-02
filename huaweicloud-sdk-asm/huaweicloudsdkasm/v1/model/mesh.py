@@ -37,9 +37,9 @@ class Mesh:
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本，固定值“v1”，该值不可修改。
+        :param api_version: API版本，固定值“v1”，该值不可修改
         :type api_version: str
-        :param kind: API类型，固定值“Mesh”或“mesh”，该值不可修改。
+        :param kind: API类型，固定值“Mesh”或“mesh”，该值不可修改
         :type kind: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkasm.v1.MeshMetadata`
@@ -69,7 +69,7 @@ class Mesh:
     def api_version(self):
         """Gets the api_version of this Mesh.
 
-        API版本，固定值“v1”，该值不可修改。
+        API版本，固定值“v1”，该值不可修改
 
         :return: The api_version of this Mesh.
         :rtype: str
@@ -80,7 +80,7 @@ class Mesh:
     def api_version(self, api_version):
         """Sets the api_version of this Mesh.
 
-        API版本，固定值“v1”，该值不可修改。
+        API版本，固定值“v1”，该值不可修改
 
         :param api_version: The api_version of this Mesh.
         :type api_version: str
@@ -91,7 +91,7 @@ class Mesh:
     def kind(self):
         """Gets the kind of this Mesh.
 
-        API类型，固定值“Mesh”或“mesh”，该值不可修改。
+        API类型，固定值“Mesh”或“mesh”，该值不可修改
 
         :return: The kind of this Mesh.
         :rtype: str
@@ -102,7 +102,7 @@ class Mesh:
     def kind(self, kind):
         """Sets the kind of this Mesh.
 
-        API类型，固定值“Mesh”或“mesh”，该值不可修改。
+        API类型，固定值“Mesh”或“mesh”，该值不可修改
 
         :param kind: The kind of this Mesh.
         :type kind: str

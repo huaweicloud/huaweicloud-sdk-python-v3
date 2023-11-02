@@ -24,7 +24,9 @@ class ShowGaussMySqlBackupListRequest:
         'offset': 'str',
         'limit': 'str',
         'begin_time': 'str',
-        'end_time': 'str'
+        'end_time': 'str',
+        'name': 'str',
+        'instance_name': 'str'
     }
 
     attribute_map = {
@@ -35,21 +37,23 @@ class ShowGaussMySqlBackupListRequest:
         'offset': 'offset',
         'limit': 'limit',
         'begin_time': 'begin_time',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'name': 'name',
+        'instance_name': 'instance_name'
     }
 
-    def __init__(self, x_language=None, instance_id=None, backup_id=None, backup_type=None, offset=None, limit=None, begin_time=None, end_time=None):
+    def __init__(self, x_language=None, instance_id=None, backup_id=None, backup_type=None, offset=None, limit=None, begin_time=None, end_time=None, name=None, instance_name=None):
         """ShowGaussMySqlBackupListRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言。
+        :param x_language: 请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
         :type x_language: str
-        :param instance_id: 实例ID。
+        :param instance_id: 实例ID，严格匹配UUID规则。
         :type instance_id: str
         :param backup_id: 备份ID。
         :type backup_id: str
-        :param backup_type: 备份类型，取值：  - \&quot;auto\&quot;：自动全量备份。 - \&quot;manual\&quot;：手动全量备份。
+        :param backup_type: 备份类型。  取值范围： - auto：自动全量备份。 - manual：手动全量备份。
         :type backup_type: str
         :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
         :type offset: str
@@ -59,6 +63,10 @@ class ShowGaussMySqlBackupListRequest:
         :type begin_time: str
         :param end_time: 查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
         :type end_time: str
+        :param name: 备份名称。
+        :type name: str
+        :param instance_name: 实例名称。
+        :type instance_name: str
         """
         
         
@@ -71,6 +79,8 @@ class ShowGaussMySqlBackupListRequest:
         self._limit = None
         self._begin_time = None
         self._end_time = None
+        self._name = None
+        self._instance_name = None
         self.discriminator = None
 
         if x_language is not None:
@@ -89,12 +99,16 @@ class ShowGaussMySqlBackupListRequest:
             self.begin_time = begin_time
         if end_time is not None:
             self.end_time = end_time
+        if name is not None:
+            self.name = name
+        if instance_name is not None:
+            self.instance_name = instance_name
 
     @property
     def x_language(self):
         """Gets the x_language of this ShowGaussMySqlBackupListRequest.
 
-        语言。
+        请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
         :return: The x_language of this ShowGaussMySqlBackupListRequest.
         :rtype: str
@@ -105,7 +119,7 @@ class ShowGaussMySqlBackupListRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowGaussMySqlBackupListRequest.
 
-        语言。
+        请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
         :param x_language: The x_language of this ShowGaussMySqlBackupListRequest.
         :type x_language: str
@@ -116,7 +130,7 @@ class ShowGaussMySqlBackupListRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowGaussMySqlBackupListRequest.
 
-        实例ID。
+        实例ID，严格匹配UUID规则。
 
         :return: The instance_id of this ShowGaussMySqlBackupListRequest.
         :rtype: str
@@ -127,7 +141,7 @@ class ShowGaussMySqlBackupListRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowGaussMySqlBackupListRequest.
 
-        实例ID。
+        实例ID，严格匹配UUID规则。
 
         :param instance_id: The instance_id of this ShowGaussMySqlBackupListRequest.
         :type instance_id: str
@@ -160,7 +174,7 @@ class ShowGaussMySqlBackupListRequest:
     def backup_type(self):
         """Gets the backup_type of this ShowGaussMySqlBackupListRequest.
 
-        备份类型，取值：  - \"auto\"：自动全量备份。 - \"manual\"：手动全量备份。
+        备份类型。  取值范围： - auto：自动全量备份。 - manual：手动全量备份。
 
         :return: The backup_type of this ShowGaussMySqlBackupListRequest.
         :rtype: str
@@ -171,7 +185,7 @@ class ShowGaussMySqlBackupListRequest:
     def backup_type(self, backup_type):
         """Sets the backup_type of this ShowGaussMySqlBackupListRequest.
 
-        备份类型，取值：  - \"auto\"：自动全量备份。 - \"manual\"：手动全量备份。
+        备份类型。  取值范围： - auto：自动全量备份。 - manual：手动全量备份。
 
         :param backup_type: The backup_type of this ShowGaussMySqlBackupListRequest.
         :type backup_type: str
@@ -265,6 +279,50 @@ class ShowGaussMySqlBackupListRequest:
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def name(self):
+        """Gets the name of this ShowGaussMySqlBackupListRequest.
+
+        备份名称。
+
+        :return: The name of this ShowGaussMySqlBackupListRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ShowGaussMySqlBackupListRequest.
+
+        备份名称。
+
+        :param name: The name of this ShowGaussMySqlBackupListRequest.
+        :type name: str
+        """
+        self._name = name
+
+    @property
+    def instance_name(self):
+        """Gets the instance_name of this ShowGaussMySqlBackupListRequest.
+
+        实例名称。
+
+        :return: The instance_name of this ShowGaussMySqlBackupListRequest.
+        :rtype: str
+        """
+        return self._instance_name
+
+    @instance_name.setter
+    def instance_name(self, instance_name):
+        """Sets the instance_name of this ShowGaussMySqlBackupListRequest.
+
+        实例名称。
+
+        :param instance_name: The instance_name of this ShowGaussMySqlBackupListRequest.
+        :type instance_name: str
+        """
+        self._instance_name = instance_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

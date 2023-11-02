@@ -33,11 +33,11 @@ class ConditionItem:
 
         The model defined in huaweicloud sdk
 
-        :param name: Name of the condition.
+        :param name: 条件名称
         :type name: str
-        :param detail: Detail of the condition.
+        :param detail: 条件详情
         :type detail: str
-        :param data: Detail of the condition.
+        :param data: 条件表达式数据
         :type data: list[str]
         """
         
@@ -59,7 +59,7 @@ class ConditionItem:
     def name(self):
         """Gets the name of this ConditionItem.
 
-        Name of the condition.
+        条件名称
 
         :return: The name of this ConditionItem.
         :rtype: str
@@ -70,7 +70,7 @@ class ConditionItem:
     def name(self, name):
         """Sets the name of this ConditionItem.
 
-        Name of the condition.
+        条件名称
 
         :param name: The name of this ConditionItem.
         :type name: str
@@ -81,7 +81,7 @@ class ConditionItem:
     def detail(self):
         """Gets the detail of this ConditionItem.
 
-        Detail of the condition.
+        条件详情
 
         :return: The detail of this ConditionItem.
         :rtype: str
@@ -92,7 +92,7 @@ class ConditionItem:
     def detail(self, detail):
         """Sets the detail of this ConditionItem.
 
-        Detail of the condition.
+        条件详情
 
         :param detail: The detail of this ConditionItem.
         :type detail: str
@@ -103,7 +103,7 @@ class ConditionItem:
     def data(self):
         """Gets the data of this ConditionItem.
 
-        Detail of the condition.
+        条件表达式数据
 
         :return: The data of this ConditionItem.
         :rtype: list[str]
@@ -114,7 +114,7 @@ class ConditionItem:
     def data(self, data):
         """Sets the data of this ConditionItem.
 
-        Detail of the condition.
+        条件表达式数据
 
         :param data: The data of this ConditionItem.
         :type data: list[str]

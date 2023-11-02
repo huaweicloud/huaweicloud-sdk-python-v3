@@ -33,9 +33,9 @@ class CreatePlaybookRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: ID of project
+        :param project_id: 项目ID
         :type project_id: str
-        :param workspace_id: ID of workspace
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
         :param body: Body of the CreatePlaybookRequest
         :type body: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookInfo`
@@ -57,7 +57,7 @@ class CreatePlaybookRequest:
     def project_id(self):
         """Gets the project_id of this CreatePlaybookRequest.
 
-        ID of project
+        项目ID
 
         :return: The project_id of this CreatePlaybookRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class CreatePlaybookRequest:
     def project_id(self, project_id):
         """Sets the project_id of this CreatePlaybookRequest.
 
-        ID of project
+        项目ID
 
         :param project_id: The project_id of this CreatePlaybookRequest.
         :type project_id: str
@@ -79,7 +79,7 @@ class CreatePlaybookRequest:
     def workspace_id(self):
         """Gets the workspace_id of this CreatePlaybookRequest.
 
-        ID of workspace
+        工作空间ID
 
         :return: The workspace_id of this CreatePlaybookRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class CreatePlaybookRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this CreatePlaybookRequest.
 
-        ID of workspace
+        工作空间ID
 
         :param workspace_id: The workspace_id of this CreatePlaybookRequest.
         :type workspace_id: str

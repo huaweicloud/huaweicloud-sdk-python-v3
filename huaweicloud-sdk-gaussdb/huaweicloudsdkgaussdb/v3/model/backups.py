@@ -27,6 +27,7 @@ class Backups:
         'size': 'int',
         'datastore': 'MysqlDatastoreInBackup',
         'instance_id': 'str',
+        'instance_name': 'str',
         'backup_level': 'str',
         'description': 'str'
     }
@@ -42,11 +43,12 @@ class Backups:
         'size': 'size',
         'datastore': 'datastore',
         'instance_id': 'instance_id',
+        'instance_name': 'instance_name',
         'backup_level': 'backup_level',
         'description': 'description'
     }
 
-    def __init__(self, id=None, name=None, begin_time=None, end_time=None, status=None, take_up_time=None, type=None, size=None, datastore=None, instance_id=None, backup_level=None, description=None):
+    def __init__(self, id=None, name=None, begin_time=None, end_time=None, status=None, take_up_time=None, type=None, size=None, datastore=None, instance_id=None, instance_name=None, backup_level=None, description=None):
         """Backups
 
         The model defined in huaweicloud sdk
@@ -61,19 +63,21 @@ class Backups:
         :type end_time: str
         :param status: 备份状态，取值： - BUILDING：备份中。 - COMPLETED：备份完成。 - FAILED：备份失败。 - AVAILABLE：备份可用。
         :type status: str
-        :param take_up_time: 备份花费时间(单位：minutes)
+        :param take_up_time: 备份花费时间（单位：minutes）
         :type take_up_time: int
         :param type: 备份类型，取值：  - auto：自动全量备份。 - manual：手动全量备份。
         :type type: str
-        :param size: 备份大小，(单位：MB)
+        :param size: 备份大小（单位：MB）。
         :type size: int
         :param datastore: 
         :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreInBackup`
-        :param instance_id: 实例ID。
+        :param instance_id: 实例ID，严格匹配UUID规则。
         :type instance_id: str
-        :param backup_level: 备份级别。当开启一级备份开关时，返回该参数。  取值： - 0：备份正在创建中或者备份失败。 - 1：一级备份。 - 2：二级备份。
+        :param instance_name: 实例名称。
+        :type instance_name: str
+        :param backup_level: 备份级别。当开启一级备份开关时，返回该参数。
         :type backup_level: str
-        :param description: 备份文件描述信息
+        :param description: 备份文件描述信息。
         :type description: str
         """
         
@@ -89,6 +93,7 @@ class Backups:
         self._size = None
         self._datastore = None
         self._instance_id = None
+        self._instance_name = None
         self._backup_level = None
         self._description = None
         self.discriminator = None
@@ -113,6 +118,8 @@ class Backups:
             self.datastore = datastore
         if instance_id is not None:
             self.instance_id = instance_id
+        if instance_name is not None:
+            self.instance_name = instance_name
         if backup_level is not None:
             self.backup_level = backup_level
         if description is not None:
@@ -232,7 +239,7 @@ class Backups:
     def take_up_time(self):
         """Gets the take_up_time of this Backups.
 
-        备份花费时间(单位：minutes)
+        备份花费时间（单位：minutes）
 
         :return: The take_up_time of this Backups.
         :rtype: int
@@ -243,7 +250,7 @@ class Backups:
     def take_up_time(self, take_up_time):
         """Sets the take_up_time of this Backups.
 
-        备份花费时间(单位：minutes)
+        备份花费时间（单位：minutes）
 
         :param take_up_time: The take_up_time of this Backups.
         :type take_up_time: int
@@ -276,7 +283,7 @@ class Backups:
     def size(self):
         """Gets the size of this Backups.
 
-        备份大小，(单位：MB)
+        备份大小（单位：MB）。
 
         :return: The size of this Backups.
         :rtype: int
@@ -287,7 +294,7 @@ class Backups:
     def size(self, size):
         """Sets the size of this Backups.
 
-        备份大小，(单位：MB)
+        备份大小（单位：MB）。
 
         :param size: The size of this Backups.
         :type size: int
@@ -316,7 +323,7 @@ class Backups:
     def instance_id(self):
         """Gets the instance_id of this Backups.
 
-        实例ID。
+        实例ID，严格匹配UUID规则。
 
         :return: The instance_id of this Backups.
         :rtype: str
@@ -327,7 +334,7 @@ class Backups:
     def instance_id(self, instance_id):
         """Sets the instance_id of this Backups.
 
-        实例ID。
+        实例ID，严格匹配UUID规则。
 
         :param instance_id: The instance_id of this Backups.
         :type instance_id: str
@@ -335,10 +342,32 @@ class Backups:
         self._instance_id = instance_id
 
     @property
+    def instance_name(self):
+        """Gets the instance_name of this Backups.
+
+        实例名称。
+
+        :return: The instance_name of this Backups.
+        :rtype: str
+        """
+        return self._instance_name
+
+    @instance_name.setter
+    def instance_name(self, instance_name):
+        """Sets the instance_name of this Backups.
+
+        实例名称。
+
+        :param instance_name: The instance_name of this Backups.
+        :type instance_name: str
+        """
+        self._instance_name = instance_name
+
+    @property
     def backup_level(self):
         """Gets the backup_level of this Backups.
 
-        备份级别。当开启一级备份开关时，返回该参数。  取值： - 0：备份正在创建中或者备份失败。 - 1：一级备份。 - 2：二级备份。
+        备份级别。当开启一级备份开关时，返回该参数。
 
         :return: The backup_level of this Backups.
         :rtype: str
@@ -349,7 +378,7 @@ class Backups:
     def backup_level(self, backup_level):
         """Sets the backup_level of this Backups.
 
-        备份级别。当开启一级备份开关时，返回该参数。  取值： - 0：备份正在创建中或者备份失败。 - 1：一级备份。 - 2：二级备份。
+        备份级别。当开启一级备份开关时，返回该参数。
 
         :param backup_level: The backup_level of this Backups.
         :type backup_level: str
@@ -360,7 +389,7 @@ class Backups:
     def description(self):
         """Gets the description of this Backups.
 
-        备份文件描述信息
+        备份文件描述信息。
 
         :return: The description of this Backups.
         :rtype: str
@@ -371,7 +400,7 @@ class Backups:
     def description(self, description):
         """Sets the description of this Backups.
 
-        备份文件描述信息
+        备份文件描述信息。
 
         :param description: The description of this Backups.
         :type description: str

@@ -31,9 +31,9 @@ class IndicatorBatchOperateResponse:
 
         The model defined in huaweicloud sdk
 
-        :param success_ids: id list
+        :param success_ids: 成功ID列表
         :type success_ids: list[str]
-        :param error_ids: id list
+        :param error_ids: 失败ID列表
         :type error_ids: list[str]
         """
         
@@ -51,7 +51,7 @@ class IndicatorBatchOperateResponse:
     def success_ids(self):
         """Gets the success_ids of this IndicatorBatchOperateResponse.
 
-        id list
+        成功ID列表
 
         :return: The success_ids of this IndicatorBatchOperateResponse.
         :rtype: list[str]
@@ -62,7 +62,7 @@ class IndicatorBatchOperateResponse:
     def success_ids(self, success_ids):
         """Sets the success_ids of this IndicatorBatchOperateResponse.
 
-        id list
+        成功ID列表
 
         :param success_ids: The success_ids of this IndicatorBatchOperateResponse.
         :type success_ids: list[str]
@@ -73,7 +73,7 @@ class IndicatorBatchOperateResponse:
     def error_ids(self):
         """Gets the error_ids of this IndicatorBatchOperateResponse.
 
-        id list
+        失败ID列表
 
         :return: The error_ids of this IndicatorBatchOperateResponse.
         :rtype: list[str]
@@ -84,7 +84,7 @@ class IndicatorBatchOperateResponse:
     def error_ids(self, error_ids):
         """Sets the error_ids of this IndicatorBatchOperateResponse.
 
-        id list
+        失败ID列表
 
         :param error_ids: The error_ids of this IndicatorBatchOperateResponse.
         :type error_ids: list[str]

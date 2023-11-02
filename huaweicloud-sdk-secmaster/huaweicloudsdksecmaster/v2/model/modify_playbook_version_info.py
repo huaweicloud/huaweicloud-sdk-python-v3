@@ -53,31 +53,31 @@ class ModifyPlaybookVersionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param description: The description, display only
+        :param description: 描述
         :type description: str
-        :param workspace_id: 工作空间id
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param playbook_id: Playbook id.
+        :param playbook_id: 剧本ID
         :type playbook_id: str
-        :param dataclass_id: dataclass id.
+        :param dataclass_id: 数据类ID
         :type dataclass_id: str
-        :param rule_enable: If the condition filter is enabled.
+        :param rule_enable: 是否启用触发条件过滤器
         :type rule_enable: bool
-        :param enabled: If is enabled, false for disenabled, true for enabled
+        :param enabled: 是否激活。(false:未激活, true:已激活)
         :type enabled: bool
-        :param status: 状态
+        :param status: 状态(APPROVING:审核中，EDITING-编辑中，UNPASSED-审核未通过，PUBLISHED-已发布)
         :type status: str
         :param rule_id: 规则ID
         :type rule_id: str
-        :param trigger_type: Strategy of action. event, timer
+        :param trigger_type: 触发方式. EVENT--事件触发, TIMER--定时触发
         :type trigger_type: str
-        :param dataobject_create: if trigger when dataobject is created
+        :param dataobject_create: 数据对象是否创建时触发剧本
         :type dataobject_create: bool
-        :param dataobject_update: if trigger when dataobject is updated
+        :param dataobject_update: 数据对象是否更新时触发剧本
         :type dataobject_update: bool
-        :param dataobject_delete: if trigger when dataobject is deleted
+        :param dataobject_delete: 数据对象是否删除时触发剧本
         :type dataobject_delete: bool
-        :param action_strategy: Strategy of action. sync or async
+        :param action_strategy: 执行策略. 目前仅支持异步并发执行，对应值为ASYNC
         :type action_strategy: str
         """
         
@@ -129,7 +129,7 @@ class ModifyPlaybookVersionInfo:
     def description(self):
         """Gets the description of this ModifyPlaybookVersionInfo.
 
-        The description, display only
+        描述
 
         :return: The description of this ModifyPlaybookVersionInfo.
         :rtype: str
@@ -140,7 +140,7 @@ class ModifyPlaybookVersionInfo:
     def description(self, description):
         """Sets the description of this ModifyPlaybookVersionInfo.
 
-        The description, display only
+        描述
 
         :param description: The description of this ModifyPlaybookVersionInfo.
         :type description: str
@@ -151,7 +151,7 @@ class ModifyPlaybookVersionInfo:
     def workspace_id(self):
         """Gets the workspace_id of this ModifyPlaybookVersionInfo.
 
-        工作空间id
+        工作空间ID
 
         :return: The workspace_id of this ModifyPlaybookVersionInfo.
         :rtype: str
@@ -162,7 +162,7 @@ class ModifyPlaybookVersionInfo:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this ModifyPlaybookVersionInfo.
 
-        工作空间id
+        工作空间ID
 
         :param workspace_id: The workspace_id of this ModifyPlaybookVersionInfo.
         :type workspace_id: str
@@ -173,7 +173,7 @@ class ModifyPlaybookVersionInfo:
     def playbook_id(self):
         """Gets the playbook_id of this ModifyPlaybookVersionInfo.
 
-        Playbook id.
+        剧本ID
 
         :return: The playbook_id of this ModifyPlaybookVersionInfo.
         :rtype: str
@@ -184,7 +184,7 @@ class ModifyPlaybookVersionInfo:
     def playbook_id(self, playbook_id):
         """Sets the playbook_id of this ModifyPlaybookVersionInfo.
 
-        Playbook id.
+        剧本ID
 
         :param playbook_id: The playbook_id of this ModifyPlaybookVersionInfo.
         :type playbook_id: str
@@ -195,7 +195,7 @@ class ModifyPlaybookVersionInfo:
     def dataclass_id(self):
         """Gets the dataclass_id of this ModifyPlaybookVersionInfo.
 
-        dataclass id.
+        数据类ID
 
         :return: The dataclass_id of this ModifyPlaybookVersionInfo.
         :rtype: str
@@ -206,7 +206,7 @@ class ModifyPlaybookVersionInfo:
     def dataclass_id(self, dataclass_id):
         """Sets the dataclass_id of this ModifyPlaybookVersionInfo.
 
-        dataclass id.
+        数据类ID
 
         :param dataclass_id: The dataclass_id of this ModifyPlaybookVersionInfo.
         :type dataclass_id: str
@@ -217,7 +217,7 @@ class ModifyPlaybookVersionInfo:
     def rule_enable(self):
         """Gets the rule_enable of this ModifyPlaybookVersionInfo.
 
-        If the condition filter is enabled.
+        是否启用触发条件过滤器
 
         :return: The rule_enable of this ModifyPlaybookVersionInfo.
         :rtype: bool
@@ -228,7 +228,7 @@ class ModifyPlaybookVersionInfo:
     def rule_enable(self, rule_enable):
         """Sets the rule_enable of this ModifyPlaybookVersionInfo.
 
-        If the condition filter is enabled.
+        是否启用触发条件过滤器
 
         :param rule_enable: The rule_enable of this ModifyPlaybookVersionInfo.
         :type rule_enable: bool
@@ -239,7 +239,7 @@ class ModifyPlaybookVersionInfo:
     def enabled(self):
         """Gets the enabled of this ModifyPlaybookVersionInfo.
 
-        If is enabled, false for disenabled, true for enabled
+        是否激活。(false:未激活, true:已激活)
 
         :return: The enabled of this ModifyPlaybookVersionInfo.
         :rtype: bool
@@ -250,7 +250,7 @@ class ModifyPlaybookVersionInfo:
     def enabled(self, enabled):
         """Sets the enabled of this ModifyPlaybookVersionInfo.
 
-        If is enabled, false for disenabled, true for enabled
+        是否激活。(false:未激活, true:已激活)
 
         :param enabled: The enabled of this ModifyPlaybookVersionInfo.
         :type enabled: bool
@@ -261,7 +261,7 @@ class ModifyPlaybookVersionInfo:
     def status(self):
         """Gets the status of this ModifyPlaybookVersionInfo.
 
-        状态
+        状态(APPROVING:审核中，EDITING-编辑中，UNPASSED-审核未通过，PUBLISHED-已发布)
 
         :return: The status of this ModifyPlaybookVersionInfo.
         :rtype: str
@@ -272,7 +272,7 @@ class ModifyPlaybookVersionInfo:
     def status(self, status):
         """Sets the status of this ModifyPlaybookVersionInfo.
 
-        状态
+        状态(APPROVING:审核中，EDITING-编辑中，UNPASSED-审核未通过，PUBLISHED-已发布)
 
         :param status: The status of this ModifyPlaybookVersionInfo.
         :type status: str
@@ -305,7 +305,7 @@ class ModifyPlaybookVersionInfo:
     def trigger_type(self):
         """Gets the trigger_type of this ModifyPlaybookVersionInfo.
 
-        Strategy of action. event, timer
+        触发方式. EVENT--事件触发, TIMER--定时触发
 
         :return: The trigger_type of this ModifyPlaybookVersionInfo.
         :rtype: str
@@ -316,7 +316,7 @@ class ModifyPlaybookVersionInfo:
     def trigger_type(self, trigger_type):
         """Sets the trigger_type of this ModifyPlaybookVersionInfo.
 
-        Strategy of action. event, timer
+        触发方式. EVENT--事件触发, TIMER--定时触发
 
         :param trigger_type: The trigger_type of this ModifyPlaybookVersionInfo.
         :type trigger_type: str
@@ -327,7 +327,7 @@ class ModifyPlaybookVersionInfo:
     def dataobject_create(self):
         """Gets the dataobject_create of this ModifyPlaybookVersionInfo.
 
-        if trigger when dataobject is created
+        数据对象是否创建时触发剧本
 
         :return: The dataobject_create of this ModifyPlaybookVersionInfo.
         :rtype: bool
@@ -338,7 +338,7 @@ class ModifyPlaybookVersionInfo:
     def dataobject_create(self, dataobject_create):
         """Sets the dataobject_create of this ModifyPlaybookVersionInfo.
 
-        if trigger when dataobject is created
+        数据对象是否创建时触发剧本
 
         :param dataobject_create: The dataobject_create of this ModifyPlaybookVersionInfo.
         :type dataobject_create: bool
@@ -349,7 +349,7 @@ class ModifyPlaybookVersionInfo:
     def dataobject_update(self):
         """Gets the dataobject_update of this ModifyPlaybookVersionInfo.
 
-        if trigger when dataobject is updated
+        数据对象是否更新时触发剧本
 
         :return: The dataobject_update of this ModifyPlaybookVersionInfo.
         :rtype: bool
@@ -360,7 +360,7 @@ class ModifyPlaybookVersionInfo:
     def dataobject_update(self, dataobject_update):
         """Sets the dataobject_update of this ModifyPlaybookVersionInfo.
 
-        if trigger when dataobject is updated
+        数据对象是否更新时触发剧本
 
         :param dataobject_update: The dataobject_update of this ModifyPlaybookVersionInfo.
         :type dataobject_update: bool
@@ -371,7 +371,7 @@ class ModifyPlaybookVersionInfo:
     def dataobject_delete(self):
         """Gets the dataobject_delete of this ModifyPlaybookVersionInfo.
 
-        if trigger when dataobject is deleted
+        数据对象是否删除时触发剧本
 
         :return: The dataobject_delete of this ModifyPlaybookVersionInfo.
         :rtype: bool
@@ -382,7 +382,7 @@ class ModifyPlaybookVersionInfo:
     def dataobject_delete(self, dataobject_delete):
         """Sets the dataobject_delete of this ModifyPlaybookVersionInfo.
 
-        if trigger when dataobject is deleted
+        数据对象是否删除时触发剧本
 
         :param dataobject_delete: The dataobject_delete of this ModifyPlaybookVersionInfo.
         :type dataobject_delete: bool
@@ -393,7 +393,7 @@ class ModifyPlaybookVersionInfo:
     def action_strategy(self):
         """Gets the action_strategy of this ModifyPlaybookVersionInfo.
 
-        Strategy of action. sync or async
+        执行策略. 目前仅支持异步并发执行，对应值为ASYNC
 
         :return: The action_strategy of this ModifyPlaybookVersionInfo.
         :rtype: str
@@ -404,7 +404,7 @@ class ModifyPlaybookVersionInfo:
     def action_strategy(self, action_strategy):
         """Sets the action_strategy of this ModifyPlaybookVersionInfo.
 
-        Strategy of action. sync or async
+        执行策略. 目前仅支持异步并发执行，对应值为ASYNC
 
         :param action_strategy: The action_strategy of this ModifyPlaybookVersionInfo.
         :type action_strategy: str

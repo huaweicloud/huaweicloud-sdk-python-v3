@@ -33,9 +33,9 @@ class ShowPlaybookInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: ID of project
+        :param project_id: 项目ID
         :type project_id: str
-        :param workspace_id: ID of workspace
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
         :param instance_id: instance _id
         :type instance_id: str
@@ -56,7 +56,7 @@ class ShowPlaybookInstanceRequest:
     def project_id(self):
         """Gets the project_id of this ShowPlaybookInstanceRequest.
 
-        ID of project
+        项目ID
 
         :return: The project_id of this ShowPlaybookInstanceRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowPlaybookInstanceRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ShowPlaybookInstanceRequest.
 
-        ID of project
+        项目ID
 
         :param project_id: The project_id of this ShowPlaybookInstanceRequest.
         :type project_id: str
@@ -78,7 +78,7 @@ class ShowPlaybookInstanceRequest:
     def workspace_id(self):
         """Gets the workspace_id of this ShowPlaybookInstanceRequest.
 
-        ID of workspace
+        工作空间ID
 
         :return: The workspace_id of this ShowPlaybookInstanceRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class ShowPlaybookInstanceRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this ShowPlaybookInstanceRequest.
 
-        ID of workspace
+        工作空间ID
 
         :param workspace_id: The workspace_id of this ShowPlaybookInstanceRequest.
         :type workspace_id: str

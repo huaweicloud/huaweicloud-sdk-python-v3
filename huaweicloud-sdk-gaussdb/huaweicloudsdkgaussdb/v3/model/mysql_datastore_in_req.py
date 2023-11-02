@@ -35,9 +35,9 @@ class MysqlDatastoreInReq:
 
         :param type: 数据库引擎，现在只支持gaussdb-mysql。
         :type type: str
-        :param version: 数据库版本。  两位数的大版本号，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlEngineVersion.html)返回的name字段。
+        :param version: 数据库版本。  两位数的大版本号，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlEngineVersion.html)返回的name字段。
         :type version: str
-        :param kernel_version: 内核数据库版本。如果需要指定具体的内核版本，请联系客服人员添加白名单。  完整的四位内核数据库版本，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlEngineVersion.html)返回的kernel_version字段。
+        :param kernel_version: 内核数据库版本。如果需要指定具体的内核版本，请联系客服人员添加白名单。  完整的四位内核数据库版本，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlEngineVersion.html)返回的kernel_version字段。
         :type kernel_version: str
         """
         
@@ -79,7 +79,7 @@ class MysqlDatastoreInReq:
     def version(self):
         """Gets the version of this MysqlDatastoreInReq.
 
-        数据库版本。  两位数的大版本号，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlEngineVersion.html)返回的name字段。
+        数据库版本。  两位数的大版本号，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlEngineVersion.html)返回的name字段。
 
         :return: The version of this MysqlDatastoreInReq.
         :rtype: str
@@ -90,7 +90,7 @@ class MysqlDatastoreInReq:
     def version(self, version):
         """Sets the version of this MysqlDatastoreInReq.
 
-        数据库版本。  两位数的大版本号，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlEngineVersion.html)返回的name字段。
+        数据库版本。  两位数的大版本号，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlEngineVersion.html)返回的name字段。
 
         :param version: The version of this MysqlDatastoreInReq.
         :type version: str
@@ -101,7 +101,7 @@ class MysqlDatastoreInReq:
     def kernel_version(self):
         """Gets the kernel_version of this MysqlDatastoreInReq.
 
-        内核数据库版本。如果需要指定具体的内核版本，请联系客服人员添加白名单。  完整的四位内核数据库版本，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlEngineVersion.html)返回的kernel_version字段。
+        内核数据库版本。如果需要指定具体的内核版本，请联系客服人员添加白名单。  完整的四位内核数据库版本，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlEngineVersion.html)返回的kernel_version字段。
 
         :return: The kernel_version of this MysqlDatastoreInReq.
         :rtype: str
@@ -112,7 +112,7 @@ class MysqlDatastoreInReq:
     def kernel_version(self, kernel_version):
         """Sets the kernel_version of this MysqlDatastoreInReq.
 
-        内核数据库版本。如果需要指定具体的内核版本，请联系客服人员添加白名单。  完整的四位内核数据库版本，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlEngineVersion.html)返回的kernel_version字段。
+        内核数据库版本。如果需要指定具体的内核版本，请联系客服人员添加白名单。  完整的四位内核数据库版本，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-gaussdbformysql/ShowGaussMySqlEngineVersion.html)返回的kernel_version字段。
 
         :param kernel_version: The kernel_version of this MysqlDatastoreInReq.
         :type kernel_version: str

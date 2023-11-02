@@ -33,7 +33,7 @@ class ShowAppRequest:
 
         :param app_id: 应用id
         :type app_id: str
-        :param eihealth_project_id: 医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        :param eihealth_project_id: 平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
         :type eihealth_project_id: str
         """
         
@@ -72,7 +72,7 @@ class ShowAppRequest:
     def eihealth_project_id(self):
         """Gets the eihealth_project_id of this ShowAppRequest.
 
-        医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
         :return: The eihealth_project_id of this ShowAppRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowAppRequest:
     def eihealth_project_id(self, eihealth_project_id):
         """Sets the eihealth_project_id of this ShowAppRequest.
 
-        医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
         :param eihealth_project_id: The eihealth_project_id of this ShowAppRequest.
         :type eihealth_project_id: str

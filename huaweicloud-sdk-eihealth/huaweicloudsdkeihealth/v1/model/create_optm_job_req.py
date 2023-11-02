@@ -19,22 +19,28 @@ class CreateOptmJobReq:
     openapi_types = {
         'basic_info': 'CreateDrugJobBasicInfo',
         'smiles': 'str',
+        'molecule_file': 'DrugFile',
         'binding_site': 'BindSiteDto',
         'weak_constraints': 'list[WeakConstraintDto]',
         'strong_constraints': 'list[StrongConstraintDto]',
+        'sampler_mixin_weight': 'float',
+        'model_ids': 'list[str]',
         'num_trials': 'int'
     }
 
     attribute_map = {
         'basic_info': 'basic_info',
         'smiles': 'smiles',
+        'molecule_file': 'molecule_file',
         'binding_site': 'binding_site',
         'weak_constraints': 'weak_constraints',
         'strong_constraints': 'strong_constraints',
+        'sampler_mixin_weight': 'sampler_mixin_weight',
+        'model_ids': 'model_ids',
         'num_trials': 'num_trials'
     }
 
-    def __init__(self, basic_info=None, smiles=None, binding_site=None, weak_constraints=None, strong_constraints=None, num_trials=None):
+    def __init__(self, basic_info=None, smiles=None, molecule_file=None, binding_site=None, weak_constraints=None, strong_constraints=None, sampler_mixin_weight=None, model_ids=None, num_trials=None):
         """CreateOptmJobReq
 
         The model defined in huaweicloud sdk
@@ -43,12 +49,18 @@ class CreateOptmJobReq:
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
         :param smiles: 分子SMILES表达式
         :type smiles: str
+        :param molecule_file: 
+        :type molecule_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
         :param binding_site: 
         :type binding_site: :class:`huaweicloudsdkeihealth.v1.BindSiteDto`
         :param weak_constraints: 弱约束集合
         :type weak_constraints: list[:class:`huaweicloudsdkeihealth.v1.WeakConstraintDto`]
         :param strong_constraints: 强约束集合
         :type strong_constraints: list[:class:`huaweicloudsdkeihealth.v1.StrongConstraintDto`]
+        :param sampler_mixin_weight: 初始化采样权重，参数范围(0.5, 1)，不包含0.5和1，默认为0.6
+        :type sampler_mixin_weight: float
+        :param model_ids: 模型id列表
+        :type model_ids: list[str]
         :param num_trials: 生成分子数量
         :type num_trials: int
         """
@@ -57,20 +69,30 @@ class CreateOptmJobReq:
 
         self._basic_info = None
         self._smiles = None
+        self._molecule_file = None
         self._binding_site = None
         self._weak_constraints = None
         self._strong_constraints = None
+        self._sampler_mixin_weight = None
+        self._model_ids = None
         self._num_trials = None
         self.discriminator = None
 
         self.basic_info = basic_info
-        self.smiles = smiles
+        if smiles is not None:
+            self.smiles = smiles
+        if molecule_file is not None:
+            self.molecule_file = molecule_file
         if binding_site is not None:
             self.binding_site = binding_site
         if weak_constraints is not None:
             self.weak_constraints = weak_constraints
         if strong_constraints is not None:
             self.strong_constraints = strong_constraints
+        if sampler_mixin_weight is not None:
+            self.sampler_mixin_weight = sampler_mixin_weight
+        if model_ids is not None:
+            self.model_ids = model_ids
         if num_trials is not None:
             self.num_trials = num_trials
 
@@ -113,6 +135,24 @@ class CreateOptmJobReq:
         :type smiles: str
         """
         self._smiles = smiles
+
+    @property
+    def molecule_file(self):
+        """Gets the molecule_file of this CreateOptmJobReq.
+
+        :return: The molecule_file of this CreateOptmJobReq.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFile`
+        """
+        return self._molecule_file
+
+    @molecule_file.setter
+    def molecule_file(self, molecule_file):
+        """Sets the molecule_file of this CreateOptmJobReq.
+
+        :param molecule_file: The molecule_file of this CreateOptmJobReq.
+        :type molecule_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
+        """
+        self._molecule_file = molecule_file
 
     @property
     def binding_site(self):
@@ -175,6 +215,50 @@ class CreateOptmJobReq:
         :type strong_constraints: list[:class:`huaweicloudsdkeihealth.v1.StrongConstraintDto`]
         """
         self._strong_constraints = strong_constraints
+
+    @property
+    def sampler_mixin_weight(self):
+        """Gets the sampler_mixin_weight of this CreateOptmJobReq.
+
+        初始化采样权重，参数范围(0.5, 1)，不包含0.5和1，默认为0.6
+
+        :return: The sampler_mixin_weight of this CreateOptmJobReq.
+        :rtype: float
+        """
+        return self._sampler_mixin_weight
+
+    @sampler_mixin_weight.setter
+    def sampler_mixin_weight(self, sampler_mixin_weight):
+        """Sets the sampler_mixin_weight of this CreateOptmJobReq.
+
+        初始化采样权重，参数范围(0.5, 1)，不包含0.5和1，默认为0.6
+
+        :param sampler_mixin_weight: The sampler_mixin_weight of this CreateOptmJobReq.
+        :type sampler_mixin_weight: float
+        """
+        self._sampler_mixin_weight = sampler_mixin_weight
+
+    @property
+    def model_ids(self):
+        """Gets the model_ids of this CreateOptmJobReq.
+
+        模型id列表
+
+        :return: The model_ids of this CreateOptmJobReq.
+        :rtype: list[str]
+        """
+        return self._model_ids
+
+    @model_ids.setter
+    def model_ids(self, model_ids):
+        """Sets the model_ids of this CreateOptmJobReq.
+
+        模型id列表
+
+        :param model_ids: The model_ids of this CreateOptmJobReq.
+        :type model_ids: list[str]
+        """
+        self._model_ids = model_ids
 
     @property
     def num_trials(self):

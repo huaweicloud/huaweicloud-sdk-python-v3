@@ -35,11 +35,11 @@ class UpdateAlertRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: project_id
+        :param project_id: 项目 ID。Project ID.
         :type project_id: str
-        :param workspace_id: workspace_id
+        :param workspace_id: 工作空间 ID。Workspace ID.
         :type workspace_id: str
-        :param rule_id: rule_id
+        :param rule_id: 告警规则 ID。Alert rule ID.
         :type rule_id: str
         :param body: Body of the UpdateAlertRuleRequest
         :type body: :class:`huaweicloudsdksecmaster.v2.UpdateAlertRuleRequestBody`
@@ -63,7 +63,7 @@ class UpdateAlertRuleRequest:
     def project_id(self):
         """Gets the project_id of this UpdateAlertRuleRequest.
 
-        project_id
+        项目 ID。Project ID.
 
         :return: The project_id of this UpdateAlertRuleRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class UpdateAlertRuleRequest:
     def project_id(self, project_id):
         """Sets the project_id of this UpdateAlertRuleRequest.
 
-        project_id
+        项目 ID。Project ID.
 
         :param project_id: The project_id of this UpdateAlertRuleRequest.
         :type project_id: str
@@ -85,7 +85,7 @@ class UpdateAlertRuleRequest:
     def workspace_id(self):
         """Gets the workspace_id of this UpdateAlertRuleRequest.
 
-        workspace_id
+        工作空间 ID。Workspace ID.
 
         :return: The workspace_id of this UpdateAlertRuleRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class UpdateAlertRuleRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this UpdateAlertRuleRequest.
 
-        workspace_id
+        工作空间 ID。Workspace ID.
 
         :param workspace_id: The workspace_id of this UpdateAlertRuleRequest.
         :type workspace_id: str
@@ -107,7 +107,7 @@ class UpdateAlertRuleRequest:
     def rule_id(self):
         """Gets the rule_id of this UpdateAlertRuleRequest.
 
-        rule_id
+        告警规则 ID。Alert rule ID.
 
         :return: The rule_id of this UpdateAlertRuleRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class UpdateAlertRuleRequest:
     def rule_id(self, rule_id):
         """Sets the rule_id of this UpdateAlertRuleRequest.
 
-        rule_id
+        告警规则 ID。Alert rule ID.
 
         :param rule_id: The rule_id of this UpdateAlertRuleRequest.
         :type rule_id: str

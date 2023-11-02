@@ -41,19 +41,19 @@ class CreateAlertRuleSimulationRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param pipe_id: pipe_id
+        :param pipe_id: 数据管道 ID。Pipe ID.
         :type pipe_id: str
-        :param query: query
+        :param query: 查询语句。Query.
         :type query: str
-        :param query_type: query_type. SQL, CBSL.
+        :param query_type: 查询语法，SQL。Query type. SQL.
         :type query_type: str
-        :param _from: from
+        :param _from: 开始时间。Start time.
         :type _from: int
-        :param to: from
+        :param to: 结束时间。End time.
         :type to: int
-        :param event_grouping: event_grouping
+        :param event_grouping: 告警分组。Event grouping.
         :type event_grouping: bool
-        :param triggers: triggers
+        :param triggers: 告警触发规则。Alert triggers.
         :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
         """
         
@@ -82,7 +82,7 @@ class CreateAlertRuleSimulationRequestBody:
     def pipe_id(self):
         """Gets the pipe_id of this CreateAlertRuleSimulationRequestBody.
 
-        pipe_id
+        数据管道 ID。Pipe ID.
 
         :return: The pipe_id of this CreateAlertRuleSimulationRequestBody.
         :rtype: str
@@ -93,7 +93,7 @@ class CreateAlertRuleSimulationRequestBody:
     def pipe_id(self, pipe_id):
         """Sets the pipe_id of this CreateAlertRuleSimulationRequestBody.
 
-        pipe_id
+        数据管道 ID。Pipe ID.
 
         :param pipe_id: The pipe_id of this CreateAlertRuleSimulationRequestBody.
         :type pipe_id: str
@@ -104,7 +104,7 @@ class CreateAlertRuleSimulationRequestBody:
     def query(self):
         """Gets the query of this CreateAlertRuleSimulationRequestBody.
 
-        query
+        查询语句。Query.
 
         :return: The query of this CreateAlertRuleSimulationRequestBody.
         :rtype: str
@@ -115,7 +115,7 @@ class CreateAlertRuleSimulationRequestBody:
     def query(self, query):
         """Sets the query of this CreateAlertRuleSimulationRequestBody.
 
-        query
+        查询语句。Query.
 
         :param query: The query of this CreateAlertRuleSimulationRequestBody.
         :type query: str
@@ -126,7 +126,7 @@ class CreateAlertRuleSimulationRequestBody:
     def query_type(self):
         """Gets the query_type of this CreateAlertRuleSimulationRequestBody.
 
-        query_type. SQL, CBSL.
+        查询语法，SQL。Query type. SQL.
 
         :return: The query_type of this CreateAlertRuleSimulationRequestBody.
         :rtype: str
@@ -137,7 +137,7 @@ class CreateAlertRuleSimulationRequestBody:
     def query_type(self, query_type):
         """Sets the query_type of this CreateAlertRuleSimulationRequestBody.
 
-        query_type. SQL, CBSL.
+        查询语法，SQL。Query type. SQL.
 
         :param query_type: The query_type of this CreateAlertRuleSimulationRequestBody.
         :type query_type: str
@@ -148,7 +148,7 @@ class CreateAlertRuleSimulationRequestBody:
     def _from(self):
         """Gets the _from of this CreateAlertRuleSimulationRequestBody.
 
-        from
+        开始时间。Start time.
 
         :return: The _from of this CreateAlertRuleSimulationRequestBody.
         :rtype: int
@@ -159,7 +159,7 @@ class CreateAlertRuleSimulationRequestBody:
     def _from(self, _from):
         """Sets the _from of this CreateAlertRuleSimulationRequestBody.
 
-        from
+        开始时间。Start time.
 
         :param _from: The _from of this CreateAlertRuleSimulationRequestBody.
         :type _from: int
@@ -170,7 +170,7 @@ class CreateAlertRuleSimulationRequestBody:
     def to(self):
         """Gets the to of this CreateAlertRuleSimulationRequestBody.
 
-        from
+        结束时间。End time.
 
         :return: The to of this CreateAlertRuleSimulationRequestBody.
         :rtype: int
@@ -181,7 +181,7 @@ class CreateAlertRuleSimulationRequestBody:
     def to(self, to):
         """Sets the to of this CreateAlertRuleSimulationRequestBody.
 
-        from
+        结束时间。End time.
 
         :param to: The to of this CreateAlertRuleSimulationRequestBody.
         :type to: int
@@ -192,7 +192,7 @@ class CreateAlertRuleSimulationRequestBody:
     def event_grouping(self):
         """Gets the event_grouping of this CreateAlertRuleSimulationRequestBody.
 
-        event_grouping
+        告警分组。Event grouping.
 
         :return: The event_grouping of this CreateAlertRuleSimulationRequestBody.
         :rtype: bool
@@ -203,7 +203,7 @@ class CreateAlertRuleSimulationRequestBody:
     def event_grouping(self, event_grouping):
         """Sets the event_grouping of this CreateAlertRuleSimulationRequestBody.
 
-        event_grouping
+        告警分组。Event grouping.
 
         :param event_grouping: The event_grouping of this CreateAlertRuleSimulationRequestBody.
         :type event_grouping: bool
@@ -214,7 +214,7 @@ class CreateAlertRuleSimulationRequestBody:
     def triggers(self):
         """Gets the triggers of this CreateAlertRuleSimulationRequestBody.
 
-        triggers
+        告警触发规则。Alert triggers.
 
         :return: The triggers of this CreateAlertRuleSimulationRequestBody.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
@@ -225,7 +225,7 @@ class CreateAlertRuleSimulationRequestBody:
     def triggers(self, triggers):
         """Sets the triggers of this CreateAlertRuleSimulationRequestBody.
 
-        triggers
+        告警触发规则。Alert triggers.
 
         :param triggers: The triggers of this CreateAlertRuleSimulationRequestBody.
         :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]

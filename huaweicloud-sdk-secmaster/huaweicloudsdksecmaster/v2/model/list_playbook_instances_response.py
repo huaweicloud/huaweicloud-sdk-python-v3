@@ -34,9 +34,9 @@ class ListPlaybookInstancesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: tatal count
+        :param count: 总数
         :type count: int
-        :param instances: list of informations of PlaybookInstanceInfo
+        :param instances: 剧本实例列表信息
         :type instances: list[:class:`huaweicloudsdksecmaster.v2.PlaybookInstanceInfo`]
         :param x_request_id: 
         :type x_request_id: str
@@ -60,7 +60,7 @@ class ListPlaybookInstancesResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListPlaybookInstancesResponse.
 
-        tatal count
+        总数
 
         :return: The count of this ListPlaybookInstancesResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListPlaybookInstancesResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListPlaybookInstancesResponse.
 
-        tatal count
+        总数
 
         :param count: The count of this ListPlaybookInstancesResponse.
         :type count: int
@@ -82,7 +82,7 @@ class ListPlaybookInstancesResponse(SdkResponse):
     def instances(self):
         """Gets the instances of this ListPlaybookInstancesResponse.
 
-        list of informations of PlaybookInstanceInfo
+        剧本实例列表信息
 
         :return: The instances of this ListPlaybookInstancesResponse.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.PlaybookInstanceInfo`]
@@ -93,7 +93,7 @@ class ListPlaybookInstancesResponse(SdkResponse):
     def instances(self, instances):
         """Sets the instances of this ListPlaybookInstancesResponse.
 
-        list of informations of PlaybookInstanceInfo
+        剧本实例列表信息
 
         :param instances: The instances of this ListPlaybookInstancesResponse.
         :type instances: list[:class:`huaweicloudsdksecmaster.v2.PlaybookInstanceInfo`]

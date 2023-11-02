@@ -59,7 +59,7 @@ class ListNatGatewaysRequest:
         :type created_at: str
         :param name: 公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文
         :type name: str
-        :param status: 公网NAT网关实例的状态。
+        :param status: 公网NAT网关实例的状态。 取值为： \&quot;ACTIVE\&quot;: 可用 \&quot;PENDING_CREATE\&quot;：创建中 \&quot;PENDING_UPDATE\&quot;：更新中 \&quot;PENDING_DELETE\&quot;：删除中 \&quot;INACTIVE\&quot;：不可用
         :type status: list[str]
         :param spec: 公网NAT网关实例的规格。 取值为： \&quot;1\&quot;：小型，SNAT最大连接数10000 \&quot;2\&quot;：中型，SNAT最大连接数50000 \&quot;3\&quot;：大型，SNAT最大连接数200000 \&quot;4\&quot;：超大型，SNAT最大连接数1000000 
         :type spec: list[str]
@@ -225,7 +225,7 @@ class ListNatGatewaysRequest:
     def status(self):
         """Gets the status of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的状态。
+        公网NAT网关实例的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"INACTIVE\"：不可用
 
         :return: The status of this ListNatGatewaysRequest.
         :rtype: list[str]
@@ -236,7 +236,7 @@ class ListNatGatewaysRequest:
     def status(self, status):
         """Sets the status of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的状态。
+        公网NAT网关实例的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"INACTIVE\"：不可用
 
         :param status: The status of this ListNatGatewaysRequest.
         :type status: list[str]

@@ -20,10 +20,6 @@ class CreatePlaybookInfo:
         'name': 'str',
         'description': 'str',
         'workspace_id': 'str',
-        'approve_role': 'str',
-        'user_role': 'str',
-        'edit_role': 'str',
-        'owner_id': 'str',
         'enabled': 'bool'
     }
 
@@ -31,33 +27,21 @@ class CreatePlaybookInfo:
         'name': 'name',
         'description': 'description',
         'workspace_id': 'workspace_id',
-        'approve_role': 'approve_role',
-        'user_role': 'user_role',
-        'edit_role': 'edit_role',
-        'owner_id': 'owner_id',
         'enabled': 'enabled'
     }
 
-    def __init__(self, name=None, description=None, workspace_id=None, approve_role=None, user_role=None, edit_role=None, owner_id=None, enabled=None):
+    def __init__(self, name=None, description=None, workspace_id=None, enabled=None):
         """CreatePlaybookInfo
 
         The model defined in huaweicloud sdk
 
-        :param name: The name, display only
+        :param name: 剧本名称
         :type name: str
-        :param description: The description, display only
+        :param description: 描述
         :type description: str
-        :param workspace_id: 工作空间id
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param approve_role: Role required for approve
-        :type approve_role: str
-        :param user_role: Role required for use
-        :type user_role: str
-        :param edit_role: Role required for edit
-        :type edit_role: str
-        :param owner_id: Owner id
-        :type owner_id: str
-        :param enabled: If is enabled, false for disenabled, true for enabled
+        :param enabled: 是否启用，默认传false
         :type enabled: bool
         """
         
@@ -66,27 +50,13 @@ class CreatePlaybookInfo:
         self._name = None
         self._description = None
         self._workspace_id = None
-        self._approve_role = None
-        self._user_role = None
-        self._edit_role = None
-        self._owner_id = None
         self._enabled = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if description is not None:
             self.description = description
-        if workspace_id is not None:
-            self.workspace_id = workspace_id
-        if approve_role is not None:
-            self.approve_role = approve_role
-        if user_role is not None:
-            self.user_role = user_role
-        if edit_role is not None:
-            self.edit_role = edit_role
-        if owner_id is not None:
-            self.owner_id = owner_id
+        self.workspace_id = workspace_id
         if enabled is not None:
             self.enabled = enabled
 
@@ -94,7 +64,7 @@ class CreatePlaybookInfo:
     def name(self):
         """Gets the name of this CreatePlaybookInfo.
 
-        The name, display only
+        剧本名称
 
         :return: The name of this CreatePlaybookInfo.
         :rtype: str
@@ -105,7 +75,7 @@ class CreatePlaybookInfo:
     def name(self, name):
         """Sets the name of this CreatePlaybookInfo.
 
-        The name, display only
+        剧本名称
 
         :param name: The name of this CreatePlaybookInfo.
         :type name: str
@@ -116,7 +86,7 @@ class CreatePlaybookInfo:
     def description(self):
         """Gets the description of this CreatePlaybookInfo.
 
-        The description, display only
+        描述
 
         :return: The description of this CreatePlaybookInfo.
         :rtype: str
@@ -127,7 +97,7 @@ class CreatePlaybookInfo:
     def description(self, description):
         """Sets the description of this CreatePlaybookInfo.
 
-        The description, display only
+        描述
 
         :param description: The description of this CreatePlaybookInfo.
         :type description: str
@@ -138,7 +108,7 @@ class CreatePlaybookInfo:
     def workspace_id(self):
         """Gets the workspace_id of this CreatePlaybookInfo.
 
-        工作空间id
+        工作空间ID
 
         :return: The workspace_id of this CreatePlaybookInfo.
         :rtype: str
@@ -149,7 +119,7 @@ class CreatePlaybookInfo:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this CreatePlaybookInfo.
 
-        工作空间id
+        工作空间ID
 
         :param workspace_id: The workspace_id of this CreatePlaybookInfo.
         :type workspace_id: str
@@ -157,98 +127,10 @@ class CreatePlaybookInfo:
         self._workspace_id = workspace_id
 
     @property
-    def approve_role(self):
-        """Gets the approve_role of this CreatePlaybookInfo.
-
-        Role required for approve
-
-        :return: The approve_role of this CreatePlaybookInfo.
-        :rtype: str
-        """
-        return self._approve_role
-
-    @approve_role.setter
-    def approve_role(self, approve_role):
-        """Sets the approve_role of this CreatePlaybookInfo.
-
-        Role required for approve
-
-        :param approve_role: The approve_role of this CreatePlaybookInfo.
-        :type approve_role: str
-        """
-        self._approve_role = approve_role
-
-    @property
-    def user_role(self):
-        """Gets the user_role of this CreatePlaybookInfo.
-
-        Role required for use
-
-        :return: The user_role of this CreatePlaybookInfo.
-        :rtype: str
-        """
-        return self._user_role
-
-    @user_role.setter
-    def user_role(self, user_role):
-        """Sets the user_role of this CreatePlaybookInfo.
-
-        Role required for use
-
-        :param user_role: The user_role of this CreatePlaybookInfo.
-        :type user_role: str
-        """
-        self._user_role = user_role
-
-    @property
-    def edit_role(self):
-        """Gets the edit_role of this CreatePlaybookInfo.
-
-        Role required for edit
-
-        :return: The edit_role of this CreatePlaybookInfo.
-        :rtype: str
-        """
-        return self._edit_role
-
-    @edit_role.setter
-    def edit_role(self, edit_role):
-        """Sets the edit_role of this CreatePlaybookInfo.
-
-        Role required for edit
-
-        :param edit_role: The edit_role of this CreatePlaybookInfo.
-        :type edit_role: str
-        """
-        self._edit_role = edit_role
-
-    @property
-    def owner_id(self):
-        """Gets the owner_id of this CreatePlaybookInfo.
-
-        Owner id
-
-        :return: The owner_id of this CreatePlaybookInfo.
-        :rtype: str
-        """
-        return self._owner_id
-
-    @owner_id.setter
-    def owner_id(self, owner_id):
-        """Sets the owner_id of this CreatePlaybookInfo.
-
-        Owner id
-
-        :param owner_id: The owner_id of this CreatePlaybookInfo.
-        :type owner_id: str
-        """
-        self._owner_id = owner_id
-
-    @property
     def enabled(self):
         """Gets the enabled of this CreatePlaybookInfo.
 
-        If is enabled, false for disenabled, true for enabled
+        是否启用，默认传false
 
         :return: The enabled of this CreatePlaybookInfo.
         :rtype: bool
@@ -259,7 +141,7 @@ class CreatePlaybookInfo:
     def enabled(self, enabled):
         """Sets the enabled of this CreatePlaybookInfo.
 
-        If is enabled, false for disenabled, true for enabled
+        是否启用，默认传false
 
         :param enabled: The enabled of this CreatePlaybookInfo.
         :type enabled: bool

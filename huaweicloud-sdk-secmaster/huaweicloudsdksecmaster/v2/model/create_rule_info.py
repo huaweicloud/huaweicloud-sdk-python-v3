@@ -38,8 +38,7 @@ class CreateRuleInfo:
         self._rule = None
         self.discriminator = None
 
-        if rule is not None:
-            self.rule = rule
+        self.rule = rule
 
     @property
     def rule(self):

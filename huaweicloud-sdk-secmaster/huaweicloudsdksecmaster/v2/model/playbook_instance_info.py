@@ -22,7 +22,7 @@ class PlaybookInstanceInfo:
         'project_id': 'str',
         'playbook': 'PlaybookInfoRef',
         'dataclass': 'DataclassInfoRef',
-        'dataobject': 'DataclassInfoRef',
+        'dataobject': 'DataobjectInfo',
         'status': 'str',
         'trigger_type': 'str',
         'start_time': 'str',
@@ -47,25 +47,25 @@ class PlaybookInstanceInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: Id value
+        :param id: 剧本实例ID
         :type id: str
-        :param name: The name, display only
+        :param name: 剧本实例名称
         :type name: str
-        :param project_id: Project id value
+        :param project_id: 项目ID
         :type project_id: str
         :param playbook: 
         :type playbook: :class:`huaweicloudsdksecmaster.v2.PlaybookInfoRef`
         :param dataclass: 
         :type dataclass: :class:`huaweicloudsdksecmaster.v2.DataclassInfoRef`
         :param dataobject: 
-        :type dataobject: :class:`huaweicloudsdksecmaster.v2.DataclassInfoRef`
-        :param status: Playbook instance status. RUNNING、FINISHED、FAILED、RETRYING、 TERMINATING、TERMINATED
+        :type dataobject: :class:`huaweicloudsdksecmaster.v2.DataobjectInfo`
+        :param status: 剧本实例状态. (RUNNING--运行中、FINISHED--成功、FAILED--失败、RETRYING--重试中、TERMINATING--终止中、TERMINATED--已终止)
         :type status: str
-        :param trigger_type: trigger type. DEBUG, TIMER, EVENT, MANUAL
+        :param trigger_type: 触发类型. TIMER--定时触发, EVENT--事件触发
         :type trigger_type: str
-        :param start_time: Create time
+        :param start_time: 创建时间
         :type start_time: str
-        :param end_time: Update time
+        :param end_time: 更新时间
         :type end_time: str
         """
         
@@ -108,7 +108,7 @@ class PlaybookInstanceInfo:
     def id(self):
         """Gets the id of this PlaybookInstanceInfo.
 
-        Id value
+        剧本实例ID
 
         :return: The id of this PlaybookInstanceInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class PlaybookInstanceInfo:
     def id(self, id):
         """Sets the id of this PlaybookInstanceInfo.
 
-        Id value
+        剧本实例ID
 
         :param id: The id of this PlaybookInstanceInfo.
         :type id: str
@@ -130,7 +130,7 @@ class PlaybookInstanceInfo:
     def name(self):
         """Gets the name of this PlaybookInstanceInfo.
 
-        The name, display only
+        剧本实例名称
 
         :return: The name of this PlaybookInstanceInfo.
         :rtype: str
@@ -141,7 +141,7 @@ class PlaybookInstanceInfo:
     def name(self, name):
         """Sets the name of this PlaybookInstanceInfo.
 
-        The name, display only
+        剧本实例名称
 
         :param name: The name of this PlaybookInstanceInfo.
         :type name: str
@@ -152,7 +152,7 @@ class PlaybookInstanceInfo:
     def project_id(self):
         """Gets the project_id of this PlaybookInstanceInfo.
 
-        Project id value
+        项目ID
 
         :return: The project_id of this PlaybookInstanceInfo.
         :rtype: str
@@ -163,7 +163,7 @@ class PlaybookInstanceInfo:
     def project_id(self, project_id):
         """Sets the project_id of this PlaybookInstanceInfo.
 
-        Project id value
+        项目ID
 
         :param project_id: The project_id of this PlaybookInstanceInfo.
         :type project_id: str
@@ -211,7 +211,7 @@ class PlaybookInstanceInfo:
         """Gets the dataobject of this PlaybookInstanceInfo.
 
         :return: The dataobject of this PlaybookInstanceInfo.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.DataclassInfoRef`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DataobjectInfo`
         """
         return self._dataobject
 
@@ -220,7 +220,7 @@ class PlaybookInstanceInfo:
         """Sets the dataobject of this PlaybookInstanceInfo.
 
         :param dataobject: The dataobject of this PlaybookInstanceInfo.
-        :type dataobject: :class:`huaweicloudsdksecmaster.v2.DataclassInfoRef`
+        :type dataobject: :class:`huaweicloudsdksecmaster.v2.DataobjectInfo`
         """
         self._dataobject = dataobject
 
@@ -228,7 +228,7 @@ class PlaybookInstanceInfo:
     def status(self):
         """Gets the status of this PlaybookInstanceInfo.
 
-        Playbook instance status. RUNNING、FINISHED、FAILED、RETRYING、 TERMINATING、TERMINATED
+        剧本实例状态. (RUNNING--运行中、FINISHED--成功、FAILED--失败、RETRYING--重试中、TERMINATING--终止中、TERMINATED--已终止)
 
         :return: The status of this PlaybookInstanceInfo.
         :rtype: str
@@ -239,7 +239,7 @@ class PlaybookInstanceInfo:
     def status(self, status):
         """Sets the status of this PlaybookInstanceInfo.
 
-        Playbook instance status. RUNNING、FINISHED、FAILED、RETRYING、 TERMINATING、TERMINATED
+        剧本实例状态. (RUNNING--运行中、FINISHED--成功、FAILED--失败、RETRYING--重试中、TERMINATING--终止中、TERMINATED--已终止)
 
         :param status: The status of this PlaybookInstanceInfo.
         :type status: str
@@ -250,7 +250,7 @@ class PlaybookInstanceInfo:
     def trigger_type(self):
         """Gets the trigger_type of this PlaybookInstanceInfo.
 
-        trigger type. DEBUG, TIMER, EVENT, MANUAL
+        触发类型. TIMER--定时触发, EVENT--事件触发
 
         :return: The trigger_type of this PlaybookInstanceInfo.
         :rtype: str
@@ -261,7 +261,7 @@ class PlaybookInstanceInfo:
     def trigger_type(self, trigger_type):
         """Sets the trigger_type of this PlaybookInstanceInfo.
 
-        trigger type. DEBUG, TIMER, EVENT, MANUAL
+        触发类型. TIMER--定时触发, EVENT--事件触发
 
         :param trigger_type: The trigger_type of this PlaybookInstanceInfo.
         :type trigger_type: str
@@ -272,7 +272,7 @@ class PlaybookInstanceInfo:
     def start_time(self):
         """Gets the start_time of this PlaybookInstanceInfo.
 
-        Create time
+        创建时间
 
         :return: The start_time of this PlaybookInstanceInfo.
         :rtype: str
@@ -283,7 +283,7 @@ class PlaybookInstanceInfo:
     def start_time(self, start_time):
         """Sets the start_time of this PlaybookInstanceInfo.
 
-        Create time
+        创建时间
 
         :param start_time: The start_time of this PlaybookInstanceInfo.
         :type start_time: str
@@ -294,7 +294,7 @@ class PlaybookInstanceInfo:
     def end_time(self):
         """Gets the end_time of this PlaybookInstanceInfo.
 
-        Update time
+        更新时间
 
         :return: The end_time of this PlaybookInstanceInfo.
         :rtype: str
@@ -305,7 +305,7 @@ class PlaybookInstanceInfo:
     def end_time(self, end_time):
         """Sets the end_time of this PlaybookInstanceInfo.
 
-        Update time
+        更新时间
 
         :param end_time: The end_time of this PlaybookInstanceInfo.
         :type end_time: str

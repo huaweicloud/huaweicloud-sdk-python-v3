@@ -51,29 +51,29 @@ class CreatePlaybookVersionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param description: The description, display only
+        :param description: 描述
         :type description: str
-        :param workspace_id: 工作空间id
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param playbook_id: Playbook id.
+        :param playbook_id: 剧本ID
         :type playbook_id: str
-        :param actions: Information of actions.
+        :param actions: 关联流程列表
         :type actions: list[:class:`huaweicloudsdksecmaster.v2.ActionInfo`]
-        :param dataclass_id: dataclass id.
+        :param dataclass_id: 数据类ID
         :type dataclass_id: str
         :param rule_enable: 过滤规则是否启用
         :type rule_enable: bool
         :param rule_id: 过滤规则ID
         :type rule_id: str
-        :param trigger_type: Strategy of action. event, timer
+        :param trigger_type: 触发方式. EVENT--事件触发, TIMER--定时触发
         :type trigger_type: str
-        :param dataobject_create: if trigger when dataobject is created
+        :param dataobject_create: 标识数据对象是否创建时触发剧本
         :type dataobject_create: bool
-        :param dataobject_update: if trigger when dataobject is updated
+        :param dataobject_update: 标识数据对象是否更新时触发剧本
         :type dataobject_update: bool
-        :param dataobject_delete: if trigger when dataobject is deleted
+        :param dataobject_delete: 标识数据对象是否删除时触发剧本
         :type dataobject_delete: bool
-        :param action_strategy: Strategy of action. sync or async
+        :param action_strategy: 执行策略. 目前仅支持异步并发执行，对应值为ASYNC
         :type action_strategy: str
         """
         
@@ -122,7 +122,7 @@ class CreatePlaybookVersionInfo:
     def description(self):
         """Gets the description of this CreatePlaybookVersionInfo.
 
-        The description, display only
+        描述
 
         :return: The description of this CreatePlaybookVersionInfo.
         :rtype: str
@@ -133,7 +133,7 @@ class CreatePlaybookVersionInfo:
     def description(self, description):
         """Sets the description of this CreatePlaybookVersionInfo.
 
-        The description, display only
+        描述
 
         :param description: The description of this CreatePlaybookVersionInfo.
         :type description: str
@@ -144,7 +144,7 @@ class CreatePlaybookVersionInfo:
     def workspace_id(self):
         """Gets the workspace_id of this CreatePlaybookVersionInfo.
 
-        工作空间id
+        工作空间ID
 
         :return: The workspace_id of this CreatePlaybookVersionInfo.
         :rtype: str
@@ -155,7 +155,7 @@ class CreatePlaybookVersionInfo:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this CreatePlaybookVersionInfo.
 
-        工作空间id
+        工作空间ID
 
         :param workspace_id: The workspace_id of this CreatePlaybookVersionInfo.
         :type workspace_id: str
@@ -166,7 +166,7 @@ class CreatePlaybookVersionInfo:
     def playbook_id(self):
         """Gets the playbook_id of this CreatePlaybookVersionInfo.
 
-        Playbook id.
+        剧本ID
 
         :return: The playbook_id of this CreatePlaybookVersionInfo.
         :rtype: str
@@ -177,7 +177,7 @@ class CreatePlaybookVersionInfo:
     def playbook_id(self, playbook_id):
         """Sets the playbook_id of this CreatePlaybookVersionInfo.
 
-        Playbook id.
+        剧本ID
 
         :param playbook_id: The playbook_id of this CreatePlaybookVersionInfo.
         :type playbook_id: str
@@ -188,7 +188,7 @@ class CreatePlaybookVersionInfo:
     def actions(self):
         """Gets the actions of this CreatePlaybookVersionInfo.
 
-        Information of actions.
+        关联流程列表
 
         :return: The actions of this CreatePlaybookVersionInfo.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.ActionInfo`]
@@ -199,7 +199,7 @@ class CreatePlaybookVersionInfo:
     def actions(self, actions):
         """Sets the actions of this CreatePlaybookVersionInfo.
 
-        Information of actions.
+        关联流程列表
 
         :param actions: The actions of this CreatePlaybookVersionInfo.
         :type actions: list[:class:`huaweicloudsdksecmaster.v2.ActionInfo`]
@@ -210,7 +210,7 @@ class CreatePlaybookVersionInfo:
     def dataclass_id(self):
         """Gets the dataclass_id of this CreatePlaybookVersionInfo.
 
-        dataclass id.
+        数据类ID
 
         :return: The dataclass_id of this CreatePlaybookVersionInfo.
         :rtype: str
@@ -221,7 +221,7 @@ class CreatePlaybookVersionInfo:
     def dataclass_id(self, dataclass_id):
         """Sets the dataclass_id of this CreatePlaybookVersionInfo.
 
-        dataclass id.
+        数据类ID
 
         :param dataclass_id: The dataclass_id of this CreatePlaybookVersionInfo.
         :type dataclass_id: str
@@ -276,7 +276,7 @@ class CreatePlaybookVersionInfo:
     def trigger_type(self):
         """Gets the trigger_type of this CreatePlaybookVersionInfo.
 
-        Strategy of action. event, timer
+        触发方式. EVENT--事件触发, TIMER--定时触发
 
         :return: The trigger_type of this CreatePlaybookVersionInfo.
         :rtype: str
@@ -287,7 +287,7 @@ class CreatePlaybookVersionInfo:
     def trigger_type(self, trigger_type):
         """Sets the trigger_type of this CreatePlaybookVersionInfo.
 
-        Strategy of action. event, timer
+        触发方式. EVENT--事件触发, TIMER--定时触发
 
         :param trigger_type: The trigger_type of this CreatePlaybookVersionInfo.
         :type trigger_type: str
@@ -298,7 +298,7 @@ class CreatePlaybookVersionInfo:
     def dataobject_create(self):
         """Gets the dataobject_create of this CreatePlaybookVersionInfo.
 
-        if trigger when dataobject is created
+        标识数据对象是否创建时触发剧本
 
         :return: The dataobject_create of this CreatePlaybookVersionInfo.
         :rtype: bool
@@ -309,7 +309,7 @@ class CreatePlaybookVersionInfo:
     def dataobject_create(self, dataobject_create):
         """Sets the dataobject_create of this CreatePlaybookVersionInfo.
 
-        if trigger when dataobject is created
+        标识数据对象是否创建时触发剧本
 
         :param dataobject_create: The dataobject_create of this CreatePlaybookVersionInfo.
         :type dataobject_create: bool
@@ -320,7 +320,7 @@ class CreatePlaybookVersionInfo:
     def dataobject_update(self):
         """Gets the dataobject_update of this CreatePlaybookVersionInfo.
 
-        if trigger when dataobject is updated
+        标识数据对象是否更新时触发剧本
 
         :return: The dataobject_update of this CreatePlaybookVersionInfo.
         :rtype: bool
@@ -331,7 +331,7 @@ class CreatePlaybookVersionInfo:
     def dataobject_update(self, dataobject_update):
         """Sets the dataobject_update of this CreatePlaybookVersionInfo.
 
-        if trigger when dataobject is updated
+        标识数据对象是否更新时触发剧本
 
         :param dataobject_update: The dataobject_update of this CreatePlaybookVersionInfo.
         :type dataobject_update: bool
@@ -342,7 +342,7 @@ class CreatePlaybookVersionInfo:
     def dataobject_delete(self):
         """Gets the dataobject_delete of this CreatePlaybookVersionInfo.
 
-        if trigger when dataobject is deleted
+        标识数据对象是否删除时触发剧本
 
         :return: The dataobject_delete of this CreatePlaybookVersionInfo.
         :rtype: bool
@@ -353,7 +353,7 @@ class CreatePlaybookVersionInfo:
     def dataobject_delete(self, dataobject_delete):
         """Sets the dataobject_delete of this CreatePlaybookVersionInfo.
 
-        if trigger when dataobject is deleted
+        标识数据对象是否删除时触发剧本
 
         :param dataobject_delete: The dataobject_delete of this CreatePlaybookVersionInfo.
         :type dataobject_delete: bool
@@ -364,7 +364,7 @@ class CreatePlaybookVersionInfo:
     def action_strategy(self):
         """Gets the action_strategy of this CreatePlaybookVersionInfo.
 
-        Strategy of action. sync or async
+        执行策略. 目前仅支持异步并发执行，对应值为ASYNC
 
         :return: The action_strategy of this CreatePlaybookVersionInfo.
         :rtype: str
@@ -375,7 +375,7 @@ class CreatePlaybookVersionInfo:
     def action_strategy(self, action_strategy):
         """Sets the action_strategy of this CreatePlaybookVersionInfo.
 
-        Strategy of action. sync or async
+        执行策略. 目前仅支持异步并发执行，对应值为ASYNC
 
         :param action_strategy: The action_strategy of this CreatePlaybookVersionInfo.
         :type action_strategy: str

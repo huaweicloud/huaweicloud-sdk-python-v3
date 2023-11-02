@@ -45,7 +45,7 @@ class FlavorInfo:
         :type cps: int
         :param qps: 每秒查询数。单位：个。仅7层LB有该指标。
         :type qps: int
-        :param bandwidth: 带宽。单位：Mbit/s。
+        :param bandwidth: 带宽。单位：Kbit/s。
         :type bandwidth: int
         :param lcu: 当前flavor对应的lcu数量。 LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。单位：个
         :type lcu: int
@@ -144,7 +144,7 @@ class FlavorInfo:
     def bandwidth(self):
         """Gets the bandwidth of this FlavorInfo.
 
-        带宽。单位：Mbit/s。
+        带宽。单位：Kbit/s。
 
         :return: The bandwidth of this FlavorInfo.
         :rtype: int
@@ -155,7 +155,7 @@ class FlavorInfo:
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this FlavorInfo.
 
-        带宽。单位：Mbit/s。
+        带宽。单位：Kbit/s。
 
         :param bandwidth: The bandwidth of this FlavorInfo.
         :type bandwidth: int

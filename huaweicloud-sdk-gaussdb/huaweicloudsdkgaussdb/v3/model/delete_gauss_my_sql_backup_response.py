@@ -18,51 +18,80 @@ class DeleteGaussMySqlBackupResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'job_id': 'str'
+        'backup_id': 'str',
+        'backup_name': 'str'
     }
 
     attribute_map = {
-        'job_id': 'job_id'
+        'backup_id': 'backup_id',
+        'backup_name': 'backup_name'
     }
 
-    def __init__(self, job_id=None):
+    def __init__(self, backup_id=None, backup_name=None):
         """DeleteGaussMySqlBackupResponse
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID。
-        :type job_id: str
+        :param backup_id: 备份ID。
+        :type backup_id: str
+        :param backup_name: 备份名称。
+        :type backup_name: str
         """
         
         super(DeleteGaussMySqlBackupResponse, self).__init__()
 
-        self._job_id = None
+        self._backup_id = None
+        self._backup_name = None
         self.discriminator = None
 
-        if job_id is not None:
-            self.job_id = job_id
+        if backup_id is not None:
+            self.backup_id = backup_id
+        if backup_name is not None:
+            self.backup_name = backup_name
 
     @property
-    def job_id(self):
-        """Gets the job_id of this DeleteGaussMySqlBackupResponse.
+    def backup_id(self):
+        """Gets the backup_id of this DeleteGaussMySqlBackupResponse.
 
-        任务ID。
+        备份ID。
 
-        :return: The job_id of this DeleteGaussMySqlBackupResponse.
+        :return: The backup_id of this DeleteGaussMySqlBackupResponse.
         :rtype: str
         """
-        return self._job_id
+        return self._backup_id
 
-    @job_id.setter
-    def job_id(self, job_id):
-        """Sets the job_id of this DeleteGaussMySqlBackupResponse.
+    @backup_id.setter
+    def backup_id(self, backup_id):
+        """Sets the backup_id of this DeleteGaussMySqlBackupResponse.
 
-        任务ID。
+        备份ID。
 
-        :param job_id: The job_id of this DeleteGaussMySqlBackupResponse.
-        :type job_id: str
+        :param backup_id: The backup_id of this DeleteGaussMySqlBackupResponse.
+        :type backup_id: str
         """
-        self._job_id = job_id
+        self._backup_id = backup_id
+
+    @property
+    def backup_name(self):
+        """Gets the backup_name of this DeleteGaussMySqlBackupResponse.
+
+        备份名称。
+
+        :return: The backup_name of this DeleteGaussMySqlBackupResponse.
+        :rtype: str
+        """
+        return self._backup_name
+
+    @backup_name.setter
+    def backup_name(self, backup_name):
+        """Sets the backup_name of this DeleteGaussMySqlBackupResponse.
+
+        备份名称。
+
+        :param backup_name: The backup_name of this DeleteGaussMySqlBackupResponse.
+        :type backup_name: str
+        """
+        self._backup_name = backup_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

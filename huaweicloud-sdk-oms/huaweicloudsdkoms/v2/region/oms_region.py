@@ -41,6 +41,8 @@ class OmsRegion:
                         "https://oms.tr-west-1.myhuaweicloud.com")
     SA_BRAZIL_1 = Region("sa-brazil-1",
                         "https://oms.sa-brazil-1.myhuaweicloud.com")
+    ME_EAST_1 = Region("me-east-1",
+                        "https://oms.me-east-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -59,6 +61,7 @@ class OmsRegion:
         "la-north-2": LA_NORTH_2,
         "tr-west-1": TR_WEST_1,
         "sa-brazil-1": SA_BRAZIL_1,
+        "me-east-1": ME_EAST_1,
     }
 
     @classmethod

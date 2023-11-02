@@ -1,3 +1,1340 @@
+# 3.1.64 2023-11-02
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListApisV2**
+    - changes of request param
+      - `+ vpc_channel_name`
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interfaces `ListPostalAddress`, `UpdatePostal`, `CreatePostal`, `DeletePostal`
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `+ monthly_records.id`
+
+### HuaweiCloud SDK BSSINTL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `+ monthly_records.id`
+
+### HuaweiCloud SDK CloudIDE
+
+- _Features_
+  - Support the interfaces `StartChat`, `SyncChat`, `SyncGetChatResult`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CSMS
+
+- _Features_
+  - Support the interface `RotateSecret`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - Support the following interfaces：
+    - `ShowConfigHistoryDetail`
+    - `UpdateClientIpTransparentTransmission`
+    - `UpdateInstanceConfig`
+    - `ListInstanceOperations`
+    - `ExportInstancesTask`
+    - `ExportExcelJob`
+    - `CreateResizeOrder`
+    - `ShowExpireAutoScanConfig`
+    - `UpdateExpireAutoScanConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interfaces `ShowNodesInformation`, `ShowBackUpInfo`, `CreateOrUpdateBackUpInfo`, `CreateConnectivityTest`
+
+### HuaweiCloud SDK DNS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPrivateZone**
+    - changes of response param
+      - `+ enterprise_project_id`
+      - `+ proxy_pattern`
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - Support the interfaces `CollectPositionAsync`, `ShowPositionResult`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - Support the following interfaces：
+    - `ExecuteClusterUpgradeAction`
+    - `ListUpdatableVersion`
+    - `ListUpdateRecord`
+    - `CheckTableRestore`
+    - `RestoreTable`
+    - `ListSnapshotCrossRegion`
+    - `ListSnapshotCrossRegionPolicy`
+    - `AddSnapshotCrossRegionPolicy`
+    - `DeleteSnapshotCrossRegionPolicy`
+    - `StopWorkloadPlan`
+    - `ShowWorkloadPlan`
+    - `DeleteWorkloadPlan`
+    - `StartWorkloadPlan`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK eiHealth
+
+- _Features_
+  - Support the following interfaces：
+    - `ListNodes`
+    - `ListScalingHistory`
+    - `ListPolicyEvents`
+    - `CreatePocketDetectionJob`
+    - `ShowPocketDetectionJob`
+    - `CreateAdmetJob`
+    - `ShowAdmetJob`
+    - `CreatePocketMolDesignJob`
+    - `ShowPocketMolDesignJob`
+    - `ListDrugModel`
+    - `CreateDrugModel`
+    - `UpdateDrugModel`
+    - `DeleteDrugModel`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateDrugLigandSvg**
+    - changes of request param
+      - `+ scaffold`
+  - **CreateNextflowJob**
+    - changes of request param
+      - `+ priority`
+  - **CreateDrugLigandSimilarityGraphTask**
+    - changes of request param
+      - `+ mode: enum value [FREE]`
+  - **ListDrugJob**
+    - changes of response param
+      - `+ jobs.priority`
+  - **ShowSynthesisJob**
+    - changes of response param
+      - `+ basic_info.priority`
+  - **ShowFepJob**
+    - changes of response param
+      - `+ part_failed_reason`
+      - `+ basic_info.priority`
+  - **ParseDrugReceptorInfo**
+    - changes of response param
+      - `* ligands.bounding_box: object<BoundingBoxDto> -> object<DrugBoundingBoxDto>`
+  - **RecognizeDrugReceptorPocket**
+    - changes of response param
+      - `* pockets: list<BoundingBoxDto> -> list<DrugBoundingBoxDto>`
+  - **CreateOptmJob**
+    - changes of request param
+      - `+ molecule_file`
+      - `+ sampler_mixin_weight`
+      - `+ model_ids`
+      - `+ strong_constraints.id`
+      - `+ binding_site.bounding_box.padding`
+      - `* body: object<DrugFile> -> object<ReceptorDrugFile>`
+      - `+ weak_constraints.id`
+  - **ShowOptmJob**
+    - changes of response param
+      - `+ models`
+      - `+ sampler_mixin_weight`
+      - `+ molecule_file`
+      - `+ basic_info.priority`
+      - `+ strong_constraints.id`
+      - `+ binding_site.bounding_box.padding`
+      - `* body: object<DrugFile> -> object<ReceptorDrugFile>`
+      - `+ weak_constraints.id`
+  - **CreateDockingJob**
+    - changes of request param
+      - `+ receptors.bounding_box.padding`
+      - `* body: object<DrugFile> -> object<ReceptorDrugFile>`
+  - **ShowDockingJob**
+    - changes of response param
+      - `+ part_failed_reason`
+      - `+ basic_info.priority`
+      - `+ receptors.bounding_box.padding`
+      - `* body: object<DrugFile> -> object<ReceptorDrugFile>`
+
+### HuaweiCloud SDK ELB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListListeners**
+    - changes of request param
+      - `+ proxy_protocol_enable`
+    - changes of response param
+      - `+ listeners.proxy_protocol_enable`
+      - `+ listeners.insert_headers.X-Forwarded-Proto`
+      - `+ listeners.insert_headers.X-Real-IP`
+      - `+ listeners.insert_headers.X-Forwarded-ELB-ID`
+      - `+ listeners.insert_headers.X-Forwarded-TLS-Certificate-ID`
+      - `+ listeners.insert_headers.X-Forwarded-TLS-Protocol`
+      - `+ listeners.insert_headers.X-Forwarded-TLS-Cipher`
+  - **CreateListener**
+    - changes of request param
+      - `+ listener.proxy_protocol_enable`
+      - `+ listener.insert_headers.X-Forwarded-Proto`
+      - `+ listener.insert_headers.X-Real-IP`
+      - `+ listener.insert_headers.X-Forwarded-ELB-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Certificate-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Protocol`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Cipher`
+    - changes of response param
+      - `+ listener.proxy_protocol_enable`
+      - `+ listener.insert_headers.X-Forwarded-Proto`
+      - `+ listener.insert_headers.X-Real-IP`
+      - `+ listener.insert_headers.X-Forwarded-ELB-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Certificate-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Protocol`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Cipher`
+  - **ShowListener**
+    - changes of response param
+      - `+ listener.proxy_protocol_enable`
+      - `+ listener.insert_headers.X-Forwarded-Proto`
+      - `+ listener.insert_headers.X-Real-IP`
+      - `+ listener.insert_headers.X-Forwarded-ELB-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Certificate-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Protocol`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Cipher`
+  - **UpdateListener**
+    - changes of request param
+      - `+ listener.proxy_protocol_enable`
+      - `+ listener.insert_headers.X-Forwarded-Proto`
+      - `+ listener.insert_headers.X-Real-IP`
+      - `+ listener.insert_headers.X-Forwarded-ELB-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Certificate-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Protocol`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Cipher`
+    - changes of response param
+      - `+ listener.proxy_protocol_enable`
+      - `+ listener.insert_headers.X-Forwarded-Proto`
+      - `+ listener.insert_headers.X-Real-IP`
+      - `+ listener.insert_headers.X-Forwarded-ELB-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Certificate-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Protocol`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Cipher`
+  - **CreatePool**
+    - changes of request param
+      - `+ pool.ip_version`
+  - **UpdatePool**
+    - changes of request param
+      - `+ pool.any_port_enable`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the following interfaces：
+    - `ShowIntelligentDiagnosisAbnormalCountOfInstances`
+    - `ShowIntelligentDiagnosisInstanceInfosPerMetric`
+    - `ShrinkGaussMySqlProxy`
+    - `ShowInstanceDatabaseVersion`
+    - `CopyInstanceConfigurations`
+    - `ShowAutoScalingPolicy`
+    - `UpdateAutoScalingPolicy`
+    - `CheckResource`
+    - `UpdateInstanceConfigurations`
+- _Bug Fix_
+  - None
+- _Change_
+  - **DeleteGaussMySqlBackup**
+    - changes of response param
+      - `+ backup_id`
+      - `+ backup_name`
+      - `- job_id`
+  - **CreateGaussMySqlProxy**
+    - changes of request param
+      - `+ subnet_id`
+  - **ShowGaussMySqlBackupList**
+    - changes of request param
+      - `+ name`
+      - `+ instance_name`
+    - changes of response param
+      - `+ backups.instance_name`
+      - `- backups.status: enum value [BUILDING,COMPLETED,FAILED,AVAILABLE]`
+      - `- backups.type: enum value [auto,manual]`
+  - **ShowGaussMySqlProxyList**
+    - changes of response param
+      - `+ proxy_list.proxy.subnet_id`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - Support the interface `DeleteDatabase`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstances**
+    - changes of request param
+      - `+ charge_mode`
+  - **ListInstancesDetails**
+    - changes of request param
+      - `+ charge_mode`
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSwrImageRepository**
+    - changes of response param
+      - `+ data_list.scannable`
+      - `- data_list.scanable`
+
+### HuaweiCloud SDK KPS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ImportPrivateKey**
+    - changes of response param
+      - `+ keypair.user_id`
+      - `+ keypair.key_protection`
+      - `* keypair: object<KeypairBean> -> object<ImportPrivateKeyAction>`
+
+### HuaweiCloud SDK NAT
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListNatGatewayDnatRules**
+    - changes of response param
+      - `+ dnat_rules.global_eip_id`
+      - `+ dnat_rules.global_eip_address`
+  - **CreateNatGatewayDnatRule**
+    - changes of request param
+      - `+ dnat_rule.global_eip_id`
+    - changes of response param
+      - `+ dnat_rule.global_eip_id`
+      - `+ dnat_rule.global_eip_address`
+  - **ShowNatGatewayDnatRule**
+    - changes of response param
+      - `+ dnat_rule.global_eip_id`
+      - `+ dnat_rule.global_eip_address`
+  - **UpdateNatGatewayDnatRule**
+    - changes of request param
+      - `+ dnat_rule.global_eip_id`
+    - changes of response param
+      - `+ dnat_rule.global_eip_id`
+      - `+ dnat_rule.global_eip_address`
+  - **BatchCreateNatGatewayDnatRules**
+    - changes of request param
+      - `+ dnat_rules.global_eip_id`
+    - changes of response param
+      - `+ dnat_rules.global_eip_id`
+      - `+ dnat_rules.global_eip_address`
+  - **ListNatGatewaySnatRules**
+    - changes of response param
+      - `+ snat_rules.global_eip_id`
+      - `+ snat_rules.global_eip_address`
+  - **CreateNatGatewaySnatRule**
+    - changes of request param
+      - `+ snat_rule.global_eip_id`
+    - changes of response param
+      - `+ snat_rule.global_eip_id`
+      - `+ snat_rule.global_eip_address`
+  - **ShowNatGatewaySnatRule**
+    - changes of response param
+      - `+ snat_rule.global_eip_id`
+      - `+ snat_rule.global_eip_address`
+  - **UpdateNatGatewaySnatRule**
+    - changes of request param
+      - `+ snat_rule.global_eip_id`
+    - changes of response param
+      - `+ snat_rule.global_eip_address`
+      - `+ snat_rule.global_eip_id`
+  - **ListNatGateways**
+    - changes of response param
+      - `+ nat_gateways.ngport_ip_address`
+      - `+ nat_gateways.billing_info`
+      - `+ nat_gateways.dnat_rules_limit`
+      - `+ nat_gateways.snat_rule_public_ip_limit`
+  - **CreateNatGateway**
+    - changes of request param
+      - `+ nat_gateway.ngport_ip_address`
+    - changes of response param
+      - `+ nat_gateway.ngport_ip_address`
+      - `+ nat_gateway.billing_info`
+      - `+ nat_gateway.dnat_rules_limit`
+      - `+ nat_gateway.snat_rule_public_ip_limit`
+  - **ShowNatGateway**
+    - changes of response param
+      - `+ nat_gateway.ngport_ip_address`
+      - `+ nat_gateway.billing_info`
+      - `+ nat_gateway.dnat_rules_limit`
+      - `+ nat_gateway.snat_rule_public_ip_limit`
+  - **UpdateNatGateway**
+    - changes of response param
+      - `+ nat_gateway.ngport_ip_address`
+      - `+ nat_gateway.billing_info`
+      - `+ nat_gateway.dnat_rules_limit`
+      - `+ nat_gateway.snat_rule_public_ip_limit`
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateRocketMqMigrationTask**
+    - changes of request param
+      - `* body: string -> map<string, object>`
+
+### HuaweiCloud SDK SecMaster
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interface `ListIncidentTypes`
+  - **ListAlertRuleMetrics**
+    - changes of response param
+      - `+ metric`
+      - `+ category`
+      - `- body`
+  - **CreateBatchOrderAlerts**
+    - changes of request param
+      - `- incident_id`
+      - `- event_content`
+      - `- marked_evidence`
+      - `- incident_content.type_category`
+      - `- incident_content.evidence_list`
+      - `- incident_content.note_list`
+      - `- incident_content.attachment_list`
+      - `- incident_content.description`
+      - `- incident_content.incident_type.layoutId`
+    - changes of response param
+      - `* data: object<BatchOrderAlertResult> -> object<BatchOperateAlertResult>`
+  - **ShowAlertRule**
+    - changes of response param
+      - `- accumulated_times`
+      - `- query_type: enum value [CBSL]`
+  - **UpdateAlertRule**
+    - changes of request param
+      - `- accumulated_times`
+      - `- query_type: enum value [CBSL]`
+    - changes of response param
+      - `- accumulated_times`
+      - `- query_type: enum value [CBSL]`
+  - **CreateAlertRuleSimulation**
+    - changes of request param
+      - `- query_type: enum value [CBSL]`
+  - **ShowAlertRuleTemplate**
+    - changes of response param
+      - `- query_type: enum value [CBSL]`
+  - **ListPlaybooks**
+    - changes of request param
+      - `- component_id`
+      - `* offset: optional -> required`
+      - `* limit: optional -> required`
+  - **CreatePlaybook**
+    - changes of request param
+      - `- approve_role`
+      - `- user_role`
+      - `- edit_role`
+      - `- owner_id`
+  - **ListPlaybookActions**
+    - changes of request param
+      - `* limit: optional -> required`
+      - `* offset: optional -> required`
+    - changes of response param
+      - `- data.sort_order`
+  - **CreatePlaybookAction**
+    - changes of response param
+      - `- data.sort_order`
+  - **UpdatePlaybookAction**
+    - changes of response param
+      - `- data.sort_order`
+  - **ListDataobjectRelations**
+    - changes of request param
+      - `+ order: enum value [DESC,ASC]`
+      - `* condition.conditions.data: list<string> -> list<object>`
+      - `* condition.conditions: list<ConditonInfo> -> list<object>`
+      - `* condition.logics: list<string> -> list<object>`
+    - changes of response param
+      - `+ success`
+      - `+ data.data_object`
+      - `+ data.dataclass_ref`
+      - `+ data.format_version`
+      - `+ data.version`
+      - `+ data.workspace_id`
+      - `- data.dataclass_id`
+      - `- data.name`
+      - `- data.type`
+      - `- data.content`
+      - `* data: list<DataobjectInfo> -> list<DataObjectDetail>`
+  - **CreateDataobjectRelations**
+    - changes of request param
+      - `* body: object<CreateRelation> -> object<CreateDataobjectRelationsRequestBody>`
+  - **DeleteDataobjectRelations**
+    - changes of request param
+      - `* body: object<CreateRelation> -> object<CreateDataobjectRelationsRequestBody>`
+    - changes of response param
+      - `- total`
+      - `- offset`
+      - `- success`
+      - `- limit`
+      - `- request_id`
+      - `* data: object<DataResponse> -> object<BatchOperateDataobjectResult>`
+  - **ListAlerts**
+    - changes of request param
+      - `+ order: enum value [DESC,ASC]`
+      - `* condition.conditions.data: list<string> -> list<object>`
+      - `* condition.conditions: list<ConditonInfo> -> list<object>`
+      - `* condition.logics: list<string> -> list<object>`
+    - changes of response param
+      - `* data.data_object.network_list.src_port: string -> int32`
+      - `* data.data_object.sla: int32 -> string`
+      - `* data.data_object.simulation: boolean -> string`
+      - `* data.data_object.process.process_pid: string -> int32`
+      - `* data.data_object.process.process_uid: string -> int32`
+  - **DeleteAlert**
+    - changes of request param
+      - `+ batch_ids`
+      - `- ids`
+      - `* body: object<DeleteAlert> -> object<DeleteAlertRequestBody>`
+    - changes of response param
+      - `* data: object<DataResponse> -> object<BatchOperateAlertResult>`
+  - **CreateAlert**
+    - changes of request param
+      - `+ data_object.domain_id`
+      - `+ data_object.region_id`
+      - `+ data_object.labels`
+      - `+ data_object.creator`
+      - `- data_object.label`
+      - `- data_object.chop_phase`
+      - `- data_object.ppdr_phase`
+      - `- data_object.cteator`
+      - `+ data_object.environment.cross_workspace_id`
+      - `+ data_object.data_source.company_name`
+      - `+ data_object.data_source.product_module`
+      - `+ data_object.severity: enum value [Tips,Low,Medium,High,Fatal]`
+      - `+ data_object.alert_type.category`
+      - `+ data_object.alert_type.alert_type`
+      - `* data_object.network_list.direction: object -> string`
+      - `* data_object.network_list.src_port: string -> int32`
+      - `+ data_object.network_list.src_geo.latitude`
+      - `+ data_object.network_list.src_geo.longitude`
+      - `+ data_object.network_list.src_geo.city_code`
+      - `+ data_object.network_list.src_geo.country_code`
+      - `+ data_object.network_list.dest_geo.latitude`
+      - `+ data_object.network_list.dest_geo.longitude`
+      - `+ data_object.network_list.dest_geo.city_code`
+      - `+ data_object.network_list.dest_geo.country_code`
+      - `+ data_object.resource_list.provider`
+      - `+ data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `* data_object.simulation: boolean -> string`
+      - `+ data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data_object.process.process_parent_name`
+      - `+ data_object.process.process_parent_path`
+      - `+ data_object.process.process_parent_pid`
+      - `+ data_object.process.process_parent_uid`
+      - `+ data_object.process.process_parent_cmdline`
+      - `+ data_object.process.process_child_name`
+      - `+ data_object.process.process_child_path`
+      - `+ data_object.process.process_child_pid`
+      - `+ data_object.process.process_child_uid`
+      - `+ data_object.process.process_child_cmdline`
+      - `+ data_object.process.process_launche_time`
+      - `+ data_object.process.process_terminate_time`
+      - `* data_object.process.process_pid: string -> int32`
+      - `* data_object.process.process_uid: string -> int32`
+      - `* data_object: object<CreateAlert> -> object<Alert>`
+    - changes of response param
+      - `- data.type`
+      - `+ data.data_object.domain_id`
+      - `+ data.data_object.region_id`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.severity`
+      - `+ data.data_object.creator`
+      - `- data.data_object.datasource`
+      - `- data.data_object.serverity`
+      - `- data.data_object.chop_phase`
+      - `- data.data_object.ppdr_phase`
+      - `- data.data_object.cteator`
+      - `+ data.data_object.environment.cross_workspace_id`
+      - `+ data.data_object.alert_type.category`
+      - `+ data.data_object.alert_type.alert_type`
+      - `* data.data_object.network_list.direction: object -> string`
+      - `* data.data_object.network_list.src_port: string -> int32`
+      - `+ data.data_object.network_list.src_geo.latitude`
+      - `+ data.data_object.network_list.src_geo.longitude`
+      - `+ data.data_object.network_list.src_geo.city_code`
+      - `+ data.data_object.network_list.src_geo.country_code`
+      - `+ data.data_object.network_list.dest_geo.latitude`
+      - `+ data.data_object.network_list.dest_geo.longitude`
+      - `+ data.data_object.network_list.dest_geo.city_code`
+      - `+ data.data_object.network_list.dest_geo.country_code`
+      - `+ data.data_object.resource_list.provider`
+      - `+ data.data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data.data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data.data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `* data.data_object.simulation: boolean -> string`
+      - `+ data.data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data.data_object.process.process_parent_name`
+      - `+ data.data_object.process.process_parent_path`
+      - `+ data.data_object.process.process_parent_pid`
+      - `+ data.data_object.process.process_parent_uid`
+      - `+ data.data_object.process.process_parent_cmdline`
+      - `+ data.data_object.process.process_child_name`
+      - `+ data.data_object.process.process_child_path`
+      - `+ data.data_object.process.process_child_pid`
+      - `+ data.data_object.process.process_child_uid`
+      - `+ data.data_object.process.process_child_cmdline`
+      - `+ data.data_object.process.process_launche_time`
+      - `+ data.data_object.process.process_terminate_time`
+      - `* data.data_object.process.process_pid: string -> int32`
+      - `* data.data_object.process.process_uid: string -> int32`
+  - **ShowAlert**
+    - changes of response param
+      - `- data.type`
+      - `+ data.data_object.domain_id`
+      - `+ data.data_object.region_id`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.severity`
+      - `+ data.data_object.creator`
+      - `- data.data_object.datasource`
+      - `- data.data_object.serverity`
+      - `- data.data_object.chop_phase`
+      - `- data.data_object.ppdr_phase`
+      - `- data.data_object.cteator`
+      - `+ data.data_object.environment.cross_workspace_id`
+      - `* data.data_object.count: string -> int32`
+      - `+ data.data_object.alert_type.category`
+      - `+ data.data_object.alert_type.alert_type`
+      - `* data.data_object.network_list.direction: object -> string`
+      - `* data.data_object.network_list.src_port: string -> int32`
+      - `+ data.data_object.network_list.src_geo.latitude`
+      - `+ data.data_object.network_list.src_geo.longitude`
+      - `+ data.data_object.network_list.src_geo.city_code`
+      - `+ data.data_object.network_list.src_geo.country_code`
+      - `+ data.data_object.network_list.dest_geo.latitude`
+      - `+ data.data_object.network_list.dest_geo.longitude`
+      - `+ data.data_object.network_list.dest_geo.city_code`
+      - `+ data.data_object.network_list.dest_geo.country_code`
+      - `+ data.data_object.resource_list.provider`
+      - `+ data.data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data.data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data.data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `* data.data_object.simulation: boolean -> string`
+      - `+ data.data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data.data_object.process.process_parent_name`
+      - `+ data.data_object.process.process_parent_path`
+      - `+ data.data_object.process.process_parent_pid`
+      - `+ data.data_object.process.process_parent_uid`
+      - `+ data.data_object.process.process_parent_cmdline`
+      - `+ data.data_object.process.process_child_name`
+      - `+ data.data_object.process.process_child_path`
+      - `+ data.data_object.process.process_child_pid`
+      - `+ data.data_object.process.process_child_uid`
+      - `+ data.data_object.process.process_child_cmdline`
+      - `+ data.data_object.process.process_launche_time`
+      - `+ data.data_object.process.process_terminate_time`
+      - `* data.data_object.process.process_pid: string -> int32`
+      - `* data.data_object.process.process_uid: string -> int32`
+      - `* data.data_object: object<ShowAlertRsp> -> object<Alert>`
+      - `* data: object<ShowAlertDetail> -> object<AlertDetail>`
+  - **ChangeAlert**
+    - changes of request param
+      - `+ batch_ids`
+      - `+ data_object.domain_id`
+      - `+ data_object.region_id`
+      - `+ data_object.labels`
+      - `+ data_object.data_source`
+      - `+ data_object.severity`
+      - `+ data_object.creator`
+      - `- data_object.datasource`
+      - `- data_object.serverity`
+      - `- data_object.chop_phase`
+      - `- data_object.ppdr_phase`
+      - `- data_object.cteator`
+      - `+ data_object.environment.cross_workspace_id`
+      - `+ data_object.alert_type.category`
+      - `+ data_object.alert_type.alert_type`
+      - `* data_object.network_list.direction: object -> string`
+      - `* data_object.network_list.src_port: string -> int32`
+      - `+ data_object.network_list.src_geo.latitude`
+      - `+ data_object.network_list.src_geo.longitude`
+      - `+ data_object.network_list.src_geo.city_code`
+      - `+ data_object.network_list.src_geo.country_code`
+      - `+ data_object.network_list.dest_geo.latitude`
+      - `+ data_object.network_list.dest_geo.longitude`
+      - `+ data_object.network_list.dest_geo.city_code`
+      - `+ data_object.network_list.dest_geo.country_code`
+      - `+ data_object.resource_list.provider`
+      - `+ data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `* data_object.simulation: boolean -> string`
+      - `+ data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data_object.process.process_parent_name`
+      - `+ data_object.process.process_parent_path`
+      - `+ data_object.process.process_parent_pid`
+      - `+ data_object.process.process_parent_uid`
+      - `+ data_object.process.process_parent_cmdline`
+      - `+ data_object.process.process_child_name`
+      - `+ data_object.process.process_child_path`
+      - `+ data_object.process.process_child_pid`
+      - `+ data_object.process.process_child_uid`
+      - `+ data_object.process.process_child_cmdline`
+      - `+ data_object.process.process_launche_time`
+      - `+ data_object.process.process_terminate_time`
+      - `* data_object.process.process_pid: string -> int32`
+      - `* data_object.process.process_uid: string -> int32`
+    - changes of response param
+      - `- data.type`
+      - `+ data.data_object.domain_id`
+      - `+ data.data_object.region_id`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.severity`
+      - `+ data.data_object.creator`
+      - `- data.data_object.datasource`
+      - `- data.data_object.serverity`
+      - `- data.data_object.chop_phase`
+      - `- data.data_object.ppdr_phase`
+      - `- data.data_object.cteator`
+      - `+ data.data_object.environment.cross_workspace_id`
+      - `+ data.data_object.alert_type.category`
+      - `+ data.data_object.alert_type.alert_type`
+      - `* data.data_object.network_list.direction: object -> string`
+      - `* data.data_object.network_list.src_port: string -> int32`
+      - `+ data.data_object.network_list.src_geo.latitude`
+      - `+ data.data_object.network_list.src_geo.longitude`
+      - `+ data.data_object.network_list.src_geo.city_code`
+      - `+ data.data_object.network_list.src_geo.country_code`
+      - `+ data.data_object.network_list.dest_geo.latitude`
+      - `+ data.data_object.network_list.dest_geo.longitude`
+      - `+ data.data_object.network_list.dest_geo.city_code`
+      - `+ data.data_object.network_list.dest_geo.country_code`
+      - `+ data.data_object.resource_list.provider`
+      - `+ data.data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data.data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data.data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `* data.data_object.simulation: boolean -> string`
+      - `+ data.data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data.data_object.process.process_parent_name`
+      - `+ data.data_object.process.process_parent_path`
+      - `+ data.data_object.process.process_parent_pid`
+      - `+ data.data_object.process.process_parent_uid`
+      - `+ data.data_object.process.process_parent_cmdline`
+      - `+ data.data_object.process.process_child_name`
+      - `+ data.data_object.process.process_child_path`
+      - `+ data.data_object.process.process_child_pid`
+      - `+ data.data_object.process.process_child_uid`
+      - `+ data.data_object.process.process_child_cmdline`
+      - `+ data.data_object.process.process_launche_time`
+      - `+ data.data_object.process.process_terminate_time`
+      - `* data.data_object.process.process_pid: string -> int32`
+      - `* data.data_object.process.process_uid: string -> int32`
+  - **ListIncidents**
+    - changes of request param
+      - `+ order: enum value [DESC,ASC]`
+      - `* condition.conditions.data: list<string> -> list<object>`
+      - `* condition.conditions: list<ConditonInfo> -> list<object>`
+      - `* condition.logics: list<string> -> list<object>`
+    - changes of response param
+      - `+ data.dataclass_ref`
+      - `+ data.format_version`
+      - `+ data.id`
+      - `+ data.version`
+      - `- data.dataclass_id`
+      - `- data.layout_id`
+      - `- data.name`
+      - `- data.type`
+      - `- data.dataclass`
+      - `+ data.data_object.domain_id`
+      - `+ data.data_object.region_id`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.severity`
+      - `+ data.data_object.creator`
+      - `+ data.data_object.system_alert_table`
+      - `- data.data_object.datasource`
+      - `- data.data_object.serverity`
+      - `- data.data_object.chop_phase`
+      - `- data.data_object.ppdr_phase`
+      - `- data.data_object.cteator`
+      - `- data.data_object.system_incident_table`
+      - `+ data.data_object.environment.cross_workspace_id`
+      - `+ data.data_object.incident_type.category`
+      - `+ data.data_object.incident_type.incident_type`
+      - `* data.data_object.network_list.direction: object -> string`
+      - `* data.data_object.network_list.src_port: string -> int32`
+      - `+ data.data_object.network_list.src_geo.latitude`
+      - `+ data.data_object.network_list.src_geo.longitude`
+      - `+ data.data_object.network_list.src_geo.city_code`
+      - `+ data.data_object.network_list.src_geo.country_code`
+      - `+ data.data_object.network_list.dest_geo.latitude`
+      - `+ data.data_object.network_list.dest_geo.longitude`
+      - `+ data.data_object.network_list.dest_geo.city_code`
+      - `+ data.data_object.network_list.dest_geo.country_code`
+      - `+ data.data_object.resource_list.provider`
+      - `+ data.data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data.data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data.data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data.data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data.data_object.process.process_parent_name`
+      - `+ data.data_object.process.process_parent_path`
+      - `+ data.data_object.process.process_parent_pid`
+      - `+ data.data_object.process.process_parent_uid`
+      - `+ data.data_object.process.process_parent_cmdline`
+      - `+ data.data_object.process.process_child_name`
+      - `+ data.data_object.process.process_child_path`
+      - `+ data.data_object.process.process_child_pid`
+      - `+ data.data_object.process.process_child_uid`
+      - `+ data.data_object.process.process_child_cmdline`
+      - `+ data.data_object.process.process_launche_time`
+      - `+ data.data_object.process.process_terminate_time`
+      - `* data.data_object.process.process_pid: string -> int32`
+      - `* data.data_object.process.process_uid: string -> int32`
+      - `* data: list<ListIncidentDetail> -> list<IncidentDetail>`
+  - **DeleteIncident**
+    - changes of request param
+      - `+ batch_ids`
+      - `- ids`
+      - `* body: object<DeleteIncident> -> object<DeleteIncidentRequestBody>`
+    - changes of response param
+      - `* data: object<BatchOrderAlertResult> -> object`
+  - **CreateIncident**
+    - changes of request param
+      - `+ data_object.domain_id`
+      - `+ data_object.region_id`
+      - `+ data_object.creator`
+      - `+ data_object.system_alert_table`
+      - `- data_object.serverity`
+      - `- data_object.chop_phase`
+      - `- data_object.ppdr_phase`
+      - `- data_object.cteator`
+      - `- data_object.system_incident_table`
+      - `+ data_object.severity: enum value [Tips,Low,Medium,High,Fatal]`
+      - `+ data_object.environment.cross_workspace_id`
+      - `+ data_object.data_source.company_name`
+      - `+ data_object.data_source.product_module`
+      - `- data_object.incident_type.id`
+      - `- data_object.incident_type.layoutId`
+      - `* data_object.network_list.direction: object -> string`
+      - `* data_object.network_list.src_port: string -> int32`
+      - `+ data_object.network_list.src_geo.latitude`
+      - `+ data_object.network_list.src_geo.longitude`
+      - `+ data_object.network_list.src_geo.city_code`
+      - `+ data_object.network_list.src_geo.country_code`
+      - `+ data_object.network_list.dest_geo.latitude`
+      - `+ data_object.network_list.dest_geo.longitude`
+      - `+ data_object.network_list.dest_geo.city_code`
+      - `+ data_object.network_list.dest_geo.country_code`
+      - `+ data_object.resource_list.provider`
+      - `+ data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data_object.process.process_parent_name`
+      - `+ data_object.process.process_parent_path`
+      - `+ data_object.process.process_parent_pid`
+      - `+ data_object.process.process_parent_uid`
+      - `+ data_object.process.process_parent_cmdline`
+      - `+ data_object.process.process_child_name`
+      - `+ data_object.process.process_child_path`
+      - `+ data_object.process.process_child_pid`
+      - `+ data_object.process.process_child_uid`
+      - `+ data_object.process.process_child_cmdline`
+      - `+ data_object.process.process_launche_time`
+      - `+ data_object.process.process_terminate_time`
+      - `* data_object.process.process_pid: string -> int32`
+      - `* data_object.process.process_uid: string -> int32`
+      - `* data_object: object<CreateIncident> -> object<Incident>`
+    - changes of response param
+      - `+ data.dataclass_ref`
+      - `+ data.format_version`
+      - `+ data.id`
+      - `+ data.version`
+      - `- data.dataclass_id`
+      - `- data.layout_id`
+      - `- data.name`
+      - `- data.type`
+      - `- data.dataclass`
+      - `+ data.data_object.domain_id`
+      - `+ data.data_object.region_id`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.severity`
+      - `+ data.data_object.creator`
+      - `+ data.data_object.system_alert_table`
+      - `- data.data_object.datasource`
+      - `- data.data_object.serverity`
+      - `- data.data_object.chop_phase`
+      - `- data.data_object.ppdr_phase`
+      - `- data.data_object.cteator`
+      - `- data.data_object.system_incident_table`
+      - `+ data.data_object.environment.cross_workspace_id`
+      - `+ data.data_object.incident_type.category`
+      - `+ data.data_object.incident_type.incident_type`
+      - `* data.data_object.network_list.direction: object -> string`
+      - `* data.data_object.network_list.src_port: string -> int32`
+      - `+ data.data_object.network_list.src_geo.latitude`
+      - `+ data.data_object.network_list.src_geo.longitude`
+      - `+ data.data_object.network_list.src_geo.city_code`
+      - `+ data.data_object.network_list.src_geo.country_code`
+      - `+ data.data_object.network_list.dest_geo.latitude`
+      - `+ data.data_object.network_list.dest_geo.longitude`
+      - `+ data.data_object.network_list.dest_geo.city_code`
+      - `+ data.data_object.network_list.dest_geo.country_code`
+      - `+ data.data_object.resource_list.provider`
+      - `+ data.data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data.data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data.data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data.data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data.data_object.process.process_parent_name`
+      - `+ data.data_object.process.process_parent_path`
+      - `+ data.data_object.process.process_parent_pid`
+      - `+ data.data_object.process.process_parent_uid`
+      - `+ data.data_object.process.process_parent_cmdline`
+      - `+ data.data_object.process.process_child_name`
+      - `+ data.data_object.process.process_child_path`
+      - `+ data.data_object.process.process_child_pid`
+      - `+ data.data_object.process.process_child_uid`
+      - `+ data.data_object.process.process_child_cmdline`
+      - `+ data.data_object.process.process_launche_time`
+      - `+ data.data_object.process.process_terminate_time`
+      - `* data.data_object.process.process_pid: string -> int32`
+      - `* data.data_object.process.process_uid: string -> int32`
+  - **ShowIncident**
+    - changes of response param
+      - `+ data.dataclass_ref`
+      - `+ data.format_version`
+      - `+ data.id`
+      - `+ data.version`
+      - `- data.dataclass_id`
+      - `- data.layout_id`
+      - `- data.name`
+      - `- data.type`
+      - `- data.dataclass`
+      - `+ data.data_object.domain_id`
+      - `+ data.data_object.region_id`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.severity`
+      - `+ data.data_object.creator`
+      - `+ data.data_object.system_alert_table`
+      - `- data.data_object.datasource`
+      - `- data.data_object.serverity`
+      - `- data.data_object.chop_phase`
+      - `- data.data_object.ppdr_phase`
+      - `- data.data_object.cteator`
+      - `- data.data_object.system_incident_table`
+      - `+ data.data_object.environment.cross_workspace_id`
+      - `* data.data_object.count: string -> int32`
+      - `+ data.data_object.incident_type.category`
+      - `+ data.data_object.incident_type.incident_type`
+      - `* data.data_object.network_list.direction: object -> string`
+      - `* data.data_object.network_list.src_port: string -> int32`
+      - `+ data.data_object.network_list.src_geo.latitude`
+      - `+ data.data_object.network_list.src_geo.longitude`
+      - `+ data.data_object.network_list.src_geo.city_code`
+      - `+ data.data_object.network_list.src_geo.country_code`
+      - `+ data.data_object.network_list.dest_geo.latitude`
+      - `+ data.data_object.network_list.dest_geo.longitude`
+      - `+ data.data_object.network_list.dest_geo.city_code`
+      - `+ data.data_object.network_list.dest_geo.country_code`
+      - `+ data.data_object.resource_list.provider`
+      - `+ data.data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data.data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data.data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data.data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data.data_object.process.process_parent_name`
+      - `+ data.data_object.process.process_parent_path`
+      - `+ data.data_object.process.process_parent_pid`
+      - `+ data.data_object.process.process_parent_uid`
+      - `+ data.data_object.process.process_parent_cmdline`
+      - `+ data.data_object.process.process_child_name`
+      - `+ data.data_object.process.process_child_path`
+      - `+ data.data_object.process.process_child_pid`
+      - `+ data.data_object.process.process_child_uid`
+      - `+ data.data_object.process.process_child_cmdline`
+      - `+ data.data_object.process.process_launche_time`
+      - `+ data.data_object.process.process_terminate_time`
+      - `* data.data_object.process.process_pid: string -> int32`
+      - `* data.data_object.process.process_uid: string -> int32`
+      - `* data.data_object: object<ShowIncident> -> object<Incident>`
+      - `* data: object<ShowIncidentDetail> -> object<IncidentDetail>`
+  - **ChangeIncident**
+    - changes of request param
+      - `+ batch_ids`
+      - `+ data_object.domain_id`
+      - `+ data_object.region_id`
+      - `+ data_object.labels`
+      - `+ data_object.data_source`
+      - `+ data_object.severity`
+      - `+ data_object.creator`
+      - `+ data_object.system_alert_table`
+      - `- data_object.datasource`
+      - `- data_object.serverity`
+      - `- data_object.chop_phase`
+      - `- data_object.ppdr_phase`
+      - `- data_object.cteator`
+      - `- data_object.system_incident_table`
+      - `+ data_object.environment.cross_workspace_id`
+      - `+ data_object.incident_type.category`
+      - `+ data_object.incident_type.incident_type`
+      - `* data_object.network_list.direction: object -> string`
+      - `* data_object.network_list.src_port: string -> int32`
+      - `+ data_object.network_list.src_geo.latitude`
+      - `+ data_object.network_list.src_geo.longitude`
+      - `+ data_object.network_list.src_geo.city_code`
+      - `+ data_object.network_list.src_geo.country_code`
+      - `+ data_object.network_list.dest_geo.latitude`
+      - `+ data_object.network_list.dest_geo.longitude`
+      - `+ data_object.network_list.dest_geo.city_code`
+      - `+ data_object.network_list.dest_geo.country_code`
+      - `+ data_object.resource_list.provider`
+      - `+ data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data_object.process.process_parent_name`
+      - `+ data_object.process.process_parent_path`
+      - `+ data_object.process.process_parent_pid`
+      - `+ data_object.process.process_parent_uid`
+      - `+ data_object.process.process_parent_cmdline`
+      - `+ data_object.process.process_child_name`
+      - `+ data_object.process.process_child_path`
+      - `+ data_object.process.process_child_pid`
+      - `+ data_object.process.process_child_uid`
+      - `+ data_object.process.process_child_cmdline`
+      - `+ data_object.process.process_launche_time`
+      - `+ data_object.process.process_terminate_time`
+      - `* data_object.process.process_pid: string -> int32`
+      - `* data_object.process.process_uid: string -> int32`
+    - changes of response param
+      - `+ data.dataclass_ref`
+      - `+ data.format_version`
+      - `+ data.id`
+      - `+ data.version`
+      - `- data.dataclass_id`
+      - `- data.layout_id`
+      - `- data.name`
+      - `- data.type`
+      - `- data.dataclass`
+      - `+ data.data_object.domain_id`
+      - `+ data.data_object.region_id`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.severity`
+      - `+ data.data_object.creator`
+      - `+ data.data_object.system_alert_table`
+      - `- data.data_object.datasource`
+      - `- data.data_object.serverity`
+      - `- data.data_object.chop_phase`
+      - `- data.data_object.ppdr_phase`
+      - `- data.data_object.cteator`
+      - `- data.data_object.system_incident_table`
+      - `+ data.data_object.environment.cross_workspace_id`
+      - `+ data.data_object.incident_type.category`
+      - `+ data.data_object.incident_type.incident_type`
+      - `* data.data_object.network_list.direction: object -> string`
+      - `* data.data_object.network_list.src_port: string -> int32`
+      - `+ data.data_object.network_list.src_geo.latitude`
+      - `+ data.data_object.network_list.src_geo.longitude`
+      - `+ data.data_object.network_list.src_geo.city_code`
+      - `+ data.data_object.network_list.src_geo.country_code`
+      - `+ data.data_object.network_list.dest_geo.latitude`
+      - `+ data.data_object.network_list.dest_geo.longitude`
+      - `+ data.data_object.network_list.dest_geo.city_code`
+      - `+ data.data_object.network_list.dest_geo.country_code`
+      - `+ data.data_object.resource_list.provider`
+      - `+ data.data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data.data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data.data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data.data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data.data_object.process.process_parent_name`
+      - `+ data.data_object.process.process_parent_path`
+      - `+ data.data_object.process.process_parent_pid`
+      - `+ data.data_object.process.process_parent_uid`
+      - `+ data.data_object.process.process_parent_cmdline`
+      - `+ data.data_object.process.process_child_name`
+      - `+ data.data_object.process.process_child_path`
+      - `+ data.data_object.process.process_child_pid`
+      - `+ data.data_object.process.process_child_uid`
+      - `+ data.data_object.process.process_child_cmdline`
+      - `+ data.data_object.process.process_launche_time`
+      - `+ data.data_object.process.process_terminate_time`
+      - `* data.data_object.process.process_pid: string -> int32`
+      - `* data.data_object.process.process_uid: string -> int32`
+  - **ListIndicators**
+    - changes of request param
+      - `- order`
+      - `- from_date`
+      - `- to_date`
+      - `+ from_date`
+      - `+ to_date`
+      - `- type`
+    - changes of response param
+      - `+ data.dataclass_ref`
+      - `- data.dataclass_id`
+      - `- data.type`
+      - `- data.layout_id`
+      - `- data.dataclass`
+      - `+ data.data_object.update_time`
+      - `+ data.data_object.create_time`
+      - `+ data.data_object.environment`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.first_report_time`
+      - `+ data.data_object.is_deleted`
+      - `+ data.data_object.last_report_time`
+      - `+ data.data_object.granular_marking`
+      - `+ data.data_object.name`
+      - `+ data.data_object.id`
+      - `+ data.data_object.project_id`
+      - `+ data.data_object.revoked`
+      - `+ data.data_object.status`
+      - `+ data.data_object.verdict`
+      - `+ data.data_object.workspace_id`
+      - `+ data.data_object.confidence`
+      - `+ data.data_object.indicator_type.layout_id`
+      - `- data.data_object.indicator_type.layoutId`
+  - **CreateIndicator**
+    - changes of request param
+      - `- name`
+      - `- format_version`
+      - `- type`
+      - `- trigger_flag`
+      - `- data_object.type`
+      - `+ data_object.indicator_type.layout_id`
+      - `- data_object.indicator_type.layoutId`
+      - `+ data_object.data_object.update_time`
+      - `+ data_object.data_object.create_time`
+      - `+ data_object.data_object.environment`
+      - `+ data_object.data_object.data_source`
+      - `+ data_object.data_object.first_report_time`
+      - `+ data_object.data_object.is_deleted`
+      - `+ data_object.data_object.last_report_time`
+      - `+ data_object.data_object.granular_marking`
+      - `+ data_object.data_object.name`
+      - `+ data_object.data_object.id`
+      - `+ data_object.data_object.project_id`
+      - `+ data_object.data_object.revoked`
+      - `+ data_object.data_object.status`
+      - `+ data_object.data_object.verdict`
+      - `+ data_object.data_object.workspace_id`
+      - `+ data_object.data_object.confidence`
+      - `+ data_object.data_object.indicator_type.layout_id`
+      - `- data_object.data_object.indicator_type.layoutId`
+    - changes of response param
+      - `+ data.dataclass_ref`
+      - `- data.dataclass_id`
+      - `- data.type`
+      - `- data.layout_id`
+      - `- data.dataclass`
+      - `+ data.data_object.update_time`
+      - `+ data.data_object.create_time`
+      - `+ data.data_object.environment`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.first_report_time`
+      - `+ data.data_object.is_deleted`
+      - `+ data.data_object.last_report_time`
+      - `+ data.data_object.granular_marking`
+      - `+ data.data_object.name`
+      - `+ data.data_object.id`
+      - `+ data.data_object.project_id`
+      - `+ data.data_object.revoked`
+      - `+ data.data_object.status`
+      - `+ data.data_object.verdict`
+      - `+ data.data_object.workspace_id`
+      - `+ data.data_object.confidence`
+      - `+ data.data_object.indicator_type.layout_id`
+      - `- data.data_object.indicator_type.layoutId`
+  - **ShowIndicatorDetail**
+    - changes of response param
+      - `+ data.dataclass_ref`
+      - `- data.dataclass_id`
+      - `- data.type`
+      - `- data.layout_id`
+      - `- data.dataclass`
+      - `+ data.data_object.update_time`
+      - `+ data.data_object.create_time`
+      - `+ data.data_object.environment`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.first_report_time`
+      - `+ data.data_object.is_deleted`
+      - `+ data.data_object.last_report_time`
+      - `+ data.data_object.granular_marking`
+      - `+ data.data_object.name`
+      - `+ data.data_object.id`
+      - `+ data.data_object.project_id`
+      - `+ data.data_object.revoked`
+      - `+ data.data_object.status`
+      - `+ data.data_object.verdict`
+      - `+ data.data_object.workspace_id`
+      - `+ data.data_object.confidence`
+      - `+ data.data_object.indicator_type.layout_id`
+      - `- data.data_object.indicator_type.layoutId`
+  - **UpdateIndicator**
+    - changes of request param
+      - `- trigger_flag`
+      - `+ data_object.update_time`
+      - `+ data_object.create_time`
+      - `+ data_object.environment`
+      - `+ data_object.data_source`
+      - `+ data_object.first_report_time`
+      - `+ data_object.is_deleted`
+      - `+ data_object.last_report_time`
+      - `+ data_object.granular_marking`
+      - `+ data_object.name`
+      - `+ data_object.id`
+      - `+ data_object.project_id`
+      - `+ data_object.revoked`
+      - `+ data_object.status`
+      - `+ data_object.verdict`
+      - `+ data_object.workspace_id`
+      - `+ data_object.confidence`
+      - `+ data_object.indicator_type.layout_id`
+      - `- data_object.indicator_type.layoutId`
+    - changes of response param
+      - `+ data.dataclass_ref`
+      - `- data.dataclass_id`
+      - `- data.type`
+      - `- data.layout_id`
+      - `- data.dataclass`
+      - `+ data.data_object.update_time`
+      - `+ data.data_object.create_time`
+      - `+ data.data_object.environment`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.first_report_time`
+      - `+ data.data_object.is_deleted`
+      - `+ data.data_object.last_report_time`
+      - `+ data.data_object.granular_marking`
+      - `+ data.data_object.name`
+      - `+ data.data_object.id`
+      - `+ data.data_object.project_id`
+      - `+ data.data_object.revoked`
+      - `+ data.data_object.status`
+      - `+ data.data_object.verdict`
+      - `+ data.data_object.workspace_id`
+      - `+ data.data_object.confidence`
+      - `+ data.data_object.indicator_type.layout_id`
+      - `- data.data_object.indicator_type.layoutId`
+  - **ShowPlaybookMonitors**
+    - changes of request param
+      - `+ version_query_type: enum value [ALL:全部，VALID:有效的，DELETED:已删除]`
+    - changes of response param
+      - `* data.total_instance_run_num: int32 -> float`
+  - **CreateAlertRule**
+    - changes of request param
+      - `- accumulated_times`
+      - `- query_type: enum value [CBSL]`
+    - changes of response param
+      - `- accumulated_times`
+      - `- query_type: enum value [CBSL]`
+  - **ListAlertRules**
+    - changes of response param
+      - `- accumulated_times`
+      - `- records.accumulated_times`
+      - `- records.query_type: enum value [CBSL]`
+  - **ListAlertRuleTemplates**
+    - changes of response param
+      - `- records.query_type: enum value [CBSL]`
+  - **CopyPlaybookVersion**
+    - changes of response param
+      - `- data.run_mode`
+      - `- data.dataobject_id`
+      - `- data.actions.sort_order`
+  - **CreatePlaybookRule**
+    - changes of request param
+      - `+ rule.start_type`
+      - `+ rule.end_type`
+      - `+ rule.end_time`
+      - `+ rule.only_once`
+      - `+ rule.execution_type`
+      - `- rule.repeat_count`
+      - `* rule.logics: object -> list<string>`
+  - **ListPlaybookInstances**
+    - changes of request param
+      - `- date_type`
+      - `* limit: optional -> required`
+      - `* offset: optional -> required`
+  - **ShowPlaybookTopology**
+    - changes of response param
+      - `- action_instances.action.sort_order`
+  - **ListPlaybookVersions**
+    - changes of request param
+      - `- approve_role`
+    - changes of response param
+      - `- data.run_mode`
+      - `- data.dataobject_id`
+  - **CreatePlaybookVersion**
+    - changes of request param
+      - `- actions.sort_order`
+    - changes of response param
+      - `- data.run_mode`
+      - `- data.dataobject_id`
+      - `- data.actions.sort_order`
+  - **ShowPlaybookVersion**
+    - changes of response param
+      - `- data.run_mode`
+      - `- data.dataobject_id`
+      - `- data.actions.sort_order`
+  - **UpdatePlaybookVersion**
+    - changes of response param
+      - `- data.run_mode`
+      - `- data.dataobject_id`
+      - `- data.actions.sort_order`
+  - **UpdatePlaybookRule**
+    - changes of request param
+      - `+ rule.start_type`
+      - `+ rule.end_type`
+      - `+ rule.end_time`
+      - `+ rule.only_once`
+      - `+ rule.execution_type`
+      - `- rule.repeat_count`
+      - `* rule.logics: object -> list<string>`
+
 # 3.1.63 2023-10-26
 
 ### HuaweiCloud SDK AOS

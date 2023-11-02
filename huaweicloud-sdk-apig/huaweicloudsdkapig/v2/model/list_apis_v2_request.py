@@ -29,7 +29,8 @@ class ListApisV2Request:
         'auth_type': 'str',
         'env_id': 'str',
         'type': 'int',
-        'precise_search': 'str'
+        'precise_search': 'str',
+        'vpc_channel_name': 'str'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class ListApisV2Request:
         'auth_type': 'auth_type',
         'env_id': 'env_id',
         'type': 'type',
-        'precise_search': 'precise_search'
+        'precise_search': 'precise_search',
+        'vpc_channel_name': 'vpc_channel_name'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, group_id=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, env_id=None, type=None, precise_search=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, group_id=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, env_id=None, type=None, precise_search=None, vpc_channel_name=None):
         """ListApisV2Request
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class ListApisV2Request:
         :type type: int
         :param precise_search: 指定需要精确匹配查找的参数名称，目前仅支持name、req_uri
         :type precise_search: str
+        :param vpc_channel_name: 负载通道名称。
+        :type vpc_channel_name: str
         """
         
         
@@ -96,6 +100,7 @@ class ListApisV2Request:
         self._env_id = None
         self._type = None
         self._precise_search = None
+        self._vpc_channel_name = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -123,6 +128,8 @@ class ListApisV2Request:
             self.type = type
         if precise_search is not None:
             self.precise_search = precise_search
+        if vpc_channel_name is not None:
+            self.vpc_channel_name = vpc_channel_name
 
     @property
     def instance_id(self):
@@ -409,6 +416,28 @@ class ListApisV2Request:
         :type precise_search: str
         """
         self._precise_search = precise_search
+
+    @property
+    def vpc_channel_name(self):
+        """Gets the vpc_channel_name of this ListApisV2Request.
+
+        负载通道名称。
+
+        :return: The vpc_channel_name of this ListApisV2Request.
+        :rtype: str
+        """
+        return self._vpc_channel_name
+
+    @vpc_channel_name.setter
+    def vpc_channel_name(self, vpc_channel_name):
+        """Sets the vpc_channel_name of this ListApisV2Request.
+
+        负载通道名称。
+
+        :param vpc_channel_name: The vpc_channel_name of this ListApisV2Request.
+        :type vpc_channel_name: str
+        """
+        self._vpc_channel_name = vpc_channel_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

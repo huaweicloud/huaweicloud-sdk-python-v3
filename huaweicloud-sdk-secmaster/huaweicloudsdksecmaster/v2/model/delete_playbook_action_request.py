@@ -35,13 +35,13 @@ class DeletePlaybookActionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: ID of project
+        :param project_id: 项目ID
         :type project_id: str
-        :param workspace_id: ID of workspace
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param version_id: version Id value
+        :param version_id: 剧本版本ID
         :type version_id: str
-        :param action_id: ID of action
+        :param action_id: 剧本动作ID
         :type action_id: str
         """
         
@@ -62,7 +62,7 @@ class DeletePlaybookActionRequest:
     def project_id(self):
         """Gets the project_id of this DeletePlaybookActionRequest.
 
-        ID of project
+        项目ID
 
         :return: The project_id of this DeletePlaybookActionRequest.
         :rtype: str
@@ -73,7 +73,7 @@ class DeletePlaybookActionRequest:
     def project_id(self, project_id):
         """Sets the project_id of this DeletePlaybookActionRequest.
 
-        ID of project
+        项目ID
 
         :param project_id: The project_id of this DeletePlaybookActionRequest.
         :type project_id: str
@@ -84,7 +84,7 @@ class DeletePlaybookActionRequest:
     def workspace_id(self):
         """Gets the workspace_id of this DeletePlaybookActionRequest.
 
-        ID of workspace
+        工作空间ID
 
         :return: The workspace_id of this DeletePlaybookActionRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class DeletePlaybookActionRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this DeletePlaybookActionRequest.
 
-        ID of workspace
+        工作空间ID
 
         :param workspace_id: The workspace_id of this DeletePlaybookActionRequest.
         :type workspace_id: str
@@ -106,7 +106,7 @@ class DeletePlaybookActionRequest:
     def version_id(self):
         """Gets the version_id of this DeletePlaybookActionRequest.
 
-        version Id value
+        剧本版本ID
 
         :return: The version_id of this DeletePlaybookActionRequest.
         :rtype: str
@@ -117,7 +117,7 @@ class DeletePlaybookActionRequest:
     def version_id(self, version_id):
         """Sets the version_id of this DeletePlaybookActionRequest.
 
-        version Id value
+        剧本版本ID
 
         :param version_id: The version_id of this DeletePlaybookActionRequest.
         :type version_id: str
@@ -128,7 +128,7 @@ class DeletePlaybookActionRequest:
     def action_id(self):
         """Gets the action_id of this DeletePlaybookActionRequest.
 
-        ID of action
+        剧本动作ID
 
         :return: The action_id of this DeletePlaybookActionRequest.
         :rtype: str
@@ -139,7 +139,7 @@ class DeletePlaybookActionRequest:
     def action_id(self, action_id):
         """Sets the action_id of this DeletePlaybookActionRequest.
 
-        ID of action
+        剧本动作ID
 
         :param action_id: The action_id of this DeletePlaybookActionRequest.
         :type action_id: str

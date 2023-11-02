@@ -17,7 +17,7 @@ class CreateAlertRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'data_object': 'CreateAlert'
+        'data_object': 'Alert'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreateAlertRequestBody:
         The model defined in huaweicloud sdk
 
         :param data_object: 
-        :type data_object: :class:`huaweicloudsdksecmaster.v2.CreateAlert`
+        :type data_object: :class:`huaweicloudsdksecmaster.v2.Alert`
         """
         
         
@@ -38,15 +38,14 @@ class CreateAlertRequestBody:
         self._data_object = None
         self.discriminator = None
 
-        if data_object is not None:
-            self.data_object = data_object
+        self.data_object = data_object
 
     @property
     def data_object(self):
         """Gets the data_object of this CreateAlertRequestBody.
 
         :return: The data_object of this CreateAlertRequestBody.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateAlert`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.Alert`
         """
         return self._data_object
 
@@ -55,7 +54,7 @@ class CreateAlertRequestBody:
         """Sets the data_object of this CreateAlertRequestBody.
 
         :param data_object: The data_object of this CreateAlertRequestBody.
-        :type data_object: :class:`huaweicloudsdksecmaster.v2.CreateAlert`
+        :type data_object: :class:`huaweicloudsdksecmaster.v2.Alert`
         """
         self._data_object = data_object
 

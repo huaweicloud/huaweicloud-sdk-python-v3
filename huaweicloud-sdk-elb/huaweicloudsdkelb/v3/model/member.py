@@ -79,7 +79,7 @@ class Member:
         :type admin_state_up: bool
         :param subnet_cidr_id: 后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。 此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  使用说明：该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
         :type subnet_cidr_id: str
-        :param protocol_port: 后端服务器业务端口。 &gt;在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
+        :param protocol_port: 后端服务器业务端口。 &gt; 在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
         :type protocol_port: int
         :param weight: 后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明：若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
         :type weight: int
@@ -91,7 +91,7 @@ class Member:
         :type device_owner: str
         :param device_id: 关联的ECS ID，为空表示后端服务器未关联到ECS。  不支持该字段，请勿使用。
         :type device_id: str
-        :param operating_status: 后端云服务器的健康状态。当status非空时，以status字段中监听器粒度的健康检查状态优先。  取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
+        :param operating_status: 后端云服务器的健康状态。当响应参数的status字段非空时，以status字段中监听器粒度的健康检查状态优先。  取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
         :type operating_status: str
         :param status: 后端云服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_stauts为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
         :type status: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]
@@ -300,7 +300,7 @@ class Member:
     def protocol_port(self):
         """Gets the protocol_port of this Member.
 
-        后端服务器业务端口。 >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
+        后端服务器业务端口。 > 在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
 
         :return: The protocol_port of this Member.
         :rtype: int
@@ -311,7 +311,7 @@ class Member:
     def protocol_port(self, protocol_port):
         """Sets the protocol_port of this Member.
 
-        后端服务器业务端口。 >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
+        后端服务器业务端口。 > 在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
 
         :param protocol_port: The protocol_port of this Member.
         :type protocol_port: int
@@ -432,7 +432,7 @@ class Member:
     def operating_status(self):
         """Gets the operating_status of this Member.
 
-        后端云服务器的健康状态。当status非空时，以status字段中监听器粒度的健康检查状态优先。  取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
+        后端云服务器的健康状态。当响应参数的status字段非空时，以status字段中监听器粒度的健康检查状态优先。  取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
 
         :return: The operating_status of this Member.
         :rtype: str
@@ -443,7 +443,7 @@ class Member:
     def operating_status(self, operating_status):
         """Sets the operating_status of this Member.
 
-        后端云服务器的健康状态。当status非空时，以status字段中监听器粒度的健康检查状态优先。  取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
+        后端云服务器的健康状态。当响应参数的status字段非空时，以status字段中监听器粒度的健康检查状态优先。  取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
 
         :param operating_status: The operating_status of this Member.
         :type operating_status: str

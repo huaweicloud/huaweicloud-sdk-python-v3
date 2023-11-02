@@ -33,9 +33,9 @@ class DeleteAlertRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: project_id
+        :param project_id: 项目 ID。Project ID.
         :type project_id: str
-        :param workspace_id: workspace_id
+        :param workspace_id: 工作空间 ID。Workspace ID.
         :type workspace_id: str
         :param body: Body of the DeleteAlertRuleRequest
         :type body: list[str]
@@ -57,7 +57,7 @@ class DeleteAlertRuleRequest:
     def project_id(self):
         """Gets the project_id of this DeleteAlertRuleRequest.
 
-        project_id
+        项目 ID。Project ID.
 
         :return: The project_id of this DeleteAlertRuleRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class DeleteAlertRuleRequest:
     def project_id(self, project_id):
         """Sets the project_id of this DeleteAlertRuleRequest.
 
-        project_id
+        项目 ID。Project ID.
 
         :param project_id: The project_id of this DeleteAlertRuleRequest.
         :type project_id: str
@@ -79,7 +79,7 @@ class DeleteAlertRuleRequest:
     def workspace_id(self):
         """Gets the workspace_id of this DeleteAlertRuleRequest.
 
-        workspace_id
+        工作空间 ID。Workspace ID.
 
         :return: The workspace_id of this DeleteAlertRuleRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class DeleteAlertRuleRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this DeleteAlertRuleRequest.
 
-        workspace_id
+        工作空间 ID。Workspace ID.
 
         :param workspace_id: The workspace_id of this DeleteAlertRuleRequest.
         :type workspace_id: str

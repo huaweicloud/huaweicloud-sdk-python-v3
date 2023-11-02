@@ -47,7 +47,7 @@ class CreateStackRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param stack_name: 资源栈的名称。此名字在domain_id + 区域 + project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
+        :param stack_name: 资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
         :type stack_name: str
         :param agencies: 委托授权的信息。  RFS仅在创建资源栈（触发部署）、创建执行计划、部署资源栈、删除资源栈等涉及资源操作的请求中使用委托，且该委托仅作用于与之绑定的Provider对资源的操作中。若委托中提供的权限不足，有可能导致相关资源操作失败。  [创建委托及授权方式](https://support.huaweicloud.com/usermanual-iam/iam_06_0002.html)
         :type agencies: list[:class:`huaweicloudsdkaos.v1.Agency`]
@@ -83,8 +83,7 @@ class CreateStackRequestBody:
         self._vars_uri = None
         self.discriminator = None
 
-        if stack_name is not None:
-            self.stack_name = stack_name
+        self.stack_name = stack_name
         if agencies is not None:
             self.agencies = agencies
         if description is not None:
@@ -108,7 +107,7 @@ class CreateStackRequestBody:
     def stack_name(self):
         """Gets the stack_name of this CreateStackRequestBody.
 
-        资源栈的名称。此名字在domain_id + 区域 + project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
+        资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
         :return: The stack_name of this CreateStackRequestBody.
         :rtype: str
@@ -119,7 +118,7 @@ class CreateStackRequestBody:
     def stack_name(self, stack_name):
         """Sets the stack_name of this CreateStackRequestBody.
 
-        资源栈的名称。此名字在domain_id + 区域 + project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
+        资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
         :param stack_name: The stack_name of this CreateStackRequestBody.
         :type stack_name: str

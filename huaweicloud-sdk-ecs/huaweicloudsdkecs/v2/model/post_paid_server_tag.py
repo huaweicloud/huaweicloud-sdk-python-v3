@@ -33,7 +33,7 @@ class PostPaidServerTag:
 
         :param key: 键。  最大长度36个unicode字符。key不能为空。不能包含非打印字符ASCII(0-31)，\&quot;&#x3D;\&quot;, \&quot;*\&quot;,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”。  同一资源的key值不能重复。
         :type key: str
-        :param value:   值。  每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符ASCII(0-31)，“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”。
+        :param value:   值。  每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符ASCII(0-31)，“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”。
         :type value: str
         """
         
@@ -72,7 +72,7 @@ class PostPaidServerTag:
     def value(self):
         """Gets the value of this PostPaidServerTag.
 
-          值。  每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。
+          值。  每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”。
 
         :return: The value of this PostPaidServerTag.
         :rtype: str
@@ -83,7 +83,7 @@ class PostPaidServerTag:
     def value(self, value):
         """Sets the value of this PostPaidServerTag.
 
-          值。  每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。
+          值。  每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”。
 
         :param value: The value of this PostPaidServerTag.
         :type value: str

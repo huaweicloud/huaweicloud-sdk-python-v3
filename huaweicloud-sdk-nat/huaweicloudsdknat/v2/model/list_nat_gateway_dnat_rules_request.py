@@ -61,7 +61,7 @@ class ListNatGatewayDnatRulesRequest:
         :type external_service_port: int
         :param floating_ip_address: 弹性公网的IP地址。
         :type floating_ip_address: str
-        :param status: Dnat规则的状态。
+        :param status: DNAT规则的状态。 取值为： \&quot;ACTIVE\&quot;: 可用 \&quot;PENDING_CREATE\&quot;：创建中 \&quot;PENDING_UPDATE\&quot;：更新中 \&quot;PENDING_DELETE\&quot;：删除中 \&quot;EIP_FREEZED\&quot;：EIP冻结 \&quot;INACTIVE\&quot;：不可用
         :type status: list[str]
         :param floating_ip_id: 弹性公网IP的id。
         :type floating_ip_id: str
@@ -202,7 +202,7 @@ class ListNatGatewayDnatRulesRequest:
     def status(self):
         """Gets the status of this ListNatGatewayDnatRulesRequest.
 
-        Dnat规则的状态。
+        DNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
 
         :return: The status of this ListNatGatewayDnatRulesRequest.
         :rtype: list[str]
@@ -213,7 +213,7 @@ class ListNatGatewayDnatRulesRequest:
     def status(self, status):
         """Sets the status of this ListNatGatewayDnatRulesRequest.
 
-        Dnat规则的状态。
+        DNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
 
         :param status: The status of this ListNatGatewayDnatRulesRequest.
         :type status: list[str]

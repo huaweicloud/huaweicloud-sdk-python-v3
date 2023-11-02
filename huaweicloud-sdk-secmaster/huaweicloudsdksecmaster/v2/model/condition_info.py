@@ -19,11 +19,15 @@ class ConditionInfo:
     openapi_types = {
         'expression_type': 'str',
         'conditions': 'list[ConditionItem]',
-        'logics': 'object',
+        'logics': 'list[str]',
         'cron': 'str',
         'schedule_type': 'str',
+        'start_type': 'str',
+        'end_type': 'str',
+        'end_time': 'str',
         'repeat_range': 'str',
-        'repeat_count': 'str'
+        'only_once': 'bool',
+        'execution_type': 'str'
     }
 
     attribute_map = {
@@ -32,29 +36,41 @@ class ConditionInfo:
         'logics': 'logics',
         'cron': 'cron',
         'schedule_type': 'schedule_type',
+        'start_type': 'start_type',
+        'end_type': 'end_type',
+        'end_time': 'end_time',
         'repeat_range': 'repeat_range',
-        'repeat_count': 'repeat_count'
+        'only_once': 'only_once',
+        'execution_type': 'execution_type'
     }
 
-    def __init__(self, expression_type=None, conditions=None, logics=None, cron=None, schedule_type=None, repeat_range=None, repeat_count=None):
+    def __init__(self, expression_type=None, conditions=None, logics=None, cron=None, schedule_type=None, start_type=None, end_type=None, end_time=None, repeat_range=None, only_once=None, execution_type=None):
         """ConditionInfo
 
         The model defined in huaweicloud sdk
 
-        :param expression_type: expression type, all, any, user_define
+        :param expression_type: 表达式类型。默认为common,事件触发剧本必填
         :type expression_type: str
-        :param conditions: Information of conditions.
+        :param conditions: 触发条件。事件触发剧本必填
         :type conditions: list[:class:`huaweicloudsdksecmaster.v2.ConditionItem`]
-        :param logics: Logic item of condition.
-        :type logics: object
-        :param cron: Cron 表达式
+        :param logics: 条件逻辑组合。事件触发剧本必填
+        :type logics: list[str]
+        :param cron: Cron 表达式（定时任务）。定时触发剧本必填
         :type cron: str
-        :param schedule_type: schedule type, second hours...
+        :param schedule_type: 定时重复类型(second--秒, hour--小时,day--天，week-周)。定时触发剧本必填
         :type schedule_type: str
-        :param repeat_range: 执行时间段 2021-01-30T23:00:00Z+0800
+        :param start_type: 剧本开始执行类型，IMMEDIATELY--创建完成立即执行, CUSTOM--自定义执行时间。定时触发剧本必填
+        :type start_type: str
+        :param end_type: 剧本结束执行类型，FOREVER--一直执行, CUSTOM--自定义结束时间。定时触发剧本必填
+        :type end_type: str
+        :param end_time: 定时结束时间。定时触发剧本必填
+        :type end_time: str
+        :param repeat_range: 执行时间段 2021-01-30T23:00:00Z+0800。定时触发剧本必填
         :type repeat_range: str
-        :param repeat_count: 重复次数
-        :type repeat_count: str
+        :param only_once: 是否只执行一次。定时触发剧本必填
+        :type only_once: bool
+        :param execution_type: 执行队列类型（PARALLEL-新任务与之前任务并行）。定时触发剧本必填
+        :type execution_type: str
         """
         
         
@@ -64,8 +80,12 @@ class ConditionInfo:
         self._logics = None
         self._cron = None
         self._schedule_type = None
+        self._start_type = None
+        self._end_type = None
+        self._end_time = None
         self._repeat_range = None
-        self._repeat_count = None
+        self._only_once = None
+        self._execution_type = None
         self.discriminator = None
 
         if expression_type is not None:
@@ -78,16 +98,24 @@ class ConditionInfo:
             self.cron = cron
         if schedule_type is not None:
             self.schedule_type = schedule_type
+        if start_type is not None:
+            self.start_type = start_type
+        if end_type is not None:
+            self.end_type = end_type
+        if end_time is not None:
+            self.end_time = end_time
         if repeat_range is not None:
             self.repeat_range = repeat_range
-        if repeat_count is not None:
-            self.repeat_count = repeat_count
+        if only_once is not None:
+            self.only_once = only_once
+        if execution_type is not None:
+            self.execution_type = execution_type
 
     @property
     def expression_type(self):
         """Gets the expression_type of this ConditionInfo.
 
-        expression type, all, any, user_define
+        表达式类型。默认为common,事件触发剧本必填
 
         :return: The expression_type of this ConditionInfo.
         :rtype: str
@@ -98,7 +126,7 @@ class ConditionInfo:
     def expression_type(self, expression_type):
         """Sets the expression_type of this ConditionInfo.
 
-        expression type, all, any, user_define
+        表达式类型。默认为common,事件触发剧本必填
 
         :param expression_type: The expression_type of this ConditionInfo.
         :type expression_type: str
@@ -109,7 +137,7 @@ class ConditionInfo:
     def conditions(self):
         """Gets the conditions of this ConditionInfo.
 
-        Information of conditions.
+        触发条件。事件触发剧本必填
 
         :return: The conditions of this ConditionInfo.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.ConditionItem`]
@@ -120,7 +148,7 @@ class ConditionInfo:
     def conditions(self, conditions):
         """Sets the conditions of this ConditionInfo.
 
-        Information of conditions.
+        触发条件。事件触发剧本必填
 
         :param conditions: The conditions of this ConditionInfo.
         :type conditions: list[:class:`huaweicloudsdksecmaster.v2.ConditionItem`]
@@ -131,10 +159,10 @@ class ConditionInfo:
     def logics(self):
         """Gets the logics of this ConditionInfo.
 
-        Logic item of condition.
+        条件逻辑组合。事件触发剧本必填
 
         :return: The logics of this ConditionInfo.
-        :rtype: object
+        :rtype: list[str]
         """
         return self._logics
 
@@ -142,10 +170,10 @@ class ConditionInfo:
     def logics(self, logics):
         """Sets the logics of this ConditionInfo.
 
-        Logic item of condition.
+        条件逻辑组合。事件触发剧本必填
 
         :param logics: The logics of this ConditionInfo.
-        :type logics: object
+        :type logics: list[str]
         """
         self._logics = logics
 
@@ -153,7 +181,7 @@ class ConditionInfo:
     def cron(self):
         """Gets the cron of this ConditionInfo.
 
-        Cron 表达式
+        Cron 表达式（定时任务）。定时触发剧本必填
 
         :return: The cron of this ConditionInfo.
         :rtype: str
@@ -164,7 +192,7 @@ class ConditionInfo:
     def cron(self, cron):
         """Sets the cron of this ConditionInfo.
 
-        Cron 表达式
+        Cron 表达式（定时任务）。定时触发剧本必填
 
         :param cron: The cron of this ConditionInfo.
         :type cron: str
@@ -175,7 +203,7 @@ class ConditionInfo:
     def schedule_type(self):
         """Gets the schedule_type of this ConditionInfo.
 
-        schedule type, second hours...
+        定时重复类型(second--秒, hour--小时,day--天，week-周)。定时触发剧本必填
 
         :return: The schedule_type of this ConditionInfo.
         :rtype: str
@@ -186,7 +214,7 @@ class ConditionInfo:
     def schedule_type(self, schedule_type):
         """Sets the schedule_type of this ConditionInfo.
 
-        schedule type, second hours...
+        定时重复类型(second--秒, hour--小时,day--天，week-周)。定时触发剧本必填
 
         :param schedule_type: The schedule_type of this ConditionInfo.
         :type schedule_type: str
@@ -194,10 +222,76 @@ class ConditionInfo:
         self._schedule_type = schedule_type
 
     @property
+    def start_type(self):
+        """Gets the start_type of this ConditionInfo.
+
+        剧本开始执行类型，IMMEDIATELY--创建完成立即执行, CUSTOM--自定义执行时间。定时触发剧本必填
+
+        :return: The start_type of this ConditionInfo.
+        :rtype: str
+        """
+        return self._start_type
+
+    @start_type.setter
+    def start_type(self, start_type):
+        """Sets the start_type of this ConditionInfo.
+
+        剧本开始执行类型，IMMEDIATELY--创建完成立即执行, CUSTOM--自定义执行时间。定时触发剧本必填
+
+        :param start_type: The start_type of this ConditionInfo.
+        :type start_type: str
+        """
+        self._start_type = start_type
+
+    @property
+    def end_type(self):
+        """Gets the end_type of this ConditionInfo.
+
+        剧本结束执行类型，FOREVER--一直执行, CUSTOM--自定义结束时间。定时触发剧本必填
+
+        :return: The end_type of this ConditionInfo.
+        :rtype: str
+        """
+        return self._end_type
+
+    @end_type.setter
+    def end_type(self, end_type):
+        """Sets the end_type of this ConditionInfo.
+
+        剧本结束执行类型，FOREVER--一直执行, CUSTOM--自定义结束时间。定时触发剧本必填
+
+        :param end_type: The end_type of this ConditionInfo.
+        :type end_type: str
+        """
+        self._end_type = end_type
+
+    @property
+    def end_time(self):
+        """Gets the end_time of this ConditionInfo.
+
+        定时结束时间。定时触发剧本必填
+
+        :return: The end_time of this ConditionInfo.
+        :rtype: str
+        """
+        return self._end_time
+
+    @end_time.setter
+    def end_time(self, end_time):
+        """Sets the end_time of this ConditionInfo.
+
+        定时结束时间。定时触发剧本必填
+
+        :param end_time: The end_time of this ConditionInfo.
+        :type end_time: str
+        """
+        self._end_time = end_time
+
+    @property
     def repeat_range(self):
         """Gets the repeat_range of this ConditionInfo.
 
-        执行时间段 2021-01-30T23:00:00Z+0800
+        执行时间段 2021-01-30T23:00:00Z+0800。定时触发剧本必填
 
         :return: The repeat_range of this ConditionInfo.
         :rtype: str
@@ -208,7 +302,7 @@ class ConditionInfo:
     def repeat_range(self, repeat_range):
         """Sets the repeat_range of this ConditionInfo.
 
-        执行时间段 2021-01-30T23:00:00Z+0800
+        执行时间段 2021-01-30T23:00:00Z+0800。定时触发剧本必填
 
         :param repeat_range: The repeat_range of this ConditionInfo.
         :type repeat_range: str
@@ -216,26 +310,48 @@ class ConditionInfo:
         self._repeat_range = repeat_range
 
     @property
-    def repeat_count(self):
-        """Gets the repeat_count of this ConditionInfo.
+    def only_once(self):
+        """Gets the only_once of this ConditionInfo.
 
-        重复次数
+        是否只执行一次。定时触发剧本必填
 
-        :return: The repeat_count of this ConditionInfo.
+        :return: The only_once of this ConditionInfo.
+        :rtype: bool
+        """
+        return self._only_once
+
+    @only_once.setter
+    def only_once(self, only_once):
+        """Sets the only_once of this ConditionInfo.
+
+        是否只执行一次。定时触发剧本必填
+
+        :param only_once: The only_once of this ConditionInfo.
+        :type only_once: bool
+        """
+        self._only_once = only_once
+
+    @property
+    def execution_type(self):
+        """Gets the execution_type of this ConditionInfo.
+
+        执行队列类型（PARALLEL-新任务与之前任务并行）。定时触发剧本必填
+
+        :return: The execution_type of this ConditionInfo.
         :rtype: str
         """
-        return self._repeat_count
+        return self._execution_type
 
-    @repeat_count.setter
-    def repeat_count(self, repeat_count):
-        """Sets the repeat_count of this ConditionInfo.
+    @execution_type.setter
+    def execution_type(self, execution_type):
+        """Sets the execution_type of this ConditionInfo.
 
-        重复次数
+        执行队列类型（PARALLEL-新任务与之前任务并行）。定时触发剧本必填
 
-        :param repeat_count: The repeat_count of this ConditionInfo.
-        :type repeat_count: str
+        :param execution_type: The execution_type of this ConditionInfo.
+        :type execution_type: str
         """
-        self._repeat_count = repeat_count
+        self._execution_type = execution_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

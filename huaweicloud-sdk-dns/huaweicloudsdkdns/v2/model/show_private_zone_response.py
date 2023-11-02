@@ -33,7 +33,9 @@ class ShowPrivateZoneResponse(SdkResponse):
         'updated_at': 'str',
         'links': 'PageLink',
         'masters': 'list[str]',
-        'routers': 'list[Router]'
+        'routers': 'list[Router]',
+        'proxy_pattern': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -52,10 +54,12 @@ class ShowPrivateZoneResponse(SdkResponse):
         'updated_at': 'updated_at',
         'links': 'links',
         'masters': 'masters',
-        'routers': 'routers'
+        'routers': 'routers',
+        'proxy_pattern': 'proxy_pattern',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, pool_id=None, project_id=None, created_at=None, updated_at=None, links=None, masters=None, routers=None):
+    def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, pool_id=None, project_id=None, created_at=None, updated_at=None, links=None, masters=None, routers=None, proxy_pattern=None, enterprise_project_id=None):
         """ShowPrivateZoneResponse
 
         The model defined in huaweicloud sdk
@@ -92,6 +96,10 @@ class ShowPrivateZoneResponse(SdkResponse):
         :type masters: list[str]
         :param routers: 与该zone关联的Router(VPC)列表。
         :type routers: list[:class:`huaweicloudsdkdns.v2.Router`]
+        :param proxy_pattern: 内网Zone的子域名递归解析代理模式。 取值范围： AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        :type proxy_pattern: str
+        :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。
+        :type enterprise_project_id: str
         """
         
         super(ShowPrivateZoneResponse, self).__init__()
@@ -112,6 +120,8 @@ class ShowPrivateZoneResponse(SdkResponse):
         self._links = None
         self._masters = None
         self._routers = None
+        self._proxy_pattern = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if id is not None:
@@ -146,6 +156,10 @@ class ShowPrivateZoneResponse(SdkResponse):
             self.masters = masters
         if routers is not None:
             self.routers = routers
+        if proxy_pattern is not None:
+            self.proxy_pattern = proxy_pattern
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def id(self):
@@ -494,6 +508,50 @@ class ShowPrivateZoneResponse(SdkResponse):
         :type routers: list[:class:`huaweicloudsdkdns.v2.Router`]
         """
         self._routers = routers
+
+    @property
+    def proxy_pattern(self):
+        """Gets the proxy_pattern of this ShowPrivateZoneResponse.
+
+        内网Zone的子域名递归解析代理模式。 取值范围： AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+
+        :return: The proxy_pattern of this ShowPrivateZoneResponse.
+        :rtype: str
+        """
+        return self._proxy_pattern
+
+    @proxy_pattern.setter
+    def proxy_pattern(self, proxy_pattern):
+        """Sets the proxy_pattern of this ShowPrivateZoneResponse.
+
+        内网Zone的子域名递归解析代理模式。 取值范围： AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+
+        :param proxy_pattern: The proxy_pattern of this ShowPrivateZoneResponse.
+        :type proxy_pattern: str
+        """
+        self._proxy_pattern = proxy_pattern
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ShowPrivateZoneResponse.
+
+        域名关联的企业项目ID，长度不超过36个字符。
+
+        :return: The enterprise_project_id of this ShowPrivateZoneResponse.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ShowPrivateZoneResponse.
+
+        域名关联的企业项目ID，长度不超过36个字符。
+
+        :param enterprise_project_id: The enterprise_project_id of this ShowPrivateZoneResponse.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -34,9 +34,9 @@ class DeletePlaybookRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: Error code
+        :param code: 错误码
         :type code: str
-        :param message: Error message
+        :param message: 响应消息
         :type message: str
         :param x_request_id: 
         :type x_request_id: str
@@ -60,7 +60,7 @@ class DeletePlaybookRuleResponse(SdkResponse):
     def code(self):
         """Gets the code of this DeletePlaybookRuleResponse.
 
-        Error code
+        错误码
 
         :return: The code of this DeletePlaybookRuleResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class DeletePlaybookRuleResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this DeletePlaybookRuleResponse.
 
-        Error code
+        错误码
 
         :param code: The code of this DeletePlaybookRuleResponse.
         :type code: str
@@ -82,7 +82,7 @@ class DeletePlaybookRuleResponse(SdkResponse):
     def message(self):
         """Gets the message of this DeletePlaybookRuleResponse.
 
-        Error message
+        响应消息
 
         :return: The message of this DeletePlaybookRuleResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class DeletePlaybookRuleResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this DeletePlaybookRuleResponse.
 
-        Error message
+        响应消息
 
         :param message: The message of this DeletePlaybookRuleResponse.
         :type message: str

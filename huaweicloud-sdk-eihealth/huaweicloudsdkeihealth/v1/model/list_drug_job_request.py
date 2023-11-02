@@ -55,7 +55,7 @@ class ListDrugJobRequest:
 
         The model defined in huaweicloud sdk
 
-        :param eihealth_project_id: 盘古辅助制药平台项目ID。
+        :param eihealth_project_id: 平台项目ID。
         :type eihealth_project_id: str
         :param limit: 限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
         :type limit: int
@@ -63,7 +63,7 @@ class ListDrugJobRequest:
         :type offset: int
         :param sort_dir: 排序规则 目前默认时间降序
         :type sort_dir: str
-        :param sort_key: 排序规则 目前默认时间降序，支持根据status
+        :param sort_key: 排序规则 目前默认时间降序，支持根据create_time|finish_time|running_time|total_time排序
         :type sort_key: str
         :param job_name: 作业名称
         :type job_name: str
@@ -71,7 +71,7 @@ class ListDrugJobRequest:
         :type labels: list[str]
         :param status_list: 作业运行状态列表, 支持WAITING|RUNNING|FINISHED|FAILED|CANCELLED
         :type status_list: list[str]
-        :param type_list: 作业类型列表, 支持DOCKING|OPTIMIZATION|SYNTHESIS|FEP
+        :param type_list: 作业类型列表, 支持DOCKING|OPTIMIZATION|SYNTHESIS|FEP|POCKET_DETECTION|ADMET
         :type type_list: list[str]
         :param create_start_time: 最小创建时间
         :type create_start_time: int
@@ -135,7 +135,7 @@ class ListDrugJobRequest:
     def eihealth_project_id(self):
         """Gets the eihealth_project_id of this ListDrugJobRequest.
 
-        盘古辅助制药平台项目ID。
+        平台项目ID。
 
         :return: The eihealth_project_id of this ListDrugJobRequest.
         :rtype: str
@@ -146,7 +146,7 @@ class ListDrugJobRequest:
     def eihealth_project_id(self, eihealth_project_id):
         """Sets the eihealth_project_id of this ListDrugJobRequest.
 
-        盘古辅助制药平台项目ID。
+        平台项目ID。
 
         :param eihealth_project_id: The eihealth_project_id of this ListDrugJobRequest.
         :type eihealth_project_id: str
@@ -223,7 +223,7 @@ class ListDrugJobRequest:
     def sort_key(self):
         """Gets the sort_key of this ListDrugJobRequest.
 
-        排序规则 目前默认时间降序，支持根据status
+        排序规则 目前默认时间降序，支持根据create_time|finish_time|running_time|total_time排序
 
         :return: The sort_key of this ListDrugJobRequest.
         :rtype: str
@@ -234,7 +234,7 @@ class ListDrugJobRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListDrugJobRequest.
 
-        排序规则 目前默认时间降序，支持根据status
+        排序规则 目前默认时间降序，支持根据create_time|finish_time|running_time|total_time排序
 
         :param sort_key: The sort_key of this ListDrugJobRequest.
         :type sort_key: str
@@ -311,7 +311,7 @@ class ListDrugJobRequest:
     def type_list(self):
         """Gets the type_list of this ListDrugJobRequest.
 
-        作业类型列表, 支持DOCKING|OPTIMIZATION|SYNTHESIS|FEP
+        作业类型列表, 支持DOCKING|OPTIMIZATION|SYNTHESIS|FEP|POCKET_DETECTION|ADMET
 
         :return: The type_list of this ListDrugJobRequest.
         :rtype: list[str]
@@ -322,7 +322,7 @@ class ListDrugJobRequest:
     def type_list(self, type_list):
         """Sets the type_list of this ListDrugJobRequest.
 
-        作业类型列表, 支持DOCKING|OPTIMIZATION|SYNTHESIS|FEP
+        作业类型列表, 支持DOCKING|OPTIMIZATION|SYNTHESIS|FEP|POCKET_DETECTION|ADMET
 
         :param type_list: The type_list of this ListDrugJobRequest.
         :type type_list: list[str]

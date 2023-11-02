@@ -36,9 +36,9 @@ class CreatePlaybookApproveResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: Error code
+        :param code: 错误码
         :type code: str
-        :param message: Error message
+        :param message: 响应消息
         :type message: str
         :param data: 
         :type data: :class:`huaweicloudsdksecmaster.v2.ApproveOpinionDetail`
@@ -67,7 +67,7 @@ class CreatePlaybookApproveResponse(SdkResponse):
     def code(self):
         """Gets the code of this CreatePlaybookApproveResponse.
 
-        Error code
+        错误码
 
         :return: The code of this CreatePlaybookApproveResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class CreatePlaybookApproveResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this CreatePlaybookApproveResponse.
 
-        Error code
+        错误码
 
         :param code: The code of this CreatePlaybookApproveResponse.
         :type code: str
@@ -89,7 +89,7 @@ class CreatePlaybookApproveResponse(SdkResponse):
     def message(self):
         """Gets the message of this CreatePlaybookApproveResponse.
 
-        Error message
+        响应消息
 
         :return: The message of this CreatePlaybookApproveResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class CreatePlaybookApproveResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this CreatePlaybookApproveResponse.
 
-        Error message
+        响应消息
 
         :param message: The message of this CreatePlaybookApproveResponse.
         :type message: str

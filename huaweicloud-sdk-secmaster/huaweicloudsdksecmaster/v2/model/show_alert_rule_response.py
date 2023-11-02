@@ -31,7 +31,6 @@ class ShowAlertRuleResponse(SdkResponse):
         'query_type': 'str',
         'status': 'str',
         'severity': 'str',
-        'accumulated_times': 'int',
         'custom_properties': 'dict(str, str)',
         'event_grouping': 'bool',
         'schedule': 'Schedule',
@@ -53,7 +52,6 @@ class ShowAlertRuleResponse(SdkResponse):
         'query_type': 'query_type',
         'status': 'status',
         'severity': 'severity',
-        'accumulated_times': 'accumulated_times',
         'custom_properties': 'custom_properties',
         'event_grouping': 'event_grouping',
         'schedule': 'schedule',
@@ -61,46 +59,44 @@ class ShowAlertRuleResponse(SdkResponse):
         'x_request_id': 'X-request-id'
     }
 
-    def __init__(self, rule_id=None, pipe_id=None, pipe_name=None, create_by=None, create_time=None, update_by=None, update_time=None, delete_time=None, rule_name=None, query=None, query_type=None, status=None, severity=None, accumulated_times=None, custom_properties=None, event_grouping=None, schedule=None, triggers=None, x_request_id=None):
+    def __init__(self, rule_id=None, pipe_id=None, pipe_name=None, create_by=None, create_time=None, update_by=None, update_time=None, delete_time=None, rule_name=None, query=None, query_type=None, status=None, severity=None, custom_properties=None, event_grouping=None, schedule=None, triggers=None, x_request_id=None):
         """ShowAlertRuleResponse
 
         The model defined in huaweicloud sdk
 
-        :param rule_id: rule_id
+        :param rule_id: 告警规则 ID。Alert rule ID.
         :type rule_id: str
-        :param pipe_id: pipe_id
+        :param pipe_id: 数据管道 ID。Pipe ID.
         :type pipe_id: str
-        :param pipe_name: pipe_name
+        :param pipe_name: 数据管道名称。Pipe name.
         :type pipe_name: str
-        :param create_by: create_by
+        :param create_by: 创建人。Create by.
         :type create_by: str
-        :param create_time: create_time
+        :param create_time: 创建时间。Create time.
         :type create_time: int
-        :param update_by: update_by
+        :param update_by: 更新人。Update by.
         :type update_by: str
-        :param update_time: update_time
+        :param update_time: 更新时间。Update time.
         :type update_time: int
-        :param delete_time: delete_time
+        :param delete_time: 删除时间。Delete time.
         :type delete_time: int
-        :param rule_name: rule_name
+        :param rule_name: 告警规则名称。Alert rule name.
         :type rule_name: str
-        :param query: query
+        :param query: 查询语句。Query.
         :type query: str
-        :param query_type: query_type. SQL, CBSL.
+        :param query_type: 查询语法，SQL。Query type. SQL.
         :type query_type: str
-        :param status: status. ENABLED, DISABLED
+        :param status: 启用状态，启用、停用。Status, enabled, disabled.
         :type status: str
-        :param severity: severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        :param severity: 严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
         :type severity: str
-        :param accumulated_times: accumulated_times
-        :type accumulated_times: int
-        :param custom_properties: custom_properties
+        :param custom_properties: 自定义扩展信息。Custom properties.
         :type custom_properties: dict(str, str)
-        :param event_grouping: event_grouping
+        :param event_grouping: 告警分组。Event grouping.
         :type event_grouping: bool
         :param schedule: 
         :type schedule: :class:`huaweicloudsdksecmaster.v2.Schedule`
-        :param triggers: triggers
+        :param triggers: 告警触发规则。Alert triggers.
         :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
         :param x_request_id: 
         :type x_request_id: str
@@ -121,7 +117,6 @@ class ShowAlertRuleResponse(SdkResponse):
         self._query_type = None
         self._status = None
         self._severity = None
-        self._accumulated_times = None
         self._custom_properties = None
         self._event_grouping = None
         self._schedule = None
@@ -155,8 +150,6 @@ class ShowAlertRuleResponse(SdkResponse):
             self.status = status
         if severity is not None:
             self.severity = severity
-        if accumulated_times is not None:
-            self.accumulated_times = accumulated_times
         if custom_properties is not None:
             self.custom_properties = custom_properties
         if event_grouping is not None:
@@ -172,7 +165,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def rule_id(self):
         """Gets the rule_id of this ShowAlertRuleResponse.
 
-        rule_id
+        告警规则 ID。Alert rule ID.
 
         :return: The rule_id of this ShowAlertRuleResponse.
         :rtype: str
@@ -183,7 +176,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def rule_id(self, rule_id):
         """Sets the rule_id of this ShowAlertRuleResponse.
 
-        rule_id
+        告警规则 ID。Alert rule ID.
 
         :param rule_id: The rule_id of this ShowAlertRuleResponse.
         :type rule_id: str
@@ -194,7 +187,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def pipe_id(self):
         """Gets the pipe_id of this ShowAlertRuleResponse.
 
-        pipe_id
+        数据管道 ID。Pipe ID.
 
         :return: The pipe_id of this ShowAlertRuleResponse.
         :rtype: str
@@ -205,7 +198,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def pipe_id(self, pipe_id):
         """Sets the pipe_id of this ShowAlertRuleResponse.
 
-        pipe_id
+        数据管道 ID。Pipe ID.
 
         :param pipe_id: The pipe_id of this ShowAlertRuleResponse.
         :type pipe_id: str
@@ -216,7 +209,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def pipe_name(self):
         """Gets the pipe_name of this ShowAlertRuleResponse.
 
-        pipe_name
+        数据管道名称。Pipe name.
 
         :return: The pipe_name of this ShowAlertRuleResponse.
         :rtype: str
@@ -227,7 +220,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def pipe_name(self, pipe_name):
         """Sets the pipe_name of this ShowAlertRuleResponse.
 
-        pipe_name
+        数据管道名称。Pipe name.
 
         :param pipe_name: The pipe_name of this ShowAlertRuleResponse.
         :type pipe_name: str
@@ -238,7 +231,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def create_by(self):
         """Gets the create_by of this ShowAlertRuleResponse.
 
-        create_by
+        创建人。Create by.
 
         :return: The create_by of this ShowAlertRuleResponse.
         :rtype: str
@@ -249,7 +242,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def create_by(self, create_by):
         """Sets the create_by of this ShowAlertRuleResponse.
 
-        create_by
+        创建人。Create by.
 
         :param create_by: The create_by of this ShowAlertRuleResponse.
         :type create_by: str
@@ -260,7 +253,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def create_time(self):
         """Gets the create_time of this ShowAlertRuleResponse.
 
-        create_time
+        创建时间。Create time.
 
         :return: The create_time of this ShowAlertRuleResponse.
         :rtype: int
@@ -271,7 +264,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def create_time(self, create_time):
         """Sets the create_time of this ShowAlertRuleResponse.
 
-        create_time
+        创建时间。Create time.
 
         :param create_time: The create_time of this ShowAlertRuleResponse.
         :type create_time: int
@@ -282,7 +275,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def update_by(self):
         """Gets the update_by of this ShowAlertRuleResponse.
 
-        update_by
+        更新人。Update by.
 
         :return: The update_by of this ShowAlertRuleResponse.
         :rtype: str
@@ -293,7 +286,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def update_by(self, update_by):
         """Sets the update_by of this ShowAlertRuleResponse.
 
-        update_by
+        更新人。Update by.
 
         :param update_by: The update_by of this ShowAlertRuleResponse.
         :type update_by: str
@@ -304,7 +297,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def update_time(self):
         """Gets the update_time of this ShowAlertRuleResponse.
 
-        update_time
+        更新时间。Update time.
 
         :return: The update_time of this ShowAlertRuleResponse.
         :rtype: int
@@ -315,7 +308,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def update_time(self, update_time):
         """Sets the update_time of this ShowAlertRuleResponse.
 
-        update_time
+        更新时间。Update time.
 
         :param update_time: The update_time of this ShowAlertRuleResponse.
         :type update_time: int
@@ -326,7 +319,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def delete_time(self):
         """Gets the delete_time of this ShowAlertRuleResponse.
 
-        delete_time
+        删除时间。Delete time.
 
         :return: The delete_time of this ShowAlertRuleResponse.
         :rtype: int
@@ -337,7 +330,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def delete_time(self, delete_time):
         """Sets the delete_time of this ShowAlertRuleResponse.
 
-        delete_time
+        删除时间。Delete time.
 
         :param delete_time: The delete_time of this ShowAlertRuleResponse.
         :type delete_time: int
@@ -348,7 +341,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def rule_name(self):
         """Gets the rule_name of this ShowAlertRuleResponse.
 
-        rule_name
+        告警规则名称。Alert rule name.
 
         :return: The rule_name of this ShowAlertRuleResponse.
         :rtype: str
@@ -359,7 +352,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def rule_name(self, rule_name):
         """Sets the rule_name of this ShowAlertRuleResponse.
 
-        rule_name
+        告警规则名称。Alert rule name.
 
         :param rule_name: The rule_name of this ShowAlertRuleResponse.
         :type rule_name: str
@@ -370,7 +363,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def query(self):
         """Gets the query of this ShowAlertRuleResponse.
 
-        query
+        查询语句。Query.
 
         :return: The query of this ShowAlertRuleResponse.
         :rtype: str
@@ -381,7 +374,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def query(self, query):
         """Sets the query of this ShowAlertRuleResponse.
 
-        query
+        查询语句。Query.
 
         :param query: The query of this ShowAlertRuleResponse.
         :type query: str
@@ -392,7 +385,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def query_type(self):
         """Gets the query_type of this ShowAlertRuleResponse.
 
-        query_type. SQL, CBSL.
+        查询语法，SQL。Query type. SQL.
 
         :return: The query_type of this ShowAlertRuleResponse.
         :rtype: str
@@ -403,7 +396,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def query_type(self, query_type):
         """Sets the query_type of this ShowAlertRuleResponse.
 
-        query_type. SQL, CBSL.
+        查询语法，SQL。Query type. SQL.
 
         :param query_type: The query_type of this ShowAlertRuleResponse.
         :type query_type: str
@@ -414,7 +407,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowAlertRuleResponse.
 
-        status. ENABLED, DISABLED
+        启用状态，启用、停用。Status, enabled, disabled.
 
         :return: The status of this ShowAlertRuleResponse.
         :rtype: str
@@ -425,7 +418,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowAlertRuleResponse.
 
-        status. ENABLED, DISABLED
+        启用状态，启用、停用。Status, enabled, disabled.
 
         :param status: The status of this ShowAlertRuleResponse.
         :type status: str
@@ -436,7 +429,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def severity(self):
         """Gets the severity of this ShowAlertRuleResponse.
 
-        severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
         :return: The severity of this ShowAlertRuleResponse.
         :rtype: str
@@ -447,7 +440,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def severity(self, severity):
         """Sets the severity of this ShowAlertRuleResponse.
 
-        severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
         :param severity: The severity of this ShowAlertRuleResponse.
         :type severity: str
@@ -455,32 +448,10 @@ class ShowAlertRuleResponse(SdkResponse):
         self._severity = severity
 
     @property
-    def accumulated_times(self):
-        """Gets the accumulated_times of this ShowAlertRuleResponse.
-
-        accumulated_times
-
-        :return: The accumulated_times of this ShowAlertRuleResponse.
-        :rtype: int
-        """
-        return self._accumulated_times
-
-    @accumulated_times.setter
-    def accumulated_times(self, accumulated_times):
-        """Sets the accumulated_times of this ShowAlertRuleResponse.
-
-        accumulated_times
-
-        :param accumulated_times: The accumulated_times of this ShowAlertRuleResponse.
-        :type accumulated_times: int
-        """
-        self._accumulated_times = accumulated_times
-
-    @property
     def custom_properties(self):
         """Gets the custom_properties of this ShowAlertRuleResponse.
 
-        custom_properties
+        自定义扩展信息。Custom properties.
 
         :return: The custom_properties of this ShowAlertRuleResponse.
         :rtype: dict(str, str)
@@ -491,7 +462,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def custom_properties(self, custom_properties):
         """Sets the custom_properties of this ShowAlertRuleResponse.
 
-        custom_properties
+        自定义扩展信息。Custom properties.
 
         :param custom_properties: The custom_properties of this ShowAlertRuleResponse.
         :type custom_properties: dict(str, str)
@@ -502,7 +473,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def event_grouping(self):
         """Gets the event_grouping of this ShowAlertRuleResponse.
 
-        event_grouping
+        告警分组。Event grouping.
 
         :return: The event_grouping of this ShowAlertRuleResponse.
         :rtype: bool
@@ -513,7 +484,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def event_grouping(self, event_grouping):
         """Sets the event_grouping of this ShowAlertRuleResponse.
 
-        event_grouping
+        告警分组。Event grouping.
 
         :param event_grouping: The event_grouping of this ShowAlertRuleResponse.
         :type event_grouping: bool
@@ -542,7 +513,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def triggers(self):
         """Gets the triggers of this ShowAlertRuleResponse.
 
-        triggers
+        告警触发规则。Alert triggers.
 
         :return: The triggers of this ShowAlertRuleResponse.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
@@ -553,7 +524,7 @@ class ShowAlertRuleResponse(SdkResponse):
     def triggers(self, triggers):
         """Sets the triggers of this ShowAlertRuleResponse.
 
-        triggers
+        告警触发规则。Alert triggers.
 
         :param triggers: The triggers of this ShowAlertRuleResponse.
         :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]

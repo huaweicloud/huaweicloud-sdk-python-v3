@@ -36,9 +36,9 @@ class UpdatePlaybookResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: Error code
+        :param code: 错误码
         :type code: str
-        :param message: Error message
+        :param message: 错误信息
         :type message: str
         :param data: 
         :type data: :class:`huaweicloudsdksecmaster.v2.PlaybookInfo`
@@ -67,7 +67,7 @@ class UpdatePlaybookResponse(SdkResponse):
     def code(self):
         """Gets the code of this UpdatePlaybookResponse.
 
-        Error code
+        错误码
 
         :return: The code of this UpdatePlaybookResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class UpdatePlaybookResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this UpdatePlaybookResponse.
 
-        Error code
+        错误码
 
         :param code: The code of this UpdatePlaybookResponse.
         :type code: str
@@ -89,7 +89,7 @@ class UpdatePlaybookResponse(SdkResponse):
     def message(self):
         """Gets the message of this UpdatePlaybookResponse.
 
-        Error message
+        错误信息
 
         :return: The message of this UpdatePlaybookResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class UpdatePlaybookResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this UpdatePlaybookResponse.
 
-        Error message
+        错误信息
 
         :param message: The message of this UpdatePlaybookResponse.
         :type message: str

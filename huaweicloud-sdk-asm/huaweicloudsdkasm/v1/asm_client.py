@@ -30,7 +30,7 @@ class AsmClient(Client):
     def create_mesh(self, request):
         """新建网格
 
-        该API用于创建一个网格。
+        该API用于创建一个网格
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -90,7 +90,7 @@ class AsmClient(Client):
     def delete_mesh(self, request):
         """删除网格
 
-        该API用于删除一个指定的网格。
+        该API用于删除一个指定的网格
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -150,7 +150,7 @@ class AsmClient(Client):
     def list_meshes(self, request):
         """查询网格列表
 
-        该API用于获取用户所有网格的详细信息。
+        该API用于获取用户所有网格的详细信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -174,8 +174,6 @@ class AsmClient(Client):
         header_params = {}
         if 'content_type' in local_var_params:
             header_params['Content-Type'] = local_var_params['content_type']
-        if 'x_apply_domain_id' in local_var_params:
-            header_params['X-Apply-DomainID'] = local_var_params['x_apply_domain_id']
         if 'x_apply_project_id' in local_var_params:
             header_params['X-Apply-ProjectID'] = local_var_params['x_apply_project_id']
 
@@ -210,7 +208,7 @@ class AsmClient(Client):
     def show_mesh(self, request):
         """查询网格
 
-        该API用于获取指定网格的详细信息。
+        该API用于获取指定网格的详细信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -236,8 +234,6 @@ class AsmClient(Client):
         header_params = {}
         if 'content_type' in local_var_params:
             header_params['Content-Type'] = local_var_params['content_type']
-        if 'x_apply_domain_id' in local_var_params:
-            header_params['X-Apply-DomainID'] = local_var_params['x_apply_domain_id']
         if 'x_apply_project_id' in local_var_params:
             header_params['X-Apply-ProjectID'] = local_var_params['x_apply_project_id']
 

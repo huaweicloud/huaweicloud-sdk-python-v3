@@ -20,7 +20,7 @@ class ShowIncidentResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
-        'data': 'ShowIncidentDetail'
+        'data': 'IncidentDetail'
     }
 
     attribute_map = {
@@ -34,12 +34,12 @@ class ShowIncidentResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param code: Id value
+        :param code: 错误码
         :type code: str
-        :param message: Error message
+        :param message: 错误信息
         :type message: str
         :param data: 
-        :type data: :class:`huaweicloudsdksecmaster.v2.ShowIncidentDetail`
+        :type data: :class:`huaweicloudsdksecmaster.v2.IncidentDetail`
         """
         
         super(ShowIncidentResponse, self).__init__()
@@ -60,7 +60,7 @@ class ShowIncidentResponse(SdkResponse):
     def code(self):
         """Gets the code of this ShowIncidentResponse.
 
-        Id value
+        错误码
 
         :return: The code of this ShowIncidentResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ShowIncidentResponse(SdkResponse):
     def code(self, code):
         """Sets the code of this ShowIncidentResponse.
 
-        Id value
+        错误码
 
         :param code: The code of this ShowIncidentResponse.
         :type code: str
@@ -82,7 +82,7 @@ class ShowIncidentResponse(SdkResponse):
     def message(self):
         """Gets the message of this ShowIncidentResponse.
 
-        Error message
+        错误信息
 
         :return: The message of this ShowIncidentResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ShowIncidentResponse(SdkResponse):
     def message(self, message):
         """Sets the message of this ShowIncidentResponse.
 
-        Error message
+        错误信息
 
         :param message: The message of this ShowIncidentResponse.
         :type message: str
@@ -105,7 +105,7 @@ class ShowIncidentResponse(SdkResponse):
         """Gets the data of this ShowIncidentResponse.
 
         :return: The data of this ShowIncidentResponse.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowIncidentDetail`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IncidentDetail`
         """
         return self._data
 
@@ -114,7 +114,7 @@ class ShowIncidentResponse(SdkResponse):
         """Sets the data of this ShowIncidentResponse.
 
         :param data: The data of this ShowIncidentResponse.
-        :type data: :class:`huaweicloudsdksecmaster.v2.ShowIncidentDetail`
+        :type data: :class:`huaweicloudsdksecmaster.v2.IncidentDetail`
         """
         self._data = data
 

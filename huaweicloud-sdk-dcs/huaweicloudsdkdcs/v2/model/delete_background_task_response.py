@@ -18,20 +18,51 @@ class DeleteBackgroundTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'message': 'str'
     }
 
     attribute_map = {
+        'message': 'message'
     }
 
-    def __init__(self):
+    def __init__(self, message=None):
         """DeleteBackgroundTaskResponse
 
         The model defined in huaweicloud sdk
 
+        :param message: 返回消息
+        :type message: str
         """
         
         super(DeleteBackgroundTaskResponse, self).__init__()
+
+        self._message = None
         self.discriminator = None
+
+        if message is not None:
+            self.message = message
+
+    @property
+    def message(self):
+        """Gets the message of this DeleteBackgroundTaskResponse.
+
+        返回消息
+
+        :return: The message of this DeleteBackgroundTaskResponse.
+        :rtype: str
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        """Sets the message of this DeleteBackgroundTaskResponse.
+
+        返回消息
+
+        :param message: The message of this DeleteBackgroundTaskResponse.
+        :type message: str
+        """
+        self._message = message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

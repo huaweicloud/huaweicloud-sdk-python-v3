@@ -18,25 +18,21 @@ class ListMeshesRequest:
 
     openapi_types = {
         'content_type': 'str',
-        'x_apply_domain_id': 'str',
         'x_apply_project_id': 'str'
     }
 
     attribute_map = {
         'content_type': 'Content-Type',
-        'x_apply_domain_id': 'X-Apply-DomainID',
         'x_apply_project_id': 'X-Apply-ProjectID'
     }
 
-    def __init__(self, content_type=None, x_apply_domain_id=None, x_apply_project_id=None):
+    def __init__(self, content_type=None, x_apply_project_id=None):
         """ListMeshesRequest
 
         The model defined in huaweicloud sdk
 
         :param content_type: 消息体的类型（格式）
         :type content_type: str
-        :param x_apply_domain_id: 网格所属DomainID
-        :type x_apply_domain_id: str
         :param x_apply_project_id: 网格所属ProjectID
         :type x_apply_project_id: str
         """
@@ -44,13 +40,10 @@ class ListMeshesRequest:
         
 
         self._content_type = None
-        self._x_apply_domain_id = None
         self._x_apply_project_id = None
         self.discriminator = None
 
         self.content_type = content_type
-        if x_apply_domain_id is not None:
-            self.x_apply_domain_id = x_apply_domain_id
         if x_apply_project_id is not None:
             self.x_apply_project_id = x_apply_project_id
 
@@ -75,28 +68,6 @@ class ListMeshesRequest:
         :type content_type: str
         """
         self._content_type = content_type
-
-    @property
-    def x_apply_domain_id(self):
-        """Gets the x_apply_domain_id of this ListMeshesRequest.
-
-        网格所属DomainID
-
-        :return: The x_apply_domain_id of this ListMeshesRequest.
-        :rtype: str
-        """
-        return self._x_apply_domain_id
-
-    @x_apply_domain_id.setter
-    def x_apply_domain_id(self, x_apply_domain_id):
-        """Sets the x_apply_domain_id of this ListMeshesRequest.
-
-        网格所属DomainID
-
-        :param x_apply_domain_id: The x_apply_domain_id of this ListMeshesRequest.
-        :type x_apply_domain_id: str
-        """
-        self._x_apply_domain_id = x_apply_domain_id
 
     @property
     def x_apply_project_id(self):

@@ -31,9 +31,9 @@ class DataClassRefPojo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 唯一标识ID
+        :param id: 数据类ID
         :type id: str
-        :param name: 唯一标识ID
+        :param name: 数据类名称
         :type name: str
         """
         
@@ -51,7 +51,7 @@ class DataClassRefPojo:
     def id(self):
         """Gets the id of this DataClassRefPojo.
 
-        唯一标识ID
+        数据类ID
 
         :return: The id of this DataClassRefPojo.
         :rtype: str
@@ -62,7 +62,7 @@ class DataClassRefPojo:
     def id(self, id):
         """Sets the id of this DataClassRefPojo.
 
-        唯一标识ID
+        数据类ID
 
         :param id: The id of this DataClassRefPojo.
         :type id: str
@@ -73,7 +73,7 @@ class DataClassRefPojo:
     def name(self):
         """Gets the name of this DataClassRefPojo.
 
-        唯一标识ID
+        数据类名称
 
         :return: The name of this DataClassRefPojo.
         :rtype: str
@@ -84,7 +84,7 @@ class DataClassRefPojo:
     def name(self, name):
         """Sets the name of this DataClassRefPojo.
 
-        唯一标识ID
+        数据类名称
 
         :param name: The name of this DataClassRefPojo.
         :type name: str

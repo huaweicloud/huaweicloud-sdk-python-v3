@@ -865,7 +865,7 @@ class CdnAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_domain_stats_async(self, request):
-        """查询域名统计基础数据
+        """查询域名统计数据
 
         - 支持查询90天内的数据。
         

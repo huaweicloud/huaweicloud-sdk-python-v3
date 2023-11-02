@@ -1,3 +1,1340 @@
+# 3.1.64 2023-11-02
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListApisV2**
+    - 请求参数变更
+      - `+ vpc_channel_name`
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListPostalAddress`、`UpdatePostal`、`CreatePostal`、`DeletePostal`
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `+ monthly_records.id`
+
+### HuaweiCloud SDK BSSINTL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `+ monthly_records.id`
+
+### HuaweiCloud SDK CloudIDE
+
+- _新增特性_
+  - 支持接口`StartChat`、`SyncChat`、`SyncGetChatResult`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CSMS
+
+- _新增特性_
+  - 支持接口`RotateSecret`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowConfigHistoryDetail`
+    - `UpdateClientIpTransparentTransmission`
+    - `UpdateInstanceConfig`
+    - `ListInstanceOperations`
+    - `ExportInstancesTask`
+    - `ExportExcelJob`
+    - `CreateResizeOrder`
+    - `ShowExpireAutoScanConfig`
+    - `UpdateExpireAutoScanConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ShowNodesInformation`、`ShowBackUpInfo`、`CreateOrUpdateBackUpInfo`、`CreateConnectivityTest`
+
+### HuaweiCloud SDK DNS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowPrivateZone**
+    - 响应参数变更
+      - `+ enterprise_project_id`
+      - `+ proxy_pattern`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 支持接口`CollectPositionAsync`、`ShowPositionResult`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ExecuteClusterUpgradeAction`
+    - `ListUpdatableVersion`
+    - `ListUpdateRecord`
+    - `CheckTableRestore`
+    - `RestoreTable`
+    - `ListSnapshotCrossRegion`
+    - `ListSnapshotCrossRegionPolicy`
+    - `AddSnapshotCrossRegionPolicy`
+    - `DeleteSnapshotCrossRegionPolicy`
+    - `StopWorkloadPlan`
+    - `ShowWorkloadPlan`
+    - `DeleteWorkloadPlan`
+    - `StartWorkloadPlan`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK eiHealth
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListNodes`
+    - `ListScalingHistory`
+    - `ListPolicyEvents`
+    - `CreatePocketDetectionJob`
+    - `ShowPocketDetectionJob`
+    - `CreateAdmetJob`
+    - `ShowAdmetJob`
+    - `CreatePocketMolDesignJob`
+    - `ShowPocketMolDesignJob`
+    - `ListDrugModel`
+    - `CreateDrugModel`
+    - `UpdateDrugModel`
+    - `DeleteDrugModel`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateDrugLigandSvg**
+    - 请求参数变更
+      - `+ scaffold`
+  - **CreateNextflowJob**
+    - 请求参数变更
+      - `+ priority`
+  - **CreateDrugLigandSimilarityGraphTask**
+    - 请求参数变更
+      - `+ mode: enum value [FREE]`
+  - **ListDrugJob**
+    - 响应参数变更
+      - `+ jobs.priority`
+  - **ShowSynthesisJob**
+    - 响应参数变更
+      - `+ basic_info.priority`
+  - **ShowFepJob**
+    - 响应参数变更
+      - `+ part_failed_reason`
+      - `+ basic_info.priority`
+  - **ParseDrugReceptorInfo**
+    - 响应参数变更
+      - `* ligands.bounding_box: object<BoundingBoxDto> -> object<DrugBoundingBoxDto>`
+  - **RecognizeDrugReceptorPocket**
+    - 响应参数变更
+      - `* pockets: list<BoundingBoxDto> -> list<DrugBoundingBoxDto>`
+  - **CreateOptmJob**
+    - 请求参数变更
+      - `+ molecule_file`
+      - `+ sampler_mixin_weight`
+      - `+ model_ids`
+      - `+ strong_constraints.id`
+      - `+ binding_site.bounding_box.padding`
+      - `* body: object<DrugFile> -> object<ReceptorDrugFile>`
+      - `+ weak_constraints.id`
+  - **ShowOptmJob**
+    - 响应参数变更
+      - `+ models`
+      - `+ sampler_mixin_weight`
+      - `+ molecule_file`
+      - `+ basic_info.priority`
+      - `+ strong_constraints.id`
+      - `+ binding_site.bounding_box.padding`
+      - `* body: object<DrugFile> -> object<ReceptorDrugFile>`
+      - `+ weak_constraints.id`
+  - **CreateDockingJob**
+    - 请求参数变更
+      - `+ receptors.bounding_box.padding`
+      - `* body: object<DrugFile> -> object<ReceptorDrugFile>`
+  - **ShowDockingJob**
+    - 响应参数变更
+      - `+ part_failed_reason`
+      - `+ basic_info.priority`
+      - `+ receptors.bounding_box.padding`
+      - `* body: object<DrugFile> -> object<ReceptorDrugFile>`
+
+### HuaweiCloud SDK ELB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListListeners**
+    - 请求参数变更
+      - `+ proxy_protocol_enable`
+    - 响应参数变更
+      - `+ listeners.proxy_protocol_enable`
+      - `+ listeners.insert_headers.X-Forwarded-Proto`
+      - `+ listeners.insert_headers.X-Real-IP`
+      - `+ listeners.insert_headers.X-Forwarded-ELB-ID`
+      - `+ listeners.insert_headers.X-Forwarded-TLS-Certificate-ID`
+      - `+ listeners.insert_headers.X-Forwarded-TLS-Protocol`
+      - `+ listeners.insert_headers.X-Forwarded-TLS-Cipher`
+  - **CreateListener**
+    - 请求参数变更
+      - `+ listener.proxy_protocol_enable`
+      - `+ listener.insert_headers.X-Forwarded-Proto`
+      - `+ listener.insert_headers.X-Real-IP`
+      - `+ listener.insert_headers.X-Forwarded-ELB-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Certificate-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Protocol`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Cipher`
+    - 响应参数变更
+      - `+ listener.proxy_protocol_enable`
+      - `+ listener.insert_headers.X-Forwarded-Proto`
+      - `+ listener.insert_headers.X-Real-IP`
+      - `+ listener.insert_headers.X-Forwarded-ELB-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Certificate-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Protocol`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Cipher`
+  - **ShowListener**
+    - 响应参数变更
+      - `+ listener.proxy_protocol_enable`
+      - `+ listener.insert_headers.X-Forwarded-Proto`
+      - `+ listener.insert_headers.X-Real-IP`
+      - `+ listener.insert_headers.X-Forwarded-ELB-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Certificate-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Protocol`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Cipher`
+  - **UpdateListener**
+    - 请求参数变更
+      - `+ listener.proxy_protocol_enable`
+      - `+ listener.insert_headers.X-Forwarded-Proto`
+      - `+ listener.insert_headers.X-Real-IP`
+      - `+ listener.insert_headers.X-Forwarded-ELB-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Certificate-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Protocol`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Cipher`
+    - 响应参数变更
+      - `+ listener.proxy_protocol_enable`
+      - `+ listener.insert_headers.X-Forwarded-Proto`
+      - `+ listener.insert_headers.X-Real-IP`
+      - `+ listener.insert_headers.X-Forwarded-ELB-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Certificate-ID`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Protocol`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Cipher`
+  - **CreatePool**
+    - 请求参数变更
+      - `+ pool.ip_version`
+  - **UpdatePool**
+    - 请求参数变更
+      - `+ pool.any_port_enable`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowIntelligentDiagnosisAbnormalCountOfInstances`
+    - `ShowIntelligentDiagnosisInstanceInfosPerMetric`
+    - `ShrinkGaussMySqlProxy`
+    - `ShowInstanceDatabaseVersion`
+    - `CopyInstanceConfigurations`
+    - `ShowAutoScalingPolicy`
+    - `UpdateAutoScalingPolicy`
+    - `CheckResource`
+    - `UpdateInstanceConfigurations`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteGaussMySqlBackup**
+    - 响应参数变更
+      - `+ backup_id`
+      - `+ backup_name`
+      - `- job_id`
+  - **CreateGaussMySqlProxy**
+    - 请求参数变更
+      - `+ subnet_id`
+  - **ShowGaussMySqlBackupList**
+    - 请求参数变更
+      - `+ name`
+      - `+ instance_name`
+    - 响应参数变更
+      - `+ backups.instance_name`
+      - `- backups.status: enum value [BUILDING,COMPLETED,FAILED,AVAILABLE]`
+      - `- backups.type: enum value [auto,manual]`
+  - **ShowGaussMySqlProxyList**
+    - 响应参数变更
+      - `+ proxy_list.proxy.subnet_id`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 支持接口`DeleteDatabase`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstances**
+    - 请求参数变更
+      - `+ charge_mode`
+  - **ListInstancesDetails**
+    - 请求参数变更
+      - `+ charge_mode`
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSwrImageRepository**
+    - 响应参数变更
+      - `+ data_list.scannable`
+      - `- data_list.scanable`
+
+### HuaweiCloud SDK KPS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ImportPrivateKey**
+    - 响应参数变更
+      - `+ keypair.user_id`
+      - `+ keypair.key_protection`
+      - `* keypair: object<KeypairBean> -> object<ImportPrivateKeyAction>`
+
+### HuaweiCloud SDK NAT
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListNatGatewayDnatRules**
+    - 响应参数变更
+      - `+ dnat_rules.global_eip_id`
+      - `+ dnat_rules.global_eip_address`
+  - **CreateNatGatewayDnatRule**
+    - 请求参数变更
+      - `+ dnat_rule.global_eip_id`
+    - 响应参数变更
+      - `+ dnat_rule.global_eip_id`
+      - `+ dnat_rule.global_eip_address`
+  - **ShowNatGatewayDnatRule**
+    - 响应参数变更
+      - `+ dnat_rule.global_eip_id`
+      - `+ dnat_rule.global_eip_address`
+  - **UpdateNatGatewayDnatRule**
+    - 请求参数变更
+      - `+ dnat_rule.global_eip_id`
+    - 响应参数变更
+      - `+ dnat_rule.global_eip_id`
+      - `+ dnat_rule.global_eip_address`
+  - **BatchCreateNatGatewayDnatRules**
+    - 请求参数变更
+      - `+ dnat_rules.global_eip_id`
+    - 响应参数变更
+      - `+ dnat_rules.global_eip_id`
+      - `+ dnat_rules.global_eip_address`
+  - **ListNatGatewaySnatRules**
+    - 响应参数变更
+      - `+ snat_rules.global_eip_id`
+      - `+ snat_rules.global_eip_address`
+  - **CreateNatGatewaySnatRule**
+    - 请求参数变更
+      - `+ snat_rule.global_eip_id`
+    - 响应参数变更
+      - `+ snat_rule.global_eip_id`
+      - `+ snat_rule.global_eip_address`
+  - **ShowNatGatewaySnatRule**
+    - 响应参数变更
+      - `+ snat_rule.global_eip_id`
+      - `+ snat_rule.global_eip_address`
+  - **UpdateNatGatewaySnatRule**
+    - 请求参数变更
+      - `+ snat_rule.global_eip_id`
+    - 响应参数变更
+      - `+ snat_rule.global_eip_address`
+      - `+ snat_rule.global_eip_id`
+  - **ListNatGateways**
+    - 响应参数变更
+      - `+ nat_gateways.ngport_ip_address`
+      - `+ nat_gateways.billing_info`
+      - `+ nat_gateways.dnat_rules_limit`
+      - `+ nat_gateways.snat_rule_public_ip_limit`
+  - **CreateNatGateway**
+    - 请求参数变更
+      - `+ nat_gateway.ngport_ip_address`
+    - 响应参数变更
+      - `+ nat_gateway.ngport_ip_address`
+      - `+ nat_gateway.billing_info`
+      - `+ nat_gateway.dnat_rules_limit`
+      - `+ nat_gateway.snat_rule_public_ip_limit`
+  - **ShowNatGateway**
+    - 响应参数变更
+      - `+ nat_gateway.ngport_ip_address`
+      - `+ nat_gateway.billing_info`
+      - `+ nat_gateway.dnat_rules_limit`
+      - `+ nat_gateway.snat_rule_public_ip_limit`
+  - **UpdateNatGateway**
+    - 响应参数变更
+      - `+ nat_gateway.ngport_ip_address`
+      - `+ nat_gateway.billing_info`
+      - `+ nat_gateway.dnat_rules_limit`
+      - `+ nat_gateway.snat_rule_public_ip_limit`
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateRocketMqMigrationTask**
+    - 请求参数变更
+      - `* body: string -> map<string, object>`
+
+### HuaweiCloud SDK SecMaster
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListIncidentTypes`
+  - **ListAlertRuleMetrics**
+    - 响应参数变更
+      - `+ metric`
+      - `+ category`
+      - `- body`
+  - **CreateBatchOrderAlerts**
+    - 请求参数变更
+      - `- incident_id`
+      - `- event_content`
+      - `- marked_evidence`
+      - `- incident_content.type_category`
+      - `- incident_content.evidence_list`
+      - `- incident_content.note_list`
+      - `- incident_content.attachment_list`
+      - `- incident_content.description`
+      - `- incident_content.incident_type.layoutId`
+    - 响应参数变更
+      - `* data: object<BatchOrderAlertResult> -> object<BatchOperateAlertResult>`
+  - **ShowAlertRule**
+    - 响应参数变更
+      - `- accumulated_times`
+      - `- query_type: enum value [CBSL]`
+  - **UpdateAlertRule**
+    - 请求参数变更
+      - `- accumulated_times`
+      - `- query_type: enum value [CBSL]`
+    - 响应参数变更
+      - `- accumulated_times`
+      - `- query_type: enum value [CBSL]`
+  - **CreateAlertRuleSimulation**
+    - 请求参数变更
+      - `- query_type: enum value [CBSL]`
+  - **ShowAlertRuleTemplate**
+    - 响应参数变更
+      - `- query_type: enum value [CBSL]`
+  - **ListPlaybooks**
+    - 请求参数变更
+      - `- component_id`
+      - `* offset: optional -> required`
+      - `* limit: optional -> required`
+  - **CreatePlaybook**
+    - 请求参数变更
+      - `- approve_role`
+      - `- user_role`
+      - `- edit_role`
+      - `- owner_id`
+  - **ListPlaybookActions**
+    - 请求参数变更
+      - `* limit: optional -> required`
+      - `* offset: optional -> required`
+    - 响应参数变更
+      - `- data.sort_order`
+  - **CreatePlaybookAction**
+    - 响应参数变更
+      - `- data.sort_order`
+  - **UpdatePlaybookAction**
+    - 响应参数变更
+      - `- data.sort_order`
+  - **ListDataobjectRelations**
+    - 请求参数变更
+      - `+ order: enum value [DESC,ASC]`
+      - `* condition.conditions.data: list<string> -> list<object>`
+      - `* condition.conditions: list<ConditonInfo> -> list<object>`
+      - `* condition.logics: list<string> -> list<object>`
+    - 响应参数变更
+      - `+ success`
+      - `+ data.data_object`
+      - `+ data.dataclass_ref`
+      - `+ data.format_version`
+      - `+ data.version`
+      - `+ data.workspace_id`
+      - `- data.dataclass_id`
+      - `- data.name`
+      - `- data.type`
+      - `- data.content`
+      - `* data: list<DataobjectInfo> -> list<DataObjectDetail>`
+  - **CreateDataobjectRelations**
+    - 请求参数变更
+      - `* body: object<CreateRelation> -> object<CreateDataobjectRelationsRequestBody>`
+  - **DeleteDataobjectRelations**
+    - 请求参数变更
+      - `* body: object<CreateRelation> -> object<CreateDataobjectRelationsRequestBody>`
+    - 响应参数变更
+      - `- total`
+      - `- offset`
+      - `- success`
+      - `- limit`
+      - `- request_id`
+      - `* data: object<DataResponse> -> object<BatchOperateDataobjectResult>`
+  - **ListAlerts**
+    - 请求参数变更
+      - `+ order: enum value [DESC,ASC]`
+      - `* condition.conditions.data: list<string> -> list<object>`
+      - `* condition.conditions: list<ConditonInfo> -> list<object>`
+      - `* condition.logics: list<string> -> list<object>`
+    - 响应参数变更
+      - `* data.data_object.network_list.src_port: string -> int32`
+      - `* data.data_object.sla: int32 -> string`
+      - `* data.data_object.simulation: boolean -> string`
+      - `* data.data_object.process.process_pid: string -> int32`
+      - `* data.data_object.process.process_uid: string -> int32`
+  - **DeleteAlert**
+    - 请求参数变更
+      - `+ batch_ids`
+      - `- ids`
+      - `* body: object<DeleteAlert> -> object<DeleteAlertRequestBody>`
+    - 响应参数变更
+      - `* data: object<DataResponse> -> object<BatchOperateAlertResult>`
+  - **CreateAlert**
+    - 请求参数变更
+      - `+ data_object.domain_id`
+      - `+ data_object.region_id`
+      - `+ data_object.labels`
+      - `+ data_object.creator`
+      - `- data_object.label`
+      - `- data_object.chop_phase`
+      - `- data_object.ppdr_phase`
+      - `- data_object.cteator`
+      - `+ data_object.environment.cross_workspace_id`
+      - `+ data_object.data_source.company_name`
+      - `+ data_object.data_source.product_module`
+      - `+ data_object.severity: enum value [Tips,Low,Medium,High,Fatal]`
+      - `+ data_object.alert_type.category`
+      - `+ data_object.alert_type.alert_type`
+      - `* data_object.network_list.direction: object -> string`
+      - `* data_object.network_list.src_port: string -> int32`
+      - `+ data_object.network_list.src_geo.latitude`
+      - `+ data_object.network_list.src_geo.longitude`
+      - `+ data_object.network_list.src_geo.city_code`
+      - `+ data_object.network_list.src_geo.country_code`
+      - `+ data_object.network_list.dest_geo.latitude`
+      - `+ data_object.network_list.dest_geo.longitude`
+      - `+ data_object.network_list.dest_geo.city_code`
+      - `+ data_object.network_list.dest_geo.country_code`
+      - `+ data_object.resource_list.provider`
+      - `+ data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `* data_object.simulation: boolean -> string`
+      - `+ data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data_object.process.process_parent_name`
+      - `+ data_object.process.process_parent_path`
+      - `+ data_object.process.process_parent_pid`
+      - `+ data_object.process.process_parent_uid`
+      - `+ data_object.process.process_parent_cmdline`
+      - `+ data_object.process.process_child_name`
+      - `+ data_object.process.process_child_path`
+      - `+ data_object.process.process_child_pid`
+      - `+ data_object.process.process_child_uid`
+      - `+ data_object.process.process_child_cmdline`
+      - `+ data_object.process.process_launche_time`
+      - `+ data_object.process.process_terminate_time`
+      - `* data_object.process.process_pid: string -> int32`
+      - `* data_object.process.process_uid: string -> int32`
+      - `* data_object: object<CreateAlert> -> object<Alert>`
+    - 响应参数变更
+      - `- data.type`
+      - `+ data.data_object.domain_id`
+      - `+ data.data_object.region_id`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.severity`
+      - `+ data.data_object.creator`
+      - `- data.data_object.datasource`
+      - `- data.data_object.serverity`
+      - `- data.data_object.chop_phase`
+      - `- data.data_object.ppdr_phase`
+      - `- data.data_object.cteator`
+      - `+ data.data_object.environment.cross_workspace_id`
+      - `+ data.data_object.alert_type.category`
+      - `+ data.data_object.alert_type.alert_type`
+      - `* data.data_object.network_list.direction: object -> string`
+      - `* data.data_object.network_list.src_port: string -> int32`
+      - `+ data.data_object.network_list.src_geo.latitude`
+      - `+ data.data_object.network_list.src_geo.longitude`
+      - `+ data.data_object.network_list.src_geo.city_code`
+      - `+ data.data_object.network_list.src_geo.country_code`
+      - `+ data.data_object.network_list.dest_geo.latitude`
+      - `+ data.data_object.network_list.dest_geo.longitude`
+      - `+ data.data_object.network_list.dest_geo.city_code`
+      - `+ data.data_object.network_list.dest_geo.country_code`
+      - `+ data.data_object.resource_list.provider`
+      - `+ data.data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data.data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data.data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `* data.data_object.simulation: boolean -> string`
+      - `+ data.data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data.data_object.process.process_parent_name`
+      - `+ data.data_object.process.process_parent_path`
+      - `+ data.data_object.process.process_parent_pid`
+      - `+ data.data_object.process.process_parent_uid`
+      - `+ data.data_object.process.process_parent_cmdline`
+      - `+ data.data_object.process.process_child_name`
+      - `+ data.data_object.process.process_child_path`
+      - `+ data.data_object.process.process_child_pid`
+      - `+ data.data_object.process.process_child_uid`
+      - `+ data.data_object.process.process_child_cmdline`
+      - `+ data.data_object.process.process_launche_time`
+      - `+ data.data_object.process.process_terminate_time`
+      - `* data.data_object.process.process_pid: string -> int32`
+      - `* data.data_object.process.process_uid: string -> int32`
+  - **ShowAlert**
+    - 响应参数变更
+      - `- data.type`
+      - `+ data.data_object.domain_id`
+      - `+ data.data_object.region_id`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.severity`
+      - `+ data.data_object.creator`
+      - `- data.data_object.datasource`
+      - `- data.data_object.serverity`
+      - `- data.data_object.chop_phase`
+      - `- data.data_object.ppdr_phase`
+      - `- data.data_object.cteator`
+      - `+ data.data_object.environment.cross_workspace_id`
+      - `* data.data_object.count: string -> int32`
+      - `+ data.data_object.alert_type.category`
+      - `+ data.data_object.alert_type.alert_type`
+      - `* data.data_object.network_list.direction: object -> string`
+      - `* data.data_object.network_list.src_port: string -> int32`
+      - `+ data.data_object.network_list.src_geo.latitude`
+      - `+ data.data_object.network_list.src_geo.longitude`
+      - `+ data.data_object.network_list.src_geo.city_code`
+      - `+ data.data_object.network_list.src_geo.country_code`
+      - `+ data.data_object.network_list.dest_geo.latitude`
+      - `+ data.data_object.network_list.dest_geo.longitude`
+      - `+ data.data_object.network_list.dest_geo.city_code`
+      - `+ data.data_object.network_list.dest_geo.country_code`
+      - `+ data.data_object.resource_list.provider`
+      - `+ data.data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data.data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data.data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `* data.data_object.simulation: boolean -> string`
+      - `+ data.data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data.data_object.process.process_parent_name`
+      - `+ data.data_object.process.process_parent_path`
+      - `+ data.data_object.process.process_parent_pid`
+      - `+ data.data_object.process.process_parent_uid`
+      - `+ data.data_object.process.process_parent_cmdline`
+      - `+ data.data_object.process.process_child_name`
+      - `+ data.data_object.process.process_child_path`
+      - `+ data.data_object.process.process_child_pid`
+      - `+ data.data_object.process.process_child_uid`
+      - `+ data.data_object.process.process_child_cmdline`
+      - `+ data.data_object.process.process_launche_time`
+      - `+ data.data_object.process.process_terminate_time`
+      - `* data.data_object.process.process_pid: string -> int32`
+      - `* data.data_object.process.process_uid: string -> int32`
+      - `* data.data_object: object<ShowAlertRsp> -> object<Alert>`
+      - `* data: object<ShowAlertDetail> -> object<AlertDetail>`
+  - **ChangeAlert**
+    - 请求参数变更
+      - `+ batch_ids`
+      - `+ data_object.domain_id`
+      - `+ data_object.region_id`
+      - `+ data_object.labels`
+      - `+ data_object.data_source`
+      - `+ data_object.severity`
+      - `+ data_object.creator`
+      - `- data_object.datasource`
+      - `- data_object.serverity`
+      - `- data_object.chop_phase`
+      - `- data_object.ppdr_phase`
+      - `- data_object.cteator`
+      - `+ data_object.environment.cross_workspace_id`
+      - `+ data_object.alert_type.category`
+      - `+ data_object.alert_type.alert_type`
+      - `* data_object.network_list.direction: object -> string`
+      - `* data_object.network_list.src_port: string -> int32`
+      - `+ data_object.network_list.src_geo.latitude`
+      - `+ data_object.network_list.src_geo.longitude`
+      - `+ data_object.network_list.src_geo.city_code`
+      - `+ data_object.network_list.src_geo.country_code`
+      - `+ data_object.network_list.dest_geo.latitude`
+      - `+ data_object.network_list.dest_geo.longitude`
+      - `+ data_object.network_list.dest_geo.city_code`
+      - `+ data_object.network_list.dest_geo.country_code`
+      - `+ data_object.resource_list.provider`
+      - `+ data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `* data_object.simulation: boolean -> string`
+      - `+ data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data_object.process.process_parent_name`
+      - `+ data_object.process.process_parent_path`
+      - `+ data_object.process.process_parent_pid`
+      - `+ data_object.process.process_parent_uid`
+      - `+ data_object.process.process_parent_cmdline`
+      - `+ data_object.process.process_child_name`
+      - `+ data_object.process.process_child_path`
+      - `+ data_object.process.process_child_pid`
+      - `+ data_object.process.process_child_uid`
+      - `+ data_object.process.process_child_cmdline`
+      - `+ data_object.process.process_launche_time`
+      - `+ data_object.process.process_terminate_time`
+      - `* data_object.process.process_pid: string -> int32`
+      - `* data_object.process.process_uid: string -> int32`
+    - 响应参数变更
+      - `- data.type`
+      - `+ data.data_object.domain_id`
+      - `+ data.data_object.region_id`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.severity`
+      - `+ data.data_object.creator`
+      - `- data.data_object.datasource`
+      - `- data.data_object.serverity`
+      - `- data.data_object.chop_phase`
+      - `- data.data_object.ppdr_phase`
+      - `- data.data_object.cteator`
+      - `+ data.data_object.environment.cross_workspace_id`
+      - `+ data.data_object.alert_type.category`
+      - `+ data.data_object.alert_type.alert_type`
+      - `* data.data_object.network_list.direction: object -> string`
+      - `* data.data_object.network_list.src_port: string -> int32`
+      - `+ data.data_object.network_list.src_geo.latitude`
+      - `+ data.data_object.network_list.src_geo.longitude`
+      - `+ data.data_object.network_list.src_geo.city_code`
+      - `+ data.data_object.network_list.src_geo.country_code`
+      - `+ data.data_object.network_list.dest_geo.latitude`
+      - `+ data.data_object.network_list.dest_geo.longitude`
+      - `+ data.data_object.network_list.dest_geo.city_code`
+      - `+ data.data_object.network_list.dest_geo.country_code`
+      - `+ data.data_object.resource_list.provider`
+      - `+ data.data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data.data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data.data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `* data.data_object.simulation: boolean -> string`
+      - `+ data.data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data.data_object.process.process_parent_name`
+      - `+ data.data_object.process.process_parent_path`
+      - `+ data.data_object.process.process_parent_pid`
+      - `+ data.data_object.process.process_parent_uid`
+      - `+ data.data_object.process.process_parent_cmdline`
+      - `+ data.data_object.process.process_child_name`
+      - `+ data.data_object.process.process_child_path`
+      - `+ data.data_object.process.process_child_pid`
+      - `+ data.data_object.process.process_child_uid`
+      - `+ data.data_object.process.process_child_cmdline`
+      - `+ data.data_object.process.process_launche_time`
+      - `+ data.data_object.process.process_terminate_time`
+      - `* data.data_object.process.process_pid: string -> int32`
+      - `* data.data_object.process.process_uid: string -> int32`
+  - **ListIncidents**
+    - 请求参数变更
+      - `+ order: enum value [DESC,ASC]`
+      - `* condition.conditions.data: list<string> -> list<object>`
+      - `* condition.conditions: list<ConditonInfo> -> list<object>`
+      - `* condition.logics: list<string> -> list<object>`
+    - 响应参数变更
+      - `+ data.dataclass_ref`
+      - `+ data.format_version`
+      - `+ data.id`
+      - `+ data.version`
+      - `- data.dataclass_id`
+      - `- data.layout_id`
+      - `- data.name`
+      - `- data.type`
+      - `- data.dataclass`
+      - `+ data.data_object.domain_id`
+      - `+ data.data_object.region_id`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.severity`
+      - `+ data.data_object.creator`
+      - `+ data.data_object.system_alert_table`
+      - `- data.data_object.datasource`
+      - `- data.data_object.serverity`
+      - `- data.data_object.chop_phase`
+      - `- data.data_object.ppdr_phase`
+      - `- data.data_object.cteator`
+      - `- data.data_object.system_incident_table`
+      - `+ data.data_object.environment.cross_workspace_id`
+      - `+ data.data_object.incident_type.category`
+      - `+ data.data_object.incident_type.incident_type`
+      - `* data.data_object.network_list.direction: object -> string`
+      - `* data.data_object.network_list.src_port: string -> int32`
+      - `+ data.data_object.network_list.src_geo.latitude`
+      - `+ data.data_object.network_list.src_geo.longitude`
+      - `+ data.data_object.network_list.src_geo.city_code`
+      - `+ data.data_object.network_list.src_geo.country_code`
+      - `+ data.data_object.network_list.dest_geo.latitude`
+      - `+ data.data_object.network_list.dest_geo.longitude`
+      - `+ data.data_object.network_list.dest_geo.city_code`
+      - `+ data.data_object.network_list.dest_geo.country_code`
+      - `+ data.data_object.resource_list.provider`
+      - `+ data.data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data.data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data.data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data.data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data.data_object.process.process_parent_name`
+      - `+ data.data_object.process.process_parent_path`
+      - `+ data.data_object.process.process_parent_pid`
+      - `+ data.data_object.process.process_parent_uid`
+      - `+ data.data_object.process.process_parent_cmdline`
+      - `+ data.data_object.process.process_child_name`
+      - `+ data.data_object.process.process_child_path`
+      - `+ data.data_object.process.process_child_pid`
+      - `+ data.data_object.process.process_child_uid`
+      - `+ data.data_object.process.process_child_cmdline`
+      - `+ data.data_object.process.process_launche_time`
+      - `+ data.data_object.process.process_terminate_time`
+      - `* data.data_object.process.process_pid: string -> int32`
+      - `* data.data_object.process.process_uid: string -> int32`
+      - `* data: list<ListIncidentDetail> -> list<IncidentDetail>`
+  - **DeleteIncident**
+    - 请求参数变更
+      - `+ batch_ids`
+      - `- ids`
+      - `* body: object<DeleteIncident> -> object<DeleteIncidentRequestBody>`
+    - 响应参数变更
+      - `* data: object<BatchOrderAlertResult> -> object`
+  - **CreateIncident**
+    - 请求参数变更
+      - `+ data_object.domain_id`
+      - `+ data_object.region_id`
+      - `+ data_object.creator`
+      - `+ data_object.system_alert_table`
+      - `- data_object.serverity`
+      - `- data_object.chop_phase`
+      - `- data_object.ppdr_phase`
+      - `- data_object.cteator`
+      - `- data_object.system_incident_table`
+      - `+ data_object.severity: enum value [Tips,Low,Medium,High,Fatal]`
+      - `+ data_object.environment.cross_workspace_id`
+      - `+ data_object.data_source.company_name`
+      - `+ data_object.data_source.product_module`
+      - `- data_object.incident_type.id`
+      - `- data_object.incident_type.layoutId`
+      - `* data_object.network_list.direction: object -> string`
+      - `* data_object.network_list.src_port: string -> int32`
+      - `+ data_object.network_list.src_geo.latitude`
+      - `+ data_object.network_list.src_geo.longitude`
+      - `+ data_object.network_list.src_geo.city_code`
+      - `+ data_object.network_list.src_geo.country_code`
+      - `+ data_object.network_list.dest_geo.latitude`
+      - `+ data_object.network_list.dest_geo.longitude`
+      - `+ data_object.network_list.dest_geo.city_code`
+      - `+ data_object.network_list.dest_geo.country_code`
+      - `+ data_object.resource_list.provider`
+      - `+ data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data_object.process.process_parent_name`
+      - `+ data_object.process.process_parent_path`
+      - `+ data_object.process.process_parent_pid`
+      - `+ data_object.process.process_parent_uid`
+      - `+ data_object.process.process_parent_cmdline`
+      - `+ data_object.process.process_child_name`
+      - `+ data_object.process.process_child_path`
+      - `+ data_object.process.process_child_pid`
+      - `+ data_object.process.process_child_uid`
+      - `+ data_object.process.process_child_cmdline`
+      - `+ data_object.process.process_launche_time`
+      - `+ data_object.process.process_terminate_time`
+      - `* data_object.process.process_pid: string -> int32`
+      - `* data_object.process.process_uid: string -> int32`
+      - `* data_object: object<CreateIncident> -> object<Incident>`
+    - 响应参数变更
+      - `+ data.dataclass_ref`
+      - `+ data.format_version`
+      - `+ data.id`
+      - `+ data.version`
+      - `- data.dataclass_id`
+      - `- data.layout_id`
+      - `- data.name`
+      - `- data.type`
+      - `- data.dataclass`
+      - `+ data.data_object.domain_id`
+      - `+ data.data_object.region_id`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.severity`
+      - `+ data.data_object.creator`
+      - `+ data.data_object.system_alert_table`
+      - `- data.data_object.datasource`
+      - `- data.data_object.serverity`
+      - `- data.data_object.chop_phase`
+      - `- data.data_object.ppdr_phase`
+      - `- data.data_object.cteator`
+      - `- data.data_object.system_incident_table`
+      - `+ data.data_object.environment.cross_workspace_id`
+      - `+ data.data_object.incident_type.category`
+      - `+ data.data_object.incident_type.incident_type`
+      - `* data.data_object.network_list.direction: object -> string`
+      - `* data.data_object.network_list.src_port: string -> int32`
+      - `+ data.data_object.network_list.src_geo.latitude`
+      - `+ data.data_object.network_list.src_geo.longitude`
+      - `+ data.data_object.network_list.src_geo.city_code`
+      - `+ data.data_object.network_list.src_geo.country_code`
+      - `+ data.data_object.network_list.dest_geo.latitude`
+      - `+ data.data_object.network_list.dest_geo.longitude`
+      - `+ data.data_object.network_list.dest_geo.city_code`
+      - `+ data.data_object.network_list.dest_geo.country_code`
+      - `+ data.data_object.resource_list.provider`
+      - `+ data.data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data.data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data.data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data.data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data.data_object.process.process_parent_name`
+      - `+ data.data_object.process.process_parent_path`
+      - `+ data.data_object.process.process_parent_pid`
+      - `+ data.data_object.process.process_parent_uid`
+      - `+ data.data_object.process.process_parent_cmdline`
+      - `+ data.data_object.process.process_child_name`
+      - `+ data.data_object.process.process_child_path`
+      - `+ data.data_object.process.process_child_pid`
+      - `+ data.data_object.process.process_child_uid`
+      - `+ data.data_object.process.process_child_cmdline`
+      - `+ data.data_object.process.process_launche_time`
+      - `+ data.data_object.process.process_terminate_time`
+      - `* data.data_object.process.process_pid: string -> int32`
+      - `* data.data_object.process.process_uid: string -> int32`
+  - **ShowIncident**
+    - 响应参数变更
+      - `+ data.dataclass_ref`
+      - `+ data.format_version`
+      - `+ data.id`
+      - `+ data.version`
+      - `- data.dataclass_id`
+      - `- data.layout_id`
+      - `- data.name`
+      - `- data.type`
+      - `- data.dataclass`
+      - `+ data.data_object.domain_id`
+      - `+ data.data_object.region_id`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.severity`
+      - `+ data.data_object.creator`
+      - `+ data.data_object.system_alert_table`
+      - `- data.data_object.datasource`
+      - `- data.data_object.serverity`
+      - `- data.data_object.chop_phase`
+      - `- data.data_object.ppdr_phase`
+      - `- data.data_object.cteator`
+      - `- data.data_object.system_incident_table`
+      - `+ data.data_object.environment.cross_workspace_id`
+      - `* data.data_object.count: string -> int32`
+      - `+ data.data_object.incident_type.category`
+      - `+ data.data_object.incident_type.incident_type`
+      - `* data.data_object.network_list.direction: object -> string`
+      - `* data.data_object.network_list.src_port: string -> int32`
+      - `+ data.data_object.network_list.src_geo.latitude`
+      - `+ data.data_object.network_list.src_geo.longitude`
+      - `+ data.data_object.network_list.src_geo.city_code`
+      - `+ data.data_object.network_list.src_geo.country_code`
+      - `+ data.data_object.network_list.dest_geo.latitude`
+      - `+ data.data_object.network_list.dest_geo.longitude`
+      - `+ data.data_object.network_list.dest_geo.city_code`
+      - `+ data.data_object.network_list.dest_geo.country_code`
+      - `+ data.data_object.resource_list.provider`
+      - `+ data.data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data.data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data.data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data.data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data.data_object.process.process_parent_name`
+      - `+ data.data_object.process.process_parent_path`
+      - `+ data.data_object.process.process_parent_pid`
+      - `+ data.data_object.process.process_parent_uid`
+      - `+ data.data_object.process.process_parent_cmdline`
+      - `+ data.data_object.process.process_child_name`
+      - `+ data.data_object.process.process_child_path`
+      - `+ data.data_object.process.process_child_pid`
+      - `+ data.data_object.process.process_child_uid`
+      - `+ data.data_object.process.process_child_cmdline`
+      - `+ data.data_object.process.process_launche_time`
+      - `+ data.data_object.process.process_terminate_time`
+      - `* data.data_object.process.process_pid: string -> int32`
+      - `* data.data_object.process.process_uid: string -> int32`
+      - `* data.data_object: object<ShowIncident> -> object<Incident>`
+      - `* data: object<ShowIncidentDetail> -> object<IncidentDetail>`
+  - **ChangeIncident**
+    - 请求参数变更
+      - `+ batch_ids`
+      - `+ data_object.domain_id`
+      - `+ data_object.region_id`
+      - `+ data_object.labels`
+      - `+ data_object.data_source`
+      - `+ data_object.severity`
+      - `+ data_object.creator`
+      - `+ data_object.system_alert_table`
+      - `- data_object.datasource`
+      - `- data_object.serverity`
+      - `- data_object.chop_phase`
+      - `- data_object.ppdr_phase`
+      - `- data_object.cteator`
+      - `- data_object.system_incident_table`
+      - `+ data_object.environment.cross_workspace_id`
+      - `+ data_object.incident_type.category`
+      - `+ data_object.incident_type.incident_type`
+      - `* data_object.network_list.direction: object -> string`
+      - `* data_object.network_list.src_port: string -> int32`
+      - `+ data_object.network_list.src_geo.latitude`
+      - `+ data_object.network_list.src_geo.longitude`
+      - `+ data_object.network_list.src_geo.city_code`
+      - `+ data_object.network_list.src_geo.country_code`
+      - `+ data_object.network_list.dest_geo.latitude`
+      - `+ data_object.network_list.dest_geo.longitude`
+      - `+ data_object.network_list.dest_geo.city_code`
+      - `+ data_object.network_list.dest_geo.country_code`
+      - `+ data_object.resource_list.provider`
+      - `+ data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data_object.process.process_parent_name`
+      - `+ data_object.process.process_parent_path`
+      - `+ data_object.process.process_parent_pid`
+      - `+ data_object.process.process_parent_uid`
+      - `+ data_object.process.process_parent_cmdline`
+      - `+ data_object.process.process_child_name`
+      - `+ data_object.process.process_child_path`
+      - `+ data_object.process.process_child_pid`
+      - `+ data_object.process.process_child_uid`
+      - `+ data_object.process.process_child_cmdline`
+      - `+ data_object.process.process_launche_time`
+      - `+ data_object.process.process_terminate_time`
+      - `* data_object.process.process_pid: string -> int32`
+      - `* data_object.process.process_uid: string -> int32`
+    - 响应参数变更
+      - `+ data.dataclass_ref`
+      - `+ data.format_version`
+      - `+ data.id`
+      - `+ data.version`
+      - `- data.dataclass_id`
+      - `- data.layout_id`
+      - `- data.name`
+      - `- data.type`
+      - `- data.dataclass`
+      - `+ data.data_object.domain_id`
+      - `+ data.data_object.region_id`
+      - `+ data.data_object.labels`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.severity`
+      - `+ data.data_object.creator`
+      - `+ data.data_object.system_alert_table`
+      - `- data.data_object.datasource`
+      - `- data.data_object.serverity`
+      - `- data.data_object.chop_phase`
+      - `- data.data_object.ppdr_phase`
+      - `- data.data_object.cteator`
+      - `- data.data_object.system_incident_table`
+      - `+ data.data_object.environment.cross_workspace_id`
+      - `+ data.data_object.incident_type.category`
+      - `+ data.data_object.incident_type.incident_type`
+      - `* data.data_object.network_list.direction: object -> string`
+      - `* data.data_object.network_list.src_port: string -> int32`
+      - `+ data.data_object.network_list.src_geo.latitude`
+      - `+ data.data_object.network_list.src_geo.longitude`
+      - `+ data.data_object.network_list.src_geo.city_code`
+      - `+ data.data_object.network_list.src_geo.country_code`
+      - `+ data.data_object.network_list.dest_geo.latitude`
+      - `+ data.data_object.network_list.dest_geo.longitude`
+      - `+ data.data_object.network_list.dest_geo.city_code`
+      - `+ data.data_object.network_list.dest_geo.country_code`
+      - `+ data.data_object.resource_list.provider`
+      - `+ data.data_object.verification_state: enum value [Unknown,True_Positive,False_Positive]`
+      - `+ data.data_object.handle_status: enum value [Open,Block,Closed]`
+      - `+ data.data_object.ipdrr_phase: enum value [Prepartion,Detection and Analysis,Containm，Eradication& Recovery,Post-Incident-Activity]`
+      - `+ data.data_object.close_reason: enum value [False detection,Resolved,Repeated,Other]`
+      - `+ data.data_object.process.process_parent_name`
+      - `+ data.data_object.process.process_parent_path`
+      - `+ data.data_object.process.process_parent_pid`
+      - `+ data.data_object.process.process_parent_uid`
+      - `+ data.data_object.process.process_parent_cmdline`
+      - `+ data.data_object.process.process_child_name`
+      - `+ data.data_object.process.process_child_path`
+      - `+ data.data_object.process.process_child_pid`
+      - `+ data.data_object.process.process_child_uid`
+      - `+ data.data_object.process.process_child_cmdline`
+      - `+ data.data_object.process.process_launche_time`
+      - `+ data.data_object.process.process_terminate_time`
+      - `* data.data_object.process.process_pid: string -> int32`
+      - `* data.data_object.process.process_uid: string -> int32`
+  - **ListIndicators**
+    - 请求参数变更
+      - `- order`
+      - `- from_date`
+      - `- to_date`
+      - `+ from_date`
+      - `+ to_date`
+      - `- type`
+    - 响应参数变更
+      - `+ data.dataclass_ref`
+      - `- data.dataclass_id`
+      - `- data.type`
+      - `- data.layout_id`
+      - `- data.dataclass`
+      - `+ data.data_object.update_time`
+      - `+ data.data_object.create_time`
+      - `+ data.data_object.environment`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.first_report_time`
+      - `+ data.data_object.is_deleted`
+      - `+ data.data_object.last_report_time`
+      - `+ data.data_object.granular_marking`
+      - `+ data.data_object.name`
+      - `+ data.data_object.id`
+      - `+ data.data_object.project_id`
+      - `+ data.data_object.revoked`
+      - `+ data.data_object.status`
+      - `+ data.data_object.verdict`
+      - `+ data.data_object.workspace_id`
+      - `+ data.data_object.confidence`
+      - `+ data.data_object.indicator_type.layout_id`
+      - `- data.data_object.indicator_type.layoutId`
+  - **CreateIndicator**
+    - 请求参数变更
+      - `- name`
+      - `- format_version`
+      - `- type`
+      - `- trigger_flag`
+      - `- data_object.type`
+      - `+ data_object.indicator_type.layout_id`
+      - `- data_object.indicator_type.layoutId`
+      - `+ data_object.data_object.update_time`
+      - `+ data_object.data_object.create_time`
+      - `+ data_object.data_object.environment`
+      - `+ data_object.data_object.data_source`
+      - `+ data_object.data_object.first_report_time`
+      - `+ data_object.data_object.is_deleted`
+      - `+ data_object.data_object.last_report_time`
+      - `+ data_object.data_object.granular_marking`
+      - `+ data_object.data_object.name`
+      - `+ data_object.data_object.id`
+      - `+ data_object.data_object.project_id`
+      - `+ data_object.data_object.revoked`
+      - `+ data_object.data_object.status`
+      - `+ data_object.data_object.verdict`
+      - `+ data_object.data_object.workspace_id`
+      - `+ data_object.data_object.confidence`
+      - `+ data_object.data_object.indicator_type.layout_id`
+      - `- data_object.data_object.indicator_type.layoutId`
+    - 响应参数变更
+      - `+ data.dataclass_ref`
+      - `- data.dataclass_id`
+      - `- data.type`
+      - `- data.layout_id`
+      - `- data.dataclass`
+      - `+ data.data_object.update_time`
+      - `+ data.data_object.create_time`
+      - `+ data.data_object.environment`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.first_report_time`
+      - `+ data.data_object.is_deleted`
+      - `+ data.data_object.last_report_time`
+      - `+ data.data_object.granular_marking`
+      - `+ data.data_object.name`
+      - `+ data.data_object.id`
+      - `+ data.data_object.project_id`
+      - `+ data.data_object.revoked`
+      - `+ data.data_object.status`
+      - `+ data.data_object.verdict`
+      - `+ data.data_object.workspace_id`
+      - `+ data.data_object.confidence`
+      - `+ data.data_object.indicator_type.layout_id`
+      - `- data.data_object.indicator_type.layoutId`
+  - **ShowIndicatorDetail**
+    - 响应参数变更
+      - `+ data.dataclass_ref`
+      - `- data.dataclass_id`
+      - `- data.type`
+      - `- data.layout_id`
+      - `- data.dataclass`
+      - `+ data.data_object.update_time`
+      - `+ data.data_object.create_time`
+      - `+ data.data_object.environment`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.first_report_time`
+      - `+ data.data_object.is_deleted`
+      - `+ data.data_object.last_report_time`
+      - `+ data.data_object.granular_marking`
+      - `+ data.data_object.name`
+      - `+ data.data_object.id`
+      - `+ data.data_object.project_id`
+      - `+ data.data_object.revoked`
+      - `+ data.data_object.status`
+      - `+ data.data_object.verdict`
+      - `+ data.data_object.workspace_id`
+      - `+ data.data_object.confidence`
+      - `+ data.data_object.indicator_type.layout_id`
+      - `- data.data_object.indicator_type.layoutId`
+  - **UpdateIndicator**
+    - 请求参数变更
+      - `- trigger_flag`
+      - `+ data_object.update_time`
+      - `+ data_object.create_time`
+      - `+ data_object.environment`
+      - `+ data_object.data_source`
+      - `+ data_object.first_report_time`
+      - `+ data_object.is_deleted`
+      - `+ data_object.last_report_time`
+      - `+ data_object.granular_marking`
+      - `+ data_object.name`
+      - `+ data_object.id`
+      - `+ data_object.project_id`
+      - `+ data_object.revoked`
+      - `+ data_object.status`
+      - `+ data_object.verdict`
+      - `+ data_object.workspace_id`
+      - `+ data_object.confidence`
+      - `+ data_object.indicator_type.layout_id`
+      - `- data_object.indicator_type.layoutId`
+    - 响应参数变更
+      - `+ data.dataclass_ref`
+      - `- data.dataclass_id`
+      - `- data.type`
+      - `- data.layout_id`
+      - `- data.dataclass`
+      - `+ data.data_object.update_time`
+      - `+ data.data_object.create_time`
+      - `+ data.data_object.environment`
+      - `+ data.data_object.data_source`
+      - `+ data.data_object.first_report_time`
+      - `+ data.data_object.is_deleted`
+      - `+ data.data_object.last_report_time`
+      - `+ data.data_object.granular_marking`
+      - `+ data.data_object.name`
+      - `+ data.data_object.id`
+      - `+ data.data_object.project_id`
+      - `+ data.data_object.revoked`
+      - `+ data.data_object.status`
+      - `+ data.data_object.verdict`
+      - `+ data.data_object.workspace_id`
+      - `+ data.data_object.confidence`
+      - `+ data.data_object.indicator_type.layout_id`
+      - `- data.data_object.indicator_type.layoutId`
+  - **ShowPlaybookMonitors**
+    - 请求参数变更
+      - `+ version_query_type: enum value [ALL:全部，VALID:有效的，DELETED:已删除]`
+    - 响应参数变更
+      - `* data.total_instance_run_num: int32 -> float`
+  - **CreateAlertRule**
+    - 请求参数变更
+      - `- accumulated_times`
+      - `- query_type: enum value [CBSL]`
+    - 响应参数变更
+      - `- accumulated_times`
+      - `- query_type: enum value [CBSL]`
+  - **ListAlertRules**
+    - 响应参数变更
+      - `- accumulated_times`
+      - `- records.accumulated_times`
+      - `- records.query_type: enum value [CBSL]`
+  - **ListAlertRuleTemplates**
+    - 响应参数变更
+      - `- records.query_type: enum value [CBSL]`
+  - **CopyPlaybookVersion**
+    - 响应参数变更
+      - `- data.run_mode`
+      - `- data.dataobject_id`
+      - `- data.actions.sort_order`
+  - **CreatePlaybookRule**
+    - 请求参数变更
+      - `+ rule.start_type`
+      - `+ rule.end_type`
+      - `+ rule.end_time`
+      - `+ rule.only_once`
+      - `+ rule.execution_type`
+      - `- rule.repeat_count`
+      - `* rule.logics: object -> list<string>`
+  - **ListPlaybookInstances**
+    - 请求参数变更
+      - `- date_type`
+      - `* limit: optional -> required`
+      - `* offset: optional -> required`
+  - **ShowPlaybookTopology**
+    - 响应参数变更
+      - `- action_instances.action.sort_order`
+  - **ListPlaybookVersions**
+    - 请求参数变更
+      - `- approve_role`
+    - 响应参数变更
+      - `- data.run_mode`
+      - `- data.dataobject_id`
+  - **CreatePlaybookVersion**
+    - 请求参数变更
+      - `- actions.sort_order`
+    - 响应参数变更
+      - `- data.run_mode`
+      - `- data.dataobject_id`
+      - `- data.actions.sort_order`
+  - **ShowPlaybookVersion**
+    - 响应参数变更
+      - `- data.run_mode`
+      - `- data.dataobject_id`
+      - `- data.actions.sort_order`
+  - **UpdatePlaybookVersion**
+    - 响应参数变更
+      - `- data.run_mode`
+      - `- data.dataobject_id`
+      - `- data.actions.sort_order`
+  - **UpdatePlaybookRule**
+    - 请求参数变更
+      - `+ rule.start_type`
+      - `+ rule.end_type`
+      - `+ rule.end_time`
+      - `+ rule.only_once`
+      - `+ rule.execution_type`
+      - `- rule.repeat_count`
+      - `* rule.logics: object -> list<string>`
+
 # 3.1.63 2023-10-26
 
 ### HuaweiCloud SDK AOS

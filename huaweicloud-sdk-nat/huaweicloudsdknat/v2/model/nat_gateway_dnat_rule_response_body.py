@@ -32,7 +32,9 @@ class NatGatewayDnatRuleResponseBody:
         'internal_service_port_range': 'str',
         'external_service_port_range': 'str',
         'protocol': 'str',
-        'created_at': 'str'
+        'created_at': 'str',
+        'global_eip_id': 'str',
+        'global_eip_address': 'str'
     }
 
     attribute_map = {
@@ -51,10 +53,12 @@ class NatGatewayDnatRuleResponseBody:
         'internal_service_port_range': 'internal_service_port_range',
         'external_service_port_range': 'external_service_port_range',
         'protocol': 'protocol',
-        'created_at': 'created_at'
+        'created_at': 'created_at',
+        'global_eip_id': 'global_eip_id',
+        'global_eip_address': 'global_eip_address'
     }
 
-    def __init__(self, id=None, tenant_id=None, description=None, port_id=None, private_ip=None, internal_service_port=None, nat_gateway_id=None, floating_ip_id=None, floating_ip_address=None, external_service_port=None, status=None, admin_state_up=None, internal_service_port_range=None, external_service_port_range=None, protocol=None, created_at=None):
+    def __init__(self, id=None, tenant_id=None, description=None, port_id=None, private_ip=None, internal_service_port=None, nat_gateway_id=None, floating_ip_id=None, floating_ip_address=None, external_service_port=None, status=None, admin_state_up=None, internal_service_port_range=None, external_service_port_range=None, protocol=None, created_at=None, global_eip_id=None, global_eip_address=None):
         """NatGatewayDnatRuleResponseBody
 
         The model defined in huaweicloud sdk
@@ -79,7 +83,7 @@ class NatGatewayDnatRuleResponseBody:
         :type floating_ip_address: str
         :param external_service_port: Floatingip对外提供服务的端口号。 取值范围：0~65535。
         :type external_service_port: int
-        :param status: 功能说明：DNAT规则的状态。
+        :param status: DNAT规则的状态。 取值为： \&quot;ACTIVE\&quot;: 可用 \&quot;PENDING_CREATE\&quot;：创建中 \&quot;PENDING_UPDATE\&quot;：更新中 \&quot;PENDING_DELETE\&quot;：删除中 \&quot;EIP_FREEZED\&quot;：EIP冻结 \&quot;INACTIVE\&quot;：不可用
         :type status: str
         :param admin_state_up: 解冻/冻结状态。 取值范围： − “true”： 解冻 − “false”： 冻结 
         :type admin_state_up: bool
@@ -91,6 +95,10 @@ class NatGatewayDnatRuleResponseBody:
         :type protocol: str
         :param created_at: DNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
         :type created_at: str
+        :param global_eip_id: 全域弹性公网IP的id。
+        :type global_eip_id: str
+        :param global_eip_address: 全域弹性公网IP的地址。
+        :type global_eip_address: str
         """
         
         
@@ -111,6 +119,8 @@ class NatGatewayDnatRuleResponseBody:
         self._external_service_port_range = None
         self._protocol = None
         self._created_at = None
+        self._global_eip_id = None
+        self._global_eip_address = None
         self.discriminator = None
 
         self.id = id
@@ -133,6 +143,8 @@ class NatGatewayDnatRuleResponseBody:
             self.external_service_port_range = external_service_port_range
         self.protocol = protocol
         self.created_at = created_at
+        self.global_eip_id = global_eip_id
+        self.global_eip_address = global_eip_address
 
     @property
     def id(self):
@@ -358,7 +370,7 @@ class NatGatewayDnatRuleResponseBody:
     def status(self):
         """Gets the status of this NatGatewayDnatRuleResponseBody.
 
-        功能说明：DNAT规则的状态。
+        DNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
 
         :return: The status of this NatGatewayDnatRuleResponseBody.
         :rtype: str
@@ -369,7 +381,7 @@ class NatGatewayDnatRuleResponseBody:
     def status(self, status):
         """Sets the status of this NatGatewayDnatRuleResponseBody.
 
-        功能说明：DNAT规则的状态。
+        DNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
 
         :param status: The status of this NatGatewayDnatRuleResponseBody.
         :type status: str
@@ -485,6 +497,50 @@ class NatGatewayDnatRuleResponseBody:
         :type created_at: str
         """
         self._created_at = created_at
+
+    @property
+    def global_eip_id(self):
+        """Gets the global_eip_id of this NatGatewayDnatRuleResponseBody.
+
+        全域弹性公网IP的id。
+
+        :return: The global_eip_id of this NatGatewayDnatRuleResponseBody.
+        :rtype: str
+        """
+        return self._global_eip_id
+
+    @global_eip_id.setter
+    def global_eip_id(self, global_eip_id):
+        """Sets the global_eip_id of this NatGatewayDnatRuleResponseBody.
+
+        全域弹性公网IP的id。
+
+        :param global_eip_id: The global_eip_id of this NatGatewayDnatRuleResponseBody.
+        :type global_eip_id: str
+        """
+        self._global_eip_id = global_eip_id
+
+    @property
+    def global_eip_address(self):
+        """Gets the global_eip_address of this NatGatewayDnatRuleResponseBody.
+
+        全域弹性公网IP的地址。
+
+        :return: The global_eip_address of this NatGatewayDnatRuleResponseBody.
+        :rtype: str
+        """
+        return self._global_eip_address
+
+    @global_eip_address.setter
+    def global_eip_address(self, global_eip_address):
+        """Sets the global_eip_address of this NatGatewayDnatRuleResponseBody.
+
+        全域弹性公网IP的地址。
+
+        :param global_eip_address: The global_eip_address of this NatGatewayDnatRuleResponseBody.
+        :type global_eip_address: str
+        """
+        self._global_eip_address = global_eip_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

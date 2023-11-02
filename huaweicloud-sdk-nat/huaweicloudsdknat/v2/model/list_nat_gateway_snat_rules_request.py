@@ -57,7 +57,7 @@ class ListNatGatewaySnatRulesRequest:
         :type cidr: str
         :param limit: 功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
         :type limit: int
-        :param floating_ip_address: 功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
+        :param floating_ip_address: 功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。
         :type floating_ip_address: str
         :param floating_ip_id: 功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
         :type floating_ip_id: str
@@ -73,7 +73,7 @@ class ListNatGatewaySnatRulesRequest:
         :type network_id: str
         :param source_type: 0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
         :type source_type: int
-        :param status: 功能说明：SNAT规则的状态。
+        :param status: SNAT规则的状态。 取值为： \&quot;ACTIVE\&quot;: 可用 \&quot;PENDING_CREATE\&quot;：创建中 \&quot;PENDING_UPDATE\&quot;：更新中 \&quot;PENDING_DELETE\&quot;：删除中 \&quot;EIP_FREEZED\&quot;：EIP冻结 \&quot;INACTIVE\&quot;：不可用
         :type status: str
         """
         
@@ -188,7 +188,7 @@ class ListNatGatewaySnatRulesRequest:
     def floating_ip_address(self):
         """Gets the floating_ip_address of this ListNatGatewaySnatRulesRequest.
 
-        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
+        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。
 
         :return: The floating_ip_address of this ListNatGatewaySnatRulesRequest.
         :rtype: str
@@ -199,7 +199,7 @@ class ListNatGatewaySnatRulesRequest:
     def floating_ip_address(self, floating_ip_address):
         """Sets the floating_ip_address of this ListNatGatewaySnatRulesRequest.
 
-        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
+        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。
 
         :param floating_ip_address: The floating_ip_address of this ListNatGatewaySnatRulesRequest.
         :type floating_ip_address: str
@@ -364,7 +364,7 @@ class ListNatGatewaySnatRulesRequest:
     def status(self):
         """Gets the status of this ListNatGatewaySnatRulesRequest.
 
-        功能说明：SNAT规则的状态。
+        SNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
 
         :return: The status of this ListNatGatewaySnatRulesRequest.
         :rtype: str
@@ -375,7 +375,7 @@ class ListNatGatewaySnatRulesRequest:
     def status(self, status):
         """Sets the status of this ListNatGatewaySnatRulesRequest.
 
-        功能说明：SNAT规则的状态。
+        SNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
 
         :param status: The status of this ListNatGatewaySnatRulesRequest.
         :type status: str

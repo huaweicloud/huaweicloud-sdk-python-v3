@@ -21,7 +21,7 @@ class MeshMetadata:
         'uid': 'str',
         'annotations': 'dict(str, str)',
         'labels': 'dict(str, str)',
-        'create_timestamp': 'datetime'
+        'creation_timestamp': 'datetime'
     }
 
     attribute_map = {
@@ -29,24 +29,24 @@ class MeshMetadata:
         'uid': 'uid',
         'annotations': 'annotations',
         'labels': 'labels',
-        'create_timestamp': 'createTimestamp'
+        'creation_timestamp': 'creationTimestamp'
     }
 
-    def __init__(self, name=None, uid=None, annotations=None, labels=None, create_timestamp=None):
+    def __init__(self, name=None, uid=None, annotations=None, labels=None, creation_timestamp=None):
         """MeshMetadata
 
         The model defined in huaweicloud sdk
 
-        :param name: 网格名称。 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-64位，且不能以中划线(-)结尾。
+        :param name: 网格名称。 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-64位，且不能以中划线(-)结尾
         :type name: str
         :param uid: 网格ID，资源唯一标识，创建成功后自动生成，填写无效
         :type uid: str
         :param annotations: 网格注解，由key/value组成： &#x60;&#x60;&#x60; \&quot;annotations\&quot;: {    \&quot;key1\&quot; : \&quot;value1\&quot;,    \&quot;key2\&quot; : \&quot;value2\&quot; } &#x60;&#x60;&#x60;
         :type annotations: dict(str, str)
-        :param labels: 网格标签，由key/value组成：   &#x60;&#x60;&#x60;  \&quot;annotations\&quot;: {    \&quot;key1\&quot; : \&quot;value1\&quot;,    \&quot;key2\&quot; : \&quot;value2\&quot; }  &#x60;&#x60;&#x60;
+        :param labels: 网格标签，由key/value组成：   &#x60;&#x60;&#x60;  \&quot;labels\&quot;: {    \&quot;key1\&quot; : \&quot;value1\&quot;,    \&quot;key2\&quot; : \&quot;value2\&quot; }  &#x60;&#x60;&#x60;
         :type labels: dict(str, str)
-        :param create_timestamp: 网格创建时间
-        :type create_timestamp: datetime
+        :param creation_timestamp: 网格创建时间
+        :type creation_timestamp: datetime
         """
         
         
@@ -55,7 +55,7 @@ class MeshMetadata:
         self._uid = None
         self._annotations = None
         self._labels = None
-        self._create_timestamp = None
+        self._creation_timestamp = None
         self.discriminator = None
 
         self.name = name
@@ -65,14 +65,14 @@ class MeshMetadata:
             self.annotations = annotations
         if labels is not None:
             self.labels = labels
-        if create_timestamp is not None:
-            self.create_timestamp = create_timestamp
+        if creation_timestamp is not None:
+            self.creation_timestamp = creation_timestamp
 
     @property
     def name(self):
         """Gets the name of this MeshMetadata.
 
-        网格名称。 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-64位，且不能以中划线(-)结尾。
+        网格名称。 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-64位，且不能以中划线(-)结尾
 
         :return: The name of this MeshMetadata.
         :rtype: str
@@ -83,7 +83,7 @@ class MeshMetadata:
     def name(self, name):
         """Sets the name of this MeshMetadata.
 
-        网格名称。 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-64位，且不能以中划线(-)结尾。
+        网格名称。 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-64位，且不能以中划线(-)结尾
 
         :param name: The name of this MeshMetadata.
         :type name: str
@@ -138,7 +138,7 @@ class MeshMetadata:
     def labels(self):
         """Gets the labels of this MeshMetadata.
 
-        网格标签，由key/value组成：   ```  \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" }  ```
+        网格标签，由key/value组成：   ```  \"labels\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" }  ```
 
         :return: The labels of this MeshMetadata.
         :rtype: dict(str, str)
@@ -149,7 +149,7 @@ class MeshMetadata:
     def labels(self, labels):
         """Sets the labels of this MeshMetadata.
 
-        网格标签，由key/value组成：   ```  \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" }  ```
+        网格标签，由key/value组成：   ```  \"labels\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" }  ```
 
         :param labels: The labels of this MeshMetadata.
         :type labels: dict(str, str)
@@ -157,26 +157,26 @@ class MeshMetadata:
         self._labels = labels
 
     @property
-    def create_timestamp(self):
-        """Gets the create_timestamp of this MeshMetadata.
+    def creation_timestamp(self):
+        """Gets the creation_timestamp of this MeshMetadata.
 
         网格创建时间
 
-        :return: The create_timestamp of this MeshMetadata.
+        :return: The creation_timestamp of this MeshMetadata.
         :rtype: datetime
         """
-        return self._create_timestamp
+        return self._creation_timestamp
 
-    @create_timestamp.setter
-    def create_timestamp(self, create_timestamp):
-        """Sets the create_timestamp of this MeshMetadata.
+    @creation_timestamp.setter
+    def creation_timestamp(self, creation_timestamp):
+        """Sets the creation_timestamp of this MeshMetadata.
 
         网格创建时间
 
-        :param create_timestamp: The create_timestamp of this MeshMetadata.
-        :type create_timestamp: datetime
+        :param creation_timestamp: The creation_timestamp of this MeshMetadata.
+        :type creation_timestamp: datetime
         """
-        self._create_timestamp = create_timestamp
+        self._creation_timestamp = creation_timestamp
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -20,7 +20,6 @@ class ListPlaybooksRequest:
         'project_id': 'str',
         'workspace_id': 'str',
         'search_txt': 'str',
-        'component_id': 'str',
         'enabled': 'bool',
         'offset': 'int',
         'limit': 'int',
@@ -33,7 +32,6 @@ class ListPlaybooksRequest:
         'project_id': 'project_id',
         'workspace_id': 'workspace_id',
         'search_txt': 'search_txt',
-        'component_id': 'component_id',
         'enabled': 'enabled',
         'offset': 'offset',
         'limit': 'limit',
@@ -42,24 +40,22 @@ class ListPlaybooksRequest:
         'name': 'name'
     }
 
-    def __init__(self, project_id=None, workspace_id=None, search_txt=None, component_id=None, enabled=None, offset=None, limit=None, description=None, dataclass_name=None, name=None):
+    def __init__(self, project_id=None, workspace_id=None, search_txt=None, enabled=None, offset=None, limit=None, description=None, dataclass_name=None, name=None):
         """ListPlaybooksRequest
 
         The model defined in huaweicloud sdk
 
-        :param project_id: ID of project
+        :param project_id: 项目ID
         :type project_id: str
-        :param workspace_id: ID of workspace
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
         :param search_txt: 搜索关键字
         :type search_txt: str
-        :param component_id: component id.
-        :type component_id: str
         :param enabled: 是否启用
         :type enabled: bool
-        :param offset: request offset, from 0
+        :param offset: 分页查询参数。用于指定查询结果的起始位置，从0开始
         :type offset: int
-        :param limit: request limit size
+        :param limit: 分页查询参数，用于指定一次查询最多的结果数，从1开始
         :type limit: int
         :param description: 剧本描述
         :type description: str
@@ -74,7 +70,6 @@ class ListPlaybooksRequest:
         self._project_id = None
         self._workspace_id = None
         self._search_txt = None
-        self._component_id = None
         self._enabled = None
         self._offset = None
         self._limit = None
@@ -87,14 +82,10 @@ class ListPlaybooksRequest:
         self.workspace_id = workspace_id
         if search_txt is not None:
             self.search_txt = search_txt
-        if component_id is not None:
-            self.component_id = component_id
         if enabled is not None:
             self.enabled = enabled
-        if offset is not None:
-            self.offset = offset
-        if limit is not None:
-            self.limit = limit
+        self.offset = offset
+        self.limit = limit
         if description is not None:
             self.description = description
         if dataclass_name is not None:
@@ -106,7 +97,7 @@ class ListPlaybooksRequest:
     def project_id(self):
         """Gets the project_id of this ListPlaybooksRequest.
 
-        ID of project
+        项目ID
 
         :return: The project_id of this ListPlaybooksRequest.
         :rtype: str
@@ -117,7 +108,7 @@ class ListPlaybooksRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ListPlaybooksRequest.
 
-        ID of project
+        项目ID
 
         :param project_id: The project_id of this ListPlaybooksRequest.
         :type project_id: str
@@ -128,7 +119,7 @@ class ListPlaybooksRequest:
     def workspace_id(self):
         """Gets the workspace_id of this ListPlaybooksRequest.
 
-        ID of workspace
+        工作空间ID
 
         :return: The workspace_id of this ListPlaybooksRequest.
         :rtype: str
@@ -139,7 +130,7 @@ class ListPlaybooksRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this ListPlaybooksRequest.
 
-        ID of workspace
+        工作空间ID
 
         :param workspace_id: The workspace_id of this ListPlaybooksRequest.
         :type workspace_id: str
@@ -169,28 +160,6 @@ class ListPlaybooksRequest:
         self._search_txt = search_txt
 
     @property
-    def component_id(self):
-        """Gets the component_id of this ListPlaybooksRequest.
-
-        component id.
-
-        :return: The component_id of this ListPlaybooksRequest.
-        :rtype: str
-        """
-        return self._component_id
-
-    @component_id.setter
-    def component_id(self, component_id):
-        """Sets the component_id of this ListPlaybooksRequest.
-
-        component id.
-
-        :param component_id: The component_id of this ListPlaybooksRequest.
-        :type component_id: str
-        """
-        self._component_id = component_id
-
-    @property
     def enabled(self):
         """Gets the enabled of this ListPlaybooksRequest.
 
@@ -216,7 +185,7 @@ class ListPlaybooksRequest:
     def offset(self):
         """Gets the offset of this ListPlaybooksRequest.
 
-        request offset, from 0
+        分页查询参数。用于指定查询结果的起始位置，从0开始
 
         :return: The offset of this ListPlaybooksRequest.
         :rtype: int
@@ -227,7 +196,7 @@ class ListPlaybooksRequest:
     def offset(self, offset):
         """Sets the offset of this ListPlaybooksRequest.
 
-        request offset, from 0
+        分页查询参数。用于指定查询结果的起始位置，从0开始
 
         :param offset: The offset of this ListPlaybooksRequest.
         :type offset: int
@@ -238,7 +207,7 @@ class ListPlaybooksRequest:
     def limit(self):
         """Gets the limit of this ListPlaybooksRequest.
 
-        request limit size
+        分页查询参数，用于指定一次查询最多的结果数，从1开始
 
         :return: The limit of this ListPlaybooksRequest.
         :rtype: int
@@ -249,7 +218,7 @@ class ListPlaybooksRequest:
     def limit(self, limit):
         """Sets the limit of this ListPlaybooksRequest.
 
-        request limit size
+        分页查询参数，用于指定一次查询最多的结果数，从1开始
 
         :param limit: The limit of this ListPlaybooksRequest.
         :type limit: int

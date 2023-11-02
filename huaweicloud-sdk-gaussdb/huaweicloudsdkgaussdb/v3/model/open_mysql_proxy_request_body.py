@@ -22,7 +22,8 @@ class OpenMysqlProxyRequestBody:
         'proxy_name': 'str',
         'proxy_mode': 'str',
         'route_mode': 'int',
-        'nodes_read_weight': 'list[NodesWeight]'
+        'nodes_read_weight': 'list[NodesWeight]',
+        'subnet_id': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class OpenMysqlProxyRequestBody:
         'proxy_name': 'proxy_name',
         'proxy_mode': 'proxy_mode',
         'route_mode': 'route_mode',
-        'nodes_read_weight': 'nodes_read_weight'
+        'nodes_read_weight': 'nodes_read_weight',
+        'subnet_id': 'subnet_id'
     }
 
-    def __init__(self, flavor_ref=None, node_num=None, proxy_name=None, proxy_mode=None, route_mode=None, nodes_read_weight=None):
+    def __init__(self, flavor_ref=None, node_num=None, proxy_name=None, proxy_mode=None, route_mode=None, nodes_read_weight=None, subnet_id=None):
         """OpenMysqlProxyRequestBody
 
         The model defined in huaweicloud sdk
@@ -49,8 +51,10 @@ class OpenMysqlProxyRequestBody:
         :type proxy_mode: str
         :param route_mode: 数据库代理路由模式，默认为权重负载模式。  取值范围: - 0，表示权重负载模式; - 1，表示负载均衡模式（数据库主节点不接受读请求）； - 2，表示负载均衡模式（数据库主节点接受读请求）。
         :type route_mode: int
-        :param nodes_read_weight: 数据库节点的读权重设置。
+        :param nodes_read_weight: 数据库节点的读权重设置。  在proxy_mode为readonly时，只能为只读节点选择权重。
         :type nodes_read_weight: list[:class:`huaweicloudsdkgaussdb.v3.NodesWeight`]
+        :param subnet_id: 数据库VPC下的子网ID。
+        :type subnet_id: str
         """
         
         
@@ -61,6 +65,7 @@ class OpenMysqlProxyRequestBody:
         self._proxy_mode = None
         self._route_mode = None
         self._nodes_read_weight = None
+        self._subnet_id = None
         self.discriminator = None
 
         self.flavor_ref = flavor_ref
@@ -73,6 +78,8 @@ class OpenMysqlProxyRequestBody:
             self.route_mode = route_mode
         if nodes_read_weight is not None:
             self.nodes_read_weight = nodes_read_weight
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
 
     @property
     def flavor_ref(self):
@@ -188,7 +195,7 @@ class OpenMysqlProxyRequestBody:
     def nodes_read_weight(self):
         """Gets the nodes_read_weight of this OpenMysqlProxyRequestBody.
 
-        数据库节点的读权重设置。
+        数据库节点的读权重设置。  在proxy_mode为readonly时，只能为只读节点选择权重。
 
         :return: The nodes_read_weight of this OpenMysqlProxyRequestBody.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.NodesWeight`]
@@ -199,12 +206,34 @@ class OpenMysqlProxyRequestBody:
     def nodes_read_weight(self, nodes_read_weight):
         """Sets the nodes_read_weight of this OpenMysqlProxyRequestBody.
 
-        数据库节点的读权重设置。
+        数据库节点的读权重设置。  在proxy_mode为readonly时，只能为只读节点选择权重。
 
         :param nodes_read_weight: The nodes_read_weight of this OpenMysqlProxyRequestBody.
         :type nodes_read_weight: list[:class:`huaweicloudsdkgaussdb.v3.NodesWeight`]
         """
         self._nodes_read_weight = nodes_read_weight
+
+    @property
+    def subnet_id(self):
+        """Gets the subnet_id of this OpenMysqlProxyRequestBody.
+
+        数据库VPC下的子网ID。
+
+        :return: The subnet_id of this OpenMysqlProxyRequestBody.
+        :rtype: str
+        """
+        return self._subnet_id
+
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        """Sets the subnet_id of this OpenMysqlProxyRequestBody.
+
+        数据库VPC下的子网ID。
+
+        :param subnet_id: The subnet_id of this OpenMysqlProxyRequestBody.
+        :type subnet_id: str
+        """
+        self._subnet_id = subnet_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

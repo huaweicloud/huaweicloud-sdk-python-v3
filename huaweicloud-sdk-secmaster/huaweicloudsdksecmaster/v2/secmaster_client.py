@@ -28,7 +28,7 @@ class SecMasterClient(Client):
         return client_builder
 
     def change_alert(self, request):
-        """更新告警（仅支持华东-上海一使用）
+        """更新告警
 
         编辑告警，根据实际修改的属性更新，未修改的列不更新
         
@@ -90,7 +90,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def change_incident(self, request):
-        """更新事件（仅支持华东-上海一使用）
+        """更新事件
 
         编辑事件，根据实际修改的属性更新，未修改的列不更新
         
@@ -152,9 +152,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def change_playbook_instance(self, request):
-        """操作剧本实例（仅支持华东-上海一使用）
+        """操作剧本实例
 
-        Operation Playbook Instance.
+        操作剧本实例
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -214,9 +214,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def copy_playbook_version(self, request):
-        """克隆剧本及版本（仅支持华东-上海一使用）
+        """克隆剧本及版本
 
-        Copy Playbook and version to a new one
+        克隆剧本及版本
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -276,7 +276,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def create_alert(self, request):
-        """创建告警（仅支持华东-上海一使用）
+        """创建告警
 
         创建告警
         
@@ -336,7 +336,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def create_alert_rule(self, request):
-        """创建告警规则（仅支持华东-上海一使用）
+        """创建告警规则
 
         Create alert rule
         
@@ -396,7 +396,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def create_alert_rule_simulation(self, request):
-        """模拟告警规则（仅支持华东-上海一使用）
+        """模拟告警规则
 
         Simulate alert rule
         
@@ -456,7 +456,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def create_batch_order_alerts(self, request):
-        """告警转事件（仅支持华东-上海一使用）
+        """告警转事件
 
         告警转事件
         
@@ -515,20 +515,20 @@ class SecMasterClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def create_dataobject_relation(self, request):
-        """创建Dataobject关系
+    def create_dataobject_relations(self, request):
+        """关联Dataobject
 
-        Create Dataobject Relation
+        关联Dataobject
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for CreateDataobjectRelation
-        :type request: :class:`huaweicloudsdksecmaster.v2.CreateDataobjectRelationRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateDataobjectRelationResponse`
+        :param request: Request instance for CreateDataobjectRelations
+        :type request: :class:`huaweicloudsdksecmaster.v2.CreateDataobjectRelationsRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateDataobjectRelationsResponse`
         """
-        return self._create_dataobject_relation_with_http_info(request)
+        return self._create_dataobject_relations_with_http_info(request)
 
-    def _create_dataobject_relation_with_http_info(self, request):
+    def _create_dataobject_relations_with_http_info(self, request):
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -575,14 +575,14 @@ class SecMasterClient(Client):
             body=body_params,
             post_params=form_params,
             cname=cname,
-            response_type='CreateDataobjectRelationResponse',
+            response_type='CreateDataobjectRelationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
     def create_incident(self, request):
-        """创建事件（仅支持华东-上海一使用）
+        """创建事件
 
         创建事件
         
@@ -644,7 +644,7 @@ class SecMasterClient(Client):
     def create_indicator(self, request):
         """创建指标
 
-        创建指标（仅支持华东-上海一使用）
+        创建指标
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -702,9 +702,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def create_playbook(self, request):
-        """创建剧本（仅支持华东-上海一使用）
+        """创建剧本
 
-        Create playbook.
+        创建剧本
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -762,9 +762,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def create_playbook_action(self, request):
-        """创建剧本动作（仅支持华东-上海一使用）
+        """创建剧本动作
 
-        Create action.
+        创建剧本动作
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -824,9 +824,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def create_playbook_approve(self, request):
-        """审核剧本（仅支持华东-上海一使用）
+        """审核剧本
 
-        Create playbook approve.
+        审核剧本
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -886,9 +886,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def create_playbook_rule(self, request):
-        """创建剧本规则（仅支持华东-上海一使用）
+        """创建剧本规则
 
-        Create rule.
+        创建剧本规则
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -948,9 +948,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def create_playbook_version(self, request):
-        """创建剧本版本（仅支持华东-上海一使用）
+        """创建剧本版本
 
-        Create playbook version.
+        创建剧本版本
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1010,7 +1010,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_alert(self, request):
-        """删除告警（仅支持华东-上海一使用）
+        """删除告警
 
         删除告警
         
@@ -1070,7 +1070,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_alert_rule(self, request):
-        """删除告警规则（仅支持华东-上海一使用）
+        """删除告警规则
 
         Delete alert rule
         
@@ -1129,20 +1129,20 @@ class SecMasterClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def delete_dataobject_relation(self, request):
-        """删除Dataobject关系
+    def delete_dataobject_relations(self, request):
+        """取消关联Dataobject
 
-        Delete Dataobject Relation
+        取消关联Dataobject
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for DeleteDataobjectRelation
-        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteDataobjectRelationRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteDataobjectRelationResponse`
+        :param request: Request instance for DeleteDataobjectRelations
+        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteDataobjectRelationsRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteDataobjectRelationsResponse`
         """
-        return self._delete_dataobject_relation_with_http_info(request)
+        return self._delete_dataobject_relations_with_http_info(request)
 
-    def _delete_dataobject_relation_with_http_info(self, request):
+    def _delete_dataobject_relations_with_http_info(self, request):
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1189,16 +1189,16 @@ class SecMasterClient(Client):
             body=body_params,
             post_params=form_params,
             cname=cname,
-            response_type='DeleteDataobjectRelationResponse',
+            response_type='DeleteDataobjectRelationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
     def delete_incident(self, request):
-        """创建事件（仅支持华东-上海一使用）
+        """删除事件
 
-        创建事件
+        删除事件
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1258,7 +1258,7 @@ class SecMasterClient(Client):
     def delete_indicator(self, request):
         """删除指标
 
-        删除指标（仅支持华东-上海一使用）
+        删除指标
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1316,9 +1316,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_playbook(self, request):
-        """删除剧本（仅支持华东-上海一使用）
+        """删除剧本
 
-        Delete playbook.
+        删除剧本
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1376,9 +1376,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_playbook_action(self, request):
-        """删除剧本动作（仅支持华东-上海一使用）
+        """删除剧本动作
 
-        Delete action.
+        删除剧本动作
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1438,9 +1438,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_playbook_rule(self, request):
-        """删除剧本规则（仅支持华东-上海一使用）
+        """删除剧本规则
 
-        Delete rule.
+        删除剧本规则
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1500,9 +1500,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_playbook_version(self, request):
-        """删除剧本版本（仅支持华东-上海一使用）
+        """删除剧本版本
 
-        Delete playbook version.
+        删除剧本版本
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1560,7 +1560,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def disable_alert_rule(self, request):
-        """停用告警规则（仅支持华东-上海一使用）
+        """停用告警规则
 
         Disable alert rule
         
@@ -1620,7 +1620,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def enable_alert_rule(self, request):
-        """启用告警规则（仅支持华东-上海一使用）
+        """启用告警规则
 
         Enable alert rule
         
@@ -1680,7 +1680,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def list_alert_rule_metrics(self, request):
-        """告警规则总览（仅支持华东-上海一使用）
+        """告警规则总览
 
         List alert rule metrics
         
@@ -1738,7 +1738,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def list_alert_rule_templates(self, request):
-        """列出告警规则模板（仅支持华东-上海一使用）
+        """列出告警规则模板
 
         List alert rule templates
         
@@ -1807,7 +1807,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def list_alert_rules(self, request):
-        """列出告警规则（仅支持华东-上海一使用）
+        """列出告警规则
 
         List alert rules
         
@@ -1885,7 +1885,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def list_alerts(self, request):
-        """搜索告警列表（仅支持华东-上海一使用）
+        """搜索告警列表
 
         搜索告警列表
         
@@ -1944,20 +1944,20 @@ class SecMasterClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_dataobject_relation(self, request):
-        """查询Dataobject关系列表
+    def list_dataobject_relations(self, request):
+        """查询关联Dataobject列表
 
-        List Dataobject Relation
+        查询关联Dataobject列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ListDataobjectRelation
-        :type request: :class:`huaweicloudsdksecmaster.v2.ListDataobjectRelationRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListDataobjectRelationResponse`
+        :param request: Request instance for ListDataobjectRelations
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListDataobjectRelationsRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListDataobjectRelationsResponse`
         """
-        return self._list_dataobject_relation_with_http_info(request)
+        return self._list_dataobject_relations_with_http_info(request)
 
-    def _list_dataobject_relation_with_http_info(self, request):
+    def _list_dataobject_relations_with_http_info(self, request):
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2004,90 +2004,14 @@ class SecMasterClient(Client):
             body=body_params,
             post_params=form_params,
             cname=cname,
-            response_type='ListDataobjectRelationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def list_incident_types(self, request):
-        """获取事件的类型列表（仅支持华东-上海一使用）
-
-        获取事件的类型列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ListIncidentTypes
-        :type request: :class:`huaweicloudsdksecmaster.v2.ListIncidentTypesRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListIncidentTypesResponse`
-        """
-        return self._list_incident_types_with_http_info(request)
-
-    def _list_incident_types_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-
-        query_params = []
-        if 'parent_business_code' in local_var_params:
-            query_params.append(('parent_business_code', local_var_params['parent_business_code']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'order' in local_var_params:
-            query_params.append(('order', local_var_params['order']))
-        if 'sortby' in local_var_params:
-            query_params.append(('sortby', local_var_params['sortby']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'enabled' in local_var_params:
-            query_params.append(('enabled', local_var_params['enabled']))
-        if 'layout_name' in local_var_params:
-            query_params.append(('layout_name', local_var_params['layout_name']))
-        if 'is_built_in' in local_var_params:
-            query_params.append(('is_built_in', local_var_params['is_built_in']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/types',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIncidentTypesResponse',
+            response_type='ListDataobjectRelationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
     def list_incidents(self, request):
-        """搜索事件列表（仅支持华东-上海一使用）
+        """搜索事件列表
 
         搜索事件列表
         
@@ -2147,9 +2071,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def list_indicators(self, request):
-        """查询指标列表（仅支持华东-上海一使用）
+        """查询指标列表
 
-        List all indicators
+        查询指标列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2173,12 +2097,6 @@ class SecMasterClient(Client):
             path_params['workspace_id'] = local_var_params['workspace_id']
 
         query_params = []
-        if 'order' in local_var_params:
-            query_params.append(('order', local_var_params['order']))
-        if 'from_date' in local_var_params:
-            query_params.append(('from_date', local_var_params['from_date']))
-        if 'to_date' in local_var_params:
-            query_params.append(('to_date', local_var_params['to_date']))
 
         header_params = {}
 
@@ -2213,9 +2131,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def list_playbook_actions(self, request):
-        """查询剧本动作（仅支持华东-上海一使用）
+        """查询剧本动作
 
-        List all actions.
+        查询剧本动作列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2277,9 +2195,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def list_playbook_approves(self, request):
-        """查询剧本审核结果（仅支持华东-上海一使用）
+        """查询剧本审核结果
 
-        List approves.
+        查询剧本审核结果
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2339,9 +2257,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def list_playbook_audit_logs(self, request):
-        """查询剧本实例审计日志（仅支持华东-上海一使用）
+        """查询剧本实例审计日志
 
-        List audit logs.
+        查询剧本实例审计日志
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2407,9 +2325,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def list_playbook_instances(self, request):
-        """查询剧本实例列表（仅支持华东-上海一使用）
+        """查询剧本实例列表
 
-        List playbook instances
+        查询剧本实例列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2435,8 +2353,6 @@ class SecMasterClient(Client):
         query_params = []
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
-        if 'date_type' in local_var_params:
-            query_params.append(('date_type', local_var_params['date_type']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
         if 'playbook_name' in local_var_params:
@@ -2487,9 +2403,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def list_playbook_versions(self, request):
-        """查询剧本版本列表（仅支持华东-上海一使用）
+        """查询剧本版本列表
 
-        List all versions of playbook.
+        查询剧本版本列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2521,8 +2437,6 @@ class SecMasterClient(Client):
             query_params.append(('enabled', local_var_params['enabled']))
         if 'version_type' in local_var_params:
             query_params.append(('version_type', local_var_params['version_type']))
-        if 'approve_role' in local_var_params:
-            query_params.append(('approve_role', local_var_params['approve_role']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -2559,9 +2473,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def list_playbooks(self, request):
-        """查询剧本列表（仅支持华东-上海一使用）
+        """查询剧本列表
 
-        List all playbooks.
+        查询剧本列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2587,8 +2501,6 @@ class SecMasterClient(Client):
         query_params = []
         if 'search_txt' in local_var_params:
             query_params.append(('search_txt', local_var_params['search_txt']))
-        if 'component_id' in local_var_params:
-            query_params.append(('component_id', local_var_params['component_id']))
         if 'enabled' in local_var_params:
             query_params.append(('enabled', local_var_params['enabled']))
         if 'offset' in local_var_params:
@@ -2633,7 +2545,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def show_alert(self, request):
-        """获取告警详情（仅支持华东-上海一使用）
+        """获取告警详情
 
         获取告警详情
         
@@ -2693,9 +2605,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def show_alert_rule(self, request):
-        """查看告警规则（仅支持华东-上海一使用）
+        """查看告警规则
 
-        Get alert rule
+        查看告警规则 Get alert rule
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2753,7 +2665,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def show_alert_rule_template(self, request):
-        """查看告警规则模板（仅支持华东-上海一使用）
+        """查看告警规则模板
 
         List alert rule templates
         
@@ -2813,7 +2725,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def show_incident(self, request):
-        """获取事件详情（仅支持华东-上海一使用）
+        """获取事件详情
 
         获取事件详情
         
@@ -2875,7 +2787,7 @@ class SecMasterClient(Client):
     def show_indicator_detail(self, request):
         """查询指标详情
 
-        查询指标详情（仅支持华东-上海一使用）
+        查询指标详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2933,9 +2845,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def show_playbook(self, request):
-        """查询剧本详情（仅支持华东-上海一使用）
+        """查询剧本详情
 
-        Show playbook
+        查询剧本详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2993,7 +2905,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def show_playbook_instance(self, request):
-        """查询剧本实例详情（仅支持华东-上海一使用）
+        """查询剧本实例详情
 
         Show playbook instance
         
@@ -3053,7 +2965,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def show_playbook_monitors(self, request):
-        """剧本运行监控（仅支持华东-上海一使用）
+        """剧本运行监控
 
         剧本运行监控
         
@@ -3119,9 +3031,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def show_playbook_rule(self, request):
-        """查询剧本规则详情（仅支持华东-上海一使用）
+        """查询剧本规则详情
 
-        Show rule formation.
+        查询剧本规则详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3181,7 +3093,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def show_playbook_statistics(self, request):
-        """剧本数据统计（仅支持华东-上海一使用）
+        """剧本数据统计
 
         剧本统计数据
         
@@ -3239,9 +3151,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def show_playbook_topology(self, request):
-        """查询剧本拓扑关系（仅支持华东-上海一使用）
+        """查询剧本拓扑关系
 
-        Show playbook Topology
+        查询剧本拓扑关系
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3299,7 +3211,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def show_playbook_version(self, request):
-        """查询剧本版本详情（仅支持华东-上海一使用）
+        """查询剧本版本详情
 
         Show playbook version version
         
@@ -3359,7 +3271,7 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def update_alert_rule(self, request):
-        """更新告警规则（仅支持华东-上海一使用）
+        """更新告警规则
 
         Update alert rule
         
@@ -3423,7 +3335,7 @@ class SecMasterClient(Client):
     def update_indicator(self, request):
         """更新指标
 
-        更新指标（仅支持华东-上海一使用）
+        更新指标
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3483,9 +3395,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def update_playbook(self, request):
-        """修改剧本（仅支持华东-上海一使用）
+        """修改剧本
 
-        Update playbook.
+        修改剧本
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3545,9 +3457,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def update_playbook_action(self, request):
-        """更新剧本动作（仅支持华东-上海一使用）
+        """更新剧本动作
 
-        Update action.
+        更新剧本动作
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3609,9 +3521,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def update_playbook_rule(self, request):
-        """更新剧本规则（仅支持华东-上海一使用）
+        """更新剧本规则
 
-        Update rule.
+        更新剧本规则
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3673,9 +3585,9 @@ class SecMasterClient(Client):
             request_type=request.__class__.__name__)
 
     def update_playbook_version(self, request):
-        """更新剧本版本（仅支持华东-上海一使用）
+        """更新剧本版本
 
-        Update playbook version.
+        更新剧本版本
         
         Please refer to HUAWEI cloud API Explorer for details.
 

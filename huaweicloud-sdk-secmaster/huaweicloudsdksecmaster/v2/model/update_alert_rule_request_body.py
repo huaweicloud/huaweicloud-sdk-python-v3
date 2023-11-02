@@ -23,7 +23,6 @@ class UpdateAlertRuleRequestBody:
         'query_type': 'str',
         'status': 'str',
         'severity': 'str',
-        'accumulated_times': 'int',
         'custom_properties': 'dict(str, str)',
         'alert_type': 'dict(str, str)',
         'event_grouping': 'bool',
@@ -40,7 +39,6 @@ class UpdateAlertRuleRequestBody:
         'query_type': 'query_type',
         'status': 'status',
         'severity': 'severity',
-        'accumulated_times': 'accumulated_times',
         'custom_properties': 'custom_properties',
         'alert_type': 'alert_type',
         'event_grouping': 'event_grouping',
@@ -50,38 +48,36 @@ class UpdateAlertRuleRequestBody:
         'triggers': 'triggers'
     }
 
-    def __init__(self, rule_name=None, description=None, query=None, query_type=None, status=None, severity=None, accumulated_times=None, custom_properties=None, alert_type=None, event_grouping=None, suppression=None, simulation=None, schedule=None, triggers=None):
+    def __init__(self, rule_name=None, description=None, query=None, query_type=None, status=None, severity=None, custom_properties=None, alert_type=None, event_grouping=None, suppression=None, simulation=None, schedule=None, triggers=None):
         """UpdateAlertRuleRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param rule_name: rule_name
+        :param rule_name: 告警规则名称。Alert rule name.
         :type rule_name: str
-        :param description: description
+        :param description: 描述。Description.
         :type description: str
-        :param query: query
+        :param query: 查询语句。Query.
         :type query: str
-        :param query_type: query_type. SQL, CBSL.
+        :param query_type: 查询语法，SQL。Query type. SQL.
         :type query_type: str
-        :param status: status. ENABLED, DISABLED
+        :param status: 启用状态，启用、停用。Status, enabled, disabled.
         :type status: str
-        :param severity: severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        :param severity: 严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
         :type severity: str
-        :param accumulated_times: accumulated_times
-        :type accumulated_times: int
-        :param custom_properties: custom_properties
+        :param custom_properties: 自定义扩展信息。Custom properties.
         :type custom_properties: dict(str, str)
-        :param alert_type: alert_type
+        :param alert_type: 告警类型。Alert type.
         :type alert_type: dict(str, str)
-        :param event_grouping: event_grouping
+        :param event_grouping: 告警分组。Event grouping.
         :type event_grouping: bool
-        :param suppression: suppression
+        :param suppression: 告警抑制。Suppression
         :type suppression: bool
-        :param simulation: simulation
+        :param simulation: 模拟告警。Simulation.
         :type simulation: bool
         :param schedule: 
         :type schedule: :class:`huaweicloudsdksecmaster.v2.Schedule`
-        :param triggers: triggers
+        :param triggers: 告警触发规则。Alert triggers.
         :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
         """
         
@@ -93,7 +89,6 @@ class UpdateAlertRuleRequestBody:
         self._query_type = None
         self._status = None
         self._severity = None
-        self._accumulated_times = None
         self._custom_properties = None
         self._alert_type = None
         self._event_grouping = None
@@ -115,8 +110,6 @@ class UpdateAlertRuleRequestBody:
             self.status = status
         if severity is not None:
             self.severity = severity
-        if accumulated_times is not None:
-            self.accumulated_times = accumulated_times
         if custom_properties is not None:
             self.custom_properties = custom_properties
         if alert_type is not None:
@@ -136,7 +129,7 @@ class UpdateAlertRuleRequestBody:
     def rule_name(self):
         """Gets the rule_name of this UpdateAlertRuleRequestBody.
 
-        rule_name
+        告警规则名称。Alert rule name.
 
         :return: The rule_name of this UpdateAlertRuleRequestBody.
         :rtype: str
@@ -147,7 +140,7 @@ class UpdateAlertRuleRequestBody:
     def rule_name(self, rule_name):
         """Sets the rule_name of this UpdateAlertRuleRequestBody.
 
-        rule_name
+        告警规则名称。Alert rule name.
 
         :param rule_name: The rule_name of this UpdateAlertRuleRequestBody.
         :type rule_name: str
@@ -158,7 +151,7 @@ class UpdateAlertRuleRequestBody:
     def description(self):
         """Gets the description of this UpdateAlertRuleRequestBody.
 
-        description
+        描述。Description.
 
         :return: The description of this UpdateAlertRuleRequestBody.
         :rtype: str
@@ -169,7 +162,7 @@ class UpdateAlertRuleRequestBody:
     def description(self, description):
         """Sets the description of this UpdateAlertRuleRequestBody.
 
-        description
+        描述。Description.
 
         :param description: The description of this UpdateAlertRuleRequestBody.
         :type description: str
@@ -180,7 +173,7 @@ class UpdateAlertRuleRequestBody:
     def query(self):
         """Gets the query of this UpdateAlertRuleRequestBody.
 
-        query
+        查询语句。Query.
 
         :return: The query of this UpdateAlertRuleRequestBody.
         :rtype: str
@@ -191,7 +184,7 @@ class UpdateAlertRuleRequestBody:
     def query(self, query):
         """Sets the query of this UpdateAlertRuleRequestBody.
 
-        query
+        查询语句。Query.
 
         :param query: The query of this UpdateAlertRuleRequestBody.
         :type query: str
@@ -202,7 +195,7 @@ class UpdateAlertRuleRequestBody:
     def query_type(self):
         """Gets the query_type of this UpdateAlertRuleRequestBody.
 
-        query_type. SQL, CBSL.
+        查询语法，SQL。Query type. SQL.
 
         :return: The query_type of this UpdateAlertRuleRequestBody.
         :rtype: str
@@ -213,7 +206,7 @@ class UpdateAlertRuleRequestBody:
     def query_type(self, query_type):
         """Sets the query_type of this UpdateAlertRuleRequestBody.
 
-        query_type. SQL, CBSL.
+        查询语法，SQL。Query type. SQL.
 
         :param query_type: The query_type of this UpdateAlertRuleRequestBody.
         :type query_type: str
@@ -224,7 +217,7 @@ class UpdateAlertRuleRequestBody:
     def status(self):
         """Gets the status of this UpdateAlertRuleRequestBody.
 
-        status. ENABLED, DISABLED
+        启用状态，启用、停用。Status, enabled, disabled.
 
         :return: The status of this UpdateAlertRuleRequestBody.
         :rtype: str
@@ -235,7 +228,7 @@ class UpdateAlertRuleRequestBody:
     def status(self, status):
         """Sets the status of this UpdateAlertRuleRequestBody.
 
-        status. ENABLED, DISABLED
+        启用状态，启用、停用。Status, enabled, disabled.
 
         :param status: The status of this UpdateAlertRuleRequestBody.
         :type status: str
@@ -246,7 +239,7 @@ class UpdateAlertRuleRequestBody:
     def severity(self):
         """Gets the severity of this UpdateAlertRuleRequestBody.
 
-        severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
         :return: The severity of this UpdateAlertRuleRequestBody.
         :rtype: str
@@ -257,7 +250,7 @@ class UpdateAlertRuleRequestBody:
     def severity(self, severity):
         """Sets the severity of this UpdateAlertRuleRequestBody.
 
-        severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
         :param severity: The severity of this UpdateAlertRuleRequestBody.
         :type severity: str
@@ -265,32 +258,10 @@ class UpdateAlertRuleRequestBody:
         self._severity = severity
 
     @property
-    def accumulated_times(self):
-        """Gets the accumulated_times of this UpdateAlertRuleRequestBody.
-
-        accumulated_times
-
-        :return: The accumulated_times of this UpdateAlertRuleRequestBody.
-        :rtype: int
-        """
-        return self._accumulated_times
-
-    @accumulated_times.setter
-    def accumulated_times(self, accumulated_times):
-        """Sets the accumulated_times of this UpdateAlertRuleRequestBody.
-
-        accumulated_times
-
-        :param accumulated_times: The accumulated_times of this UpdateAlertRuleRequestBody.
-        :type accumulated_times: int
-        """
-        self._accumulated_times = accumulated_times
-
-    @property
     def custom_properties(self):
         """Gets the custom_properties of this UpdateAlertRuleRequestBody.
 
-        custom_properties
+        自定义扩展信息。Custom properties.
 
         :return: The custom_properties of this UpdateAlertRuleRequestBody.
         :rtype: dict(str, str)
@@ -301,7 +272,7 @@ class UpdateAlertRuleRequestBody:
     def custom_properties(self, custom_properties):
         """Sets the custom_properties of this UpdateAlertRuleRequestBody.
 
-        custom_properties
+        自定义扩展信息。Custom properties.
 
         :param custom_properties: The custom_properties of this UpdateAlertRuleRequestBody.
         :type custom_properties: dict(str, str)
@@ -312,7 +283,7 @@ class UpdateAlertRuleRequestBody:
     def alert_type(self):
         """Gets the alert_type of this UpdateAlertRuleRequestBody.
 
-        alert_type
+        告警类型。Alert type.
 
         :return: The alert_type of this UpdateAlertRuleRequestBody.
         :rtype: dict(str, str)
@@ -323,7 +294,7 @@ class UpdateAlertRuleRequestBody:
     def alert_type(self, alert_type):
         """Sets the alert_type of this UpdateAlertRuleRequestBody.
 
-        alert_type
+        告警类型。Alert type.
 
         :param alert_type: The alert_type of this UpdateAlertRuleRequestBody.
         :type alert_type: dict(str, str)
@@ -334,7 +305,7 @@ class UpdateAlertRuleRequestBody:
     def event_grouping(self):
         """Gets the event_grouping of this UpdateAlertRuleRequestBody.
 
-        event_grouping
+        告警分组。Event grouping.
 
         :return: The event_grouping of this UpdateAlertRuleRequestBody.
         :rtype: bool
@@ -345,7 +316,7 @@ class UpdateAlertRuleRequestBody:
     def event_grouping(self, event_grouping):
         """Sets the event_grouping of this UpdateAlertRuleRequestBody.
 
-        event_grouping
+        告警分组。Event grouping.
 
         :param event_grouping: The event_grouping of this UpdateAlertRuleRequestBody.
         :type event_grouping: bool
@@ -356,7 +327,7 @@ class UpdateAlertRuleRequestBody:
     def suppression(self):
         """Gets the suppression of this UpdateAlertRuleRequestBody.
 
-        suppression
+        告警抑制。Suppression
 
         :return: The suppression of this UpdateAlertRuleRequestBody.
         :rtype: bool
@@ -367,7 +338,7 @@ class UpdateAlertRuleRequestBody:
     def suppression(self, suppression):
         """Sets the suppression of this UpdateAlertRuleRequestBody.
 
-        suppression
+        告警抑制。Suppression
 
         :param suppression: The suppression of this UpdateAlertRuleRequestBody.
         :type suppression: bool
@@ -378,7 +349,7 @@ class UpdateAlertRuleRequestBody:
     def simulation(self):
         """Gets the simulation of this UpdateAlertRuleRequestBody.
 
-        simulation
+        模拟告警。Simulation.
 
         :return: The simulation of this UpdateAlertRuleRequestBody.
         :rtype: bool
@@ -389,7 +360,7 @@ class UpdateAlertRuleRequestBody:
     def simulation(self, simulation):
         """Sets the simulation of this UpdateAlertRuleRequestBody.
 
-        simulation
+        模拟告警。Simulation.
 
         :param simulation: The simulation of this UpdateAlertRuleRequestBody.
         :type simulation: bool
@@ -418,7 +389,7 @@ class UpdateAlertRuleRequestBody:
     def triggers(self):
         """Gets the triggers of this UpdateAlertRuleRequestBody.
 
-        triggers
+        告警触发规则。Alert triggers.
 
         :return: The triggers of this UpdateAlertRuleRequestBody.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
@@ -429,7 +400,7 @@ class UpdateAlertRuleRequestBody:
     def triggers(self, triggers):
         """Sets the triggers of this UpdateAlertRuleRequestBody.
 
-        triggers
+        告警触发规则。Alert triggers.
 
         :param triggers: The triggers of this UpdateAlertRuleRequestBody.
         :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]

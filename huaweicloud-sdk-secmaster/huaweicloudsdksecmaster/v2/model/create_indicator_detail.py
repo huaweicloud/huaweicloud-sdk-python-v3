@@ -17,14 +17,14 @@ class CreateIndicatorDetail:
     sensitive_list = []
 
     openapi_types = {
-        'data_source': 'CreateAlertDataSource',
+        'data_source': 'CreateIndicatorDetailDataSource',
         'verdict': 'str',
         'confidence': 'int',
         'status': 'str',
         'labels': 'str',
         'value': 'str',
         'granular_marking': 'str',
-        'environment': 'ShowAlertRspEnvironment',
+        'environment': 'CreateIndicatorDetailEnvironment',
         'defanged': 'bool',
         'first_report_time': 'str',
         'last_report_time': 'str',
@@ -32,7 +32,6 @@ class CreateIndicatorDetail:
         'indicator_type': 'CreateIndicatorDetailIndicatorType',
         'name': 'str',
         'dataclass_id': 'str',
-        'type': 'str',
         'data_object': 'IndicatorDataObjectDetail',
         'workspace_id': 'str',
         'project_id': 'str',
@@ -58,7 +57,6 @@ class CreateIndicatorDetail:
         'indicator_type': 'indicator_type',
         'name': 'name',
         'dataclass_id': 'dataclass_id',
-        'type': 'type',
         'data_object': 'data_object',
         'workspace_id': 'workspace_id',
         'project_id': 'project_id',
@@ -68,13 +66,13 @@ class CreateIndicatorDetail:
         'update_time': 'update_time'
     }
 
-    def __init__(self, data_source=None, verdict=None, confidence=None, status=None, labels=None, value=None, granular_marking=None, environment=None, defanged=None, first_report_time=None, last_report_time=None, id=None, indicator_type=None, name=None, dataclass_id=None, type=None, data_object=None, workspace_id=None, project_id=None, layout_id=None, dataclass=None, create_time=None, update_time=None):
+    def __init__(self, data_source=None, verdict=None, confidence=None, status=None, labels=None, value=None, granular_marking=None, environment=None, defanged=None, first_report_time=None, last_report_time=None, id=None, indicator_type=None, name=None, dataclass_id=None, data_object=None, workspace_id=None, project_id=None, layout_id=None, dataclass=None, create_time=None, update_time=None):
         """CreateIndicatorDetail
 
         The model defined in huaweicloud sdk
 
         :param data_source: 
-        :type data_source: :class:`huaweicloudsdksecmaster.v2.CreateAlertDataSource`
+        :type data_source: :class:`huaweicloudsdksecmaster.v2.CreateIndicatorDetailDataSource`
         :param verdict: 威胁度
         :type verdict: str
         :param confidence: 置信度
@@ -88,12 +86,12 @@ class CreateIndicatorDetail:
         :param granular_marking: 粒度（保密等级），由高到低：1（首次发现）、2（自产数据）、3（需购买）、4（外网直接查询）
         :type granular_marking: str
         :param environment: 
-        :type environment: :class:`huaweicloudsdksecmaster.v2.ShowAlertRspEnvironment`
+        :type environment: :class:`huaweicloudsdksecmaster.v2.CreateIndicatorDetailEnvironment`
         :param defanged: 是否失效
         :type defanged: bool
-        :param first_report_time: Create time
+        :param first_report_time: 首次发生时间
         :type first_report_time: str
-        :param last_report_time: Update time
+        :param last_report_time: 最近发生时间
         :type last_report_time: str
         :param id: 指标ID
         :type id: str
@@ -103,8 +101,6 @@ class CreateIndicatorDetail:
         :type name: str
         :param dataclass_id: 数据类ID
         :type dataclass_id: str
-        :param type: 类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
-        :type type: str
         :param data_object: 
         :type data_object: :class:`huaweicloudsdksecmaster.v2.IndicatorDataObjectDetail`
         :param workspace_id: workspace id
@@ -138,7 +134,6 @@ class CreateIndicatorDetail:
         self._indicator_type = None
         self._name = None
         self._dataclass_id = None
-        self._type = None
         self._data_object = None
         self._workspace_id = None
         self._project_id = None
@@ -148,41 +143,30 @@ class CreateIndicatorDetail:
         self._update_time = None
         self.discriminator = None
 
-        if data_source is not None:
-            self.data_source = data_source
-        if verdict is not None:
-            self.verdict = verdict
+        self.data_source = data_source
+        self.verdict = verdict
         if confidence is not None:
             self.confidence = confidence
         if status is not None:
             self.status = status
         if labels is not None:
             self.labels = labels
-        if value is not None:
-            self.value = value
-        if granular_marking is not None:
-            self.granular_marking = granular_marking
-        if environment is not None:
-            self.environment = environment
-        if defanged is not None:
-            self.defanged = defanged
-        if first_report_time is not None:
-            self.first_report_time = first_report_time
+        self.value = value
+        self.granular_marking = granular_marking
+        self.environment = environment
+        self.defanged = defanged
+        self.first_report_time = first_report_time
         if last_report_time is not None:
             self.last_report_time = last_report_time
         if id is not None:
             self.id = id
-        if indicator_type is not None:
-            self.indicator_type = indicator_type
+        self.indicator_type = indicator_type
         self.name = name
         if dataclass_id is not None:
             self.dataclass_id = dataclass_id
-        if type is not None:
-            self.type = type
         if data_object is not None:
             self.data_object = data_object
-        if workspace_id is not None:
-            self.workspace_id = workspace_id
+        self.workspace_id = workspace_id
         if project_id is not None:
             self.project_id = project_id
         if layout_id is not None:
@@ -199,7 +183,7 @@ class CreateIndicatorDetail:
         """Gets the data_source of this CreateIndicatorDetail.
 
         :return: The data_source of this CreateIndicatorDetail.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateAlertDataSource`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateIndicatorDetailDataSource`
         """
         return self._data_source
 
@@ -208,7 +192,7 @@ class CreateIndicatorDetail:
         """Sets the data_source of this CreateIndicatorDetail.
 
         :param data_source: The data_source of this CreateIndicatorDetail.
-        :type data_source: :class:`huaweicloudsdksecmaster.v2.CreateAlertDataSource`
+        :type data_source: :class:`huaweicloudsdksecmaster.v2.CreateIndicatorDetailDataSource`
         """
         self._data_source = data_source
 
@@ -349,7 +333,7 @@ class CreateIndicatorDetail:
         """Gets the environment of this CreateIndicatorDetail.
 
         :return: The environment of this CreateIndicatorDetail.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowAlertRspEnvironment`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateIndicatorDetailEnvironment`
         """
         return self._environment
 
@@ -358,7 +342,7 @@ class CreateIndicatorDetail:
         """Sets the environment of this CreateIndicatorDetail.
 
         :param environment: The environment of this CreateIndicatorDetail.
-        :type environment: :class:`huaweicloudsdksecmaster.v2.ShowAlertRspEnvironment`
+        :type environment: :class:`huaweicloudsdksecmaster.v2.CreateIndicatorDetailEnvironment`
         """
         self._environment = environment
 
@@ -388,7 +372,7 @@ class CreateIndicatorDetail:
     def first_report_time(self):
         """Gets the first_report_time of this CreateIndicatorDetail.
 
-        Create time
+        首次发生时间
 
         :return: The first_report_time of this CreateIndicatorDetail.
         :rtype: str
@@ -399,7 +383,7 @@ class CreateIndicatorDetail:
     def first_report_time(self, first_report_time):
         """Sets the first_report_time of this CreateIndicatorDetail.
 
-        Create time
+        首次发生时间
 
         :param first_report_time: The first_report_time of this CreateIndicatorDetail.
         :type first_report_time: str
@@ -410,7 +394,7 @@ class CreateIndicatorDetail:
     def last_report_time(self):
         """Gets the last_report_time of this CreateIndicatorDetail.
 
-        Update time
+        最近发生时间
 
         :return: The last_report_time of this CreateIndicatorDetail.
         :rtype: str
@@ -421,7 +405,7 @@ class CreateIndicatorDetail:
     def last_report_time(self, last_report_time):
         """Sets the last_report_time of this CreateIndicatorDetail.
 
-        Update time
+        最近发生时间
 
         :param last_report_time: The last_report_time of this CreateIndicatorDetail.
         :type last_report_time: str
@@ -511,28 +495,6 @@ class CreateIndicatorDetail:
         :type dataclass_id: str
         """
         self._dataclass_id = dataclass_id
-
-    @property
-    def type(self):
-        """Gets the type of this CreateIndicatorDetail.
-
-        类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
-
-        :return: The type of this CreateIndicatorDetail.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this CreateIndicatorDetail.
-
-        类型（SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE）
-
-        :param type: The type of this CreateIndicatorDetail.
-        :type type: str
-        """
-        self._type = type
 
     @property
     def data_object(self):

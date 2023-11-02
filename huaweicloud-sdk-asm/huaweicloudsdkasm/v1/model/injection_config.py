@@ -17,58 +17,29 @@ class InjectionConfig:
     sensitive_list = []
 
     openapi_types = {
-        'restart_pod': 'bool',
         'namespaces': 'Selector'
     }
 
     attribute_map = {
-        'restart_pod': 'restartPod',
         'namespaces': 'namespaces'
     }
 
-    def __init__(self, restart_pod=None, namespaces=None):
+    def __init__(self, namespaces=None):
         """InjectionConfig
 
         The model defined in huaweicloud sdk
 
-        :param restart_pod: 是否重启pod
-        :type restart_pod: bool
         :param namespaces: 
         :type namespaces: :class:`huaweicloudsdkasm.v1.Selector`
         """
         
         
 
-        self._restart_pod = None
         self._namespaces = None
         self.discriminator = None
 
-        if restart_pod is not None:
-            self.restart_pod = restart_pod
         if namespaces is not None:
             self.namespaces = namespaces
-
-    @property
-    def restart_pod(self):
-        """Gets the restart_pod of this InjectionConfig.
-
-        是否重启pod
-
-        :return: The restart_pod of this InjectionConfig.
-        :rtype: bool
-        """
-        return self._restart_pod
-
-    @restart_pod.setter
-    def restart_pod(self, restart_pod):
-        """Sets the restart_pod of this InjectionConfig.
-
-        是否重启pod
-
-        :param restart_pod: The restart_pod of this InjectionConfig.
-        :type restart_pod: bool
-        """
-        self._restart_pod = restart_pod
 
     @property
     def namespaces(self):

@@ -173,6 +173,10 @@ class ClientBuilder(Generic[T]):
             .with_exception_handler(self._exception_handler)
 
         client.init_http_client()
+        if self._file_logger_handler is not None:
+            client.add_file_logger(**self._file_logger_handler)
+        if self._stream_logger_handler is not None:
+            client.add_stream_logger(**self._stream_logger_handler)
 
         if not self._credentials:
             provider = CredentialProviderChain.get_default_credential_provider_chain(self._credential_type[0])
@@ -197,11 +201,6 @@ class ClientBuilder(Generic[T]):
                            for endpoint in self._endpoints]
 
         client.with_endpoints(self._endpoints).with_credentials(self._credentials)
-
-        if self._file_logger_handler is not None:
-            client.add_file_logger(**self._file_logger_handler)
-        if self._stream_logger_handler is not None:
-            client.add_stream_logger(**self._stream_logger_handler)
 
         return client
 

@@ -31,7 +31,7 @@ class ShowTemplateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param eihealth_project_id: 医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        :param eihealth_project_id: 平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
         :type eihealth_project_id: str
         :param template_id: 模板id
         :type template_id: str
@@ -50,7 +50,7 @@ class ShowTemplateRequest:
     def eihealth_project_id(self):
         """Gets the eihealth_project_id of this ShowTemplateRequest.
 
-        医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
         :return: The eihealth_project_id of this ShowTemplateRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowTemplateRequest:
     def eihealth_project_id(self, eihealth_project_id):
         """Sets the eihealth_project_id of this ShowTemplateRequest.
 
-        医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
         :param eihealth_project_id: The eihealth_project_id of this ShowTemplateRequest.
         :type eihealth_project_id: str

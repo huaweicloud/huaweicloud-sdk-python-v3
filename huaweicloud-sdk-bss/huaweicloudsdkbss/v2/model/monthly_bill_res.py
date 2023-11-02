@@ -50,6 +50,7 @@ class MonthlyBillRes:
         'root_resource_id': 'str',
         'parent_resource_id': 'str',
         'trade_id': 'str',
+        'id': 'str',
         'product_spec_desc': 'str',
         'sub_service_type_code': 'str',
         'sub_service_type_name': 'str',
@@ -95,6 +96,7 @@ class MonthlyBillRes:
         'root_resource_id': 'root_resource_id',
         'parent_resource_id': 'parent_resource_id',
         'trade_id': 'trade_id',
+        'id': 'id',
         'product_spec_desc': 'product_spec_desc',
         'sub_service_type_code': 'sub_service_type_code',
         'sub_service_type_name': 'sub_service_type_name',
@@ -106,7 +108,7 @@ class MonthlyBillRes:
         'az_code_infos': 'az_code_infos'
     }
 
-    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, product_spec_desc=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, pre_order_id=None, az_code_infos=None):
+    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, id=None, product_spec_desc=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, pre_order_id=None, az_code_infos=None):
         """MonthlyBillRes
 
         The model defined in huaweicloud sdk
@@ -177,6 +179,8 @@ class MonthlyBillRes:
         :type parent_resource_id: str
         :param trade_id: 订单ID 或 交易ID。 账单类型为1，2，3，4，8时为订单ID；其它场景下为： 交易ID(非月末扣费：应收ID；月末扣费：账单ID)。
         :type trade_id: str
+        :param id: 唯一标识。 账单类型为1，2，3，4，8时，存在唯一标识其它场景下，不存在唯一标识。 该字段为预留字段。
+        :type id: str
         :param product_spec_desc: 产品的规格描述。
         :type product_spec_desc: str
         :param sub_service_type_code: 该字段为预留字段。
@@ -232,6 +236,7 @@ class MonthlyBillRes:
         self._root_resource_id = None
         self._parent_resource_id = None
         self._trade_id = None
+        self._id = None
         self._product_spec_desc = None
         self._sub_service_type_code = None
         self._sub_service_type_name = None
@@ -309,6 +314,8 @@ class MonthlyBillRes:
             self.parent_resource_id = parent_resource_id
         if trade_id is not None:
             self.trade_id = trade_id
+        if id is not None:
+            self.id = id
         if product_spec_desc is not None:
             self.product_spec_desc = product_spec_desc
         if sub_service_type_code is not None:
@@ -1053,6 +1060,28 @@ class MonthlyBillRes:
         :type trade_id: str
         """
         self._trade_id = trade_id
+
+    @property
+    def id(self):
+        """Gets the id of this MonthlyBillRes.
+
+        唯一标识。 账单类型为1，2，3，4，8时，存在唯一标识其它场景下，不存在唯一标识。 该字段为预留字段。
+
+        :return: The id of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this MonthlyBillRes.
+
+        唯一标识。 账单类型为1，2，3，4，8时，存在唯一标识其它场景下，不存在唯一标识。 该字段为预留字段。
+
+        :param id: The id of this MonthlyBillRes.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def product_spec_desc(self):

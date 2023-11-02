@@ -37,7 +37,7 @@ class BatchCreateMembersOption:
 
         The model defined in huaweicloud sdk
 
-        :param name: 后端服务器名称。
+        :param name: 后端服务器名称。注意：该名称并非ECS名称。
         :type name: str
         :param address: 后端云服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中。例如：192.168.3.11。  subnet_cidr_id为空代表添加跨VPC后端，此时address必须为ipv4地址。
         :type address: str
@@ -71,7 +71,7 @@ class BatchCreateMembersOption:
     def name(self):
         """Gets the name of this BatchCreateMembersOption.
 
-        后端服务器名称。
+        后端服务器名称。注意：该名称并非ECS名称。
 
         :return: The name of this BatchCreateMembersOption.
         :rtype: str
@@ -82,7 +82,7 @@ class BatchCreateMembersOption:
     def name(self, name):
         """Sets the name of this BatchCreateMembersOption.
 
-        后端服务器名称。
+        后端服务器名称。注意：该名称并非ECS名称。
 
         :param name: The name of this BatchCreateMembersOption.
         :type name: str

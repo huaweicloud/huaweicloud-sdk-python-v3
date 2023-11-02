@@ -19,7 +19,7 @@ class DeleteAlertRequest:
     openapi_types = {
         'project_id': 'str',
         'workspace_id': 'str',
-        'body': 'DeleteAlert'
+        'body': 'DeleteAlertRequestBody'
     }
 
     attribute_map = {
@@ -33,12 +33,12 @@ class DeleteAlertRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: ID of project
+        :param project_id: 项目id
         :type project_id: str
-        :param workspace_id: ID of workspace
+        :param workspace_id: 工作空间id
         :type workspace_id: str
         :param body: Body of the DeleteAlertRequest
-        :type body: :class:`huaweicloudsdksecmaster.v2.DeleteAlert`
+        :type body: :class:`huaweicloudsdksecmaster.v2.DeleteAlertRequestBody`
         """
         
         
@@ -57,7 +57,7 @@ class DeleteAlertRequest:
     def project_id(self):
         """Gets the project_id of this DeleteAlertRequest.
 
-        ID of project
+        项目id
 
         :return: The project_id of this DeleteAlertRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class DeleteAlertRequest:
     def project_id(self, project_id):
         """Sets the project_id of this DeleteAlertRequest.
 
-        ID of project
+        项目id
 
         :param project_id: The project_id of this DeleteAlertRequest.
         :type project_id: str
@@ -79,7 +79,7 @@ class DeleteAlertRequest:
     def workspace_id(self):
         """Gets the workspace_id of this DeleteAlertRequest.
 
-        ID of workspace
+        工作空间id
 
         :return: The workspace_id of this DeleteAlertRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class DeleteAlertRequest:
     def workspace_id(self, workspace_id):
         """Sets the workspace_id of this DeleteAlertRequest.
 
-        ID of workspace
+        工作空间id
 
         :param workspace_id: The workspace_id of this DeleteAlertRequest.
         :type workspace_id: str
@@ -102,7 +102,7 @@ class DeleteAlertRequest:
         """Gets the body of this DeleteAlertRequest.
 
         :return: The body of this DeleteAlertRequest.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteAlert`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteAlertRequestBody`
         """
         return self._body
 
@@ -111,7 +111,7 @@ class DeleteAlertRequest:
         """Sets the body of this DeleteAlertRequest.
 
         :param body: The body of this DeleteAlertRequest.
-        :type body: :class:`huaweicloudsdksecmaster.v2.DeleteAlert`
+        :type body: :class:`huaweicloudsdksecmaster.v2.DeleteAlertRequestBody`
         """
         self._body = body
 

@@ -26,7 +26,6 @@ class PlaybookVersionListEntity:
         'modifier_id': 'str',
         'playbook_id': 'str',
         'version': 'str',
-        'run_mode': 'str',
         'enabled': 'bool',
         'status': 'str',
         'action_strategy': 'str',
@@ -39,8 +38,7 @@ class PlaybookVersionListEntity:
         'version_type': 'int',
         'rule_id': 'str',
         'dataclass_name': 'str',
-        'approve_name': 'str',
-        'dataobject_id': 'str'
+        'approve_name': 'str'
     }
 
     attribute_map = {
@@ -53,7 +51,6 @@ class PlaybookVersionListEntity:
         'modifier_id': 'modifier_id',
         'playbook_id': 'playbook_id',
         'version': 'version',
-        'run_mode': 'run_mode',
         'enabled': 'enabled',
         'status': 'status',
         'action_strategy': 'action_strategy',
@@ -66,52 +63,49 @@ class PlaybookVersionListEntity:
         'version_type': 'version_type',
         'rule_id': 'rule_id',
         'dataclass_name': 'dataclass_name',
-        'approve_name': 'approve_name',
-        'dataobject_id': 'dataobject_id'
+        'approve_name': 'approve_name'
     }
 
-    def __init__(self, id=None, description=None, create_time=None, update_time=None, project_id=None, creator_id=None, modifier_id=None, playbook_id=None, version=None, run_mode=None, enabled=None, status=None, action_strategy=None, rule_enable=None, dataclass_id=None, trigger_type=None, dataobject_create=None, dataobject_update=None, dataobject_delete=None, version_type=None, rule_id=None, dataclass_name=None, approve_name=None, dataobject_id=None):
+    def __init__(self, id=None, description=None, create_time=None, update_time=None, project_id=None, creator_id=None, modifier_id=None, playbook_id=None, version=None, enabled=None, status=None, action_strategy=None, rule_enable=None, dataclass_id=None, trigger_type=None, dataobject_create=None, dataobject_update=None, dataobject_delete=None, version_type=None, rule_id=None, dataclass_name=None, approve_name=None):
         """PlaybookVersionListEntity
 
         The model defined in huaweicloud sdk
 
-        :param id: Id value
+        :param id: 剧本版本ID
         :type id: str
-        :param description: The description, display only
+        :param description: 描述
         :type description: str
-        :param create_time: Create time
+        :param create_time: 创建时间
         :type create_time: str
-        :param update_time: Update time
+        :param update_time: 更新时间
         :type update_time: str
-        :param project_id: Project id value
+        :param project_id: 项目ID
         :type project_id: str
-        :param creator_id: Creator id value
+        :param creator_id: 创建者ID
         :type creator_id: str
-        :param modifier_id: Modifier id value
+        :param modifier_id: 修改者ID
         :type modifier_id: str
-        :param playbook_id: Playbook id.
+        :param playbook_id: 剧本ID
         :type playbook_id: str
-        :param version: version
+        :param version: 版本号
         :type version: str
-        :param run_mode: Run mode of this playbook. automatic, manual
-        :type run_mode: str
-        :param enabled: If is enabled, false for disenabled, true for enabled
+        :param enabled: 是否激活
         :type enabled: bool
-        :param status: Status of approvement. editing, approving, unpassed, published
+        :param status: 状态. (EDITING--编辑中, APPROVING--审核中, UNPASSED--审核不通过, PUBLISHED--审核通过)
         :type status: str
-        :param action_strategy: Strategy of action. sync or async
+        :param action_strategy: 执行策略. 目前仅支持异步并发执行，对应值为ASYNC
         :type action_strategy: str
-        :param rule_enable: If the condition filter is enabled.
+        :param rule_enable: 过滤规则是否启用
         :type rule_enable: bool
-        :param dataclass_id: bind dataclass id
+        :param dataclass_id: 数据类ID
         :type dataclass_id: str
-        :param trigger_type: Strategy of action. event, timer
+        :param trigger_type: 触发方式. EVENT--事件触发, TIMER--定时触发
         :type trigger_type: str
-        :param dataobject_create: if trigger when dataobject is created
+        :param dataobject_create: 标识数据对象是否创建时触发剧本
         :type dataobject_create: bool
-        :param dataobject_update: if trigger when dataobject is updated
+        :param dataobject_update: 标识数据对象是否更新时触发剧本
         :type dataobject_update: bool
-        :param dataobject_delete: if trigger when dataobject is deleted
+        :param dataobject_delete: 标识数据对象是否删除时触发剧本
         :type dataobject_delete: bool
         :param version_type: 版本类型
         :type version_type: int
@@ -121,8 +115,6 @@ class PlaybookVersionListEntity:
         :type dataclass_name: str
         :param approve_name: 审核者
         :type approve_name: str
-        :param dataobject_id: dataobject id
-        :type dataobject_id: str
         """
         
         
@@ -136,7 +128,6 @@ class PlaybookVersionListEntity:
         self._modifier_id = None
         self._playbook_id = None
         self._version = None
-        self._run_mode = None
         self._enabled = None
         self._status = None
         self._action_strategy = None
@@ -150,7 +141,6 @@ class PlaybookVersionListEntity:
         self._rule_id = None
         self._dataclass_name = None
         self._approve_name = None
-        self._dataobject_id = None
         self.discriminator = None
 
         if id is not None:
@@ -171,8 +161,6 @@ class PlaybookVersionListEntity:
             self.playbook_id = playbook_id
         if version is not None:
             self.version = version
-        if run_mode is not None:
-            self.run_mode = run_mode
         if enabled is not None:
             self.enabled = enabled
         if status is not None:
@@ -199,14 +187,12 @@ class PlaybookVersionListEntity:
             self.dataclass_name = dataclass_name
         if approve_name is not None:
             self.approve_name = approve_name
-        if dataobject_id is not None:
-            self.dataobject_id = dataobject_id
 
     @property
     def id(self):
         """Gets the id of this PlaybookVersionListEntity.
 
-        Id value
+        剧本版本ID
 
         :return: The id of this PlaybookVersionListEntity.
         :rtype: str
@@ -217,7 +203,7 @@ class PlaybookVersionListEntity:
     def id(self, id):
         """Sets the id of this PlaybookVersionListEntity.
 
-        Id value
+        剧本版本ID
 
         :param id: The id of this PlaybookVersionListEntity.
         :type id: str
@@ -228,7 +214,7 @@ class PlaybookVersionListEntity:
     def description(self):
         """Gets the description of this PlaybookVersionListEntity.
 
-        The description, display only
+        描述
 
         :return: The description of this PlaybookVersionListEntity.
         :rtype: str
@@ -239,7 +225,7 @@ class PlaybookVersionListEntity:
     def description(self, description):
         """Sets the description of this PlaybookVersionListEntity.
 
-        The description, display only
+        描述
 
         :param description: The description of this PlaybookVersionListEntity.
         :type description: str
@@ -250,7 +236,7 @@ class PlaybookVersionListEntity:
     def create_time(self):
         """Gets the create_time of this PlaybookVersionListEntity.
 
-        Create time
+        创建时间
 
         :return: The create_time of this PlaybookVersionListEntity.
         :rtype: str
@@ -261,7 +247,7 @@ class PlaybookVersionListEntity:
     def create_time(self, create_time):
         """Sets the create_time of this PlaybookVersionListEntity.
 
-        Create time
+        创建时间
 
         :param create_time: The create_time of this PlaybookVersionListEntity.
         :type create_time: str
@@ -272,7 +258,7 @@ class PlaybookVersionListEntity:
     def update_time(self):
         """Gets the update_time of this PlaybookVersionListEntity.
 
-        Update time
+        更新时间
 
         :return: The update_time of this PlaybookVersionListEntity.
         :rtype: str
@@ -283,7 +269,7 @@ class PlaybookVersionListEntity:
     def update_time(self, update_time):
         """Sets the update_time of this PlaybookVersionListEntity.
 
-        Update time
+        更新时间
 
         :param update_time: The update_time of this PlaybookVersionListEntity.
         :type update_time: str
@@ -294,7 +280,7 @@ class PlaybookVersionListEntity:
     def project_id(self):
         """Gets the project_id of this PlaybookVersionListEntity.
 
-        Project id value
+        项目ID
 
         :return: The project_id of this PlaybookVersionListEntity.
         :rtype: str
@@ -305,7 +291,7 @@ class PlaybookVersionListEntity:
     def project_id(self, project_id):
         """Sets the project_id of this PlaybookVersionListEntity.
 
-        Project id value
+        项目ID
 
         :param project_id: The project_id of this PlaybookVersionListEntity.
         :type project_id: str
@@ -316,7 +302,7 @@ class PlaybookVersionListEntity:
     def creator_id(self):
         """Gets the creator_id of this PlaybookVersionListEntity.
 
-        Creator id value
+        创建者ID
 
         :return: The creator_id of this PlaybookVersionListEntity.
         :rtype: str
@@ -327,7 +313,7 @@ class PlaybookVersionListEntity:
     def creator_id(self, creator_id):
         """Sets the creator_id of this PlaybookVersionListEntity.
 
-        Creator id value
+        创建者ID
 
         :param creator_id: The creator_id of this PlaybookVersionListEntity.
         :type creator_id: str
@@ -338,7 +324,7 @@ class PlaybookVersionListEntity:
     def modifier_id(self):
         """Gets the modifier_id of this PlaybookVersionListEntity.
 
-        Modifier id value
+        修改者ID
 
         :return: The modifier_id of this PlaybookVersionListEntity.
         :rtype: str
@@ -349,7 +335,7 @@ class PlaybookVersionListEntity:
     def modifier_id(self, modifier_id):
         """Sets the modifier_id of this PlaybookVersionListEntity.
 
-        Modifier id value
+        修改者ID
 
         :param modifier_id: The modifier_id of this PlaybookVersionListEntity.
         :type modifier_id: str
@@ -360,7 +346,7 @@ class PlaybookVersionListEntity:
     def playbook_id(self):
         """Gets the playbook_id of this PlaybookVersionListEntity.
 
-        Playbook id.
+        剧本ID
 
         :return: The playbook_id of this PlaybookVersionListEntity.
         :rtype: str
@@ -371,7 +357,7 @@ class PlaybookVersionListEntity:
     def playbook_id(self, playbook_id):
         """Sets the playbook_id of this PlaybookVersionListEntity.
 
-        Playbook id.
+        剧本ID
 
         :param playbook_id: The playbook_id of this PlaybookVersionListEntity.
         :type playbook_id: str
@@ -382,7 +368,7 @@ class PlaybookVersionListEntity:
     def version(self):
         """Gets the version of this PlaybookVersionListEntity.
 
-        version
+        版本号
 
         :return: The version of this PlaybookVersionListEntity.
         :rtype: str
@@ -393,7 +379,7 @@ class PlaybookVersionListEntity:
     def version(self, version):
         """Sets the version of this PlaybookVersionListEntity.
 
-        version
+        版本号
 
         :param version: The version of this PlaybookVersionListEntity.
         :type version: str
@@ -401,32 +387,10 @@ class PlaybookVersionListEntity:
         self._version = version
 
     @property
-    def run_mode(self):
-        """Gets the run_mode of this PlaybookVersionListEntity.
-
-        Run mode of this playbook. automatic, manual
-
-        :return: The run_mode of this PlaybookVersionListEntity.
-        :rtype: str
-        """
-        return self._run_mode
-
-    @run_mode.setter
-    def run_mode(self, run_mode):
-        """Sets the run_mode of this PlaybookVersionListEntity.
-
-        Run mode of this playbook. automatic, manual
-
-        :param run_mode: The run_mode of this PlaybookVersionListEntity.
-        :type run_mode: str
-        """
-        self._run_mode = run_mode
-
-    @property
     def enabled(self):
         """Gets the enabled of this PlaybookVersionListEntity.
 
-        If is enabled, false for disenabled, true for enabled
+        是否激活
 
         :return: The enabled of this PlaybookVersionListEntity.
         :rtype: bool
@@ -437,7 +401,7 @@ class PlaybookVersionListEntity:
     def enabled(self, enabled):
         """Sets the enabled of this PlaybookVersionListEntity.
 
-        If is enabled, false for disenabled, true for enabled
+        是否激活
 
         :param enabled: The enabled of this PlaybookVersionListEntity.
         :type enabled: bool
@@ -448,7 +412,7 @@ class PlaybookVersionListEntity:
     def status(self):
         """Gets the status of this PlaybookVersionListEntity.
 
-        Status of approvement. editing, approving, unpassed, published
+        状态. (EDITING--编辑中, APPROVING--审核中, UNPASSED--审核不通过, PUBLISHED--审核通过)
 
         :return: The status of this PlaybookVersionListEntity.
         :rtype: str
@@ -459,7 +423,7 @@ class PlaybookVersionListEntity:
     def status(self, status):
         """Sets the status of this PlaybookVersionListEntity.
 
-        Status of approvement. editing, approving, unpassed, published
+        状态. (EDITING--编辑中, APPROVING--审核中, UNPASSED--审核不通过, PUBLISHED--审核通过)
 
         :param status: The status of this PlaybookVersionListEntity.
         :type status: str
@@ -470,7 +434,7 @@ class PlaybookVersionListEntity:
     def action_strategy(self):
         """Gets the action_strategy of this PlaybookVersionListEntity.
 
-        Strategy of action. sync or async
+        执行策略. 目前仅支持异步并发执行，对应值为ASYNC
 
         :return: The action_strategy of this PlaybookVersionListEntity.
         :rtype: str
@@ -481,7 +445,7 @@ class PlaybookVersionListEntity:
     def action_strategy(self, action_strategy):
         """Sets the action_strategy of this PlaybookVersionListEntity.
 
-        Strategy of action. sync or async
+        执行策略. 目前仅支持异步并发执行，对应值为ASYNC
 
         :param action_strategy: The action_strategy of this PlaybookVersionListEntity.
         :type action_strategy: str
@@ -492,7 +456,7 @@ class PlaybookVersionListEntity:
     def rule_enable(self):
         """Gets the rule_enable of this PlaybookVersionListEntity.
 
-        If the condition filter is enabled.
+        过滤规则是否启用
 
         :return: The rule_enable of this PlaybookVersionListEntity.
         :rtype: bool
@@ -503,7 +467,7 @@ class PlaybookVersionListEntity:
     def rule_enable(self, rule_enable):
         """Sets the rule_enable of this PlaybookVersionListEntity.
 
-        If the condition filter is enabled.
+        过滤规则是否启用
 
         :param rule_enable: The rule_enable of this PlaybookVersionListEntity.
         :type rule_enable: bool
@@ -514,7 +478,7 @@ class PlaybookVersionListEntity:
     def dataclass_id(self):
         """Gets the dataclass_id of this PlaybookVersionListEntity.
 
-        bind dataclass id
+        数据类ID
 
         :return: The dataclass_id of this PlaybookVersionListEntity.
         :rtype: str
@@ -525,7 +489,7 @@ class PlaybookVersionListEntity:
     def dataclass_id(self, dataclass_id):
         """Sets the dataclass_id of this PlaybookVersionListEntity.
 
-        bind dataclass id
+        数据类ID
 
         :param dataclass_id: The dataclass_id of this PlaybookVersionListEntity.
         :type dataclass_id: str
@@ -536,7 +500,7 @@ class PlaybookVersionListEntity:
     def trigger_type(self):
         """Gets the trigger_type of this PlaybookVersionListEntity.
 
-        Strategy of action. event, timer
+        触发方式. EVENT--事件触发, TIMER--定时触发
 
         :return: The trigger_type of this PlaybookVersionListEntity.
         :rtype: str
@@ -547,7 +511,7 @@ class PlaybookVersionListEntity:
     def trigger_type(self, trigger_type):
         """Sets the trigger_type of this PlaybookVersionListEntity.
 
-        Strategy of action. event, timer
+        触发方式. EVENT--事件触发, TIMER--定时触发
 
         :param trigger_type: The trigger_type of this PlaybookVersionListEntity.
         :type trigger_type: str
@@ -558,7 +522,7 @@ class PlaybookVersionListEntity:
     def dataobject_create(self):
         """Gets the dataobject_create of this PlaybookVersionListEntity.
 
-        if trigger when dataobject is created
+        标识数据对象是否创建时触发剧本
 
         :return: The dataobject_create of this PlaybookVersionListEntity.
         :rtype: bool
@@ -569,7 +533,7 @@ class PlaybookVersionListEntity:
     def dataobject_create(self, dataobject_create):
         """Sets the dataobject_create of this PlaybookVersionListEntity.
 
-        if trigger when dataobject is created
+        标识数据对象是否创建时触发剧本
 
         :param dataobject_create: The dataobject_create of this PlaybookVersionListEntity.
         :type dataobject_create: bool
@@ -580,7 +544,7 @@ class PlaybookVersionListEntity:
     def dataobject_update(self):
         """Gets the dataobject_update of this PlaybookVersionListEntity.
 
-        if trigger when dataobject is updated
+        标识数据对象是否更新时触发剧本
 
         :return: The dataobject_update of this PlaybookVersionListEntity.
         :rtype: bool
@@ -591,7 +555,7 @@ class PlaybookVersionListEntity:
     def dataobject_update(self, dataobject_update):
         """Sets the dataobject_update of this PlaybookVersionListEntity.
 
-        if trigger when dataobject is updated
+        标识数据对象是否更新时触发剧本
 
         :param dataobject_update: The dataobject_update of this PlaybookVersionListEntity.
         :type dataobject_update: bool
@@ -602,7 +566,7 @@ class PlaybookVersionListEntity:
     def dataobject_delete(self):
         """Gets the dataobject_delete of this PlaybookVersionListEntity.
 
-        if trigger when dataobject is deleted
+        标识数据对象是否删除时触发剧本
 
         :return: The dataobject_delete of this PlaybookVersionListEntity.
         :rtype: bool
@@ -613,7 +577,7 @@ class PlaybookVersionListEntity:
     def dataobject_delete(self, dataobject_delete):
         """Sets the dataobject_delete of this PlaybookVersionListEntity.
 
-        if trigger when dataobject is deleted
+        标识数据对象是否删除时触发剧本
 
         :param dataobject_delete: The dataobject_delete of this PlaybookVersionListEntity.
         :type dataobject_delete: bool
@@ -707,28 +671,6 @@ class PlaybookVersionListEntity:
         :type approve_name: str
         """
         self._approve_name = approve_name
-
-    @property
-    def dataobject_id(self):
-        """Gets the dataobject_id of this PlaybookVersionListEntity.
-
-        dataobject id
-
-        :return: The dataobject_id of this PlaybookVersionListEntity.
-        :rtype: str
-        """
-        return self._dataobject_id
-
-    @dataobject_id.setter
-    def dataobject_id(self, dataobject_id):
-        """Sets the dataobject_id of this PlaybookVersionListEntity.
-
-        dataobject id
-
-        :param dataobject_id: The dataobject_id of this PlaybookVersionListEntity.
-        :type dataobject_id: str
-        """
-        self._dataobject_id = dataobject_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

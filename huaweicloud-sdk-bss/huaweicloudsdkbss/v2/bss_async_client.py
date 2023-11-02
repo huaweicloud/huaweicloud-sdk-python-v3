@@ -1420,67 +1420,6 @@ class BssAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def create_postal_async(self, request):
-        """新增邮寄地址
-
-        伙伴可以新增自己的邮寄地址信息。
-        
-        伙伴登录伙伴中心新增邮寄地址请参见[向华为云索取发票](https://support.huaweicloud.com/usermanual-bpconsole/zh-cn_topic_0072435143.html)，进入索取发票页面，选择纸质发票，即可设置邮件地址。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreatePostal
-        :type request: :class:`huaweicloudsdkbss.v2.CreatePostalRequest`
-        :rtype: :class:`huaweicloudsdkbss.v2.CreatePostalResponse`
-        """
-        return self._create_postal_with_http_info(request)
-
-    def _create_postal_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/postal-addresses',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePostalResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def create_sub_customer_async(self, request):
         """创建客户
 
@@ -1599,65 +1538,6 @@ class BssAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='CreateSubEnterpriseAccountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def delete_postal_async(self, request):
-        """删除邮寄地址
-
-        伙伴可以删除自己的邮寄地址信息。
-        
-        伙伴登录伙伴中心修改邮寄地址请参见[向华为云索取发票](https://support.huaweicloud.com/usermanual-bpconsole/zh-cn_topic_0072435143.html)，进入索取发票页面，选择删除邮寄地址，即可删除邮件地址。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeletePostal
-        :type request: :class:`huaweicloudsdkbss.v2.DeletePostalRequest`
-        :rtype: :class:`huaweicloudsdkbss.v2.DeletePostalResponse`
-        """
-        return self._delete_postal_with_http_info(request)
-
-    def _delete_postal_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'address_id' in local_var_params:
-            path_params['address_id'] = local_var_params['address_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/postal-addresses/{address_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePostalResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3229,67 +3109,6 @@ class BssAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListPartnerCouponsRecordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def list_postal_address_async(self, request):
-        """查询邮寄地址
-
-        伙伴可以查询自己的邮寄地址信息。
-        
-        伙伴登录伙伴中心查询邮寄地址请参见[向华为云索取发票](https://support.huaweicloud.com/usermanual-bpconsole/zh-cn_topic_0072435143.html)，进入索取发票页面，即可查看邮寄地址。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListPostalAddress
-        :type request: :class:`huaweicloudsdkbss.v2.ListPostalAddressRequest`
-        :rtype: :class:`huaweicloudsdkbss.v2.ListPostalAddressResponse`
-        """
-        return self._list_postal_address_with_http_info(request)
-
-    def _list_postal_address_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/postal-addresses',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPostalAddressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4932,67 +4751,6 @@ class BssAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdatePeriodToOnDemandResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def update_postal_async(self, request):
-        """修改邮寄地址
-
-        伙伴可以修改自己的邮寄地址信息。
-        
-        伙伴登录伙伴中心修改邮寄地址请参见[向华为云索取发票](https://support.huaweicloud.com/usermanual-bpconsole/zh-cn_topic_0072435143.html)，进入索取发票页面，选择修改邮寄地址，即可修改邮件地址。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdatePostal
-        :type request: :class:`huaweicloudsdkbss.v2.UpdatePostalRequest`
-        :rtype: :class:`huaweicloudsdkbss.v2.UpdatePostalResponse`
-        """
-        return self._update_postal_with_http_info(request)
-
-    def _update_postal_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/postal-addresses',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePostalResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

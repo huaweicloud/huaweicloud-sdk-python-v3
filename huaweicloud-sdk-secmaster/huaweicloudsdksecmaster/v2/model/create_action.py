@@ -37,15 +37,15 @@ class CreateAction:
 
         The model defined in huaweicloud sdk
 
-        :param name: The name, display only
+        :param name: 名称
         :type name: str
-        :param description: The description, display only
+        :param description: 描述
         :type description: str
-        :param action_type: Type of this action, script or aopworkflow.
+        :param action_type: 类型，默认AOP_WORKFLOW.
         :type action_type: str
-        :param action_id: action id.
+        :param action_id: 剧本动作ID
         :type action_id: str
-        :param sort_order: sort_order
+        :param sort_order: 排序方式
         :type sort_order: str
         """
         
@@ -73,7 +73,7 @@ class CreateAction:
     def name(self):
         """Gets the name of this CreateAction.
 
-        The name, display only
+        名称
 
         :return: The name of this CreateAction.
         :rtype: str
@@ -84,7 +84,7 @@ class CreateAction:
     def name(self, name):
         """Sets the name of this CreateAction.
 
-        The name, display only
+        名称
 
         :param name: The name of this CreateAction.
         :type name: str
@@ -95,7 +95,7 @@ class CreateAction:
     def description(self):
         """Gets the description of this CreateAction.
 
-        The description, display only
+        描述
 
         :return: The description of this CreateAction.
         :rtype: str
@@ -106,7 +106,7 @@ class CreateAction:
     def description(self, description):
         """Sets the description of this CreateAction.
 
-        The description, display only
+        描述
 
         :param description: The description of this CreateAction.
         :type description: str
@@ -117,7 +117,7 @@ class CreateAction:
     def action_type(self):
         """Gets the action_type of this CreateAction.
 
-        Type of this action, script or aopworkflow.
+        类型，默认AOP_WORKFLOW.
 
         :return: The action_type of this CreateAction.
         :rtype: str
@@ -128,7 +128,7 @@ class CreateAction:
     def action_type(self, action_type):
         """Sets the action_type of this CreateAction.
 
-        Type of this action, script or aopworkflow.
+        类型，默认AOP_WORKFLOW.
 
         :param action_type: The action_type of this CreateAction.
         :type action_type: str
@@ -139,7 +139,7 @@ class CreateAction:
     def action_id(self):
         """Gets the action_id of this CreateAction.
 
-        action id.
+        剧本动作ID
 
         :return: The action_id of this CreateAction.
         :rtype: str
@@ -150,7 +150,7 @@ class CreateAction:
     def action_id(self, action_id):
         """Sets the action_id of this CreateAction.
 
-        action id.
+        剧本动作ID
 
         :param action_id: The action_id of this CreateAction.
         :type action_id: str
@@ -161,7 +161,7 @@ class CreateAction:
     def sort_order(self):
         """Gets the sort_order of this CreateAction.
 
-        sort_order
+        排序方式
 
         :return: The sort_order of this CreateAction.
         :rtype: str
@@ -172,7 +172,7 @@ class CreateAction:
     def sort_order(self, sort_order):
         """Sets the sort_order of this CreateAction.
 
-        sort_order
+        排序方式
 
         :param sort_order: The sort_order of this CreateAction.
         :type sort_order: str

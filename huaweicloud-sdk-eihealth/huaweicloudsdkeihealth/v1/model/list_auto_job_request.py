@@ -41,7 +41,7 @@ class ListAutoJobRequest:
 
         :param x_language: Locale语言类型，zh_cn返回中文，en_us返回英文
         :type x_language: str
-        :param eihealth_project_id: 医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        :param eihealth_project_id: 平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
         :type eihealth_project_id: str
         :param limit: 限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
         :type limit: int
@@ -101,7 +101,7 @@ class ListAutoJobRequest:
     def eihealth_project_id(self):
         """Gets the eihealth_project_id of this ListAutoJobRequest.
 
-        医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
         :return: The eihealth_project_id of this ListAutoJobRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ListAutoJobRequest:
     def eihealth_project_id(self, eihealth_project_id):
         """Sets the eihealth_project_id of this ListAutoJobRequest.
 
-        医疗智能体平台项目ID，您可以在EIHealth平台单击所需的项目名称，进入项目设置页面查看。
+        平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
         :param eihealth_project_id: The eihealth_project_id of this ListAutoJobRequest.
         :type eihealth_project_id: str

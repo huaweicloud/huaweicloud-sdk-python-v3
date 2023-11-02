@@ -31,9 +31,9 @@ class DataclassInfoRef:
 
         The model defined in huaweicloud sdk
 
-        :param id: Id value
+        :param id: 数据类ID
         :type id: str
-        :param name: Id value
+        :param name: 数据类名称
         :type name: str
         """
         
@@ -52,7 +52,7 @@ class DataclassInfoRef:
     def id(self):
         """Gets the id of this DataclassInfoRef.
 
-        Id value
+        数据类ID
 
         :return: The id of this DataclassInfoRef.
         :rtype: str
@@ -63,7 +63,7 @@ class DataclassInfoRef:
     def id(self, id):
         """Sets the id of this DataclassInfoRef.
 
-        Id value
+        数据类ID
 
         :param id: The id of this DataclassInfoRef.
         :type id: str
@@ -74,7 +74,7 @@ class DataclassInfoRef:
     def name(self):
         """Gets the name of this DataclassInfoRef.
 
-        Id value
+        数据类名称
 
         :return: The name of this DataclassInfoRef.
         :rtype: str
@@ -85,7 +85,7 @@ class DataclassInfoRef:
     def name(self, name):
         """Sets the name of this DataclassInfoRef.
 
-        Id value
+        数据类名称
 
         :param name: The name of this DataclassInfoRef.
         :type name: str

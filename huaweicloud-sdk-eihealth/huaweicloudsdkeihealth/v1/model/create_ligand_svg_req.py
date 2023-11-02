@@ -18,6 +18,7 @@ class CreateLigandSvgReq:
 
     openapi_types = {
         'smiles': 'str',
+        'scaffold': 'str',
         'size': 'int',
         'height': 'int',
         'width': 'int',
@@ -33,6 +34,7 @@ class CreateLigandSvgReq:
 
     attribute_map = {
         'smiles': 'smiles',
+        'scaffold': 'scaffold',
         'size': 'size',
         'height': 'height',
         'width': 'width',
@@ -46,40 +48,43 @@ class CreateLigandSvgReq:
         'ocolor': 'ocolor'
     }
 
-    def __init__(self, smiles=None, size=None, height=None, width=None, alerts=None, ncols=None, bgopacity=None, bgcolor=None, fgcolor=None, ccolor=None, ncolor=None, ocolor=None):
+    def __init__(self, smiles=None, scaffold=None, size=None, height=None, width=None, alerts=None, ncols=None, bgopacity=None, bgcolor=None, fgcolor=None, ccolor=None, ncolor=None, ocolor=None):
         """CreateLigandSvgReq
 
         The model defined in huaweicloud sdk
 
         :param smiles: 分子SMILES表达式
         :type smiles: str
+        :param scaffold: 分子骨架smiles表达式
+        :type scaffold: str
         :param size: 尺寸
         :type size: int
         :param height: svg高度
         :type height: int
         :param width: svg宽度
         :type width: int
-        :param alerts: alerts
+        :param alerts: 高亮子结构编号
         :type alerts: str
-        :param ncols: ncols
+        :param ncols: 显示的列数
         :type ncols: int
-        :param bgopacity: bgopacity
+        :param bgopacity: 背景透明度
         :type bgopacity: float
-        :param bgcolor: bgcolor
+        :param bgcolor: 背景颜色
         :type bgcolor: str
-        :param fgcolor: fgcolor
+        :param fgcolor: 前景色
         :type fgcolor: str
-        :param ccolor: ccolor
+        :param ccolor: 碳颜色
         :type ccolor: str
-        :param ncolor: ncolor
+        :param ncolor: 氮颜色
         :type ncolor: str
-        :param ocolor: ocolor
+        :param ocolor: 氧颜色
         :type ocolor: str
         """
         
         
 
         self._smiles = None
+        self._scaffold = None
         self._size = None
         self._height = None
         self._width = None
@@ -94,6 +99,8 @@ class CreateLigandSvgReq:
         self.discriminator = None
 
         self.smiles = smiles
+        if scaffold is not None:
+            self.scaffold = scaffold
         if size is not None:
             self.size = size
         if height is not None:
@@ -138,6 +145,28 @@ class CreateLigandSvgReq:
         :type smiles: str
         """
         self._smiles = smiles
+
+    @property
+    def scaffold(self):
+        """Gets the scaffold of this CreateLigandSvgReq.
+
+        分子骨架smiles表达式
+
+        :return: The scaffold of this CreateLigandSvgReq.
+        :rtype: str
+        """
+        return self._scaffold
+
+    @scaffold.setter
+    def scaffold(self, scaffold):
+        """Sets the scaffold of this CreateLigandSvgReq.
+
+        分子骨架smiles表达式
+
+        :param scaffold: The scaffold of this CreateLigandSvgReq.
+        :type scaffold: str
+        """
+        self._scaffold = scaffold
 
     @property
     def size(self):
@@ -209,7 +238,7 @@ class CreateLigandSvgReq:
     def alerts(self):
         """Gets the alerts of this CreateLigandSvgReq.
 
-        alerts
+        高亮子结构编号
 
         :return: The alerts of this CreateLigandSvgReq.
         :rtype: str
@@ -220,7 +249,7 @@ class CreateLigandSvgReq:
     def alerts(self, alerts):
         """Sets the alerts of this CreateLigandSvgReq.
 
-        alerts
+        高亮子结构编号
 
         :param alerts: The alerts of this CreateLigandSvgReq.
         :type alerts: str
@@ -231,7 +260,7 @@ class CreateLigandSvgReq:
     def ncols(self):
         """Gets the ncols of this CreateLigandSvgReq.
 
-        ncols
+        显示的列数
 
         :return: The ncols of this CreateLigandSvgReq.
         :rtype: int
@@ -242,7 +271,7 @@ class CreateLigandSvgReq:
     def ncols(self, ncols):
         """Sets the ncols of this CreateLigandSvgReq.
 
-        ncols
+        显示的列数
 
         :param ncols: The ncols of this CreateLigandSvgReq.
         :type ncols: int
@@ -253,7 +282,7 @@ class CreateLigandSvgReq:
     def bgopacity(self):
         """Gets the bgopacity of this CreateLigandSvgReq.
 
-        bgopacity
+        背景透明度
 
         :return: The bgopacity of this CreateLigandSvgReq.
         :rtype: float
@@ -264,7 +293,7 @@ class CreateLigandSvgReq:
     def bgopacity(self, bgopacity):
         """Sets the bgopacity of this CreateLigandSvgReq.
 
-        bgopacity
+        背景透明度
 
         :param bgopacity: The bgopacity of this CreateLigandSvgReq.
         :type bgopacity: float
@@ -275,7 +304,7 @@ class CreateLigandSvgReq:
     def bgcolor(self):
         """Gets the bgcolor of this CreateLigandSvgReq.
 
-        bgcolor
+        背景颜色
 
         :return: The bgcolor of this CreateLigandSvgReq.
         :rtype: str
@@ -286,7 +315,7 @@ class CreateLigandSvgReq:
     def bgcolor(self, bgcolor):
         """Sets the bgcolor of this CreateLigandSvgReq.
 
-        bgcolor
+        背景颜色
 
         :param bgcolor: The bgcolor of this CreateLigandSvgReq.
         :type bgcolor: str
@@ -297,7 +326,7 @@ class CreateLigandSvgReq:
     def fgcolor(self):
         """Gets the fgcolor of this CreateLigandSvgReq.
 
-        fgcolor
+        前景色
 
         :return: The fgcolor of this CreateLigandSvgReq.
         :rtype: str
@@ -308,7 +337,7 @@ class CreateLigandSvgReq:
     def fgcolor(self, fgcolor):
         """Sets the fgcolor of this CreateLigandSvgReq.
 
-        fgcolor
+        前景色
 
         :param fgcolor: The fgcolor of this CreateLigandSvgReq.
         :type fgcolor: str
@@ -319,7 +348,7 @@ class CreateLigandSvgReq:
     def ccolor(self):
         """Gets the ccolor of this CreateLigandSvgReq.
 
-        ccolor
+        碳颜色
 
         :return: The ccolor of this CreateLigandSvgReq.
         :rtype: str
@@ -330,7 +359,7 @@ class CreateLigandSvgReq:
     def ccolor(self, ccolor):
         """Sets the ccolor of this CreateLigandSvgReq.
 
-        ccolor
+        碳颜色
 
         :param ccolor: The ccolor of this CreateLigandSvgReq.
         :type ccolor: str
@@ -341,7 +370,7 @@ class CreateLigandSvgReq:
     def ncolor(self):
         """Gets the ncolor of this CreateLigandSvgReq.
 
-        ncolor
+        氮颜色
 
         :return: The ncolor of this CreateLigandSvgReq.
         :rtype: str
@@ -352,7 +381,7 @@ class CreateLigandSvgReq:
     def ncolor(self, ncolor):
         """Sets the ncolor of this CreateLigandSvgReq.
 
-        ncolor
+        氮颜色
 
         :param ncolor: The ncolor of this CreateLigandSvgReq.
         :type ncolor: str
@@ -363,7 +392,7 @@ class CreateLigandSvgReq:
     def ocolor(self):
         """Gets the ocolor of this CreateLigandSvgReq.
 
-        ocolor
+        氧颜色
 
         :return: The ocolor of this CreateLigandSvgReq.
         :rtype: str
@@ -374,7 +403,7 @@ class CreateLigandSvgReq:
     def ocolor(self, ocolor):
         """Sets the ocolor of this CreateLigandSvgReq.
 
-        ocolor
+        氧颜色
 
         :param ocolor: The ocolor of this CreateLigandSvgReq.
         :type ocolor: str

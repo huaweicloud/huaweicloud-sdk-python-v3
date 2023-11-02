@@ -33,11 +33,11 @@ class FieldSelector:
 
         The model defined in huaweicloud sdk
 
-        :param key: 
+        :param key: Key值
         :type key: str
-        :param operator: 
+        :param operator: 可以在字段选择器中使用&#x3D;、&#x3D;&#x3D;和!&#x3D; 操作符（&#x3D; 和 &#x3D;&#x3D; 意思相同）
         :type operator: str
-        :param values: 
+        :param values: Value值
         :type values: list[str]
         """
         
@@ -59,6 +59,8 @@ class FieldSelector:
     def key(self):
         """Gets the key of this FieldSelector.
 
+        Key值
+
         :return: The key of this FieldSelector.
         :rtype: str
         """
@@ -67,6 +69,8 @@ class FieldSelector:
     @key.setter
     def key(self, key):
         """Sets the key of this FieldSelector.
+
+        Key值
 
         :param key: The key of this FieldSelector.
         :type key: str
@@ -77,6 +81,8 @@ class FieldSelector:
     def operator(self):
         """Gets the operator of this FieldSelector.
 
+        可以在字段选择器中使用=、==和!= 操作符（= 和 == 意思相同）
+
         :return: The operator of this FieldSelector.
         :rtype: str
         """
@@ -85,6 +91,8 @@ class FieldSelector:
     @operator.setter
     def operator(self, operator):
         """Sets the operator of this FieldSelector.
+
+        可以在字段选择器中使用=、==和!= 操作符（= 和 == 意思相同）
 
         :param operator: The operator of this FieldSelector.
         :type operator: str
@@ -95,6 +103,8 @@ class FieldSelector:
     def values(self):
         """Gets the values of this FieldSelector.
 
+        Value值
+
         :return: The values of this FieldSelector.
         :rtype: list[str]
         """
@@ -103,6 +113,8 @@ class FieldSelector:
     @values.setter
     def values(self, values):
         """Sets the values of this FieldSelector.
+
+        Value值
 
         :param values: The values of this FieldSelector.
         :type values: list[str]

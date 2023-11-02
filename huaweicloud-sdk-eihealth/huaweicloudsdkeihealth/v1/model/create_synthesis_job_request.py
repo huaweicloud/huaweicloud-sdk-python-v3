@@ -31,7 +31,7 @@ class CreateSynthesisJobRequest:
 
         The model defined in huaweicloud sdk
 
-        :param eihealth_project_id: 盘古辅助制药平台项目ID。
+        :param eihealth_project_id: 平台项目ID。
         :type eihealth_project_id: str
         :param body: Body of the CreateSynthesisJobRequest
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateSynthesisJobReq`
@@ -51,7 +51,7 @@ class CreateSynthesisJobRequest:
     def eihealth_project_id(self):
         """Gets the eihealth_project_id of this CreateSynthesisJobRequest.
 
-        盘古辅助制药平台项目ID。
+        平台项目ID。
 
         :return: The eihealth_project_id of this CreateSynthesisJobRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateSynthesisJobRequest:
     def eihealth_project_id(self, eihealth_project_id):
         """Sets the eihealth_project_id of this CreateSynthesisJobRequest.
 
-        盘古辅助制药平台项目ID。
+        平台项目ID。
 
         :param eihealth_project_id: The eihealth_project_id of this CreateSynthesisJobRequest.
         :type eihealth_project_id: str

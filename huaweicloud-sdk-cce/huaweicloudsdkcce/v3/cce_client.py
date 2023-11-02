@@ -24,6 +24,11 @@ class CceClient(Client):
             client_builder = ClientBuilder(clazz)
 
         
+        try:
+            from .cce_exception_handler import CceExceptionHandler
+            client_builder.with_exception_handler(CceExceptionHandler())
+        except (ModuleNotFoundError, AttributeError):
+            pass
 
         return client_builder
 

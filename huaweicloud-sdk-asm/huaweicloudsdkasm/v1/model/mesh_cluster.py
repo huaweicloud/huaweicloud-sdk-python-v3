@@ -20,8 +20,6 @@ class MeshCluster:
         'cluster_id': 'str',
         'region': 'str',
         'project_id': 'str',
-        'provider': 'str',
-        'proxy_mode': 'str',
         'injection': 'InjectionConfig',
         'installation': 'InstallationConfig'
     }
@@ -30,27 +28,21 @@ class MeshCluster:
         'cluster_id': 'clusterID',
         'region': 'region',
         'project_id': 'projectID',
-        'provider': 'provider',
-        'proxy_mode': 'proxyMode',
         'injection': 'injection',
         'installation': 'installation'
     }
 
-    def __init__(self, cluster_id=None, region=None, project_id=None, provider=None, proxy_mode=None, injection=None, installation=None):
+    def __init__(self, cluster_id=None, region=None, project_id=None, injection=None, installation=None):
         """MeshCluster
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID，资源唯一标识，通过该ID查询需要添加的集群。
+        :param cluster_id: 集群ID，资源唯一标识，通过该ID查询需要添加的集群
         :type cluster_id: str
         :param region: 集群所在的Region
         :type region: str
         :param project_id: 集群所属的projectID
         :type project_id: str
-        :param provider: 集群提供方
-        :type provider: str
-        :param proxy_mode: 集群代理模式
-        :type proxy_mode: str
         :param injection: 
         :type injection: :class:`huaweicloudsdkasm.v1.InjectionConfig`
         :param installation: 
@@ -62,8 +54,6 @@ class MeshCluster:
         self._cluster_id = None
         self._region = None
         self._project_id = None
-        self._provider = None
-        self._proxy_mode = None
         self._injection = None
         self._installation = None
         self.discriminator = None
@@ -71,9 +61,6 @@ class MeshCluster:
         self.cluster_id = cluster_id
         self.region = region
         self.project_id = project_id
-        self.provider = provider
-        if proxy_mode is not None:
-            self.proxy_mode = proxy_mode
         if injection is not None:
             self.injection = injection
         self.installation = installation
@@ -82,7 +69,7 @@ class MeshCluster:
     def cluster_id(self):
         """Gets the cluster_id of this MeshCluster.
 
-        集群ID，资源唯一标识，通过该ID查询需要添加的集群。
+        集群ID，资源唯一标识，通过该ID查询需要添加的集群
 
         :return: The cluster_id of this MeshCluster.
         :rtype: str
@@ -93,7 +80,7 @@ class MeshCluster:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this MeshCluster.
 
-        集群ID，资源唯一标识，通过该ID查询需要添加的集群。
+        集群ID，资源唯一标识，通过该ID查询需要添加的集群
 
         :param cluster_id: The cluster_id of this MeshCluster.
         :type cluster_id: str
@@ -143,50 +130,6 @@ class MeshCluster:
         :type project_id: str
         """
         self._project_id = project_id
-
-    @property
-    def provider(self):
-        """Gets the provider of this MeshCluster.
-
-        集群提供方
-
-        :return: The provider of this MeshCluster.
-        :rtype: str
-        """
-        return self._provider
-
-    @provider.setter
-    def provider(self, provider):
-        """Sets the provider of this MeshCluster.
-
-        集群提供方
-
-        :param provider: The provider of this MeshCluster.
-        :type provider: str
-        """
-        self._provider = provider
-
-    @property
-    def proxy_mode(self):
-        """Gets the proxy_mode of this MeshCluster.
-
-        集群代理模式
-
-        :return: The proxy_mode of this MeshCluster.
-        :rtype: str
-        """
-        return self._proxy_mode
-
-    @proxy_mode.setter
-    def proxy_mode(self, proxy_mode):
-        """Sets the proxy_mode of this MeshCluster.
-
-        集群代理模式
-
-        :param proxy_mode: The proxy_mode of this MeshCluster.
-        :type proxy_mode: str
-        """
-        self._proxy_mode = proxy_mode
 
     @property
     def injection(self):

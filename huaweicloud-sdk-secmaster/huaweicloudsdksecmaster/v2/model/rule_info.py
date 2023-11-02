@@ -33,11 +33,11 @@ class RuleInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: Id value
+        :param id: 规则ID
         :type id: str
-        :param project_id: Project id value
+        :param project_id: 项目ID
         :type project_id: str
-        :param rule: Project id value
+        :param rule: 触发规则
         :type rule: str
         """
         
@@ -59,7 +59,7 @@ class RuleInfo:
     def id(self):
         """Gets the id of this RuleInfo.
 
-        Id value
+        规则ID
 
         :return: The id of this RuleInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class RuleInfo:
     def id(self, id):
         """Sets the id of this RuleInfo.
 
-        Id value
+        规则ID
 
         :param id: The id of this RuleInfo.
         :type id: str
@@ -81,7 +81,7 @@ class RuleInfo:
     def project_id(self):
         """Gets the project_id of this RuleInfo.
 
-        Project id value
+        项目ID
 
         :return: The project_id of this RuleInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class RuleInfo:
     def project_id(self, project_id):
         """Sets the project_id of this RuleInfo.
 
-        Project id value
+        项目ID
 
         :param project_id: The project_id of this RuleInfo.
         :type project_id: str
@@ -103,7 +103,7 @@ class RuleInfo:
     def rule(self):
         """Gets the rule of this RuleInfo.
 
-        Project id value
+        触发规则
 
         :return: The rule of this RuleInfo.
         :rtype: str
@@ -114,7 +114,7 @@ class RuleInfo:
     def rule(self, rule):
         """Sets the rule of this RuleInfo.
 
-        Project id value
+        触发规则
 
         :param rule: The rule of this RuleInfo.
         :type rule: str

@@ -17,7 +17,7 @@ class CreateIncidentRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'data_object': 'CreateIncident'
+        'data_object': 'Incident'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class CreateIncidentRequestBody:
         The model defined in huaweicloud sdk
 
         :param data_object: 
-        :type data_object: :class:`huaweicloudsdksecmaster.v2.CreateIncident`
+        :type data_object: :class:`huaweicloudsdksecmaster.v2.Incident`
         """
         
         
@@ -46,7 +46,7 @@ class CreateIncidentRequestBody:
         """Gets the data_object of this CreateIncidentRequestBody.
 
         :return: The data_object of this CreateIncidentRequestBody.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateIncident`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.Incident`
         """
         return self._data_object
 
@@ -55,7 +55,7 @@ class CreateIncidentRequestBody:
         """Sets the data_object of this CreateIncidentRequestBody.
 
         :param data_object: The data_object of this CreateIncidentRequestBody.
-        :type data_object: :class:`huaweicloudsdksecmaster.v2.CreateIncident`
+        :type data_object: :class:`huaweicloudsdksecmaster.v2.Incident`
         """
         self._data_object = data_object
 

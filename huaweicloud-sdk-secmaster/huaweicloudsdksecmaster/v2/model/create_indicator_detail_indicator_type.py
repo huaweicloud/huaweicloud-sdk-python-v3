@@ -27,7 +27,7 @@ class CreateIndicatorDetailIndicatorType:
         'indicator_type': 'indicator_type',
         'id': 'id',
         'category': 'category',
-        'layout_id': 'layoutId'
+        'layout_id': 'layout_id'
     }
 
     def __init__(self, indicator_type=None, id=None, category=None, layout_id=None):
@@ -35,13 +35,13 @@ class CreateIndicatorDetailIndicatorType:
 
         The model defined in huaweicloud sdk
 
-        :param indicator_type: indicator_type
+        :param indicator_type: 指标类型
         :type indicator_type: str
-        :param id: id
+        :param id: 情报类型ID
         :type id: str
-        :param category: category
+        :param category: 目录
         :type category: str
-        :param layout_id: layoutId
+        :param layout_id: 布局ID
         :type layout_id: str
         """
         
@@ -53,20 +53,16 @@ class CreateIndicatorDetailIndicatorType:
         self._layout_id = None
         self.discriminator = None
 
-        if indicator_type is not None:
-            self.indicator_type = indicator_type
-        if id is not None:
-            self.id = id
-        if category is not None:
-            self.category = category
-        if layout_id is not None:
-            self.layout_id = layout_id
+        self.indicator_type = indicator_type
+        self.id = id
+        self.category = category
+        self.layout_id = layout_id
 
     @property
     def indicator_type(self):
         """Gets the indicator_type of this CreateIndicatorDetailIndicatorType.
 
-        indicator_type
+        指标类型
 
         :return: The indicator_type of this CreateIndicatorDetailIndicatorType.
         :rtype: str
@@ -77,7 +73,7 @@ class CreateIndicatorDetailIndicatorType:
     def indicator_type(self, indicator_type):
         """Sets the indicator_type of this CreateIndicatorDetailIndicatorType.
 
-        indicator_type
+        指标类型
 
         :param indicator_type: The indicator_type of this CreateIndicatorDetailIndicatorType.
         :type indicator_type: str
@@ -88,7 +84,7 @@ class CreateIndicatorDetailIndicatorType:
     def id(self):
         """Gets the id of this CreateIndicatorDetailIndicatorType.
 
-        id
+        情报类型ID
 
         :return: The id of this CreateIndicatorDetailIndicatorType.
         :rtype: str
@@ -99,7 +95,7 @@ class CreateIndicatorDetailIndicatorType:
     def id(self, id):
         """Sets the id of this CreateIndicatorDetailIndicatorType.
 
-        id
+        情报类型ID
 
         :param id: The id of this CreateIndicatorDetailIndicatorType.
         :type id: str
@@ -110,7 +106,7 @@ class CreateIndicatorDetailIndicatorType:
     def category(self):
         """Gets the category of this CreateIndicatorDetailIndicatorType.
 
-        category
+        目录
 
         :return: The category of this CreateIndicatorDetailIndicatorType.
         :rtype: str
@@ -121,7 +117,7 @@ class CreateIndicatorDetailIndicatorType:
     def category(self, category):
         """Sets the category of this CreateIndicatorDetailIndicatorType.
 
-        category
+        目录
 
         :param category: The category of this CreateIndicatorDetailIndicatorType.
         :type category: str
@@ -132,7 +128,7 @@ class CreateIndicatorDetailIndicatorType:
     def layout_id(self):
         """Gets the layout_id of this CreateIndicatorDetailIndicatorType.
 
-        layoutId
+        布局ID
 
         :return: The layout_id of this CreateIndicatorDetailIndicatorType.
         :rtype: str
@@ -143,7 +139,7 @@ class CreateIndicatorDetailIndicatorType:
     def layout_id(self, layout_id):
         """Sets the layout_id of this CreateIndicatorDetailIndicatorType.
 
-        layoutId
+        布局ID
 
         :param layout_id: The layout_id of this CreateIndicatorDetailIndicatorType.
         :type layout_id: str

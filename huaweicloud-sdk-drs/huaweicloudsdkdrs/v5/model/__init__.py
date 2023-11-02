@@ -49,6 +49,8 @@ from huaweicloudsdkdrs.v5.model.collect_db_objects_async_request import CollectD
 from huaweicloudsdkdrs.v5.model.collect_db_objects_async_response import CollectDbObjectsAsyncResponse
 from huaweicloudsdkdrs.v5.model.collect_db_objects_info_request import CollectDbObjectsInfoRequest
 from huaweicloudsdkdrs.v5.model.collect_db_objects_info_response import CollectDbObjectsInfoResponse
+from huaweicloudsdkdrs.v5.model.collect_position_async_request import CollectPositionAsyncRequest
+from huaweicloudsdkdrs.v5.model.collect_position_async_response import CollectPositionAsyncResponse
 from huaweicloudsdkdrs.v5.model.column_object import ColumnObject
 from huaweicloudsdkdrs.v5.model.commit_async_job_request import CommitAsyncJobRequest
 from huaweicloudsdkdrs.v5.model.commit_async_job_response import CommitAsyncJobResponse
@@ -136,6 +138,7 @@ from huaweicloudsdkdrs.v5.model.progress_complete_info import ProgressCompleteIn
 from huaweicloudsdkdrs.v5.model.project_tag import ProjectTag
 from huaweicloudsdkdrs.v5.model.query_column_info import QueryColumnInfo
 from huaweicloudsdkdrs.v5.model.query_column_req import QueryColumnReq
+from huaweicloudsdkdrs.v5.model.query_db_position_req import QueryDbPositionReq
 from huaweicloudsdkdrs.v5.model.query_metric_result import QueryMetricResult
 from huaweicloudsdkdrs.v5.model.query_migration_object_progress_info import QueryMigrationObjectProgressInfo
 from huaweicloudsdkdrs.v5.model.query_network_result import QueryNetworkResult
@@ -183,6 +186,8 @@ from huaweicloudsdkdrs.v5.model.show_monitor_data_request import ShowMonitorData
 from huaweicloudsdkdrs.v5.model.show_monitor_data_response import ShowMonitorDataResponse
 from huaweicloudsdkdrs.v5.model.show_object_mapping_request import ShowObjectMappingRequest
 from huaweicloudsdkdrs.v5.model.show_object_mapping_response import ShowObjectMappingResponse
+from huaweicloudsdkdrs.v5.model.show_position_result_request import ShowPositionResultRequest
+from huaweicloudsdkdrs.v5.model.show_position_result_response import ShowPositionResultResponse
 from huaweicloudsdkdrs.v5.model.show_progress_data_request import ShowProgressDataRequest
 from huaweicloudsdkdrs.v5.model.show_progress_data_response import ShowProgressDataResponse
 from huaweicloudsdkdrs.v5.model.show_support_object_type_request import ShowSupportObjectTypeRequest

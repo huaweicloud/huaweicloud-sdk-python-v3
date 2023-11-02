@@ -34,9 +34,9 @@ class EnableAlertRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param rule_id: rule_id
+        :param rule_id: 告警规则 ID。Alert rule ID.
         :type rule_id: str
-        :param status: status. ENABLED, DISABLED
+        :param status: 启用状态，启用、停用。Status, enabled, disabled.
         :type status: str
         :param x_request_id: 
         :type x_request_id: str
@@ -60,7 +60,7 @@ class EnableAlertRuleResponse(SdkResponse):
     def rule_id(self):
         """Gets the rule_id of this EnableAlertRuleResponse.
 
-        rule_id
+        告警规则 ID。Alert rule ID.
 
         :return: The rule_id of this EnableAlertRuleResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class EnableAlertRuleResponse(SdkResponse):
     def rule_id(self, rule_id):
         """Sets the rule_id of this EnableAlertRuleResponse.
 
-        rule_id
+        告警规则 ID。Alert rule ID.
 
         :param rule_id: The rule_id of this EnableAlertRuleResponse.
         :type rule_id: str
@@ -82,7 +82,7 @@ class EnableAlertRuleResponse(SdkResponse):
     def status(self):
         """Gets the status of this EnableAlertRuleResponse.
 
-        status. ENABLED, DISABLED
+        启用状态，启用、停用。Status, enabled, disabled.
 
         :return: The status of this EnableAlertRuleResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class EnableAlertRuleResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this EnableAlertRuleResponse.
 
-        status. ENABLED, DISABLED
+        启用状态，启用、停用。Status, enabled, disabled.
 
         :param status: The status of this EnableAlertRuleResponse.
         :type status: str

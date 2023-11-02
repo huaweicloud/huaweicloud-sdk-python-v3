@@ -19,24 +19,28 @@ class UpdateNatGatewaySnatRuleOption:
     openapi_types = {
         'nat_gateway_id': 'str',
         'public_ip_address': 'str',
+        'global_eip_id': 'str',
         'description': 'str'
     }
 
     attribute_map = {
         'nat_gateway_id': 'nat_gateway_id',
         'public_ip_address': 'public_ip_address',
+        'global_eip_id': 'global_eip_id',
         'description': 'description'
     }
 
-    def __init__(self, nat_gateway_id=None, public_ip_address=None, description=None):
+    def __init__(self, nat_gateway_id=None, public_ip_address=None, global_eip_id=None, description=None):
         """UpdateNatGatewaySnatRuleOption
 
         The model defined in huaweicloud sdk
 
         :param nat_gateway_id: 公网NAT网关的id。
         :type nat_gateway_id: str
-        :param public_ip_address: 功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。 约束：弹性公网IP的id个数不能超过20个 
+        :param public_ip_address: 功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 约束：弹性公网IP的id个数不能超过20个 
         :type public_ip_address: str
+        :param global_eip_id: 全域弹性公网IP的id。
+        :type global_eip_id: str
         :param description: SNAT规则的描述，长度限制为255。
         :type description: str
         """
@@ -45,12 +49,15 @@ class UpdateNatGatewaySnatRuleOption:
 
         self._nat_gateway_id = None
         self._public_ip_address = None
+        self._global_eip_id = None
         self._description = None
         self.discriminator = None
 
         self.nat_gateway_id = nat_gateway_id
         if public_ip_address is not None:
             self.public_ip_address = public_ip_address
+        if global_eip_id is not None:
+            self.global_eip_id = global_eip_id
         if description is not None:
             self.description = description
 
@@ -80,7 +87,7 @@ class UpdateNatGatewaySnatRuleOption:
     def public_ip_address(self):
         """Gets the public_ip_address of this UpdateNatGatewaySnatRuleOption.
 
-        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。 约束：弹性公网IP的id个数不能超过20个 
+        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 约束：弹性公网IP的id个数不能超过20个 
 
         :return: The public_ip_address of this UpdateNatGatewaySnatRuleOption.
         :rtype: str
@@ -91,12 +98,34 @@ class UpdateNatGatewaySnatRuleOption:
     def public_ip_address(self, public_ip_address):
         """Sets the public_ip_address of this UpdateNatGatewaySnatRuleOption.
 
-        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。 约束：弹性公网IP的id个数不能超过20个 
+        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 约束：弹性公网IP的id个数不能超过20个 
 
         :param public_ip_address: The public_ip_address of this UpdateNatGatewaySnatRuleOption.
         :type public_ip_address: str
         """
         self._public_ip_address = public_ip_address
+
+    @property
+    def global_eip_id(self):
+        """Gets the global_eip_id of this UpdateNatGatewaySnatRuleOption.
+
+        全域弹性公网IP的id。
+
+        :return: The global_eip_id of this UpdateNatGatewaySnatRuleOption.
+        :rtype: str
+        """
+        return self._global_eip_id
+
+    @global_eip_id.setter
+    def global_eip_id(self, global_eip_id):
+        """Sets the global_eip_id of this UpdateNatGatewaySnatRuleOption.
+
+        全域弹性公网IP的id。
+
+        :param global_eip_id: The global_eip_id of this UpdateNatGatewaySnatRuleOption.
+        :type global_eip_id: str
+        """
+        self._global_eip_id = global_eip_id
 
     @property
     def description(self):

@@ -35,7 +35,7 @@ class CopyConfigurationsRequest:
 
         :param x_language: 请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
         :type x_language: str
-        :param configuration_id: 参数组ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-gaussdb/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为configuration_id值。
+        :param configuration_id: 参数组ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-gaussdbformysql/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为configuration_id值。
         :type configuration_id: str
         :param body: Body of the CopyConfigurationsRequest
         :type body: :class:`huaweicloudsdkgaussdb.v3.CopyConfigurationsRequestBody`
@@ -80,7 +80,7 @@ class CopyConfigurationsRequest:
     def configuration_id(self):
         """Gets the configuration_id of this CopyConfigurationsRequest.
 
-        参数组ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-gaussdb/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为configuration_id值。
+        参数组ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-gaussdbformysql/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为configuration_id值。
 
         :return: The configuration_id of this CopyConfigurationsRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class CopyConfigurationsRequest:
     def configuration_id(self, configuration_id):
         """Sets the configuration_id of this CopyConfigurationsRequest.
 
-        参数组ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-gaussdb/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为configuration_id值。
+        参数组ID。  通过调用[查询参数模板](https://support.huaweicloud.com/api-gaussdbformysql/ListGaussMySqlConfigurations.html)接口获取。  请求响应成功后在响应消息体中包含的“id”的值即为configuration_id值。
 
         :param configuration_id: The configuration_id of this CopyConfigurationsRequest.
         :type configuration_id: str

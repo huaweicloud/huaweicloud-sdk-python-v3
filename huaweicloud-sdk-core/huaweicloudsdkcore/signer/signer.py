@@ -243,12 +243,17 @@ class Signer(object):
 
     def _sign_string_to_sign(self, string_to_sign, key):
         # type: (str, str) -> str
-        return self._hmac(six.ensure_binary(key), six.ensure_binary(string_to_sign)).hex()
+        return self._hex(self._hmac(six.ensure_binary(key), six.ensure_binary(string_to_sign)))
 
     def _process_auth_header_value(self, signature, app_key, signed_headers):
         # type: (str, str, list) -> str
         return "%s Access=%s, SignedHeaders=%s, Signature=%s" % (
             self._ALGORITHM, app_key, ";".join(signed_headers), signature)
+
+    def _hex(self, data):
+        if six.PY2:
+            return "".join("{:02x}".format(ord(c)) for c in six.ensure_binary(data))
+        return data.hex()
 
 
 class SM3Signer(Signer):
@@ -328,7 +333,7 @@ class P256SHA256Signer(Signer):
         # type: (str, str) -> str
         signing_key = self.get_signing_key()
         sig = signing_key.sign(six.ensure_binary(data), hashfunc=self._hash_func, sigencode=ecdsa.util.sigencode_der)
-        return sig.hex()
+        return self._hex(sig)
 
     def _derive_key_bytes(self):
         # type: () -> bytes
@@ -377,7 +382,7 @@ class SM2SM3Signer(P256SHA256Signer):
         # type: (str, str) -> str
         signing_key = self.get_signing_key()
         signature = signing_key.sign(six.ensure_binary(data))
-        return signature.hex()
+        return self._hex(signature)
 
     def _generate_signing_key(self, key_bytes):
         return SM2SigningKey(key_bytes)

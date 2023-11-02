@@ -13,10 +13,13 @@ class PanguLargeModelsRegion:
                         "https://pangu.cn-north-4.myhuaweicloud.com")
     CN_EAST_3 = Region("cn-east-3",
                         "https://pangu.cn-east-3.myhuaweicloud.com")
+    CN_SOUTHWEST_2 = Region("cn-southwest-2",
+                        "https://pangu.cn-southwest-2.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "cn-east-3": CN_EAST_3,
+        "cn-southwest-2": CN_SOUTHWEST_2,
     }
 
     @classmethod

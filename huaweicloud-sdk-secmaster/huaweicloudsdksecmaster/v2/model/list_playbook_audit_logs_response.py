@@ -34,9 +34,9 @@ class ListPlaybookAuditLogsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: tatal count
+        :param count: 总条数
         :type count: int
-        :param audit_logs: list of informations of Audit Log Info
+        :param audit_logs: 审计日志列表信息
         :type audit_logs: list[:class:`huaweicloudsdksecmaster.v2.AuditLogInfo`]
         :param x_request_id: 
         :type x_request_id: str
@@ -60,7 +60,7 @@ class ListPlaybookAuditLogsResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListPlaybookAuditLogsResponse.
 
-        tatal count
+        总条数
 
         :return: The count of this ListPlaybookAuditLogsResponse.
         :rtype: int
@@ -71,7 +71,7 @@ class ListPlaybookAuditLogsResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListPlaybookAuditLogsResponse.
 
-        tatal count
+        总条数
 
         :param count: The count of this ListPlaybookAuditLogsResponse.
         :type count: int
@@ -82,7 +82,7 @@ class ListPlaybookAuditLogsResponse(SdkResponse):
     def audit_logs(self):
         """Gets the audit_logs of this ListPlaybookAuditLogsResponse.
 
-        list of informations of Audit Log Info
+        审计日志列表信息
 
         :return: The audit_logs of this ListPlaybookAuditLogsResponse.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.AuditLogInfo`]
@@ -93,7 +93,7 @@ class ListPlaybookAuditLogsResponse(SdkResponse):
     def audit_logs(self, audit_logs):
         """Sets the audit_logs of this ListPlaybookAuditLogsResponse.
 
-        list of informations of Audit Log Info
+        审计日志列表信息
 
         :param audit_logs: The audit_logs of this ListPlaybookAuditLogsResponse.
         :type audit_logs: list[:class:`huaweicloudsdksecmaster.v2.AuditLogInfo`]

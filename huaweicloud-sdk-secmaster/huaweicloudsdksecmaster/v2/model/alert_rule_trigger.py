@@ -37,13 +37,13 @@ class AlertRuleTrigger:
 
         The model defined in huaweicloud sdk
 
-        :param mode: mode. COUNT.
+        :param mode: 模式，数量。Mode. COUNT.
         :type mode: str
-        :param operator: operator. EQ equal, NE not equal, GT greater than, LT less than.
+        :param operator: 操作符，等于、不等于、大于、小于。 operator. EQ equal, NE not equal, GT greater than, LT less than.
         :type operator: str
         :param expression: expression
         :type expression: str
-        :param severity: severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        :param severity: 严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
         :type severity: str
         :param accumulated_times: accumulated_times
         :type accumulated_times: int
@@ -72,7 +72,7 @@ class AlertRuleTrigger:
     def mode(self):
         """Gets the mode of this AlertRuleTrigger.
 
-        mode. COUNT.
+        模式，数量。Mode. COUNT.
 
         :return: The mode of this AlertRuleTrigger.
         :rtype: str
@@ -83,7 +83,7 @@ class AlertRuleTrigger:
     def mode(self, mode):
         """Sets the mode of this AlertRuleTrigger.
 
-        mode. COUNT.
+        模式，数量。Mode. COUNT.
 
         :param mode: The mode of this AlertRuleTrigger.
         :type mode: str
@@ -94,7 +94,7 @@ class AlertRuleTrigger:
     def operator(self):
         """Gets the operator of this AlertRuleTrigger.
 
-        operator. EQ equal, NE not equal, GT greater than, LT less than.
+        操作符，等于、不等于、大于、小于。 operator. EQ equal, NE not equal, GT greater than, LT less than.
 
         :return: The operator of this AlertRuleTrigger.
         :rtype: str
@@ -105,7 +105,7 @@ class AlertRuleTrigger:
     def operator(self, operator):
         """Sets the operator of this AlertRuleTrigger.
 
-        operator. EQ equal, NE not equal, GT greater than, LT less than.
+        操作符，等于、不等于、大于、小于。 operator. EQ equal, NE not equal, GT greater than, LT less than.
 
         :param operator: The operator of this AlertRuleTrigger.
         :type operator: str
@@ -138,7 +138,7 @@ class AlertRuleTrigger:
     def severity(self):
         """Gets the severity of this AlertRuleTrigger.
 
-        severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
         :return: The severity of this AlertRuleTrigger.
         :rtype: str
@@ -149,7 +149,7 @@ class AlertRuleTrigger:
     def severity(self, severity):
         """Sets the severity of this AlertRuleTrigger.
 
-        severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
         :param severity: The severity of this AlertRuleTrigger.
         :type severity: str

@@ -2463,6 +2463,185 @@ class CloudIDEAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def start_chat_async(self, request):
+        """start_chat_codebreezetsbot_v1_devmind_tsbot_start_chat_post接口
+
+        开启对话
+        :param data: example: {\&quot;user_type\&quot;: \&quot;IDE\&quot;}
+        :return:
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StartChat
+        :type request: :class:`huaweicloudsdkcloudide.v2.StartChatRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.StartChatResponse`
+        """
+        return self._start_chat_with_http_info(request)
+
+    def _start_chat_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/codebreezetsbot/devmind/tsbot/start-chat',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='StartChatResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def sync_chat_async(self, request):
+        """async_chat_codebreezetsbot_v1_devmind_tsbot_async_chat_post接口
+
+        异步聊天请求
+        :param data: ChatRequestMessage
+        :return:
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SyncChat
+        :type request: :class:`huaweicloudsdkcloudide.v2.SyncChatRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.SyncChatResponse`
+        """
+        return self._sync_chat_with_http_info(request)
+
+    def _sync_chat_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/codebreezetsbot/devmind/tsbot/async-chat',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SyncChatResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def sync_get_chat_result_async(self, request):
+        """async_get_chat_result_codebreezetsbot_v1_devmind_tsbot_async_get_chat_result_post接口
+
+        异步聊天获取结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SyncGetChatResult
+        :type request: :class:`huaweicloudsdkcloudide.v2.SyncGetChatResultRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.SyncGetChatResultResponse`
+        """
+        return self._sync_get_chat_result_with_http_info(request)
+
+    def _sync_get_chat_result_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/codebreezetsbot/devmind/tsbot/async-get-chat-result',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='SyncGetChatResultResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):

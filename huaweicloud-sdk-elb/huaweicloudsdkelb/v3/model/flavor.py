@@ -45,15 +45,15 @@ class Flavor:
         :type id: str
         :param info: 
         :type info: :class:`huaweicloudsdkelb.v3.FlavorInfo`
-        :param name: 规格名称。
+        :param name: 规格名称。  规格名称与控制台展示的对应关系如下：   - L4_flavor.elb.s1.small: 小型 I   - L4_flavor.elb.s2.small: 小型 II   - L4_flavor.elb.s1.medium: 中型 I   - L4_flavor.elb.s2.medium: 中型 II   - L4_flavor.elb.s1.large: 大型 I   - L4_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.s1.small: 小型 I   - L7_flavor.elb.s2.small: 小型 II   - L7_flavor.elb.s1.medium: 中型 I   - L7_flavor.elb.s2.medium: 中型 II   - L7_flavor.elb.s1.large: 大型 I   - L7_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.s1.extra-large: 超大型 I   - L7_flavor.elb.s2.extra-large: 超大型 II
         :type name: str
         :param shared: 是否公共规格。  取值： - true表示公共规格，所有租户可见。 - false表示私有规格，为当前租户所有。
         :type shared: bool
         :param project_id: 项目ID。
         :type project_id: str
-        :param type: 规格类别。  取值： - L4和L7 表示四层和七层flavor。 - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max和L7_elastic_max 表示弹性扩缩容实例的上限规格。
+        :param type: 规格类别。  取值： - L4和L7 表示四层和七层flavor。 [- L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max和L7_elastic_max 表示弹性扩缩容实例的上限规格。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,hcso_dt)
         :type type: str
-        :param flavor_sold_out: 是否售罄。  取值： - true：已售罄，将无法购买该规格的LB。 - false：未售罄，可购买该规格的LB。
+        :param flavor_sold_out: [是否售罄。  取值： - true：已售罄，将无法购买该规格的LB。 - false：未售罄，可购买该规格的LB。](tag:hws)  [是否可用。  取值： - true：不可用，将无法创建该规格的LB。 - false：可用，可创建该规格的LB。](tag:hws_ocb,ocb,fcs,hws_hk,ctc,hcs,cmcc,tm,g42,hk_g42,hws_eu,hcso_dt,dt,dt_test)
         :type flavor_sold_out: bool
         """
         
@@ -120,7 +120,7 @@ class Flavor:
     def name(self):
         """Gets the name of this Flavor.
 
-        规格名称。
+        规格名称。  规格名称与控制台展示的对应关系如下：   - L4_flavor.elb.s1.small: 小型 I   - L4_flavor.elb.s2.small: 小型 II   - L4_flavor.elb.s1.medium: 中型 I   - L4_flavor.elb.s2.medium: 中型 II   - L4_flavor.elb.s1.large: 大型 I   - L4_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.s1.small: 小型 I   - L7_flavor.elb.s2.small: 小型 II   - L7_flavor.elb.s1.medium: 中型 I   - L7_flavor.elb.s2.medium: 中型 II   - L7_flavor.elb.s1.large: 大型 I   - L7_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.s1.extra-large: 超大型 I   - L7_flavor.elb.s2.extra-large: 超大型 II
 
         :return: The name of this Flavor.
         :rtype: str
@@ -131,7 +131,7 @@ class Flavor:
     def name(self, name):
         """Sets the name of this Flavor.
 
-        规格名称。
+        规格名称。  规格名称与控制台展示的对应关系如下：   - L4_flavor.elb.s1.small: 小型 I   - L4_flavor.elb.s2.small: 小型 II   - L4_flavor.elb.s1.medium: 中型 I   - L4_flavor.elb.s2.medium: 中型 II   - L4_flavor.elb.s1.large: 大型 I   - L4_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.s1.small: 小型 I   - L7_flavor.elb.s2.small: 小型 II   - L7_flavor.elb.s1.medium: 中型 I   - L7_flavor.elb.s2.medium: 中型 II   - L7_flavor.elb.s1.large: 大型 I   - L7_flavor.elb.s2.large: 大型 II   - L7_flavor.elb.s1.extra-large: 超大型 I   - L7_flavor.elb.s2.extra-large: 超大型 II
 
         :param name: The name of this Flavor.
         :type name: str
@@ -186,7 +186,7 @@ class Flavor:
     def type(self):
         """Gets the type of this Flavor.
 
-        规格类别。  取值： - L4和L7 表示四层和七层flavor。 - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max和L7_elastic_max 表示弹性扩缩容实例的上限规格。
+        规格类别。  取值： - L4和L7 表示四层和七层flavor。 [- L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max和L7_elastic_max 表示弹性扩缩容实例的上限规格。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,hcso_dt)
 
         :return: The type of this Flavor.
         :rtype: str
@@ -197,7 +197,7 @@ class Flavor:
     def type(self, type):
         """Sets the type of this Flavor.
 
-        规格类别。  取值： - L4和L7 表示四层和七层flavor。 - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max和L7_elastic_max 表示弹性扩缩容实例的上限规格。
+        规格类别。  取值： - L4和L7 表示四层和七层flavor。 [- L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max和L7_elastic_max 表示弹性扩缩容实例的上限规格。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,hcso_dt)
 
         :param type: The type of this Flavor.
         :type type: str
@@ -208,7 +208,7 @@ class Flavor:
     def flavor_sold_out(self):
         """Gets the flavor_sold_out of this Flavor.
 
-        是否售罄。  取值： - true：已售罄，将无法购买该规格的LB。 - false：未售罄，可购买该规格的LB。
+        [是否售罄。  取值： - true：已售罄，将无法购买该规格的LB。 - false：未售罄，可购买该规格的LB。](tag:hws)  [是否可用。  取值： - true：不可用，将无法创建该规格的LB。 - false：可用，可创建该规格的LB。](tag:hws_ocb,ocb,fcs,hws_hk,ctc,hcs,cmcc,tm,g42,hk_g42,hws_eu,hcso_dt,dt,dt_test)
 
         :return: The flavor_sold_out of this Flavor.
         :rtype: bool
@@ -219,7 +219,7 @@ class Flavor:
     def flavor_sold_out(self, flavor_sold_out):
         """Sets the flavor_sold_out of this Flavor.
 
-        是否售罄。  取值： - true：已售罄，将无法购买该规格的LB。 - false：未售罄，可购买该规格的LB。
+        [是否售罄。  取值： - true：已售罄，将无法购买该规格的LB。 - false：未售罄，可购买该规格的LB。](tag:hws)  [是否可用。  取值： - true：不可用，将无法创建该规格的LB。 - false：可用，可创建该规格的LB。](tag:hws_ocb,ocb,fcs,hws_hk,ctc,hcs,cmcc,tm,g42,hk_g42,hws_eu,hcso_dt,dt,dt_test)
 
         :param flavor_sold_out: The flavor_sold_out of this Flavor.
         :type flavor_sold_out: bool

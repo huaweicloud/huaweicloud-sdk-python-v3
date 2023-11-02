@@ -21,7 +21,7 @@ class CreateRocketMqMigrationTaskRequest:
         'overwrite': 'str',
         'name': 'str',
         'type': 'str',
-        'body': 'str'
+        'body': 'dict(str, object)'
     }
 
     attribute_map = {
@@ -45,8 +45,8 @@ class CreateRocketMqMigrationTaskRequest:
         :type name: str
         :param type: 迁移任务类型，分为自建RocketMQ上云(rocketmq)、自建RabbitMQ上云(rabbitToRocket)
         :type type: str
-        :param body: Body of the CreateRocketMqMigrationTaskRequest
-        :type body: str
+        :param body: 元数据json文件。
+        :type body: dict(str, object)
         """
         
         
@@ -157,8 +157,10 @@ class CreateRocketMqMigrationTaskRequest:
     def body(self):
         """Gets the body of this CreateRocketMqMigrationTaskRequest.
 
+        元数据json文件。
+
         :return: The body of this CreateRocketMqMigrationTaskRequest.
-        :rtype: str
+        :rtype: dict(str, object)
         """
         return self._body
 
@@ -166,8 +168,10 @@ class CreateRocketMqMigrationTaskRequest:
     def body(self, body):
         """Sets the body of this CreateRocketMqMigrationTaskRequest.
 
+        元数据json文件。
+
         :param body: The body of this CreateRocketMqMigrationTaskRequest.
-        :type body: str
+        :type body: dict(str, object)
         """
         self._body = body
 
