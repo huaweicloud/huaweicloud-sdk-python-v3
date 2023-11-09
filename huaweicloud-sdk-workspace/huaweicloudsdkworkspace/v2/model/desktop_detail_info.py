@@ -21,6 +21,8 @@ class DesktopDetailInfo:
         'computer_name': 'str',
         'addresses': 'dict(str, list[AddressInfo])',
         'ip_addresses': 'list[str]',
+        'user_list': 'list[str]',
+        'user_group_list': 'list[str]',
         'desktop_type': 'str',
         'metadata': 'dict(str, str)',
         'flavor': 'FlavorInfo',
@@ -30,6 +32,7 @@ class DesktopDetailInfo:
         'security_groups': 'list[SecurityGroupInfo]',
         'login_status': 'str',
         'user_name': 'str',
+        'attach_user_infos': 'list[AttachInstancesUserInfo]',
         'product_id': 'str',
         'root_volume': 'VolumeDetail',
         'data_volumes': 'list[VolumeDetail]',
@@ -44,7 +47,9 @@ class DesktopDetailInfo:
         'order_id': 'str',
         'tags': 'list[Tag]',
         'internet_mode': 'str',
-        'is_attaching_eip': 'bool'
+        'is_attaching_eip': 'bool',
+        'attach_state': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -52,6 +57,8 @@ class DesktopDetailInfo:
         'computer_name': 'computer_name',
         'addresses': 'addresses',
         'ip_addresses': 'ip_addresses',
+        'user_list': 'user_list',
+        'user_group_list': 'user_group_list',
         'desktop_type': 'desktop_type',
         'metadata': 'metadata',
         'flavor': 'flavor',
@@ -61,6 +68,7 @@ class DesktopDetailInfo:
         'security_groups': 'security_groups',
         'login_status': 'login_status',
         'user_name': 'user_name',
+        'attach_user_infos': 'attach_user_infos',
         'product_id': 'product_id',
         'root_volume': 'root_volume',
         'data_volumes': 'data_volumes',
@@ -75,10 +83,12 @@ class DesktopDetailInfo:
         'order_id': 'order_id',
         'tags': 'tags',
         'internet_mode': 'internet_mode',
-        'is_attaching_eip': 'is_attaching_eip'
+        'is_attaching_eip': 'is_attaching_eip',
+        'attach_state': 'attach_state',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, desktop_id=None, computer_name=None, addresses=None, ip_addresses=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, created=None, security_groups=None, login_status=None, user_name=None, product_id=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None, internet_mode=None, is_attaching_eip=None):
+    def __init__(self, desktop_id=None, computer_name=None, addresses=None, ip_addresses=None, user_list=None, user_group_list=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None, internet_mode=None, is_attaching_eip=None, attach_state=None, enterprise_project_id=None):
         """DesktopDetailInfo
 
         The model defined in huaweicloud sdk
@@ -91,6 +101,10 @@ class DesktopDetailInfo:
         :type addresses: dict(str, list[AddressInfo])
         :param ip_addresses: IP地址列表。
         :type ip_addresses: list[str]
+        :param user_list: 用户列表
+        :type user_list: list[str]
+        :param user_group_list: 用户组列表
+        :type user_group_list: list[str]
         :param desktop_type: 桌面类型。  - DEDICATED：专属桌面。
         :type desktop_type: str
         :param metadata: 桌面元数据。  - charging_mode 周期套餐标识，1表示包周期，0表示按需。 - image_name 创建桌面的镜像名称。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
@@ -109,6 +123,8 @@ class DesktopDetailInfo:
         :type login_status: str
         :param user_name: 桌面所属用户。
         :type user_name: str
+        :param attach_user_infos: 桌面已分配的用户信息列表。
+        :type attach_user_infos: list[:class:`huaweicloudsdkworkspace.v2.AttachInstancesUserInfo`]
         :param product_id: 产品ID。
         :type product_id: str
         :param root_volume: 
@@ -139,6 +155,10 @@ class DesktopDetailInfo:
         :type internet_mode: str
         :param is_attaching_eip: 桌面是否正在绑定EIP。
         :type is_attaching_eip: bool
+        :param attach_state: 分配状态。 - ATTACHED：已分配。 - UNATTACH：未分配 表示未关联。 - DEATTACHED：已解分配。 - ATTACHING：分配中。 - DEATTACHING：解分配中。 - ATTACHFAIL：分配失败。 - DEATTACHFAIL：解分配失败。 - WAITING：等待被分配中,描述从批量分配（解分配）下发到转入分配（解分配）的中间状态 同时方便单个关联流程的状态独立性。 - ATTACH_FAIL_CAN_ATTACH_AGAIN：分配失败,还可以再关联。 - DEATTACH_FAIL_CAN_DEATTACH_AGAIN：解分配失败,还可以再解分配。
+        :type attach_state: str
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
         """
         
         
@@ -147,6 +167,8 @@ class DesktopDetailInfo:
         self._computer_name = None
         self._addresses = None
         self._ip_addresses = None
+        self._user_list = None
+        self._user_group_list = None
         self._desktop_type = None
         self._metadata = None
         self._flavor = None
@@ -156,6 +178,7 @@ class DesktopDetailInfo:
         self._security_groups = None
         self._login_status = None
         self._user_name = None
+        self._attach_user_infos = None
         self._product_id = None
         self._root_volume = None
         self._data_volumes = None
@@ -171,6 +194,8 @@ class DesktopDetailInfo:
         self._tags = None
         self._internet_mode = None
         self._is_attaching_eip = None
+        self._attach_state = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if desktop_id is not None:
@@ -181,6 +206,10 @@ class DesktopDetailInfo:
             self.addresses = addresses
         if ip_addresses is not None:
             self.ip_addresses = ip_addresses
+        if user_list is not None:
+            self.user_list = user_list
+        if user_group_list is not None:
+            self.user_group_list = user_group_list
         if desktop_type is not None:
             self.desktop_type = desktop_type
         if metadata is not None:
@@ -199,6 +228,8 @@ class DesktopDetailInfo:
             self.login_status = login_status
         if user_name is not None:
             self.user_name = user_name
+        if attach_user_infos is not None:
+            self.attach_user_infos = attach_user_infos
         if product_id is not None:
             self.product_id = product_id
         if root_volume is not None:
@@ -229,6 +260,10 @@ class DesktopDetailInfo:
             self.internet_mode = internet_mode
         if is_attaching_eip is not None:
             self.is_attaching_eip = is_attaching_eip
+        if attach_state is not None:
+            self.attach_state = attach_state
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def desktop_id(self):
@@ -317,6 +352,50 @@ class DesktopDetailInfo:
         :type ip_addresses: list[str]
         """
         self._ip_addresses = ip_addresses
+
+    @property
+    def user_list(self):
+        """Gets the user_list of this DesktopDetailInfo.
+
+        用户列表
+
+        :return: The user_list of this DesktopDetailInfo.
+        :rtype: list[str]
+        """
+        return self._user_list
+
+    @user_list.setter
+    def user_list(self, user_list):
+        """Sets the user_list of this DesktopDetailInfo.
+
+        用户列表
+
+        :param user_list: The user_list of this DesktopDetailInfo.
+        :type user_list: list[str]
+        """
+        self._user_list = user_list
+
+    @property
+    def user_group_list(self):
+        """Gets the user_group_list of this DesktopDetailInfo.
+
+        用户组列表
+
+        :return: The user_group_list of this DesktopDetailInfo.
+        :rtype: list[str]
+        """
+        return self._user_group_list
+
+    @user_group_list.setter
+    def user_group_list(self, user_group_list):
+        """Sets the user_group_list of this DesktopDetailInfo.
+
+        用户组列表
+
+        :param user_group_list: The user_group_list of this DesktopDetailInfo.
+        :type user_group_list: list[str]
+        """
+        self._user_group_list = user_group_list
 
     @property
     def desktop_type(self):
@@ -511,6 +590,28 @@ class DesktopDetailInfo:
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def attach_user_infos(self):
+        """Gets the attach_user_infos of this DesktopDetailInfo.
+
+        桌面已分配的用户信息列表。
+
+        :return: The attach_user_infos of this DesktopDetailInfo.
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.AttachInstancesUserInfo`]
+        """
+        return self._attach_user_infos
+
+    @attach_user_infos.setter
+    def attach_user_infos(self, attach_user_infos):
+        """Sets the attach_user_infos of this DesktopDetailInfo.
+
+        桌面已分配的用户信息列表。
+
+        :param attach_user_infos: The attach_user_infos of this DesktopDetailInfo.
+        :type attach_user_infos: list[:class:`huaweicloudsdkworkspace.v2.AttachInstancesUserInfo`]
+        """
+        self._attach_user_infos = attach_user_infos
 
     @property
     def product_id(self):
@@ -833,6 +934,50 @@ class DesktopDetailInfo:
         :type is_attaching_eip: bool
         """
         self._is_attaching_eip = is_attaching_eip
+
+    @property
+    def attach_state(self):
+        """Gets the attach_state of this DesktopDetailInfo.
+
+        分配状态。 - ATTACHED：已分配。 - UNATTACH：未分配 表示未关联。 - DEATTACHED：已解分配。 - ATTACHING：分配中。 - DEATTACHING：解分配中。 - ATTACHFAIL：分配失败。 - DEATTACHFAIL：解分配失败。 - WAITING：等待被分配中,描述从批量分配（解分配）下发到转入分配（解分配）的中间状态 同时方便单个关联流程的状态独立性。 - ATTACH_FAIL_CAN_ATTACH_AGAIN：分配失败,还可以再关联。 - DEATTACH_FAIL_CAN_DEATTACH_AGAIN：解分配失败,还可以再解分配。
+
+        :return: The attach_state of this DesktopDetailInfo.
+        :rtype: str
+        """
+        return self._attach_state
+
+    @attach_state.setter
+    def attach_state(self, attach_state):
+        """Sets the attach_state of this DesktopDetailInfo.
+
+        分配状态。 - ATTACHED：已分配。 - UNATTACH：未分配 表示未关联。 - DEATTACHED：已解分配。 - ATTACHING：分配中。 - DEATTACHING：解分配中。 - ATTACHFAIL：分配失败。 - DEATTACHFAIL：解分配失败。 - WAITING：等待被分配中,描述从批量分配（解分配）下发到转入分配（解分配）的中间状态 同时方便单个关联流程的状态独立性。 - ATTACH_FAIL_CAN_ATTACH_AGAIN：分配失败,还可以再关联。 - DEATTACH_FAIL_CAN_DEATTACH_AGAIN：解分配失败,还可以再解分配。
+
+        :param attach_state: The attach_state of this DesktopDetailInfo.
+        :type attach_state: str
+        """
+        self._attach_state = attach_state
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this DesktopDetailInfo.
+
+        企业项目ID
+
+        :return: The enterprise_project_id of this DesktopDetailInfo.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this DesktopDetailInfo.
+
+        企业项目ID
+
+        :param enterprise_project_id: The enterprise_project_id of this DesktopDetailInfo.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -29,7 +29,9 @@ class BackupRecordResponse:
         'error_code': 'str',
         'remark': 'str',
         'status': 'str',
-        'is_support_restore': 'str'
+        'is_support_restore': 'str',
+        'backup_format': 'str',
+        'execution_at': 'str'
     }
 
     attribute_map = {
@@ -45,10 +47,12 @@ class BackupRecordResponse:
         'error_code': 'error_code',
         'remark': 'remark',
         'status': 'status',
-        'is_support_restore': 'is_support_restore'
+        'is_support_restore': 'is_support_restore',
+        'backup_format': 'backup_format',
+        'execution_at': 'execution_at'
     }
 
-    def __init__(self, backup_id=None, period=None, backup_name=None, instance_id=None, size=None, backup_type=None, created_at=None, updated_at=None, progress=None, error_code=None, remark=None, status=None, is_support_restore=None):
+    def __init__(self, backup_id=None, period=None, backup_name=None, instance_id=None, size=None, backup_type=None, created_at=None, updated_at=None, progress=None, error_code=None, remark=None, status=None, is_support_restore=None, backup_format=None, execution_at=None):
         """BackupRecordResponse
 
         The model defined in huaweicloud sdk
@@ -79,6 +83,10 @@ class BackupRecordResponse:
         :type status: str
         :param is_support_restore: 是否可以进行恢复操作，取值为TRUE或FALSE。
         :type is_support_restore: str
+        :param backup_format: 备份类型。
+        :type backup_format: str
+        :param execution_at: 执行时间.
+        :type execution_at: str
         """
         
         
@@ -96,6 +104,8 @@ class BackupRecordResponse:
         self._remark = None
         self._status = None
         self._is_support_restore = None
+        self._backup_format = None
+        self._execution_at = None
         self.discriminator = None
 
         if backup_id is not None:
@@ -124,6 +134,10 @@ class BackupRecordResponse:
             self.status = status
         if is_support_restore is not None:
             self.is_support_restore = is_support_restore
+        if backup_format is not None:
+            self.backup_format = backup_format
+        if execution_at is not None:
+            self.execution_at = execution_at
 
     @property
     def backup_id(self):
@@ -410,6 +424,50 @@ class BackupRecordResponse:
         :type is_support_restore: str
         """
         self._is_support_restore = is_support_restore
+
+    @property
+    def backup_format(self):
+        """Gets the backup_format of this BackupRecordResponse.
+
+        备份类型。
+
+        :return: The backup_format of this BackupRecordResponse.
+        :rtype: str
+        """
+        return self._backup_format
+
+    @backup_format.setter
+    def backup_format(self, backup_format):
+        """Sets the backup_format of this BackupRecordResponse.
+
+        备份类型。
+
+        :param backup_format: The backup_format of this BackupRecordResponse.
+        :type backup_format: str
+        """
+        self._backup_format = backup_format
+
+    @property
+    def execution_at(self):
+        """Gets the execution_at of this BackupRecordResponse.
+
+        执行时间.
+
+        :return: The execution_at of this BackupRecordResponse.
+        :rtype: str
+        """
+        return self._execution_at
+
+    @execution_at.setter
+    def execution_at(self, execution_at):
+        """Sets the execution_at of this BackupRecordResponse.
+
+        执行时间.
+
+        :param execution_at: The execution_at of this BackupRecordResponse.
+        :type execution_at: str
+        """
+        self._execution_at = execution_at
 
     def to_dict(self):
         """Returns the model properties as a dict"""

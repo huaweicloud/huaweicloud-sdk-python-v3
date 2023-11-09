@@ -18,7 +18,6 @@ class MeshCluster:
 
     openapi_types = {
         'cluster_id': 'str',
-        'region': 'str',
         'project_id': 'str',
         'injection': 'InjectionConfig',
         'installation': 'InstallationConfig'
@@ -26,21 +25,18 @@ class MeshCluster:
 
     attribute_map = {
         'cluster_id': 'clusterID',
-        'region': 'region',
         'project_id': 'projectID',
         'injection': 'injection',
         'installation': 'installation'
     }
 
-    def __init__(self, cluster_id=None, region=None, project_id=None, injection=None, installation=None):
+    def __init__(self, cluster_id=None, project_id=None, injection=None, installation=None):
         """MeshCluster
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 集群ID，资源唯一标识，通过该ID查询需要添加的集群
         :type cluster_id: str
-        :param region: 集群所在的Region
-        :type region: str
         :param project_id: 集群所属的projectID
         :type project_id: str
         :param injection: 
@@ -52,14 +48,12 @@ class MeshCluster:
         
 
         self._cluster_id = None
-        self._region = None
         self._project_id = None
         self._injection = None
         self._installation = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
-        self.region = region
         self.project_id = project_id
         if injection is not None:
             self.injection = injection
@@ -86,28 +80,6 @@ class MeshCluster:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
-
-    @property
-    def region(self):
-        """Gets the region of this MeshCluster.
-
-        集群所在的Region
-
-        :return: The region of this MeshCluster.
-        :rtype: str
-        """
-        return self._region
-
-    @region.setter
-    def region(self, region):
-        """Sets the region of this MeshCluster.
-
-        集群所在的Region
-
-        :param region: The region of this MeshCluster.
-        :type region: str
-        """
-        self._region = region
 
     @property
     def project_id(self):

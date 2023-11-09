@@ -35,7 +35,7 @@ class FieldSelector:
 
         :param key: Key值
         :type key: str
-        :param operator: 可以在字段选择器中使用&#x3D;、&#x3D;&#x3D;和!&#x3D; 操作符（&#x3D; 和 &#x3D;&#x3D; 意思相同）
+        :param operator: 操作符，仅支持取值\&quot;In\&quot;
         :type operator: str
         :param values: Value值
         :type values: list[str]
@@ -81,7 +81,7 @@ class FieldSelector:
     def operator(self):
         """Gets the operator of this FieldSelector.
 
-        可以在字段选择器中使用=、==和!= 操作符（= 和 == 意思相同）
+        操作符，仅支持取值\"In\"
 
         :return: The operator of this FieldSelector.
         :rtype: str
@@ -92,7 +92,7 @@ class FieldSelector:
     def operator(self, operator):
         """Sets the operator of this FieldSelector.
 
-        可以在字段选择器中使用=、==和!= 操作符（= 和 == 意思相同）
+        操作符，仅支持取值\"In\"
 
         :param operator: The operator of this FieldSelector.
         :type operator: str

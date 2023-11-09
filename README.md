@@ -66,12 +66,15 @@ python setup.py install
 
 - The following example shows how to query a list of VPC in a specific region, you need to substitute your
   real `{Service}Client` for `VpcClient` in actual use.
-- Substitute the values for `{your ak string}`, `{your sk string}`, `{your endpoint string}` and `{your project id}`.
+- Hard-coding ak and sk for authentication into the code has a great security risk. It is recommended to store the ciphertext in the profile or environment variables and decrypt it when used to ensure security.
+- In this example, ak and sk are stored in environment variables. Please configure the environment variables `HUAWEICLOUD_SDK_AK` and `HUAWEICLOUD_SDK_SK` before running this example.
 
 **Simplified Demo**
 
 ```python
 # coding: utf-8
+
+import os
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 from huaweicloudsdkvpc.v2 import ListVpcsRequest, VpcClient
@@ -80,7 +83,9 @@ from huaweicloudsdkcore.exceptions import exceptions
 
 if __name__ == "__main__":
     # Configure authentication
-    credentials = BasicCredentials("{your ak string}", "{your sk string}")
+    # Do not hard-code authentication information into the code, as this may pose a security risk
+    # Authentication can be configured through environment variables and other methods. Please refer to Chapter 2.4 Authentication Management
+    credentials = BasicCredentials(os.environ.get("HUAWEICLOUD_SDK_AK"), os.environ.get("HUAWEICLOUD_SDK_SK"))
 
     # Create a service client
     client = VpcClient.new_builder() \
@@ -104,6 +109,8 @@ if __name__ == "__main__":
 
 ```python
 # coding: utf-8
+
+import os
 import logging
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
@@ -115,8 +122,10 @@ from huaweicloudsdkcore.exceptions import exceptions
 
 if __name__ == "__main__":
     # Configure authentication
+    # Do not hard-code authentication information into the code, as this may pose a security risk
+    # Authentication can be configured through environment variables and other methods. Please refer to Chapter 2.4 Authentication Management
     # If project_id is not filled in, the SDK will automatically call the IAM service to query the project id corresponding to the region.
-    credentials = BasicCredentials("{your ak string}", "{your sk string}", project_id="{your projectId string}") \
+    credentials = BasicCredentials(os.environ.get("HUAWEICLOUD_SDK_AK"), os.environ.get("HUAWEICLOUD_SDK_SK"), project_id="{your projectId string}") \
             .with_iam_endpoint("https://iam.cn-north-4.myhuaweicloud.com")  # Configure the SDK built-in IAM service endpoint, default is https://iam.myhuaweicloud.com
 
     # Use default configuration
@@ -128,11 +137,13 @@ if __name__ == "__main__":
     # The default connection timeout is 60 seconds, the default read timeout is 120 seconds
     http_config.timeout = (60, 120)
     # Configure proxy as needed
+    # Replace the proxy protocol, host and port in the example according to the actual situation
     http_config.proxy_protocol = 'http'
     http_config.proxy_host = 'proxy.huaweicloud.com'
     http_config.proxy_port = 80
-    http_config.proxy_user = 'username'
-    http_config.proxy_password = 'password'
+    # Configure the username and password if the proxy requires authentication
+    http_config.proxy_user = os.environ.get("PROXY_USERNAME")
+    http_config.proxy_password = os.environ.get("PROXY_PASSWORD")
 
     # The HTTP handler is used to print the request and response, do not use it in the production environment
     def response_handler(**kwargs):
@@ -238,11 +249,13 @@ client = VpcClient.new_builder() \
 ```python
 http_config = HttpConfig.get_default_config()
 # Use Proxy if needed
+# Replace the proxy protocol, host and port in the example according to the actual situation
 http_config.proxy_protocol = 'http'
 http_config.proxy_host = 'proxy.huaweicloud.com'
 http_config.proxy_port = 80
-http_config.proxy_user = 'username'
-http_config.proxy_password = 'password'
+# Configure the username and password if the proxy requires authentication
+http_config.proxy_user = os.environ.get("PROXY_USERNAME")
+http_config.proxy_password = os.environ.get("PROXY_PASSWORD")
 
 client = VpcClient.new_builder() \
     .with_http_config(http_config) \
@@ -305,9 +318,17 @@ The following authentications are supported:
 
 ```python
 # Regional services
+ak = os.environ.get("HUAWEICLOUD_SDK_AK")
+sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+project_id = "{your projectId string}"
+
 basic_credentials = BasicCredentials(ak, sk, project_id)
 
 # Global services
+ak = os.environ.get("HUAWEICLOUD_SDK_AK")
+sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+domain_id = "{your domainId string}"
+
 global_credentials = GlobalCredentials(ak, sk, domain_id)
 ```
 
@@ -344,9 +365,19 @@ After the temporary AK&SK&SecurityToken is successfully obtained, you can use th
 
 ```python
 # Regional services
+ak = os.environ.get("HUAWEICLOUD_SDK_AK")
+sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+security_token = os.environ.get("HUAWEICLOUD_SDK_SECURITY_TOKEN")
+project_id = "{your projectId string}"
+
 basic_credentials = BasicCredentials(ak, sk, project_id).with_security_token(security_token)
 
 # Global services
+ak = os.environ.get("HUAWEICLOUD_SDK_AK")
+sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+security_token = os.environ.get("HUAWEICLOUD_SDK_SECURITY_TOKEN")
+domain_id = "{your domainId string}"
+
 global_credentials = GlobalCredentials(ak, sk, domain_id).with_security_token(security_token)
 ```
 
@@ -602,6 +633,9 @@ There are two ways to initialize the {Service}Client, you could choose one you p
 endpoint = "https://vpc.cn-north-4.myhuaweicloud.com"
 
 # Initialize the credentials, you should provide project_id or domain_id in this way, take initializing BasicCredentials for example
+ak = os.environ.get("HUAWEICLOUD_SDK_AK")
+sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+project_id = "{your projectId string}"
 basic_credentials = BasicCredentials(ak, sk, project_id)
 
 # Initialize specified service client instance, take initializing the regional service VPC's VpcClient for example
@@ -622,11 +656,14 @@ client = VpcClient.new_builder() \
 #### 3.2 Initialize the {Service}Client with specified Region **(Recommended)** [:top:](#user-manual-top)
 
 ```python
+import os
 # dependency for region module
 from huaweicloudsdkiam.v3.region.iam_region import IamRegion
 
 # Initialize the credentials, project_id or domain_id could be unassigned in this situation
 # Take initializing GlobalCredentials for example
+ak = os.environ.get("HUAWEICLOUD_SDK_AK")
+sk = os.environ.get("HUAWEICLOUD_SDK_SK")
 global_credentials = GlobalCredentials(ak, sk)
 
 # Initialize specified service client instance
@@ -681,8 +718,12 @@ set HUAWEICLOUD_SDK_IAM_ENDPOINT=https://iam.cn-north-4.myhuaweicloud.com
 This configuration is only valid for a credential, and it will override the global configuration
 
 ```python
+import os
+
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 
+ak = os.environ.get("HUAWEICLOUD_SDK_AK")
+sk = os.environ.get("HUAWEICLOUD_SDK_SK")
 iam_endpoint = "https://iam.cn-north-4.myhuaweicloud.com"
 credentials = BasicCredentials(ak, sk).with_iam_endpoint(iam_endpoint)
 ```
@@ -910,6 +951,9 @@ Take the interface `CreateImageWatermark` of the service `Data Security Center` 
 
 ```python
 # coding: utf-8
+
+import os
+
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.http.http_config import HttpConfig
@@ -942,8 +986,8 @@ def create_image_watermark(client):
 
 
 if __name__ == "__main__":
-    ak = "{your ak string}"
-    sk = "{your sk string}"
+    ak = os.environ.get("HUAWEICLOUD_SDK_AK")
+    sk = os.environ.get("HUAWEICLOUD_SDK_SK")
     endpoint = "{your endpoint}"
     project_id = "{your project id}"
     config = HttpConfig.get_default_config()

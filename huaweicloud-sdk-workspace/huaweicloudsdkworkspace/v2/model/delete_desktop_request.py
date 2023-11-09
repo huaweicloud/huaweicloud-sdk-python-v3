@@ -19,16 +19,18 @@ class DeleteDesktopRequest:
     openapi_types = {
         'desktop_id': 'str',
         'delete_users': 'bool',
-        'email_notification': 'bool'
+        'email_notification': 'bool',
+        'is_force_delete': 'bool'
     }
 
     attribute_map = {
         'desktop_id': 'desktop_id',
         'delete_users': 'delete_users',
-        'email_notification': 'email_notification'
+        'email_notification': 'email_notification',
+        'is_force_delete': 'is_force_delete'
     }
 
-    def __init__(self, desktop_id=None, delete_users=None, email_notification=None):
+    def __init__(self, desktop_id=None, delete_users=None, email_notification=None, is_force_delete=None):
         """DeleteDesktopRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class DeleteDesktopRequest:
         :type delete_users: bool
         :param email_notification: 删除桌面后，是否给桌面用户发送系统通知邮件。true：发送，false：不发送。默认为true。
         :type email_notification: bool
+        :param is_force_delete: 是否强制删除
+        :type is_force_delete: bool
         """
         
         
@@ -46,6 +50,7 @@ class DeleteDesktopRequest:
         self._desktop_id = None
         self._delete_users = None
         self._email_notification = None
+        self._is_force_delete = None
         self.discriminator = None
 
         self.desktop_id = desktop_id
@@ -53,6 +58,8 @@ class DeleteDesktopRequest:
             self.delete_users = delete_users
         if email_notification is not None:
             self.email_notification = email_notification
+        if is_force_delete is not None:
+            self.is_force_delete = is_force_delete
 
     @property
     def desktop_id(self):
@@ -119,6 +126,28 @@ class DeleteDesktopRequest:
         :type email_notification: bool
         """
         self._email_notification = email_notification
+
+    @property
+    def is_force_delete(self):
+        """Gets the is_force_delete of this DeleteDesktopRequest.
+
+        是否强制删除
+
+        :return: The is_force_delete of this DeleteDesktopRequest.
+        :rtype: bool
+        """
+        return self._is_force_delete
+
+    @is_force_delete.setter
+    def is_force_delete(self, is_force_delete):
+        """Sets the is_force_delete of this DeleteDesktopRequest.
+
+        是否强制删除
+
+        :param is_force_delete: The is_force_delete of this DeleteDesktopRequest.
+        :type is_force_delete: bool
+        """
+        self._is_force_delete = is_force_delete
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -785,6 +785,62 @@ class WorkspaceClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_rebuild_desktops_system_disk(self, request):
+        """重建桌面
+
+        批量重建桌面系统盘。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchRebuildDesktopsSystemDisk
+        :type request: :class:`huaweicloudsdkworkspace.v2.BatchRebuildDesktopsSystemDiskRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.BatchRebuildDesktopsSystemDiskResponse`
+        """
+        return self._batch_rebuild_desktops_system_disk_with_http_info(request)
+
+    def _batch_rebuild_desktops_system_disk_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/desktops/rebuild',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchRebuildDesktopsSystemDiskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def batch_run_desktops(self, request):
         """操作桌面
 
@@ -836,6 +892,64 @@ class WorkspaceClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='BatchRunDesktopsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def change_desktop_network(self, request):
+        """切换桌面网络
+
+        切换桌面vpc、子网、ip、安全组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ChangeDesktopNetwork
+        :type request: :class:`huaweicloudsdkworkspace.v2.ChangeDesktopNetworkRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ChangeDesktopNetworkResponse`
+        """
+        return self._change_desktop_network_with_http_info(request)
+
+    def _change_desktop_network_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'desktop_id' in local_var_params:
+            path_params['desktop_id'] = local_var_params['desktop_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/desktops/{desktop_id}/networks',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ChangeDesktopNetworkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -926,6 +1040,8 @@ class WorkspaceClient(Client):
             query_params.append(('delete_users', local_var_params['delete_users']))
         if 'email_notification' in local_var_params:
             query_params.append(('email_notification', local_var_params['email_notification']))
+        if 'is_force_delete' in local_var_params:
+            query_params.append(('is_force_delete', local_var_params['is_force_delete']))
 
         header_params = {}
 
@@ -992,6 +1108,10 @@ class WorkspaceClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'pool_id' in local_var_params:
             query_params.append(('pool_id', local_var_params['pool_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'desktop_type' in local_var_params:
+            query_params.append(('desktop_type', local_var_params['desktop_type']))
 
         header_params = {}
 
@@ -1050,6 +1170,13 @@ class WorkspaceClient(Client):
             query_params.append(('status', local_var_params['status']))
         if 'user_name' in local_var_params:
             query_params.append(('user_name', local_var_params['user_name']))
+        if 'user_names' in local_var_params:
+            query_params.append(('user_names', local_var_params['user_names']))
+            collection_formats['user_names'] = 'csv'
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'sort_type' in local_var_params:
+            query_params.append(('sort_type', local_var_params['sort_type']))
         if 'computer_name' in local_var_params:
             query_params.append(('computer_name', local_var_params['computer_name']))
         if 'desktop_ip' in local_var_params:
@@ -1060,12 +1187,23 @@ class WorkspaceClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'desktop_id' in local_var_params:
             query_params.append(('desktop_id', local_var_params['desktop_id']))
+            collection_formats['desktop_id'] = 'csv'
         if 'desktop_type' in local_var_params:
             query_params.append(('desktop_type', local_var_params['desktop_type']))
         if 'tag' in local_var_params:
             query_params.append(('tag', local_var_params['tag']))
         if 'pool_id' in local_var_params:
             query_params.append(('pool_id', local_var_params['pool_id']))
+        if 'user_attached' in local_var_params:
+            query_params.append(('user_attached', local_var_params['user_attached']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'image_id' in local_var_params:
+            query_params.append(('image_id', local_var_params['image_id']))
+        if 'charge_mode' in local_var_params:
+            query_params.append(('charge_mode', local_var_params['charge_mode']))
+        if 'in_maintenance_mode' in local_var_params:
+            query_params.append(('in_maintenance_mode', local_var_params['in_maintenance_mode']))
 
         header_params = {}
 
@@ -1209,6 +1347,62 @@ class WorkspaceClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_desktop_network(self, request):
+        """查询桌面网络
+
+        查询桌面vpc、子网、privateIp、EIP、安全组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDesktopNetwork
+        :type request: :class:`huaweicloudsdkworkspace.v2.ShowDesktopNetworkRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ShowDesktopNetworkResponse`
+        """
+        return self._show_desktop_network_with_http_info(request)
+
+    def _show_desktop_network_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'desktop_id' in local_var_params:
+            path_params['desktop_id'] = local_var_params['desktop_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/desktops/{desktop_id}/networks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowDesktopNetworkResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_unused_desktops(self, request):
         """查询在指定时间段未使用的桌面
 
@@ -1322,6 +1516,346 @@ class WorkspaceClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListUsedDesktopInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_change_tags(self, request):
+        """批量添加删除标签
+
+        为指定桌面批量添加或删除标签。创建时，如果创建的标签已经存在（key相同），则覆盖。删除时，如果删除的标签不存在，默认处理成功
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchChangeTags
+        :type request: :class:`huaweicloudsdkworkspace.v2.BatchChangeTagsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.BatchChangeTagsResponse`
+        """
+        return self._batch_change_tags_with_http_info(request)
+
+    def _batch_change_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'desktop_id' in local_var_params:
+            path_params['desktop_id'] = local_var_params['desktop_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/desktops/{desktop_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchChangeTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_tag(self, request):
+        """创建桌面标签
+
+        该接口用于为桌面创建标签，一个桌面上最多有10个标签。创建时，如果创建的标签已经存在（key相同），则覆盖。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateTag
+        :type request: :class:`huaweicloudsdkworkspace.v2.CreateTagRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CreateTagResponse`
+        """
+        return self._create_tag_with_http_info(request)
+
+    def _create_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'desktop_id' in local_var_params:
+            path_params['desktop_id'] = local_var_params['desktop_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/desktops/{desktop_id}/tags',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_tag(self, request):
+        """删除桌面标签
+
+        该接口用于删除桌面标签。删除时，如果删除的标签不存在，默认处理成功。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteTag
+        :type request: :class:`huaweicloudsdkworkspace.v2.DeleteTagRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteTagResponse`
+        """
+        return self._delete_tag_with_http_info(request)
+
+    def _delete_tag_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'desktop_id' in local_var_params:
+            path_params['desktop_id'] = local_var_params['desktop_id']
+        if 'key' in local_var_params:
+            path_params['key'] = local_var_params['key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/desktops/{desktop_id}/tags/{key}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_desktop_by_tags(self, request):
+        """使用标签过滤桌面
+
+        使用标签过滤桌面
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDesktopByTags
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopByTagsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopByTagsResponse`
+        """
+        return self._list_desktop_by_tags_with_http_info(request)
+
+    def _list_desktop_by_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/desktops/resource_instances/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListDesktopByTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_project_tags(self, request):
+        """查询项目标签
+
+        查询租户的所有标签集合
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListProjectTags
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListProjectTagsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListProjectTagsResponse`
+        """
+        return self._list_project_tags_with_http_info(request)
+
+    def _list_project_tags_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/desktops/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListProjectTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_tag_by_desktop_id(self, request):
+        """查询桌面标签
+
+        查询指定桌面的标签信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowTagByDesktopId
+        :type request: :class:`huaweicloudsdkworkspace.v2.ShowTagByDesktopIdRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ShowTagByDesktopIdResponse`
+        """
+        return self._show_tag_by_desktop_id_with_http_info(request)
+
+    def _show_tag_by_desktop_id_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'desktop_id' in local_var_params:
+            path_params['desktop_id'] = local_var_params['desktop_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/desktops/{desktop_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowTagByDesktopIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1582,6 +2116,10 @@ class WorkspaceClient(Client):
         query_params = []
         if 'user_name' in local_var_params:
             query_params.append(('user_name', local_var_params['user_name']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'active_type' in local_var_params:
+            query_params.append(('active_type', local_var_params['active_type']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
@@ -1830,6 +2368,8 @@ class WorkspaceClient(Client):
             query_params.append(('job_id', local_var_params['job_id']))
         if 'job_type' in local_var_params:
             query_params.append(('job_type', local_var_params['job_type']))
+        if 'desktop_pool_id' in local_var_params:
+            query_params.append(('desktop_pool_id', local_var_params['desktop_pool_id']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
@@ -2056,6 +2596,8 @@ class WorkspaceClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'desktop_id' in local_var_params:
             query_params.append(('desktop_id', local_var_params['desktop_id']))
         if 'desktop_name' in local_var_params:
@@ -2996,6 +3538,8 @@ class WorkspaceClient(Client):
             query_params.append(('description', local_var_params['description']))
         if 'active_type' in local_var_params:
             query_params.append(('active_type', local_var_params['active_type']))
+        if 'group_name' in local_var_params:
+            query_params.append(('group_name', local_var_params['group_name']))
 
         header_params = {}
 

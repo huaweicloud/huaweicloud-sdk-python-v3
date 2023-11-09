@@ -18,15 +18,17 @@ class SegmentResult:
 
     openapi_types = {
         'segment': 'str',
-        'glossary_name': 'str'
+        'glossary_name': 'str',
+        'position': 'list[int]'
     }
 
     attribute_map = {
         'segment': 'segment',
-        'glossary_name': 'glossary_name'
+        'glossary_name': 'glossary_name',
+        'position': 'position'
     }
 
-    def __init__(self, segment=None, glossary_name=None):
+    def __init__(self, segment=None, glossary_name=None, position=None):
         """SegmentResult
 
         The model defined in huaweicloud sdk
@@ -35,18 +37,23 @@ class SegmentResult:
         :type segment: str
         :param glossary_name: 命中的自定义词库名称。  命中自定义词库时，才会返回当前字段。
         :type glossary_name: str
+        :param position: 命中的风险片段在文本中的位置，起始位置从0开始
+        :type position: list[int]
         """
         
         
 
         self._segment = None
         self._glossary_name = None
+        self._position = None
         self.discriminator = None
 
         if segment is not None:
             self.segment = segment
         if glossary_name is not None:
             self.glossary_name = glossary_name
+        if position is not None:
+            self.position = position
 
     @property
     def segment(self):
@@ -91,6 +98,28 @@ class SegmentResult:
         :type glossary_name: str
         """
         self._glossary_name = glossary_name
+
+    @property
+    def position(self):
+        """Gets the position of this SegmentResult.
+
+        命中的风险片段在文本中的位置，起始位置从0开始
+
+        :return: The position of this SegmentResult.
+        :rtype: list[int]
+        """
+        return self._position
+
+    @position.setter
+    def position(self, position):
+        """Sets the position of this SegmentResult.
+
+        命中的风险片段在文本中的位置，起始位置从0开始
+
+        :param position: The position of this SegmentResult.
+        :type position: list[int]
+        """
+        self._position = position
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -1,3 +1,357 @@
+# 3.1.65 2023-11-09
+
+### HuaweiCloud SDK TICS
+
+- _Features_
+  - Support `TICS`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK VPN
+
+- _Features_
+  - Support `VPN`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ASM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowMesh**
+    - changes of response param
+      - `- spec.region`
+      - `- spec.extendParams.clusters.region`
+  - **DeleteMesh**
+    - changes of response param
+      - `- spec.region`
+      - `- spec.extendParams.clusters.region`
+  - **CreateMesh**
+    - changes of request param
+      - `- spec.region`
+      - `- spec.extendParams.clusters.region`
+    - changes of response param
+      - `- spec.region`
+      - `- spec.extendParams.clusters.region`
+  - **ListMeshes**
+    - changes of response param
+      - `- items.spec.region`
+      - `- items.spec.extendParams.clusters.region`
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAddonInstance**
+    - changes of response param
+      - `+ status.status: enum value [unknown]`
+  - **UpdateAddonInstance**
+    - changes of response param
+      - `+ status.status: enum value [unknown]`
+  - **RollbackAddonInstance**
+    - changes of response param
+      - `+ status.status: enum value [unknown]`
+  - **ShowCluster**
+    - changes of response param
+      - `+ spec.serviceNetwork`
+  - **UpdateCluster**
+    - changes of response param
+      - `+ spec.serviceNetwork`
+  - **DeleteCluster**
+    - changes of response param
+      - `+ spec.serviceNetwork`
+  - **CreateAddonInstance**
+    - changes of response param
+      - `+ status.status: enum value [unknown]`
+  - **ListAddonInstances**
+    - changes of response param
+      - `+ items.status.status: enum value [unknown]`
+  - **CreateCluster**
+    - changes of request param
+      - `+ spec.serviceNetwork`
+    - changes of response param
+      - `+ spec.serviceNetwork`
+  - **ListClusters**
+    - changes of response param
+      - `+ items.spec.serviceNetwork`
+  - **ShowNode**
+    - changes of response param
+      - `- status.phase: enum value [Installed,ShutDown]`
+  - **UpdateNode**
+    - changes of response param
+      - `- status.phase: enum value [Installed,ShutDown]`
+  - **DeleteNode**
+    - changes of response param
+      - `- status.phase: enum value [Installed,ShutDown]`
+  - **CreateNode**
+    - changes of response param
+      - `- status.phase: enum value [Installed,ShutDown]`
+  - **ListNodes**
+    - changes of response param
+      - `- items.status.phase: enum value [Installed,ShutDown]`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interface `CheckMigrationConnectivity`
+  - **ListBackupRecords**
+    - changes of response param
+      - `+ backup_record_response.backup_format`
+      - `+ backup_record_response.execution_at`
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - Support the interfaces `ListQueueProperty`, `UpdateQueueProperty`, `CreateQueueProperty`, `DeleteQueueProperty`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowSqlJobStatus**
+    - changes of response param
+      - `+ user_conf`
+
+### HuaweiCloud SDK eiHealth
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowNextflowJob**
+    - changes of response param
+      - `+ priority`
+  - **ListDrugJob**
+    - changes of response param
+      - `- jobs.priority`
+  - **ShowSynthesisJob**
+    - changes of response param
+      - `- basic_info.priority`
+  - **ShowFepJob**
+    - changes of response param
+      - `- basic_info.priority`
+  - **ShowPocketDetectionJob**
+    - changes of response param
+      - `- basic_info.priority`
+  - **ShowAdmetJob**
+    - changes of response param
+      - `- basic_info.priority`
+      - `- models.value_range.lower_inclusive`
+      - `- models.value_range.upper_inclusive`
+      - `* models.value_range.lower: number -> float`
+      - `* models.value_range.upper: number -> float`
+      - `* models.value_range: object<ValueRange> -> object<ValueRange2>`
+  - **ShowPocketMolDesignJob**
+    - changes of response param
+      - `- basic_info.priority`
+      - `- model_list.value_range.lower_inclusive`
+      - `- model_list.value_range.upper_inclusive`
+      - `* model_list.value_range.lower: number -> float`
+      - `* model_list.value_range.upper: number -> float`
+      - `* model_list.value_range: object<ValueRange> -> object<ValueRange2>`
+  - **ShowOptmJob**
+    - changes of response param
+      - `- basic_info.priority`
+      - `- models.value_range.lower_inclusive`
+      - `- models.value_range.upper_inclusive`
+      - `* models.value_range.lower: number -> float`
+      - `* models.value_range.upper: number -> float`
+      - `* models.value_range: object<ValueRange> -> object<ValueRange2>`
+  - **ShowDockingJob**
+    - changes of response param
+      - `- basic_info.priority`
+  - **ListDrugModel**
+    - changes of response param
+      - `- models.value_range.lower_inclusive`
+      - `- models.value_range.upper_inclusive`
+      - `* models.value_range.lower: number -> float`
+      - `* models.value_range.upper: number -> float`
+      - `* models.value_range: object<ValueRange> -> object<ValueRange2>`
+
+### HuaweiCloud SDK GES
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListGraphs2**
+    - changes of response param
+      - `+ graphs.origin_graph_size_type_index`
+      - `+ graphs.expand_time`
+      - `+ graphs.resize_time`
+      - `+ graphs.enable_multi_label`
+  - **CreateGraph2**
+    - changes of request param
+      - `+ graph.enable_multi_label`
+  - **ShowGraph2**
+    - changes of response param
+      - `+ graph.origin_graph_size_type_index`
+      - `+ graph.expand_time`
+      - `+ graph.resize_time`
+      - `+ graph.enable_multi_label`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - Support the interfaces `ShowInstanceConfigs`, `ModifyInstanceConfigs`
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchRestartOrDeleteInstances**
+    - changes of request param
+      - `+ all_failure`
+      - `- allFailure`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchRestartOrDeleteInstances**
+    - changes of request param
+      - `+ all_failure`
+      - `- allFailure`
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchDeleteInstances**
+    - changes of request param
+      - `+ all_failure`
+      - `- allFailure`
+  - **DeleteRocketMqMigrationTask**
+    - changes of request param
+      - `+ task_ids`
+      - `- taskIds`
+
+### HuaweiCloud SDK SCM
+
+- _Features_
+  - Support the interface `BatchPushCertificate`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Workspace
+
+- _Features_
+  - Support the following interfaces：
+    - `BatchRebuildDesktopsSystemDisk`
+    - `ShowDesktopNetwork`
+    - `ChangeDesktopNetwork`
+    - `ShowTagByDesktopId`
+    - `CreateTag`
+    - `DeleteTag`
+    - `ListProjectTags`
+    - `BatchChangeTags`
+    - `ListDesktopByTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchDeleteDesktops**
+    - changes of request param
+      - `+ is_force_delete`
+  - **ListDesktops**
+    - changes of request param
+      - `+ enterprise_project_id`
+      - `+ desktop_type`
+    - changes of response param
+      - `+ desktops.attach_user_infos`
+      - `+ desktops.enterprise_project_id`
+      - `+ desktops.in_maintenance_mode`
+  - **CreateDesktop**
+    - changes of request param
+      - `+ desktop_name`
+      - `+ size`
+      - `+ enterprise_project_id`
+      - `+ desktop_type: enum value [SHARED]`
+      - `+ desktops.user_phone`
+  - **ApplyDesktopsInternet**
+    - changes of request param
+      - `+ enterprise_project_id`
+  - **ListDesktopsEips**
+    - changes of request param
+      - `+ enterprise_project_id`
+    - changes of response param
+      - `+ eips.enterprise_project_id`
+  - **ListUsersOfGroup**
+    - changes of request param
+      - `+ description`
+      - `+ active_type`
+    - changes of response param
+      - `+ users.description`
+  - **ListProducts**
+    - changes of response param
+      - `+ products.data_disk_size`
+      - `+ products.default_desktop_num`
+      - `+ products.max_apply_desktop_num`
+  - **ListUsers**
+    - changes of request param
+      - `+ group_name`
+  - **ListItaSubJobs**
+    - changes of request param
+      - `+ desktop_pool_id`
+    - changes of response param
+      - `+ jobs.desktop_name`
+      - `+ jobs.ip_address`
+      - `+ jobs.mac_address`
+  - **ListWorkspaces**
+    - changes of response param
+      - `+ dc_vnc_ip`
+  - **UpdateWorkspace**
+    - changes of request param
+      - `+ dc_vnc_ip`
+    - changes of response param
+      - `+ dc_vnc_ip`
+  - **DeleteDesktop**
+    - changes of request param
+      - `+ is_force_delete`
+  - **ShowDesktopDetail**
+    - changes of response param
+      - `+ desktop.user_list`
+      - `+ desktop.user_group_list`
+      - `+ desktop.attach_user_infos`
+      - `+ desktop.attach_state`
+      - `+ desktop.enterprise_project_id`
+  - **ListDesktopsDetail**
+    - changes of request param
+      - `+ user_names`
+      - `+ sort_field`
+      - `+ sort_type`
+      - `+ user_attached`
+      - `+ enterprise_project_id`
+      - `+ image_id`
+      - `+ charge_mode`
+      - `+ in_maintenance_mode`
+      - `* desktop_id: string -> list<string>`
+    - changes of response param
+      - `+ desktops.user_list`
+      - `+ desktops.user_group_list`
+      - `+ desktops.attach_user_infos`
+      - `+ desktops.attach_state`
+      - `+ desktops.enterprise_project_id`
+
 # 3.1.64 2023-11-02
 
 ### HuaweiCloud SDK APIG

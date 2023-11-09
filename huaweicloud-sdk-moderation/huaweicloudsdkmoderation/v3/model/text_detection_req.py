@@ -18,6 +18,7 @@ class TextDetectionReq:
 
     openapi_types = {
         'event_type': 'str',
+        'categories': 'list[str]',
         'glossary_names': 'list[str]',
         'data': 'TextDetectionDataReq',
         'white_glossary_names': 'list[str]',
@@ -26,19 +27,22 @@ class TextDetectionReq:
 
     attribute_map = {
         'event_type': 'event_type',
+        'categories': 'categories',
         'glossary_names': 'glossary_names',
         'data': 'data',
         'white_glossary_names': 'white_glossary_names',
         'biz_type': 'biz_type'
     }
 
-    def __init__(self, event_type=None, glossary_names=None, data=None, white_glossary_names=None, biz_type=None):
+    def __init__(self, event_type=None, categories=None, glossary_names=None, data=None, white_glossary_names=None, biz_type=None):
         """TextDetectionReq
 
         The model defined in huaweicloud sdk
 
         :param event_type: 事件类型。  可选值如下：  nickname: 昵称  title: 标题  article: 帖⼦  comment: 评论  barrage: 弹幕  search: 搜索栏  profile: 个⼈简介
         :type event_type: str
+        :param categories: 文本审核场景，可选值如下： terrorism: 暴恐 porn: 色情 ban: 违禁 abuse: 辱骂 ad: 广告 当categories缺省或为空时，默认审核terrorism、porn、ban、abuse、ad。
+        :type categories: list[str]
         :param glossary_names: 检测时使用的自定义黑名单词库列表。自定义黑词库的创建和使用请参见[配置定义黑名单词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html#moderation_03_0027__section12400140132318)。
         :type glossary_names: list[str]
         :param data: 
@@ -52,6 +56,7 @@ class TextDetectionReq:
         
 
         self._event_type = None
+        self._categories = None
         self._glossary_names = None
         self._data = None
         self._white_glossary_names = None
@@ -60,6 +65,8 @@ class TextDetectionReq:
 
         if event_type is not None:
             self.event_type = event_type
+        if categories is not None:
+            self.categories = categories
         if glossary_names is not None:
             self.glossary_names = glossary_names
         self.data = data
@@ -89,6 +96,28 @@ class TextDetectionReq:
         :type event_type: str
         """
         self._event_type = event_type
+
+    @property
+    def categories(self):
+        """Gets the categories of this TextDetectionReq.
+
+        文本审核场景，可选值如下： terrorism: 暴恐 porn: 色情 ban: 违禁 abuse: 辱骂 ad: 广告 当categories缺省或为空时，默认审核terrorism、porn、ban、abuse、ad。
+
+        :return: The categories of this TextDetectionReq.
+        :rtype: list[str]
+        """
+        return self._categories
+
+    @categories.setter
+    def categories(self, categories):
+        """Sets the categories of this TextDetectionReq.
+
+        文本审核场景，可选值如下： terrorism: 暴恐 porn: 色情 ban: 违禁 abuse: 辱骂 ad: 广告 当categories缺省或为空时，默认审核terrorism、porn、ban、abuse、ad。
+
+        :param categories: The categories of this TextDetectionReq.
+        :type categories: list[str]
+        """
+        self._categories = categories
 
     @property
     def glossary_names(self):

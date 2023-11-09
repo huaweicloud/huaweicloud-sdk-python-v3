@@ -31,7 +31,7 @@ class PushCertificateRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param target_project: 推送到的目标服务所在的区域。
+        :param target_project: 推送到的目标服务所在的区域，CDN支持区域固定为：Global。
         :type target_project: str
         :param target_service: 证书推送的目标服务，当前仅支持：CDN、WAF、ELB。
         :type target_service: str
@@ -50,7 +50,7 @@ class PushCertificateRequestBody:
     def target_project(self):
         """Gets the target_project of this PushCertificateRequestBody.
 
-        推送到的目标服务所在的区域。
+        推送到的目标服务所在的区域，CDN支持区域固定为：Global。
 
         :return: The target_project of this PushCertificateRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class PushCertificateRequestBody:
     def target_project(self, target_project):
         """Sets the target_project of this PushCertificateRequestBody.
 
-        推送到的目标服务所在的区域。
+        推送到的目标服务所在的区域，CDN支持区域固定为：Global。
 
         :param target_project: The target_project of this PushCertificateRequestBody.
         :type target_project: str

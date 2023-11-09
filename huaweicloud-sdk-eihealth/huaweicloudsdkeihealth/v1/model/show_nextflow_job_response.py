@@ -20,6 +20,7 @@ class ShowNextflowJobResponse(SdkResponse):
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'priority': 'int',
         'description': 'str',
         'labels': 'list[str]',
         'status': 'str',
@@ -40,6 +41,7 @@ class ShowNextflowJobResponse(SdkResponse):
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'priority': 'priority',
         'description': 'description',
         'labels': 'labels',
         'status': 'status',
@@ -57,7 +59,7 @@ class ShowNextflowJobResponse(SdkResponse):
         'config_context': 'config_context'
     }
 
-    def __init__(self, id=None, name=None, description=None, labels=None, status=None, has_ignore_failed_tasks=None, create_time=None, finish_time=None, failed_message=None, failed_reason=None, workflow_name=None, workflow_id=None, command_line=None, params=None, nextflow_parameters=None, config_files=None, config_context=None):
+    def __init__(self, id=None, name=None, priority=None, description=None, labels=None, status=None, has_ignore_failed_tasks=None, create_time=None, finish_time=None, failed_message=None, failed_reason=None, workflow_name=None, workflow_id=None, command_line=None, params=None, nextflow_parameters=None, config_files=None, config_context=None):
         """ShowNextflowJobResponse
 
         The model defined in huaweicloud sdk
@@ -66,6 +68,8 @@ class ShowNextflowJobResponse(SdkResponse):
         :type id: str
         :param name: 作业的名称
         :type name: str
+        :param priority: 作业的优先级,取值范围[0,9]，0最低，默认数值0
+        :type priority: int
         :param description: 作业的描述
         :type description: str
         :param labels: 作业标签
@@ -102,6 +106,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
         self._id = None
         self._name = None
+        self._priority = None
         self._description = None
         self._labels = None
         self._status = None
@@ -123,6 +128,8 @@ class ShowNextflowJobResponse(SdkResponse):
             self.id = id
         if name is not None:
             self.name = name
+        if priority is not None:
+            self.priority = priority
         if description is not None:
             self.description = description
         if labels is not None:
@@ -197,6 +204,28 @@ class ShowNextflowJobResponse(SdkResponse):
         :type name: str
         """
         self._name = name
+
+    @property
+    def priority(self):
+        """Gets the priority of this ShowNextflowJobResponse.
+
+        作业的优先级,取值范围[0,9]，0最低，默认数值0
+
+        :return: The priority of this ShowNextflowJobResponse.
+        :rtype: int
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        """Sets the priority of this ShowNextflowJobResponse.
+
+        作业的优先级,取值范围[0,9]，0最低，默认数值0
+
+        :param priority: The priority of this ShowNextflowJobResponse.
+        :type priority: int
+        """
+        self._priority = priority
 
     @property
     def description(self):

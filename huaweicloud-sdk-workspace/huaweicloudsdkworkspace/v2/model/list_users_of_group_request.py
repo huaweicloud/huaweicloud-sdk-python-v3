@@ -19,6 +19,8 @@ class ListUsersOfGroupRequest:
     openapi_types = {
         'user_name': 'str',
         'group_id': 'str',
+        'description': 'str',
+        'active_type': 'str',
         'limit': 'str',
         'offset': 'str'
     }
@@ -26,20 +28,26 @@ class ListUsersOfGroupRequest:
     attribute_map = {
         'user_name': 'user_name',
         'group_id': 'group_id',
+        'description': 'description',
+        'active_type': 'active_type',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, user_name=None, group_id=None, limit=None, offset=None):
+    def __init__(self, user_name=None, group_id=None, description=None, active_type=None, limit=None, offset=None):
         """ListUsersOfGroupRequest
 
         The model defined in huaweicloud sdk
 
-        :param user_name: 用户名。
+        :param user_name: 用户名支持模糊查询。
         :type user_name: str
         :param group_id: 用户组ID。
         :type group_id: str
-        :param limit: 用于分页查询，返回桌面数量限制。如果不指定或为0，默认1000，最大1000。
+        :param description: 用户描述支持模糊查询。
+        :type description: str
+        :param active_type: 激活类型。 - USER_ACTIVATE：用户激活 - ADMIN_ACTIVATE：管理员激活
+        :type active_type: str
+        :param limit: 用于分页查询，返回桌面数量限制。如果不指定或为0，默认2000，最大2000。
         :type limit: str
         :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: str
@@ -49,6 +57,8 @@ class ListUsersOfGroupRequest:
 
         self._user_name = None
         self._group_id = None
+        self._description = None
+        self._active_type = None
         self._limit = None
         self._offset = None
         self.discriminator = None
@@ -56,6 +66,10 @@ class ListUsersOfGroupRequest:
         if user_name is not None:
             self.user_name = user_name
         self.group_id = group_id
+        if description is not None:
+            self.description = description
+        if active_type is not None:
+            self.active_type = active_type
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -65,7 +79,7 @@ class ListUsersOfGroupRequest:
     def user_name(self):
         """Gets the user_name of this ListUsersOfGroupRequest.
 
-        用户名。
+        用户名支持模糊查询。
 
         :return: The user_name of this ListUsersOfGroupRequest.
         :rtype: str
@@ -76,7 +90,7 @@ class ListUsersOfGroupRequest:
     def user_name(self, user_name):
         """Sets the user_name of this ListUsersOfGroupRequest.
 
-        用户名。
+        用户名支持模糊查询。
 
         :param user_name: The user_name of this ListUsersOfGroupRequest.
         :type user_name: str
@@ -106,10 +120,54 @@ class ListUsersOfGroupRequest:
         self._group_id = group_id
 
     @property
+    def description(self):
+        """Gets the description of this ListUsersOfGroupRequest.
+
+        用户描述支持模糊查询。
+
+        :return: The description of this ListUsersOfGroupRequest.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ListUsersOfGroupRequest.
+
+        用户描述支持模糊查询。
+
+        :param description: The description of this ListUsersOfGroupRequest.
+        :type description: str
+        """
+        self._description = description
+
+    @property
+    def active_type(self):
+        """Gets the active_type of this ListUsersOfGroupRequest.
+
+        激活类型。 - USER_ACTIVATE：用户激活 - ADMIN_ACTIVATE：管理员激活
+
+        :return: The active_type of this ListUsersOfGroupRequest.
+        :rtype: str
+        """
+        return self._active_type
+
+    @active_type.setter
+    def active_type(self, active_type):
+        """Sets the active_type of this ListUsersOfGroupRequest.
+
+        激活类型。 - USER_ACTIVATE：用户激活 - ADMIN_ACTIVATE：管理员激活
+
+        :param active_type: The active_type of this ListUsersOfGroupRequest.
+        :type active_type: str
+        """
+        self._active_type = active_type
+
+    @property
     def limit(self):
         """Gets the limit of this ListUsersOfGroupRequest.
 
-        用于分页查询，返回桌面数量限制。如果不指定或为0，默认1000，最大1000。
+        用于分页查询，返回桌面数量限制。如果不指定或为0，默认2000，最大2000。
 
         :return: The limit of this ListUsersOfGroupRequest.
         :rtype: str
@@ -120,7 +178,7 @@ class ListUsersOfGroupRequest:
     def limit(self, limit):
         """Sets the limit of this ListUsersOfGroupRequest.
 
-        用于分页查询，返回桌面数量限制。如果不指定或为0，默认1000，最大1000。
+        用于分页查询，返回桌面数量限制。如果不指定或为0，默认2000，最大2000。
 
         :param limit: The limit of this ListUsersOfGroupRequest.
         :type limit: str

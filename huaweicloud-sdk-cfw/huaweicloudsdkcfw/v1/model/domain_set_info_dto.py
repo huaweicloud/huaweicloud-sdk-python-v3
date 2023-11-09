@@ -17,24 +17,20 @@ class DomainSetInfoDto:
     sensitive_list = []
 
     openapi_types = {
-        'domain_set_id': 'str',
         'domain_name': 'str',
         'description': 'str'
     }
 
     attribute_map = {
-        'domain_set_id': 'domain_set_id',
         'domain_name': 'domain_name',
         'description': 'description'
     }
 
-    def __init__(self, domain_set_id=None, domain_name=None, description=None):
+    def __init__(self, domain_name=None, description=None):
         """DomainSetInfoDto
 
         The model defined in huaweicloud sdk
 
-        :param domain_set_id: 域名组id
-        :type domain_set_id: str
         :param domain_name: 域名
         :type domain_name: str
         :param description: 描述
@@ -43,39 +39,14 @@ class DomainSetInfoDto:
         
         
 
-        self._domain_set_id = None
         self._domain_name = None
         self._description = None
         self.discriminator = None
 
-        if domain_set_id is not None:
-            self.domain_set_id = domain_set_id
         if domain_name is not None:
             self.domain_name = domain_name
         if description is not None:
             self.description = description
-
-    @property
-    def domain_set_id(self):
-        """Gets the domain_set_id of this DomainSetInfoDto.
-
-        域名组id
-
-        :return: The domain_set_id of this DomainSetInfoDto.
-        :rtype: str
-        """
-        return self._domain_set_id
-
-    @domain_set_id.setter
-    def domain_set_id(self, domain_set_id):
-        """Sets the domain_set_id of this DomainSetInfoDto.
-
-        域名组id
-
-        :param domain_set_id: The domain_set_id of this DomainSetInfoDto.
-        :type domain_set_id: str
-        """
-        self._domain_set_id = domain_set_id
 
     @property
     def domain_name(self):

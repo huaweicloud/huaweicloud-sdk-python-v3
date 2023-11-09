@@ -20,17 +20,19 @@ class UserInGroup:
         'id': 'str',
         'user_name': 'str',
         'user_email': 'str',
-        'user_phone': 'str'
+        'user_phone': 'str',
+        'description': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'user_name': 'user_name',
         'user_email': 'user_email',
-        'user_phone': 'user_phone'
+        'user_phone': 'user_phone',
+        'description': 'description'
     }
 
-    def __init__(self, id=None, user_name=None, user_email=None, user_phone=None):
+    def __init__(self, id=None, user_name=None, user_email=None, user_phone=None, description=None):
         """UserInGroup
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class UserInGroup:
         :type user_email: str
         :param user_phone: 用户手机号。
         :type user_phone: str
+        :param description: 用户描述。
+        :type description: str
         """
         
         
@@ -51,6 +55,7 @@ class UserInGroup:
         self._user_name = None
         self._user_email = None
         self._user_phone = None
+        self._description = None
         self.discriminator = None
 
         if id is not None:
@@ -61,6 +66,8 @@ class UserInGroup:
             self.user_email = user_email
         if user_phone is not None:
             self.user_phone = user_phone
+        if description is not None:
+            self.description = description
 
     @property
     def id(self):
@@ -149,6 +156,28 @@ class UserInGroup:
         :type user_phone: str
         """
         self._user_phone = user_phone
+
+    @property
+    def description(self):
+        """Gets the description of this UserInGroup.
+
+        用户描述。
+
+        :return: The description of this UserInGroup.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this UserInGroup.
+
+        用户描述。
+
+        :param description: The description of this UserInGroup.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

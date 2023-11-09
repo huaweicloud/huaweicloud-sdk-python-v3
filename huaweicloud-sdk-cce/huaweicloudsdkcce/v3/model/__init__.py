@@ -178,6 +178,7 @@ from huaweicloudsdkcce.v3.model.rollback_addon_instance_response import Rollback
 from huaweicloudsdkcce.v3.model.runtime import Runtime
 from huaweicloudsdkcce.v3.model.runtime_config import RuntimeConfig
 from huaweicloudsdkcce.v3.model.security_id import SecurityID
+from huaweicloudsdkcce.v3.model.service_network import ServiceNetwork
 from huaweicloudsdkcce.v3.model.show_addon_instance_request import ShowAddonInstanceRequest
 from huaweicloudsdkcce.v3.model.show_addon_instance_response import ShowAddonInstanceResponse
 from huaweicloudsdkcce.v3.model.show_cluster_endpoints_request import ShowClusterEndpointsRequest

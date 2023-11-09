@@ -22,9 +22,12 @@ class SimpleDesktopInfo:
         'created': 'str',
         'ip_address': 'str',
         'user_name': 'str',
+        'attach_user_infos': 'list[AttachInstancesUserInfo]',
         'user_group': 'str',
         'sid': 'str',
-        'ou_name': 'str'
+        'ou_name': 'str',
+        'enterprise_project_id': 'str',
+        'in_maintenance_mode': 'bool'
     }
 
     attribute_map = {
@@ -33,12 +36,15 @@ class SimpleDesktopInfo:
         'created': 'created',
         'ip_address': 'ip_address',
         'user_name': 'user_name',
+        'attach_user_infos': 'attach_user_infos',
         'user_group': 'user_group',
         'sid': 'sid',
-        'ou_name': 'ou_name'
+        'ou_name': 'ou_name',
+        'enterprise_project_id': 'enterprise_project_id',
+        'in_maintenance_mode': 'in_maintenance_mode'
     }
 
-    def __init__(self, desktop_id=None, computer_name=None, created=None, ip_address=None, user_name=None, user_group=None, sid=None, ou_name=None):
+    def __init__(self, desktop_id=None, computer_name=None, created=None, ip_address=None, user_name=None, attach_user_infos=None, user_group=None, sid=None, ou_name=None, enterprise_project_id=None, in_maintenance_mode=None):
         """SimpleDesktopInfo
 
         The model defined in huaweicloud sdk
@@ -53,12 +59,18 @@ class SimpleDesktopInfo:
         :type ip_address: str
         :param user_name: 用户名。
         :type user_name: str
+        :param attach_user_infos: 桌面已分配的用户信息列表。
+        :type attach_user_infos: list[:class:`huaweicloudsdkworkspace.v2.AttachInstancesUserInfo`]
         :param user_group: 权限组。
         :type user_group: str
         :param sid: 桌面的SID信息。
         :type sid: str
         :param ou_name: ou名称。
         :type ou_name: str
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
+        :param in_maintenance_mode: 是否处于管理员维护模式
+        :type in_maintenance_mode: bool
         """
         
         
@@ -68,9 +80,12 @@ class SimpleDesktopInfo:
         self._created = None
         self._ip_address = None
         self._user_name = None
+        self._attach_user_infos = None
         self._user_group = None
         self._sid = None
         self._ou_name = None
+        self._enterprise_project_id = None
+        self._in_maintenance_mode = None
         self.discriminator = None
 
         if desktop_id is not None:
@@ -83,12 +98,18 @@ class SimpleDesktopInfo:
             self.ip_address = ip_address
         if user_name is not None:
             self.user_name = user_name
+        if attach_user_infos is not None:
+            self.attach_user_infos = attach_user_infos
         if user_group is not None:
             self.user_group = user_group
         if sid is not None:
             self.sid = sid
         if ou_name is not None:
             self.ou_name = ou_name
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if in_maintenance_mode is not None:
+            self.in_maintenance_mode = in_maintenance_mode
 
     @property
     def desktop_id(self):
@@ -201,6 +222,28 @@ class SimpleDesktopInfo:
         self._user_name = user_name
 
     @property
+    def attach_user_infos(self):
+        """Gets the attach_user_infos of this SimpleDesktopInfo.
+
+        桌面已分配的用户信息列表。
+
+        :return: The attach_user_infos of this SimpleDesktopInfo.
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.AttachInstancesUserInfo`]
+        """
+        return self._attach_user_infos
+
+    @attach_user_infos.setter
+    def attach_user_infos(self, attach_user_infos):
+        """Sets the attach_user_infos of this SimpleDesktopInfo.
+
+        桌面已分配的用户信息列表。
+
+        :param attach_user_infos: The attach_user_infos of this SimpleDesktopInfo.
+        :type attach_user_infos: list[:class:`huaweicloudsdkworkspace.v2.AttachInstancesUserInfo`]
+        """
+        self._attach_user_infos = attach_user_infos
+
+    @property
     def user_group(self):
         """Gets the user_group of this SimpleDesktopInfo.
 
@@ -265,6 +308,50 @@ class SimpleDesktopInfo:
         :type ou_name: str
         """
         self._ou_name = ou_name
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this SimpleDesktopInfo.
+
+        企业项目ID
+
+        :return: The enterprise_project_id of this SimpleDesktopInfo.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this SimpleDesktopInfo.
+
+        企业项目ID
+
+        :param enterprise_project_id: The enterprise_project_id of this SimpleDesktopInfo.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def in_maintenance_mode(self):
+        """Gets the in_maintenance_mode of this SimpleDesktopInfo.
+
+        是否处于管理员维护模式
+
+        :return: The in_maintenance_mode of this SimpleDesktopInfo.
+        :rtype: bool
+        """
+        return self._in_maintenance_mode
+
+    @in_maintenance_mode.setter
+    def in_maintenance_mode(self, in_maintenance_mode):
+        """Sets the in_maintenance_mode of this SimpleDesktopInfo.
+
+        是否处于管理员维护模式
+
+        :param in_maintenance_mode: The in_maintenance_mode of this SimpleDesktopInfo.
+        :type in_maintenance_mode: bool
+        """
+        self._in_maintenance_mode = in_maintenance_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

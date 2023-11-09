@@ -24,7 +24,8 @@ class ModifyWorkspaceAttributesReq:
         'subnet_ids': 'list[str]',
         'internet_access_port': 'str',
         'enterprise_id': 'str',
-        'is_send_email': 'bool'
+        'is_send_email': 'bool',
+        'dc_vnc_ip': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ModifyWorkspaceAttributesReq:
         'subnet_ids': 'subnet_ids',
         'internet_access_port': 'internet_access_port',
         'enterprise_id': 'enterprise_id',
-        'is_send_email': 'is_send_email'
+        'is_send_email': 'is_send_email',
+        'dc_vnc_ip': 'dc_vnc_ip'
     }
 
-    def __init__(self, ad_info=None, ad_domains=None, access_mode=None, dedicated_subnets=None, subnet_ids=None, internet_access_port=None, enterprise_id=None, is_send_email=None):
+    def __init__(self, ad_info=None, ad_domains=None, access_mode=None, dedicated_subnets=None, subnet_ids=None, internet_access_port=None, enterprise_id=None, is_send_email=None, dc_vnc_ip=None):
         """ModifyWorkspaceAttributesReq
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ModifyWorkspaceAttributesReq:
         :type enterprise_id: str
         :param is_send_email: 桌面退订是否发送邮件通知。
         :type is_send_email: bool
+        :param dc_vnc_ip: 开通专线访问VNC功能，如果传入的是default则自动创建，如果传入的自定义的dc_vnc_ip则直接使用，如果传入的是close表示关闭自定义VNC
+        :type dc_vnc_ip: str
         """
         
         
@@ -71,6 +75,7 @@ class ModifyWorkspaceAttributesReq:
         self._internet_access_port = None
         self._enterprise_id = None
         self._is_send_email = None
+        self._dc_vnc_ip = None
         self.discriminator = None
 
         if ad_info is not None:
@@ -89,6 +94,8 @@ class ModifyWorkspaceAttributesReq:
             self.enterprise_id = enterprise_id
         if is_send_email is not None:
             self.is_send_email = is_send_email
+        if dc_vnc_ip is not None:
+            self.dc_vnc_ip = dc_vnc_ip
 
     @property
     def ad_info(self):
@@ -257,6 +264,28 @@ class ModifyWorkspaceAttributesReq:
         :type is_send_email: bool
         """
         self._is_send_email = is_send_email
+
+    @property
+    def dc_vnc_ip(self):
+        """Gets the dc_vnc_ip of this ModifyWorkspaceAttributesReq.
+
+        开通专线访问VNC功能，如果传入的是default则自动创建，如果传入的自定义的dc_vnc_ip则直接使用，如果传入的是close表示关闭自定义VNC
+
+        :return: The dc_vnc_ip of this ModifyWorkspaceAttributesReq.
+        :rtype: str
+        """
+        return self._dc_vnc_ip
+
+    @dc_vnc_ip.setter
+    def dc_vnc_ip(self, dc_vnc_ip):
+        """Sets the dc_vnc_ip of this ModifyWorkspaceAttributesReq.
+
+        开通专线访问VNC功能，如果传入的是default则自动创建，如果传入的自定义的dc_vnc_ip则直接使用，如果传入的是close表示关闭自定义VNC
+
+        :param dc_vnc_ip: The dc_vnc_ip of this ModifyWorkspaceAttributesReq.
+        :type dc_vnc_ip: str
+        """
+        self._dc_vnc_ip = dc_vnc_ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

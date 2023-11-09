@@ -287,6 +287,8 @@ class CfwClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'set_id' in local_var_params:
+            path_params['set_id'] = local_var_params['set_id']
 
         query_params = []
         if 'enterprise_project_id' in local_var_params:
@@ -312,7 +314,7 @@ class CfwClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/{project_id}/domain-set/domains',
+            resource_path='/v1/{project_id}/domain-set/domains/{set_id}',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -884,6 +886,8 @@ class CfwClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'set_id' in local_var_params:
+            path_params['set_id'] = local_var_params['set_id']
 
         query_params = []
         if 'enterprise_project_id' in local_var_params:
@@ -907,7 +911,7 @@ class CfwClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/{project_id}/domain-set/domains',
+            resource_path='/v1/{project_id}/domain-set/domains/{set_id}',
             method='DELETE',
             path_params=path_params,
             query_params=query_params,

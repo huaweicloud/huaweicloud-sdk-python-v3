@@ -27,6 +27,7 @@ class ProductInfo:
         'is_gpu': 'bool',
         'system_disk_type': 'str',
         'system_disk_size': 'str',
+        'data_disk_size': 'str',
         'gpu_desc': 'str',
         'bill_switch': 'str',
         'descriptions': 'str',
@@ -37,7 +38,9 @@ class ProductInfo:
         'volume_product_type': 'str',
         'domain_ids': 'list[str]',
         'status': 'str',
-        'sub_product_list': 'list[str]'
+        'sub_product_list': 'list[str]',
+        'default_desktop_num': 'int',
+        'max_apply_desktop_num': 'int'
     }
 
     attribute_map = {
@@ -51,6 +54,7 @@ class ProductInfo:
         'is_gpu': 'is_gpu',
         'system_disk_type': 'system_disk_type',
         'system_disk_size': 'system_disk_size',
+        'data_disk_size': 'data_disk_size',
         'gpu_desc': 'gpu_desc',
         'bill_switch': 'bill_switch',
         'descriptions': 'descriptions',
@@ -61,10 +65,12 @@ class ProductInfo:
         'volume_product_type': 'volume_product_type',
         'domain_ids': 'domain_ids',
         'status': 'status',
-        'sub_product_list': 'sub_product_list'
+        'sub_product_list': 'sub_product_list',
+        'default_desktop_num': 'default_desktop_num',
+        'max_apply_desktop_num': 'max_apply_desktop_num'
     }
 
-    def __init__(self, product_id=None, flavor_id=None, type=None, architecture=None, cpu=None, cpu_desc=None, memory=None, is_gpu=None, system_disk_type=None, system_disk_size=None, gpu_desc=None, bill_switch=None, descriptions=None, charge_mode=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, domain_ids=None, status=None, sub_product_list=None):
+    def __init__(self, product_id=None, flavor_id=None, type=None, architecture=None, cpu=None, cpu_desc=None, memory=None, is_gpu=None, system_disk_type=None, system_disk_size=None, data_disk_size=None, gpu_desc=None, bill_switch=None, descriptions=None, charge_mode=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, domain_ids=None, status=None, sub_product_list=None, default_desktop_num=None, max_apply_desktop_num=None):
         """ProductInfo
 
         The model defined in huaweicloud sdk
@@ -89,6 +95,8 @@ class ProductInfo:
         :type system_disk_type: str
         :param system_disk_size: 系统盘大小，单位GB。
         :type system_disk_size: str
+        :param data_disk_size: 数据盘大小，单位GB。
+        :type data_disk_size: str
         :param gpu_desc: GPU描述。
         :type gpu_desc: str
         :param bill_switch: 话单开关，默认on,on-出话单模式,off-关话单模式,只支持反序列化，不支持序列化，不在接口中展示。
@@ -111,6 +119,10 @@ class ProductInfo:
         :type status: str
         :param sub_product_list: 专属主机的子产品。
         :type sub_product_list: list[str]
+        :param default_desktop_num: 专享主机套餐默认的桌面数。
+        :type default_desktop_num: int
+        :param max_apply_desktop_num: 专享主机支持创建的最大桌面数。
+        :type max_apply_desktop_num: int
         """
         
         
@@ -125,6 +137,7 @@ class ProductInfo:
         self._is_gpu = None
         self._system_disk_type = None
         self._system_disk_size = None
+        self._data_disk_size = None
         self._gpu_desc = None
         self._bill_switch = None
         self._descriptions = None
@@ -136,6 +149,8 @@ class ProductInfo:
         self._domain_ids = None
         self._status = None
         self._sub_product_list = None
+        self._default_desktop_num = None
+        self._max_apply_desktop_num = None
         self.discriminator = None
 
         if product_id is not None:
@@ -158,6 +173,8 @@ class ProductInfo:
             self.system_disk_type = system_disk_type
         if system_disk_size is not None:
             self.system_disk_size = system_disk_size
+        if data_disk_size is not None:
+            self.data_disk_size = data_disk_size
         if gpu_desc is not None:
             self.gpu_desc = gpu_desc
         if bill_switch is not None:
@@ -180,6 +197,10 @@ class ProductInfo:
             self.status = status
         if sub_product_list is not None:
             self.sub_product_list = sub_product_list
+        if default_desktop_num is not None:
+            self.default_desktop_num = default_desktop_num
+        if max_apply_desktop_num is not None:
+            self.max_apply_desktop_num = max_apply_desktop_num
 
     @property
     def product_id(self):
@@ -400,6 +421,28 @@ class ProductInfo:
         :type system_disk_size: str
         """
         self._system_disk_size = system_disk_size
+
+    @property
+    def data_disk_size(self):
+        """Gets the data_disk_size of this ProductInfo.
+
+        数据盘大小，单位GB。
+
+        :return: The data_disk_size of this ProductInfo.
+        :rtype: str
+        """
+        return self._data_disk_size
+
+    @data_disk_size.setter
+    def data_disk_size(self, data_disk_size):
+        """Sets the data_disk_size of this ProductInfo.
+
+        数据盘大小，单位GB。
+
+        :param data_disk_size: The data_disk_size of this ProductInfo.
+        :type data_disk_size: str
+        """
+        self._data_disk_size = data_disk_size
 
     @property
     def gpu_desc(self):
@@ -642,6 +685,50 @@ class ProductInfo:
         :type sub_product_list: list[str]
         """
         self._sub_product_list = sub_product_list
+
+    @property
+    def default_desktop_num(self):
+        """Gets the default_desktop_num of this ProductInfo.
+
+        专享主机套餐默认的桌面数。
+
+        :return: The default_desktop_num of this ProductInfo.
+        :rtype: int
+        """
+        return self._default_desktop_num
+
+    @default_desktop_num.setter
+    def default_desktop_num(self, default_desktop_num):
+        """Sets the default_desktop_num of this ProductInfo.
+
+        专享主机套餐默认的桌面数。
+
+        :param default_desktop_num: The default_desktop_num of this ProductInfo.
+        :type default_desktop_num: int
+        """
+        self._default_desktop_num = default_desktop_num
+
+    @property
+    def max_apply_desktop_num(self):
+        """Gets the max_apply_desktop_num of this ProductInfo.
+
+        专享主机支持创建的最大桌面数。
+
+        :return: The max_apply_desktop_num of this ProductInfo.
+        :rtype: int
+        """
+        return self._max_apply_desktop_num
+
+    @max_apply_desktop_num.setter
+    def max_apply_desktop_num(self, max_apply_desktop_num):
+        """Sets the max_apply_desktop_num of this ProductInfo.
+
+        专享主机支持创建的最大桌面数。
+
+        :param max_apply_desktop_num: The max_apply_desktop_num of this ProductInfo.
+        :type max_apply_desktop_num: int
+        """
+        self._max_apply_desktop_num = max_apply_desktop_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

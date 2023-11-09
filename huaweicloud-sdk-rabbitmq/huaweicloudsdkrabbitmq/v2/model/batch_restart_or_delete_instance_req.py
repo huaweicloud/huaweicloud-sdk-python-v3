@@ -25,7 +25,7 @@ class BatchRestartOrDeleteInstanceReq:
     attribute_map = {
         'instances': 'instances',
         'action': 'action',
-        'all_failure': 'allFailure'
+        'all_failure': 'all_failure'
     }
 
     def __init__(self, instances=None, action=None, all_failure=None):

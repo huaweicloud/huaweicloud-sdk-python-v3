@@ -23,7 +23,8 @@ class Eips:
         'eip_charge_mode': 'str',
         'create_time': 'str',
         'attached_desktop_id': 'str',
-        'attached_desktop_name': 'str'
+        'attached_desktop_name': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class Eips:
         'eip_charge_mode': 'eip_charge_mode',
         'create_time': 'create_time',
         'attached_desktop_id': 'attached_desktop_id',
-        'attached_desktop_name': 'attached_desktop_name'
+        'attached_desktop_name': 'attached_desktop_name',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, id=None, address=None, bandwidth_size=None, eip_charge_mode=None, create_time=None, attached_desktop_id=None, attached_desktop_name=None):
+    def __init__(self, id=None, address=None, bandwidth_size=None, eip_charge_mode=None, create_time=None, attached_desktop_id=None, attached_desktop_name=None, enterprise_project_id=None):
         """Eips
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class Eips:
         :type attached_desktop_id: str
         :param attached_desktop_name: 绑定的桌面名称。
         :type attached_desktop_name: str
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
         """
         
         
@@ -66,6 +70,7 @@ class Eips:
         self._create_time = None
         self._attached_desktop_id = None
         self._attached_desktop_name = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if id is not None:
@@ -82,6 +87,8 @@ class Eips:
             self.attached_desktop_id = attached_desktop_id
         if attached_desktop_name is not None:
             self.attached_desktop_name = attached_desktop_name
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def id(self):
@@ -236,6 +243,28 @@ class Eips:
         :type attached_desktop_name: str
         """
         self._attached_desktop_name = attached_desktop_name
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this Eips.
+
+        企业项目ID
+
+        :return: The enterprise_project_id of this Eips.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this Eips.
+
+        企业项目ID
+
+        :param enterprise_project_id: The enterprise_project_id of this Eips.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

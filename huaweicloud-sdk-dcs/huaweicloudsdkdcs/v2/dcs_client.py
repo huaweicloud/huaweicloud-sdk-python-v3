@@ -315,64 +315,6 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def check_migration_connectivity(self, request):
-        """数据迁移配置页实例连接测试
-
-        数据迁移配置页实例连接测试
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for CheckMigrationConnectivity
-        :type request: :class:`huaweicloudsdkdcs.v2.CheckMigrationConnectivityRequest`
-        :rtype: :class:`huaweicloudsdkdcs.v2.CheckMigrationConnectivityResponse`
-        """
-        return self._check_migration_connectivity_with_http_info(request)
-
-    def _check_migration_connectivity_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'task_id' in local_var_params:
-            path_params['task_id'] = local_var_params['task_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/migration/{task_id}/connectivity',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckMigrationConnectivityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def copy_instance(self, request):
         """备份指定实例
 

@@ -19,18 +19,16 @@ class AddDomainListDto:
     openapi_types = {
         'fw_instance_id': 'str',
         'object_id': 'str',
-        'domain_set_id': 'str',
         'domain_names': 'list[DomainSetInfoDto]'
     }
 
     attribute_map = {
         'fw_instance_id': 'fw_instance_id',
         'object_id': 'object_id',
-        'domain_set_id': 'domain_set_id',
         'domain_names': 'domain_names'
     }
 
-    def __init__(self, fw_instance_id=None, object_id=None, domain_set_id=None, domain_names=None):
+    def __init__(self, fw_instance_id=None, object_id=None, domain_names=None):
         """AddDomainListDto
 
         The model defined in huaweicloud sdk
@@ -39,8 +37,6 @@ class AddDomainListDto:
         :type fw_instance_id: str
         :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
         :type object_id: str
-        :param domain_set_id: 域名组id
-        :type domain_set_id: str
         :param domain_names: 域名列表
         :type domain_names: list[:class:`huaweicloudsdkcfw.v1.DomainSetInfoDto`]
         """
@@ -49,13 +45,11 @@ class AddDomainListDto:
 
         self._fw_instance_id = None
         self._object_id = None
-        self._domain_set_id = None
         self._domain_names = None
         self.discriminator = None
 
         self.fw_instance_id = fw_instance_id
         self.object_id = object_id
-        self.domain_set_id = domain_set_id
         self.domain_names = domain_names
 
     @property
@@ -101,28 +95,6 @@ class AddDomainListDto:
         :type object_id: str
         """
         self._object_id = object_id
-
-    @property
-    def domain_set_id(self):
-        """Gets the domain_set_id of this AddDomainListDto.
-
-        域名组id
-
-        :return: The domain_set_id of this AddDomainListDto.
-        :rtype: str
-        """
-        return self._domain_set_id
-
-    @domain_set_id.setter
-    def domain_set_id(self, domain_set_id):
-        """Sets the domain_set_id of this AddDomainListDto.
-
-        域名组id
-
-        :param domain_set_id: The domain_set_id of this AddDomainListDto.
-        :type domain_set_id: str
-        """
-        self._domain_set_id = domain_set_id
 
     @property
     def domain_names(self):

@@ -27,7 +27,10 @@ class CreateDesktopReq:
         'nics': 'list[Nic]',
         'security_groups': 'list[SecurityGroupInfo]',
         'desktops': 'list[Desktop]',
+        'desktop_name': 'str',
+        'size': 'int',
         'email_notification': 'bool',
+        'enterprise_project_id': 'str',
         'tags': 'list[Tag]',
         'eip': 'Eip'
     }
@@ -43,17 +46,20 @@ class CreateDesktopReq:
         'nics': 'nics',
         'security_groups': 'security_groups',
         'desktops': 'desktops',
+        'desktop_name': 'desktop_name',
+        'size': 'size',
         'email_notification': 'email_notification',
+        'enterprise_project_id': 'enterprise_project_id',
         'tags': 'tags',
         'eip': 'eip'
     }
 
-    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, email_notification=None, tags=None, eip=None):
+    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, desktop_name=None, size=None, email_notification=None, enterprise_project_id=None, tags=None, eip=None):
         """CreateDesktopReq
 
         The model defined in huaweicloud sdk
 
-        :param desktop_type: 云桌面类型。  - DEDICATED：专属桌面。
+        :param desktop_type: 云桌面类型。 - DEDICATED：专属桌面，单用户。 - SHARED: 多用户共享桌面。
         :type desktop_type: str
         :param availability_zone: 可用分区。将桌面创建到指定的可用分区。如果不指定则使用系统随机的可用分区。
         :type availability_zone: str
@@ -73,8 +79,14 @@ class CreateDesktopReq:
         :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         :param desktops: 创建桌面使用的参数列表。长度为1-100。  当前不支持一批桌面不同配置，所有桌面的配置和第一台的一致，如果第一台未设置参数，则取外层的同名参数。
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.Desktop`]
+        :param desktop_name: 搭配size使用，当size为1时代表桌面名，位数1-15，当size大于1时代表桌面名前缀，位数：1-13。
+        :type desktop_name: str
+        :param size: 创建不分配用户的桌面的个数，和desktops不能同时生效，搭配desktop_name使用。
+        :type size: int
         :param email_notification: 创建成功后是否发送邮件通知桌面用户，默认为true。
         :type email_notification: bool
+        :param enterprise_project_id: 企业项目ID，默认\&quot;0\&quot;
+        :type enterprise_project_id: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
         :param eip: 
@@ -93,7 +105,10 @@ class CreateDesktopReq:
         self._nics = None
         self._security_groups = None
         self._desktops = None
+        self._desktop_name = None
+        self._size = None
         self._email_notification = None
+        self._enterprise_project_id = None
         self._tags = None
         self._eip = None
         self.discriminator = None
@@ -112,8 +127,14 @@ class CreateDesktopReq:
         if security_groups is not None:
             self.security_groups = security_groups
         self.desktops = desktops
+        if desktop_name is not None:
+            self.desktop_name = desktop_name
+        if size is not None:
+            self.size = size
         if email_notification is not None:
             self.email_notification = email_notification
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
         if eip is not None:
@@ -123,7 +144,7 @@ class CreateDesktopReq:
     def desktop_type(self):
         """Gets the desktop_type of this CreateDesktopReq.
 
-        云桌面类型。  - DEDICATED：专属桌面。
+        云桌面类型。 - DEDICATED：专属桌面，单用户。 - SHARED: 多用户共享桌面。
 
         :return: The desktop_type of this CreateDesktopReq.
         :rtype: str
@@ -134,7 +155,7 @@ class CreateDesktopReq:
     def desktop_type(self, desktop_type):
         """Sets the desktop_type of this CreateDesktopReq.
 
-        云桌面类型。  - DEDICATED：专属桌面。
+        云桌面类型。 - DEDICATED：专属桌面，单用户。 - SHARED: 多用户共享桌面。
 
         :param desktop_type: The desktop_type of this CreateDesktopReq.
         :type desktop_type: str
@@ -336,6 +357,50 @@ class CreateDesktopReq:
         self._desktops = desktops
 
     @property
+    def desktop_name(self):
+        """Gets the desktop_name of this CreateDesktopReq.
+
+        搭配size使用，当size为1时代表桌面名，位数1-15，当size大于1时代表桌面名前缀，位数：1-13。
+
+        :return: The desktop_name of this CreateDesktopReq.
+        :rtype: str
+        """
+        return self._desktop_name
+
+    @desktop_name.setter
+    def desktop_name(self, desktop_name):
+        """Sets the desktop_name of this CreateDesktopReq.
+
+        搭配size使用，当size为1时代表桌面名，位数1-15，当size大于1时代表桌面名前缀，位数：1-13。
+
+        :param desktop_name: The desktop_name of this CreateDesktopReq.
+        :type desktop_name: str
+        """
+        self._desktop_name = desktop_name
+
+    @property
+    def size(self):
+        """Gets the size of this CreateDesktopReq.
+
+        创建不分配用户的桌面的个数，和desktops不能同时生效，搭配desktop_name使用。
+
+        :return: The size of this CreateDesktopReq.
+        :rtype: int
+        """
+        return self._size
+
+    @size.setter
+    def size(self, size):
+        """Sets the size of this CreateDesktopReq.
+
+        创建不分配用户的桌面的个数，和desktops不能同时生效，搭配desktop_name使用。
+
+        :param size: The size of this CreateDesktopReq.
+        :type size: int
+        """
+        self._size = size
+
+    @property
     def email_notification(self):
         """Gets the email_notification of this CreateDesktopReq.
 
@@ -356,6 +421,28 @@ class CreateDesktopReq:
         :type email_notification: bool
         """
         self._email_notification = email_notification
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CreateDesktopReq.
+
+        企业项目ID，默认\"0\"
+
+        :return: The enterprise_project_id of this CreateDesktopReq.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CreateDesktopReq.
+
+        企业项目ID，默认\"0\"
+
+        :param enterprise_project_id: The enterprise_project_id of this CreateDesktopReq.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def tags(self):

@@ -35,7 +35,8 @@ class CreateGraphReqGraph:
         'crypt_algorithm': 'str',
         'enable_https': 'bool',
         'product_type': 'str',
-        'vertex_id_type': 'CreateGraphReqGraphVertexIdType'
+        'vertex_id_type': 'CreateGraphReqGraphVertexIdType',
+        'enable_multi_label': 'bool'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class CreateGraphReqGraph:
         'crypt_algorithm': 'crypt_algorithm',
         'enable_https': 'enable_https',
         'product_type': 'product_type',
-        'vertex_id_type': 'vertex_id_type'
+        'vertex_id_type': 'vertex_id_type',
+        'enable_multi_label': 'enable_multi_label'
     }
 
-    def __init__(self, name=None, graph_size_type_index=None, arch=None, vpc_id=None, subnet_id=None, security_group_id=None, public_ip=None, enable_multi_az=None, encryption=None, lts_operation_trace=None, sys_tags=None, tags=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, crypt_algorithm=None, enable_https=None, product_type=None, vertex_id_type=None):
+    def __init__(self, name=None, graph_size_type_index=None, arch=None, vpc_id=None, subnet_id=None, security_group_id=None, public_ip=None, enable_multi_az=None, encryption=None, lts_operation_trace=None, sys_tags=None, tags=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, crypt_algorithm=None, enable_https=None, product_type=None, vertex_id_type=None, enable_multi_label=None):
         """CreateGraphReqGraph
 
         The model defined in huaweicloud sdk
@@ -103,6 +105,8 @@ class CreateGraphReqGraph:
         :type product_type: str
         :param vertex_id_type: 
         :type vertex_id_type: :class:`huaweicloudsdkges.v2.CreateGraphReqGraphVertexIdType`
+        :param enable_multi_label: 是否启用多标签
+        :type enable_multi_label: bool
         """
         
         
@@ -126,6 +130,7 @@ class CreateGraphReqGraph:
         self._enable_https = None
         self._product_type = None
         self._vertex_id_type = None
+        self._enable_multi_label = None
         self.discriminator = None
 
         self.name = name
@@ -159,6 +164,8 @@ class CreateGraphReqGraph:
             self.product_type = product_type
         if vertex_id_type is not None:
             self.vertex_id_type = vertex_id_type
+        if enable_multi_label is not None:
+            self.enable_multi_label = enable_multi_label
 
     @property
     def name(self):
@@ -561,6 +568,28 @@ class CreateGraphReqGraph:
         :type vertex_id_type: :class:`huaweicloudsdkges.v2.CreateGraphReqGraphVertexIdType`
         """
         self._vertex_id_type = vertex_id_type
+
+    @property
+    def enable_multi_label(self):
+        """Gets the enable_multi_label of this CreateGraphReqGraph.
+
+        是否启用多标签
+
+        :return: The enable_multi_label of this CreateGraphReqGraph.
+        :rtype: bool
+        """
+        return self._enable_multi_label
+
+    @enable_multi_label.setter
+    def enable_multi_label(self, enable_multi_label):
+        """Sets the enable_multi_label of this CreateGraphReqGraph.
+
+        是否启用多标签
+
+        :param enable_multi_label: The enable_multi_label of this CreateGraphReqGraph.
+        :type enable_multi_label: bool
+        """
+        self._enable_multi_label = enable_multi_label
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -51,7 +51,7 @@ class UpdateAutoScalingPolicyRequestBody:
         :type monitor_cycle: int
         :param silence_cycle: 静默周期（单位：秒）。 两次自动扩容或自动回缩的最小间隔时间。  取值范围：300、600、1800、3600、7200、10800、86400、604800。  status为ON时必填。
         :type silence_cycle: int
-        :param enlarge_threshold: 扩容阈值（百分比数值）。  取值范围：50-100。  status为ON时必填。
+        :param enlarge_threshold: CPU平均使用率（百分比数值）。  取值范围：50-100。  status为ON时必填。
         :type enlarge_threshold: int
         :param max_flavor: 扩容规格上限。开启扩缩规格时必填。
         :type max_flavor: str
@@ -165,7 +165,7 @@ class UpdateAutoScalingPolicyRequestBody:
     def enlarge_threshold(self):
         """Gets the enlarge_threshold of this UpdateAutoScalingPolicyRequestBody.
 
-        扩容阈值（百分比数值）。  取值范围：50-100。  status为ON时必填。
+        CPU平均使用率（百分比数值）。  取值范围：50-100。  status为ON时必填。
 
         :return: The enlarge_threshold of this UpdateAutoScalingPolicyRequestBody.
         :rtype: int
@@ -176,7 +176,7 @@ class UpdateAutoScalingPolicyRequestBody:
     def enlarge_threshold(self, enlarge_threshold):
         """Sets the enlarge_threshold of this UpdateAutoScalingPolicyRequestBody.
 
-        扩容阈值（百分比数值）。  取值范围：50-100。  status为ON时必填。
+        CPU平均使用率（百分比数值）。  取值范围：50-100。  status为ON时必填。
 
         :param enlarge_threshold: The enlarge_threshold of this UpdateAutoScalingPolicyRequestBody.
         :type enlarge_threshold: int

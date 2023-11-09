@@ -29,7 +29,7 @@ class ShowQuotasRequest:
 
         The model defined in huaweicloud sdk
 
-        :param type: 支持过滤的配额类型： - [physicalConnect:  物理连接direct_connect实例的配额和使用量](tag:hws) - [virtualInterface: 虚拟接口virtual-interface的配额和使用量](tag:hws) - [connectGateway: 连接网关（用于关联GEIP）的配额和使用量](tag:hws) - [geip: 每租户可以关联GEIP的配额和使用量](tag:hws) - [globalDcGateway 专线全球接入网关的配额和使用量](tag:hws) - [peerLinkPerGdgw: 接入网关的关联连接的配额和使用量](tag:hws)
+        :param type: 支持过滤的配额类型： - [physicalConnect:  物理连接direct_connect实例的配额和使用量] - [virtualInterface: 虚拟接口virtual-interface的配额和使用量] - [connectGateway: 连接网关（用于关联GEIP）的配额和使用量](tag:hws) - [geip: 每租户可以关联GEIP的配额和使用量](tag:hws) - [globalDcGateway 专线全球接入网关的配额和使用量] - [peerLinkPerGdgw: 接入网关的关联连接的配额和使用量]
         :type type: list[str]
         """
         
@@ -45,7 +45,7 @@ class ShowQuotasRequest:
     def type(self):
         """Gets the type of this ShowQuotasRequest.
 
-        支持过滤的配额类型： - [physicalConnect:  物理连接direct_connect实例的配额和使用量](tag:hws) - [virtualInterface: 虚拟接口virtual-interface的配额和使用量](tag:hws) - [connectGateway: 连接网关（用于关联GEIP）的配额和使用量](tag:hws) - [geip: 每租户可以关联GEIP的配额和使用量](tag:hws) - [globalDcGateway 专线全球接入网关的配额和使用量](tag:hws) - [peerLinkPerGdgw: 接入网关的关联连接的配额和使用量](tag:hws)
+        支持过滤的配额类型： - [physicalConnect:  物理连接direct_connect实例的配额和使用量] - [virtualInterface: 虚拟接口virtual-interface的配额和使用量] - [connectGateway: 连接网关（用于关联GEIP）的配额和使用量](tag:hws) - [geip: 每租户可以关联GEIP的配额和使用量](tag:hws) - [globalDcGateway 专线全球接入网关的配额和使用量] - [peerLinkPerGdgw: 接入网关的关联连接的配额和使用量]
 
         :return: The type of this ShowQuotasRequest.
         :rtype: list[str]
@@ -56,7 +56,7 @@ class ShowQuotasRequest:
     def type(self, type):
         """Sets the type of this ShowQuotasRequest.
 
-        支持过滤的配额类型： - [physicalConnect:  物理连接direct_connect实例的配额和使用量](tag:hws) - [virtualInterface: 虚拟接口virtual-interface的配额和使用量](tag:hws) - [connectGateway: 连接网关（用于关联GEIP）的配额和使用量](tag:hws) - [geip: 每租户可以关联GEIP的配额和使用量](tag:hws) - [globalDcGateway 专线全球接入网关的配额和使用量](tag:hws) - [peerLinkPerGdgw: 接入网关的关联连接的配额和使用量](tag:hws)
+        支持过滤的配额类型： - [physicalConnect:  物理连接direct_connect实例的配额和使用量] - [virtualInterface: 虚拟接口virtual-interface的配额和使用量] - [connectGateway: 连接网关（用于关联GEIP）的配额和使用量](tag:hws) - [geip: 每租户可以关联GEIP的配额和使用量](tag:hws) - [globalDcGateway 专线全球接入网关的配额和使用量] - [peerLinkPerGdgw: 接入网关的关联连接的配额和使用量]
 
         :param type: The type of this ShowQuotasRequest.
         :type type: list[str]

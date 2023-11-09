@@ -19,6 +19,7 @@ class Desktop:
     openapi_types = {
         'user_name': 'str',
         'user_email': 'str',
+        'user_phone': 'str',
         'user_group': 'str',
         'computer_name': 'str',
         'desktop_name_prefix': 'str'
@@ -27,12 +28,13 @@ class Desktop:
     attribute_map = {
         'user_name': 'user_name',
         'user_email': 'user_email',
+        'user_phone': 'user_phone',
         'user_group': 'user_group',
         'computer_name': 'computer_name',
         'desktop_name_prefix': 'desktop_name_prefix'
     }
 
-    def __init__(self, user_name=None, user_email=None, user_group=None, computer_name=None, desktop_name_prefix=None):
+    def __init__(self, user_name=None, user_email=None, user_phone=None, user_group=None, computer_name=None, desktop_name_prefix=None):
         """Desktop
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class Desktop:
         :type user_name: str
         :param user_email: 合法用户邮箱，桌面创建成功后系统会通过发送邮件的方式通知用户。
         :type user_email: str
+        :param user_phone: 合法用户手机号。
+        :type user_phone: str
         :param user_group: 桌面用户所属的用户组。  - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
         :type user_group: str
         :param computer_name: 桌面名，桌面名必须保证唯一。桌面名称只允许输入大写字母、小写字母、数字、中划线，以字母或数字开头、不能以中划线结尾，长度范围为1~15。
@@ -53,6 +57,7 @@ class Desktop:
 
         self._user_name = None
         self._user_email = None
+        self._user_phone = None
         self._user_group = None
         self._computer_name = None
         self._desktop_name_prefix = None
@@ -61,6 +66,8 @@ class Desktop:
         self.user_name = user_name
         if user_email is not None:
             self.user_email = user_email
+        if user_phone is not None:
+            self.user_phone = user_phone
         if user_group is not None:
             self.user_group = user_group
         if computer_name is not None:
@@ -111,6 +118,28 @@ class Desktop:
         :type user_email: str
         """
         self._user_email = user_email
+
+    @property
+    def user_phone(self):
+        """Gets the user_phone of this Desktop.
+
+        合法用户手机号。
+
+        :return: The user_phone of this Desktop.
+        :rtype: str
+        """
+        return self._user_phone
+
+    @user_phone.setter
+    def user_phone(self, user_phone):
+        """Sets the user_phone of this Desktop.
+
+        合法用户手机号。
+
+        :param user_phone: The user_phone of this Desktop.
+        :type user_phone: str
+        """
+        self._user_phone = user_phone
 
     @property
     def user_group(self):

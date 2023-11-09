@@ -21,7 +21,7 @@ class MetadataDeleteReq:
     }
 
     attribute_map = {
-        'task_ids': 'taskIds'
+        'task_ids': 'task_ids'
     }
 
     def __init__(self, task_ids=None):

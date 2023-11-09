@@ -27,10 +27,68 @@ class ScmClient(Client):
 
         return client_builder
 
+    def batch_push_certificate(self, request):
+        """批量推送证书
+
+        批量推送SSL证书到弹性负载均衡（Elastic Load Balance，简称ELB）、Web应用防火墙（Web Application Firewall，WAF）、CDN（Content Delivery Network，内容分发网络）等其它华为云产品多个region中。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchPushCertificate
+        :type request: :class:`huaweicloudsdkscm.v3.BatchPushCertificateRequest`
+        :rtype: :class:`huaweicloudsdkscm.v3.BatchPushCertificateResponse`
+        """
+        return self._batch_push_certificate_with_http_info(request)
+
+    def _batch_push_certificate_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/scm/certificates/{certificate_id}/batch-push',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='BatchPushCertificateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_certificate(self, request):
         """删除证书
 
-        删除证书实例，即将证书资源从华为云系统中删除。
+        删除证书实例，即将证书资源从系统中删除。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -266,7 +324,7 @@ class ScmClient(Client):
     def push_certificate(self, request):
         """推送证书
 
-        推送SSL证书到弹性负载均衡（Elastic Load Balance，简称ELB）、Web应用防火墙（Web Application Firewall，WAF）、CDN（Content Delivery Network，内容分发网络）等其它华为云产品中。
+        推送SSL证书到弹性负载均衡（Elastic Load Balance，简称ELB）、Web应用防火墙（Web Application Firewall，WAF）、CDN（Content Delivery Network，内容分发网络）等其它云产品中。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

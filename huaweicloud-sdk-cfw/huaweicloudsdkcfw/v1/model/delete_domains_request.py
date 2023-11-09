@@ -17,20 +17,24 @@ class DeleteDomainsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'set_id': 'str',
         'enterprise_project_id': 'str',
         'body': 'DeleteDomainDto'
     }
 
     attribute_map = {
+        'set_id': 'set_id',
         'enterprise_project_id': 'enterprise_project_id',
         'body': 'body'
     }
 
-    def __init__(self, enterprise_project_id=None, body=None):
+    def __init__(self, set_id=None, enterprise_project_id=None, body=None):
         """DeleteDomainsRequest
 
         The model defined in huaweicloud sdk
 
+        :param set_id: 域名组id
+        :type set_id: str
         :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
         :type enterprise_project_id: str
         :param body: Body of the DeleteDomainsRequest
@@ -39,14 +43,38 @@ class DeleteDomainsRequest:
         
         
 
+        self._set_id = None
         self._enterprise_project_id = None
         self._body = None
         self.discriminator = None
 
+        self.set_id = set_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if body is not None:
             self.body = body
+
+    @property
+    def set_id(self):
+        """Gets the set_id of this DeleteDomainsRequest.
+
+        域名组id
+
+        :return: The set_id of this DeleteDomainsRequest.
+        :rtype: str
+        """
+        return self._set_id
+
+    @set_id.setter
+    def set_id(self, set_id):
+        """Sets the set_id of this DeleteDomainsRequest.
+
+        域名组id
+
+        :param set_id: The set_id of this DeleteDomainsRequest.
+        :type set_id: str
+        """
+        self._set_id = set_id
 
     @property
     def enterprise_project_id(self):

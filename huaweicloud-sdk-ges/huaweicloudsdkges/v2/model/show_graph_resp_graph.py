@@ -55,7 +55,11 @@ class ShowGraphRespGraph:
         'enable_https': 'bool',
         'tags': 'list[ListGraphsRespTags]',
         'product_type': 'str',
-        'vertex_id_type': 'ListGraphsRespVertexIdType'
+        'vertex_id_type': 'ListGraphsRespVertexIdType',
+        'origin_graph_size_type_index': 'str',
+        'expand_time': 'str',
+        'resize_time': 'str',
+        'enable_multi_label': 'bool'
     }
 
     attribute_map = {
@@ -97,10 +101,14 @@ class ShowGraphRespGraph:
         'enable_https': 'enable_https',
         'tags': 'tags',
         'product_type': 'product_type',
-        'vertex_id_type': 'vertex_id_type'
+        'vertex_id_type': 'vertex_id_type',
+        'origin_graph_size_type_index': 'origin_graph_size_type_index',
+        'expand_time': 'expand_time',
+        'resize_time': 'resize_time',
+        'enable_multi_label': 'enable_multi_label'
     }
 
-    def __init__(self, id=None, name=None, created_by=None, is_multi_az=None, region_code=None, az_code=None, schema_path=None, edgeset_path=None, vertexset_path=None, edgeset_format=None, edgeset_default_label=None, vertexset_format=None, vertexset_default_label=None, data_store_version=None, sys_tags=None, status=None, action_progress=None, graph_size_type_index=None, vpc_id=None, subnet_id=None, security_group_id=None, replication=None, created=None, updated=None, private_ip=None, public_ip=None, arch=None, encrypted=None, master_key_id=None, master_key_name=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, traffic_ip_list=None, crypt_algorithm=None, enable_https=None, tags=None, product_type=None, vertex_id_type=None):
+    def __init__(self, id=None, name=None, created_by=None, is_multi_az=None, region_code=None, az_code=None, schema_path=None, edgeset_path=None, vertexset_path=None, edgeset_format=None, edgeset_default_label=None, vertexset_format=None, vertexset_default_label=None, data_store_version=None, sys_tags=None, status=None, action_progress=None, graph_size_type_index=None, vpc_id=None, subnet_id=None, security_group_id=None, replication=None, created=None, updated=None, private_ip=None, public_ip=None, arch=None, encrypted=None, master_key_id=None, master_key_name=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, traffic_ip_list=None, crypt_algorithm=None, enable_https=None, tags=None, product_type=None, vertex_id_type=None, origin_graph_size_type_index=None, expand_time=None, resize_time=None, enable_multi_label=None):
         """ShowGraphRespGraph
 
         The model defined in huaweicloud sdk
@@ -183,6 +191,14 @@ class ShowGraphRespGraph:
         :type product_type: str
         :param vertex_id_type: 
         :type vertex_id_type: :class:`huaweicloudsdkges.v2.ListGraphsRespVertexIdType`
+        :param origin_graph_size_type_index: 图的初始规格。该参数从2.3.15版本后开始支持。
+        :type origin_graph_size_type_index: str
+        :param expand_time: 图扩副本的时间。
+        :type expand_time: str
+        :param resize_time: 图扩容的时间。
+        :type resize_time: str
+        :param enable_multi_label: 是否启用多标签。
+        :type enable_multi_label: bool
         """
         
         
@@ -226,6 +242,10 @@ class ShowGraphRespGraph:
         self._tags = None
         self._product_type = None
         self._vertex_id_type = None
+        self._origin_graph_size_type_index = None
+        self._expand_time = None
+        self._resize_time = None
+        self._enable_multi_label = None
         self.discriminator = None
 
         if id is not None:
@@ -306,6 +326,14 @@ class ShowGraphRespGraph:
             self.product_type = product_type
         if vertex_id_type is not None:
             self.vertex_id_type = vertex_id_type
+        if origin_graph_size_type_index is not None:
+            self.origin_graph_size_type_index = origin_graph_size_type_index
+        if expand_time is not None:
+            self.expand_time = expand_time
+        if resize_time is not None:
+            self.resize_time = resize_time
+        if enable_multi_label is not None:
+            self.enable_multi_label = enable_multi_label
 
     @property
     def id(self):
@@ -1160,6 +1188,94 @@ class ShowGraphRespGraph:
         :type vertex_id_type: :class:`huaweicloudsdkges.v2.ListGraphsRespVertexIdType`
         """
         self._vertex_id_type = vertex_id_type
+
+    @property
+    def origin_graph_size_type_index(self):
+        """Gets the origin_graph_size_type_index of this ShowGraphRespGraph.
+
+        图的初始规格。该参数从2.3.15版本后开始支持。
+
+        :return: The origin_graph_size_type_index of this ShowGraphRespGraph.
+        :rtype: str
+        """
+        return self._origin_graph_size_type_index
+
+    @origin_graph_size_type_index.setter
+    def origin_graph_size_type_index(self, origin_graph_size_type_index):
+        """Sets the origin_graph_size_type_index of this ShowGraphRespGraph.
+
+        图的初始规格。该参数从2.3.15版本后开始支持。
+
+        :param origin_graph_size_type_index: The origin_graph_size_type_index of this ShowGraphRespGraph.
+        :type origin_graph_size_type_index: str
+        """
+        self._origin_graph_size_type_index = origin_graph_size_type_index
+
+    @property
+    def expand_time(self):
+        """Gets the expand_time of this ShowGraphRespGraph.
+
+        图扩副本的时间。
+
+        :return: The expand_time of this ShowGraphRespGraph.
+        :rtype: str
+        """
+        return self._expand_time
+
+    @expand_time.setter
+    def expand_time(self, expand_time):
+        """Sets the expand_time of this ShowGraphRespGraph.
+
+        图扩副本的时间。
+
+        :param expand_time: The expand_time of this ShowGraphRespGraph.
+        :type expand_time: str
+        """
+        self._expand_time = expand_time
+
+    @property
+    def resize_time(self):
+        """Gets the resize_time of this ShowGraphRespGraph.
+
+        图扩容的时间。
+
+        :return: The resize_time of this ShowGraphRespGraph.
+        :rtype: str
+        """
+        return self._resize_time
+
+    @resize_time.setter
+    def resize_time(self, resize_time):
+        """Sets the resize_time of this ShowGraphRespGraph.
+
+        图扩容的时间。
+
+        :param resize_time: The resize_time of this ShowGraphRespGraph.
+        :type resize_time: str
+        """
+        self._resize_time = resize_time
+
+    @property
+    def enable_multi_label(self):
+        """Gets the enable_multi_label of this ShowGraphRespGraph.
+
+        是否启用多标签。
+
+        :return: The enable_multi_label of this ShowGraphRespGraph.
+        :rtype: bool
+        """
+        return self._enable_multi_label
+
+    @enable_multi_label.setter
+    def enable_multi_label(self, enable_multi_label):
+        """Sets the enable_multi_label of this ShowGraphRespGraph.
+
+        是否启用多标签。
+
+        :param enable_multi_label: The enable_multi_label of this ShowGraphRespGraph.
+        :type enable_multi_label: bool
+        """
+        self._enable_multi_label = enable_multi_label
 
     def to_dict(self):
         """Returns the model properties as a dict"""

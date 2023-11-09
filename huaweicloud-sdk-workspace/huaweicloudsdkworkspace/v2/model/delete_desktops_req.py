@@ -19,16 +19,18 @@ class DeleteDesktopsReq:
     openapi_types = {
         'desktop_ids': 'list[str]',
         'delete_users': 'bool',
-        'email_notification': 'bool'
+        'email_notification': 'bool',
+        'is_force_delete': 'bool'
     }
 
     attribute_map = {
         'desktop_ids': 'desktop_ids',
         'delete_users': 'delete_users',
-        'email_notification': 'email_notification'
+        'email_notification': 'email_notification',
+        'is_force_delete': 'is_force_delete'
     }
 
-    def __init__(self, desktop_ids=None, delete_users=None, email_notification=None):
+    def __init__(self, desktop_ids=None, delete_users=None, email_notification=None, is_force_delete=None):
         """DeleteDesktopsReq
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class DeleteDesktopsReq:
         :type delete_users: bool
         :param email_notification: 是否邮件通知，true：邮件通知，false：不通知，默认值true。
         :type email_notification: bool
+        :param is_force_delete: 是否强制删除，true：强制删除，false：不强制删除
+        :type is_force_delete: bool
         """
         
         
@@ -46,6 +50,7 @@ class DeleteDesktopsReq:
         self._desktop_ids = None
         self._delete_users = None
         self._email_notification = None
+        self._is_force_delete = None
         self.discriminator = None
 
         self.desktop_ids = desktop_ids
@@ -53,6 +58,8 @@ class DeleteDesktopsReq:
             self.delete_users = delete_users
         if email_notification is not None:
             self.email_notification = email_notification
+        if is_force_delete is not None:
+            self.is_force_delete = is_force_delete
 
     @property
     def desktop_ids(self):
@@ -119,6 +126,28 @@ class DeleteDesktopsReq:
         :type email_notification: bool
         """
         self._email_notification = email_notification
+
+    @property
+    def is_force_delete(self):
+        """Gets the is_force_delete of this DeleteDesktopsReq.
+
+        是否强制删除，true：强制删除，false：不强制删除
+
+        :return: The is_force_delete of this DeleteDesktopsReq.
+        :rtype: bool
+        """
+        return self._is_force_delete
+
+    @is_force_delete.setter
+    def is_force_delete(self, is_force_delete):
+        """Sets the is_force_delete of this DeleteDesktopsReq.
+
+        是否强制删除，true：强制删除，false：不强制删除
+
+        :param is_force_delete: The is_force_delete of this DeleteDesktopsReq.
+        :type is_force_delete: bool
+        """
+        self._is_force_delete = is_force_delete
 
     def to_dict(self):
         """Returns the model properties as a dict"""

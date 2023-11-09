@@ -55,7 +55,7 @@ class DefaultExceptionHandler(ExceptionHandler):
                 self._process_sdk_error(sdk_error, sdk_error_dict)
             else:
                 sdk_error.error_msg = response.text
-        except json.JSONDecodeError:
+        except six_utils.JSON_DECODE_ERROR:
             sdk_error.error_msg = response.text
         except Exception:
             sdk_error.error_msg = six.ensure_str(response.text)

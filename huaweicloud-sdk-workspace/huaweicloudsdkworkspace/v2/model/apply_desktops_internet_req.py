@@ -21,6 +21,7 @@ class ApplyDesktopsInternetReq:
         'eip_type': 'str',
         'eip_charge_mode': 'str',
         'bandwidth_size': 'int',
+        'enterprise_project_id': 'str',
         'count': 'int'
     }
 
@@ -29,10 +30,11 @@ class ApplyDesktopsInternetReq:
         'eip_type': 'eip_type',
         'eip_charge_mode': 'eip_charge_mode',
         'bandwidth_size': 'bandwidth_size',
+        'enterprise_project_id': 'enterprise_project_id',
         'count': 'count'
     }
 
-    def __init__(self, desktop_ids=None, eip_type=None, eip_charge_mode=None, bandwidth_size=None, count=None):
+    def __init__(self, desktop_ids=None, eip_type=None, eip_charge_mode=None, bandwidth_size=None, enterprise_project_id=None, count=None):
         """ApplyDesktopsInternetReq
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class ApplyDesktopsInternetReq:
         :type eip_charge_mode: str
         :param bandwidth_size: 带宽大小，单位Mbit/s。默认1Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。
         :type bandwidth_size: int
+        :param enterprise_project_id: 企业项目ID，默认\&quot;0\&quot;
+        :type enterprise_project_id: str
         :param count: 需要购买EIP的数量，当desktop_ids为空时需要填，兼容单独购买EIP场景。
         :type count: int
         """
@@ -55,6 +59,7 @@ class ApplyDesktopsInternetReq:
         self._eip_type = None
         self._eip_charge_mode = None
         self._bandwidth_size = None
+        self._enterprise_project_id = None
         self._count = None
         self.discriminator = None
 
@@ -63,6 +68,8 @@ class ApplyDesktopsInternetReq:
         self.eip_type = eip_type
         self.eip_charge_mode = eip_charge_mode
         self.bandwidth_size = bandwidth_size
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if count is not None:
             self.count = count
 
@@ -153,6 +160,28 @@ class ApplyDesktopsInternetReq:
         :type bandwidth_size: int
         """
         self._bandwidth_size = bandwidth_size
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ApplyDesktopsInternetReq.
+
+        企业项目ID，默认\"0\"
+
+        :return: The enterprise_project_id of this ApplyDesktopsInternetReq.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ApplyDesktopsInternetReq.
+
+        企业项目ID，默认\"0\"
+
+        :param enterprise_project_id: The enterprise_project_id of this ApplyDesktopsInternetReq.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def count(self):

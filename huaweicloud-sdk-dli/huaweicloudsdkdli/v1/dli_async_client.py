@@ -1481,6 +1481,65 @@ class DliAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_queue_property_async(self, request):
+        """新增队列属性
+
+        该接口用于增加队列属性, 一次可增加多个属性。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateQueueProperty
+        :type request: :class:`huaweicloudsdkdli.v1.CreateQueuePropertyRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateQueuePropertyResponse`
+        """
+        return self._create_queue_property_with_http_info(request)
+
+    def _create_queue_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/queues/{queue_name}/properties',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='CreateQueuePropertyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_auth_info_async(self, request):
         """删除跨源认证
 
@@ -1940,6 +1999,65 @@ class DliAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='DeleteQueuePlanResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_queue_property_async(self, request):
+        """删除队列的属性
+
+        该接口用于删除队列的属性，一次可删除多个属性值。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteQueueProperty
+        :type request: :class:`huaweicloudsdkdli.v1.DeleteQueuePropertyRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.DeleteQueuePropertyResponse`
+        """
+        return self._delete_queue_property_with_http_info(request)
+
+    def _delete_queue_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/queues/{queue_name}/properties',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='DeleteQueuePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2609,6 +2727,67 @@ class DliAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ListQueuePlansResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_queue_property_async(self, request):
+        """获取队列属性
+
+        获取队列配置的属性
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListQueueProperty
+        :type request: :class:`huaweicloudsdkdli.v1.ListQueuePropertyRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListQueuePropertyResponse`
+        """
+        return self._list_queue_property_with_http_info(request)
+
+    def _list_queue_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
+
+        query_params = []
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/queues/{queue_name}/properties',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ListQueuePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3895,6 +4074,65 @@ class DliAsyncClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='UpdateQueueCidrResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_queue_property_async(self, request):
+        """更新队列属性
+
+        更新队列属性
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateQueueProperty
+        :type request: :class:`huaweicloudsdkdli.v1.UpdateQueuePropertyRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateQueuePropertyResponse`
+        """
+        return self._update_queue_property_with_http_info(request)
+
+    def _update_queue_property_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/queues/{queue_name}/properties',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='UpdateQueuePropertyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

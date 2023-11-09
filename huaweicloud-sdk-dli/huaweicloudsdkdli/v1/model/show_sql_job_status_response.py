@@ -32,6 +32,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
         'database_name': 'str',
         'table_name': 'str',
         'detail': 'str',
+        'user_conf': 'str',
         'statement': 'str',
         'is_success': 'bool',
         'message': 'str',
@@ -54,6 +55,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
         'database_name': 'database_name',
         'table_name': 'table_name',
         'detail': 'detail',
+        'user_conf': 'user_conf',
         'statement': 'statement',
         'is_success': 'is_success',
         'message': 'message',
@@ -61,7 +63,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
         'tags': 'tags'
     }
 
-    def __init__(self, job_id=None, job_type=None, queue_name=None, owner=None, start_time=None, duration=None, status=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, database_name=None, table_name=None, detail=None, statement=None, is_success=None, message=None, job_mode=None, tags=None):
+    def __init__(self, job_id=None, job_type=None, queue_name=None, owner=None, start_time=None, duration=None, status=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, database_name=None, table_name=None, detail=None, user_conf=None, statement=None, is_success=None, message=None, job_mode=None, tags=None):
         """ShowSqlJobStatusResponse
 
         The model defined in huaweicloud sdk
@@ -94,6 +96,8 @@ class ShowSqlJobStatusResponse(SdkResponse):
         :type table_name: str
         :param detail: SQL查询的相关列信息的Json字符串。
         :type detail: str
+        :param user_conf: SQL配置参数信息Json字符串。
+        :type user_conf: str
         :param statement: 作业执行的SQL语句。
         :type statement: str
         :param is_success: 执行请求是否成功。“true”表示请求执行成功。
@@ -122,6 +126,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
         self._database_name = None
         self._table_name = None
         self._detail = None
+        self._user_conf = None
         self._statement = None
         self._is_success = None
         self._message = None
@@ -157,6 +162,8 @@ class ShowSqlJobStatusResponse(SdkResponse):
             self.table_name = table_name
         if detail is not None:
             self.detail = detail
+        if user_conf is not None:
+            self.user_conf = user_conf
         if statement is not None:
             self.statement = statement
         if is_success is not None:
@@ -475,6 +482,28 @@ class ShowSqlJobStatusResponse(SdkResponse):
         :type detail: str
         """
         self._detail = detail
+
+    @property
+    def user_conf(self):
+        """Gets the user_conf of this ShowSqlJobStatusResponse.
+
+        SQL配置参数信息Json字符串。
+
+        :return: The user_conf of this ShowSqlJobStatusResponse.
+        :rtype: str
+        """
+        return self._user_conf
+
+    @user_conf.setter
+    def user_conf(self, user_conf):
+        """Sets the user_conf of this ShowSqlJobStatusResponse.
+
+        SQL配置参数信息Json字符串。
+
+        :param user_conf: The user_conf of this ShowSqlJobStatusResponse.
+        :type user_conf: str
+        """
+        self._user_conf = user_conf
 
     @property
     def statement(self):

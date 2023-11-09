@@ -17,28 +17,35 @@ class TextDetectionDataReq:
     sensitive_list = []
 
     openapi_types = {
-        'text': 'str'
+        'text': 'str',
+        'language': 'str'
     }
 
     attribute_map = {
-        'text': 'text'
+        'text': 'text',
+        'language': 'language'
     }
 
-    def __init__(self, text=None):
+    def __init__(self, text=None, language=None):
         """TextDetectionDataReq
 
         The model defined in huaweicloud sdk
 
         :param text: 待检测文本，编码格式为“utf-8”，限定2000个字符以内，文本长度超过1500个字符时，只检测前1500个字符。
         :type text: str
+        :param language: 支持检测的文本语言
+        :type language: str
         """
         
         
 
         self._text = None
+        self._language = None
         self.discriminator = None
 
         self.text = text
+        if language is not None:
+            self.language = language
 
     @property
     def text(self):
@@ -61,6 +68,28 @@ class TextDetectionDataReq:
         :type text: str
         """
         self._text = text
+
+    @property
+    def language(self):
+        """Gets the language of this TextDetectionDataReq.
+
+        支持检测的文本语言
+
+        :return: The language of this TextDetectionDataReq.
+        :rtype: str
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this TextDetectionDataReq.
+
+        支持检测的文本语言
+
+        :param language: The language of this TextDetectionDataReq.
+        :type language: str
+        """
+        self._language = language
 
     def to_dict(self):
         """Returns the model properties as a dict"""

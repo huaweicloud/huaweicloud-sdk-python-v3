@@ -20,6 +20,7 @@ class ListItaSubJobsRequest:
         'status': 'str',
         'job_id': 'str',
         'job_type': 'str',
+        'desktop_pool_id': 'str',
         'limit': 'int',
         'offset': 'int'
     }
@@ -28,11 +29,12 @@ class ListItaSubJobsRequest:
         'status': 'status',
         'job_id': 'job_id',
         'job_type': 'job_type',
+        'desktop_pool_id': 'desktop_pool_id',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, status=None, job_id=None, job_type=None, limit=None, offset=None):
+    def __init__(self, status=None, job_id=None, job_type=None, desktop_pool_id=None, limit=None, offset=None):
         """ListItaSubJobsRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ListItaSubJobsRequest:
         :type job_id: str
         :param job_type: 任务类型  - createDesktops：创建桌面任务。  - applyWorkspace：开通云桌面服务。  - cancelWorkspace：注销云桌面服务。  - expandVolumes:  扩容磁盘。  - addVolumes: 添加磁盘。
         :type job_type: str
+        :param desktop_pool_id: 桌面池ID。
+        :type desktop_pool_id: str
         :param limit: 用于分页查询，取值范围0~1000，默认1000。
         :type limit: int
         :param offset: 用于分页查询，查询的起始记录序号，从0开始。
@@ -54,6 +58,7 @@ class ListItaSubJobsRequest:
         self._status = None
         self._job_id = None
         self._job_type = None
+        self._desktop_pool_id = None
         self._limit = None
         self._offset = None
         self.discriminator = None
@@ -64,6 +69,8 @@ class ListItaSubJobsRequest:
             self.job_id = job_id
         if job_type is not None:
             self.job_type = job_type
+        if desktop_pool_id is not None:
+            self.desktop_pool_id = desktop_pool_id
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -134,6 +141,28 @@ class ListItaSubJobsRequest:
         :type job_type: str
         """
         self._job_type = job_type
+
+    @property
+    def desktop_pool_id(self):
+        """Gets the desktop_pool_id of this ListItaSubJobsRequest.
+
+        桌面池ID。
+
+        :return: The desktop_pool_id of this ListItaSubJobsRequest.
+        :rtype: str
+        """
+        return self._desktop_pool_id
+
+    @desktop_pool_id.setter
+    def desktop_pool_id(self, desktop_pool_id):
+        """Sets the desktop_pool_id of this ListItaSubJobsRequest.
+
+        桌面池ID。
+
+        :param desktop_pool_id: The desktop_pool_id of this ListItaSubJobsRequest.
+        :type desktop_pool_id: str
+        """
+        self._desktop_pool_id = desktop_pool_id
 
     @property
     def limit(self):

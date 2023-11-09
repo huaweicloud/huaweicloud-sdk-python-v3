@@ -1,3 +1,357 @@
+# 3.1.65 2023-11-09
+
+### HuaweiCloud SDK TICS
+
+- _新增特性_
+  - 支持可信智能计算服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VPN
+
+- _新增特性_
+  - 支持虚拟专用网络服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ASM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowMesh**
+    - 响应参数变更
+      - `- spec.region`
+      - `- spec.extendParams.clusters.region`
+  - **DeleteMesh**
+    - 响应参数变更
+      - `- spec.region`
+      - `- spec.extendParams.clusters.region`
+  - **CreateMesh**
+    - 请求参数变更
+      - `- spec.region`
+      - `- spec.extendParams.clusters.region`
+    - 响应参数变更
+      - `- spec.region`
+      - `- spec.extendParams.clusters.region`
+  - **ListMeshes**
+    - 响应参数变更
+      - `- items.spec.region`
+      - `- items.spec.extendParams.clusters.region`
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAddonInstance**
+    - 响应参数变更
+      - `+ status.status: enum value [unknown]`
+  - **UpdateAddonInstance**
+    - 响应参数变更
+      - `+ status.status: enum value [unknown]`
+  - **RollbackAddonInstance**
+    - 响应参数变更
+      - `+ status.status: enum value [unknown]`
+  - **ShowCluster**
+    - 响应参数变更
+      - `+ spec.serviceNetwork`
+  - **UpdateCluster**
+    - 响应参数变更
+      - `+ spec.serviceNetwork`
+  - **DeleteCluster**
+    - 响应参数变更
+      - `+ spec.serviceNetwork`
+  - **CreateAddonInstance**
+    - 响应参数变更
+      - `+ status.status: enum value [unknown]`
+  - **ListAddonInstances**
+    - 响应参数变更
+      - `+ items.status.status: enum value [unknown]`
+  - **CreateCluster**
+    - 请求参数变更
+      - `+ spec.serviceNetwork`
+    - 响应参数变更
+      - `+ spec.serviceNetwork`
+  - **ListClusters**
+    - 响应参数变更
+      - `+ items.spec.serviceNetwork`
+  - **ShowNode**
+    - 响应参数变更
+      - `- status.phase: enum value [Installed,ShutDown]`
+  - **UpdateNode**
+    - 响应参数变更
+      - `- status.phase: enum value [Installed,ShutDown]`
+  - **DeleteNode**
+    - 响应参数变更
+      - `- status.phase: enum value [Installed,ShutDown]`
+  - **CreateNode**
+    - 响应参数变更
+      - `- status.phase: enum value [Installed,ShutDown]`
+  - **ListNodes**
+    - 响应参数变更
+      - `- items.status.phase: enum value [Installed,ShutDown]`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`CheckMigrationConnectivity`
+  - **ListBackupRecords**
+    - 响应参数变更
+      - `+ backup_record_response.backup_format`
+      - `+ backup_record_response.execution_at`
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 支持接口`ListQueueProperty`、`UpdateQueueProperty`、`CreateQueueProperty`、`DeleteQueueProperty`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowSqlJobStatus**
+    - 响应参数变更
+      - `+ user_conf`
+
+### HuaweiCloud SDK eiHealth
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowNextflowJob**
+    - 响应参数变更
+      - `+ priority`
+  - **ListDrugJob**
+    - 响应参数变更
+      - `- jobs.priority`
+  - **ShowSynthesisJob**
+    - 响应参数变更
+      - `- basic_info.priority`
+  - **ShowFepJob**
+    - 响应参数变更
+      - `- basic_info.priority`
+  - **ShowPocketDetectionJob**
+    - 响应参数变更
+      - `- basic_info.priority`
+  - **ShowAdmetJob**
+    - 响应参数变更
+      - `- basic_info.priority`
+      - `- models.value_range.lower_inclusive`
+      - `- models.value_range.upper_inclusive`
+      - `* models.value_range.lower: number -> float`
+      - `* models.value_range.upper: number -> float`
+      - `* models.value_range: object<ValueRange> -> object<ValueRange2>`
+  - **ShowPocketMolDesignJob**
+    - 响应参数变更
+      - `- basic_info.priority`
+      - `- model_list.value_range.lower_inclusive`
+      - `- model_list.value_range.upper_inclusive`
+      - `* model_list.value_range.lower: number -> float`
+      - `* model_list.value_range.upper: number -> float`
+      - `* model_list.value_range: object<ValueRange> -> object<ValueRange2>`
+  - **ShowOptmJob**
+    - 响应参数变更
+      - `- basic_info.priority`
+      - `- models.value_range.lower_inclusive`
+      - `- models.value_range.upper_inclusive`
+      - `* models.value_range.lower: number -> float`
+      - `* models.value_range.upper: number -> float`
+      - `* models.value_range: object<ValueRange> -> object<ValueRange2>`
+  - **ShowDockingJob**
+    - 响应参数变更
+      - `- basic_info.priority`
+  - **ListDrugModel**
+    - 响应参数变更
+      - `- models.value_range.lower_inclusive`
+      - `- models.value_range.upper_inclusive`
+      - `* models.value_range.lower: number -> float`
+      - `* models.value_range.upper: number -> float`
+      - `* models.value_range: object<ValueRange> -> object<ValueRange2>`
+
+### HuaweiCloud SDK GES
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListGraphs2**
+    - 响应参数变更
+      - `+ graphs.origin_graph_size_type_index`
+      - `+ graphs.expand_time`
+      - `+ graphs.resize_time`
+      - `+ graphs.enable_multi_label`
+  - **CreateGraph2**
+    - 请求参数变更
+      - `+ graph.enable_multi_label`
+  - **ShowGraph2**
+    - 响应参数变更
+      - `+ graph.origin_graph_size_type_index`
+      - `+ graph.expand_time`
+      - `+ graph.resize_time`
+      - `+ graph.enable_multi_label`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 支持接口`ShowInstanceConfigs`、`ModifyInstanceConfigs`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchRestartOrDeleteInstances**
+    - 请求参数变更
+      - `+ all_failure`
+      - `- allFailure`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchRestartOrDeleteInstances**
+    - 请求参数变更
+      - `+ all_failure`
+      - `- allFailure`
+
+### HuaweiCloud SDK RocketMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchDeleteInstances**
+    - 请求参数变更
+      - `+ all_failure`
+      - `- allFailure`
+  - **DeleteRocketMqMigrationTask**
+    - 请求参数变更
+      - `+ task_ids`
+      - `- taskIds`
+
+### HuaweiCloud SDK SCM
+
+- _新增特性_
+  - 支持接口`BatchPushCertificate`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Workspace
+
+- _新增特性_
+  - 支持以下接口：
+    - `BatchRebuildDesktopsSystemDisk`
+    - `ShowDesktopNetwork`
+    - `ChangeDesktopNetwork`
+    - `ShowTagByDesktopId`
+    - `CreateTag`
+    - `DeleteTag`
+    - `ListProjectTags`
+    - `BatchChangeTags`
+    - `ListDesktopByTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchDeleteDesktops**
+    - 请求参数变更
+      - `+ is_force_delete`
+  - **ListDesktops**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+      - `+ desktop_type`
+    - 响应参数变更
+      - `+ desktops.attach_user_infos`
+      - `+ desktops.enterprise_project_id`
+      - `+ desktops.in_maintenance_mode`
+  - **CreateDesktop**
+    - 请求参数变更
+      - `+ desktop_name`
+      - `+ size`
+      - `+ enterprise_project_id`
+      - `+ desktop_type: enum value [SHARED]`
+      - `+ desktops.user_phone`
+  - **ApplyDesktopsInternet**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+  - **ListDesktopsEips**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+    - 响应参数变更
+      - `+ eips.enterprise_project_id`
+  - **ListUsersOfGroup**
+    - 请求参数变更
+      - `+ description`
+      - `+ active_type`
+    - 响应参数变更
+      - `+ users.description`
+  - **ListProducts**
+    - 响应参数变更
+      - `+ products.data_disk_size`
+      - `+ products.default_desktop_num`
+      - `+ products.max_apply_desktop_num`
+  - **ListUsers**
+    - 请求参数变更
+      - `+ group_name`
+  - **ListItaSubJobs**
+    - 请求参数变更
+      - `+ desktop_pool_id`
+    - 响应参数变更
+      - `+ jobs.desktop_name`
+      - `+ jobs.ip_address`
+      - `+ jobs.mac_address`
+  - **ListWorkspaces**
+    - 响应参数变更
+      - `+ dc_vnc_ip`
+  - **UpdateWorkspace**
+    - 请求参数变更
+      - `+ dc_vnc_ip`
+    - 响应参数变更
+      - `+ dc_vnc_ip`
+  - **DeleteDesktop**
+    - 请求参数变更
+      - `+ is_force_delete`
+  - **ShowDesktopDetail**
+    - 响应参数变更
+      - `+ desktop.user_list`
+      - `+ desktop.user_group_list`
+      - `+ desktop.attach_user_infos`
+      - `+ desktop.attach_state`
+      - `+ desktop.enterprise_project_id`
+  - **ListDesktopsDetail**
+    - 请求参数变更
+      - `+ user_names`
+      - `+ sort_field`
+      - `+ sort_type`
+      - `+ user_attached`
+      - `+ enterprise_project_id`
+      - `+ image_id`
+      - `+ charge_mode`
+      - `+ in_maintenance_mode`
+      - `* desktop_id: string -> list<string>`
+    - 响应参数变更
+      - `+ desktops.user_list`
+      - `+ desktops.user_group_list`
+      - `+ desktops.attach_user_infos`
+      - `+ desktops.attach_state`
+      - `+ desktops.enterprise_project_id`
+
 # 3.1.64 2023-11-02
 
 ### HuaweiCloud SDK APIG

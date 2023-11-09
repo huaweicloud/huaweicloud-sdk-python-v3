@@ -21,6 +21,13 @@ from threading import Lock
 
 import six
 
+if six.PY3:
+    from json import JSONDecodeError
+
+    JSON_DECODE_ERROR = JSONDecodeError
+else:
+    JSON_DECODE_ERROR = ValueError
+
 
 class SingletonMeta(type):
     _instances = {}

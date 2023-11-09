@@ -307,6 +307,62 @@ class ModerationClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def run_create_document_moderation_job(self, request):
+        """创建文档内容审核作业
+
+        创建文档内容审核作业，创建成功会将作业ID返回给用户
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RunCreateDocumentModerationJob
+        :type request: :class:`huaweicloudsdkmoderation.v3.RunCreateDocumentModerationJobRequest`
+        :rtype: :class:`huaweicloudsdkmoderation.v3.RunCreateDocumentModerationJobResponse`
+        """
+        return self._run_create_document_moderation_job_with_http_info(request)
+
+    def _run_create_document_moderation_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/moderation/document/jobs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RunCreateDocumentModerationJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def run_create_video_moderation_job(self, request):
         """创建视频内容审核作业
 
@@ -469,6 +525,62 @@ class ModerationClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='RunQueryAudioModerationJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def run_query_document_moderation_job(self, request):
+        """查询文档审核作业结果
+
+        查询文档审核结果接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RunQueryDocumentModerationJob
+        :type request: :class:`huaweicloudsdkmoderation.v3.RunQueryDocumentModerationJobRequest`
+        :rtype: :class:`huaweicloudsdkmoderation.v3.RunQueryDocumentModerationJobResponse`
+        """
+        return self._run_query_document_moderation_job_with_http_info(request)
+
+    def _run_query_document_moderation_job_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/moderation/document/jobs/{job_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='RunQueryDocumentModerationJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

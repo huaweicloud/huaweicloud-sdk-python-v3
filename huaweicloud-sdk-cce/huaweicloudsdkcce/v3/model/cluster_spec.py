@@ -28,6 +28,7 @@ class ClusterSpec:
         'host_network': 'HostNetwork',
         'container_network': 'ContainerNetwork',
         'eni_network': 'EniNetwork',
+        'service_network': 'ServiceNetwork',
         'authentication': 'Authentication',
         'billing_mode': 'int',
         'masters': 'list[MasterSpec]',
@@ -52,6 +53,7 @@ class ClusterSpec:
         'host_network': 'hostNetwork',
         'container_network': 'containerNetwork',
         'eni_network': 'eniNetwork',
+        'service_network': 'serviceNetwork',
         'authentication': 'authentication',
         'billing_mode': 'billingMode',
         'masters': 'masters',
@@ -64,7 +66,7 @@ class ClusterSpec:
         'configurations_override': 'configurationsOverride'
     }
 
-    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None, configurations_override=None):
+    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None, configurations_override=None):
         """ClusterSpec
 
         The model defined in huaweicloud sdk
@@ -91,13 +93,15 @@ class ClusterSpec:
         :type container_network: :class:`huaweicloudsdkcce.v3.ContainerNetwork`
         :param eni_network: 
         :type eni_network: :class:`huaweicloudsdkcce.v3.EniNetwork`
+        :param service_network: 
+        :type service_network: :class:`huaweicloudsdkcce.v3.ServiceNetwork`
         :param authentication: 
         :type authentication: :class:`huaweicloudsdkcce.v3.Authentication`
         :param billing_mode: 集群的计费方式。 - 0: 按需计费 [- 1: 包周期](tag:hws,hws_hk)  默认为“按需计费”。 
         :type billing_mode: int
         :param masters: 控制节点的高级配置
         :type masters: list[:class:`huaweicloudsdkcce.v3.MasterSpec`]
-        :param kubernetes_svc_ip_range: 服务网段参数，kubernetes clusterIp取值范围，1.11.7版本及以上支持。 
+        :param kubernetes_svc_ip_range: 服务网段参数，kubernetes clusterIP取值范围，1.11.7版本及以上支持。创建集群时如若未传参，默认为\&quot;10.247.0.0/16\&quot;。该参数废弃中，推荐使用新字段serviceNetwork，包含IPv4服务网段。 
         :type kubernetes_svc_ip_range: str
         :param cluster_tags: 集群资源标签
         :type cluster_tags: list[:class:`huaweicloudsdkcce.v3.ResourceTag`]
@@ -126,6 +130,7 @@ class ClusterSpec:
         self._host_network = None
         self._container_network = None
         self._eni_network = None
+        self._service_network = None
         self._authentication = None
         self._billing_mode = None
         self._masters = None
@@ -157,6 +162,8 @@ class ClusterSpec:
         self.container_network = container_network
         if eni_network is not None:
             self.eni_network = eni_network
+        if service_network is not None:
+            self.service_network = service_network
         if authentication is not None:
             self.authentication = authentication
         if billing_mode is not None:
@@ -409,6 +416,24 @@ class ClusterSpec:
         self._eni_network = eni_network
 
     @property
+    def service_network(self):
+        """Gets the service_network of this ClusterSpec.
+
+        :return: The service_network of this ClusterSpec.
+        :rtype: :class:`huaweicloudsdkcce.v3.ServiceNetwork`
+        """
+        return self._service_network
+
+    @service_network.setter
+    def service_network(self, service_network):
+        """Sets the service_network of this ClusterSpec.
+
+        :param service_network: The service_network of this ClusterSpec.
+        :type service_network: :class:`huaweicloudsdkcce.v3.ServiceNetwork`
+        """
+        self._service_network = service_network
+
+    @property
     def authentication(self):
         """Gets the authentication of this ClusterSpec.
 
@@ -474,7 +499,7 @@ class ClusterSpec:
     def kubernetes_svc_ip_range(self):
         """Gets the kubernetes_svc_ip_range of this ClusterSpec.
 
-        服务网段参数，kubernetes clusterIp取值范围，1.11.7版本及以上支持。 
+        服务网段参数，kubernetes clusterIP取值范围，1.11.7版本及以上支持。创建集群时如若未传参，默认为\"10.247.0.0/16\"。该参数废弃中，推荐使用新字段serviceNetwork，包含IPv4服务网段。 
 
         :return: The kubernetes_svc_ip_range of this ClusterSpec.
         :rtype: str
@@ -485,7 +510,7 @@ class ClusterSpec:
     def kubernetes_svc_ip_range(self, kubernetes_svc_ip_range):
         """Sets the kubernetes_svc_ip_range of this ClusterSpec.
 
-        服务网段参数，kubernetes clusterIp取值范围，1.11.7版本及以上支持。 
+        服务网段参数，kubernetes clusterIP取值范围，1.11.7版本及以上支持。创建集群时如若未传参，默认为\"10.247.0.0/16\"。该参数废弃中，推荐使用新字段serviceNetwork，包含IPv4服务网段。 
 
         :param kubernetes_svc_ip_range: The kubernetes_svc_ip_range of this ClusterSpec.
         :type kubernetes_svc_ip_range: str

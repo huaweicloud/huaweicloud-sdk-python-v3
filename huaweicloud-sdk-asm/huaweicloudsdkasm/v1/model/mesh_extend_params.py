@@ -29,7 +29,7 @@ class MeshExtendParams:
 
         The model defined in huaweicloud sdk
 
-        :param clusters: 网格内集群信息，仅基础版使用
+        :param clusters: 网格内集群信息
         :type clusters: list[:class:`huaweicloudsdkasm.v1.MeshCluster`]
         """
         
@@ -45,7 +45,7 @@ class MeshExtendParams:
     def clusters(self):
         """Gets the clusters of this MeshExtendParams.
 
-        网格内集群信息，仅基础版使用
+        网格内集群信息
 
         :return: The clusters of this MeshExtendParams.
         :rtype: list[:class:`huaweicloudsdkasm.v1.MeshCluster`]
@@ -56,7 +56,7 @@ class MeshExtendParams:
     def clusters(self, clusters):
         """Sets the clusters of this MeshExtendParams.
 
-        网格内集群信息，仅基础版使用
+        网格内集群信息
 
         :param clusters: The clusters of this MeshExtendParams.
         :type clusters: list[:class:`huaweicloudsdkasm.v1.MeshCluster`]

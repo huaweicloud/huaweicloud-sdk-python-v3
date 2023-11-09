@@ -40,7 +40,8 @@ class ListWorkspacesResponse(SdkResponse):
         'fail_code': 'int',
         'fail_reason': 'str',
         'enterprise_id': 'str',
-        'is_send_email': 'bool'
+        'is_send_email': 'bool',
+        'dc_vnc_ip': 'str'
     }
 
     attribute_map = {
@@ -66,10 +67,11 @@ class ListWorkspacesResponse(SdkResponse):
         'fail_code': 'fail_code',
         'fail_reason': 'fail_reason',
         'enterprise_id': 'enterprise_id',
-        'is_send_email': 'is_send_email'
+        'is_send_email': 'is_send_email',
+        'dc_vnc_ip': 'dc_vnc_ip'
     }
 
-    def __init__(self, id=None, ad_domains=None, vpc_id=None, vpc_name=None, access_mode=None, dedicated_subnets=None, dedicated_access_address=None, internet_access_address=None, internet_access_port=None, status=None, access_status=None, subnet_ids=None, management_subnet_cidr=None, infrastructure_security_group=None, desktop_security_group=None, closable=None, config_status=None, progress=None, job_id=None, fail_code=None, fail_reason=None, enterprise_id=None, is_send_email=None):
+    def __init__(self, id=None, ad_domains=None, vpc_id=None, vpc_name=None, access_mode=None, dedicated_subnets=None, dedicated_access_address=None, internet_access_address=None, internet_access_port=None, status=None, access_status=None, subnet_ids=None, management_subnet_cidr=None, infrastructure_security_group=None, desktop_security_group=None, closable=None, config_status=None, progress=None, job_id=None, fail_code=None, fail_reason=None, enterprise_id=None, is_send_email=None, dc_vnc_ip=None):
         """ListWorkspacesResponse
 
         The model defined in huaweicloud sdk
@@ -120,6 +122,8 @@ class ListWorkspacesResponse(SdkResponse):
         :type enterprise_id: str
         :param is_send_email: 桌面退订是否发送邮件通知。
         :type is_send_email: bool
+        :param dc_vnc_ip: 自定义的专线VNC地址
+        :type dc_vnc_ip: str
         """
         
         super(ListWorkspacesResponse, self).__init__()
@@ -147,6 +151,7 @@ class ListWorkspacesResponse(SdkResponse):
         self._fail_reason = None
         self._enterprise_id = None
         self._is_send_email = None
+        self._dc_vnc_ip = None
         self.discriminator = None
 
         if id is not None:
@@ -195,6 +200,8 @@ class ListWorkspacesResponse(SdkResponse):
             self.enterprise_id = enterprise_id
         if is_send_email is not None:
             self.is_send_email = is_send_email
+        if dc_vnc_ip is not None:
+            self.dc_vnc_ip = dc_vnc_ip
 
     @property
     def id(self):
@@ -689,6 +696,28 @@ class ListWorkspacesResponse(SdkResponse):
         :type is_send_email: bool
         """
         self._is_send_email = is_send_email
+
+    @property
+    def dc_vnc_ip(self):
+        """Gets the dc_vnc_ip of this ListWorkspacesResponse.
+
+        自定义的专线VNC地址
+
+        :return: The dc_vnc_ip of this ListWorkspacesResponse.
+        :rtype: str
+        """
+        return self._dc_vnc_ip
+
+    @dc_vnc_ip.setter
+    def dc_vnc_ip(self, dc_vnc_ip):
+        """Sets the dc_vnc_ip of this ListWorkspacesResponse.
+
+        自定义的专线VNC地址
+
+        :param dc_vnc_ip: The dc_vnc_ip of this ListWorkspacesResponse.
+        :type dc_vnc_ip: str
+        """
+        self._dc_vnc_ip = dc_vnc_ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

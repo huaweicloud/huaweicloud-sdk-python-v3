@@ -17,7 +17,6 @@ class MeshSpec:
     sensitive_list = []
 
     openapi_types = {
-        'region': 'str',
         'type': 'str',
         'version': 'str',
         'extend_params': 'MeshExtendParams',
@@ -25,21 +24,18 @@ class MeshSpec:
     }
 
     attribute_map = {
-        'region': 'region',
         'type': 'type',
         'version': 'version',
         'extend_params': 'extendParams',
         'tags': 'tags'
     }
 
-    def __init__(self, region=None, type=None, version=None, extend_params=None, tags=None):
+    def __init__(self, type=None, version=None, extend_params=None, tags=None):
         """MeshSpec
 
         The model defined in huaweicloud sdk
 
-        :param region: 网格控制面组件所在的region 可选参数
-        :type region: str
-        :param type: 网格类型： InCluster：基础版网格
+        :param type: 网格类型： InCluster: 集群内控制平面形态，基础版网格取值为InCluster
         :type type: str
         :param version: 网格版本
         :type version: str
@@ -51,15 +47,12 @@ class MeshSpec:
         
         
 
-        self._region = None
         self._type = None
         self._version = None
         self._extend_params = None
         self._tags = None
         self.discriminator = None
 
-        if region is not None:
-            self.region = region
         self.type = type
         self.version = version
         if extend_params is not None:
@@ -68,32 +61,10 @@ class MeshSpec:
             self.tags = tags
 
     @property
-    def region(self):
-        """Gets the region of this MeshSpec.
-
-        网格控制面组件所在的region 可选参数
-
-        :return: The region of this MeshSpec.
-        :rtype: str
-        """
-        return self._region
-
-    @region.setter
-    def region(self, region):
-        """Sets the region of this MeshSpec.
-
-        网格控制面组件所在的region 可选参数
-
-        :param region: The region of this MeshSpec.
-        :type region: str
-        """
-        self._region = region
-
-    @property
     def type(self):
         """Gets the type of this MeshSpec.
 
-        网格类型： InCluster：基础版网格
+        网格类型： InCluster: 集群内控制平面形态，基础版网格取值为InCluster
 
         :return: The type of this MeshSpec.
         :rtype: str
@@ -104,7 +75,7 @@ class MeshSpec:
     def type(self, type):
         """Sets the type of this MeshSpec.
 
-        网格类型： InCluster：基础版网格
+        网格类型： InCluster: 集群内控制平面形态，基础版网格取值为InCluster
 
         :param type: The type of this MeshSpec.
         :type type: str

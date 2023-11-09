@@ -27,7 +27,7 @@ class ModelDto:
         'shareable': 'bool',
         'data_quantity': 'int',
         'file': 'ModelFile',
-        'value_range': 'ValueRange',
+        'value_range': 'ValueRange2',
         'description': 'str',
         'failed_message': 'str'
     }
@@ -74,7 +74,7 @@ class ModelDto:
         :param file: 
         :type file: :class:`huaweicloudsdkeihealth.v1.ModelFile`
         :param value_range: 
-        :type value_range: :class:`huaweicloudsdkeihealth.v1.ValueRange`
+        :type value_range: :class:`huaweicloudsdkeihealth.v1.ValueRange2`
         :param description: 模型描述信息
         :type description: str
         :param failed_message: 失败提示，当作业执行失败时会返回
@@ -346,7 +346,7 @@ class ModelDto:
         """Gets the value_range of this ModelDto.
 
         :return: The value_range of this ModelDto.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ValueRange`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ValueRange2`
         """
         return self._value_range
 
@@ -355,7 +355,7 @@ class ModelDto:
         """Sets the value_range of this ModelDto.
 
         :param value_range: The value_range of this ModelDto.
-        :type value_range: :class:`huaweicloudsdkeihealth.v1.ValueRange`
+        :type value_range: :class:`huaweicloudsdkeihealth.v1.ValueRange2`
         """
         self._value_range = value_range
 

@@ -26,6 +26,7 @@ from requests.exceptions import HTTPError
 from six.moves.urllib.parse import urlparse
 from urllib3.exceptions import SSLError, NewConnectionError
 
+from huaweicloudsdkcore.utils.six_utils import JSON_DECODE_ERROR
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.sdk_request import SdkRequest
 
@@ -66,7 +67,7 @@ class Metadata(object):
         try:
             credential = json.loads(resp.content).get("credential")
             return credential
-        except json.decoder.JSONDecodeError as decode_err:
+        except JSON_DECODE_ERROR as decode_err:
             raise exceptions.ApiValueError("failed to get credential from metadata: {}".format(decode_err))
 
 

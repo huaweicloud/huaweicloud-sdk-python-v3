@@ -65,12 +65,15 @@ python setup.py install
 ## 代码示例
 
 - 使用如下代码同步查询指定 Region 下的 VPC 清单，实际使用中请将 `VpcClient` 替换为您使用的产品/服务相应的 `{Service}Client`。
-- 调用前请根据实际情况替换如下变量：`{your ak string} 和 ` `{your sk string}`
+- 认证用的ak和sk直接写到代码中有很大的安全风险，建议在配置文件或者环境变量中密文存放，使用时解密，确保安全。
+- 本示例中的ak和sk保存在环境变量中，运行本示例前请先在本地环境中配置环境变量`HUAWEICLOUD_SDK_AK`和`HUAWEICLOUD_SDK_SK`。
 
 **精简示例**
 
 ```python
 # coding: utf-8
+
+import os
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 from huaweicloudsdkvpc.v2 import ListVpcsRequest, VpcClient
@@ -79,7 +82,9 @@ from huaweicloudsdkcore.exceptions import exceptions
 
 if __name__ == "__main__":
     # 配置认证信息
-    credentials = BasicCredentials("{your ak string}", "{your sk string}")
+    # 请勿将认证信息硬编码到代码中，有安全风险
+    # 可通过环境变量等方式配置认证信息，参考2.4认证信息管理章节
+    credentials = BasicCredentials(os.environ.get("HUAWEICLOUD_SDK_AK"), os.environ.get("HUAWEICLOUD_SDK_SK"))
 
     # 创建服务客户端
     client = VpcClient.new_builder() \
@@ -103,6 +108,8 @@ if __name__ == "__main__":
 
 ```python
 # coding: utf-8
+
+import os
 import logging
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
@@ -114,8 +121,10 @@ from huaweicloudsdkcore.exceptions import exceptions
 
 if __name__ == "__main__":
     # 配置认证信息
+    # 请勿将认证信息硬编码到代码中，有安全风险
+    # 可通过环境变量等方式配置认证信息，参考2.4认证信息管理章节
     # 如果未填写project_id，SDK会自动调用IAM服务查询所在region对应的项目id
-    credentials = BasicCredentials("{your ak string}", "{your sk string}", project_id="{your projectId string}") \
+    credentials = BasicCredentials(os.environ.get("HUAWEICLOUD_SDK_AK"), os.environ.get("HUAWEICLOUD_SDK_SK"), project_id="{your projectId string}") \
         .with_iam_endpoint("https://iam.cn-north-4.myhuaweicloud.com") # 配置SDK内置的IAM服务地址，默认为https://iam.myhuaweicloud.com
 
     # 使用默认配置
@@ -127,11 +136,13 @@ if __name__ == "__main__":
     # 默认连接超时时间为60秒，读取超时时间为120秒，可根据需要配置
     http_config.timeout = (60, 120)
     # 根据需要配置网络代理
+    # 请根据实际情况替换示例中的代理协议、地址和端口号
     http_config.proxy_protocol = 'http'
     http_config.proxy_host = 'proxy.huaweicloud.com'
     http_config.proxy_port = 80
-    http_config.proxy_user = 'username'
-    http_config.proxy_password = 'password'
+    # 如果代理需要认证，请配置用户名和密码
+    http_config.proxy_user = os.environ.get("PROXY_USERNAME")
+    http_config.proxy_password = os.environ.get("PROXY_PASSWORD")
 
     # 注册监听器用于打印原始的请求和响应信息, 请勿用于生产环境
     def response_handler(**kwargs):
@@ -237,11 +248,13 @@ client = VpcClient.new_builder() \
 ```python
 http_config = HttpConfig.get_default_config()
 # 根据需要配置网络代理
+# 请根据实际情况替换示例中的代理协议、地址和端口号
 http_config.proxy_protocol = 'http'
 http_config.proxy_host = 'proxy.huaweicloud.com'
 http_config.proxy_port = 80
-http_config.proxy_user = 'username'
-http_config.proxy_password = 'password'
+# 如果代理需要认证，请配置用户名和密码
+http_config.proxy_user = os.environ.get("PROXY_USERNAME")
+http_config.proxy_password = os.environ.get("PROXY_PASSWORD")
 
 client = VpcClient.new_builder() \
     .with_http_config(http_config) \
@@ -304,9 +317,17 @@ Global 级服务使用 GlobalCredentials 初始化，需要提供 domainId 。
 
 ```python
 # Region级服务
+ak = os.environ.get("HUAWEICLOUD_SDK_AK")
+sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+project_id = "{your projectId string}"
+
 basic_credentials = BasicCredentials(ak, sk, project_id)
 
 # Global级服务
+ak = os.environ.get("HUAWEICLOUD_SDK_AK")
+sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+domain_id = "{your domainId string}"
+
 global_credentials = GlobalCredentials(ak, sk, domain_id)
 ```
 
@@ -334,12 +355,24 @@ global_credentials = GlobalCredentials(ak, sk, domain_id)
 临时 AK&SK&SecurityToken 获取成功后，可使用如下方式初始化认证信息：
 
 ```python
+import os
+
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
 
 # Region级服务
+ak = os.environ.get("HUAWEICLOUD_SDK_AK")
+sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+security_token = os.environ.get("HUAWEICLOUD_SDK_SECURITY_TOKEN")
+project_id = "{your projectId string}"
+
 basic_credentials = BasicCredentials(ak, sk, project_id).with_security_token(security_token)
 
 # Global级服务
+ak = os.environ.get("HUAWEICLOUD_SDK_AK")
+sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+security_token = os.environ.get("HUAWEICLOUD_SDK_SECURITY_TOKEN")
+domain_id = "{your domainId string}"
+
 global_credentials = GlobalCredentials(ak, sk, domain_id).with_security_token(security_token)
 ```
 
@@ -595,6 +628,9 @@ credentials = chain.get_credentials()
 endpoint = "https://vpc.cn-north-4.myhuaweicloud.com"
 
 # 初始化客户端认证信息，需要填写相应 project_id/domain_id，以初始化 BasicCredentials 为例
+ak = os.environ.get("HUAWEICLOUD_SDK_AK")
+sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+project_id = "{your projectId string}"
 basic_credentials = BasicCredentials(ak, sk, project_id)
 
 # 初始化指定云服务的客户端 {Service}Client ，以初始化 Region 级服务 VPC 的 VpcClient 为例
@@ -614,11 +650,14 @@ client = VpcClient.new_builder() \
 #### 3.2 指定 Region 方式 **（推荐）** [:top:](#用户手册-top)
 
 ```python
+import os
 # 增加region依赖
 from huaweicloudsdkiam.v3.region.iam_region import IamRegion
 
 # 初始化客户端认证信息，使用当前客户端初始化方式可不填 project_id/domain_id
 # 以初始化 GlobalCredentials 为例
+ak = os.environ.get("HUAWEICLOUD_SDK_AK")
+sk = os.environ.get("HUAWEICLOUD_SDK_SK")
 global_credentials = GlobalCredentials(ak, sk)
 
 # 初始化指定云服务的客户端 {Service}Client
@@ -673,9 +712,13 @@ set HUAWEICLOUD_SDK_IAM_ENDPOINT=https://iam.cn-north-4.myhuaweicloud.com
 只对单个凭证生效，会覆盖全局配置
 
 ```python
+import os
+
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 
 iam_endpoint = "https://iam.cn-north-4.myhuaweicloud.com"
+ak = os.environ.get("HUAWEICLOUD_SDK_AK")
+sk = os.environ.get("HUAWEICLOUD_SDK_SK")
 credentials = BasicCredentials(ak, sk).with_iam_endpoint(iam_endpoint)
 ```
 
@@ -898,6 +941,9 @@ HttpHandler 支持如下方法 `add_request_handler`、`add_response_handler` �
 
 ```python
 # coding: utf-8
+
+import os
+
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.http.http_config import HttpConfig
@@ -930,8 +976,8 @@ def create_image_watermark(client):
 
 
 if __name__ == "__main__":
-    ak = "{your ak string}"
-    sk = "{your sk string}"
+    ak = os.environ.get("HUAWEICLOUD_SDK_AK")
+    sk = os.environ.get("HUAWEICLOUD_SDK_SK")
     endpoint = "{your endpoint}"
     project_id = "{your project id}"
     config = HttpConfig.get_default_config()

@@ -22,7 +22,8 @@ class ImageDetectionReq:
         'image_text_config': 'ImgTextConfig',
         'url': 'str',
         'image': 'str',
-        'biz_type': 'str'
+        'biz_type': 'str',
+        'language': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class ImageDetectionReq:
         'image_text_config': 'image_text_config',
         'url': 'url',
         'image': 'image',
-        'biz_type': 'biz_type'
+        'biz_type': 'biz_type',
+        'language': 'language'
     }
 
-    def __init__(self, event_type=None, categories=None, image_text_config=None, url=None, image=None, biz_type=None):
+    def __init__(self, event_type=None, categories=None, image_text_config=None, url=None, image=None, biz_type=None, language=None):
         """ImageDetectionReq
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ImageDetectionReq:
         :type image: str
         :param biz_type: 自定义审核策略名称，可在控制台配置;如果请求参数中传了biz_type则优先使用biz_type,如果用户没传biz_type则event_type和categories必须传。
         :type biz_type: str
+        :param language: 可指定图片中文字语种类型
+        :type language: str
         """
         
         
@@ -61,6 +65,7 @@ class ImageDetectionReq:
         self._url = None
         self._image = None
         self._biz_type = None
+        self._language = None
         self.discriminator = None
 
         if event_type is not None:
@@ -75,6 +80,8 @@ class ImageDetectionReq:
             self.image = image
         if biz_type is not None:
             self.biz_type = biz_type
+        if language is not None:
+            self.language = language
 
     @property
     def event_type(self):
@@ -203,6 +210,28 @@ class ImageDetectionReq:
         :type biz_type: str
         """
         self._biz_type = biz_type
+
+    @property
+    def language(self):
+        """Gets the language of this ImageDetectionReq.
+
+        可指定图片中文字语种类型
+
+        :return: The language of this ImageDetectionReq.
+        :rtype: str
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this ImageDetectionReq.
+
+        可指定图片中文字语种类型
+
+        :param language: The language of this ImageDetectionReq.
+        :type language: str
+        """
+        self._language = language
 
     def to_dict(self):
         """Returns the model properties as a dict"""

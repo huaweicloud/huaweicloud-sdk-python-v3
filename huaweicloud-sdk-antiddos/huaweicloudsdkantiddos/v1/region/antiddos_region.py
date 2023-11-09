@@ -23,6 +23,8 @@ class AntiDDoSRegion:
                         "https://antiddos.cn-south-1.myhuaweicloud.com")
     CN_SOUTH_2 = Region("cn-south-2",
                         "https://antiddos.cn-south-2.myhuaweicloud.com")
+    CN_SOUTH_4 = Region("cn-south-4",
+                        "https://antiddos.cn-south-4.myhuaweicloud.com")
     CN_SOUTHWEST_2 = Region("cn-southwest-2",
                         "https://antiddos.cn-southwest-2.myhuaweicloud.com")
     AP_SOUTHEAST_1 = Region("ap-southeast-1",
@@ -58,6 +60,7 @@ class AntiDDoSRegion:
         "cn-east-2": CN_EAST_2,
         "cn-south-1": CN_SOUTH_1,
         "cn-south-2": CN_SOUTH_2,
+        "cn-south-4": CN_SOUTH_4,
         "cn-southwest-2": CN_SOUTHWEST_2,
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-2": AP_SOUTHEAST_2,

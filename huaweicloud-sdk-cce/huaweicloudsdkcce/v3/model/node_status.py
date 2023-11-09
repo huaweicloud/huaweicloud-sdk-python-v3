@@ -43,7 +43,7 @@ class NodeStatus:
 
         The model defined in huaweicloud sdk
 
-        :param phase: 节点状态：节点资源生命周期管理（如安装卸载等）状态和集群内k8s node状态的综合体现。
+        :param phase: 节点状态：节点资源生命周期管理（如安装卸载等）状态和集群内k8s node状态的综合体现，取值如下 - Build：创建中，表示节点正处于创建过程中。 - Installing：纳管中，表示节点正处于纳管过程中。 - Upgrading：升级中，表示节点正处于升级过程中。 - Active：正常，表示节点处于正常状态。 - Abnormal：异常，表示节点处于异常状态。 - Deleting： 删除中，表示节点正处于删除过程中。 - Error：故障，表示节点处于故障状态。
         :type phase: str
         :param last_probe_time: 节点最近一次状态检查时间。集群处于异常、冻结或者中间态（例如创建中）时，节点的状态检查动作可能受影响。检查时间超过5分的节点状态不具有参考意义。
         :type last_probe_time: str
@@ -94,7 +94,7 @@ class NodeStatus:
     def phase(self):
         """Gets the phase of this NodeStatus.
 
-        节点状态：节点资源生命周期管理（如安装卸载等）状态和集群内k8s node状态的综合体现。
+        节点状态：节点资源生命周期管理（如安装卸载等）状态和集群内k8s node状态的综合体现，取值如下 - Build：创建中，表示节点正处于创建过程中。 - Installing：纳管中，表示节点正处于纳管过程中。 - Upgrading：升级中，表示节点正处于升级过程中。 - Active：正常，表示节点处于正常状态。 - Abnormal：异常，表示节点处于异常状态。 - Deleting： 删除中，表示节点正处于删除过程中。 - Error：故障，表示节点处于故障状态。
 
         :return: The phase of this NodeStatus.
         :rtype: str
@@ -105,7 +105,7 @@ class NodeStatus:
     def phase(self, phase):
         """Sets the phase of this NodeStatus.
 
-        节点状态：节点资源生命周期管理（如安装卸载等）状态和集群内k8s node状态的综合体现。
+        节点状态：节点资源生命周期管理（如安装卸载等）状态和集群内k8s node状态的综合体现，取值如下 - Build：创建中，表示节点正处于创建过程中。 - Installing：纳管中，表示节点正处于纳管过程中。 - Upgrading：升级中，表示节点正处于升级过程中。 - Active：正常，表示节点处于正常状态。 - Abnormal：异常，表示节点处于异常状态。 - Deleting： 删除中，表示节点正处于删除过程中。 - Error：故障，表示节点处于故障状态。
 
         :param phase: The phase of this NodeStatus.
         :type phase: str

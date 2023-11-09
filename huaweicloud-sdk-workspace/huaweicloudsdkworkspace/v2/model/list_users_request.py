@@ -21,7 +21,8 @@ class ListUsersRequest:
         'limit': 'str',
         'offset': 'str',
         'description': 'str',
-        'active_type': 'str'
+        'active_type': 'str',
+        'group_name': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ListUsersRequest:
         'limit': 'limit',
         'offset': 'offset',
         'description': 'description',
-        'active_type': 'active_type'
+        'active_type': 'active_type',
+        'group_name': 'group_name'
     }
 
-    def __init__(self, user_name=None, limit=None, offset=None, description=None, active_type=None):
+    def __init__(self, user_name=None, limit=None, offset=None, description=None, active_type=None, group_name=None):
         """ListUsersRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ListUsersRequest:
         :type description: str
         :param active_type: 激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
         :type active_type: str
+        :param group_name: 桌面用户组名，精确匹配。
+        :type group_name: str
         """
         
         
@@ -56,6 +60,7 @@ class ListUsersRequest:
         self._offset = None
         self._description = None
         self._active_type = None
+        self._group_name = None
         self.discriminator = None
 
         if user_name is not None:
@@ -68,6 +73,8 @@ class ListUsersRequest:
             self.description = description
         if active_type is not None:
             self.active_type = active_type
+        if group_name is not None:
+            self.group_name = group_name
 
     @property
     def user_name(self):
@@ -178,6 +185,28 @@ class ListUsersRequest:
         :type active_type: str
         """
         self._active_type = active_type
+
+    @property
+    def group_name(self):
+        """Gets the group_name of this ListUsersRequest.
+
+        桌面用户组名，精确匹配。
+
+        :return: The group_name of this ListUsersRequest.
+        :rtype: str
+        """
+        return self._group_name
+
+    @group_name.setter
+    def group_name(self, group_name):
+        """Sets the group_name of this ListUsersRequest.
+
+        桌面用户组名，精确匹配。
+
+        :param group_name: The group_name of this ListUsersRequest.
+        :type group_name: str
+        """
+        self._group_name = group_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

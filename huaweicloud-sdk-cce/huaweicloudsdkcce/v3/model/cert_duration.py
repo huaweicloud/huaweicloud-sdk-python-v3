@@ -29,7 +29,7 @@ class CertDuration:
 
         The model defined in huaweicloud sdk
 
-        :param duration: 集群证书有效时间，单位为天，最小值为1，最大值为10950(30*365，1年固定计365天，忽略闰年影响)；若填-1则为最大值30年。 
+        :param duration: 集群证书有效时间，单位为天，最小值为1，最大值为1825(5*365，1年固定计365天，忽略闰年影响)；若填-1则为最大值5年。 
         :type duration: int
         """
         
@@ -44,7 +44,7 @@ class CertDuration:
     def duration(self):
         """Gets the duration of this CertDuration.
 
-        集群证书有效时间，单位为天，最小值为1，最大值为10950(30*365，1年固定计365天，忽略闰年影响)；若填-1则为最大值30年。 
+        集群证书有效时间，单位为天，最小值为1，最大值为1825(5*365，1年固定计365天，忽略闰年影响)；若填-1则为最大值5年。 
 
         :return: The duration of this CertDuration.
         :rtype: int
@@ -55,7 +55,7 @@ class CertDuration:
     def duration(self, duration):
         """Sets the duration of this CertDuration.
 
-        集群证书有效时间，单位为天，最小值为1，最大值为10950(30*365，1年固定计365天，忽略闰年影响)；若填-1则为最大值30年。 
+        集群证书有效时间，单位为天，最小值为1，最大值为1825(5*365，1年固定计365天，忽略闰年影响)；若填-1则为最大值5年。 
 
         :param duration: The duration of this CertDuration.
         :type duration: int

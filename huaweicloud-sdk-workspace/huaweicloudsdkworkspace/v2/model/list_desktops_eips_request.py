@@ -17,6 +17,7 @@ class ListDesktopsEipsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'desktop_id': 'str',
         'desktop_name': 'str',
         'user_name': 'str',
@@ -27,6 +28,7 @@ class ListDesktopsEipsRequest:
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'desktop_id': 'desktop_id',
         'desktop_name': 'desktop_name',
         'user_name': 'user_name',
@@ -36,11 +38,13 @@ class ListDesktopsEipsRequest:
         'state': 'state'
     }
 
-    def __init__(self, desktop_id=None, desktop_name=None, user_name=None, address=None, offset=None, limit=None, state=None):
+    def __init__(self, enterprise_project_id=None, desktop_id=None, desktop_name=None, user_name=None, address=None, offset=None, limit=None, state=None):
         """ListDesktopsEipsRequest
 
         The model defined in huaweicloud sdk
 
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
         :param desktop_id: 桌面ID。
         :type desktop_id: str
         :param desktop_name: 桌面名称。
@@ -59,6 +63,7 @@ class ListDesktopsEipsRequest:
         
         
 
+        self._enterprise_project_id = None
         self._desktop_id = None
         self._desktop_name = None
         self._user_name = None
@@ -68,6 +73,8 @@ class ListDesktopsEipsRequest:
         self._state = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if desktop_id is not None:
             self.desktop_id = desktop_id
         if desktop_name is not None:
@@ -82,6 +89,28 @@ class ListDesktopsEipsRequest:
             self.limit = limit
         if state is not None:
             self.state = state
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListDesktopsEipsRequest.
+
+        企业项目ID
+
+        :return: The enterprise_project_id of this ListDesktopsEipsRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListDesktopsEipsRequest.
+
+        企业项目ID
+
+        :param enterprise_project_id: The enterprise_project_id of this ListDesktopsEipsRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def desktop_id(self):

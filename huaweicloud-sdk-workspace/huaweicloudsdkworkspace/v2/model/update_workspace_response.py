@@ -19,15 +19,17 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     openapi_types = {
         'job_id': 'str',
-        'enterprise_id': 'str'
+        'enterprise_id': 'str',
+        'dc_vnc_ip': 'str'
     }
 
     attribute_map = {
         'job_id': 'job_id',
-        'enterprise_id': 'enterprise_id'
+        'enterprise_id': 'enterprise_id',
+        'dc_vnc_ip': 'dc_vnc_ip'
     }
 
-    def __init__(self, job_id=None, enterprise_id=None):
+    def __init__(self, job_id=None, enterprise_id=None, dc_vnc_ip=None):
         """UpdateWorkspaceResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class UpdateWorkspaceResponse(SdkResponse):
         :type job_id: str
         :param enterprise_id: 企业ID
         :type enterprise_id: str
+        :param dc_vnc_ip: 专线vnc访问的ip
+        :type dc_vnc_ip: str
         """
         
         super(UpdateWorkspaceResponse, self).__init__()
 
         self._job_id = None
         self._enterprise_id = None
+        self._dc_vnc_ip = None
         self.discriminator = None
 
         if job_id is not None:
             self.job_id = job_id
         if enterprise_id is not None:
             self.enterprise_id = enterprise_id
+        if dc_vnc_ip is not None:
+            self.dc_vnc_ip = dc_vnc_ip
 
     @property
     def job_id(self):
@@ -92,6 +99,28 @@ class UpdateWorkspaceResponse(SdkResponse):
         :type enterprise_id: str
         """
         self._enterprise_id = enterprise_id
+
+    @property
+    def dc_vnc_ip(self):
+        """Gets the dc_vnc_ip of this UpdateWorkspaceResponse.
+
+        专线vnc访问的ip
+
+        :return: The dc_vnc_ip of this UpdateWorkspaceResponse.
+        :rtype: str
+        """
+        return self._dc_vnc_ip
+
+    @dc_vnc_ip.setter
+    def dc_vnc_ip(self, dc_vnc_ip):
+        """Sets the dc_vnc_ip of this UpdateWorkspaceResponse.
+
+        专线vnc访问的ip
+
+        :param dc_vnc_ip: The dc_vnc_ip of this UpdateWorkspaceResponse.
+        :type dc_vnc_ip: str
+        """
+        self._dc_vnc_ip = dc_vnc_ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

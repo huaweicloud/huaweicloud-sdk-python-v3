@@ -924,6 +924,7 @@ from huaweicloudsdkeihealth.v1.model.user_setting_dto import UserSettingDto
 from huaweicloudsdkeihealth.v1.model.validate_code_request import ValidateCodeRequest
 from huaweicloudsdkeihealth.v1.model.validate_code_response import ValidateCodeResponse
 from huaweicloudsdkeihealth.v1.model.value_range import ValueRange
+from huaweicloudsdkeihealth.v1.model.value_range2 import ValueRange2
 from huaweicloudsdkeihealth.v1.model.vendor_dto import VendorDto
 from huaweicloudsdkeihealth.v1.model.version_rsp import VersionRsp
 from huaweicloudsdkeihealth.v1.model.vertex_location_dto import VertexLocationDto

@@ -36,7 +36,7 @@ class ListInstanceConfigurationsResponse(SdkResponse):
 
         :param configurations: 
         :type configurations: :class:`huaweicloudsdkgaussdb.v3.ParameterConfigurationInfo`
-        :param total_count: 配置信息的总数。
+        :param total_count: 参数信息的总数。
         :type total_count: int
         :param parameter_values: 参数对象。
         :type parameter_values: list[:class:`huaweicloudsdkgaussdb.v3.ParameterValuesInfo`]
@@ -78,7 +78,7 @@ class ListInstanceConfigurationsResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListInstanceConfigurationsResponse.
 
-        配置信息的总数。
+        参数信息的总数。
 
         :return: The total_count of this ListInstanceConfigurationsResponse.
         :rtype: int
@@ -89,7 +89,7 @@ class ListInstanceConfigurationsResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListInstanceConfigurationsResponse.
 
-        配置信息的总数。
+        参数信息的总数。
 
         :param total_count: The total_count of this ListInstanceConfigurationsResponse.
         :type total_count: int

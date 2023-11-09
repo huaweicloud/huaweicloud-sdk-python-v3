@@ -17,22 +17,26 @@ class AddDomainsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'set_id': 'str',
         'enterprise_project_id': 'str',
         'fw_instance_id': 'str',
         'body': 'AddDomainListDto'
     }
 
     attribute_map = {
+        'set_id': 'set_id',
         'enterprise_project_id': 'enterprise_project_id',
         'fw_instance_id': 'fw_instance_id',
         'body': 'body'
     }
 
-    def __init__(self, enterprise_project_id=None, fw_instance_id=None, body=None):
+    def __init__(self, set_id=None, enterprise_project_id=None, fw_instance_id=None, body=None):
         """AddDomainsRequest
 
         The model defined in huaweicloud sdk
 
+        :param set_id: 域名组id
+        :type set_id: str
         :param enterprise_project_id: 企业项目id，用户支持企业项目后，由企业项目生成的id。
         :type enterprise_project_id: str
         :param fw_instance_id: 防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用查询防火墙实例接口获得。具体可参考APIExlorer和帮助中心FAQ。默认情况下，fw_instance_Id为空时，返回帐号下第一个墙的信息；fw_instance_Id非空时，返回与fw_instance_Id对应墙的信息。
@@ -43,17 +47,41 @@ class AddDomainsRequest:
         
         
 
+        self._set_id = None
         self._enterprise_project_id = None
         self._fw_instance_id = None
         self._body = None
         self.discriminator = None
 
+        self.set_id = set_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if fw_instance_id is not None:
             self.fw_instance_id = fw_instance_id
         if body is not None:
             self.body = body
+
+    @property
+    def set_id(self):
+        """Gets the set_id of this AddDomainsRequest.
+
+        域名组id
+
+        :return: The set_id of this AddDomainsRequest.
+        :rtype: str
+        """
+        return self._set_id
+
+    @set_id.setter
+    def set_id(self, set_id):
+        """Sets the set_id of this AddDomainsRequest.
+
+        域名组id
+
+        :param set_id: The set_id of this AddDomainsRequest.
+        :type set_id: str
+        """
+        self._set_id = set_id
 
     @property
     def enterprise_project_id(self):

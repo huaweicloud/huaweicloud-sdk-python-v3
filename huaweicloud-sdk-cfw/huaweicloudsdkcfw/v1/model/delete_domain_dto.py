@@ -18,25 +18,21 @@ class DeleteDomainDto:
 
     openapi_types = {
         'object_id': 'str',
-        'domain_set_id': 'str',
         'domain_address_ids': 'list[str]'
     }
 
     attribute_map = {
         'object_id': 'object_id',
-        'domain_set_id': 'domain_set_id',
         'domain_address_ids': 'domain_address_ids'
     }
 
-    def __init__(self, object_id=None, domain_set_id=None, domain_address_ids=None):
+    def __init__(self, object_id=None, domain_address_ids=None):
         """DeleteDomainDto
 
         The model defined in huaweicloud sdk
 
         :param object_id: 防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用查询防火墙实例接口获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。具体可参考APIExlorer和帮助中心FAQ。
         :type object_id: str
-        :param domain_set_id: 域名组id
-        :type domain_set_id: str
         :param domain_address_ids: 域名地址组
         :type domain_address_ids: list[str]
         """
@@ -44,12 +40,10 @@ class DeleteDomainDto:
         
 
         self._object_id = None
-        self._domain_set_id = None
         self._domain_address_ids = None
         self.discriminator = None
 
         self.object_id = object_id
-        self.domain_set_id = domain_set_id
         self.domain_address_ids = domain_address_ids
 
     @property
@@ -73,28 +67,6 @@ class DeleteDomainDto:
         :type object_id: str
         """
         self._object_id = object_id
-
-    @property
-    def domain_set_id(self):
-        """Gets the domain_set_id of this DeleteDomainDto.
-
-        域名组id
-
-        :return: The domain_set_id of this DeleteDomainDto.
-        :rtype: str
-        """
-        return self._domain_set_id
-
-    @domain_set_id.setter
-    def domain_set_id(self, domain_set_id):
-        """Sets the domain_set_id of this DeleteDomainDto.
-
-        域名组id
-
-        :param domain_set_id: The domain_set_id of this DeleteDomainDto.
-        :type domain_set_id: str
-        """
-        self._domain_set_id = domain_set_id
 
     @property
     def domain_address_ids(self):
