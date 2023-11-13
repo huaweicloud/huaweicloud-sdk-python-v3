@@ -971,6 +971,62 @@ class RabbitMQClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_ces_hierarchy(self, request):
+        """查询实例在CES的监控层级关系
+
+        查询实例在CES的监控层级关系。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCesHierarchy
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowCesHierarchyRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowCesHierarchyResponse`
+        """
+        return self._show_ces_hierarchy_with_http_info(request)
+
+    def _show_ces_hierarchy_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/ces-hierarchy',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowCesHierarchyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_engine_instance_extend_product_info(self, request):
         """查询新规格可扩容规格列表
 
@@ -1198,6 +1254,68 @@ class RabbitMQClient(Client):
             post_params=form_params,
             cname=cname,
             response_type='ShowMaintainWindowsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_rabbit_mq_product_cores(self, request):
+        """查询RabbitMQ产品规格核数
+
+        查询RabbitMQ产品规格核数
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRabbitMqProductCores
+        :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqProductCoresRequest`
+        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqProductCoresResponse`
+        """
+        return self._show_rabbit_mq_product_cores_with_http_info(request)
+
+    def _show_rabbit_mq_product_cores_with_http_info(self, request):
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+
+        query_params = []
+        if 'product_id' in local_var_params:
+            query_params.append(('product_id', local_var_params['product_id']))
+        if 'broker_num' in local_var_params:
+            query_params.append(('broker_num', local_var_params['broker_num']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{engine}/products/cores',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            cname=cname,
+            response_type='ShowRabbitMqProductCoresResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

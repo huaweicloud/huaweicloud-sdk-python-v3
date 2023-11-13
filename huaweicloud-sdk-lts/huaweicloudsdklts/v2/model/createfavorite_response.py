@@ -26,7 +26,8 @@ class CreatefavoriteResponse(SdkResponse):
         'log_group_name': 'str',
         'log_stream_id': 'str',
         'log_stream_name': 'str',
-        'project_id': 'str'
+        'project_id': 'str',
+        'is_global': 'bool'
     }
 
     attribute_map = {
@@ -38,10 +39,11 @@ class CreatefavoriteResponse(SdkResponse):
         'log_group_name': 'log_group_name',
         'log_stream_id': 'log_stream_id',
         'log_stream_name': 'log_stream_name',
-        'project_id': 'project_id'
+        'project_id': 'project_id',
+        'is_global': 'is_global'
     }
 
-    def __init__(self, create_time=None, eps_id=None, favorite_resource_id=None, favorite_resource_type=None, log_group_id=None, log_group_name=None, log_stream_id=None, log_stream_name=None, project_id=None):
+    def __init__(self, create_time=None, eps_id=None, favorite_resource_id=None, favorite_resource_type=None, log_group_id=None, log_group_name=None, log_stream_id=None, log_stream_name=None, project_id=None, is_global=None):
         """CreatefavoriteResponse
 
         The model defined in huaweicloud sdk
@@ -64,6 +66,8 @@ class CreatefavoriteResponse(SdkResponse):
         :type log_stream_name: str
         :param project_id: 项目id
         :type project_id: str
+        :param is_global: 是否开启日志收藏
+        :type is_global: bool
         """
         
         super(CreatefavoriteResponse, self).__init__()
@@ -77,6 +81,7 @@ class CreatefavoriteResponse(SdkResponse):
         self._log_stream_id = None
         self._log_stream_name = None
         self._project_id = None
+        self._is_global = None
         self.discriminator = None
 
         if create_time is not None:
@@ -97,6 +102,8 @@ class CreatefavoriteResponse(SdkResponse):
             self.log_stream_name = log_stream_name
         if project_id is not None:
             self.project_id = project_id
+        if is_global is not None:
+            self.is_global = is_global
 
     @property
     def create_time(self):
@@ -295,6 +302,28 @@ class CreatefavoriteResponse(SdkResponse):
         :type project_id: str
         """
         self._project_id = project_id
+
+    @property
+    def is_global(self):
+        """Gets the is_global of this CreatefavoriteResponse.
+
+        是否开启日志收藏
+
+        :return: The is_global of this CreatefavoriteResponse.
+        :rtype: bool
+        """
+        return self._is_global
+
+    @is_global.setter
+    def is_global(self, is_global):
+        """Sets the is_global of this CreatefavoriteResponse.
+
+        是否开启日志收藏
+
+        :param is_global: The is_global of this CreatefavoriteResponse.
+        :type is_global: bool
+        """
+        self._is_global = is_global
 
     def to_dict(self):
         """Returns the model properties as a dict"""

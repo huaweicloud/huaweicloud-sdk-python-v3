@@ -6,7 +6,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListInstancesRecommendationResponse(SdkResponse):
+class ListPostgresqlListHistoryTablesResponse(SdkResponse):
 
     """
     Attributes:
@@ -18,80 +18,80 @@ class ListInstancesRecommendationResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'engine': 'str',
-        'recommended_products': 'list[RecommendedProduct]'
+        'table_limit': 'int',
+        'instances': 'list[PostgreSQLHistoryTableInstance]'
     }
 
     attribute_map = {
-        'engine': 'engine',
-        'recommended_products': 'recommended_products'
+        'table_limit': 'table_limit',
+        'instances': 'instances'
     }
 
-    def __init__(self, engine=None, recommended_products=None):
-        """ListInstancesRecommendationResponse
+    def __init__(self, table_limit=None, instances=None):
+        """ListPostgresqlListHistoryTablesResponse
 
         The model defined in huaweicloud sdk
 
-        :param engine: 引擎类型
-        :type engine: str
-        :param recommended_products: 推荐商品信息
-        :type recommended_products: list[:class:`huaweicloudsdkrds.v3.RecommendedProduct`]
+        :param table_limit: 恢复表数量限制个数
+        :type table_limit: int
+        :param instances: 实例信息
+        :type instances: list[:class:`huaweicloudsdkrds.v3.PostgreSQLHistoryTableInstance`]
         """
         
-        super(ListInstancesRecommendationResponse, self).__init__()
+        super(ListPostgresqlListHistoryTablesResponse, self).__init__()
 
-        self._engine = None
-        self._recommended_products = None
+        self._table_limit = None
+        self._instances = None
         self.discriminator = None
 
-        if engine is not None:
-            self.engine = engine
-        if recommended_products is not None:
-            self.recommended_products = recommended_products
+        if table_limit is not None:
+            self.table_limit = table_limit
+        if instances is not None:
+            self.instances = instances
 
     @property
-    def engine(self):
-        """Gets the engine of this ListInstancesRecommendationResponse.
+    def table_limit(self):
+        """Gets the table_limit of this ListPostgresqlListHistoryTablesResponse.
 
-        引擎类型
+        恢复表数量限制个数
 
-        :return: The engine of this ListInstancesRecommendationResponse.
-        :rtype: str
+        :return: The table_limit of this ListPostgresqlListHistoryTablesResponse.
+        :rtype: int
         """
-        return self._engine
+        return self._table_limit
 
-    @engine.setter
-    def engine(self, engine):
-        """Sets the engine of this ListInstancesRecommendationResponse.
+    @table_limit.setter
+    def table_limit(self, table_limit):
+        """Sets the table_limit of this ListPostgresqlListHistoryTablesResponse.
 
-        引擎类型
+        恢复表数量限制个数
 
-        :param engine: The engine of this ListInstancesRecommendationResponse.
-        :type engine: str
+        :param table_limit: The table_limit of this ListPostgresqlListHistoryTablesResponse.
+        :type table_limit: int
         """
-        self._engine = engine
+        self._table_limit = table_limit
 
     @property
-    def recommended_products(self):
-        """Gets the recommended_products of this ListInstancesRecommendationResponse.
+    def instances(self):
+        """Gets the instances of this ListPostgresqlListHistoryTablesResponse.
 
-        推荐商品信息
+        实例信息
 
-        :return: The recommended_products of this ListInstancesRecommendationResponse.
-        :rtype: list[:class:`huaweicloudsdkrds.v3.RecommendedProduct`]
+        :return: The instances of this ListPostgresqlListHistoryTablesResponse.
+        :rtype: list[:class:`huaweicloudsdkrds.v3.PostgreSQLHistoryTableInstance`]
         """
-        return self._recommended_products
+        return self._instances
 
-    @recommended_products.setter
-    def recommended_products(self, recommended_products):
-        """Sets the recommended_products of this ListInstancesRecommendationResponse.
+    @instances.setter
+    def instances(self, instances):
+        """Sets the instances of this ListPostgresqlListHistoryTablesResponse.
 
-        推荐商品信息
+        实例信息
 
-        :param recommended_products: The recommended_products of this ListInstancesRecommendationResponse.
-        :type recommended_products: list[:class:`huaweicloudsdkrds.v3.RecommendedProduct`]
+        :param instances: The instances of this ListPostgresqlListHistoryTablesResponse.
+        :type instances: list[:class:`huaweicloudsdkrds.v3.PostgreSQLHistoryTableInstance`]
         """
-        self._recommended_products = recommended_products
+        self._instances = instances
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -135,7 +135,7 @@ class ListInstancesRecommendationResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListInstancesRecommendationResponse):
+        if not isinstance(other, ListPostgresqlListHistoryTablesResponse):
             return False
 
         return self.__dict__ == other.__dict__

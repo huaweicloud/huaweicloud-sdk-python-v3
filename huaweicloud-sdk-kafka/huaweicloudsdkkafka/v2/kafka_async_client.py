@@ -1475,6 +1475,10 @@ class KafkaAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 

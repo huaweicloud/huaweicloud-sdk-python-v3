@@ -3729,7 +3729,7 @@ class LtsClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{project_id}/groups/{log_group_id}/streams_ttl/{log_stream_id}',
+            resource_path='/v2/{project_id}/groups/{log_group_id}/streams-ttl/{log_stream_id}',
             method='PUT',
             path_params=path_params,
             query_params=query_params,

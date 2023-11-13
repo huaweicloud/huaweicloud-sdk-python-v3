@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListInstancesRecommendationRequest:
+class ShowRabbitMqProductCoresResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,50 +18,51 @@ class ListInstancesRecommendationRequest:
     sensitive_list = []
 
     openapi_types = {
-        'engine': 'str'
+        'core_num': 'int'
     }
 
     attribute_map = {
-        'engine': 'engine'
+        'core_num': 'core_num'
     }
 
-    def __init__(self, engine=None):
-        """ListInstancesRecommendationRequest
+    def __init__(self, core_num=None):
+        """ShowRabbitMqProductCoresResponse
 
         The model defined in huaweicloud sdk
 
-        :param engine: 引擎类型
-        :type engine: str
+        :param core_num: 产品规格核数。
+        :type core_num: int
         """
         
-        
+        super(ShowRabbitMqProductCoresResponse, self).__init__()
 
-        self._engine = None
+        self._core_num = None
         self.discriminator = None
 
-        self.engine = engine
+        if core_num is not None:
+            self.core_num = core_num
 
     @property
-    def engine(self):
-        """Gets the engine of this ListInstancesRecommendationRequest.
+    def core_num(self):
+        """Gets the core_num of this ShowRabbitMqProductCoresResponse.
 
-        引擎类型
+        产品规格核数。
 
-        :return: The engine of this ListInstancesRecommendationRequest.
-        :rtype: str
+        :return: The core_num of this ShowRabbitMqProductCoresResponse.
+        :rtype: int
         """
-        return self._engine
+        return self._core_num
 
-    @engine.setter
-    def engine(self, engine):
-        """Sets the engine of this ListInstancesRecommendationRequest.
+    @core_num.setter
+    def core_num(self, core_num):
+        """Sets the core_num of this ShowRabbitMqProductCoresResponse.
 
-        引擎类型
+        产品规格核数。
 
-        :param engine: The engine of this ListInstancesRecommendationRequest.
-        :type engine: str
+        :param core_num: The core_num of this ShowRabbitMqProductCoresResponse.
+        :type core_num: int
         """
-        self._engine = engine
+        self._core_num = core_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -104,7 +106,7 @@ class ListInstancesRecommendationRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListInstancesRecommendationRequest):
+        if not isinstance(other, ShowRabbitMqProductCoresResponse):
             return False
 
         return self.__dict__ == other.__dict__

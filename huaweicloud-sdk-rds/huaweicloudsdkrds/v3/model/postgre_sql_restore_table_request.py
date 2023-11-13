@@ -5,7 +5,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ErrorRsp:
+class PostgreSQLRestoreTableRequest:
 
     """
     Attributes:
@@ -17,78 +17,51 @@ class ErrorRsp:
     sensitive_list = []
 
     openapi_types = {
-        'error_code': 'str',
-        'error_msg': 'str'
+        'instances': 'list[PostgreSQLRestoreTableInstance]'
     }
 
     attribute_map = {
-        'error_code': 'error_code',
-        'error_msg': 'error_msg'
+        'instances': 'instances'
     }
 
-    def __init__(self, error_code=None, error_msg=None):
-        """ErrorRsp
+    def __init__(self, instances=None):
+        """PostgreSQLRestoreTableRequest
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误码。
-        :type error_code: str
-        :param error_msg: 错误描述。
-        :type error_msg: str
+        :param instances: 表信息
+        :type instances: list[:class:`huaweicloudsdkrds.v3.PostgreSQLRestoreTableInstance`]
         """
         
         
 
-        self._error_code = None
-        self._error_msg = None
+        self._instances = None
         self.discriminator = None
 
-        self.error_code = error_code
-        self.error_msg = error_msg
+        if instances is not None:
+            self.instances = instances
 
     @property
-    def error_code(self):
-        """Gets the error_code of this ErrorRsp.
+    def instances(self):
+        """Gets the instances of this PostgreSQLRestoreTableRequest.
 
-        错误码。
+        表信息
 
-        :return: The error_code of this ErrorRsp.
-        :rtype: str
+        :return: The instances of this PostgreSQLRestoreTableRequest.
+        :rtype: list[:class:`huaweicloudsdkrds.v3.PostgreSQLRestoreTableInstance`]
         """
-        return self._error_code
+        return self._instances
 
-    @error_code.setter
-    def error_code(self, error_code):
-        """Sets the error_code of this ErrorRsp.
+    @instances.setter
+    def instances(self, instances):
+        """Sets the instances of this PostgreSQLRestoreTableRequest.
 
-        错误码。
+        表信息
 
-        :param error_code: The error_code of this ErrorRsp.
-        :type error_code: str
+        :param instances: The instances of this PostgreSQLRestoreTableRequest.
+        :type instances: list[:class:`huaweicloudsdkrds.v3.PostgreSQLRestoreTableInstance`]
         """
-        self._error_code = error_code
-
-    @property
-    def error_msg(self):
-        """Gets the error_msg of this ErrorRsp.
-
-        错误描述。
-
-        :return: The error_msg of this ErrorRsp.
-        :rtype: str
-        """
-        return self._error_msg
-
-    @error_msg.setter
-    def error_msg(self, error_msg):
-        """Sets the error_msg of this ErrorRsp.
-
-        错误描述。
-
-        :param error_msg: The error_msg of this ErrorRsp.
-        :type error_msg: str
-        """
-        self._error_msg = error_msg
+        self._instances = instances
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -132,7 +105,7 @@ class ErrorRsp:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ErrorRsp):
+        if not isinstance(other, PostgreSQLRestoreTableRequest):
             return False
 
         return self.__dict__ == other.__dict__

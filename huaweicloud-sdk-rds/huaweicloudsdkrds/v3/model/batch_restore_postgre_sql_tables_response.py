@@ -2,10 +2,11 @@
 
 import six
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class InstanceState:
+class BatchRestorePostgreSqlTablesResponse(SdkResponse):
 
     """
     Attributes:
@@ -17,78 +18,51 @@ class InstanceState:
     sensitive_list = []
 
     openapi_types = {
-        'status': 'str',
-        'wait_restart_for_params': 'bool'
+        'restore_result': 'list[PostgreSQLRestoreResult]'
     }
 
     attribute_map = {
-        'status': 'status',
-        'wait_restart_for_params': 'wait_restart_for_params'
+        'restore_result': 'restore_result'
     }
 
-    def __init__(self, status=None, wait_restart_for_params=None):
-        """InstanceState
+    def __init__(self, restore_result=None):
+        """BatchRestorePostgreSqlTablesResponse
 
         The model defined in huaweicloud sdk
 
-        :param status: 实例状态
-        :type status: str
-        :param wait_restart_for_params: 参数变更，是否需要重启
-        :type wait_restart_for_params: bool
+        :param restore_result: 表信息
+        :type restore_result: list[:class:`huaweicloudsdkrds.v3.PostgreSQLRestoreResult`]
         """
         
-        
+        super(BatchRestorePostgreSqlTablesResponse, self).__init__()
 
-        self._status = None
-        self._wait_restart_for_params = None
+        self._restore_result = None
         self.discriminator = None
 
-        self.status = status
-        self.wait_restart_for_params = wait_restart_for_params
+        if restore_result is not None:
+            self.restore_result = restore_result
 
     @property
-    def status(self):
-        """Gets the status of this InstanceState.
+    def restore_result(self):
+        """Gets the restore_result of this BatchRestorePostgreSqlTablesResponse.
 
-        实例状态
+        表信息
 
-        :return: The status of this InstanceState.
-        :rtype: str
+        :return: The restore_result of this BatchRestorePostgreSqlTablesResponse.
+        :rtype: list[:class:`huaweicloudsdkrds.v3.PostgreSQLRestoreResult`]
         """
-        return self._status
+        return self._restore_result
 
-    @status.setter
-    def status(self, status):
-        """Sets the status of this InstanceState.
+    @restore_result.setter
+    def restore_result(self, restore_result):
+        """Sets the restore_result of this BatchRestorePostgreSqlTablesResponse.
 
-        实例状态
+        表信息
 
-        :param status: The status of this InstanceState.
-        :type status: str
+        :param restore_result: The restore_result of this BatchRestorePostgreSqlTablesResponse.
+        :type restore_result: list[:class:`huaweicloudsdkrds.v3.PostgreSQLRestoreResult`]
         """
-        self._status = status
-
-    @property
-    def wait_restart_for_params(self):
-        """Gets the wait_restart_for_params of this InstanceState.
-
-        参数变更，是否需要重启
-
-        :return: The wait_restart_for_params of this InstanceState.
-        :rtype: bool
-        """
-        return self._wait_restart_for_params
-
-    @wait_restart_for_params.setter
-    def wait_restart_for_params(self, wait_restart_for_params):
-        """Sets the wait_restart_for_params of this InstanceState.
-
-        参数变更，是否需要重启
-
-        :param wait_restart_for_params: The wait_restart_for_params of this InstanceState.
-        :type wait_restart_for_params: bool
-        """
-        self._wait_restart_for_params = wait_restart_for_params
+        self._restore_result = restore_result
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -132,7 +106,7 @@ class InstanceState:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, InstanceState):
+        if not isinstance(other, BatchRestorePostgreSqlTablesResponse):
             return False
 
         return self.__dict__ == other.__dict__

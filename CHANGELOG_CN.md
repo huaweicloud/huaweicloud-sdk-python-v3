@@ -1,3 +1,57 @@
+# 3.1.66 2023-11-13
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 支持接口`ShowNodesInformation`、`DeleteCenterTask`、`DeleteDiagnosisTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstanceTopics**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **Createfavorite**
+    - 请求参数变更
+      - `+ is_global`
+    - 响应参数变更
+      - `+ is_global`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _新增特性_
+  - 支持接口`ShowRabbitMqProductCores`、`ShowCesHierarchy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ListPostgresqlListHistoryTables`、`ListHistoryDatabase`、`BatchRestorePostgreSqlTables`、`BatchRestoreDatabase`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListInstancesResourceMetrics`、`ListInstancesRecommendation`
+
 # 3.1.65 2023-11-09
 
 ### HuaweiCloud SDK TICS

@@ -21,7 +21,6 @@ class ListElasticResourcePoolsResponse(SdkResponse):
         'is_success': 'bool',
         'message': 'str',
         'count': 'int',
-        'elastic_resource_pool_name': 'str',
         'elastic_resource_pools': 'list[ElasticResourcePoolsResponse]'
     }
 
@@ -29,11 +28,10 @@ class ListElasticResourcePoolsResponse(SdkResponse):
         'is_success': 'is_success',
         'message': 'message',
         'count': 'count',
-        'elastic_resource_pool_name': 'elastic_resource_pool_name',
         'elastic_resource_pools': 'elastic_resource_pools'
     }
 
-    def __init__(self, is_success=None, message=None, count=None, elastic_resource_pool_name=None, elastic_resource_pools=None):
+    def __init__(self, is_success=None, message=None, count=None, elastic_resource_pools=None):
         """ListElasticResourcePoolsResponse
 
         The model defined in huaweicloud sdk
@@ -44,8 +42,6 @@ class ListElasticResourcePoolsResponse(SdkResponse):
         :type message: str
         :param count: 数量
         :type count: int
-        :param elastic_resource_pool_name: 弹性资源池名称
-        :type elastic_resource_pool_name: str
         :param elastic_resource_pools: 弹性资源池列表
         :type elastic_resource_pools: list[:class:`huaweicloudsdkdli.v1.ElasticResourcePoolsResponse`]
         """
@@ -55,7 +51,6 @@ class ListElasticResourcePoolsResponse(SdkResponse):
         self._is_success = None
         self._message = None
         self._count = None
-        self._elastic_resource_pool_name = None
         self._elastic_resource_pools = None
         self.discriminator = None
 
@@ -65,8 +60,6 @@ class ListElasticResourcePoolsResponse(SdkResponse):
             self.message = message
         if count is not None:
             self.count = count
-        if elastic_resource_pool_name is not None:
-            self.elastic_resource_pool_name = elastic_resource_pool_name
         if elastic_resource_pools is not None:
             self.elastic_resource_pools = elastic_resource_pools
 
@@ -135,28 +128,6 @@ class ListElasticResourcePoolsResponse(SdkResponse):
         :type count: int
         """
         self._count = count
-
-    @property
-    def elastic_resource_pool_name(self):
-        """Gets the elastic_resource_pool_name of this ListElasticResourcePoolsResponse.
-
-        弹性资源池名称
-
-        :return: The elastic_resource_pool_name of this ListElasticResourcePoolsResponse.
-        :rtype: str
-        """
-        return self._elastic_resource_pool_name
-
-    @elastic_resource_pool_name.setter
-    def elastic_resource_pool_name(self, elastic_resource_pool_name):
-        """Sets the elastic_resource_pool_name of this ListElasticResourcePoolsResponse.
-
-        弹性资源池名称
-
-        :param elastic_resource_pool_name: The elastic_resource_pool_name of this ListElasticResourcePoolsResponse.
-        :type elastic_resource_pool_name: str
-        """
-        self._elastic_resource_pool_name = elastic_resource_pool_name
 
     @property
     def elastic_resource_pools(self):

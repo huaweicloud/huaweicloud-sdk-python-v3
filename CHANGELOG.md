@@ -1,3 +1,57 @@
+# 3.1.66 2023-11-13
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - Support the interfaces `ShowNodesInformation`, `DeleteCenterTask`, `DeleteDiagnosisTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstanceTopics**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **Createfavorite**
+    - changes of request param
+      - `+ is_global`
+    - changes of response param
+      - `+ is_global`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _Features_
+  - Support the interfaces `ShowRabbitMqProductCores`, `ShowCesHierarchy`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interfaces `ListPostgresqlListHistoryTables`, `ListHistoryDatabase`, `BatchRestorePostgreSqlTables`, `BatchRestoreDatabase`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interfaces `ListInstancesResourceMetrics`, `ListInstancesRecommendation`
+
 # 3.1.65 2023-11-09
 
 ### HuaweiCloud SDK TICS

@@ -17,10 +17,11 @@ class ElasticResourcePoolsResponse:
     sensitive_list = []
 
     openapi_types = {
+        'elastic_resource_pool_name': 'str',
+        'id': 'int',
         'update_time': 'int',
         'queues': 'list[str]',
         'owner': 'str',
-        'elastic_resource_pool_name': 'str',
         'description': 'str',
         'max_cu': 'int',
         'min_cu': 'int',
@@ -39,10 +40,11 @@ class ElasticResourcePoolsResponse:
     }
 
     attribute_map = {
+        'elastic_resource_pool_name': 'elastic_resource_pool_name',
+        'id': 'id',
         'update_time': 'update_time',
         'queues': 'queues',
         'owner': 'owner',
-        'elastic_resource_pool_name': 'elastic_resource_pool_name',
         'description': 'description',
         'max_cu': 'max_cu',
         'min_cu': 'min_cu',
@@ -60,19 +62,21 @@ class ElasticResourcePoolsResponse:
         'label': 'label'
     }
 
-    def __init__(self, update_time=None, queues=None, owner=None, elastic_resource_pool_name=None, description=None, max_cu=None, min_cu=None, actual_cu=None, cidr_in_vpc=None, create_time=None, current_cu=None, status=None, resource_id=None, fail_reason=None, enterprise_project_id=None, prepay_cu=None, charging_mode=None, manager=None, label=None):
+    def __init__(self, elastic_resource_pool_name=None, id=None, update_time=None, queues=None, owner=None, description=None, max_cu=None, min_cu=None, actual_cu=None, cidr_in_vpc=None, create_time=None, current_cu=None, status=None, resource_id=None, fail_reason=None, enterprise_project_id=None, prepay_cu=None, charging_mode=None, manager=None, label=None):
         """ElasticResourcePoolsResponse
 
         The model defined in huaweicloud sdk
 
+        :param elastic_resource_pool_name: 资源池名称
+        :type elastic_resource_pool_name: str
+        :param id: 资源池id
+        :type id: int
         :param update_time: 更新时间
         :type update_time: int
         :param queues: 
         :type queues: list[str]
         :param owner: 用户名
         :type owner: str
-        :param elastic_resource_pool_name: 资源池名称
-        :type elastic_resource_pool_name: str
         :param description: 资源池描述
         :type description: str
         :param max_cu: 最大cu数量
@@ -107,10 +111,11 @@ class ElasticResourcePoolsResponse:
         
         
 
+        self._elastic_resource_pool_name = None
+        self._id = None
         self._update_time = None
         self._queues = None
         self._owner = None
-        self._elastic_resource_pool_name = None
         self._description = None
         self._max_cu = None
         self._min_cu = None
@@ -128,14 +133,16 @@ class ElasticResourcePoolsResponse:
         self._label = None
         self.discriminator = None
 
+        if elastic_resource_pool_name is not None:
+            self.elastic_resource_pool_name = elastic_resource_pool_name
+        if id is not None:
+            self.id = id
         if update_time is not None:
             self.update_time = update_time
         if queues is not None:
             self.queues = queues
         if owner is not None:
             self.owner = owner
-        if elastic_resource_pool_name is not None:
-            self.elastic_resource_pool_name = elastic_resource_pool_name
         if description is not None:
             self.description = description
         if max_cu is not None:
@@ -166,6 +173,50 @@ class ElasticResourcePoolsResponse:
             self.manager = manager
         if label is not None:
             self.label = label
+
+    @property
+    def elastic_resource_pool_name(self):
+        """Gets the elastic_resource_pool_name of this ElasticResourcePoolsResponse.
+
+        资源池名称
+
+        :return: The elastic_resource_pool_name of this ElasticResourcePoolsResponse.
+        :rtype: str
+        """
+        return self._elastic_resource_pool_name
+
+    @elastic_resource_pool_name.setter
+    def elastic_resource_pool_name(self, elastic_resource_pool_name):
+        """Sets the elastic_resource_pool_name of this ElasticResourcePoolsResponse.
+
+        资源池名称
+
+        :param elastic_resource_pool_name: The elastic_resource_pool_name of this ElasticResourcePoolsResponse.
+        :type elastic_resource_pool_name: str
+        """
+        self._elastic_resource_pool_name = elastic_resource_pool_name
+
+    @property
+    def id(self):
+        """Gets the id of this ElasticResourcePoolsResponse.
+
+        资源池id
+
+        :return: The id of this ElasticResourcePoolsResponse.
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ElasticResourcePoolsResponse.
+
+        资源池id
+
+        :param id: The id of this ElasticResourcePoolsResponse.
+        :type id: int
+        """
+        self._id = id
 
     @property
     def update_time(self):
@@ -232,28 +283,6 @@ class ElasticResourcePoolsResponse:
         :type owner: str
         """
         self._owner = owner
-
-    @property
-    def elastic_resource_pool_name(self):
-        """Gets the elastic_resource_pool_name of this ElasticResourcePoolsResponse.
-
-        资源池名称
-
-        :return: The elastic_resource_pool_name of this ElasticResourcePoolsResponse.
-        :rtype: str
-        """
-        return self._elastic_resource_pool_name
-
-    @elastic_resource_pool_name.setter
-    def elastic_resource_pool_name(self, elastic_resource_pool_name):
-        """Sets the elastic_resource_pool_name of this ElasticResourcePoolsResponse.
-
-        资源池名称
-
-        :param elastic_resource_pool_name: The elastic_resource_pool_name of this ElasticResourcePoolsResponse.
-        :type elastic_resource_pool_name: str
-        """
-        self._elastic_resource_pool_name = elastic_resource_pool_name
 
     @property
     def description(self):

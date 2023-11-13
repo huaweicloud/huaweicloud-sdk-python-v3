@@ -23,7 +23,8 @@ class CreatefavoriteReqbody:
         'log_group_id': 'str',
         'log_group_name': 'str',
         'log_stream_id': 'str',
-        'log_stream_name': 'str'
+        'log_stream_name': 'str',
+        'is_global': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class CreatefavoriteReqbody:
         'log_group_id': 'log_group_id',
         'log_group_name': 'log_group_name',
         'log_stream_id': 'log_stream_id',
-        'log_stream_name': 'log_stream_name'
+        'log_stream_name': 'log_stream_name',
+        'is_global': 'is_global'
     }
 
-    def __init__(self, eps_id=None, favorite_resource_id=None, favorite_resource_type=None, log_group_id=None, log_group_name=None, log_stream_id=None, log_stream_name=None):
+    def __init__(self, eps_id=None, favorite_resource_id=None, favorite_resource_type=None, log_group_id=None, log_group_name=None, log_stream_id=None, log_stream_name=None, is_global=None):
         """CreatefavoriteReqbody
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class CreatefavoriteReqbody:
         :type log_stream_id: str
         :param log_stream_name: 日志流名称
         :type log_stream_name: str
+        :param is_global: 是否支持全局化，必填true，否则创建不了收藏
+        :type is_global: bool
         """
         
         
@@ -66,6 +70,7 @@ class CreatefavoriteReqbody:
         self._log_group_name = None
         self._log_stream_id = None
         self._log_stream_name = None
+        self._is_global = None
         self.discriminator = None
 
         if eps_id is not None:
@@ -78,6 +83,7 @@ class CreatefavoriteReqbody:
         self.log_stream_id = log_stream_id
         if log_stream_name is not None:
             self.log_stream_name = log_stream_name
+        self.is_global = is_global
 
     @property
     def eps_id(self):
@@ -232,6 +238,28 @@ class CreatefavoriteReqbody:
         :type log_stream_name: str
         """
         self._log_stream_name = log_stream_name
+
+    @property
+    def is_global(self):
+        """Gets the is_global of this CreatefavoriteReqbody.
+
+        是否支持全局化，必填true，否则创建不了收藏
+
+        :return: The is_global of this CreatefavoriteReqbody.
+        :rtype: bool
+        """
+        return self._is_global
+
+    @is_global.setter
+    def is_global(self, is_global):
+        """Sets the is_global of this CreatefavoriteReqbody.
+
+        是否支持全局化，必填true，否则创建不了收藏
+
+        :param is_global: The is_global of this CreatefavoriteReqbody.
+        :type is_global: bool
+        """
+        self._is_global = is_global
 
     def to_dict(self):
         """Returns the model properties as a dict"""
